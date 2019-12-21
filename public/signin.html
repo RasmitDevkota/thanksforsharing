@@ -1,0 +1,187 @@
+<html>
+<head>
+    <meta charset=utf-8 />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thx 4 Sharing</title>
+
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.orange-indigo.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+
+    <link rel="stylesheet" href="main.css">
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+
+    <script src="/__/firebase/7.6.1/firebase-analytics.js"></script>
+    <script src="/__/firebase/init.js"></script>
+
+    <script type="text/javascript">
+        function toggleSignIn() {
+            if (!firebase.auth().currentUser) {
+                var provider = new firebase.auth.GoogleAuthProvider();
+
+                firebase.auth().signInWithPopup(provider).then(function (result) {
+                    var token = result.credential.accessToken;
+                    var user = result.user;
+                    var uid = user.uid.toString();
+                    var db = firebase.firestore();
+                    var emails = db.collection("emails");
+                    var users = db.collection("users");
+
+                    firebase.auth().onAuthStateChanged(function (user) {
+                        if (user != null) {
+                            var user = firebase.auth().currentUser;
+
+                            user.providerData.forEach(function (profile) {
+                                var username = profile.displayName.toString();
+                                var email = profile.email.toString();
+                                var userDataEmails = emails.doc(username);
+                                var userDataUsers = users.doc(uid);
+
+                                userDataEmails.get().then(function (doc) {
+                                    if (!doc.exists) {
+                                        userDataEmails.set({
+                                            email: email,
+                                            uid: uid,
+                                        }).then(function () {
+                                            console.log("Document successfully written!");
+                                        }).catch(function (error) {
+                                            console.error("Error writing document: ", error);
+                                        });
+                                    } else {
+                                        console.log("Emails doc already exists, skipped writing.");
+                                    }
+                                });
+
+                                userDataUsers.get().then(function (doc) {
+                                    if (!doc.exists) {
+                                        userDataUsers.set({
+                                            displayName: username,
+                                            email: email,
+                                        }).then(function () {
+                                            console.log("Document successfully written!");
+                                        }).catch(function (error) {
+                                            console.error("Error writing document: ", error);
+                                        });
+                                    } else {
+                                        console.log("Users doc already exists, skipped writing.");
+                                    }
+                                });
+                                window.location = "home.html?mode=light";
+                            });
+                        }
+                    })
+                }).catch(function (error) {
+                    var errorCode = error.code;
+                    var errorMessage = error.message;
+                    var email = error.email;
+                    var credential = error.credential;
+                    if (errorCode === 'auth/account-exists-with-different-credential') {
+                        alert('You have already signed up with a different method for that email. If you want to merge your Google account with an Email/Password account, go to the Account page.');
+                    } else {
+                        console.error(error);
+                    }
+                });
+            } else {
+                firebase.auth().signOut();
+                var provider = new firebase.auth.GoogleAuthProvider();
+                firebase.auth().signInWithPopup(provider).then(function (result) {
+                    var token = result.credential.accessToken;
+                    var user = result.user;
+                    var uid = user.uid.toString();
+                    var db = firebase.firestore();
+                    var emails = db.collection("emails");
+                    var users = db.collection("users");
+
+                    firebase.auth().onAuthStateChanged(function (user) {
+                        if (user != null) {
+                            var user = firebase.auth().currentUser;
+
+                            user.providerData.forEach(function (profile) {
+                                var username = profile.displayName.toString();
+                                var email = profile.email.toString();
+                                var userDataEmails = emails.doc(username);
+                                var userDataUsers = users.doc(uid);
+
+                                userDataEmails.get().then(function (doc) {
+                                    if (!doc.exists) {
+                                        userDataEmails.set({
+                                            email: email,
+                                            uid: uid,
+                                        }).then(function () {
+                                            console.log("Document successfully written!");
+                                        }).catch(function (error) {
+                                            console.error("Error writing document: ", error);
+                                        });
+                                    } else {
+                                        console.log("Emails doc already exists, skipped writing.");
+                                    }
+                                });
+
+                                userDataUsers.get().then(function (doc) {
+                                    if (!doc.exists) {
+                                        userDataUsers.set({
+                                            displayName: username,
+                                            email: email,
+                                        }).then(function () {
+                                            console.log("Document successfully written!");
+                                        }).catch(function (error) {
+                                            console.error("Error writing document: ", error);
+                                        });
+                                    } else {
+                                        console.log("Users doc already exists, skipped writing.");
+                                    }
+                                });
+                                window.location = "home.html?mode=light";
+                            });
+                        }
+                    })
+                }).catch(function (error) {
+                    var errorCode = error.code;
+                    var errorMessage = error.message;
+                    var email = error.email;
+                    var credential = error.credential;
+                    if (errorCode === 'auth/account-exists-with-different-credential') {
+                        alert('You have already signed up with a different method for that email. If you want to merge your Google account with an Email/Password account, go to the Account page.');
+                    } else {
+                        console.error(error);
+                    }
+                });
+            }
+        };
+
+    </script>
+</head>
+
+<body>
+    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <main class="mdl-layout__content mdl-color--grey-100">
+            <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
+                <div
+                    class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
+                    <div class="mdl-card__title mdl-color--light-blue-600 mdl-color-text--white">
+                        <h2 class="mdl-card__title-text">Google Authentication</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+
+                        <p>Sign in with your Google account below.</p>
+
+                        <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-in"
+                            onclick="toggleSignIn()">Sign in with Google</button>
+
+                        <p>
+                            <li><a href="https://verycoolmathgames.github.io/">Return to Main Site</a></li>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
