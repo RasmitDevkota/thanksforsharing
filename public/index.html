@@ -60,8 +60,29 @@
     </style>
   </head>
   <body>
-    <p>
-      Hello World!
-    </p>
+    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <main class="mdl-layout__content mdl-color--grey-100">
+        <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
+          <!-- Beginning of the Table of Contents -->
+          <div
+            class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
+            <div class="mdl-card__title mdl-color--light-blue-600 mdl-color-text--white">
+              <h2 class="mdl-card__title-text">Sign In/Sign Up Methods</h2>
+            </div>
+            <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+  
+              <button class="signinoptions" onclick="window.location= 'email-password.html'">Email</button>
+              <br><br>
+              <button class="signinoptions" onclick="window.location = 'google-popup.html'">Google</button>
+              <br><br>
+              <button class="signinoptions" onclick="window.location = 'https://verycoolmathgames.github.io'">Return to
+                Main Site</button>
+  
+            </div>
+          </div>
+          <!-- End of the Table of Contents -->
+        </div>
+      </main>
+    </div>
   </body>
 </html>
