@@ -96,7 +96,6 @@
                     var db = firebase.firestore();
                     var emails = db.collection("emails");
                     var users = db.collection("users");
-                    // stuff
 
                     firebase.auth().onAuthStateChanged(function (user) {
                         if (user != null) {
