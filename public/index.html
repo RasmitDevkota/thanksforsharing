@@ -29,15 +29,16 @@
       db.enablePersistence();
 
       function redirect(pagePath) {
-        if (pagePath === "signout") {
-          auth().signOut();
-          window.location.replace("https://www.thx4sharing.web.app");
-        } else {
-          //var urlParams = new URLSearchParams(window.location.search);
-          //var mode = urlParams.get('mode').toString();
-          //window.location = pagePath + "?mode=" + mode;
+          if (pagePath === "signout") {
+            firebase.auth().signOut();
+            window.location.replace("https://www.thx4sharing.web.app");
+          } else {
+            //var urlParams = new URLSearchParams(window.location.search);
+            //var mode = urlParams.get('mode').toString();
+            window.location = pagePath;
+          };
+          open();
         };
-      };
 
       window.onload = function () {
         //var urlParams = new URLSearchParams(window.location.search);
