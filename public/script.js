@@ -1,6 +1,6 @@
 import firebase from 'firebase';
 
-var firebaseConfig = {
+const app = {
     apiKey: "AIzaSyBVT22t-x2H76119AHG8SgPU0_A0U-N1uA",
     authDomain: "my-scrap-project.firebaseapp.com",
     databaseURL: "https://my-scrap-project.firebaseio.com",
