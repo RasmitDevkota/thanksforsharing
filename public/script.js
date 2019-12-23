@@ -36,7 +36,7 @@ window.onload = function () {
 };
 
 open() {
-    console.log("hi!")
+    console.log("hi!");
 }
 
 function toggleSignIn() {
