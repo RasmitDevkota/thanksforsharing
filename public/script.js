@@ -37,7 +37,7 @@ window.onload = function () {
 
 function open() {
     console.log("hi!");
-}
+};
 
 function toggleSignIn() {
     if (!firebase.auth().currentUser) {
