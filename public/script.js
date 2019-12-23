@@ -3,5 +3,5 @@ window.onload = function() {
 };
 
 function open() {
-    console.log("Hello!")
+    console.log("Hello!");
 };
