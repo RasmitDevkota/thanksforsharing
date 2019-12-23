@@ -35,7 +35,7 @@ window.onload = function () {
     open();
 };
 
-op
+open()
 
 function toggleSignIn() {
     if (!firebase.auth().currentUser) {
