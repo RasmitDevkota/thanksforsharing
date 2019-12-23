@@ -49,79 +49,79 @@
       
       // Email Login
       function displayName() {
-          var user = firebase.auth().currentUser;
-          var db = firebase.firestore();
-          var uid = user.uid;
-          var users = db.collection("users");
-          users.doc(uid).get().then(function (doc) {
-            var displayName = doc.data().displayName;
-            return displayName;
-          });
-        };
-        function toggleSignIn() {
-          var password = document.getElementById('password').value;
-          var username = document.getElementById('username').value;
-          if (username.length < 3) {
-            alert('Please enter a username.');
-            return;
-          }
-          if (password.length < 4) {
-            alert('Please enter a password.');
-            return;
-          }
-
-          var db = firebase.firestore();
-          var emails = db.collection("emails"); // firebase.firestore().collection("emails")
-          var users = db.collection("users"); // firebase.firestore().collection("users")
-          var userData = emails.doc(username); // firebase.firestore().collection("emails").doc(username)
-
-          userData.get().then(function (doc) {
-            if (doc.exists) {
-              console.log("Document data:", doc.data());
-              var email = doc.data().email;
-              var uid = doc.data().uid;
-
-              firebase.auth().signInWithEmailAndPassword(email, password)
-                .then(function () {
-                  firebase.auth().onAuthStateChanged(function (user) {
-                    window.location = "home.html?mode=light";
-                  });
-                })
-                .catch(function (error) {
-                  var errorCode = error.code;
-                  var errorMessage = error.message;
-                  if (errorCode === 'auth/wrong-password') {
-                    alert('Wrong password.');
-                  } else {
-                    alert(errorMessage);
-                  }
-                  console.log(error);
-                });
-            } else {
-              console.log("Document does not exist!");
-              alert("User not found!");
-            }
-          }).catch(function (error) {
-            console.log("Error getting document:", error);
-          });
-        };
-
-        function sendPasswordReset() {
-          window.location = "password-reset.html";
-        };
-
-        function signUp() {
-          window.location = "signup.html";
-        };
-
-        document.addEventListener('keydown', function (event) {
-          var password = document.getElementById('password').value;
-          var username = document.getElementById('username').value;
-          const key = event.key;
-          if (key == "Enter") {
-            toggleSignIn();
-          }
+        var user = firebase.auth().currentUser;
+        var db = firebase.firestore();
+        var uid = user.uid;
+        var users = db.collection("users");
+        users.doc(uid).get().then(function (doc) {
+          var displayName = doc.data().displayName;
+          return displayName;
         });
+      };
+      function toggleSignIn() {
+        var password = document.getElementById('password').value;
+        var username = document.getElementById('username').value;
+        if (username.length < 3) {
+          alert('Please enter a username.');
+          return;
+        }
+        if (password.length < 4) {
+          alert('Please enter a password.');
+          return;
+        }
+
+        var db = firebase.firestore();
+        var emails = db.collection("emails"); // firebase.firestore().collection("emails")
+        var users = db.collection("users"); // firebase.firestore().collection("users")
+        var userData = emails.doc(username); // firebase.firestore().collection("emails").doc(username)
+
+        userData.get().then(function (doc) {
+          if (doc.exists) {
+            console.log("Document data:", doc.data());
+            var email = doc.data().email;
+            var uid = doc.data().uid;
+
+            firebase.auth().signInWithEmailAndPassword(email, password)
+              .then(function () {
+                firebase.auth().onAuthStateChanged(function (user) {
+                  window.location = "home.html?mode=light";
+                });
+              })
+              .catch(function (error) {
+                var errorCode = error.code;
+                var errorMessage = error.message;
+                if (errorCode === 'auth/wrong-password') {
+                  alert('Wrong password.');
+                } else {
+                  alert(errorMessage);
+                }
+                console.log(error);
+              });
+          } else {
+            console.log("Document does not exist!");
+            alert("User not found!");
+          }
+        }).catch(function (error) {
+          console.log("Error getting document:", error);
+        });
+      };
+
+      function sendPasswordReset() {
+        window.location = "password-reset.html";
+      };
+
+      function signUp() {
+        window.location = "signup.html";
+      };
+
+      document.addEventListener('keydown', function (event) {
+        var password = document.getElementById('password').value;
+        var username = document.getElementById('username').value;
+        const key = event.key;
+        if (key == "Enter") {
+          toggleSignIn();
+        }
+      });
       // Email Login End
 
       // Google Login Begin
