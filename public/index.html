@@ -336,6 +336,42 @@
     <!--Popup-->
 
     <!--Email Popup-->
+    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    
+    
+      <main class="mdl-layout__content mdl-color--grey-100">
+        <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
+    
+          <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
+            <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+    
+              <p>Enter an email and password below and either sign in to an existing account or sign up.</p>
+    
+              <input class="mdl-textfield__input" style="display:inline;" type="text" id="username" name="username"
+                placeholder="Username" />
+              &nbsp;&nbsp;&nbsp;
+              <input class="mdl-textfield__input" style="display:inline;" type="password" id="password" name="password"
+                placeholder="Password" />
+              <br /><br />
+    
+              <button class="mdl-button mdl-js-button mdl-button--raised" onclick="toggleSignIn()" name="signin">Sign
+                In</button>
+              &nbsp;&nbsp;&nbsp;
+              <button class="mdl-button mdl-js-button mdl-button--raised" onclick="signUp()" name="signup">Sign Up</button>
+              &nbsp;&nbsp;&nbsp;
+    
+              <button class="mdl-button mdl-js-button mdl-button--raised" onclick="sendPasswordReset()"
+                name="verify-email">Send Password Reset Email</button>
+    
+              <p>
+                <li><a href="https://verycoolmathgames.github.io/">Return to Main Site</a></li>
+              </p>
+    
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
 
   </body>
 </html>
