@@ -32,7 +32,7 @@
       db.enablePersistence()
 
       function redirect(pagePath) {
-        /if (pagePath === "signout") {
+        if (pagePath === "signout") {
           firebase.auth().signOut();
           window.location.replace("https://www.thx4sharing.web.app");
         } else {
