@@ -52,3 +52,31 @@ h3 {
 #sign-in-card {
   z-index: 2;
 }
+
+.button{
+  text-decoration: none;
+  color: #000000;
+  font-family: courier;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.chat {
+  position: fixed;
+  top: 0;
+  right:0;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
