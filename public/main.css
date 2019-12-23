@@ -66,6 +66,7 @@ nav{
   background-color: #343434;
   border: 5px solid #343434;
   border-bottom: 5px solid #343434;
+  box-shadow: 0px 5px 8px #888888;
 }
 .navelement:hover{
   color:red;
