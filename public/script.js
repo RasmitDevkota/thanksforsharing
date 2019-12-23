@@ -1,6 +1,6 @@
 var firebase = ("firebase");
 
-var {
+var firebaseConfig = {
     apiKey: "AIzaSyBVT22t-x2H76119AHG8SgPU0_A0U-N1uA",
     authDomain: "my-scrap-project.firebaseapp.com",
     databaseURL: "https://my-scrap-project.firebaseio.com",
