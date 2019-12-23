@@ -35,6 +35,8 @@ window.onload = function () {
     open();
 };
 
+op
+
 function toggleSignIn() {
     if (!firebase.auth().currentUser) {
         var provider = new firebase.auth.GoogleAuthProvider();
