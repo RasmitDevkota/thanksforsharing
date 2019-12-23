@@ -56,7 +56,8 @@ h3 {
 nav{
   display:flex;
   flex-direction: row;
-  background-color:
+  background-color: #343434;
+  
 }
 .navelement{
   padding: 1%;
