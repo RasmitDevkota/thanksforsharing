@@ -54,7 +54,8 @@ h3 {
 }
 /* navabar */
 nav{
-  
+  display:flex;
+  flex-direction: rowl
 }
 .navelement{
   padding: 1%;
