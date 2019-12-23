@@ -64,7 +64,7 @@ nav{
   margin: 0;
   color: white;
   background-color: #343434;
-  border
+  border: 5px
   border-bottom: 5px solid #343434;
 }
 .navelement:hover{
