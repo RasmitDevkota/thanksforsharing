@@ -11,7 +11,6 @@
 
     <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase.js"></script>
 
-    <!--Email Login-->
     <script>
       firebase.initializeApp({
         apiKey: "AIzaSyBVT22t-x2H76119AHG8SgPU0_A0U-N1uA",
@@ -47,6 +46,7 @@
         //  document.getElementByTagName("html").id = "dark";
         //}
       };
+      
 
       function toggleSignIn() {
         if (!auth().currentUser) {
@@ -237,8 +237,9 @@
          <!--Beginning of Dropdown-->
          <a id="home" class="navelement dropbtn" onclick="redirect('index.html')">Contact Info</a>
 
+         <!--Beginning of Dropdown-->
+         <a id="home" class="navelement dropbtn" onclick="redirect('index.html')">
 
-         
          <!--End of Dropdown-->&nbsp;&nbsp;&nbsp;
         
         <!--Beginning of Sign in button-->
