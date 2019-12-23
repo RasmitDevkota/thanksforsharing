@@ -1,3 +1,9 @@
+import * as firebase from "firebase/app";
+
+// Add the Firebase services that you want to use
+import "firebase/auth";
+import "firebase/firestore";
+
 firebase.initializeApp({
     apiKey: "AIzaSyBVT22t-x2H76119AHG8SgPU0_A0U-N1uA",
     authDomain: "my-scrap-project.firebaseapp.com",
