@@ -1,6 +1,6 @@
-import { initializeApp, auth, firestore } from "firebase";
+var firebase = require("firebase");
 
-const firebase = initializeApp({
+const firebase = firebase.initializeApp({
     apiKey: "AIzaSyBVT22t-x2H76119AHG8SgPU0_A0U-N1uA",
     authDomain: "my-scrap-project.firebaseapp.com",
     databaseURL: "https://my-scrap-project.firebaseio.com",
@@ -11,13 +11,13 @@ const firebase = initializeApp({
     measurementId: "G-66W8QQ9W35"
 });
 
-var user = auth().currentUser;
-var db = firestore();
+var user = firebase.auth().currentUser;
+var db = firebase.firestore();
 db.enablePersistence();
 
 function redirect(pagePath) {
     if (pagePath === "signout") {
-        auth().signOut();
+        firebase.auth().signOut();
         window.location.replace("https://www.thx4sharing.web.app");
     } else {
         //var urlParams = new URLSearchParams(window.location.search);
@@ -40,20 +40,20 @@ function open() {
 };
 
 function toggleSignIn() {
-    if (!auth().currentUser) {
-        var provider = new auth.GoogleAuthProvider();
+    if (!firebase.auth().currentUser) {
+        var provider = new firebase.auth.GoogleAuthProvider();
 
-        auth().signInWithPopup(provider).then(function (result) {
+        firebase.auth().signInWithPopup(provider).then(function (result) {
             var token = result.credential.accessToken;
             var user = result.user;
             var uid = user.uid.toString();
-            var db = firestore();
+            var db = firebase.firestore();
             var emails = db.collection("emails");
             var users = db.collection("users");
 
-            auth().onAuthStateChanged(function (user) {
+            firebase.auth().onAuthStateChanged(function (user) {
                 if (user != null) {
-                    var user = auth().currentUser;
+                    var user = firebase.auth().currentUser;
 
                     user.providerData.forEach(function (profile) {
                         var username = profile.displayName.toString();
@@ -106,19 +106,19 @@ function toggleSignIn() {
             }
         });
     } else {
-        auth().signOut();
-        var provider = new auth.GoogleAuthProvider();
-        auth().signInWithPopup(provider).then(function (result) {
+        firebase.auth().signOut();
+        var provider = new firebase.auth.GoogleAuthProvider();
+        firebase.auth().signInWithPopup(provider).then(function (result) {
             var token = result.credential.accessToken;
             var user = result.user;
             var uid = user.uid.toString();
-            var db = firestore();
+            var db = firebase.firestore();
             var emails = db.collection("emails");
             var users = db.collection("users");
 
-            auth().onAuthStateChanged(function (user) {
+            firebase.auth().onAuthStateChanged(function (user) {
                 if (user != null) {
-                    var user = auth().currentUser;
+                    var user = firebase.auth().currentUser;
 
                     user.providerData.forEach(function (profile) {
                         var username = profile.displayName.toString();
