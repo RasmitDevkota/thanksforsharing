@@ -43,16 +43,6 @@ h3 {
   padding-left: 50px;
   color: white;
 }
-#verification-code-form {
-  display:none;
-}
-#recaptcha-container {
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-#verify-code-button, #cancel-verify-code-button {
-  margin-left: 20px;
-}
 #sign-out-button {
   display: none;
 }
