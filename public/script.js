@@ -1,4 +1,4 @@
-import firebase from "/firebase";
+import firebase from "/$GetCurrentfirebase";
 
 firebase.initializeApp({
     apiKey: "AIzaSyBVT22t-x2H76119AHG8SgPU0_A0U-N1uA",
