@@ -35,7 +35,7 @@ window.onload = function () {
     open();
 };
 
-open() {
+function open() {
     console.log("hi!");
 }
 
