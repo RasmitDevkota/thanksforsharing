@@ -100,19 +100,4 @@ body {
   .text {font-size: 11px}
 }
 ::-webkit-scrollbar {
-        width: 14px;
-      }
-
-      ::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 5px grey;
-        border-radius: 8px;
-      }
-
-      ::-webkit-scrollbar-thumb {
-        background: red;
-        border-radius: 8px;
-      }
-
-      ::-webkit-scrollbar-thumb:hover {
-        background: red;
-      }
+ 
