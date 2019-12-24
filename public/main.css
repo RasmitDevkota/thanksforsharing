@@ -102,5 +102,5 @@ body {
   border-radius: 8px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: red;
+  background: rgb(224, 0, 0);
 }
