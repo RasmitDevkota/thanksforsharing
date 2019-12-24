@@ -45,7 +45,7 @@ function view(memeid) {
             var views = doc.data().views;
             var productRef = doc.data().id.toString();
             console.log(views);
-            memeRedirect(pro);
+            memeRedirect(productRef);
         });
     }).catch(function (error) {
         console.error("Error updating document: ", error);
