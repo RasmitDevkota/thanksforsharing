@@ -1,3 +1,4 @@
+window.onload = function()
 
 // Email Login
 function displayName() {
