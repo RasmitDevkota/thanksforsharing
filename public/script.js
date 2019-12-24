@@ -43,7 +43,7 @@ function view(memeid) {
         console.log("Document successfully updated!");
         productReference.onSnapshot(function (doc) {
             var views = doc.data().views;
-            var memeRef = doc.data().id.toString();
+            var productRef = doc.data().id.toString();
             console.log(views);
             memeRedirect(memeRef);
         });
