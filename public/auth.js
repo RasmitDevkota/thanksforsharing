@@ -58,7 +58,6 @@ function eToggleSignIn() {
 };
 // Email Login End
 
-
 // document.addEventListener('keydown', function (event) {
 //     var password = document.getElementById('password').value;
 //     var username = document.getElementById('username').value;
