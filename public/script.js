@@ -62,7 +62,7 @@ function filter(field) {
             var price = doc.data().price.toString();
 
             var outerDiv = document.createElement("div");
-            document.getElementById("").appendChild(outerDiv);
+            document.getElementById("Results").appendChild(outerDiv);
             outerDiv.id = "outer" + title + "upvotes";
 
             var meme = document.createElement("p");
