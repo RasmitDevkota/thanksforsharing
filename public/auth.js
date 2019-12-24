@@ -67,7 +67,7 @@ function eToggleSignIn() {
             eToggleSignIn();
         }
     });
-};
+
 
 // Google Login Begin
 function gToggleSignIn() {
