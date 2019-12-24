@@ -66,7 +66,7 @@ function filter(field) {
             outerDiv.id = "outer" + name;
 
             var product = document.createElement("p");
-            product.innerHTML = title;
+            product.innerHTML = name;
             product.className = "product";
             product.onclick = function () {
                 view(productRef);
