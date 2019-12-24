@@ -22,6 +22,7 @@ window.onload = function () {
     // if (mode == "dark") {
     //     document.getElementByTagName("html").id = "dark";
     // }
+    
 };
 
 function view(productid) {
