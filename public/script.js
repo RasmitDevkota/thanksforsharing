@@ -38,8 +38,8 @@ function view(memeid) {
     var newViews = {
         views: firebase.firestore.FieldValue.increment(1)
     };
-    
-    return memeReference.update(newViews).then(function () {
+
+    return productReference.update(newViews).then(function () {
         console.log("Document successfully updated!");
         memeReference.onSnapshot(function (doc) {
             var views = doc.data().views;
