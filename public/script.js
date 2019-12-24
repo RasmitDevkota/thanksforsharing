@@ -27,7 +27,7 @@ window.onload = function () {
 function view(memeid) {
     var productRef = Products.doc(productid);
 
-    productRef.onSnapshot(function (doc) {
+    productReference.onSnapshot(function (doc) {
         var views = doc.data().views;
         var rating = doc.data().rating;
         var price = doc.data().price;
