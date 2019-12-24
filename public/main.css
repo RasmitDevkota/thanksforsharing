@@ -31,7 +31,7 @@ html, body {
   padding: 0;
 }
 #search {
-  
+
 }
 pre {
   overflow-x: scroll;
@@ -72,9 +72,6 @@ nav{
   color:red;
   border-bottom: 5px solid red;
 }
-/*.search{
-
-}*/
 .button{
   text-decoration: none;
   color: #000000;
