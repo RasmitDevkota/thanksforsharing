@@ -65,7 +65,7 @@ function filter(field) {
             document.getElementById("Results").appendChild(outerDiv);
             outerDiv.id = "outer" + name;
 
-            var  = document.createElement("p");
+            var product = document.createElement("p");
             meme.innerHTML = title;
             meme.className = "meme";
             meme.onclick = function () {
