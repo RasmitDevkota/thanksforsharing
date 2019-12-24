@@ -66,7 +66,7 @@ function eToggleSignIn() {
         if (key == "Enter") {
             eToggleSignIn();
         }
-    });
+{}    });
 
 
 // Google Login Begin
