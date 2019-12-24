@@ -56,5 +56,5 @@ function productRedirect(ref) {
     // var urlParams = new URLSearchParams(window.location.search);
     // var mode = urlParams.get('mode').toString();
 
-    window.location = "product.html" + ref.to;
+    window.location = "product.html" + ref.toString;
 };
