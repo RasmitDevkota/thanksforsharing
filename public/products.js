@@ -1,4 +1,3 @@
-
 var Products = db.collection("products");
 
 function view(productid) {
