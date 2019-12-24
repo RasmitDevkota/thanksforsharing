@@ -80,7 +80,6 @@ nav{
 .button:hover {
   cursor: pointer;
 }
-
 .chat {
   position: fixed;
   top: 0;
