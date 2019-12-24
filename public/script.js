@@ -9,8 +9,8 @@ function redirect(pagePath) {
         firebase.auth().signOut();
         window.location.replace("https://verycoolmathgames.github.io");
     } else {
-        var urlParams = new URLSearchParams(window.location.search);
-        var mode = urlParams.get('mode').toString();
+        // var urlParams = new URLSearchParams(window.location.search);
+        // var mode = urlParams.get('mode').toString();
 
         window.location = "../" + pagePath;
     };
