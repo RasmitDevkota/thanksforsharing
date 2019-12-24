@@ -53,30 +53,29 @@ function view(memeid) {
 };
 
 function filter() {
+    Products.orderBy(field, "desc").get().then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+            var title = doc.data().title.toString();
+            var memeDesc = doc.data().description.toString();
+            var memeRef = doc.data().id.toString();
+            var upvotes = doc.data().upvotes.toString();
+            var releaseDate = doc.data().releaseDate.toString();
+            var memeid = doc.data().id.toString();
 
-};
-Products.orderBy(field, "desc").get().then((querySnapshot) => {
-    querySnapshot.forEach((doc) => {
-        var title = doc.data().title.toString();
-        var memeDesc = doc.data().description.toString();
-        var memeRef = doc.data().id.toString();
-        var upvotes = doc.data().upvotes.toString();
-        var releaseDate = doc.data().releaseDate.toString();
-        var memeid = doc.data().id.toString();
+            var outerDiv = document.createElement("div");
+            document.getElementById("mostUpvotes").appendChild(outerDiv);
+            outerDiv.id = "outer" + title + "upvotes";
 
-        var outerDiv = document.createElement("div");
-        document.getElementById("mostUpvotes").appendChild(outerDiv);
-        outerDiv.id = "outer" + title + "upvotes";
-
-        var meme = document.createElement("p");
-        meme.innerHTML = title;
-        meme.className = "meme";
-        meme.onclick = function () {
-            view(memeid);
-        };
-        document.getElementById(outerDiv.id).appendChild(product);
+            var meme = document.createElement("p");
+            meme.innerHTML = title;
+            meme.className = "meme";
+            meme.onclick = function () {
+                view(memeid);
+            };
+            document.getElementById(outerDiv.id).appendChild(product);
+        });
     });
-});
+};
 
 function productRedirect(ref) {
     // var urlParams = new URLSearchParams(window.location.search);
