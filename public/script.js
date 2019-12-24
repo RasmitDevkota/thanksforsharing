@@ -57,7 +57,7 @@ function filter(field) {
         querySnapshot.forEach((doc) => {
             var name = doc.data().name.toString();
             var desc = doc.data().description.toString();
-            var memeRef = doc.data().id.toString();
+            var productRef = doc.data().id.toString();
             var upvotes = doc.data().upvotes.toString();
             var releaseDate = doc.data().releaseDate.toString();
             var memeid = doc.data().id.toString();
