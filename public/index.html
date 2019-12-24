@@ -13,17 +13,7 @@
     <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase.js"></script>
     <script src="script.js"></script> 
 
-    <script>function redirect(pagePath) {
-        if (pagePath === "signout") {
-          firebase.auth().signOut();
-          window.location.replace("https://www.thx4sharing.web.app");
-        } else {
-          //var urlParams = new URLSearchParams(window.location.search);
-          //var mode = urlParams.get('mode').toString();
-          window.location = pagePath;
-        };
-        open();
-      };
+    <script>
 
       window.onload = function () {
         //var urlParams = new URLSearchParams(window.location.search);
