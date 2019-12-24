@@ -104,15 +104,6 @@
           console.log("Error getting document:", error);
         });
       };
-
-      document.addEventListener('keydown', function (event) {
-        var password = document.getElementById('password').value;
-        var username = document.getElementById('username').value;
-        const key = event.key;
-        if (key == "Enter") {
-          eToggleSignIn();
-        }
-      });
       // Email Login End
 
       // Google Login Begin
