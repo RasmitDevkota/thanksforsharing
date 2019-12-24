@@ -59,7 +59,7 @@ function eToggleSignIn() {
 // Email Login End
 
 
-document.addEventListener('keydown', function (event) {
+document.addEventListener('keydown', function (event) {v
     const key = event.key;
     if (key == "Enter") {
         eToggleSignIn();
