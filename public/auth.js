@@ -61,8 +61,8 @@ function eToggleSignIn() {
 
     document.addEventListener('keydown', function (event) {
         var password = document.getElementById('password').value;
-        var username = document.getElementById('username').value;
-        const key = event.key;
+            var username = document.getElementById('username').value;
+    const key = event.key;
     if (key == "Enter") {
         eToggleSignIn();
     }
