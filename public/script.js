@@ -7,7 +7,7 @@ var Products = db.collection("products");
 function redirect(pagePath) {
     if (pagePath === "signout") {
         firebase.auth().signOut();
-        window.location.replace("https://verycoolmathgames.github.io");
+        window.location.replace("../");
     } else {
         // var urlParams = new URLSearchParams(window.location.search);
         // var mode = urlParams.get('mode').toString();
