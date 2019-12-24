@@ -58,7 +58,7 @@ function filter(field) {
             var name = doc.data().name.toString();
             var desc = doc.data().description.toString();
             var productRef = doc.data().id.toString();
-            var view = doc.data().upvotes.toString();
+            var views = doc.data().upvotes.toString();
             var releaseDate = doc.data().releaseDate.toString();
             var memeid = doc.data().id.toString();
 
