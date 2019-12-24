@@ -68,7 +68,6 @@ function eToggleSignIn() {
 //     }
 // });
 
-
 // Google Login Begin
 function gToggleSignIn() {
     if (!firebase.auth().currentUser) {
