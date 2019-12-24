@@ -41,7 +41,7 @@ function view(memeid) {
 
     return productReference.update(newViews).then(function () {
         console.log("Document successfully updated!");
-        memeReference.onSnapshot(function (doc) {
+        Produ.onSnapshot(function (doc) {
             var views = doc.data().views;
             var memeRef = doc.data().id.toString();
             console.log(views);
