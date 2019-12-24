@@ -1,5 +1,5 @@
 window.onload = function () {
-    
+    this.document.g
 };
 
 // Email Login
