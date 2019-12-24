@@ -69,7 +69,7 @@
           alert('Please enter a longer password.');
           return;
         }
-        
+
         var emails = db.collection("emails"); // firebase.firestore().collection("emails")
         var users = db.collection("users"); // firebase.firestore().collection("users")
         var userData = emails.doc(username); // firebase.firestore().collection("emails").doc(username)
@@ -105,7 +105,7 @@
         });
       };
 
-      document.addEventListener('keydown', function (event) {
+      if document.addEventListener('keydown', function (event) {
         var password = document.getElementById('password').value;
         var username = document.getElementById('username').value;
         const key = event.key;
