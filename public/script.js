@@ -52,7 +52,7 @@ function view(memeid) {
     });
 };
 
-function ()
+function (filter)
 Products.orderBy(field, "desc").get().then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
         var title = doc.data().title.toString();
