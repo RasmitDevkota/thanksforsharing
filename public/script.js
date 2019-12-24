@@ -52,7 +52,7 @@ function view(memeid) {
     });
 };
 
-Products.orderBy("upvotes", "desc").get().then((querySnapshot) => {
+Products.orderBy(, "desc").get().then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
         var title = doc.data().title.toString();
         var memeDesc = doc.data().description.toString();
