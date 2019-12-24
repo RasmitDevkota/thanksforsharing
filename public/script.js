@@ -25,7 +25,6 @@ window.onload = function () {
 };
 
 function view(memeid) {
-    var Memes = db.collection("memes");
     var memeReference = Memes.doc(memeid);
 
     memeReference.onSnapshot(function (doc) {
