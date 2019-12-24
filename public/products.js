@@ -1,4 +1,5 @@
 var Products = db.collection("products");
+var ShoppingCart = db.collection("")
 
 function view(productid) {
     var productReference = Products.doc(productid);
@@ -60,5 +61,5 @@ function productRedirect(ref) {
 };
 
 function shoppingCart() {
-    
+
 };
