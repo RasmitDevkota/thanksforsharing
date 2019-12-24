@@ -35,7 +35,7 @@ function eToggleSignIn() {
             firebase.auth().signInWithEmailAndPassword(email, password)
                 .then(function () {
                     firebase.auth().onAuthStateChanged(function (user) {
-                        window.location = "index.html?mode=light";
+                        window.location = "index.html";
                     });
                 })
                 .catch(function (error) {
