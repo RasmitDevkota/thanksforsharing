@@ -33,4 +33,4 @@ window.onload = function () {
     // }
 };
 
-function log()
+function log(text)
