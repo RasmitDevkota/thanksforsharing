@@ -8,7 +8,7 @@ function view(productid) {
         var rating = doc.data().rating;
         var price = doc.data().price;
         var productRef = doc.data().id.toString();
-        console.log("Views: ", views, " Rating: ", rating, " Price: ", price);
+        log("Views: ", views, " Rating: ", rating, " Price: ", price);
     });
 
     var newViews = {
@@ -16,11 +16,11 @@ function view(productid) {
     };
 
     return productReference.update(newViews).then(function () {
-        console.log("Document successfully updated!");
+        log("Document successfully updated!");
         productReference.onSnapshot(function (doc) {
             var views = doc.data().views;
             var productRef = doc.data().id.toString();
-            console.log(views);
+            log(views);
             memeRedirect(productRef);
         });
     }).catch(function (error) {

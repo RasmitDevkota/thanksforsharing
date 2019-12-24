@@ -28,7 +28,7 @@ function eToggleSignIn() {
 
     userData.get().then(function (doc) {
         if (doc.exists) {
-            console.log("Document data:", doc.data());
+            log("Document data:", doc.data());
             var email = doc.data().email;
             var uid = doc.data().uid;
 
@@ -46,14 +46,14 @@ function eToggleSignIn() {
                     } else {
                         alert(errorMessage);
                     }
-                    console.log(error);
+                    log(error);
                 });
         } else {
-            console.log("Document does not exist!");
+            log("Document does not exist!");
             alert("User not found!");
         }
     }).catch(function (error) {
-        console.log("Error getting document:", error);
+        log("Error getting document:", error);
     });
 };
 // Email Login End
@@ -96,12 +96,12 @@ function gToggleSignIn() {
                                     email: email,
                                     uid: uid,
                                 }).then(function () {
-                                    console.log("Document successfully written!");
+                                    log("Document successfully written!");
                                 }).catch(function (error) {
                                     console.error("Error writing document: ", error);
                                 });
                             } else {
-                                console.log("Emails doc already exists, skipped writing.");
+                                log("Emails doc already exists, skipped writing.");
                             }
                         });
 
@@ -111,12 +111,12 @@ function gToggleSignIn() {
                                     displayName: username,
                                     email: email,
                                 }).then(function () {
-                                    console.log("Document successfully written!");
+                                    log("Document successfully written!");
                                 }).catch(function (error) {
                                     console.error("Error writing document: ", error);
                                 });
                             } else {
-                                console.log("Users doc already exists, skipped writing.");
+                                log("Users doc already exists, skipped writing.");
                             }
                         });
                         window.location = "index.html?mode=light";
@@ -161,12 +161,12 @@ function gToggleSignIn() {
                                     email: email,
                                     uid: uid,
                                 }).then(function () {
-                                    console.log("Document successfully written!");
+                                    log("Document successfully written!");
                                 }).catch(function (error) {
                                     console.error("Error writing document: ", error);
                                 });
                             } else {
-                                console.log("Emails doc already exists, skipped writing.");
+                                log("Emails doc already exists, skipped writing.");
                             }
                         });
 
@@ -176,12 +176,12 @@ function gToggleSignIn() {
                                     displayName: username,
                                     email: email,
                                 }).then(function () {
-                                    console.log("Document successfully written!");
+                                    log("Document successfully written!");
                                 }).catch(function (error) {
                                     console.error("Error writing document: ", error);
                                 });
                             } else {
-                                console.log("Users doc already exists, skipped writing.");
+                                log("Users doc already exists, skipped writing.");
                             }
                         });
                         window.location = "index.html?mode=light";
