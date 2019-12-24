@@ -30,7 +30,7 @@ function view(memeid) {
     productRef.onSnapshot(function (doc) {
         var views = doc.data().views;
         var rating = doc.data().rating;
-        var price = doc.data().price'
+        var price = doc.data().price;
         var memeRef = doc.data().id.toString();
         console.log(views);
     });
