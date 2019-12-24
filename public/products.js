@@ -1,3 +1,6 @@
+
+var Products = db.collection("products");
+
 function view(productid) {
     var productReference = Products.doc(productid);
 
