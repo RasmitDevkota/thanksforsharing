@@ -34,5 +34,5 @@ window.onload = function () {
 };
 
 function log(text) {
-    console.log(text);
+    log(text);
 };
