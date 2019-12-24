@@ -25,7 +25,7 @@ window.onload = function () {
 };
 
 function view(memeid) {
-    var PP = Products.doc(productid);
+    var productRef = Products.doc(productid);
 
     memeReference.onSnapshot(function (doc) {
         var views = doc.data().views;
