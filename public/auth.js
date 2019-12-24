@@ -63,9 +63,9 @@ function eToggleSignIn() {
         var password = document.getElementById('password').value;
         var username = document.getElementById('username').value;
         const key = event.key;
-        if (key == "Enter") {
-            eToggleSignIn();
-        }
+    if (key == "Enter") {
+        eToggleSignIn();
+    }
 });
 
 
