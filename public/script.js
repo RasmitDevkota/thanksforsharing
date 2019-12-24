@@ -24,7 +24,7 @@ window.onload = function () {
     // }
 };
 
-function view(product) {
+function view(productid) {
     var productReference = Products.doc(productid);
 
     productReference.onSnapshot(function (doc) {
