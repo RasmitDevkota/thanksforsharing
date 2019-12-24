@@ -1,5 +1,3 @@
-firebase.initializeApp({
-});
 
 var user = firebase.auth().currentUser;
 var db = firebase.firestore();
