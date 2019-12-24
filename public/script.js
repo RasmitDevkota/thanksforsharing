@@ -7,7 +7,7 @@ var Products = db.collection("products");
 function redirect(pagePath) {
     if (pagePath === "signout") {
         firebase.auth().signOut();
-        window.location.replace("../");
+        window.location.replace("thx4sharing.web.app");
     } else {
         // var urlParams = new URLSearchParams(window.location.search);
         // var mode = urlParams.get('mode').toString();
