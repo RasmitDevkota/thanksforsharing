@@ -33,7 +33,6 @@ window.onload = function () {
     // if (mode == "dark") {
     //     document.getElementByTagName("html").id = "dark";
     // }
-    this.console.log("hello!");
 };
 
 function view(productid) {
