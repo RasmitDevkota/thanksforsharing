@@ -53,7 +53,7 @@ function view(memeid) {
 };
 
 function filter(field) {
-    Products.orderBy(field, "desc").get().then((querySnapshot) => {
+    Products.orderBy(field).get().then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
             var title = doc.data().title.toString();
             var memeDesc = doc.data().description.toString();
