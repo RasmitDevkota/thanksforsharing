@@ -49,7 +49,7 @@ h3 {
 #sign-in-card {
   z-index: 2;
 }
-/* navabar */
+/* navbar */
 nav{
   display:flex;
   flex-direction: row;
