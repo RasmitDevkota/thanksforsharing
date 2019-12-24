@@ -78,52 +78,6 @@ Products.orderBy(field, "desc").get().then((querySnapshot) => {
     });
 });
 
-Memes.orderBy("releaseDate", "desc").get().then((querySnapshot) => {
-    querySnapshot.forEach((doc) => {
-        var title = doc.data().title.toString();
-        var memeDesc = doc.data().description.toString();
-        var memeRef = doc.data().id.toString();
-        var upvotes = doc.data().upvotes.toString();
-        var releaseDate = doc.data().releaseDate.toString();
-        var memeid = doc.data().id.toString();
-
-        var outerDiv = document.createElement("div");
-        document.getElementById("newest").appendChild(outerDiv);
-        outerDiv.id = "outer" + title + "new";
-
-        var meme = document.createElement("p");
-        meme.innerHTML = title;
-        meme.className = "meme";
-        meme.onclick = function () {
-            view(memeid);
-        };
-        document.getElementById(outerDiv.id).appendChild(meme);
-    });
-});
-
-Memes.orderBy("views", "desc").get().then((querySnapshot) => {
-    querySnapshot.forEach((doc) => {
-        var title = doc.data().title.toString();
-        var memeDesc = doc.data().description.toString();
-        var memeRef = doc.data().id.toString();
-        var upvotes = doc.data().upvotes.toString();
-        var releaseDate = doc.data().releaseDate.toString();
-        var memeid = doc.data().id.toString();
-
-        var outerDiv = document.createElement("div");
-        document.getElementById("mostViewed").appendChild(outerDiv);
-        outerDiv.id = "outer" + title + "views";
-
-        var meme = document.createElement("p");
-        meme.innerHTML = title;
-        meme.className = "meme";
-        meme.onclick = function () {
-            view(memeid);
-        };
-        document.getElementById(outerDiv.id).appendChild(meme);
-    });
-});
-
 function memeRedirect(ref) {
     var urlParams = new URLSearchParams(window.location.search);
     var mode = urlParams.get('mode').toString();
