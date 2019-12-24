@@ -36,3 +36,4 @@ window.onload = function () {
 function log(text) {
     log(text);
 };
+
