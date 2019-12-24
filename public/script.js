@@ -82,5 +82,5 @@ function productRedirect(ref) {
     // var urlParams = new URLSearchParams(window.location.search);
     // var mode = urlParams.get('mode').toString();
 
-    window.location = "".html"
+    window.location = "product.html"
 };
