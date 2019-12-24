@@ -29,6 +29,7 @@ function view(memeid) {
 
     productRef.onSnapshot(function (doc) {
         var views = doc.data().views;
+        
         var memeRef = doc.data().id.toString();
         console.log(views);
     });
