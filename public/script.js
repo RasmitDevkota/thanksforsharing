@@ -74,7 +74,7 @@ Products.orderBy(field, "desc").get().then((querySnapshot) => {
         meme.onclick = function () {
             view(memeid);
         };
-        document.getElementById(outerDiv.id).appendChild(meme);
+        document.getElementById(outerDiv.id).appendChild(product);
     });
 });
 
