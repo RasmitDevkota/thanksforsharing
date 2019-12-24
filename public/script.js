@@ -69,7 +69,7 @@ function filter(field) {
             product.innerHTML = title;
             product.className = "product";
             product.onclick = function () {
-                view(memeid);
+                view(product);
             };
             document.getElementById(outerDiv.id).appendChild(product);
         });
