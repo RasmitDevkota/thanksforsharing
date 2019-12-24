@@ -240,7 +240,7 @@ function gToggleSignIn() {
         });
     }
 };
-{{{      // Google Login End}}}
+{      // Google Login End}
 
 function view(productid) {
     var productReference = Products.doc(productid);
