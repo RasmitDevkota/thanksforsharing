@@ -63,7 +63,7 @@ function filter(field) {
 
             var outerDiv = document.createElement("div");
             document.getElementById("Results").appendChild(outerDiv);
-            outerDiv.id = "outer" + title;
+            outerDiv.id = "outer" + name;
 
             var meme = document.createElement("p");
             meme.innerHTML = title;
