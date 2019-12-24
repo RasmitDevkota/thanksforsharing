@@ -50,8 +50,6 @@
       
       // Email Login
       function displayName() {
-        var user = firebase.auth().currentUser;
-        var db = firebase.firestore();
         var uid = user.uid;
         var users = db.collection("users");
         users.doc(uid).get().then(function (doc) {
