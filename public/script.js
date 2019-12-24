@@ -78,7 +78,7 @@ Products.orderBy(field, "desc").get().then((querySnapshot) => {
     });
 });
 
-function memeRedirect(ref) {
+function prod(ref) {
     var urlParams = new URLSearchParams(window.location.search);
     var mode = urlParams.get('mode').toString();
 
