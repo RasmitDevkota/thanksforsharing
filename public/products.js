@@ -59,4 +59,4 @@ function productRedirect(ref) {
     window.location = "product.html" + ref.toString();
 };
 
-function 
+function r
