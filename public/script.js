@@ -32,7 +32,7 @@ function view(memeid) {
         var rating = doc.data().rating;
         var price = doc.data().price;
         var memeRef = doc.data().id.toString();
-        console.log("Views:", views, rating, price);
+        console.log("Views:", views, "rating, price);
     });
 
     var newViews = {
