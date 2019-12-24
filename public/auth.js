@@ -1,7 +1,3 @@
-window.onload = function () {
-    this.document.getElementById("ema
-};
-
 // Email Login
 function displayName() {
     var uid = user.uid;
