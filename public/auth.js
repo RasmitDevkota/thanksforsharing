@@ -61,7 +61,7 @@ function eToggleSignIn() {
 
 document.addEventListener('keydown', function (event) {
     const key = event.key;
-    if (key == "Enter" && ) {
+    if (key == "Enter") {
         eToggleSignIn();
     }
 });
