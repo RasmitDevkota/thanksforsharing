@@ -61,4 +61,4 @@ function productRedirect(ref) {
 
 function shoppingCart() {
     
-}
+};
