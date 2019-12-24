@@ -58,7 +58,7 @@ function eToggleSignIn() {
 };
 // Email Login End
 
-while (document.getElementById("email").style.display == "block") {
+{
     document.addEventListener('keydown', function (event) {
         var password = document.getElementById('password').value;
         var username = document.getElementById('username').value;
