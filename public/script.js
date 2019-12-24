@@ -66,9 +66,9 @@ function filter(field) {
             outerDiv.id = "outer" + name;
 
             var product = document.createElement("p");
-            meme.innerHTML = title;
-            meme.className = "meme";
-            meme.onclick = function () {
+            product.innerHTML = title;
+            product.className = "product";
+            product.onclick = function () {
                 view(memeid);
             };
             document.getElementById(outerDiv.id).appendChild(product);
