@@ -36,7 +36,7 @@ function eToggleSignIn() {
                 .then(function () {
                     firebase.auth().onAuthStateChanged(function (user) {
                         close("email");
-                        document.getElementById("signin").te
+                        document.getElementById("signin").textContent = ""
                     });
                 })
                 .catch(function (error) {
