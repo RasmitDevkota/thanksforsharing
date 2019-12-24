@@ -23,7 +23,7 @@ function redirect(pagePath) {
         // var urlParams = new URLSearchParams(window.location.search);
         // var mode = urlParams.get('mode').toString();
 
-        window.location = "../" + pagePath;
+        window.location = "https;
     };
 };
 
