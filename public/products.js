@@ -68,4 +68,6 @@ function rate(val) {
 
 };
 
-function checkOut(productid)
+function checkOut(productid) {
+    
+}
