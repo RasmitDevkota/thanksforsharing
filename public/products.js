@@ -68,4 +68,4 @@ function rate(val) {
 
 };
 
-function 
+function checkOut()
