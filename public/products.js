@@ -22,7 +22,7 @@ function view(productid) {
             var views = doc.data().views;
             var productRef = doc.data().id.toString();
             log(views);
-            productredirect(productRef);
+            productRedirect(productRef);
         });
     }).catch(function (error) {
         console.error("Error updating document: ", error);
