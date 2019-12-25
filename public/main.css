@@ -32,6 +32,7 @@ html, body {
 }
 #search {
 height: 50%;
+border-bottom: red;
 }
 pre {
   overflow-x: scroll;
