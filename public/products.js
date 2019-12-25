@@ -64,7 +64,7 @@ function productRedirect(id) {
 function addToCart(productid) {
     cart = ShoppingCart.doc(user.displayName);
     cart.set({
-        itemCnt: firebase.firestore.FieldValue.increment(-1)
+        itemCnt: firebase.firestore.FieldValue.increment(1)
     });
 };
 
