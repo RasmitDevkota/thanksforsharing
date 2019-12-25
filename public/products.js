@@ -62,7 +62,7 @@ function productRedirect(id) {
 };
 
 function addToCart(productid) {
-    product = Products.doc(productid);
+    cart = Products.doc(productid);
     product.set({
         inventory: firebase.firestore.FieldValue.increment(-1)
     });
