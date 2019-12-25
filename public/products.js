@@ -65,7 +65,7 @@ function addToCart(productid) {
     product = Products.doc(productid);
     product.set({
         
-    })
+    });
 };
 
 function rate(val) {
