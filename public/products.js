@@ -8,7 +8,7 @@ function view(productid) {
         var views = doc.data().views;
         var rating = doc.data().rating;
         var price = doc.data().price;
-        var productRef = doc.data().id.toString();
+        var productid = doc.data().id.toString();
         log("Views: ", views, " Rating: ", rating, " Price: ", price);
     });
 
