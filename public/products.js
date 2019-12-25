@@ -34,7 +34,7 @@ function filter(field) {
         querySnapshot.forEach((doc) => {
             var name = doc.data().name.toString();
             var desc = doc.data().description.toString();
-            var productRef = doc.data().id.toString();
+            var productid = doc.data().id.toString();
             var views = doc.data().views.toString();
             var price = doc.data().price.toString();
 
