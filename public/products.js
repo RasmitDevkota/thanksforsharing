@@ -57,7 +57,7 @@ function productRedirect(id) {
     // var urlParams = new URLSearchParams(window.location.search);
     // var mode = urlParams.get('mode').toString();
 
-    window.location = "product.html" + ref.toString();
+    window.location = "product.html" + id.toString();
 };
 
 function addToCart(productid) {
