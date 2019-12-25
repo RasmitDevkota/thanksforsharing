@@ -63,7 +63,9 @@ function productRedirect(id) {
 
 function addToCart(productid) {
     product = Products.doc(productid);
-    product.set()
+    product.set({
+        
+    })
 };
 
 function rate(val) {
