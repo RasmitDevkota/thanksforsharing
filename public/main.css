@@ -16,7 +16,6 @@ html, body {
   border-radius: 5px;
   border: thin solid #888;
   box-shadow: 1px 1px 1px grey;
-  
 }
 .signinoptions:hover {
   background-color: rgb(31, 155, 221);
