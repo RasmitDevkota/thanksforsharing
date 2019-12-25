@@ -69,5 +69,5 @@ function rate(val) {
 };
 
 function checkOut(productid) {
-    
-}
+
+};
