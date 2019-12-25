@@ -20,7 +20,7 @@ function view(productid) {
         log("Document successfully updated!");
         productReference.onSnapshot(function (doc) {
             var views = doc.data().views;
-            var productRef = doc.data().id.toString();
+            var product = doc.data().id.toString();
             log(views);
             productRedirect(productId);
         });
