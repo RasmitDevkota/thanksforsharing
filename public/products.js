@@ -60,6 +60,6 @@ function productRedirect(ref) {
     window.location = "product.html" + ref.toString();
 };
 
-function addToCart(prou) {
+function addToCart(pro) {
     
 };
