@@ -62,7 +62,7 @@ function productRedirect(id) {
 };
 
 function addToCart(productid) {
-    ShoppingCart.document(prod)
+    ShoppingCart.document(productid)
 };
 
 function rate(val) {
