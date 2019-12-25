@@ -64,4 +64,6 @@ function addToCart(productid) {
     
 };
 
-function rate(val) {}
+function rate(val) {
+    
+}
