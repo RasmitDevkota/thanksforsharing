@@ -62,8 +62,8 @@ function productRedirect(id) {
 };
 
 function addToCart(productid) {
-    product = Products.document(productid).data();
-    
+    product = Products.doc(productid).data();
+
 };
 
 function rate(val) {
