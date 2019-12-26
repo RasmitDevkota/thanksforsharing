@@ -54,7 +54,7 @@ h3 {
   z-index: 2;
 }
 #search {
-  align-items: ;
+  align-items: flex-end;
 }
 nav{
   display:flex;
