@@ -112,7 +112,7 @@ function gToggleSignIn() {
                                 }).then(function () {
                                     log("Document successfully written!");
                                 }).catch(function (error) {
-                                    console.error("Error writing document: ", error);
+                                    log("Error writing document: ", error);
                                 });
                             } else {
                                 log("Users doc already exists, skipped writing.");
