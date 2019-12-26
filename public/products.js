@@ -69,7 +69,7 @@ function addToCart(productid) {
 
 function rate(productid, val) {
     Products.doc(productid).set({
-        ratings
+        ratings: []
     });
 };
 
