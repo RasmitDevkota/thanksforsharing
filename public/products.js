@@ -68,7 +68,7 @@ function addToCart(productid) {
 };
 
 function rate(productid, val) {
-    Products.doc(productid).set({
+    Products.doc(productid).update({
         ratings: []
     });
 };
