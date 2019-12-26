@@ -284,7 +284,7 @@ function sendPasswordReset() {
             } else if (errorCode == 'auth/user-not-found') {
                 alert(errorMessage);
             }
-            console.log(error);
+            log(error);
         });
     } else {
         alert("Please enter an email.");
