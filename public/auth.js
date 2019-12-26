@@ -23,7 +23,7 @@ function eToggleSignIn() {
         alert('Please enter a longer password.');
         return;
     }
-    
+
     var userData = emails.doc(username); // firebase.firestore().collection("emails").doc(username)
 
     userData.get().then(function (doc) {
@@ -76,8 +76,6 @@ function gToggleSignIn() {
             var user = result.user;
             var uid = user.uid.toString();
             var db = firebase.firestore();
-            var emails = db.collection("emails");
-            var users = db.collection("users");
 
             firebase.auth().onAuthStateChanged(function (user) {
                 document.getElementById("signin").textContent = "Sign Out";
