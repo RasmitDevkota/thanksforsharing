@@ -271,7 +271,10 @@ function handleSignUp() {
 // Signup End
 
 // Password Reset
-function sendPasswordReset() {permpassword
+function sendPasswordReset() {
+    document.getElementById("popupsignin").style.display = "none";
+    document.getElementById("signup").style.display = "block";
+
     var email = document.getElementById('email').value;
     if (email != null) {
         firebase.auth().sendPasswordResetEmail(email).then(function () {
