@@ -205,7 +205,7 @@ function handleSignUp() {
     var tempemail = document.getElementById('email').value;
     var temppassword = document.getElementById('password').value;
     var permusername = tempusername.toString();
-    var permemail = tempemail.toString();
+    var permusername = tempemail.toString();
     var permpassword = temppassword.toString();
     
 
