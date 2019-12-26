@@ -1,7 +1,6 @@
 var Products = db.collection("products");
 var cart = db.collection("cart").doc(user.displayName);
 
-
 function view(productid) {
     var productReference = Products.doc(productid);
 
