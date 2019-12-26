@@ -63,11 +63,8 @@ function productRedirect(id) {
 
 function addToCart(productid) {
     cart.update({
-        var total = 0;
-for(var i = 0; i < grades.length; i++) {
-    total += grades[i];
-}
-var avg = total / grades.length;
+        items: firebase.firestore.FieldValue.arrayUnion(productid),
+        itemCnt: firebase.firestore.FieldValue.increment(1),
     });
 };
 
