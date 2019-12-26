@@ -130,7 +130,7 @@ function gToggleSignIn() {
             if (errorCode === 'auth/account-exists-with-different-credential') {
                 alert('You have already signed up with a different method for that email. If you want to merge your Google account with an Email/Password account, go to the Account page.');
             } else {
-                console.error(error);
+                log(error);
             }
         });
     } else {
