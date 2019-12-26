@@ -37,3 +37,12 @@ function log(text) {
     console.log(text);
 };
 
+function signIn() {
+    document.getElementById('popupsignin').style.display = "block";
+};
+function open(elem) {
+    document.getElementById(elem).style.display = "block";
+};
+function close(elem) {
+    document.getElementById(elem).style.display = "none";
+};
