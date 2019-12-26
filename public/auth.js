@@ -248,6 +248,7 @@ function handleSignUp() {
         }).then(function () {
             log(user.displayName);
         }).catch(function (error) {
+            
             log(user.displayName);
         });
 
