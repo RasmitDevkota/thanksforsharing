@@ -144,7 +144,7 @@ function gToggleSignIn() {
             var users = db.collection("users");
 
             firebase.auth().onAuthStateChanged(function (user) {
-                        document.getElementById("signin").textContent = "Sign Out";
+                document.getElementById("signin").textContent = "Sign Out";
                 if (user != null) {
                     var user = firebase.auth().currentUser;
 
