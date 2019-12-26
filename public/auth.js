@@ -211,8 +211,7 @@ function handleSignUp() {
     var permusername = tempusername.toString();
     var permemail = tempemail.toString();
     var permpassword = temppassword.toString();
-
-    var db = firebase.firestore();
+    
     var users = db.collection("users");
     var emails = db.collection("emails");
 
