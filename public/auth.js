@@ -119,7 +119,7 @@ function gToggleSignIn() {
                                 log("Users doc already exists, skipped writing.");
                             }
                         });
-                        window.location = "index.html?mode=light";
+                        window.location = "index.html";
                     });
                 }
             })
