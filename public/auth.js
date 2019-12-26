@@ -212,8 +212,6 @@ function handleSignUp() {
     var permemail = tempemail.toString();
     var permpassword = temppassword.toString();
     
-    var users = db.collection("users");
-    var emails = db.collection("emails");
 
     if (username.length < 3) {
         alert('Please enter a longer username.');
