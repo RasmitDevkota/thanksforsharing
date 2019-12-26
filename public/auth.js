@@ -199,8 +199,8 @@ function gToggleSignIn() {
 // Signup
 function handleSignUp() {
     document.getElementById("popupsignin").style.display = "none";
-    document.getElementById("email").style.display = "block";
-    
+    document.getElementById("signup").style.display = "block";
+
     var tempusername = document.getElementById('username').value;
     var tempemail = document.getElementById('email').value;
     var temppassword = document.getElementById('password').value;
