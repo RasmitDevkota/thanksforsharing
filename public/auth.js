@@ -81,7 +81,7 @@ function gToggleSignIn() {
 
             firebase.auth().onAuthStateChanged(function (user) {
                 document.getElementById("signin").textContent = "Sign Out";
-                
+
                 if (user != null) {
                     var user = firebase.auth().currentUser;
 
@@ -182,7 +182,7 @@ function gToggleSignIn() {
                                 log("Users doc already exists, skipped writing.");
                             }
                         });
-                        window.location = "index.html?mode=light";
+                        window.location = "index.html";
                     });
                 }
             })
