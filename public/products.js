@@ -27,7 +27,7 @@ function view(productid) {
         });
     }).catch(function (error) {
         console.error("Error updating document: ", error);
-    });
+    }); log
 };
 
 function filter(field) {
