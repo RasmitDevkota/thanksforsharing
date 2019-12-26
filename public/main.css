@@ -5,9 +5,6 @@ html, body {
 .signin{
   display:none; 
 }
-#signin {
-  margin-left: 700%;
-}
 .signinoptions {
   background-color: #30b0f5;
   border: none;
