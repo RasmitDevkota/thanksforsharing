@@ -63,7 +63,7 @@ function productRedirect(id) {
 
 function addToCart(productid) {
     cart.update({
-        items: firebase.firestore.FieldValue.arrayUnion(),
+        items: firebase.firestore.FieldValue.arrayUnion(product),
         itemCnt: firebase.firestore.FieldValue.increment(1),
     });
 };
