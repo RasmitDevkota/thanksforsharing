@@ -6,7 +6,7 @@ html, body {
   display:none;
 }
 #signin {
-  justify-self: flex-end;
+  float: right;
 }
 .signinoptions {
   background-color: #30b0f5;
