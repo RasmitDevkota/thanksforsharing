@@ -23,9 +23,6 @@ function eToggleSignIn() {
         alert('Please enter a longer password.');
         return;
     }
-
-    var emails = db.collection("emails"); // firebase.firestore().collection("emails")
-    var users = db.collection("users"); // firebase.firestore().collection("users")
     var userData = emails.doc(username); // firebase.firestore().collection("emails").doc(username)
 
     userData.get().then(function (doc) {
