@@ -255,6 +255,6 @@ function handleSignUp() {
         }).catch(function (error) {
             var
             errorCode = error.code; var errorMessage = error.message; if (errorCode == 'auth/weak-password') {
-                alert('The password istoo weak.'); } else { alert(errorMessage); } console.log(error); }); }; function signIn() {
+                alert('The password is too weak.'); } else { alert(errorMessage); } console.log(error); }); }; function signIn() {
     window.location = "email-password.html" ;
             };
