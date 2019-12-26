@@ -64,7 +64,6 @@ function productRedirect(id) {
 function addToCart(productid) {
     cart.update({
         itemCnt: firebase.firestore.FieldValue.increment(1),
-        
     });
 };
 
