@@ -203,7 +203,7 @@ function handleSignUp() {
 
     var permusername = document.getElementById('username').value.toString();
     var permemail = document.getElementById('email').value.toString();
-    var permpassword = document.getElementById('password').value;
+    var permpassword = document.getElementById('password').value.toString();
     
 
     if (username.length < 3) {
