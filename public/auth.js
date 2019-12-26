@@ -4,7 +4,6 @@ var emails = db.collection("emails");
 // Email Login
 function displayName() {
     var uid = user.uid;
-    var users = db.collection("users");
     users.doc(uid).get().then(function (doc) {
         var displayName = doc.data().displayName;
         return displayName;
