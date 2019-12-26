@@ -72,7 +72,7 @@ function rate(productid, val) {
         ratings: firebase.firestore.FieldValue.arrayUnion(val)
     }).then(function(doc){
         var ratings = doc.data().ratings;
-        varvar total = 0;
+        var total = 0;
         for (var i = 0; i < grades.length; i++) {
             total += grades[i];
         }
