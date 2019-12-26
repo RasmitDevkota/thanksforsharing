@@ -68,7 +68,7 @@ function addToCart(productid) {
     });
 };
 
-function removeFromCart(productId)
+function removeFromCart(productid)
 
 function rate(productid, val) {
     Products.doc(productid).update({
