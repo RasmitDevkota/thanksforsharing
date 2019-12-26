@@ -84,7 +84,7 @@ function rate(productid, val) {
         var ratings = doc.data().ratings;
 
         var sum = 0;
-        for (var i = 0; i < grades.length; i++) {
+        for (var i = 0; i < ratings.length; i++) {
             total += ratings[i];
         }
         var rating = sum / grades.length;
