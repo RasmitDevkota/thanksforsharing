@@ -265,7 +265,7 @@ function handleSignUp() {
         } else {
             alert(errorMessage);
         }
-        console.log(error);
+        log(error);
     });
 };
 // Signup End
