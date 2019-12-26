@@ -66,6 +66,7 @@ function addToCart(productid) {
     cart.update({
         items: firebase.firestore.FieldValue.arrayUnion(productid),
         itemCnt: firebase.firestore.FieldValue.increment(1),
+        
     });
 };
 
