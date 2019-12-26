@@ -1,4 +1,3 @@
-
 var users = db.collection("users");
 var emails = db.collection("emails");
 
