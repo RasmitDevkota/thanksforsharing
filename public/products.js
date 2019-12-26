@@ -73,7 +73,7 @@ function rate(val) {
 };
 
 function checkOut() {
-    var cart = ShoppingCart.doc(user.displayName);
+    var cart = ShoppingCart;
     cart.set({
         itemCnt: 0,
         price: 0
