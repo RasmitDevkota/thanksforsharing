@@ -34,8 +34,6 @@ html, body {
   padding: 0;
 }
 #search {
-  height: 1%;
-  padding: 0;
   border-bottom: red;
 }
 pre {
