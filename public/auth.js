@@ -67,7 +67,7 @@ function eToggleSignIn() {
 //     }
 // });
 
-// Google Login Begin
+// Google Login
 function gToggleSignIn() {
     if (!firebase.auth().currentUser) {
         var provider = new firebase.auth.GoogleAuthProvider();
