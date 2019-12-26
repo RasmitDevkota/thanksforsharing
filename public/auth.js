@@ -239,7 +239,7 @@ function handleSignUp() {
             displayName: permusername,
             email: permemail,
         }).then(function () {
-            console.log("Document successfully written!");
+            log("Document successfully written!");
         }).catch(function (error) {
             console.error("Error writing document: ", error);
         });
