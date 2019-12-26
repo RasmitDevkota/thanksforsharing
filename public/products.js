@@ -69,7 +69,7 @@ function addToCart(productid) {
 };
 
 function removeFromCart(productid) {
-
+    
 };
 
 function rate(productid, val) {
