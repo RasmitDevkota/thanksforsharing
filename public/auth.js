@@ -195,9 +195,6 @@ function gToggleSignIn() {
 
 // Signup
 function handleSignUp() {
-    document.getElementById("popupsignin").style.display = "none";
-    document.getElementById("signup").style.display = "block";
-
     var permusername = document.getElementById('username').value.toString();
     var permemail = document.getElementById('email').value.toString();
     var permpassword = document.getElementById('password').value.toString();
