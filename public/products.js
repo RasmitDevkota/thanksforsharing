@@ -70,7 +70,8 @@ function addToCart(productid) {
 
 function removeFromCart(productid) {
     cart.update({
-        items:
+        items: firebase.firestore.FieldValue.arrayUnion(productid),
+        itemCnt: firebase.firestore.FieldValue.increment(1),
     });
 };
 
