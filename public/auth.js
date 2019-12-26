@@ -249,7 +249,7 @@ function handleSignUp() {
         }).then(function () {
             console.log(user.displayName);
         }).catch(function (error) {
-            console.log(user.displayName);
+            log(user.displayName);
         });
 
         firebase.auth().onAuthStateChanged(function (user) {
