@@ -70,7 +70,9 @@ function addToCart(productid) {
 function rate(productid, val) {
     Products.doc(productid).update({
         ratings: firebase.firestore.FieldValue.arrayUnion(val)
-    }).then(function(doc));
+    }).then(function(doc){
+        
+    });
 };
 
 function checkOut() {
