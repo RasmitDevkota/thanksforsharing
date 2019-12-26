@@ -220,7 +220,6 @@ function handleSignUp() {
 
     firebase.auth().createUserWithEmailAndPassword(permemail, permpassword).then(function () {
         firebase.auth().signInWithEmailAndPassword(permemail, permpassword).catch(function (error) {
-            var errorCode = error.code;
             var errorMessage = error.message;
             alert(errorMessage);
             log(error);
