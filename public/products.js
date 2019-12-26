@@ -72,7 +72,7 @@ function rate(val) {
 
 };
 
-function checkOut(productid) {
+function checkOut( {
     product = Products.doc(productid);
     product.set({
         inventory: firebase.firestore.FieldValue.increment(-1)
