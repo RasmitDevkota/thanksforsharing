@@ -13,7 +13,7 @@ function displayName() {
 function eToggleSignIn() {
     document.getElementById("popupsignin").style.display = "none";
     document.getElementById("email").style.display = "block";
-    
+
     var password = document.getElementById('password').value;
     var username = document.getElementById('username').value;
     if (username.length < 3) {
@@ -198,6 +198,9 @@ function gToggleSignIn() {
 
 // Signup
 function handleSignUp() {
+    document.getElementById("popupsignin").style.display = "none";
+    document.getElementById("email").style.display = "block";
+    
     var tempusername = document.getElementById('username').value;
     var tempemail = document.getElementById('email').value;
     var temppassword = document.getElementById('password').value;
