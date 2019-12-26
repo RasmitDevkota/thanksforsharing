@@ -267,7 +267,7 @@ function handleSignUp() {
 
         firebase.auth().onAuthStateChanged(function (user) {
             if (user) {
-                window.location = "home.html?mode=light";
+                window.location = "index.html";
             }
         });
     }).catch(function (error) {
