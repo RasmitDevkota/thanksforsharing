@@ -77,7 +77,7 @@ function rate(productid, val) {
         for (var i = 0; i < grades.length; i++) {
             total += grades[i];
         }
-        var rating = total / grades.length;
+        var rating = sum / grades.length;
     });
 };
 
