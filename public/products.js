@@ -73,7 +73,7 @@ function rate(productid, val) {
     }).then(function(doc){
         var ratings = doc.data().ratings;
 
-        var tot = 0;
+        var sum = 0;
         for (var i = 0; i < grades.length; i++) {
             total += grades[i];
         }
