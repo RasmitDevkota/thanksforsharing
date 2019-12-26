@@ -69,7 +69,7 @@ function addToCart(productid) {
 };
 
 function rate(val) {
-
+    var rating = 
 };
 
 function checkOut() {
