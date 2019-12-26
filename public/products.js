@@ -71,7 +71,8 @@ function rate(productid, val) {
     Products.doc(productid).update({
         ratings: firebase.firestore.FieldValue.arrayUnion(val)
     }).then(function(doc){
-        var ratings = doc.data().ratings
+        var ratings = doc.data().ratings;
+        
     });
 };
 
