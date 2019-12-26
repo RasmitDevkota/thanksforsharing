@@ -254,7 +254,7 @@ function handleSignUp() {
 
         firebase.auth().onAuthStateChanged(function (user) {
             if (user) {
-                close();
+                close('signup');
             }
         });
     }).catch(function (error) {
