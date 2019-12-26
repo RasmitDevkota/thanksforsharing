@@ -6,7 +6,7 @@ html, body {
   display:none; 
 }
 #signin {
-  margin-left: 700%;
+  /* margin-left: 700%; */
   margin-right: 300%;
 }
 .signinoptions {
