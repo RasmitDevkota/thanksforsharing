@@ -3,7 +3,7 @@ html, body {
   background-color: #f5f5f5;
 }
 .signin{
-  
+  display:none;
 }
 .signinoptions {
   background-color: #30b0f5;
