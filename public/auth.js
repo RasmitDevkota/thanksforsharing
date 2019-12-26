@@ -120,6 +120,7 @@ function gToggleSignIn() {
                             }
                         });
                         window.location = "index.html";
+                        close()
                     });
                 }
             })
