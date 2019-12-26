@@ -85,7 +85,7 @@ function rate(productid, val) {
 
         var sum = 0;
         for (var i = 0; i < grades.length; i++) {
-            total += grades[i];
+            total += ratings[i];
         }
         var rating = sum / grades.length;
         console.log(rating);
