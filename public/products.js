@@ -73,8 +73,8 @@ function rate(val) {
 };
 
 function checkOut() {
-    product = Products.doc(productid);
-    product.set({
-        inventory: firebase.firestore.FieldValue.increment(-1)
+    cart = ShoppingCart.doc(user.displayName);
+    cart.set({
+        itemCnt: firebase.firestore.FieldValue.increment(1)
     });
 };
