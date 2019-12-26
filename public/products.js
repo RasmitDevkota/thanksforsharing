@@ -95,6 +95,6 @@ function checkOut() {
     cart.update({
         itemCnt: 0,
         price: 0,
-        items: 
+        items: [],
     });
 };
