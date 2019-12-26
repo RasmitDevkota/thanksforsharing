@@ -31,6 +31,15 @@ window.onload = function () {
     // if (mode == "dark") {
     //     document.getElementByTagName("html").id = "dark";
     // }
+    function signIn() {
+        document.getElementById('popupsignin').style.display = "block";
+    };
+    function open(elem) {
+        document.getElementById(elem).style.display = "block";
+    };
+    function close(elem) {
+        document.getElementById(elem).style.display = "none";
+    };
 };
 
 function log(text) {
