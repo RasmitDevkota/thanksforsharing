@@ -1,5 +1,5 @@
 var Products = db.collection("products");
-var ShoppingCart = db.collection("cart").;
+var ShoppingCart = db.collection("cart").doc;
 
 
 function view(productid) {
