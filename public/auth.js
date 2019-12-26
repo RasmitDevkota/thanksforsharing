@@ -247,7 +247,7 @@ function handleSignUp() {
         user.updateProfile({
             displayName: permusername,
         }).then(function () {
-            console.log(user.displayName);
+            log(user.displayName);
         }).catch(function (error) {
             log(user.displayName);
         });
