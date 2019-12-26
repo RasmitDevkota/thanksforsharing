@@ -75,7 +75,7 @@ function rate(val) {
 function checkOut() {
     cart = ShoppingCart.doc(user.displayName);
     cart.set({
-        itemCnt: 0
+        itemCnt: 0,
         price:0
     });
 };
