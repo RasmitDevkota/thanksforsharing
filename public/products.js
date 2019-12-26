@@ -75,6 +75,6 @@ function rate(val) {
 function checkOut() {
     cart = ShoppingCart.doc(user.displayName);
     cart.set({
-        itemCnt: firebase.firestore.FieldValue.increment(1)
+        itemCnt: 0
     });
 };
