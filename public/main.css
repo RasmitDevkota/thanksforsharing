@@ -35,6 +35,7 @@ html, body {
 }
 #search {
   height: 1%;
+  
   border-bottom: red;
 }
 pre {
