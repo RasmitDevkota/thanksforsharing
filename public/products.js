@@ -67,7 +67,7 @@ function addToCart(productid) {
     });
 };
 
-function rate() {
+function rate(productid, val) {
     var rating = 
 };
 
