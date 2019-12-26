@@ -68,7 +68,7 @@ function addToCart(productid) {
 };
 
 function rate(productid, val) {
-    var rating = 
+    var rating = Products
 };
 
 function checkOut() {
