@@ -94,7 +94,7 @@ function gToggleSignIn() {
                             if (!doc.exists) {
                                 userDataEmails.set({
                                     email: email,
-                                    uid: uid,
+                                    uid: uid
                                 }).then(function () {
                                     log("Document successfully written!");
                                 }).catch(function (error) {
