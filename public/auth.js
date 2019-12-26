@@ -38,7 +38,7 @@ function eToggleSignIn() {
                         close("email");
                         document.getElementById("signin").textContent = "Sign Out";
                     });
-                })                .catch(function (error) {
+                }).catch(function (error) {
                     var errorCode = error.code;
                     var errorMessage = error.message;
                     if (errorCode === 'auth/wrong-password') {
