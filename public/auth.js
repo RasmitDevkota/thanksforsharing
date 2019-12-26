@@ -11,9 +11,6 @@ function displayName() {
 };
 
 function eToggleSignIn() {
-    document.getElementById("popupsignin").style.display = "none";
-    document.getElementById("email").style.display = "block";
-
     var password = document.getElementById('password').value;
     var username = document.getElementById('username').value;
     if (username.length < 3) {
