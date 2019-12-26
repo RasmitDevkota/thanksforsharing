@@ -74,7 +74,7 @@ function rate(productid, val) {
 };
 
 function checkOut() {
-    cart.set({
+    cart.update({
         itemCnt: 0,
         price: 0
     });
