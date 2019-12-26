@@ -69,7 +69,7 @@ function addToCart(productid) {
 
 function rate(productid, val) {
     Products.doc(productid).update({
-        ratings: 
+        ratings: firebase.firestore.FieldValue.arrayUnion("greater_virginia")
     });
 };
 
