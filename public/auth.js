@@ -1,3 +1,7 @@
+
+var users = db.collection("users");
+var emails = db.collection("emails");
+
 // Email Login
 function displayName() {
     var uid = user.uid;
