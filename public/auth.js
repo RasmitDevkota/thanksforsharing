@@ -226,8 +226,6 @@ function handleSignUp() {
             console.log(error);
         });
 
-        var user = firebase.auth().currentUser;
-
         emails.doc(permusername).set({
             email: permemail,
             uid: user.uid,
