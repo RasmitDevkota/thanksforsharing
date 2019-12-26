@@ -69,7 +69,7 @@ function addToCart(productid) {
 
 function rate(productid, val) {
     var rating = Products.doc(productid).set({
-
+        
     });
 };
 
