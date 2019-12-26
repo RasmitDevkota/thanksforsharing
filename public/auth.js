@@ -223,7 +223,7 @@ function handleSignUp() {
             var errorCode = error.code;
             var errorMessage = error.message;
             alert(errorMessage);
-            console.log(error);
+            log(error);
         });
 
         emails.doc(permusername).set({
