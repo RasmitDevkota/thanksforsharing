@@ -70,8 +70,8 @@ function addToCart(productid) {
 
 function removeFromCart(productid) {
     cart.update({
-        
-    })
+        items:
+    });
 };
 
 function rate(productid, val) {
