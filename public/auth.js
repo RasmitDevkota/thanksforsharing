@@ -202,7 +202,7 @@ function handleSignUp() {
     document.getElementById("signup").style.display = "block";
 
     var permusername = document.getElementById('username').value.toString();
-    var permemail = document.getElementById('email').value;
+    var permemail = document.getElementById('email').value.toString;
     var permpassword = document.getElementById('password').value;
     
 
