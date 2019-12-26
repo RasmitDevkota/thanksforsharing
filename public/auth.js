@@ -202,3 +202,60 @@ function gToggleSignIn() {
     }
 };
 // Google Login End
+
+
+function handleSignUp() {
+    var tempusername = document.getElementById('username').value;
+    var tempemail = document.getElementById('email').value;
+    var temppassword = document.getElementById('password').value;
+    var permusername = tempusername.toString();
+    var permemail = tempemail.toString();
+    var permpassword = temppassword.toString();
+
+    var db = firebase.firestore();
+    var users = db.collection("users");
+    var emails = db.collection("emails");
+
+    if (username.length < 3) { alert('Please enter a longer username.'); return; } if (email.length < 4) {
+        alert('Please
+    enter an email address.'); return; } if (password.length < 4) { alert('Please enter a password.'); return; }
+    firebase.auth().createUserWithEmailAndPassword(permemail, permpassword).then(function () {
+            firebase.auth().signInWithEmailAndPassword(permemail, permpassword).catch(function (error) {
+                var
+                errorCode = error.code; var errorMessage = error.message; alert(errorMessage); console.log(error);
+            }); var
+                user = firebase.auth().currentUser; emails.doc(permusername).set({ email: permemail, uid: user.uid, }).then(function
+                    () { console.log("Document successfully written!"); }).catch(function (error) {
+                        console.error("Error writing
+    document: ", error);
+                    });
+
+            users.doc(user.uid).set({
+                displayName: permusername,
+                email: permemail,
+            }).then(function () {
+                console.log(" Document successfully written!");
+            }).catch(function (error) {
+                console.error("Error writing document: ", error);
+            });
+
+            user.updateProfile({
+                displayName: permusername,
+            }).then(function () {
+                console.log(user.displayName);
+            }).catch(function (error) {
+                console.log(user.displayName);
+            });
+
+            firebase.auth().onAuthStateChanged(function (user) {
+                if (user) {
+                    window.location = " home.html?mode=light";
+                }
+            });
+        }).catch(function (error) {
+            var
+            errorCode = error.code; var errorMessage = error.message; if (errorCode == 'auth/weak-password') {
+                alert('The password is
+    too weak.'); } else { alert(errorMessage); } console.log(error); }); }; function signIn() {
+    window.location = "email-password.html" ;
+            };
