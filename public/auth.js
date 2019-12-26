@@ -119,7 +119,6 @@ function gToggleSignIn() {
                                 log("Users doc already exists, skipped writing.");
                             }
                         });
-                        window.location = "index.html";
                         close('signinwithpopup');
                     });
                 }
