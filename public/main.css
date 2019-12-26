@@ -5,6 +5,9 @@ html, body {
 .signin{
   display:none;
 }
+#signin {
+  
+}
 .signinoptions {
   background-color: #30b0f5;
   border: none;
