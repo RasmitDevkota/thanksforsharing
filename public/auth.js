@@ -281,8 +281,4 @@ function handleSignUp() {
         console.log(error);
     });
 };
-
-function signIn() {
-    window.location = "email-password.html";
-};
 // Signup End
