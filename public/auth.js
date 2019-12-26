@@ -120,7 +120,7 @@ function gToggleSignIn() {
                         });
                         close('signinwithpopup');
                     });
-                }
+                };
             });
         }).catch(function (error) {
             var errorCode = error.code;
