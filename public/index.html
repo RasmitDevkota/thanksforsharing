@@ -63,6 +63,16 @@
           <a id="signin" class="navelement" onclick="signIn()">Sign In</a>
         <!--End of Sign in button-->
 
+        function signIn() {
+        document.getElementById('popupsignin').style.display = "block";
+        };
+        function open(elem) {
+        document.getElementById(elem).style.display = "block";
+        };
+        function close(elem) {
+        document.getElementById(elem).style.display = "none";
+        };
+
       </nav>
       <!--nav end-->
     </header>
