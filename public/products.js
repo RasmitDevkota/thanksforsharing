@@ -78,7 +78,7 @@ function removeFromCart(productid) {
 
 function showCart() {
     cart.get().then(function (doc) {
-        
+        doc.data()
     });
 };
 
