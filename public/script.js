@@ -13,7 +13,7 @@ var user = firebase.auth().currentUser;
 var db = firebase.firestore();
 db.enablePersistence();
 
-if
+if()
 
 function redirect(pagePath) {
     if (pagePath === "signout") {
