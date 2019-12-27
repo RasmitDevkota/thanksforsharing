@@ -1,7 +1,7 @@
 var Products = db.collection("products");
 var cart = db.collection("cart").doc(user.displayName);
 
-function view(productid) {
+async function view(productid) {
     var productReference = Products.doc(productid);
 
     productReference.onSnapshot(function (doc) {
@@ -16,17 +16,19 @@ function view(productid) {
         views: firebase.firestore.FieldValue.increment(1)
     };
 
-    return productReference.update(newViews).then(function () {
+    try {
+        await productReference.update(newViews);
         log("Document successfully updated!");
         productReference.onSnapshot(function (doc) {
-            var views = doc.data().views;
-            var productid = doc.data().id.toString();
-            log(views);
-            productRedirect(productid);
+            var views_1 = doc.data().views;
+            var productid_1 = doc.data().id.toString();
+            log(views_1);
+            productRedirect(productid_1);
         });
-    }).catch(function (error) {
+    }
+    catch (error) {
         console.error("Error updating document: ", error);
-    });
+    }
 };
 
 function filter(field) {
