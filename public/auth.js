@@ -133,7 +133,6 @@ function gToggleSignIn() {
             var db = firebase.firestore();
 
             firebase.auth().onAuthStateChanged(function (user) {
-                
                 if (user != null) {
                     var user = firebase.auth().currentUser;
 
