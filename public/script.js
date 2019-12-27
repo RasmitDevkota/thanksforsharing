@@ -14,7 +14,6 @@ var db = firebase.firestore();
 db.enablePersistence();
 
 
-
 function redirect(pagePath) {
     if (pagePath === "signout") {
         firebase.auth().signOut();
