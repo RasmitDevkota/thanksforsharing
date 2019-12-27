@@ -16,7 +16,7 @@ function view(productid) {
         views: firebase.firestore.FieldValue.increment(1)
     };
 
-    return productReference.update(newViews).then(function () {
+    productReference.update(newViews).then(function () {
         log("Document successfully updated!");
         productReference.onSnapshot(function (doc) {
             var views = doc.data().views;
