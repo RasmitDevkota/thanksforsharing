@@ -22,7 +22,7 @@ function eToggleSignIn() {
         return;
     }
 
-    var userData = emails.doc(username); // firebase.firestore().collection("emails").doc(username)
+    var userData = emails.doc(username);
 
     userData.get().then(function (doc) {
         if (doc.exists) {
