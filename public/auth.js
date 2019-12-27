@@ -189,7 +189,7 @@ function gToggleSignIn() {
 
 // Signup
 function handleSignUp() {
-    var permusername = document.getElementById('username').value.toString();
+    var permusername = document.getElementById('suusername').value.toString();
     var permemail = document.getElementById('suemail').value.toString();
     var permpassword = document.getElementById('password').value.toString();
     
