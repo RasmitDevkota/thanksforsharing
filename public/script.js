@@ -15,7 +15,7 @@ db.enablePersistence();
 
 if(user != null) {
     document.getElementById("signin").textContent = "Sign Out";
-}
+};
 
 function redirect(pagePath) {
     if (pagePath === "signout") {
