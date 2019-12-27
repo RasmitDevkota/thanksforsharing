@@ -191,7 +191,7 @@ function gToggleSignIn() {
 function handleSignUp() {
     var permusername = document.getElementById('suusername').value.toString();
     var permemail = document.getElementById('suemail').value.toString();
-    var permpassword = document.getElementById('password').value.toString();
+    var permpassword = document.getElementById('supassword').value.toString();
     
     if (username.length < 3) {
         alert('Please enter a longer username.');
