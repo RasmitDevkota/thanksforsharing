@@ -77,6 +77,7 @@ function removeFromCart(productid) {
 };
 
 function showCart() {
+    
 };
 
 function rate(productid, val) {
