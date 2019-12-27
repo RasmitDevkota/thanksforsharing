@@ -260,7 +260,7 @@ function handleSignUp() {
 
 // Password Reset
 function sendPasswordReset() {
-    var email = document.getElementById('email').value;
+    var email = document.getElementById('premail').value;
     if (email != null) {
         firebase.auth().sendPasswordResetEmail(email).then(function () {
             alert('Password Reset Email Sent!');
