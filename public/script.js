@@ -14,7 +14,6 @@ var db = firebase.firestore();
 db.enablePersistence();
 
 if(user != null) {
-
     document.getElementById("signin").textContent = "Sign Out";
 }
 
