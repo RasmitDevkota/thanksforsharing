@@ -91,7 +91,6 @@ function rate(productid, val) {
 };
 
 function checkOut() {
-    
     cart.set({
         itemCnt: 0,
         price: 0,
