@@ -188,12 +188,14 @@
       function signIn() {
         document.getElementById('popupsignin').style.display = "block";
       };
-      function open(elem) {
-        document.getElementById(elem).style.cssText = "display: block";
-      };
-      function close(elem) {
-        document.getElementById(elem).style.cssText = "display: none";
-      };
+      function myFunction() {
+          var x = document.getElementById("myDIV");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
     </script>
 
   </body>
