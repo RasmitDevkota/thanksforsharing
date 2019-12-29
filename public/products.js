@@ -65,7 +65,7 @@ function filter(field) {
             document.getElementById(outerDiv.id).appendChild(product);
 
             for(i = 0; i < txtElements.length; i++) {
-                var name = document.createElement("v-" + );
+                var name = document.createElement("v-" + txtElements);
                 name.innerHTML = name;
                 name.className = "vname";
                 document.getElementById(test.id).appendChild(name);
