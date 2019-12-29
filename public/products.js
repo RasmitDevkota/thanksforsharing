@@ -80,7 +80,7 @@ function filter(field) {
             var rating = document.createElement("v-rating");
             rating.innerHTML = rating;
             rating.className = "vrating";
-            document.getElementById(test.id).appendChild(product);
+            document.getElementById(test.id).appendChild(rating);
         });
     });
 };
