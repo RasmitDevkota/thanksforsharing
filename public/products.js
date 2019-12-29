@@ -68,7 +68,7 @@ function filter(field) {
                 var txt = txtElements[i];
                 var elem = document.createElement("v-" + txt);
                 elem.innerHTML = txt;
-                name.className = "vname";
+                name.className = "v";
                 document.getElementById(test.id).appendChild(name);
             };
 
