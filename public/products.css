@@ -33,7 +33,7 @@ v-rating{
     padding:1%;
     flex-grow: 1;
     color: blue;
-    font-size: 200%;
+    font-size: 150%;
 }
 v-actions{
     display:flex;
