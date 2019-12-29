@@ -8,7 +8,7 @@ v-product{
 }
 v-image{
     flex-grow: 1;
-    flex-basis: 500px;;
+    flex-basis: px;;
 }
 v-text{
     flex-grow: 2;
