@@ -27,7 +27,7 @@ v-price{
     font-size: 200%;
 }
 v-rating{
-    flex-
+    flex-grow: 1;
     color: blue;
     font-size: 200%;
 }
