@@ -10,6 +10,7 @@ html, body {
   text-align: center;
   font-size: 28px;
   cursor: pointer;
+
 }
 .signinoptions:hover {
   background-color: rgb(31, 155, 221);
