@@ -1,7 +1,7 @@
 v-product{
     display: flex;
     flex-direction: row;
-    border-bottom: 
+    border-bottom: 1 px solid gray;
 }
 v-text{
     display:flex;
