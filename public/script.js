@@ -23,7 +23,7 @@ function redirect(pagePath) {
         window.location.replace("thx4sharing.web.app");
     } else {
 
-        window.location.replace("thx4sharing.web.app/" + pagePath);
+        window.location.replace(pagePath);
     };
 };
 
