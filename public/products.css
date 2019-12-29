@@ -15,7 +15,7 @@ v-text{
     flex-direction: column;
 }
 v-name{
-    font-size: 500%;
+    font-size: 200%;;
     color: black;
 }
 v-description{
