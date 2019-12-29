@@ -50,9 +50,7 @@ h3 {
 #sign-in-card {
   z-index: 2;
 }
-.overlay{
-  
-}
+
 nav{
   display: flex;
   flex-direction: row;
