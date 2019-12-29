@@ -35,6 +35,13 @@ function search() {
     
 };
 
+function productRedirect(id) {
+    // var urlParams = new URLSearchParams(window.location.search);
+    // var mode = urlParams.get('mode').toString();
+
+    window.location = "product.html" + id.toString();
+};
+
 function filter(field) {
     Products.orderBy(field).get().then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
