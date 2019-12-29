@@ -73,7 +73,9 @@ nav{
   background-color: #343434; 
   border: none;
 }
-.search:focus
+.search:focus{
+  
+}
 .button{
   text-decoration: none;
   color: #000000;
