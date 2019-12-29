@@ -1,7 +1,7 @@
 v-product{
     display: flex;
     flex-direction: row;
-    justf
+    justify-content: space evenly;
     border-bottom: 1px solid gray;
     padding: 1%;
     margin-left: 10px;
