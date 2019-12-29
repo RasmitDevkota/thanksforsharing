@@ -57,7 +57,13 @@ function filter(field) {
             document.getElementById("results").appendChild(outerDiv);
             outerDiv.id = "outer" + name;
 
-            var text = document.createElement("p");
+            var text = document.createElement("pvar product = document.createElement("p");
+            product.innerHTML = name;
+            product.className = "product";
+            product.onclick = function () {
+                view(productRef);
+            };
+            document.getElementById(outerDiv.id).appendChild(product);");
             product.innerHTML = name;
             product.className = "product";
             product.onclick = function () {
