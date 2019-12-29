@@ -2,7 +2,9 @@ v-product{
     display: flex;
     flex-direction: row;
 }
-
+v-text{
+    
+}
 v-name{
     font-size: 500%;
 }
