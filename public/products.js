@@ -30,7 +30,7 @@ function view(productid) {
 };
 
 function search() {
-    var
+    var text = ""
 };
 
 function filter(field) {
