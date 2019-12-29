@@ -59,7 +59,7 @@ function filter(field) {
 
             var text = document.createElement("v-text");
             text.innerHTML = name;
-            text.className = "product";
+            text.className = "vtext";
             document.getElementById(outerDiv.id).appendChild(product);
         });
     });
