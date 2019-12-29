@@ -5,11 +5,7 @@ v-product{
     padding: 1%;
     margin-left: 10px;
     margin-right: 10px;
-}
-v-image{
-    flex-grow: 1;
-    flex-basis: 30px;
-}
+
 img{
     width: 50%;
     height: auto;
