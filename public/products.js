@@ -34,7 +34,7 @@ function search() {
     window.location = "products.html?query=" + text.toString();
 };
 
-results
+function results()
 
 function filter(field) {
     Products.orderBy(field).get().then((querySnapshot) => {
