@@ -62,7 +62,7 @@ function filter(field) {
             text.className = "vtext";
             document.getElementById(outerDiv.id).appendChild(product);
 
-            
+            var 
         });
     });
 };
