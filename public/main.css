@@ -74,7 +74,7 @@ nav{
   border: none;
 }
 .search:focus{
-outline: 
+outline: none;
 }
 .button{
   text-decoration: none;
