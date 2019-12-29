@@ -35,7 +35,7 @@ function search() {
     
 };
 
-function productRedirect(id) {
+function searchRedirect(id) {
     // var urlParams = new URLSearchParams(window.location.search);
     // var mode = urlParams.get('mode').toString();
 
