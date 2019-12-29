@@ -78,11 +78,11 @@
             </div>
 
             <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-              <button class="signinoptions" onclick="close('popupsignin'); open('email')">Email</button>
+              <button class="signinoptions" onclick="close('popupsignin'); display('email')">Email</button>
               <br><br>
               <button class="signinoptions" onclick="gToggleSignIn()">Google</button>
               <br><br>
-              <button class="signinoptions" onclick="close('popupsignin'); open('signup')">Sign Up</button>
+              <button class="signinoptions" onclick="close('popupsignin'); display('signup')">Sign Up</button>
               <br><br>
               <button class="signinoptions" onclick="close('popupsignin')">Close</button>
             </div>
@@ -108,7 +108,7 @@
               <br/><br/>
               <button class="mdl-button mdl-js-button mdl-button--raised" onclick="eToggleSignIn()" name="signin">Sign In</button>
               &nbsp;&nbsp;&nbsp;
-              <button class="mdl-button mdl-js-button mdl-button--raised" onclick="close('email'); open('pwreset')">Reset Password</button>
+              <button class="mdl-button mdl-js-button mdl-button--raised" onclick="close('email'); display('pwreset')">Reset Password</button>
     
               <p>
                 <li>
@@ -194,7 +194,7 @@
       function signIn() {
         document.getElementById('popupsignin').style.display = "block";
       };
-      function open(elem) {
+      function display(elem) {
         document.getElementById(elem).style.cssText = "display: block";
       };
       function close(elem) {
