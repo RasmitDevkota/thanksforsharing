@@ -60,9 +60,6 @@ function filter(field) {
             var text = document.createElement("v-text");
             text.innerHTML = name;
             text.className = "product";
-            text.onclick = function () {
-                view(productRef);
-            };
             document.getElementById(outerDiv.id).appendChild(product);
         });
     });
