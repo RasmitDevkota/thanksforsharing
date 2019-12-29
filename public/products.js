@@ -60,7 +60,7 @@ function filter(field) {
             outerDiv.id = "outer" + name;
 
             var name = document.createElement("v-name");
-            name.innerHTML = name;
+            image.innerHTML = name;
             name.className = "vname";
             document.getElementById(outerDiv.id).appendChild(product-image);
 
