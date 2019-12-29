@@ -62,7 +62,7 @@ function filter(field) {
             var name = document.createElement("v-name");
             name.innerHTML = name;
             name.className = "vname";
-            document.getElementById(outerDiv.id).appendChild(image);
+            document.getElementById(outerDiv.id).appendChild(product-image);
 
             var text = document.createElement("v-text");
             text.innerHTML = name;
