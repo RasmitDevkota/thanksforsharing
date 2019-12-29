@@ -35,7 +35,7 @@ function search() {
 };
 
 function results(keystring) {
-    Products.get()
+    Products.where()
 };
 
 function filter(field) {
