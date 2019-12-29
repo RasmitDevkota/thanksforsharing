@@ -65,7 +65,7 @@ function filter(field) {
             var name = document.createElement("v-name");
             name.innerHTML = name;
             name.className = "vname";
-            document.getElementById(outerDiv.id).appendChild(product);
+            document.getElementById(test.id).appendChild(product);
 
             var description = document.createElement("v-description");
             description.innerHTML = description;
