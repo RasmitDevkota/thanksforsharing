@@ -20,7 +20,7 @@ if(user != null) {
 function redirect(pagePath) {
     if (pagePath === "signout") {
         firebase.auth().signOut();
-        window.location.replace("https://www.thx4sharing.web.app");
+        window.location.replace("thx4sharing.web.app");
     } else {
         // var urlParams = new URLSearchParams(window.location.search);
         // var mode = urlParams.get('mode').toString();
