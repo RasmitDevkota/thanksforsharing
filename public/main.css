@@ -10,7 +10,7 @@ html, body {
   text-align: center;
   font-size: 28px;
   cursor: pointer;
-  /*box-shadow: 1px 1px 1px grey;*/
+  box-shadow: 1px 1px 1px grey;*/
 }
 .signinoptions:hover {
   background-color: rgb(31, 155, 221);
