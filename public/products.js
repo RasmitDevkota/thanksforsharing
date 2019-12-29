@@ -66,7 +66,7 @@ function filter(field) {
 
             for(i=0) {
                 
-            }
+            };
 
             var name = document.createElement("v-name");
             name.innerHTML = name;
