@@ -68,7 +68,7 @@ function filter(field) {
             document.getElementById(outerDiv.id).appendChild(product);
 
             var text = document.createElement("v-description");
-            text.innerHTML = name;
+            text.innerHTML = des;
             text.className = "vdescription";
             document.getElementById(outerDiv.id).appendChild(product);
 
