@@ -42,7 +42,7 @@ function view(productid) {
     });
 };
 
-
+document.getElementById("")
 
 function filter(field) {
     Products.orderBy(field).get().then((querySnapshot) => {
