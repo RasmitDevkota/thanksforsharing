@@ -28,5 +28,6 @@ v-actions{
 }
 v-checkout{
     color: blue;
-    d
+    text-decoration: underline;
+    
 }
