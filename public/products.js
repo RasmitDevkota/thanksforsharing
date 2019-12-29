@@ -49,6 +49,7 @@ function filter(field) {
             var desc = doc.data().description.toString();
             var productid = doc.data().id.toString();
             var views = doc.data().views.toString();
+            var rating = doc.data()
             var price = doc.data().price.toString();
 
             var outerDiv = document.createElement("div");
