@@ -25,6 +25,7 @@ v-description{
     color: gray;
 }
 v-price{
+    
     color: red;
     font-size: 200%;
 }
