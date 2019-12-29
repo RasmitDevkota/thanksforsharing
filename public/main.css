@@ -70,12 +70,6 @@ nav{
   color:red;
   border-bottom: 5px solid red;
 }
-.search{
-  color: white;
-  font-size: 15;
-  background-color: #343434; 
-  border: none;
-}
 .search:focus{
   outline: none;
 }
