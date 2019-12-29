@@ -40,7 +40,7 @@ v-actions{
     flex-direction: column;
 }
 v-checkout{
-    margin: 1%;
+    margin: 5%;
     color: blue;
     text-decoration: underline;
 }
