@@ -38,7 +38,7 @@ v-rating{
 v-actions{
     display:flex;
     flex-direction: column;
-    space
+    justify
 }
 v-checkout{
     margin: 5%;
