@@ -32,7 +32,7 @@ function view(productid) {
 function search() {
     var text = document.getElementById("sample6").innerHTML;
 
-    ope
+    open
 };
 
 function filter(field) {
