@@ -35,7 +35,7 @@ function search() {
 };
 
 function results(keystring) {
-    var tags = ""
+    
 };
 
 function filter(field) {
