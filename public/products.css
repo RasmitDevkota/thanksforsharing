@@ -3,6 +3,7 @@ v-product{
     flex-direction: row;
     border-bottom: 1px solid gray;
     padding: 1%;
+    margin-left: 2px;
     margin
 }
 v-text{
