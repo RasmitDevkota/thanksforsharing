@@ -79,7 +79,7 @@ function filter(field) {
 
             var text = document.createElement("v-text");
             text.innerHTML = name;
-            text.className = "vtext";
+            text.className = "vrating";
             document.getElementById(outerDiv.id).appendChild(product);
         });
     });
