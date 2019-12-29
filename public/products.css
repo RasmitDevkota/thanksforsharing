@@ -11,7 +11,7 @@ v-image{
     flex-basis: 30%;
 }
 img{
-    flex-basis: 30%;
+    flex-basis: 100%;
 }
 v-text{
     flex-grow: 2;
