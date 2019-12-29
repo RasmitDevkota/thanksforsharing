@@ -7,7 +7,7 @@ function search() {
 };
 
 function results(keystring) {
-    Products.where("keywords", "array-contains-any", keystring.split(" ")).orderyBy("keywords").get().then(function (querySnapshot) {
+    Products.where("keywords", "array-contains-any", keystring.split(" ")).orderBy("keywords").get().then(function (querySnapshot) {
         querySnapshot.forEach(function (doc) {
             log(doc.data());
         });
