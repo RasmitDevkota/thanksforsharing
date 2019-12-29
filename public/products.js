@@ -49,7 +49,7 @@ function filter(field) {
         querySnapshot.forEach((doc) => {
             // Data that needs to be put into a section 
             var name = doc.data().name.toString();
-            var imageRef = doc.data().im
+            var imageRef = doc.data().imageRef.toString();
             var desc = doc.data().description.toString();
             var productid = doc.data().id.toString();
             var views = doc.data().views.toString();
