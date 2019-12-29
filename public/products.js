@@ -30,7 +30,7 @@ function view(productid) {
 };
 
 function search() {
-    var text = document.getElementById 
+    var text = document.getElementById("sample6") 
 };
 
 function filter(field) {
