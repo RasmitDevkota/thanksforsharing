@@ -2,9 +2,10 @@ v-product{
     display: flex;
     flex-direction: row;
 }
+
 v-name{
     font-size: 500%;
 }
 v-description{
-    
+
 }
