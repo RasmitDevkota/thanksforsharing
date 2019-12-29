@@ -1,6 +1,7 @@
 v-product{
     display: flex;
     flex-direction: row;
+    border
 }
 v-text{
     display:flex;
