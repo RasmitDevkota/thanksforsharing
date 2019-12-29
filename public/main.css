@@ -9,7 +9,7 @@ html, body {
   text-align: center;
   font-size: 28px;
   cursor: pointer;
-  border: thin solid #888;
+
   /*box-shadow: 1px 1px 1px grey;*/
 }
 .signinoptions:hover {
