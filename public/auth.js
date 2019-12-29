@@ -33,7 +33,7 @@ function eToggleSignIn() {
             firebase.auth().signInWithEmailAndPassword(email, password)
                 .then(function () {
                     firebase.auth().onAuthStateChanged(function (user) {
-                        close("email");
+                        display("email");
                     });
                 }).catch(function (error) {
                     var errorCode = error.code;
@@ -112,7 +112,7 @@ function gToggleSignIn() {
                                 log("Users doc already exists, skipped writing.");
                             }
                         });
-                        close('popupsignin');
+                        display('popupsignin');
                     });
                 };
             });
@@ -242,7 +242,7 @@ function handleSignUp() {
 
         firebase.auth().onAuthStateChanged(function (user) {
             if (user) {
-                close('signup');
+                display('signup');
             }
         });
     }).catch(function (error) {
