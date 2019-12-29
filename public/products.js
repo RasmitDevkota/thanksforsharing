@@ -39,7 +39,7 @@ function filter(field) {
             var price = doc.data().price.toString();
 
             var outerDiv = document.createElement("div");
-            document.getElementById("Results").appendChild(outerDiv);
+            document.getElementById("results").appendChild(outerDiv);
             outerDiv.id = "outer" + name;
 
             var product = document.createElement("p");
