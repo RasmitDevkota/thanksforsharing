@@ -9,7 +9,7 @@ v-product{
 v-image{
     flex-grow: 1;
     flex-basis: auto;
-    width: 
+    width: auto;
 }
 v-text{
     flex-grow: 2;
