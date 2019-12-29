@@ -78,7 +78,7 @@ function filter(field) {
             document.getElementById(outerDiv.id).appendChild(product);
 
             var rating = document.createElement("v-text");
-            rating.innerHTML = name;
+            rating.innerHTML = rating;
             rating.className = "vrating";
             document.getElementById(outerDiv.id).appendChild(product);
         });
