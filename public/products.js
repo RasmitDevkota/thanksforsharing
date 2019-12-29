@@ -71,26 +71,6 @@ function filter(field) {
                 elem.className = "v" + txt;
                 document.getElementById(text.id).appendChild(elem);
             };
-
-            var name = document.createElement("v-name");
-            name.innerHTML = name;
-            name.className = "vname";
-            document.getElementById(test.id).appendChild(name);
-
-            var description = document.createElement("v-description");
-            description.innerHTML = description;
-            description.className = "vdescription";
-            document.getElementById(test.id).appendChild(description);
-
-            var price = document.createElement("v-price");
-            price.innerHTML = price;
-            price.className = "vprice";
-            document.getElementById(test.id).appendChild(price);
-
-            var rating = document.createElement("v-rating");
-            rating.innerHTML = rating;
-            rating.className = "vrating";
-            document.getElementById(test.id).appendChild(rating);
         });
     });
 };
