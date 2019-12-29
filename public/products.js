@@ -77,7 +77,7 @@ function filter(field) {
             price.className = "vprice";
             document.getElementById(outerDiv.id).appendChild(product);
 
-            var rating = document.createElement("v-text");
+            var rating = document.createElement("v-rating");
             rating.innerHTML = rating;
             rating.className = "vrating";
             document.getElementById(outerDiv.id).appendChild(product);
