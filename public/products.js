@@ -42,7 +42,7 @@ function view(productid) {
     });
 };
 
-var txtElements = ["text"];
+var txtElements = ["name"];
 
 function filter(field) {
     Products.orderBy(field).get().then((querySnapshot) => {
