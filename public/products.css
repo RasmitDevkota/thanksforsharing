@@ -2,7 +2,7 @@ v-product{
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid gray;
-    padding: 1%
+    padding: 1%;
 }
 v-text{
     display:flex;
