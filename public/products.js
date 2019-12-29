@@ -36,7 +36,7 @@ function search() {
 
 function results(keystring) {
     
-}
+};
 
 function filter(field) {
     Products.orderBy(field).get().then((querySnapshot) => {
