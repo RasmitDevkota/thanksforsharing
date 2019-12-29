@@ -6,6 +6,9 @@ v-product{
     margin-left: 10px;
     margin-right: 10px;
 }
+v-image{
+    
+}
 v-text{
     display:flex;
     flex-direction: column;
