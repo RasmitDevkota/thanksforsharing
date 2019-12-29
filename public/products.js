@@ -72,7 +72,7 @@ function filter(field) {
             text.className = "vdescription";
             document.getElementById(outerDiv.id).appendChild(product);
 
-            var price = document.createElement("v-text");
+            var price = document.createElement("v-price");
             price.innerHTML = price;
             price.className = "vprice";
             document.getElementById(outerDiv.id).appendChild(product);
