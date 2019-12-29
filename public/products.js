@@ -30,7 +30,7 @@ function view(productid) {
 };
 
 function search() {
-}
+};
 
 function filter(field) {
     Products.orderBy(field).get().then((querySnapshot) => {
