@@ -60,7 +60,6 @@ nav{
   color: white;
   background-color: #343434;
   border: 1px solid #343434;
-  border-bottom: 1px solid #343434;
 }
 .navelement:hover{
   color:red;
