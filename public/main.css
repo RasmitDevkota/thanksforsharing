@@ -53,7 +53,6 @@ nav{
   flex-direction: row;
   background-color: #343434;
   box-shadow: 0px 5px 8px #888888;
-  border-bottom: 7px solid red;
 }
 .navelement{
   padding: 7px;;
