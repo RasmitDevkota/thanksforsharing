@@ -35,7 +35,7 @@ function search() {
 };
 
 function results(keystring) {
-    Products.where("keywords", "array-contains-any")
+    Products.where("keywords", "array-contains-any", )
 };
 
 function filter(field) {
