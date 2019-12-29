@@ -4,7 +4,7 @@ v-product{
 }
 v-text{
     display:flex;
-    flex-
+    flex-direction: column;
 }
 v-name{
     font-size: 500%;
