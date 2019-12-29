@@ -4,6 +4,7 @@ html, body {
 }
 .signinoptions {
   background-color: #d2dee4;
+  border: thin solid #888;
   color: white;
   padding: 24px 28px;
   text-align: center;
