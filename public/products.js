@@ -45,7 +45,7 @@ function view(productid) {
 function filter(field) {
     Products.orderBy(field).get().then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
-            //
+            // Data that needs to be put into a 
             var name = doc.data().name.toString();
             var desc = doc.data().description.toString();
             var productid = doc.data().id.toString();
