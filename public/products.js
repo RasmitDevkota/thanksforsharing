@@ -42,6 +42,8 @@ function view(productid) {
     });
 };
 
+
+
 function filter(field) {
     Products.orderBy(field).get().then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
