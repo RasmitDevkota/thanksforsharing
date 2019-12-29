@@ -63,7 +63,7 @@ nav{
 }
 .navelement:hover{
   color:red;
-  border-bottom: 1px solid red;
+  border-bottom: 2px solid red;
 }
 .search{
   color: white;
