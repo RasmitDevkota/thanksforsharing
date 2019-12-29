@@ -29,14 +29,6 @@ function redirect(pagePath) {
     };
 };
 
-window.onload = function () {
-    // var urlParams = new URLSearchParams(window.location.search);
-    // var mode = urlParams.get("darkmode");
-    // if (mode == "dark") {
-    //     document.getElementByTagName("html").id = "dark";
-    // }
-};
-
 function log(text) {
     console.log(text);
 };
