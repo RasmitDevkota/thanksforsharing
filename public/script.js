@@ -25,7 +25,7 @@ function redirect(pagePath) {
         // var urlParams = new URLSearchParams(window.location.search);
         // var mode = urlParams.get('mode').toString();
 
-        window.location = "thx4sharing.web.app/" + pagePath;
+        window.location. = "thx4sharing.web.app/" + pagePath;
     };
 };
 
