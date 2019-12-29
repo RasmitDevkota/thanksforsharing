@@ -10,7 +10,7 @@ v-image{
     grow: 1;
 }
 v-text{
-
+    
     display:flex;
     flex-direction: column;
 }
