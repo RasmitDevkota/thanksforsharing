@@ -6,7 +6,9 @@ v-product{
     margin-left: 10px;
     margin-right: 10px;
 }
-v-image
+v-image{
+    
+}
 img{
     flex-grow: 1;
     flex-basis: 30%;
