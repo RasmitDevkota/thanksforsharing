@@ -64,7 +64,7 @@ function filter(field) {
             text.className = "vtext";
             document.getElementById(outerDiv.id).appendChild(product);
 
-            for(i = 0; i < txtElements.length();  {
+            for(i = 0; i < txtElements.length(); i++) {
 
             };
 
