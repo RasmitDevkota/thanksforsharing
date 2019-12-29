@@ -32,7 +32,7 @@ function view(productid) {
 function search() {
     var text = document.getElementById("sample6").innerHTML;
 
-    window.location = "products.html?" + text.toString();
+    window.location = "products.html?s" + text.toString();
 };
 
 function searchRedirect(id) {
