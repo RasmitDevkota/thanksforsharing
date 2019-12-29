@@ -22,8 +22,6 @@ function redirect(pagePath) {
         firebase.auth().signOut();
         window.location.replace("thx4sharing.web.app");
     } else {
-        // var urlParams = new URLSearchParams(window.location.search);
-        // var mode = urlParams.get('mode').toString();
 
         window.location.replace("thx4sharing.web.app/" + pagePath);
     };
