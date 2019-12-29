@@ -7,10 +7,10 @@ v-product{
     margin-right: 10px;
 }
 v-image{
-    grow: 1;
+    flex-grow: 1;
 }
 v-text{
-    
+
     display:flex;
     flex-direction: column;
 }
