@@ -26,10 +26,6 @@ html, body {
 .mdl-layout__header-row {
   padding: 0;
 }
-#search {
-  height: 50%;
-  border-bottom: red;
-}
 pre {
   overflow-x: scroll;
   line-height: 18px;
