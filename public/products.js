@@ -43,7 +43,6 @@ function view(productid) {
 };
 
 function filter(field) {
-    document.getElementById("");
     Products.orderBy(field).get().then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
             var name = doc.data().name.toString();
