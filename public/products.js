@@ -66,6 +66,21 @@ function filter(field) {
             text.innerHTML = name;
             text.className = "vtext";
             document.getElementById(outerDiv.id).appendChild(product);
+
+            var text = document.createElement("v-text");
+            text.innerHTML = name;
+            text.className = "vtext";
+            document.getElementById(outerDiv.id).appendChild(product);
+
+            var text = document.createElement("v-text");
+            text.innerHTML = name;
+            text.className = "vtext";
+            document.getElementById(outerDiv.id).appendChild(product);
+
+            var text = document.createElement("v-text");
+            text.innerHTML = name;
+            text.className = "vtext";
+            document.getElementById(outerDiv.id).appendChild(product);
         });
     });
 };
