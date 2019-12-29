@@ -23,5 +23,6 @@ v-rating{
     font-size: 200%;
 }
 v-actions{
-
+    display:flex;
+    
 }
