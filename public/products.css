@@ -21,7 +21,7 @@ v-name{
 }
 v-description{
     padding: 1%;
-    font-size: 50%;
+    font-size: 100%;
     color: gray;
 }
 v-price{
