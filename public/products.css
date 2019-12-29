@@ -32,13 +32,13 @@ v-price{
 v-rating{
     padding:1%;
     flex-grow: 1;
-    color: ;
+    color: you need to add a color here btw it's making everything red;
     font-size: 150%;
 }
 v-actions{
     display:flex;
     flex-direction: column;
-    justify-content
+    justify-content: space-between
 }
 v-checkout{
     margin: 5%;
