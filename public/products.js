@@ -12,9 +12,6 @@ window.onload =  function () {
             var cart = db.collection("cart").doc(user.displayName);
         } else {
                 elem.style.display = "block";
-            } else {
-                elem.style.display = "none";
-            }
         }
     }
 };
