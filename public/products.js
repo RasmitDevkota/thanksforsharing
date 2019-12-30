@@ -92,7 +92,7 @@ function filter(field) {
     });
 };
 
-document.add
+document.addEventListener
 
 function productRedirect(id) {
     // var urlParams = new URLSearchParams(window.location.search);
