@@ -11,7 +11,7 @@ window.onload =  function () {
         if (user != null){
             var cart = db.collection("cart").doc(user.displayName);
         } else {
-                elem.style.display = "block";
+        elem.style.display = "block";
         }
     }
 };
