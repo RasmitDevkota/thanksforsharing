@@ -76,7 +76,7 @@ function filter(field) {
             };
 
             var actions = document.createElement("v-actions");
-            actions.innerHTML = 
+            actions.innerHTML =
         });
     });
 };
