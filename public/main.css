@@ -26,11 +26,6 @@ html, body {
 .mdl-layout__header-row {
   padding: 0;
 }
-h3 {
-  background-size: 40px;
-  padding-left: 50px;
-  color: white;
-}
 #sign-out-button {
   display: none;
 }
