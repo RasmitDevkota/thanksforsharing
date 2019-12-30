@@ -68,6 +68,12 @@ var txtElements = ["name", "description", "price", "rating"];
 var actionElements = ["addtocart", "checkout"];
 var actionNames = ["Add to Cart", "Fast Checkout"];
 
+function filter(field) {
+    Products.orderBy(field).get().then((querySnapshot) => {
+        querySnapshot.forEach(showProducts(doc));
+    });
+};
+
 function productRedirect(id) {
     window.location = "product.html?" + id.toString();
 };
