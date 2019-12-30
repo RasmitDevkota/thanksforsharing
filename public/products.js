@@ -8,7 +8,7 @@ window.onload =  function () {
     } else if (window.location.href.indexOf("product.html")) {
         var product = urlParams.get('product').toString();
 
-        if
+        if (user != )
         var cart = db.collection("cart").doc(user.displayName);
     }
 };
