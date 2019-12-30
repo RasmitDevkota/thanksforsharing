@@ -57,7 +57,7 @@ function showProducts(doc) {
     for (i = 0; i < txtElements.length; i++) {
         var txt = txtElements[i];
         var elem = document.createElement("v-" + txt);
-        elem.innerHTML = txt;
+        elem.innerHTML = txtContent;
         elem.className = "v" + txt;
         document.getElementById(text.id).appendChild(elem);
     };
