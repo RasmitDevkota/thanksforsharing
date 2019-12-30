@@ -1,7 +1,7 @@
 var Products = db.collection("products");
 var cart = db.collection("cart").doc(user.displayName);
 
-document.
+document.onlo
 
 function search() {
     var text = document.getElementById("sample6").innerHTML;
