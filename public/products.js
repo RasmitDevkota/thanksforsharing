@@ -73,7 +73,6 @@ function view(productid) {
         productReference.onSnapshot(function (doc) {
             var views = doc.data().views;
             var productid = doc.data().id.toString();
-            log(views);
             productRedirect(productid);
         });
     }).catch(function (error) {
