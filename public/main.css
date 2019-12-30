@@ -63,9 +63,6 @@ nav{
   background-color: #343434; 
   border: none;
 }
-button:hover {
-  
-}
 @media only screen and (max-width: 300px) {
   .text {
     font-size: 11px
