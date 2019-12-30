@@ -93,7 +93,7 @@ function filter(field) {
 };
 
 function productRedirect(id) {
-    window.location = "product.html" + id.toString();
+    window.location = "product.html?" + id.toString();
 };
 
 function addToCart(productid) {
