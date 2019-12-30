@@ -58,7 +58,7 @@ function results(keystring) {
     });
 };
 
-function view(productid) {
+function viewDe(productid) {
     var productReference = Products.doc(productid);
 
     p
