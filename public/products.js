@@ -75,7 +75,7 @@ function filter(field) {
                 document.getElementById(text.id).appendChild(elem);
             };
 
-            var actions = document.createElement
+            var actions = document.createElement("")
         });
     });
 };
