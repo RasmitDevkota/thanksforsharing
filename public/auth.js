@@ -77,6 +77,7 @@ function gToggleSignIn() {
             firebase.auth().onAuthStateChanged(function (user) {
                 if (user != null) {
                     document.getElementById("signin").textContent = "Sign Out";
+                    
                     var user = firebase.auth().currentUser;
 
                     user.providerData.forEach(function (profile) {
