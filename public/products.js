@@ -68,8 +68,6 @@ var txtElements = ["name", "description", "price", "rating"];
 var actionElements = ["addtocart", "checkout"];
 var actionNames = ["Add to Cart", "Fast Checkout"];
 
-
-
 function productRedirect(id) {
     window.location = "product.html?" + id.toString();
 };
