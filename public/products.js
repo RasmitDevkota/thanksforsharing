@@ -17,7 +17,6 @@ function search() {
 };
 
 var txtElements = ["name", "description", "price", "rating"];
-var 
 var actionElements = ["addtocart", "checkout"];
 var actionNames = ["Add to Cart", "Fast Checkout"];
 
