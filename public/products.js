@@ -58,7 +58,6 @@ function showProducts(doc) {
     };
 }
 
-
 function productRedirect(id) {
     window.location = "product.html?" + id.toString();
 };
