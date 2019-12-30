@@ -66,11 +66,6 @@ nav{
 .search:focus{
   outline: none;
 }
-button{
-  text-decoration: none;
-  color: #000000;
-  font-family: courier;
-}
 button:hover {
   cursor: pointer;
 }
