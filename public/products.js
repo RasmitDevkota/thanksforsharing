@@ -92,6 +92,8 @@ function filter(field) {
     });
 };
 
+document.add
+
 function productRedirect(id) {
     // var urlParams = new URLSearchParams(window.location.search);
     // var mode = urlParams.get('mode').toString();
