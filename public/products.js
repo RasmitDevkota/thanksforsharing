@@ -1,7 +1,7 @@
 var Products = db.collection("products");
 var cart = db.collection("cart").doc(user.displayName);
 
-window.onload =  function() {
+window.onload =  function () {
     if (window.location.href.indexOf("products.html")) {
 
     }
