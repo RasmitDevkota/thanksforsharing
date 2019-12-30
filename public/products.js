@@ -9,6 +9,7 @@ window.onload =  function () {
         var query = urlParams.get('query').toString();
     } else if (window.location.href.indexOf("product.html")) {
 
+        var query = urlParams.get('query').toString();
     }
 };
 
