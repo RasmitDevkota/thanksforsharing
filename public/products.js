@@ -54,7 +54,7 @@ function showProducts(doc) {
 
 function results(keystring) {
     Products.where("keywords", "array-contains-any", keystring.split(" ")).orderBy("keywords").get().then(function (querySnapshot) {
-        querySnapshot.forEach();
+        querySnapshot.forEach(showProducts(doc));
     });
 };
 
