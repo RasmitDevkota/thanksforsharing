@@ -32,9 +32,6 @@ body {
 .mdl-layout__header-row {
   padding: 0;
 }
-#sign-out-button {
-  display: none;
-}
 #sign-in-card {
   z-index: 2;
 }
