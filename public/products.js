@@ -77,7 +77,7 @@ function filter(field) {
 
             var actions = document.createElement("v-actions");
             actions.className = "vactions";
-            document.getElementById(outerDiv.id)
+            document.getElementById(outerDiv.id).app
         });
     });
 };
