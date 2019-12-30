@@ -18,6 +18,7 @@ if(user != null) {
     // RASMIT - INSERT THIS INTO THE SIGN IN REDIRECT STUFF, AND FIX REIRECTS TO ONLY CLOSE THE POPUP AND NOT ACTUALLY REDIRECT
     document.getElementById("signin").textContent = "Sign Out";
 };
+}
 
 function redirect(pagePath) {
     if (pagePath === "signout") {
