@@ -16,12 +16,6 @@ function search() {
     window.location = "products.html?query=" + text.toString();
 };
 
-function results(keystring) {
-    Products.where("keywords", "array-contains-any", keystring.split(" ")).orderBy("keywords").get().then(function (querySnapshot) {
-        querySnapshot.forEach(showProducts(doc));
-    });
-};
-
 var txtElements = ["name", "description", "price", "rating"];
 var actionElements = ["addtocart", "checkout"];
 var actionNames = ["Add to Cart", "Fast Checkout"];
