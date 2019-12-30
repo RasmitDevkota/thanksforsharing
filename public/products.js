@@ -60,38 +60,7 @@ function filter(field) {
             var rating = doc.data().ratings.toString();
             var price = doc.data().price.toString();
 
-            var outerDiv = document.createElement("div");
-            document.getElementById("results").appendChild(outerDiv);
-            outerDiv.id = "outer" + name;
-
-            var image = document.createElement("img");
-            image.src = imageRef;
-            document.getElementById(outerDiv.id).appendChild(image);
-
-            var text = document.createElement("v-text");
-            text.innerHTML = name;
-            text.className = "vtext";
-            document.getElementById(outerDiv.id).appendChild(product);
-
-            for (i = 0; i < txtElements.length; i++) {
-                var txt = txtElements[i];
-                var elem = document.createElement("v-" + txt);
-                elem.innerHTML = txt;
-                elem.className = "v" + txt;
-                document.getElementById(text.id).appendChild(elem);
-            };
-
-            var actions = document.createElement("v-actions");
-            actions.className = "vactions";
-            document.getElementById(outerDiv.id).appendChild(actions);
-
-            for (i = 0; i < actionElements.length; i++) {
-                var action = actionElements[i];
-                var elem = document.createElement("v-" + action);
-                elem.innerHTML = actionNames[i];
-                elem.classList.add("v-" + action, "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect");
-                document.getElementById(text.id).appendChild(elem);
-            };
+            
         });
     });
 };
