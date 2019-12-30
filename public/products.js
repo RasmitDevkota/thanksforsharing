@@ -93,12 +93,6 @@ var actionNames = ["Add to Cart", "Fast Checkout"];
 function filter(field) {
     Products.orderBy(field).get().then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
-            var name = doc.data().name.toString();
-            var imageRef = doc.data().imageRef.toString();
-            var desc = doc.data().description.toString();
-            var productid = doc.data().id.toString();
-            var rating = doc.data().ratings.toString();
-            var price = doc.data().price.toString();
         });
     });
 };
