@@ -76,7 +76,8 @@ function filter(field) {
             };
 
             var actions = document.createElement("v-actions");
-            actions.className = "vactions"
+            actions.className = "vactions";
+            document
         });
     });
 };
