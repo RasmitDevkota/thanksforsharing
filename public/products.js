@@ -3,7 +3,6 @@ var cart = db.collection("cart").doc(user.displayName);
 
 window.onload =  function () {
     var urlParams = new URLSearchParams(window.location.search);
-    var query = urlParams.get('query').toString();
 
     if (window.location.href.indexOf("products.html")) {
 
