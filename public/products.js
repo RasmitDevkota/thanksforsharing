@@ -5,7 +5,7 @@ window.onload =  function () {
     if (window.location.href.indexOf("products.html")) {
         
     }
-}
+};
 
 function search() {
     var text = document.getElementById("sample6").innerHTML;
