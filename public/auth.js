@@ -129,6 +129,9 @@ function gToggleSignIn() {
         });
     } else {
         firebase.auth().signOut();
+
+        document.getElementById("signin").textContent = "Sign In";
+        
         var provider = new firebase.auth.GoogleAuthProvider();
         firebase.auth().signInWithPopup(provider).then(function (result) {
             var user = result.user;
