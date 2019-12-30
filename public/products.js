@@ -68,9 +68,6 @@ function view(productid) {
         log("Views: ", views, " Rating: ", rating, " Price: ", price);
     });
 
-    var newViews = {
-        views: firebase.firestore.FieldValue.increment(1)
-    };
 
     productReference.update(newViews).then(function () {
         log("Document successfully updated!");
