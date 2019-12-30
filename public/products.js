@@ -60,7 +60,7 @@ function filter(field) {
 
             var image = document.createElement("v-image");
             image.src = imageRef;
-            image.className = "vimage";
+            image.className = "img";
             document.getElementById(outerDiv.id).appendChild(image);
 
             var text = document.createElement("v-text");
