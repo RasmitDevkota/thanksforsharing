@@ -7,6 +7,8 @@ window.onload =  function () {
         var query = urlParams.get('query').toString();
     } else if (window.location.href.indexOf("product.html")) {
         var product = urlParams.get('product').toString();
+
+        var cart = db.collection("cart").doc(user.displayName);
     }
 };
 
