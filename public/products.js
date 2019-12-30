@@ -43,7 +43,7 @@ function view(productid) {
 };
 
 var txtElements = ["name", "description", "price", "rating"];
-var actionElements = [""];
+var actionElements = ["addtocart"];
 
 function filter(field) {
     Products.orderBy(field).get().then((querySnapshot) => {
