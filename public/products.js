@@ -22,7 +22,7 @@ var actionNames = ["Add to Cart", "Fast Checkout"];
 
 function filter(field) {
     Products.orderBy(field).get().then((querySnapshot) => {
-        querySnapshot.forEach(
+        querySnapshot.forEach((doc) => {
             showProducts(doc)
         );
     });
