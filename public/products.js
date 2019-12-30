@@ -66,17 +66,6 @@ function view(productid) {
         var price = doc.data().price;
         log(" Rating: ", rating, " Price: ", price);
     });
-
-
-    productReference.update(newViews).then(function () {
-        log("Document successfully updated!");
-        productReference.onSnapshot(function (doc) {
-            var productid = doc.data().id.toString();
-            productRedirect(productid);
-        });
-    }).catch(function (error) {
-        console.error("Error updating document: ", error);
-    });
 };
 
 var txtElements = ["name", "description", "price", "rating"];
