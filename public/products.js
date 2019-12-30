@@ -1,6 +1,8 @@
 var Products = db.collection("products");
 var cart = db.collection("cart").doc(user.displayName);
 
+
+
 function search() {
     var text = document.getElementById("sample6").innerHTML;
     window.location = "products.html?query=" + text.toString();
