@@ -13,6 +13,12 @@ function search() {
 function results(keystring) {
     Products.where("keywords", "array-contains-any", keystring.split(" ")).orderBy("keywords").get().then(function (querySnapshot) {
         querySnapshot.forEach(function (doc) {
+            var name = doc.data().name.toString();
+            var imageRef = doc.data().imageRef.toString();
+            var desc = doc.data().description.toString();
+            var productid = doc.data().id.toString();
+            var rating = doc.data().ratings.toString();
+            var price = doc.data().price.toString();
             var outerDiv = document.createElement("div");
             document.getElementById("results").appendChild(outerDiv);
             outerDiv.id = "outer" + name;
