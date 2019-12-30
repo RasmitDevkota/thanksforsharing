@@ -32,9 +32,6 @@ body {
 .mdl-layout__header-row {
   padding: 0;
 }
-#sign-in-card {
-  z-index: 2;
-}
 nav{
   display: flex;
   flex-direction: row;
