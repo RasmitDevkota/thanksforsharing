@@ -43,6 +43,7 @@ function view(productid) {
 };
 
 var txtElements = ["name", "description", "price", "rating"];
+var actionElements = [];
 
 function filter(field) {
     Products.orderBy(field).get().then((querySnapshot) => {
@@ -79,7 +80,7 @@ function filter(field) {
             actions.className = "vactions";
             document.getElementById(outerDiv.id).appendChild(actions);
 
-            
+
         });
     });
 };
