@@ -61,7 +61,7 @@ function results(keystring) {
 function view(productid) {
     var productReference = Products.doc(productid);
 
-    
+    p
 };
 
 var txtElements = ["name", "description", "price", "rating"];
