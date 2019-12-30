@@ -61,13 +61,13 @@ function filter(field) {
             var price = doc.data().price.toString();
 
             function display(elem) {
-                var elem = document.getElementById(elem);
-                if (elem.style.display === "none") {
-                    elem.style.display = "block";
-                } else {
-                    elem.style.display = "none";
-                }
-            };
+          var elem = document.getElementById(elem);
+          if (elem.style.display === "none") {
+            elem.style.display = "block";
+          } else {
+            elem.style.display = "none";
+          }
+        };
         });
     });
 };
