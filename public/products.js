@@ -51,7 +51,6 @@ function filter(field) {
             var imageRef = doc.data().imageRef.toString();
             var desc = doc.data().description.toString();
             var productid = doc.data().id.toString();
-            var views = doc.data().views.toString();
             var rating = doc.data().ratings.toString();
             var price = doc.data().price.toString();
 
