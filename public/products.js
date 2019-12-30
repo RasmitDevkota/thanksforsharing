@@ -62,7 +62,6 @@ function view(productid) {
     var productReference = Products.doc(productid);
 
     productReference.onSnapshot(function (doc) {
-        var views = doc.data().views;
         var rating = doc.data().rating;
         var price = doc.data().price;
         log(" Rating: ", rating, " Price: ", price);
