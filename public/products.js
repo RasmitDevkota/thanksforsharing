@@ -82,7 +82,7 @@ function filter(field) {
 
             for (i = 0; i < actionElements.length; i++) {
                 var action = actionElements[i];
-                var elem = document.createElement("v-" + txt);
+                var elem = document.createElement("v-" + actions);
                 elem.innerHTML = txt;
                 elem.className = "v" + txt;
                 document.getElementById(text.id).appendChild(elem);
