@@ -3,8 +3,8 @@ var cart = db.collection("cart").doc(user.displayName);
 
 window.onload =  function () {
     if (window.location.href.indexOf("products.html")) {
-        
-    }
+
+    } else if
 };
 
 function search() {
