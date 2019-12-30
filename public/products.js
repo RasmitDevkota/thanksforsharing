@@ -80,7 +80,7 @@ function filter(field) {
             actions.className = "vactions";
             document.getElementById(outerDiv.id).appendChild(actions);
 
-            for (i = 0; i < txtElements.length; i++) {
+            for (i = 0; i < actionElements.length; i++) {
                 var txt = txtElements[i];
                 var elem = document.createElement("v-" + txt);
                 elem.innerHTML = txt;
