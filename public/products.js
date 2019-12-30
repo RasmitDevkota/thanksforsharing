@@ -71,7 +71,6 @@ function view(productid) {
     productReference.update(newViews).then(function () {
         log("Document successfully updated!");
         productReference.onSnapshot(function (doc) {
-            var views = doc.data().views;
             var productid = doc.data().id.toString();
             productRedirect(productid);
         });
