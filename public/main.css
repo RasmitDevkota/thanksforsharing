@@ -5,9 +5,7 @@ html, body {
 *{
   box-sizing: border-box;
 }
-body {
-  font-family: Verdana, sans-serif;
-}
+
 .signinoptions {
   background-color: #30b0f5;
   border: none;
