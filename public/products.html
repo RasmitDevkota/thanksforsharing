@@ -220,11 +220,13 @@
         document.getElementById('popupsignin').style.display = "block";
       };
       function display(elem) {
-        document.getElementById(elem).style.cssText = "display: block";
-      };
-      function display(elem) {
-        document.getElementById(elem).style.cssText = "display: none";
-      };
+          var elem = document.getElementById(elem);
+          if (elem.style.display === "none") {
+            elem.style.display = "block";
+          } else {
+            elem.style.display = "none";
+          }
+        };
     </script>
 
   </body>
