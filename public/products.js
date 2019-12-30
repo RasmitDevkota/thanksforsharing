@@ -1,5 +1,4 @@
 var Products = db.collection("products");
-var cart = db.collection("cart").doc(user.displayName);
 
 window.onload =  function () {
     var urlParams = new URLSearchParams(window.location.search);
