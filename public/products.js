@@ -40,9 +40,8 @@ function showProducts(doc) {
     var rating = doc.data().ratings.toString();
     var price = doc.data().price.toString();
 
-    
-    var outerDiv = document.createElement("div");
 
+    var outerDiv = document.createElement("div");
     document.getElementById("results").appendChild(outerDiv);
     outerDiv.id = "outer" + name;
 
