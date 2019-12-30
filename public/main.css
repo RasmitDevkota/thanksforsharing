@@ -63,9 +63,6 @@ nav{
   background-color: #343434; 
   border: none;
 }
-.search:focus{
-  outline: none;
-}
 button:hover {
   cursor: pointer;
 }
