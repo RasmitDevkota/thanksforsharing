@@ -45,6 +45,7 @@ function view(productid) {
 var txtElements = ["name", "description", "price", "rating"];
 var actionElements = ["addtocart", "checkout"];
 
+
 function filter(field) {
     Products.orderBy(field).get().then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
