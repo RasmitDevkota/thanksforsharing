@@ -23,7 +23,7 @@ function showProducts(doc) {
     var productid = doc.data().id.toString();
     var rating = doc.data().ratings.toString();
     var price = doc.data().price.toString();
-    fireauth
+    fir
     var outerDiv = document.createElement("div");
 
     document.getElementById("results").appendChild(outerDiv);
