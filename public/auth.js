@@ -174,7 +174,6 @@ function gToggleSignIn() {
                                 log("Users doc already exists, skipped writing.");
                             }
                         });
-                        document.getElementById("signin").textContent = "Sign In";
                     });
                 }
             })
