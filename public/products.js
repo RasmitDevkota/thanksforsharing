@@ -74,6 +74,7 @@ function filter(field) {
                 elem.className = "v" + txt;
                 document.getElementById(text.id).appendChild(elem);
             };
+            
         });
     });
 };
