@@ -85,7 +85,7 @@ function filter(field) {
                 var action = actionElements[i];
                 var elem = document.createElement("v-" + action);
                 elem.innerHTML = actionNames[i];
-                elem.classList.add() = "v" + action;
+                elem.classList.add("";
                 document.getElementById(text.id).appendChild(elem);
             };
         });
