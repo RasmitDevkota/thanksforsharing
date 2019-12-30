@@ -44,7 +44,7 @@ function view(productid) {
 
 var txtElements = ["name", "description", "price", "rating"];
 var actionElements = ["addtocart", "checkout"];
-var actionNames =[]
+var actionNames = [];
 
 function filter(field) {
     Products.orderBy(field).get().then((querySnapshot) => {
