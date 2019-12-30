@@ -10,7 +10,7 @@ function search() {
     window.location = "products.html?query=" + text.toString();
 };
 
-function showProducts() {
+function showProducts(doc) {
     var name = doc.data().name.toString();
     var imageRef = doc.data().imageRef.toString();
     var desc = doc.data().description.toString();
