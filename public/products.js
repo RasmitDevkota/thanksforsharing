@@ -11,7 +11,11 @@ window.onload =  function () {
         if (user != null){
             var cart = db.collection("cart").doc(user.displayName);
         } else {
-            
+            if (elem.style.display === "none") {
+                elem.style.display = "block";
+            } else {
+                elem.style.display = "none";
+            }
         }
     }
 };
