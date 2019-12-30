@@ -71,7 +71,7 @@ nav{
   color: #000000;
   font-family: courier;
 }
-.button:hover {
+button:hover {
   cursor: pointer;
 }
 @media only screen and (max-width: 300px) {
