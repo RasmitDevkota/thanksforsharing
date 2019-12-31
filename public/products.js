@@ -40,7 +40,7 @@ function results(keystring) {
 };
 
 function showProducts(doc) {
-    var name = doc.data().name.toString();
+    var name = doc.data().name;
     var imageRef = doc.data().imageRef;
     var desc = doc.data().description;
     var price = doc.data().price.toString();
