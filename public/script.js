@@ -21,7 +21,7 @@ window.onload = function () {
     } else {
         
     }
-}
+};
 
 function search() {
     var text = document.getElementById("search").innerHTML;
