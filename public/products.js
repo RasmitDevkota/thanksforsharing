@@ -44,7 +44,7 @@ function showProducts(doc) {
     var price = doc.data().price.toString();
 
     var ratings = doc.data().ratings;
-    console.log(ratings)
+    console.log(ratings);
     console.log(typeof ratings);
     var sum = 0;
 
