@@ -29,7 +29,7 @@ window.onload = function () {
 
 function search() {
     var text = document.getElementById("search").innerHTML;
-    console.log(text);
+    log(text);
     if (text == "") {
         display('search');
     } else {
