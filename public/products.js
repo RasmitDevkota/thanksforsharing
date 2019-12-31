@@ -19,7 +19,7 @@ window.onload =  function () {
 function search() {
     var text = document.getElementById("search").innerHTML;
 
-    if (text == null)
+    if (text == null) {
     window.location = "products.html?query=" + text.toString();
 };
 
