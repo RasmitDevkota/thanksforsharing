@@ -38,7 +38,6 @@ function redirect(pagePath) {
         firebase.auth().signOut();
         window.location.replace("thx4sharing.web.app");
     } else {
-
         window.location.replace(pagePath);
     };
 };
