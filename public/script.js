@@ -28,6 +28,7 @@ function search() {
 
     if (text == "") {
         display('search');
+        console.log("")
     } else {
         window.location = "products.html?query=" + text.toString();
     }
