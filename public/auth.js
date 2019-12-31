@@ -221,6 +221,33 @@ function handleSignUp() {
             if (user) {
                 document.getElementById("signin").textContent = "Sign In";
                 display('signup');
+
+                emails.doc(permusername).set({
+                    email: permemail,
+                    uid: user.uid,
+                }).then(function () {
+                    log("Document successfully written!");
+                }).catch(function (error) {
+                    console.error("Error writing document: ", error);
+                });
+
+                users.doc(user.uid).set({
+                    displayName: permusername,
+                    email: permemail,
+                }).then(function () {
+                    log("Document successfully written!");
+                }).catch(function (error) {
+                    console.error("Error writing document: ", error);
+                });
+
+                user.updateProfile({
+                    displayName: permusername,
+                }).then(function () {
+                    log(user.displayName);
+                }).catch(function (error) {
+                    log(error);
+                    log(user.displayName);
+                });
             }
         });
     }).catch(function (error) {
