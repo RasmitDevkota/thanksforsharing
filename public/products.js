@@ -54,7 +54,7 @@ function showProducts(doc) {
     var txtContent = [name, desc, price, rating];
 
     var outerDiv = document.createElement("v-product");
-    document.getElementById("results").appendChild(outerDiv);
+    document.getElementById("products").appendChild(outerDiv);
     outerDiv.id = "outer" + name;
 
     var image = document.createElement("img");
