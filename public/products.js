@@ -4,7 +4,7 @@ window.onload =  function () {
     var urlParams = new URLSearchParams(window.location.search);
 
     if (window.location.href.indexOf("products.html")) {
-        var query = urlParams.get('query').toString();
+        var query = urlParams.get('query');
         results(query);
     } else if (window.location.href.indexOf("product.html")) {
         var product = urlParams.get('product').toString();
