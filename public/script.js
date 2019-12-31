@@ -38,10 +38,6 @@ function search() {
 };
 
 function redirect(pagePath) {
-    if (pagePath === "signout") {
-        firebase.auth().signOut();
-        window.location.replace("thx4sharing.web.app");
-    } else {
         window.location.replace(pagePath);
     };
 };
