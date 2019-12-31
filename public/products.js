@@ -20,7 +20,7 @@ function search() {
     var text = document.getElementById("search").innerHTML;
 
     if (text == null) {
-window.location = "products.html?query=" + text.toString();
+        window.location = "products.html?query=" + text.toString();
     }
 };
 
