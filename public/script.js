@@ -39,5 +39,4 @@ function search() {
 
 function redirect(pagePath) {
         window.location.replace(pagePath);
-    };
 };
