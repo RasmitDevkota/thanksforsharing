@@ -2,13 +2,13 @@ var users = db.collection("users");
 var emails = db.collection("emails");
 
 function signIn() {
-    log(user);
+    console.log(user);
     if(user == null){
         document.getElementById('popupsignin').style.display = "block";
-        log(user);
+        console.log(user);
     } else {
         firebase.auth().signOut();
-        log(user);
+        console.log(user);
     }
 };
 
@@ -37,7 +37,7 @@ function eToggleSignIn() {
 
     userData.get().then(function (doc) {
         if (doc.exists) {
-            log("Document data:", doc.data());
+            console.log("Document data:", doc.data());
             var email = doc.data().email;
             var uid = doc.data().uid;
 
@@ -55,14 +55,14 @@ function eToggleSignIn() {
                     } else {
                         alert(errorMessage);
                     }
-                    log(error);
+                    console.log(error);
                 });
         } else {
-            log("Document does not exist!");
+            console.log("Document does not exist!");
             alert("User not found!");
         }
     }).catch(function (error) {
-        log("Error getting document:", error);
+        console.log("Error getting document:", error);
     });
 };
 // Email Login End
@@ -103,12 +103,12 @@ function gToggleSignIn() {
                                     email: email,
                                     uid: uid,
                                 }).then(function () {
-                                    log("Document successfully written!");
+                                    console.log("Document successfully written!");
                                 }).catch(function (error) {
                                     console.error("Error writing document: ", error);
                                 });
                             } else {
-                                log("Emails doc already exists, skipped writing.");
+                                console.log("Emails doc already exists, skipped writing.");
                             }
                         });
 
@@ -118,12 +118,12 @@ function gToggleSignIn() {
                                     displayName: username,
                                     email: email,
                                 }).then(function () {
-                                    log("Document successfully written!");
+                                    console.log("Document successfully written!");
                                 }).catch(function (error) {
-                                    log("Error writing document: ", error);
+                                    console.log("Error writing document: ", error);
                                 });
                             } else {
-                                log("Users doc already exists, skipped writing.");
+                                console.log("Users doc already exists, skipped writing.");
                             }
                         });
                         display('popupsignin');
@@ -135,7 +135,7 @@ function gToggleSignIn() {
             if (errorCode === 'auth/account-exists-with-different-credential') {
                 alert('You have already signed up with a different method for that email. If you want to merge your Google account with an Email/Password account, go to the Account page.');
             } else {
-                log(error);
+                console.log(error);
             }
         });
     } else {
@@ -164,12 +164,12 @@ function gToggleSignIn() {
                                     email: email,
                                     uid: uid,
                                 }).then(function () {
-                                    log("Document successfully written!");
+                                    console.log("Document successfully written!");
                                 }).catch(function (error) {
                                     console.error("Error writing document: ", error);
                                 });
                             } else {
-                                log("Emails doc already exists, skipped writing.");
+                                console.log("Emails doc already exists, skipped writing.");
                             }
                         });
 
@@ -179,12 +179,12 @@ function gToggleSignIn() {
                                     displayName: username,
                                     email: email,
                                 }).then(function () {
-                                    log("Document successfully written!");
+                                    console.log("Document successfully written!");
                                 }).catch(function (error) {
                                     console.error("Error writing document: ", error);
                                 });
                             } else {
-                                log("Users doc already exists, skipped writing.");
+                                console.log("Users doc already exists, skipped writing.");
                             }
                         });
                     });
@@ -224,7 +224,7 @@ function handleSignUp() {
     firebase.auth().createUserWithEmailAndPassword(permemail, permpassword).then(function () {
         firebase.auth().signInWithEmailAndPassword(permemail, permpassword).catch(function (error) {
             var errorMessage = error.message;
-            log(error);
+            console.log(error);
         });
 
         firebase.auth().onAuthStateChanged(function (user) {
@@ -236,7 +236,7 @@ function handleSignUp() {
                     email: permemail,
                     uid: user.uid,
                 }).then(function () {
-                    log("Document successfully written!");
+                    console.log("Document successfully written!");
                 }).catch(function (error) {
                     console.error("Error writing document: ", error);
                 });
@@ -245,7 +245,7 @@ function handleSignUp() {
                     displayName: permusername,
                     email: permemail,
                 }).then(function () {
-                    log("Document successfully written!");
+                    console.log("Document successfully written!");
                 }).catch(function (error) {
                     console.error("Error writing document: ", error);
                 });
@@ -253,10 +253,10 @@ function handleSignUp() {
                 user.updateProfile({
                     displayName: permusername,
                 }).then(function () {
-                    log(user.displayName);
+                    console.log(user.displayName);
                 }).catch(function (error) {
-                    log(error);
-                    log(user.displayName);
+                    console.log(error);
+                    console.log(user.displayName);
                 });
             }
         });
@@ -268,7 +268,7 @@ function handleSignUp() {
         } else {
             alert(errorMessage);
         }
-        log(error);
+        console.log(error);
     });
 };
 // Signup End
@@ -287,7 +287,7 @@ function sendPasswordReset() {
             } else if (errorCode == 'auth/user-not-found') {
                 alert(errorMessage);
             }
-            log(error);
+            console.log(error);
         });
     } else {
         alert("Please enter an email.");
