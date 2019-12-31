@@ -41,13 +41,7 @@ function showProducts(doc) {
     var name = doc.data().name.toString();
     var imageRef = doc.data().imageRef.toString();
     var desc = doc.data().description.toString();
-    var ratings = doc.data().ratings;
-    var sum = 0;
-
-    for (var i = 0; i < ratings.length; i++) {
-        sum += ratings[i];
-    };
-    var rating = sum / ratings.length;
+    
     var price = doc.data().price.toString();
     var txtContent = [name, desc, price, rating];
 
