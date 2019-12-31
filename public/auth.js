@@ -273,7 +273,7 @@ function sendPasswordReset() {
             var errorCode = error.code;
             var errorMessage = error.message;
             if (errorCode == 'auth/invalid-email') {
-                log(errorMessage);
+                (errorMessage);
             } else if (errorCode == 'auth/user-not-found') {
                 alert(errorMessage);
             }
