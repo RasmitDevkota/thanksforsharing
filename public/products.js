@@ -16,8 +16,6 @@ window.onload =  function () {
     }
 };
 
-
-
 var txtElements = ["name", "description", "price", "rating"];
 var actionElements = ["addtocart", "checkout"];
 var actionNames = ["Add to Cart", "Fast Checkout"];
