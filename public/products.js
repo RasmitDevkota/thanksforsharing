@@ -31,7 +31,7 @@ function filter(field) {
 };
 
 function results(keystring) {
-    document.getElementById(elementID).innerHTML = "";
+    document.getElementById("products").innerHTML = "";
     Products.where("keywords", "array-contains-any", keystring.split(" ")).orderBy("keywords").get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
             showProducts(doc);
