@@ -27,6 +27,8 @@ v-description{
     color: gray;
 }
 v-price{
+    border: 1 px solid red;
+    border-radius: 2%;
     padding: 1%;
     color: red;
     font-size: 150%;
