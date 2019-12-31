@@ -21,7 +21,9 @@ function search() {
 
     if (text == null) {
         window.location = "products.html?query=" + text.toString();
-    } else 
+    } else {
+        
+    }
 };
 
 var txtElements = ["name", "description", "price", "rating"];
