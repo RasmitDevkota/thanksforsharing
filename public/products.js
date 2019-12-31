@@ -16,15 +16,7 @@ window.onload =  function () {
     }
 };
 
-function search() {
-    var text = document.getElementById("search").innerHTML;
 
-    if (text == null) {
-        display('search');
-    } else {
-        window.location = "products.html?query=" + text.toString();
-    }
-};
 
 var txtElements = ["name", "description", "price", "rating"];
 var actionElements = ["addtocart", "checkout"];
