@@ -48,7 +48,6 @@ function showProducts(doc) {
         sum += ratings[i];
     };
     var rating = sum / ratings.length;
-    log(rating);
     var price = doc.data().price.toString();
     var txtContent = [name, desc, price, rating];
 
