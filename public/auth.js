@@ -217,8 +217,6 @@ function handleSignUp() {
             log(error);
         });
 
-        
-
         firebase.auth().onAuthStateChanged(function (user) {
             if (user) {
                 document.getElementById("signin").textContent = "Sign In";
