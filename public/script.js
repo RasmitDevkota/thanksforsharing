@@ -29,6 +29,7 @@ window.onload = function () {
 
 function search() {
     var text = document.getElementById("search").value;
+    log(text);
     if (text == "") {
         display('search');
     } else {
