@@ -42,6 +42,3 @@ function redirect(pagePath) {
     };
 };
 
-function log(text) {
-    console.log(text);
-};
