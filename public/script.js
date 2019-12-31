@@ -28,7 +28,6 @@ function search() {
 
     if (text == "") {
         display('search');
-        console.log(text)
     } else {
         window.location = "products.html?query=" + text.toString();
     }
