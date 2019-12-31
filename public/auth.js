@@ -2,6 +2,7 @@ var users = db.collection("users");
 var emails = db.collection("emails");
 
 function signIn() {
+    if(user)
     document.getElementById('popupsignin').style.display = "block";
 };
 
