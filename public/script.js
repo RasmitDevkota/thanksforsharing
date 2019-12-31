@@ -23,6 +23,16 @@ window.onload = function () {
     }
 }
 
+function search() {
+    var text = document.getElementById("search").innerHTML;
+
+    if (text == null) {
+        display('search');
+    } else {
+        window.location = "products.html?query=" + text.toString();
+    }
+};
+
 function redirect(pagePath) {
     if (pagePath === "signout") {
         firebase.auth().signOut();
