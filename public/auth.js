@@ -6,6 +6,7 @@ function signIn() {
         document.getElementById('popupsignin').style.display = "block";
     } else {
         firebase.auth().signOut();
+        log(user)
     }
 };
 
