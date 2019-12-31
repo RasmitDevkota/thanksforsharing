@@ -109,7 +109,7 @@ function removeFromCart(productid) {
 
 function showCart() {
     cart.get().then(function (doc) {
-        log(doc.data());
+        console.log(doc.data());
     });
 };
 
@@ -124,7 +124,7 @@ function rate(productid, val) {
             sum += ratings[i];
         };
         var rating = sum / ratings.length;
-        log(rating);
+        console.log(rating);
     });
 };
 
