@@ -32,7 +32,7 @@ function filter(field) {
 function results(keystring) {
     Products.where("keywords", "array-contains-any", keystring.split(" ")).orderBy("keywords").get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
-            console.log("")
+            console.log(key)
             showProducts(doc);
         });
     });
