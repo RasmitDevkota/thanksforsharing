@@ -22,6 +22,7 @@ var actionElements = ["addtocart", "checkout"];
 var actionNames = ["Add to Cart", "Fast Checkout"];
 
 function filter(field) {
+    document.getElementById(elementID).innerHTML = "";
     Products.orderBy(field).get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
             showProducts(doc);
