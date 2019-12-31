@@ -34,7 +34,7 @@ function results(keystring) {
     document.getElementById("products").innerHTML = "";
     Products.where("keywords", "array-contains-any", keystring.split(" ")).orderBy("keywords").get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
-            console.log(doc)
+            console.log(doc);
             showProducts(doc);
         });
     });
