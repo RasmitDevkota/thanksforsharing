@@ -1,6 +1,10 @@
 var users = db.collection("users");
 var emails = db.collection("emails");
 
+function signIn() {
+    document.getElementById('popupsignin').style.display = "block";
+};
+
 // Email Login
 function displayName() {
     var uid = user.uid;
