@@ -4,7 +4,7 @@ var emails = db.collection("emails");
 function signIn() {
     if(user == null){
     document.getElementById('popupsignin').style.display = "block";
-    
+    }
 };
 
 // Email Login
