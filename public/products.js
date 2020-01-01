@@ -19,7 +19,7 @@ window.onload =  function () {
 
 var txtElements = ["name", "description", "price", "rating"];
 var actionElements = ["addtocart", "checkout"];
-var actionNames = ["Add to Cart", "Fast Checkout"];
+var actionNames = ["Add to Cart"];
 
 function filter(field) {
     document.getElementById("products").innerHTML = "";
