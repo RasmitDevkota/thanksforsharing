@@ -70,7 +70,7 @@ function showProducts(doc) {
     document.getElementById(outerDiv.id).appendChild(text);
 
     var star = document.createElement("i");
-    text.className = "vtfas fa-starext";
+    text.className = "vtext";
     document.getElementById(outerDiv.id).appendChild(text);
 
     // RASMIT - ADD STAR TO RATING
