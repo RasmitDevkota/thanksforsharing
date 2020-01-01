@@ -75,6 +75,8 @@ function showProducts(doc) {
         if (txt == "price") {
             elem.innerHTML = "$" + txtContent[i];
         } else if (txt == "rating") {
+            var star = document.createElement("i");
+            text.className = "fas fa-star";
             elem.innerHTML = txtContent[i];
         } else {
             elem.innerHTML = txtContent[i];
