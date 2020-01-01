@@ -46,7 +46,7 @@ function showProducts(doc) {
     var desc = doc.data().description.toString();
     var price = doc.data().price.toString();
 
-    var ratings = doc.data().rating;
+    var ratings = doc.data().ratings;
     var sum = 0;
 
     for (var i = 0; i < ratings.length; i++) {
