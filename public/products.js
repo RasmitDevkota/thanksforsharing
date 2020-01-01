@@ -69,7 +69,7 @@ function showProducts(doc) {
     text.id = "productText"
     document.getElementById(outerDiv.id).appendChild(text);
 
-    var st = document.createElement("v-text");
+    var star = document.createElement("v-text");
     text.innerHTML = name;
     text.className = "vtext";
     document.getElementById(outerDiv.id).appendChild(text);
