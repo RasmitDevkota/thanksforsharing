@@ -27,7 +27,6 @@ function filter(field) {
     Products.orderBy(field).get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
             showProducts(doc);
-            console.log("doc");
         });
     });
 };
@@ -37,7 +36,6 @@ function results(keystring) {
     Products.where("keywords", "array-contains-any", keystring.split(" ")).orderBy("keywords").get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
             showProducts(doc);
-            console.log("doc");
         });
     });
 };
