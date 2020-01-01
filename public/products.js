@@ -88,6 +88,7 @@ function showProducts(doc) {
         if (txt == "price") {
 
         } else if{} 
+        
         else {
 
         }
