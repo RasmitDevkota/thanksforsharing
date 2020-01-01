@@ -69,6 +69,9 @@ function showProducts(doc) {
     text.id = "productText"
     document.getElementById(outerDiv.id).appendChild(text);
 
+    var star = document.createElement("i");
+    text.className = "fas fa-star";
+
     for (i = 0; i < txtElements.length; i++) {
         var txt = txtElements[i];
         var elem = document.createElement("v-" + txt);
