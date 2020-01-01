@@ -69,6 +69,8 @@ function showProducts(doc) {
     text.id = "productText"
     document.getElementById(outerDiv.id).appendChild(text);
 
+    
+
     // RASMIT - ADD STAR TO RATING
 
     for (i = 0; i < txtElements.length; i++) {
