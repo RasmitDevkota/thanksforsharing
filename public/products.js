@@ -83,7 +83,7 @@ function showProducts(doc) {
             elem.innerHTML = "$" + txtContent[i];
         } else if (txt == "rating") {
             // RASMIT - ADD STAR TO RATING
-            elem.innerHTML = txtContent[i];
+            elem.innerHTML = star + txtContent[i];
         } else {
             elem.innerHTML = txtContent[i];
         }
