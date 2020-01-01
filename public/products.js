@@ -72,7 +72,13 @@ function showProducts(doc) {
     for (i = 0; i < txtElements.length; i++) {
         var txt = txtElements[i];
         var elem = document.createElement("v-" + txt);
-        elem.innerHTML = txtContent[i];
+        if (txt == "price") {
+            elem.innerHTML = actionNames[i];
+        } else if (txt == "rating") {
+
+        } else {
+            elem.innerHTML = actionNames[i];
+        }
         elem.className = "v" + txt;
         document.getElementById("productText").appendChild(elem);
     };
