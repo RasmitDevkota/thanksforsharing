@@ -47,7 +47,6 @@ function showProducts(doc) {
 
     var ratings = doc.data().ratings;
     var sum = 0;
-
     for (var i = 0; i < ratings.length; i++) {
         sum += ratings[i];  
     };
