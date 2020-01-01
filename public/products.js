@@ -79,7 +79,7 @@ function showProducts(doc) {
             elem.innerHTML = "$" + txtContent[i];
         } else if (txt == "rating") {
             document.getElementById(outerDiv.id).appendChild("div");
-            document.getElementById(outerDiv.id).appendChild("div");
+            document.getElementById(outerDiv.id).appendChild(star);
             elem.innerHTML = star + txtContent[i];
         } else {
             elem.innerHTML = txtContent[i];
