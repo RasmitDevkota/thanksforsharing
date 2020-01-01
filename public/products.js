@@ -78,7 +78,7 @@ function showProducts(doc) {
         if (txt == "price") {
             elem.innerHTML = "$" + txtContent[i];
         } else if (txt == "rating") {
-            document.getElementById().appendChild(text);
+            document.getElementById(out).appendChild(text);
             elem.innerHTML = star + txtContent[i];
         } else {
             elem.innerHTML = txtContent[i];
