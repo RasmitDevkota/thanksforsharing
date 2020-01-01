@@ -87,7 +87,8 @@ function showProducts(doc) {
         elem.innerHTML = actionNames[i];
         if (txt == "price") {
 
-        } else if{ else {
+        } else if{ 
+            else {
 
         }
         }
