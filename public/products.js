@@ -27,6 +27,7 @@ function filter(field) {
     Products.orderBy(field).get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
             showProducts(doc);
+            console.log("doc");
         });
     });
 };
