@@ -70,7 +70,11 @@ function showProducts(doc) {
     document.getElementById(outerDiv.id).appendChild(text);
 
     var star = document.createElement("i");
+    text.className = "vtext"; var text = document.createElement("v-text");
+    text.innerHTML = name;
     text.className = "vtext";
+    text.id = "productText"
+    document.getElementById(outerDiv.id).appendChild(text);
     document.getElementById(outerDiv.id).appendChild(text);
 
     // RASMIT - ADD STAR TO RATING
