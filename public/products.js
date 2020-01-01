@@ -77,7 +77,7 @@ function showProducts(doc) {
         } else if (txt == "rating") {
 
         } else {
-            elem.innerHTML = actionNames[i];
+            elem.innerHTML = txtContent[i];
         }
         elem.className = "v" + txt;
         document.getElementById("productText").appendChild(elem);
