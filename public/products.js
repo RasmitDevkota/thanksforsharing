@@ -79,7 +79,6 @@ function showProducts(doc) {
         } else {
             elem.innerHTML = actionNames[i];
         }
-        elem.innerHTML = txtContent[i];
         elem.className = "v" + txt;
         document.getElementById("productText").appendChild(elem);
     };
