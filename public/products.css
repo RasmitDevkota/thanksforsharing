@@ -6,10 +6,6 @@ v-product{
     margin-left: 10px;
     margin-right: 10px;
 }
-img{
-    width: 50%;
-    height: auto;
-}
 v-text{
     flex-grow: 2;
     flex-basis: 40;
