@@ -91,7 +91,6 @@ function showProducts(doc) {
             else {
 
         }
-        }
         elem.classList.add("v-" + action, "mdl-button", "mdl-js-button", "mdl-button--raised", "mdl-js-ripple-effect");
         document.getElementById(text.id).appendChild(elem);
     };
