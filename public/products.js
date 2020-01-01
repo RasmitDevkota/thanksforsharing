@@ -88,10 +88,6 @@ function showProducts(doc) {
     };
 };
 
-function productRedirect(id) {
-    window.location = "product.html?" + id.toString();
-};
-
 function addToCart(productid) {
     var price = Products.doc(productid).data().price;
     cart.update({
