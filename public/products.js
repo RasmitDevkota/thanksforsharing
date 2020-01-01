@@ -87,11 +87,6 @@ function showProducts(doc) {
         elem.innerHTML = actionNames[i];
         if (txt == "price") {
             elem.innerHTML = actionNames[i];
-        } else if (txt == "rating") {
-
-        } else {
-            elem.innerHTML = actionNames[i];
-        }
         elem.classList.add("v-" + action, "mdl-button", "mdl-js-button", "mdl-button--raised", "mdl-js-ripple-effect");
         document.getElementById(text.id).appendChild(elem);
     };
