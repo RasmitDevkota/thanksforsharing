@@ -2,7 +2,7 @@ img{
     width: 50%;
     height: auto;
 }
-vproduct{
+.vproduct{
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid gray;
