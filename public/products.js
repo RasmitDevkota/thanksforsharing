@@ -76,7 +76,7 @@ function showProducts(doc) {
         var elem = document.createElement("v-" + txt);
         elem.innerHTML = txtContent[i];
         elem.className = "v" + txt;
-        document.getElementById("te").appendChild(elem);
+        document.getElementById("productText").appendChild(elem);
     };
 
     var actions = document.createElement("v-actions");
