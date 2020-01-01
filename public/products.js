@@ -5,6 +5,7 @@ window.onload =  function () {
 
     if (window.location.href.indexOf("products.html")) {
         var query = urlParams.get('query');
+        
         results(query.toString());
     } else if (window.location.href.indexOf("product.html")) {
         var product = urlParams.get('product').toString();
