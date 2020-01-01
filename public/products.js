@@ -80,6 +80,8 @@ function showProducts(doc) {
         if (txt == "price") {
             elem.innerHTML = "$" + txtContent[i];
         } else if (txt == "rating") {
+
+            document.getElementById(outerDiv.id).appendChild(text);
             elem.innerHTML = txtContent[i];
         } else {
             elem.innerHTML = txtContent[i];
