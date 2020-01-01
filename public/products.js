@@ -88,7 +88,7 @@ function showProducts(doc) {
         if (txt == "price") {
 
         } else if{} 
-            else {
+        else {
 
         }
         elem.classList.add("v-" + action, "mdl-button", "mdl-js-button", "mdl-button--raised", "mdl-js-ripple-effect");
