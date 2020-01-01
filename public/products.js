@@ -72,8 +72,6 @@ function showProducts(doc) {
     var star = document.createElement("i");
     text.className = "fas fa-star";
 
-    // RASMIT - ADD STAR TO RATING
-
     for (i = 0; i < txtElements.length; i++) {
         var txt = txtElements[i];
         var elem = document.createElement("v-" + txt);
