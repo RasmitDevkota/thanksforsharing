@@ -42,7 +42,7 @@ nav{
 .left .right{
   display: flex;
   flex-direction: row;
-  padding: 
+  padding: 7px;
 }
 .navelement{
   padding: 7px;;
