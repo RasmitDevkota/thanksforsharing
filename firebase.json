@@ -8,16 +8,11 @@
   },
   "hosting": {
     "public": "public",
+    "site": "thx4sharing",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
     ]
   },
   "storage": {
