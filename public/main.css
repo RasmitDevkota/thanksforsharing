@@ -40,9 +40,6 @@ nav{
   box-shadow: 0px 5px 8px #888888;
 }
 .left .right{
-  display: flex;
-  flex-direction: row;
-  padding: 7px;
 }
 .navelement{
   padding: 7px;
