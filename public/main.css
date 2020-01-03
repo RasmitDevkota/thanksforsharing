@@ -32,7 +32,7 @@ body {
 .mdl-layout__header-row {
   padding: 0;
 }
-nav{
+nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
