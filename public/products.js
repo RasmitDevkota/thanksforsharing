@@ -95,13 +95,13 @@ function showProducts(doc) {
         document.getElementById(text.id).appendChild(elem);
     };
     document.addEventListener('keydown', function (event) {
-var password = document.getElementById('password').value;
-var username = document.getElementById('username').value;
-const key = event.key;
-if (key == "Enter" && password != null && username != null) {
-    eToggleSignIn();
-}
-});
+    var password = document.getElementById('password').value;
+    var username = document.getElementById('username').value;
+    const key = event.key;
+    if (key == "Enter" && password != null && username != null) {
+        eToggleSignIn();
+    }
+    });
 };
 
 function addToCart(productid) {
