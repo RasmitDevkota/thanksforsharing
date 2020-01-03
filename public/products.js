@@ -106,7 +106,7 @@ function showProducts(doc) {
 };
 
 function addToCart(productid) {
-    var price = Products.doc(productid).data().price;
+    var price = Products.doc(productid).get().data().price;
     cart.update({
         items: firebase.firestore.FieldValue.arrayUnion(productid),
         itemCnt: firebase.firestore.FieldValue.increment(1),
