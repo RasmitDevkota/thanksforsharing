@@ -112,7 +112,7 @@ function addToCart(productid) {
 
 function removeFromCart(productid) {
     cart.update({
-        items: firebase.firestore.FieldValue.arrayUnion(productid),
+        items: firebase.firestore.FieldValue.arrayRemove(productid),
         itemCnt: firebase.firestore.FieldValue.increment(-1)
     });
 };
