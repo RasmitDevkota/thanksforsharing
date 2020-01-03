@@ -106,7 +106,7 @@ function showProducts(doc) {
 };
 
 function addToCart(productid) {
-    var = Products.doc(productid).onSnapshot(function (doc) {
+    Products.doc(productid).onSnapshot(function (doc) {
             price = doc.data().price;
         });
 data().price;
