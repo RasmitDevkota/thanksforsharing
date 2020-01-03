@@ -106,8 +106,7 @@ function showProducts(doc) {
 };
 
 function addToCart(productid) {
-    var price = Products.doc(productid)
-        .onSnapshot(function (doc) {
+    var price = Products.doc(productid).onSnapshot(function (doc) {
             console.log("Current data: ", doc.data());
         });
 data().price;
