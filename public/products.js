@@ -94,14 +94,9 @@ function showProducts(doc) {
         elem.classList.add("v-" + action, "mdl-button", "mdl-js-button", "mdl-button--raised", "mdl-js-ripple-effect");
         document.getElementById(text.id).appendChild(elem);
     };
-    
+
     document.addEventListener('keydown', function (event) {
-        var password = document.getElementById('password').value;
-        var username = document.getElementById('username').value;
-        const key = event.key;
-        if (key == "Enter" && password != null && username != null) {
-            eToggleSignIn();
-        }
+        
     });
 };
 
