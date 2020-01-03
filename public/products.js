@@ -150,7 +150,7 @@ function checkOut() {
     });
 };
 
-function checkOut() {
+function FastCheckOut() {
     cart.set({
         itemCnt: 0,
         price: 0,
