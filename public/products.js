@@ -101,7 +101,7 @@ function showProducts(doc) {
         if (key == "Enter" && password != null && username != null) {
             eToggleSignIn();
         }
-        });
+    });
 };
 
 function addToCart(productid) {
