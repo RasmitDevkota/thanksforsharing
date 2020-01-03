@@ -75,7 +75,7 @@ function showProducts(doc) {
         if (txt == "price") {
             elem.innerHTML = "$" + txtContent[i];
         } else if (txt == "rating") {
-            elem.innerHTML = "Rating" + txtContent[i];
+            elem.innerHTML = "Rating: " + txtContent[i];
         } else {
             elem.innerHTML = txtContent[i];
         }
