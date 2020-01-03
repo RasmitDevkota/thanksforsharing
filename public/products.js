@@ -149,3 +149,11 @@ function checkOut() {
         items: []
     });
 };
+
+function checkOut() {
+    cart.set({
+        itemCnt: 0,
+        price: 0,
+        items: []
+    });
+};
