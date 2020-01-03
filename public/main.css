@@ -57,7 +57,7 @@ nav{
 .search{
   color: white;
   font-size: 15;
-  background-color: #343434; 
+  background-color: #343434;
   border: none;
 }
 @media only screen and (max-width: 300px) {
