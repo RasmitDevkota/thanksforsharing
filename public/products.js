@@ -96,7 +96,7 @@ function showProducts(doc) {
         document.getElementById(text.id).appendChild(elem);
     };
 
-    document.getElementByIdaddEventListener('click', function (event) {
+    document.getElementById()addEventListener('click', function (event) {
         
     });
 };
