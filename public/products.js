@@ -107,7 +107,7 @@ function showProducts(doc) {
 
 function addToCart(productid) {
     Products.doc(productid).onSnapshot(function (doc) {
-       v price = doc.data().price.toString();
+         price = doc.data().price.toString();
     });
     cart.update({
         items: firebase.firestore.FieldValue.arrayUnion(productid),
