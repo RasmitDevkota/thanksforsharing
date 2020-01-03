@@ -94,7 +94,7 @@ function showProducts(doc) {
         if (action == "addtocart"){
             elem.addEventListener('click', addToCart(name));
         } else {
-            elem.
+            elem.addEventListener('click', )
         }
         elem.classList.add("v-" + action, "mdl-button", "mdl-js-button", "mdl-button--raised", "mdl-js-ripple-effect");
         document.getElementById(text.id).appendChild(elem);
