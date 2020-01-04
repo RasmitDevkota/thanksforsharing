@@ -61,12 +61,12 @@ function showProducts(doc) {
 
     var image = document.createElement("img");
     image.src = imageRef;
-    document.getElementById("outer" + name).appendChild(image);
+    document.getElementById(outerDiv.id).appendChild(image);
 
     var text = document.createElement("v-text");
     text.className = "vtext";
     text.id = "productText"
-    document.getElementById("outer" + name).appendChild(text);
+    document.getElementById(outerDiv.id).appendChild(text);
 
     for (i = 0; i < txtElements.length; i++) {
         var txt = txtElements[i];
@@ -84,7 +84,7 @@ function showProducts(doc) {
 
     var actions = document.createElement("v-actions");
     actions.className = "vactions";
-    document.getElementById("outer" + name).appendChild(actions);
+    document.getElementById(outerDiv.id).appendChild(actions);
 
     for (i = 0; i < actionElements.length; i++) {
         var action = actionElements[i];
