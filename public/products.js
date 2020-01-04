@@ -91,7 +91,16 @@ function showProducts(doc) {
         var elem = document.createElement("v-" + action);
         elem.innerHTML = actionNames[i];
         if (action == "addtocart"){
-            elem.addEventListener('click', function () { alert("Hello World!"); });
+            elem.addEventListener('click', function () {
+                Products.doc(productid).onSnapshot(function (doc) {
+                    price = doc.data().price.toString();
+                });
+                cart.update({
+                    items: firebase.firestore.FieldValue.arrayUnion(productid),
+                    itemCnt: firebase.firestore.FieldValue.increment(1),
+                    price: firebase.firestore.FieldValue.increment(price)
+                });
+            });
         } else {
             elem.addEventListener('click', fastCheckOut(name));
         }
