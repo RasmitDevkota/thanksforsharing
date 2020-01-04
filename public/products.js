@@ -151,7 +151,7 @@ function checkOut() {
     });
 };
 
-function FastCheckOut() {
+function fastCheckOut() {
     cart.set({
         itemCnt: 0,
         price: 0,
