@@ -64,7 +64,6 @@ function showProducts(doc) {
     document.getElementById(outerDiv.id).appendChild(image);
 
     var text = document.createElement("v-text");
-    text.innerHTML = name;
     text.className = "vtext";
     text.id = "productText"
     document.getElementById(outerDiv.id).appendChild(text);
