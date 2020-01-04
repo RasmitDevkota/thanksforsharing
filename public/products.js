@@ -66,7 +66,7 @@ function showProducts(doc) {
     var text = document.createElement("v-text");
     text.className = "vtext";
     text.id = "productText"
-    document.getElementById(outerDiv.id).appendChild(text);
+    document.getElementById("outer" + name).appendChild(text);
 
     for (i = 0; i < txtElements.length; i++) {
         var txt = txtElements[i];
