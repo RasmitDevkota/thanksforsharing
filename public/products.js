@@ -51,7 +51,7 @@ function showProducts(doc) {
     for (var i = 0; i < ratings.length; i++) {
         sum += ratings[i];  
     };
-    var rating = (sum / ratings.length).toFixed(2);
+    var rating = (sum / ratings.length).toFixed(1);
     
     var txtContent = [name, desc, price, rating];
 
