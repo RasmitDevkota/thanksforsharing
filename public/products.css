@@ -33,6 +33,7 @@ v-price{
     font-size: 150%;
 }
 v-rating{
+    
     padding:1%;
     flex-grow: 1;
     color: black;
