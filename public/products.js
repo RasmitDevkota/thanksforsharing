@@ -111,6 +111,10 @@ function showProducts(doc) {
         elem.classList.add("v-" + action, "mdl-button", "mdl-js-button", "mdl-button--raised", "mdl-js-ripple-effect");
         document.getElementById(text.id).appendChild(elem);
     };
+
+    document.getElementById().addEventListener('click', function (event) {
+        
+    });
 };
 
 function addToCart(productid) {
