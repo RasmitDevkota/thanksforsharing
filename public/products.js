@@ -152,5 +152,5 @@ function checkOut() {
 };
 
 function fastCheckOut() {
-    var 
+    var ccn = ""
 };
