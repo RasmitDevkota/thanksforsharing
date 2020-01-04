@@ -103,13 +103,8 @@ function showProducts(doc) {
             });
         } else {
             elem.addEventListener('click', function () {
-                Products.doc(productid).onSnapshot(function (doc) {
-                    price = doc.data().price.toString();
-                });
-                cart.update({
-                    items: firebase.firestore.FieldValue.arrayUnion(productid),
-                    itemCnt: firebase.firestore.FieldValue.increment(1),
-                    price: firebase.firestore.FieldValue.increment(price)
+                var ccn = prompt("Enter Credit Card Number: ").then(function () {
+                    var address = prompt("Enter Address:");
                 });
             });
         }
