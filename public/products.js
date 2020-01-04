@@ -91,7 +91,7 @@ function showProducts(doc) {
         var elem = document.createElement("v-" + action);
         elem.innerHTML = actionNames[i];
         if (action == "addtocart"){
-            elem.addEventListener('click', addToCart(name));
+            elem.addEventListener('click', function () { alert("Hello World!"); });
         } else {
             elem.addEventListener('click', fastCheckOut(name));
         }
