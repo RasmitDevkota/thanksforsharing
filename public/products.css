@@ -35,7 +35,7 @@ v-price{
 v-rating{
     padding:1%;
     flex-grow: 1;
-    color: black;
+    color:;
     font-size: 150%;
 }
 v-actions{
