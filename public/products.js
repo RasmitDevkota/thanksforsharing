@@ -51,7 +51,7 @@ function showProducts(doc) {
     for (var i = 0; i < ratings.length; i++) {
         sum += ratings[i];  
     };
-    var rating = sum / ratings.length;
+    var rating = (sum / ratings.length).toFixed(1);
     
     var txtContent = [name, desc, price, rating];
 
@@ -64,40 +64,60 @@ function showProducts(doc) {
     document.getElementById(outerDiv.id).appendChild(image);
 
     var text = document.createElement("v-text");
-    text.innerHTML = name;
     text.className = "vtext";
-    text.id = "productText"
+    text.id = "productText" + name;
     document.getElementById(outerDiv.id).appendChild(text);
 
     for (i = 0; i < txtElements.length; i++) {
         var txt = txtElements[i];
         var elem = document.createElement("v-" + txt);
         if (txt == "price") {
-            elem.innerHTML = "$" + txtContent[i];
+            elem.innerHTML = "$" + txtContent[i] + "/month";
         } else if (txt == "rating") {
-            elem.innerHTML = txtContent[i];
+            elem.innerHTML = "<i class='fas fa-star'></i> " + txtContent[i];
         } else {
             elem.innerHTML = txtContent[i];
         }
         elem.className = "v" + txt;
-        document.getElementById("productText").appendChild(elem);
+        document.getElementById(text.id).appendChild(elem);
     };
 
     var actions = document.createElement("v-actions");
     actions.className = "vactions";
+    actions.id = "productActions" + name;
     document.getElementById(outerDiv.id).appendChild(actions);
 
     for (i = 0; i < actionElements.length; i++) {
         var action = actionElements[i];
         var elem = document.createElement("v-" + action);
         elem.innerHTML = actionNames[i];
+        if (action == "addtocart"){
+            elem.addEventListener('click', function () {
+                Products.doc(productid).onSnapshot(function (doc) {
+                    price = doc.data().price.toString();
+                });
+                cart.update({
+                    items: firebase.firestore.FieldValue.arrayUnion(productid),
+                    itemCnt: firebase.firestore.FieldValue.increment(1),
+                    price: firebase.firestore.FieldValue.increment(price)
+                });
+            });
+        } else {
+            elem.addEventListener('click', function () {
+                var ccn = prompt("Enter Credit Card Number: ").then(function () {
+                    var address = prompt("Enter Address:");
+                });
+            });
+        }
         elem.classList.add("v-" + action, "mdl-button", "mdl-js-button", "mdl-button--raised", "mdl-js-ripple-effect");
-        document.getElementById(text.id).appendChild(elem);
+        document.getElementById(actions.id).appendChild(elem);
     };
 };
 
 function addToCart(productid) {
-    var price = Products.doc(productid).data().price;
+    Products.doc(productid).onSnapshot(function (doc) {
+        price = doc.data().price.toString();
+    });
     cart.update({
         items: firebase.firestore.FieldValue.arrayUnion(productid),
         itemCnt: firebase.firestore.FieldValue.increment(1),
@@ -107,7 +127,7 @@ function addToCart(productid) {
 
 function removeFromCart(productid) {
     cart.update({
-        items: firebase.firestore.FieldValue.arrayUnion(productid),
+        items: firebase.firestore.FieldValue.arrayRemove(productid),
         itemCnt: firebase.firestore.FieldValue.increment(-1)
     });
 };
@@ -121,7 +141,7 @@ function showCart() {
 function rate(productid, val) {
     Products.doc(productid).update({
         ratings: firebase.firestore.FieldValue.arrayUnion(val)
-    }).then(function(doc){
+    }).then(function (doc){
         var ratings = doc.data().ratings;
         var sum = 0;
 
@@ -138,5 +158,11 @@ function checkOut() {
         itemCnt: 0,
         price: 0,
         items: []
+    });
+};
+
+function fastCheckOut() {
+    var ccn = prompt("Enter Credit Card Number: ").then(function () {
+        var address = prompt("Enter Address:" );
     });
 };

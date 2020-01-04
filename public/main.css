@@ -32,14 +32,13 @@ body {
 .mdl-layout__header-row {
   padding: 0;
 }
-nav{
+nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   background-color: #343434;
   box-shadow: 0px 5px 8px #888888;
   align-items: center;
-  height: 41px;
+  height: 45px;
 }
 .navelement{
   padding: 7px;
@@ -56,8 +55,8 @@ nav{
 }
 .search{
   color: white;
-  font-size: 15;
-  background-color: #343434; 
+  font-size: 15px;
+  background-color: #343434;
   border: none;
 }
 @media only screen and (max-width: 300px) {

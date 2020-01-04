@@ -8,6 +8,7 @@
   },
   "hosting": {
     "public": "public",
+    "site": "thx4sharing",
     "ignore": [
       "firebase.json",
       "**/.*",
