@@ -34,6 +34,7 @@ v-price{
 }
 v-rating{
     padding:1%;
+    border: 1px solid yellow;
     flex-grow: 1;
     color: yellow;
     font-size: 150%;
