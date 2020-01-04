@@ -157,5 +157,4 @@ function fastCheckOut() {
             var address = prompt("Enter Address:" );
         };
     );
-
 };
