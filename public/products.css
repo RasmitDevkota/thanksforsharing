@@ -1,6 +1,6 @@
 img{
     width: 30%;
-    height: ;
+    height: fit-content;
 }
 v-product{
     display: flex;
