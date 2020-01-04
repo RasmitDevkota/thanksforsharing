@@ -32,8 +32,7 @@ v-price{
     color: red;
     font-size: 150%;
 }
-v-rating{
-    
+v-rating
     padding:1%;
     flex-grow: 1;
     color: black;
