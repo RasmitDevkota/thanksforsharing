@@ -152,5 +152,4 @@ function checkOut() {
 };
 
 function fastCheckOut() {
-    alert("");
 };
