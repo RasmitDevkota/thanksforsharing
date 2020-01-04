@@ -102,7 +102,16 @@ function showProducts(doc) {
                 });
             });
         } else {
-            elem.addEventListener('click', fastCheckOut(name));
+            elem.addEventListener('click', function () {
+                Products.doc(productid).onSnapshot(function (doc) {
+                    price = doc.data().price.toString();
+                });
+                cart.update({
+                    items: firebase.firestore.FieldValue.arrayUnion(productid),
+                    itemCnt: firebase.firestore.FieldValue.increment(1),
+                    price: firebase.firestore.FieldValue.increment(price)
+                });
+            });
         }
         elem.classList.add("v-" + action, "mdl-button", "mdl-js-button", "mdl-button--raised", "mdl-js-ripple-effect");
         document.getElementById(text.id).appendChild(elem);
