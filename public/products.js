@@ -152,5 +152,5 @@ function checkOut() {
 };
 
 function fastCheckOut() {
-    var ccn = prompt("");
+    var ccn = prompt("Enter Credit Card Number:");
 };
