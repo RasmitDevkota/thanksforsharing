@@ -154,6 +154,5 @@ function checkOut() {
 function fastCheckOut() {
     var ccn = prompt("Enter Credit Card Number: ").then(function(ccn) {
             var address = prompt("Enter Address:" );
-        }
-    );
+        });
 };
