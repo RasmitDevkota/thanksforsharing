@@ -84,7 +84,7 @@ function showProducts(doc) {
 
     var actions = document.createElement("v-actions");
     actions.className = "vactions";
-    actions.id = "productActions" + ; 
+    actions.id = "productActions" + actions; 
     document.getElementById(outerDiv.id).appendChild(actions);
 
     for (i = 0; i < actionElements.length; i++) {
