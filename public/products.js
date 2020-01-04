@@ -79,7 +79,7 @@ function showProducts(doc) {
             elem.innerHTML = txtContent[i];
         }
         elem.className = "v" + txt;
-        document.getElementById("productText").appendChild(elem);
+        document.getElementById(text.id).appendChild(elem);
     };
 
     var actions = document.createElement("v-actions");
