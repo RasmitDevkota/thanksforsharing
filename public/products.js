@@ -10,7 +10,6 @@ window.onload =  function () {
         var urlParams = new URLSearchParams(window.location.search);
         var query = urlParams.get('query');
         showCart();
-        console.log(firebase.auth().currentUser);
     }
 };
 
