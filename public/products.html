@@ -39,30 +39,29 @@
         <!--End of Shopping Cart-->&nbsp;&nbsp;&nbsp;
         
         <!--Beginning of Search-->
-          <a class="navelement">
-            <i class="fas fa-search" onclick="search()"></i>
-          </a>&nbsp;
-        <!--End of Search-->&nbsp;&nbsp;&nbsp;
+        <a class="navelement">
+          <i class="fas fa-search" onclick="search()"></i>
+        </a>&nbsp;
         
+        <!--End of Search-->&nbsp;&nbsp;&nbsp;
+      
         <!--Beginning of Sign in button-->
-          <a id="signin" class="navelement" onclick="signIn()">Sign In</a>
-          <script>
-            if (firebase.auth().currentUser != null) {
-              console.log(firebase.auth().currentUser);
-              console.log(ShoppingCart.doc(firebase.auth().currentUser.displayName));
-              document.getElementById("signin").innerHTML = "Sign Out";
-            } else {
-              signIn();
-            }
-          </script>
+        <a id="signin" class="navelement" onclick="signIn()">Sign In</a>
+        <script>
+          if (firebase.auth().currentUser != null) {
+            console.log(firebase.auth().currentUser);
+            console.log(ShoppingCart.doc(firebase.auth().currentUser.displayName));
+            document.getElementById("signin").innerHTML = "Sign Out";
+          } else {
+            signIn();
+          }
+        </script>
         <!--End of Sign in button-->
-        <!--search bar-->
-        <input style="display: none;" id="search" class="search" type="text" placeholder="Search">
       </nav>
-      <!--nav end-->
-    </header>
-    
-    <!--Popup-->
+    <!--nav end-->
+    <!--search bar-->
+    <input style="display: none;" id="search" class="search" type="text" placeholder="Search">
+  <!--Popup-->
     <div id="popupsignin" style="display:none; z-index: 5; background-color: rgba(0,0,0,0.5);" class="popup demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <main class="popupwrap mdl-layout__content mdl-color--grey-100">
         <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
