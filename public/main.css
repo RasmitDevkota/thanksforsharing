@@ -35,7 +35,7 @@ body {
   overflow: visible;
 }
 .mdl-grid {
-  max-width: 3%;
+  max-width: 30%;
   margin: auto;
   position: fixed;
 }
