@@ -21,7 +21,7 @@ function signIn() {
 
 function eToggleSignIn() {
     var password = document.getElementById('password').value;
-    var username = document.getElementById('username').value;
+    var emai = document.getElementById('username').value;
     if (username.length < 3) {
         alert('Please enter a longer username.');
         return;
