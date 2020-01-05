@@ -11,7 +11,7 @@ window.onload =  function () {
         var product = urlParams.get('product').toString();
 
         if (user != null){
-            var cart = db.collection("cart").doc(user.displayName);
+            var ShoppingCart = db.collection("cart").doc(user.displayName);
         } else {
             document.getElementById('popupsignin').style.display = "block";
         }
