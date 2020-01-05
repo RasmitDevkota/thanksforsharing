@@ -41,7 +41,7 @@ function results(keystring) {
             if (user) {
                 ShoppingCart.doc(firebase.auth().currentUser.displayName).get().then(function (doc) {
                     console.log(doc.data());
-                });
+                })
             } else {
                 console.log("failure");
             }
