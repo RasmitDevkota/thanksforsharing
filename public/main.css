@@ -12,7 +12,8 @@ body {
   position: fixed;
   top: -0.2px;
   display:flex;
-  flex-direction: 1
+  flex-direction: row;
+  
 }
 .signinoptions {
   background-color: #30b0f5;
