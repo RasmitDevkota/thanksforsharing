@@ -18,6 +18,7 @@ function displayName() {
     users.doc(uid).get().then(function (doc) {
         var displayName = doc.data().displayName;
     });
+    return displayName;
 };
 
 function eToggleSignIn() {
