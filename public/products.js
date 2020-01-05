@@ -139,9 +139,6 @@ function showCart() {
         var signinPromise = new Promise(function (resolve, reject) {
             resolve({
                 signin();
-            });
-            reject('Login Failed');
-        });
         signinPromise.then(function () {
             ShoppingCart.doc(firebase.auth().currentUser.displayName).get().then(function (doc) {
                 console.log(doc.data());
