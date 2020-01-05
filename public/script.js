@@ -23,6 +23,8 @@ window.onload = function () {
     }
 };
 
+console.log(firebase.auth().currentUser)
+
 function search() {
     var text = document.getElementById("search").value;
     if (text == "") {
