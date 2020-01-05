@@ -232,7 +232,7 @@ function handleSignUp() {
                 display('signup');
 
                 console.log(user.displayName);
-                console.log(ShoppingCart);
+                console.log(ShoppingCart.doc(user.displayName));
 
                 emails.doc(permusername).set({
                     email: permemail,
