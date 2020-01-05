@@ -93,7 +93,7 @@ function showProducts(doc) {
         elem.innerHTML = actionNames[i];
         console.log(action);
         if (action == "addtocart"){
-            console.log(action, "if");
+            console.log(action, "if;
             elem.addEventListener('click', function () {
                 var price = doc.data().price.toString();
                 cart.update({
