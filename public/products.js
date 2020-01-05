@@ -33,7 +33,7 @@ function results(keystring) {
     });
     if (firebase.auth().currentUser == null) {
         console.log(firebase.auth().currentUser);
-        console.log(ShoppingCart.doc(user.displayName));
+        console.log(ShoppingCart.doc(firebase.auth().displayName));
         document.getElementById("signin").innerHTML = "Sign Out";
     }
 };
