@@ -187,7 +187,7 @@ function handleSignUp() {
         alert('Please enter a longer username.');
         return;
     }
-    if (email.length < 4) {
+    if (permemail.length < 4) {
         alert('Please enter an email address.');
         return;
     }
