@@ -14,7 +14,7 @@ db.enablePersistence();
 
 window.onload = function () {
     setTimeout(2000, function () {
-        
+        console.log('timeout works!')
         if (firebase.auth().currentUser != null) {
             console.log(firebase.auth().currentUser);
             console.log(ShoppingCart.doc(firebase.auth().currentUser.displayName));
