@@ -5,7 +5,7 @@ var ShoppingCart = db.collection("cart");
 function signIn() {
     console.log(firebase.auth().currentUser);
     if (firebase.auth().currentUser == null){
-        document.getElementById('popupsignin').style.display = "block";
+        display()
     } else {
         firebase.auth().signOut();
     }
