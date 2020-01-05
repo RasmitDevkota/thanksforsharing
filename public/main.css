@@ -50,6 +50,8 @@ nav {
 }
 .navelement:hover{
   background-color: #272727;
+  border-top: 5px solid #343434;
+  border-bottom: 5px solid #343434;
   cursor: pointer;
 }
 .search{
