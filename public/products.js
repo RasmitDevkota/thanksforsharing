@@ -138,7 +138,6 @@ function showCart() {
     } else {
         var signinPromise = new Promise(function (resolve, reject) {
             signIn();
-            resolve('Success!');
             reject('Login Failed');
         });
         signinPromise.then(function (value) {
