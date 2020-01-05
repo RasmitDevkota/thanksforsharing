@@ -18,5 +18,5 @@
 .checkoutwrap {
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    justify-content: center;
 }
