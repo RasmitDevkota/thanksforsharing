@@ -137,7 +137,9 @@ function showCart() {
         document.getElementById("signin").innerHTML = "Sign Out";
     } else {
         var signinPromise = new Promise(function (resolve, reject) {
-            resolve()
+            resolve({
+                signin();
+            })
             reject('Login Failed');
         });
         signinPromise.then(function () {
