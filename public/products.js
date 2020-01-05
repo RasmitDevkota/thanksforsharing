@@ -164,11 +164,6 @@ function showCart() {
                 document.getElementById(text.id).appendChild(elem);
             };
 
-            var actions = document.createElement("v-actions");
-            actions.className = "vactions";
-            actions.id = "productActions" + name;
-            document.getElementById(outerDiv.id).appendChild(actions);
-
 
         });
     });
