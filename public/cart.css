@@ -12,7 +12,7 @@
     background-color: #039aeb;
 }
 space {
-    flex
+    flex-grow: 2l
 }
 .remove {
     -webkit-touch-callout: none;
