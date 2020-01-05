@@ -97,7 +97,7 @@ function showProducts(doc) {
                     price = doc.data().price.toString();
                 });
                 cart.update({
-                    items: firebase.firestore.FieldValue.arrayUnion(productid),
+                    items: firebase.firestore.FieldValue.arrayUnion(name),
                     itemCnt: firebase.firestore.FieldValue.increment(1),
                     price: firebase.firestore.FieldValue.increment(price)
                 });
