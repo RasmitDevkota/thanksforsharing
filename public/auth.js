@@ -83,6 +83,8 @@ function gToggleSignIn() {
 
                     var user = firebase.auth().currentUser;
 
+                    firebase.a
+
                     user.providerData.forEach(function (profile) {
                         var username = profile.displayName.toString();
                         var email = profile.email.toString();
