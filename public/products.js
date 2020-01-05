@@ -7,8 +7,6 @@ window.onload =  function () {
         var query = urlParams.get('query');
         results(query.toString());
     } else {
-        var urlParams = new URLSearchParams(window.location.search);
-        var query = urlParams.get('query');
         showCart();
     }
 };
