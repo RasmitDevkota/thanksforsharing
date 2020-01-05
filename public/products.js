@@ -61,14 +61,22 @@ function showProducts(doc) {
     text.id = "productText" + name;
     document.getElementById(outerDiv.id).appendChild(text);
 
-    var remove = document.createElement("v-actions");
-    remove.className = "vactions";
-    remove.id = "productActions" + name;
-    document.getElementById(outerDiv.id).appendChild(remove);
+    var actions = document.createElement("v-actions");
+    actions.className = "vactions";
+    actions.id = "productActions" + name;
+    document.getElementById(outerDiv.id).appendChild(actions);
 
-    remove.addEventListener('click', function () {
-        removeFromCart();
-    });
+            elem.addEventListener('click', function () {
+                ShoppingCart.doc(firebase.auth().currentUser.displayName).set({
+                    items: firebase.firestore.FieldValue.arrayUnion(name),
+                    price: firebase.firestore.FieldValue.increment(price)
+                }, {merge: true});
+                showCart();
+                console.log(price);
+            });
+
+        elem.classList.add("v-" + action, "mdl-button", "mdl-js-button", "mdl-button--raised", "mdl-js-ripple-effect");
+        document.getElementById(actions.id).appendChild(elem);
 };
 
 function addToCart(productid) {
