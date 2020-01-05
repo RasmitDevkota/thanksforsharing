@@ -14,6 +14,9 @@
 img {
     max-width: 35%;
 }
+c-name {
+    margin-right: 65%;
+}
 .remove {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
