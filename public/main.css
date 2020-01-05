@@ -22,13 +22,6 @@ body {
 .signinoptions:hover {
   background-color: rgb(31, 155, 221);
 }
-.entirepopup{
-  background-color: gray;
-  opacity: 50%;
-}
-.popupsector{
-  opacity: 100% !important;
-}
 .mdl-card {
   overflow: visible;
 }
