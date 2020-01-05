@@ -13,14 +13,7 @@ var db = firebase.firestore();
 db.enablePersistence();
 
 window.onload = function () {
-    console.log(firebase.auth().currentUser);
-    if (firebase.auth().currentUser != null) {
-        console.log(firebase.auth().currentUser);
-        document.getElementById("signin").innerHTML = "Sign Out";
-    } else {
-        console.log(firebase.auth().currentUser);
-        firebase.auth().signOut();
-    }
+    set
 };
 
 function search() {
