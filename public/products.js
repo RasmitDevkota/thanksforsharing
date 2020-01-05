@@ -138,7 +138,7 @@ function showCart() {
     } else {
         var signinPromise = new Promise(function (resolve, reject) {
             resolve('Success!');
-            reject('');
+            reject('Login Failed');
         });
         signinPromise.then(function (value) {
             console.log(value);
