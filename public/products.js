@@ -10,6 +10,12 @@ window.onload =  function () {
             console.log(firebase.auth().currentUser);
             console.log(ShoppingCart.doc(user.displayName));
         }
+        if (firebase.auth().currentUser != null) {
+            document.getElementById("signin").textContent = "Sign Out";
+        } else {
+            document.getElementById('popupsignin').style.display = "block";
+        }
+    };
     }
 };
 
