@@ -46,7 +46,6 @@ function results(keystring) {
                     // No user is signed in.
                 }
             });
-            
         }, console.log("Sign-in Failed"));
     }
 };
