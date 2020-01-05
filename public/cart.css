@@ -17,7 +17,9 @@ img {
 c-name {
     margin-right: 65%;
 }
-c-
+c-price {
+    margin-right: 25%;
+}
 .remove {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
