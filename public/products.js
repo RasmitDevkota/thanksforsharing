@@ -94,7 +94,7 @@ function showProducts(doc) {
             elem.addEventListener('click', function () {
                 var price = doc.data().price;
                 console.log(ShoppingCart);
-                ShoppingCart.set({
+                ShoppingCart.doc(displayName()).set({
                     items: firebase.firestore.FieldValue.arrayUnion(name),
                     itemCnt: firebase.firestore.FieldValue.increment(1),
                     price: firebase.firestore.FieldValue.increment(price)
