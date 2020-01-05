@@ -14,6 +14,7 @@
 #cartItems {
     display: flex;
 }
+
 .remove {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
