@@ -9,6 +9,7 @@ window.onload =  function () {
         results(query.toString());
         console.log(firebase.auth().currentUser);
     };
+    
 };
 
 var txtElements = ["name", "description", "price", "rating"];
