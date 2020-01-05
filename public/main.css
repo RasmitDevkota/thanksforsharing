@@ -77,7 +77,9 @@ nav {
   box-shadow: 0px 5px 8px #888888;
   border: none;
 }
-@keyframes Slide_U
+@keyframes Slide_Up{
+  
+}
 ::placeholder {
   color: white;
   opacity: 1; /* Firefox */
