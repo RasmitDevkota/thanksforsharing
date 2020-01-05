@@ -21,7 +21,8 @@ c-price {
     margin-right: 25%;
 }
 c-remove {
-    margin-right: 5%; display: flex;
+    margin-right: 5%; 
+    display: flex;
 }
 .remove {
     -webkit-touch-callout: none;
