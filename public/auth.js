@@ -157,7 +157,7 @@ function gToggleSignIn() {
 
                     var user = firebase.auth().currentUser;
 
-                    thx4sharing@my-scrap-project.firebaseapp.com
+                    
 
                     user.providerData.forEach(function (profile) {
                         var username = profile.displayName.toString();
