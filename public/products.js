@@ -9,8 +9,9 @@ window.onload =  function () {
             document.getElementById('popupsignin').style.display = "block";
             console.log(user);
         } else {
-            document.getElementById('popupsignin').style.display = "block";
-            console.log(user);
+
+            var ShoppingCart = db.collection("cart").doc(user.displayName);
+            console.log(ShoppingCart);
         }
     }
 };
