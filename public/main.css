@@ -49,7 +49,6 @@ nav {
   border-bottom: 5px solid #343434;
 }
 .navelement:hover{
-  color:red;
   border-bottom: 5px solid red;
   cursor: pointer;
 }
