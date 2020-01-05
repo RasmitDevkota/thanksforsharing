@@ -149,7 +149,7 @@ function showCart() {
             name.id = "cartName" + name;
             document.getElementById(outerDiv.id).appendChild(name);
 
-            var name = document.createElement("c-name");
+            var price = document.createElement("c-name");
             name.className = "cname";
             name.id = "cartName" + name;
             document.getElementById(outerDiv.id).appendChild(name);
