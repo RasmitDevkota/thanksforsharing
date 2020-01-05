@@ -66,14 +66,14 @@ function showProducts(doc) {
     actions.id = "productActions" + name;
     document.getElementById(outerDiv.id).appendChild(actions);
 
-        elem.addEventListener('click', function () {
-            ShoppingCart.doc(firebase.auth().currentUser.displayName).set({
-                items: firebase.firestore.FieldValue.arrayUnion(name),
-                price: firebase.firestore.FieldValue.increment(price)
-            }, {merge: true});
-            showCart();
-            console.log(price);
-        });
+    elem.addEventListener('click', function () {
+        ShoppingCart.doc(firebase.auth().currentUser.displayName).set({
+            items: firebase.firestore.FieldValue.arrayUnion(name),
+            price: firebase.firestore.FieldValue.increment(price)
+        }, {merge: true});
+        showCart();
+        console.log(price);
+    });
     document.getElementById(actions.id).appendChild(elem);
 };
 
