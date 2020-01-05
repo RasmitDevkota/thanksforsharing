@@ -6,7 +6,7 @@ window.onload =  function () {
         var urlParams = new URLSearchParams(window.location.search);
         var query = urlParams.get('query');
         results(query.toString());
-        if (firebase.auth().currentUser == null) {
+        if (firebase.auth().currentUser != null) {
             document.getElementById('popupsignin').style.display = "block";
             console.log(user);
         } else {
