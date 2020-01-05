@@ -39,7 +39,9 @@ function results(keystring) {
         signIn();
         firebase.auth().onAuthStateChanged(function (user) {
             if (user) {
-                
+                ShoppingCart.doc(firebase.auth().currentUser.displayName).get().then(function (doc) {
+                    console.log(doc.data());
+                });
             } else {
                 console.log("failure");
             }
