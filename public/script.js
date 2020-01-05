@@ -9,7 +9,7 @@ firebase.initializeApp({
     measurementId: "G-66W8QQ9W35"
 });
 
-var user = firebase.auth().currentUser;
+var user == firebase.auth().currentUser;
 var db = firebase.firestore();
 db.enablePersistence();
 
