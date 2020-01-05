@@ -11,7 +11,7 @@ window.onload =  function () {
     } else {
         var urlParams = new URLSearchParams(window.location.search);
         var query = urlParams.get('query');
-        showC
+        showCart();
         console.log(firebase.auth().currentUser);
     }
 };
