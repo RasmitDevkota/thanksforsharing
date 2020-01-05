@@ -51,7 +51,7 @@ function showProducts(doc) {
     var outerDiv = document.createElement("v-product");
     document.getElementById("products").appendChild(outerDiv);
     outerDiv.id = "outer" + name;
-    outerDiv.classList =""
+    outerDiv.classList = "";
 
     var image = document.createElement("img");
     image.src = imageRef;
