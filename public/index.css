@@ -8,7 +8,7 @@
 }
 .general{
     flex-grow: 2;
-    width
+    width: 50%;
 }
 .titlelogosection{
     display:flex;
