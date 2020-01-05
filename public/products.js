@@ -5,7 +5,6 @@ window.onload =  function () {
 
     if (window.location.href.indexOf("products.html")) {
         var query = urlParams.get('query');
-        console.log(query);
         results(query.toString());
         if (user != null) {
             var ShoppingCart = db.collection("cart").doc(user.displayName);
