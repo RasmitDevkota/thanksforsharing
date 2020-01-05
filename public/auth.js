@@ -67,16 +67,6 @@ function eToggleSignIn() {
         console.log("Error getting document:", error);
     });
 };
-// Email Login End
-
-// document.addEventListener('keydown', function (event) {
-//     var password = document.getElementById('password').value;
-//     var username = document.getElementById('username').value;
-//     const key = event.key;
-//     if (key == "Enter" && password != null && username != null) {
-//         eToggleSignIn();
-//     }
-// });
 
 // Google Login
 function gToggleSignIn() {
