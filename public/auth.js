@@ -13,7 +13,7 @@ window.onload = function () {
 
 function signIn() {
     console.log(firebase.auth().currentUser);
-    if(user == null){
+    if (firebase.auth().currentUser == null){
         document.getElementById('popupsignin').style.display = "block";
         console.log(user);
     } else {
