@@ -141,7 +141,7 @@ function showCart() {
                 console.log(doc.data());
             });
         }, resolve {
-            
+            console.log("fail")
         });
     }
 };
