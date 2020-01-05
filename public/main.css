@@ -75,7 +75,6 @@ nav {
 }
 ::-webkit-scrollbar-thumb {
   background: red;
-  border-radius: 8px;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(167, 0, 0);
