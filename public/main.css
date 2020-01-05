@@ -73,7 +73,7 @@ nav {
   box-shadow: inset 0 0 5px #343434;
 }
 ::-webkit-scrollbar-thumb {
-  background: #;
+  background: #30b0f5;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(167, 0, 0);
