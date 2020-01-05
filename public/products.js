@@ -36,7 +36,11 @@ function results(keystring) {
         console.log(ShoppingCart.doc(firebase.auth().currentUser.displayName));
         document.getElementById("signin").innerHTML = "Sign Out";
     } else {
-        
+        new Promise(signIn()).then(function () {
+            ShoppingCart.doc(firebase.auth().currentUser.displayName).get().then(function (doc) {
+                console.log(doc.data());
+            });
+        }, console.log("Sign-in Failed"));
     }
 };
 
