@@ -39,7 +39,9 @@ function results(keystring) {
         new Promise(signIn()).then(function () {
             firebase.auth().onAuthStateChanged(function (user) {
                 if (user) {
-                    // User is signed in.
+                    ShoppingCart.doc(firebase.auth().currentUser.displayName).get().then(function (doc) {
+                        console.log(doc.data());
+                    });
                 } else {
                     // No user is signed in.
                 }
