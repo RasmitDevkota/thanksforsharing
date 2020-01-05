@@ -37,7 +37,7 @@ v-rating{
     font-size: 150%;
 }
 v-actions{
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 v-checkout{
