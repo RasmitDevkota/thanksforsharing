@@ -12,7 +12,7 @@ window.onload =  function () {
 
         if (user != null){
             var ShoppingCart = db.collection("cart").doc(user.displayName);
-            console.log(ShoppingCart)
+            console.log(ShoppingCart);
         } else {
             document.getElementById('popupsignin').style.display = "block";
         }
