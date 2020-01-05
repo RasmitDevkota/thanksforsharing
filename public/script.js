@@ -24,7 +24,7 @@ window.onload = function () {
 };
 
 function search() {
-    var text = document.getElementById("search").value.toLowerCase();
+    var text = document.getElementById("search").value.toString().toLowerCase();
     if (text == "") {
         display('search');
     } else {
