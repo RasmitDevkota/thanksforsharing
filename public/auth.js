@@ -147,6 +147,7 @@ function gToggleSignIn() {
                     document.getElementById("signin").textContent = "Sign In";
 
                     var user = firebase.auth().currentUser;
+                    
                     console.log(user.displayName);
                     console.log(ShoppingCart);
 
