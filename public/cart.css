@@ -1,7 +1,8 @@
 .hrwrap {
     width: 100%;
     display: flex;
-    flex
+    flex-direction:row;
+    justify
 }
 .checkout {
     text-transform: capitalize;
