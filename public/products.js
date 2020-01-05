@@ -148,7 +148,7 @@ function showCart() {
             var name = document.createElement("c-name");
             name.className = "cname";
             name.id = "cartName" + name;
-            document.getElementById(outerDiv.id).appendChild(tenamext);
+            document.getElementById(outerDiv.id).appendChild(name);
         });
     });
 };
