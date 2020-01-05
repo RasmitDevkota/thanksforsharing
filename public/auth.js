@@ -191,7 +191,7 @@ function handleSignUp() {
         alert('Please enter an email address.');
         return;
     }
-    if (password.length < 4) {
+    if (permpassword.length < 4) {
         alert('Please enter a password.');
         return;
     }
