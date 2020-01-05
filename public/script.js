@@ -16,6 +16,8 @@ document.onload = function () {
     if (firebase.auth().currentUser != null) {
         // RASMIT - INSERT THIS INTO THE SIGN IN REDIRECT STUFF, AND FIX REDIRECTS TO ONLY CLOSE THE POPUP AND NOT ACTUALLY REDIRECT
         document.getElementById("signin").textContent = "Sign Out";
+
+        var user = firebase.auth().currentUser;
         console.log(user);
     } else {
         document.getElementById('popupsignin').style.display = "block";
