@@ -74,7 +74,6 @@ function showProducts(doc) {
         showCart();
         console.log(price);
     });
-    document.getElementById(actions.id).appendChild(elem);
 };
 
 function addToCart(productid) {
