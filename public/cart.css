@@ -12,7 +12,8 @@
     background-color: #039aeb;
 }
 c-product {
-    display: flex; width: 85%
+    display: flex;
+    width: 85%
 }
 img {
     max-width: 35%;
