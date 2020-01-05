@@ -78,7 +78,9 @@ nav {
   border: none;
 }
 @keyframes Slide_Up{
-  
+  0%{
+    tran
+  }
 }
 ::placeholder {
   color: white;
