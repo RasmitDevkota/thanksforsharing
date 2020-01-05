@@ -20,6 +20,7 @@ body {
 }
 .signinoptions:hover {
   background-color: rgb(31, 155, 221);
+  opacity: 50%;
 }
 .entirepopup{
   background-color: gray;
