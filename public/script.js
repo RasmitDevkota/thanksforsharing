@@ -12,7 +12,7 @@ firebase.initializeApp({
 var db = firebase.firestore();
 db.enablePersistence();
 
-document.onload = function () {
+window.onload = function () {
     if (firebase.auth().currentUser != null) {
         // RASMIT - INSERT THIS INTO THE SIGN IN REDIRECT STUFF, AND FIX REDIRECTS TO ONLY CLOSE THE POPUP AND NOT ACTUALLY REDIRECT
         document.getElementById("signin").textContent = "Sign Out";
