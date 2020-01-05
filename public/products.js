@@ -64,7 +64,7 @@ function showProducts(doc) {
     var remove = document.createElement("v-actions");
     remove.className = "vactions";
     remove.id = "productActions" + name;
-    document.getElementById(outerDiv.id).appendChild(actions);
+    document.getElementById(outerDiv.id).appendChild(remove);
 
     remove.addEventListener('click', function () {
         ShoppingCart.doc(firebase.auth().currentUser.displayName).set({
