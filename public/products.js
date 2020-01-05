@@ -67,12 +67,7 @@ function showProducts(doc) {
     document.getElementById(outerDiv.id).appendChild(remove);
 
     remove.addEventListener('click', function () {
-        ShoppingCart.doc(firebase.auth().currentUser.displayName).set({
-            items: firebase.firestore.FieldValue.arrayUnion(name),
-            price: firebase.firestore.FieldValue.increment(price)
-        }, {merge: true});
-        showCart();
-        console.log(price);
+        rem
     });
 };
 
