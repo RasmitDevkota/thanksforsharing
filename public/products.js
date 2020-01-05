@@ -102,7 +102,7 @@ function showProducts(doc) {
             console.log(action);
             elem.addEventListener('click', function () {
                 console.log(action);
-                prompt("Enter Credit Card Number: ").then(function () {
+                prompt("Enter Credit Card Number: ").then(function (); {
                     var address = prompt("Enter Address:");
                 });
             });
