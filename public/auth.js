@@ -1,6 +1,8 @@
 var users = db.collection("users");
 var emails = db.collection("emails");
 
+var ShoppingCart = db.collection("cart");
+
 function signIn() {
     console.log(user);
     if(user == null){
