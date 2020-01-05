@@ -45,6 +45,7 @@ function results(keystring) {
                 } else {
                     console.log("failure");
                 }
+            }
     }
 };
 
