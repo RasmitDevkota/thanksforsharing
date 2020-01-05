@@ -151,6 +151,6 @@ function checkOut() {
     });
 };
 
-function fastCheckOut() {
-    var ccn = prompt("Enter Credit Card Number: ");
-};
+// function fastCheckOut() {
+//     var ccn = prompt("Enter Credit Card Number: ");
+// };
