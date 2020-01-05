@@ -8,7 +8,7 @@ body {
 *{
   box-sizing: border-box;
 }
-.popupsignin{
+.popup{
   position: fixed;
   top: -0.2px;
   display: flex;
