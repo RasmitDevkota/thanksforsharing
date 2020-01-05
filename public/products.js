@@ -36,13 +36,7 @@ function results(keystring) {
         console.log(ShoppingCart.doc(firebase.auth().currentUser.displayName));
         document.getElementById("signin").innerHTML = "Sign Out";
     } else {
-        new Promise(signIn()).then(firebase.auth().onAuthStateChanged(function (user) {
-            if (user) {
-                // User is signed in.
-            } else {
-                // No user is signed in.
-            }
-        });
+        new Promise(signIn()).then(function () {
             
             ShoppingCart.doc(firebase.auth().currentUser.displayName).get().then(function (doc) {
                 console.log(doc.data());
