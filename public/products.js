@@ -1,4 +1,5 @@
 var Products = db.collection("products");
+var ShoppingCart = db.collection("cart").doc(displayName());
 
 window.onload =  function () {
     if (window.location.href.indexOf("products.html")) {
