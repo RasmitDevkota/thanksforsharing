@@ -44,6 +44,8 @@ function eToggleSignIn() {
             firebase.auth().signInWithEmailAndPassword(email, password)
                 .then(function () {
                     firebase.auth().onAuthStateChanged(function (user) {
+                        var ShoppingCart = db.collection("cart").doc(user.displayName);
+                        console.log(ShoppingCart);
                         display("email");
                         document.getElementById("signin").textContent = "Sign Out";
                     });
