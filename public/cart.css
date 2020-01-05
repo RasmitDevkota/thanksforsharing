@@ -13,6 +13,7 @@
 }
 #cartItems {
     display: flex;
+    flex
 }
 .remove {
     -webkit-touch-callout: none;
