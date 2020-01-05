@@ -220,7 +220,7 @@ function handleSignUp() {
 
         firebase.auth().onAuthStateChanged(function (user) {
             if (user) {
-                document.getElementById("signin").textContent = "Sign Out";
+                document.getElementById("signin").innerHTML = "Sign Out";
                 display('signup');
 
                 emails.doc(permusername).set({
