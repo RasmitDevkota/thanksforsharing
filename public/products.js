@@ -140,7 +140,6 @@ function showCart() {
             resolve('Success!');
             reject('');
         });
-
         signinPromise.then(function (value) {
             console.log(value);
             // expected output: "Success!"
