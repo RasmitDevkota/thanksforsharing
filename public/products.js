@@ -149,6 +149,11 @@ function showCart() {
             name.className = "cname";
             name.id = "cartName" + name;
             document.getElementById(outerDiv.id).appendChild(name);
+
+            var name = document.createElement("c-name");
+            name.className = "cname";
+            name.id = "cartName" + name;
+            document.getElementById(outerDiv.id).appendChild(name);
         });
     });
 };
