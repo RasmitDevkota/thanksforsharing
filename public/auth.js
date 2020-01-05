@@ -223,6 +223,7 @@ function handleSignUp() {
     }
 
     firebase.auth().createUserWithEmailAndPassword(permemail, permpassword).then(function () {
+        
         firebase.auth().signInWithEmailAndPassword(permemail, permpassword).catch(function (error) {
             var errorMessage = error.message;
             console.log(error);
