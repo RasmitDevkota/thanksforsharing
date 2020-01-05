@@ -47,10 +47,7 @@ function eToggleSignIn() {
                     }
                     console.log(error);
                 });
-        } else {
-            console.log("Document does not exist!");
-            alert("User not found!");
-        }
+
     }).catch(function (error) {
         console.log("Error getting document:", error);
     });
