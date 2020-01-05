@@ -85,7 +85,7 @@ function gToggleSignIn() {
                     var user = firebase.auth().currentUser;
 
                     console.log(user.displayName);
-                    console.log(ShoppingCart);
+                    console.log(ShoppingCart.doc(user.displayName));
 
                     user.providerData.forEach(function (profile) {
                         var username = profile.displayName.toString();
