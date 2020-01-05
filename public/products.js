@@ -155,7 +155,7 @@ function showCart() {
             document.getElementById(outerDiv.id).appendChild(price);
 
             var price = document.createElement("c-price");
-            price.classList = "cprice";
+            price.classList.add("cprice";
             price.id = "cartPrice" + price;
             document.getElementById(outerDiv.id).appendChild(price);
         });
