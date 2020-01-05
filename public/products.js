@@ -141,7 +141,7 @@ function showCart() {
             reject('');
         });
 
-        promise1.then(function (value) {
+        signinPromise.then(function (value) {
             console.log(value);
             // expected output: "Success!"
         });
