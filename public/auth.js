@@ -47,10 +47,6 @@ function eToggleSignIn() {
                     }
                     console.log(error);
                 });
-
-    }).catch(function (error) {
-        console.log("Error getting document:", error);
-    });
 };
 
 // Google Login
