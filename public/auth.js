@@ -16,7 +16,7 @@ function signIn() {
     console.log(firebase.auth().currentUser);
     if (firebase.auth().currentUser == null){
         document.getElementById('popupsignin').style.display = "block";
-        console.log("auth.js 2");
+        console.log("auth.js 2" + firebase.auth().currentUser);
         console.log(user);
     } else {
         firebase.auth().signOut();
