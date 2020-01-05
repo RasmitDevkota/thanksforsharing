@@ -8,11 +8,6 @@ window.onload =  function () {
         var query = urlParams.get('query');
         results(query.toString());
         console.log(firebase.auth().currentUser);
-        if (firebase.auth().currentUser != null) {
-            console.log(firebase.auth().currentUser);
-            console.log(ShoppingCart.doc(user.displayName));
-            document.getElementById("signin").innerHTML = "Sign Out";
-        }
     };
 };
 
