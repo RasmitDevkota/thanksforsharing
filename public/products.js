@@ -138,7 +138,7 @@ function showCart() {
     } else {
         var promise1 = new Promise(function (resolve, reject) {
             resolve('Success!');
-            
+            reject('')
         });
 
         promise1.then(function (value) {
