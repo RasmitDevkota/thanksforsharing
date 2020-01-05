@@ -145,11 +145,6 @@ function showCart() {
                 console.log(doc.data());
             });
         });
-
-        signIn();
-        ShoppingCart.doc(firebase.auth().currentUser.displayName).get().then(function (doc) {
-            console.log(doc.data());
-        });
     }
 };
 
