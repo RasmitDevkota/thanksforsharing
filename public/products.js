@@ -142,7 +142,6 @@ function showCart() {
         });
         signinPromise.then(function (value) {
             console.log(value);
-            // expected output: "Success!"
         });
 
         signIn();
