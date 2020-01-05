@@ -77,7 +77,6 @@ function showProducts(doc) {
 
         elem.classList.add("v-" + action, "mdl-button", "mdl-js-button", "mdl-button--raised", "mdl-js-ripple-effect");
         document.getElementById(actions.id).appendChild(elem);
-    };
 };
 
 function addToCart(productid) {
