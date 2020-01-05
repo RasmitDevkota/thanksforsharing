@@ -98,7 +98,6 @@ function showProducts(doc) {
             });
         } else {
             elem.addEventListener('click', function () {
-                console.log(action);
                 prompt("Enter Credit Card Number: ");
             });
         }
