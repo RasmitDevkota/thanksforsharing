@@ -15,7 +15,7 @@ db.enablePersistence();
 
 window.onload = function () {
     if (user != null) {
-        // RASMIT - INSERT THIS INTO THE SIGN IN REDIRECT STUFF, AND FIX REIRECTS TO ONLY CLOSE THE POPUP AND NOT ACTUALLY REDIRECT
+        // RASMIT - INSERT THIS INTO THE SIGN IN REDIRECT STUFF, AND FIX REDIRECTS TO ONLY CLOSE THE POPUP AND NOT ACTUALLY REDIRECT
         document.getElementById("signin").textContent = "Sign Out";
         console.log(user);
     } else {
