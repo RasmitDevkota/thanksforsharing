@@ -81,7 +81,9 @@ nav {
   0%{
     transform: translate(250px);
   }
-  100%
+  100%{
+    transf
+  }
 }
 ::placeholder {
   color: white;
