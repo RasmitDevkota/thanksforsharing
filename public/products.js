@@ -11,6 +11,7 @@ window.onload =  function () {
             console.log(ShoppingCart);
         } else {
             document.getElementById('popupsignin').style.display = "block";
+            
         }
     }
 };
