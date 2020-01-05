@@ -67,7 +67,7 @@ function showProducts(doc) {
     document.getElementById(outerDiv.id).appendChild(remove);
 
     remove.addEventListener('click', function () {
-        removeFromCart
+        removeFromCart();
     });
 };
 
