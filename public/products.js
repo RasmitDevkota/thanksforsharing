@@ -94,7 +94,6 @@ function showProducts(doc) {
         if (action == "addtocart"){
             elem.addEventListener('click', function () {
                     price = doc.data().price.toString();
-                });
                 cart.update({
                     items: firebase.firestore.FieldValue.arrayUnion(name),
                     itemCnt: firebase.firestore.FieldValue.increment(1),
