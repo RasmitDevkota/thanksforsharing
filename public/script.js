@@ -13,7 +13,7 @@ var db = firebase.firestore();
 db.enablePersistence();
 
 window.onload = function () {
-    setTimeout
+    setTimeout(2000, )
 };
 
 function search() {
