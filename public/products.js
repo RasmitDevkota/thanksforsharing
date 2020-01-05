@@ -133,7 +133,7 @@ function removeFromCart(productid) {
 };
 
 function showCart() {
-    ShoppingCart.doc(user.displayName).get().then(function (doc) {
+    ShoppingCart.doc(firebase.auth().currentUser.displayName).get().then(function (doc) {
         console.log(doc.data());
     });
 };
