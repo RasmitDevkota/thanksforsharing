@@ -126,7 +126,6 @@ function showCart() {
             showProducts(doc);
         });
     });
-    
 };
 
 function rate(productid, val) {
