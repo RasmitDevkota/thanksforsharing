@@ -14,7 +14,7 @@ window.onload = function () {
 };
 
 function signIn() {
-    console.log(user);
+    console.log(firebase.auth().currentUser);
     if(user == null){
         document.getElementById('popupsignin').style.display = "block";
         console.log(user);
