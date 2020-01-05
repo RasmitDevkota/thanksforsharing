@@ -10,8 +10,7 @@ body {
 }
 #popupsignin{
   position: fixed;
-  top: -14px;
-  
+  top: -14px
 }
 .signinoptions {
   background-color: #30b0f5;
