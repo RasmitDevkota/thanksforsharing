@@ -8,7 +8,9 @@ window.onload =  function () {
         var query = urlParams.get('query');
         results(query.toString());
         console.log(firebase.auth().currentUser);
-    } else if()
+    } else {
+        
+    }
 };
 
 var txtElements = ["name", "description", "price", "rating"];
