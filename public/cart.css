@@ -1,7 +1,8 @@
-.hrwrap{
-    
+.hrwrap {
+    width: 100%;
+    display
 }
-.checkout{
+.checkout {
     text-transform: capitalize;
     font-size: 25px;
     border: none;
