@@ -136,7 +136,7 @@ function showCart() {
         console.log(ShoppingCart.doc(firebase.auth().currentUser.displayName));
         document.getElementById("signin").innerHTML = "Sign Out";
     } else {
-        var signinPromise = new Promise(function (signin(), reject) {
+        var signinPromise = new Promise(function (reject) {
             signIn();
             reject('Login Failed');
         });
