@@ -61,7 +61,7 @@ function showProducts(doc) {
     text.id = "productText" + name;
     document.getElementById(outerDiv.id).appendChild(text);
 
-    var actions = document.createElement("v-actions");
+    var remove = document.createElement("v-actions");
     actions.className = "vactions";
     actions.id = "productActions" + name;
     document.getElementById(outerDiv.id).appendChild(actions);
