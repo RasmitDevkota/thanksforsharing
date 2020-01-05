@@ -7,7 +7,6 @@ window.onload =  function () {
         var query = urlParams.get('query');
         console.log(query);
         results(query.toString());
-    } else if (window.location.href.indexOf("products.html")) {
         if (user != null){
             var ShoppingCart = db.collection("cart").doc(user.displayName);
             console.log(ShoppingCart);
