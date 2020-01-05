@@ -5,7 +5,7 @@ function signIn() {
     console.log(user);
     if(user == null){
         document.getElementById('popupsignin').style.display = "block";
-        document.getElementById('popupsignin').style.backgroundColor = "";
+        document.getElementById('popupsignin').style.backgroundColor = "rgba(0,0,0,0.5)";
         console.log(user);
     } else {
         firebase.auth().signOut();
