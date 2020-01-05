@@ -43,7 +43,7 @@ function eToggleSignIn() {
                 .then(function () {
                     firebase.auth().onAuthStateChanged(function (user) {
                         display("email");
-                        document.getElementById("signin").textContent = "Sign Out";
+                        document.getElementById("signin").innerHTML = "Sign Out";
                     });
                 }).catch(function (error) {
                     var errorCode = error.code;
