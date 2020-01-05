@@ -147,7 +147,7 @@ function showCart() {
 
             var name = document.createElement("c-name");
             name.className = "cname";
-            text.id = "productText" + name;
+            name.id = "productText" + name;
             document.getElementById(outerDiv.id).appendChild(text);
         });
     });
