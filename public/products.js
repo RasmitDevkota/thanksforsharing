@@ -151,7 +151,7 @@ function showCart() {
 
             var price = document.createElement("c-name");
             price.className = "cprice";
-            price.id = "cartName" + price;
+            price.id = "cartPrice" + price;
             document.getElementById(outerDiv.id).appendChild(price);
         });
     });
