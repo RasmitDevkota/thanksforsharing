@@ -7,9 +7,6 @@ window.onload =  function () {
         var query = urlParams.get('query');
         results(query.toString());
         if (firebase.auth().currentUser != null) {
-            document.getElementById('popupsignin').style.display = "block";
-            console.log(user);
-        } else {
             console.log(ShoppingCart);
         }
     }
