@@ -4,7 +4,7 @@ var emails = db.collection("emails");
 function signIn() {
     console.log(user);
     if(user == null){
-        //document.getElementById('popupsignin').style.display = "block";
+        document.getElementById('popupsignin').style.display = "block";
         console.log(user);
     } else {
         firebase.auth().signOut();
