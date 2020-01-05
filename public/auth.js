@@ -5,9 +5,6 @@ var ShoppingCart = db.collection("cart");
 window.onload = function () {
     if (firebase.auth().currentUser != null) {
         document.getElementById("signin").textContent = "Sign Out";
-    } else {
-        document.getElementById('popupsignin').style.display = "block";
-        console.log("auth.js" + firebase.auth().currentUser);
         console.log(firebase.auth().currentUser);
     }
 };
