@@ -90,9 +90,6 @@ function showProducts(doc) {
         if (action == "addtocart"){
             console.log(action);
             elem.addEventListener('click', function () {
-                ShoppingCart.doc(firebase.auth().currentUser.displayName).get().then(function (doc){
-                    var currentCnt = doc.data();
-                });
                 ShoppingCart.doc(firebase.auth().currentUser.displayName).update({
                     items: firebase.firestore.FieldValue.arrayUnion(name),
                     itemCnt: firebase.firestore.FieldValue.increment(1),
