@@ -140,10 +140,6 @@ function showCart() {
         ShoppingCart.doc(firebase.auth().currentUser.displayName).get().then(function (doc) {
             console.log(doc.data());
         });
-    }if (firebase.auth().currentUser == null) {
-        console.log(firebase.auth().currentUser);
-        console.log(ShoppingCart.doc(firebase.auth().currentUser.displayName));
-        document.getElementById("signin").innerHTML = "Sign Out";
     }
 };
 
