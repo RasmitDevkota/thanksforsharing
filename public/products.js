@@ -7,7 +7,7 @@ window.onload =  function () {
         var query = urlParams.get('query');
         console.log(query);
         results(query.toString());
-    } else if (window.location.href.indexOf("product.html")) {
+    } else if (window.location.href.indexOf("cart.html")) {
         var product = urlParams.get('product').toString();
 
         if (user != null){
