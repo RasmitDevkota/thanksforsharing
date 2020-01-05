@@ -99,6 +99,7 @@ function showProducts(doc) {
                     itemCnt: firebase.firestore.FieldValue.increment(1),
                     price: firebase.firestore.FieldValue.increment(price)
                 });
+                console.log()
             });
         } else {
             elem.addEventListener('click', function () {
