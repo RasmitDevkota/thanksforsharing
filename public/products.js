@@ -41,7 +41,7 @@ function results(keystring) {
 };
 
 function showProducts(doc) {
-    var productid = 
+    var productid = doc.id;
     var name = doc.data().name.toString();
     var imageRef = doc.data().imageRef.toString();
     var desc = doc.data().description.toString();
