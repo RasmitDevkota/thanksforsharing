@@ -35,6 +35,8 @@ function results(keystring) {
         console.log(firebase.auth().currentUser);
         console.log(ShoppingCart.doc(firebase.auth().currentUser.displayName));
         document.getElementById("signin").innerHTML = "Sign Out";
+    } else {
+        
     }
 };
 
