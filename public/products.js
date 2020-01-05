@@ -130,8 +130,7 @@ function showCart() {
             ShoppingCart.doc(firebase.auth().currentUser.displayName).get().then(function (doc) {
                 console.log(doc.data());
             });
-        }, console.log("Sign-in Failed"));
-    }
+
 };
 
 function rate(productid, val) {
