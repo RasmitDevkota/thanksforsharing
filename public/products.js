@@ -2,7 +2,6 @@ var Products = db.collection("products");
 var ShoppingCart = db.collection("cart");
 
 window.onload =  function () {
-
     console.log(firebase.auth().currentUser);
     if (window.location.href.includes("products.html")) {
         var urlParams = new URLSearchParams(window.location.search);
