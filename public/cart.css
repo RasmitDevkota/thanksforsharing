@@ -11,7 +11,9 @@
 .checkout:hover {
     background-color: #039aeb;
 }
-space
+space {
+    
+}
 .remove {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
