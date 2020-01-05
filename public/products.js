@@ -96,6 +96,7 @@ function showProducts(doc) {
             console.log(action);
             elem.addEventListener('click', function () {
                 var price = doc.data().price;
+                console.log(cart);
                 cart.set({
                     items: firebase.firestore.FieldValue.arrayUnion(name),
                     itemCnt: firebase.firestore.FieldValue.increment(1),
