@@ -12,7 +12,8 @@ body {
   position: fixed;
   top: -0.2px;
   display:flex;
-  flex-d
+  flex-direction: row;
+  justiofy
   background-color: rgba(0,0,0,0.5);
 }
 .signinoptions {
