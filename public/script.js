@@ -14,7 +14,7 @@ var db = firebase.firestore();
 db.enablePersistence();
 
 window.onload = function () {
-    document.getElementById("nav").innerHTML = "<!--nav begin-->
+    document.getElementById("nav").innerHTML = "<!--nav begin-->" +
         < nav >
         < !--Beginning of Logo-- >
         <a onclick="redirect('index.html')">Logo Here</a>
