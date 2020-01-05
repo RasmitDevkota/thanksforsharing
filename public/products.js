@@ -148,7 +148,7 @@ function rate(productid, val) {
         for (var i = 0; i < ratings.length; i++) {
             sum += ratings[i];
         };
-        var rating = sum / ratings.length;
+        var rating = sum / ratings.length;  
         console.log(rating);
     });
 };
