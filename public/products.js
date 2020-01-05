@@ -97,7 +97,6 @@ function showProducts(doc) {
                 console.log(price);
             });
         } else {
-            console.log(action);
             elem.addEventListener('click', function () {
                 console.log(action);
                 prompt("Enter Credit Card Number: ");
