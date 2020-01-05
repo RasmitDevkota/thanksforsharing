@@ -6,6 +6,8 @@ window.onload =  function () {
         var query = urlParams.get('query');
         results(query.toString());
         if (user != null) {
+            document.getElementById('popupsignin').style.display = "block";
+            console.log(user);
             var ShoppingCart = db.collection("cart").doc(user.displayName);
             console.log(ShoppingCart);
         } else {
