@@ -1,8 +1,6 @@
 var Products = db.collection("products");
 
 window.onload =  function () {
-    var urlParams = new URLSearchParams(window.location.search);
-
     if (window.location.href.indexOf("products.html")) {
         var query = urlParams.get('query');
         results(query.toString());
