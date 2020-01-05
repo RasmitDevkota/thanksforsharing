@@ -30,7 +30,6 @@ function eToggleSignIn() {
         alert('Please enter a longer password.');
         return;
     }
-
     firebase.auth().signInWithEmailAndPassword(email, password)
         .then(function () {
             firebase.auth().onAuthStateChanged(function (user) {
