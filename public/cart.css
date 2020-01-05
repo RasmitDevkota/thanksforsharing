@@ -16,5 +16,6 @@
 }
 .checkoutwrap{
     display:flex;
-    flex
+    flex-direction:row;
+    justify-content: right;
 }
