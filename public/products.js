@@ -2,7 +2,7 @@ var Products = db.collection("products");
 var ShoppingCart = db.collection("cart");
 
 window.onload =  function () {
-    if (window.location.href.indexOf("products.html")) {
+    if (window.location.href.includes("products.html")) {
         var urlParams = new URLSearchParams(window.location.search);
         var query = urlParams.get('query');
         results(query.toString());
