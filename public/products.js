@@ -63,7 +63,7 @@ function showProducts(doc) {
 
     var remove = document.createElement("v-actions");
     remove.className = "vactions";
-    actions.id = "productActions" + name;
+    remove.id = "productActions" + name;
     document.getElementById(outerDiv.id).appendChild(actions);
 
     remove.addEventListener('click', function () {
