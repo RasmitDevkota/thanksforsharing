@@ -31,8 +31,6 @@ function eToggleSignIn() {
         return;
     }
 
-    var userData = emails.doc(username);
-
             firebase.auth().signInWithEmailAndPassword(email, password)
                 .then(function () {
                     firebase.auth().onAuthStateChanged(function (user) {
