@@ -136,6 +136,15 @@ function showCart() {
         console.log(ShoppingCart.doc(firebase.auth().currentUser.displayName));
         document.getElementById("signin").innerHTML = "Sign Out";
     } else {
+        var promise1 = new Promise(function (resolve, reject) {
+            resolve('Success!');
+        });
+
+        promise1.then(function (value) {
+            console.log(value);
+            // expected output: "Success!"
+        });
+
         signIn();
         ShoppingCart.doc(firebase.auth().currentUser.displayName).get().then(function (doc) {
             console.log(doc.data());
