@@ -12,7 +12,7 @@
     background-color: #039aeb;
 }
 #cartItems {
-    
+    display:flex;
 }
 .remove {
     -webkit-touch-callout: none;
