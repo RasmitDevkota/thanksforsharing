@@ -100,7 +100,7 @@ function showProducts(doc) {
                     items: firebase.firestore.FieldValue.arrayUnion(name),
                     itemCnt: firebase.firestore.FieldValue.increment(1),
                     price: firebase.firestore.FieldValue.increment(price)
-                });
+                }, { merge: true });
                 console.log(cart);
                 console.log(price);
             });
