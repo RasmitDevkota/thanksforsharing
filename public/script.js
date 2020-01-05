@@ -15,6 +15,7 @@ db.enablePersistence();
 window.onload = function () {
     console.log(firebase.auth().currentUser);
     if (firebase.auth().currentUser != null) {
+        console.log(firebase.auth().currentUser);
         document.getElementById("signin").textContent = "Sign Out";
     } else {
         firebase.auth().signOut();
