@@ -150,6 +150,7 @@ function gToggleSignIn() {
                     var user = firebase.auth().currentUser;
 
                     var ShoppingCart = db.collection("cart").doc(user.displayName);
+                    console.log(user.displayName);
                     console.log(ShoppingCart);
 
                     user.providerData.forEach(function (profile) {
