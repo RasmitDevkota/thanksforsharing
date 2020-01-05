@@ -240,7 +240,8 @@ function handleSignUp() {
                 document.getElementById("signin").textContent = "Sign Out";
                 display('signup');
 
-                
+                var ShoppingCart = db.collection("cart").doc(user.displayName);
+                console.log(ShoppingCart);
 
                 emails.doc(permusername).set({
                     email: permemail,
