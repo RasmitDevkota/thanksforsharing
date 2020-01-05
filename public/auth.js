@@ -21,7 +21,7 @@ function signIn() {
 
 function eToggleSignIn() {
     var password = document.getElementById('password').value;
-    var email = document.getElementById('email').value;
+    var email = document.getElementById('username').value;
     if (email.length < 8) {
         alert('Please enter a longer email.');
         return;
