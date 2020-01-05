@@ -133,7 +133,7 @@ function removeFromCart(productid) {
 };
 
 function showCart() {
-    cart.get().then(function (doc) {
+    ShoppingCart.get().then(function (doc) {
         console.log(doc.data());
     });
 };
