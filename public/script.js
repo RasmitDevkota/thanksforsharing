@@ -20,8 +20,7 @@ window.onload = function () {
         <a class="navelement">
           <i class="fas fa-search" onclick="search()"></i>
         </a>&nbsp;
-        <input style="display: none;" id="search" class="navelement search" type="text" placeholder="Search">
-        <!--End of Search-->&nbsp;&nbsp;&nbsp;<!--Beginning of Sign in button--><a id="signin" class="navelement" onclick="signIn()">Sign In</a><!--End of Sign in button--></nav>";
+        <input style="display: none;" id="search" class="navelement search" type="text" placeholder="Search"><!--End of Search-->&nbsp;&nbsp;&nbsp;<!--Beginning of Sign in button--><a id="signin" class="navelement" onclick="signIn()">Sign In</a><!--End of Sign in button--></nav>";
     if (user != null) {
         // RASMIT - INSERT THIS INTO THE SIGN IN REDIRECT STUFF, AND FIX REIRECTS TO ONLY CLOSE THE POPUP AND NOT ACTUALLY REDIRECT
         document.getElementById("signin").textContent = "Sign Out";
