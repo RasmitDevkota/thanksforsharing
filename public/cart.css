@@ -1,5 +1,5 @@
 .checkout{
-    border
+    border: none;
     color: white;
     background-color: red;
 }
