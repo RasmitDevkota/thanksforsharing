@@ -15,9 +15,7 @@ db.enablePersistence();
 
 window.onload = function () {
     document.getElementById("nav").innerHTML = "<!--nav begin--><nav><a onclick="redirect('index.html')">Logo Here</a><!--End of Logo-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!--Beginning of Home--><a id="home" class="navelement" onclick="redirect('index.html')">Home</a>
-        <!--End of Home-->&nbsp;&nbsp;&nbsp;
-    
-        <!--Beginning of Products-->
+        <!--End of Home-->&nbsp;&nbsp;&nbsp;<!--Beginning of Products-->
         <a id="navproducts" class="navelement" onclick="redirect('products.html?query=product')">Products</a>
         <!--End of Products-->&nbsp;&nbsp;&nbsp;
     
