@@ -102,9 +102,7 @@ function showProducts(doc) {
             console.log(action);
             elem.addEventListener('click', function () {
                 console.log(action);
-                prompt("Enter Credit Card Number: ").then(function (); {
-                    var address = prompt("Enter Address:");
-                });
+                prompt("Enter Credit Card Number: ");
             });
         }
         elem.classList.add("v-" + action, "mdl-button", "mdl-js-button", "mdl-button--raised", "mdl-js-ripple-effect");
