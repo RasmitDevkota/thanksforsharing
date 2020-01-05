@@ -61,20 +61,6 @@ function showProducts(doc) {
     text.id = "productText" + name;
     document.getElementById(outerDiv.id).appendChild(text);
 
-    for (i = 0; i < txtElements.length; i++) {
-        var txt = txtElements[i];
-        var elem = document.createElement("v-" + txt);
-        if (txt == "price") {
-            elem.innerHTML = "$" + txtContent[i] + "/month";
-        } else if (txt == "rating") {
-            elem.innerHTML = "<i class='fas fa-star'></i> " + txtContent[i];
-        } else {
-            elem.innerHTML = txtContent[i];
-        }
-        elem.className = "v" + txt;
-        document.getElementById(text.id).appendChild(elem);
-    };
-
     var actions = document.createElement("v-actions");
     actions.className = "vactions";
     actions.id = "productActions" + name;
