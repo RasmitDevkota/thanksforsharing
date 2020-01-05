@@ -124,7 +124,6 @@ function showCart() {
             ShoppingCart.doc(firebase.auth().currentUser.displayName).get().then(function (doc) {
                 console.log(doc.data());
             });
-
 };
 
 function rate(productid, val) {
