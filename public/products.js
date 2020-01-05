@@ -192,7 +192,7 @@ function showCart() {
                 document.getElementById(actions.id).appendChild(elem);
             };
                 });
-            });
+        });
 };
 
 function rate(productid, val) {
