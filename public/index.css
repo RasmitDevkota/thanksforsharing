@@ -3,5 +3,5 @@
     flex-direction:row;
 }
 .announcements{
-    flex-
+    flex-grow: 1;
 }
