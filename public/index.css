@@ -10,7 +10,8 @@
 }
 .titlelogosection{
     display:flex;
-    flex-direction:row;4
+    flex-direction:row;
+    justi
 }
 .ads{
     flex-grow: 1;
