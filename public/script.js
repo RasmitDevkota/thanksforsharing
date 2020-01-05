@@ -23,7 +23,6 @@ window.onload = function () {
     }
 };
 
-
 function search() {
     var text = document.getElementById("search").value;
     if (text == "") {
