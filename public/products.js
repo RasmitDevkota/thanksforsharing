@@ -52,7 +52,7 @@ function showProducts(doc) {
     document.getElementById("products").appendChild(outerDiv);
     outerDiv.id = "outer" + name;
     outerDiv.classList.add("mdl-card", "mdl-shadow--2dp");
-    outerDiv.style.width = "500%";
+    outerDiv.style.width = "100%";
 
     var image = document.createElement("img");
     image.src = imageRef;
