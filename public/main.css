@@ -13,6 +13,7 @@ body {
   top: -0.2px;
   display:flex;
   flex-direction: row;
+   background-color: rgba(0,0,0,0.5);
 }
 .signinoptions {
   background-color: #30b0f5;
