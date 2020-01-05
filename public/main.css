@@ -15,7 +15,9 @@ body {
   background-color: rgba(0,0,0,0.5);
 }
 .popupwrap{
-
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .signinoptions {
   background-color: #30b0f5;
