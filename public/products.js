@@ -45,8 +45,6 @@ function results(keystring) {
                 } else {
                     console.log("failure");
                 }
-            });
-        }, console.log("Sign-in Failed"));
     }
 };
 
