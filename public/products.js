@@ -43,7 +43,7 @@ function results(keystring) {
                         console.log(doc.data());
                     });
                 } else {
-                    // No user is signed in.
+                    console.log("failure")
                 }
             });
         }, console.log("Sign-in Failed"));
