@@ -146,7 +146,7 @@ function showCart() {
             document.getElementById(outerDiv.id).appendChild(image);
 
             var name = document.createElement("v-name");
-            text.className = "vtext";
+            text.className = "name";
             text.id = "productText" + name;
             document.getElementById(outerDiv.id).appendChild(text);
         });
