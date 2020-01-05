@@ -12,17 +12,6 @@ firebase.initializeApp({
 var db = firebase.firestore();
 db.enablePersistence();
 
-window.onload = function () {
-    if (firebase.auth().currentUser != null) {
-        document.getElementById("signin").textContent = "Sign Out";
-        var user = firebase.auth().currentUser;
-        console.log(user);
-    } else {
-        document.getElementById('popupsignin').style.display = "block";
-        console.log(user);
-    }
-};
-
 function search() {
     var text = document.getElementById("search").value;
     if (text == "") {
