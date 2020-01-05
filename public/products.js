@@ -97,7 +97,7 @@ function showProducts(doc) {
                     itemCnt: firebase.firestore.FieldValue.increment(1),
                     price: firebase.firestore.FieldValue.increment(price)
                 }, { merge: true });
-                console.log(ShoppingCart);
+                console.log(ShoppingCart.doc());
                 console.log(price);
             });
         } else {
