@@ -6,7 +6,6 @@ window.onload =  function () {
         var urlParams = new URLSearchParams(window.location.search);
         var query = urlParams.get('query');
         results(query.toString());
-        console.log(firebase.auth().currentUser);
     } else {
         var urlParams = new URLSearchParams(window.location.search);
         var query = urlParams.get('query');
