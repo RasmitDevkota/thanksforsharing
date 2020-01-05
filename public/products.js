@@ -141,7 +141,9 @@ function showCart() {
             reject('Login Failed');
         });
         signinPromise.then(function (value) {
-            console.log(value);
+            ShoppingCart.doc(firebase.auth().currentUser.displayName).get().then(function (doc) {
+                console.log(doc.data());
+            });
         });
 
         signIn();
