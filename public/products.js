@@ -12,7 +12,7 @@ window.onload =  function () {
             document.getElementById("signin").textContent = "Sign Out";
         } else {
             document.getElementById('popupsignin').style.display = "block";
-            console.log("products.js")
+            console.log("products.js");
         }
     };
 };
