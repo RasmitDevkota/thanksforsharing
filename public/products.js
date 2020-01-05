@@ -66,11 +66,6 @@ function showProducts(doc) {
     actions.id = "productActions" + name;
     document.getElementById(outerDiv.id).appendChild(actions);
 
-    for (i = 0; i < actionElements.length; i++) {
-        var action = actionElements[i];
-        var elem = document.createElement("v-" + action);
-        elem.innerHTML = actionNames[i];
-        if (action == "addtocart"){
             elem.addEventListener('click', function () {
                 ShoppingCart.doc(firebase.auth().currentUser.displayName).set({
                     items: firebase.firestore.FieldValue.arrayUnion(name),
