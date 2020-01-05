@@ -51,8 +51,6 @@ function showProducts(doc) {
     var outerDiv = document.createElement("v-product");
     document.getElementById("products").appendChild(outerDiv);
     outerDiv.id = "outer" + name;
-    outerDiv.classList.add("mdl-card", "mdl-shadow--2dp");
-    outerDiv.style.width = "00%";
 
     var image = document.createElement("img");
     image.src = imageRef;
