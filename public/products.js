@@ -157,4 +157,4 @@ function checkOut() {
 //     var ccn = prompt("Enter Credit Card Number: ");
 // };
 
-firebase.auth().currentUser);
+console.log(firebase.auth().currentUser);
