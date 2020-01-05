@@ -3,7 +3,6 @@ var Products = db.collection("products");
 window.onload =  function () {
     if (window.location.href.indexOf("products.html")) {
         var urlParams = new URLSearchParams(window.location.search);
-
         var query = urlParams.get('query');
         results(query.toString());
         if (user != null) {
