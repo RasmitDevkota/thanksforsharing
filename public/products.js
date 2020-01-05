@@ -118,7 +118,7 @@ function addToCart(productid) {
     Products.doc(productid).onSnapshot(function (doc) {
         var price = doc.data().price.toString();
     });
-    cart.update({
+    ShoppingCart.update({
         items: firebase.firestore.FieldValue.arrayUnion(productid),
         itemCnt: firebase.firestore.FieldValue.increment(1),
         price: firebase.firestore.FieldValue.increment(price)
