@@ -33,6 +33,7 @@ body {
   max-width: 1024px;
   margin: auto;
   position: fixed;
+  opacity: 100%;
 }
 .mdl-layout__header-row {
   padding: 0;
