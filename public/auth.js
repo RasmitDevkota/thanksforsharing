@@ -14,7 +14,7 @@ function signIn() {
 
 // Email Login
 function displayName() {
-    var uid = user.uid;
+    var uid = firebase.user.uid;
     users.doc(uid).get().then(function (doc) {
         var displayName = doc.data().displayName;
         return displayName;
