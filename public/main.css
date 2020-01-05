@@ -19,8 +19,7 @@ body {
   box-shadow: 1px 1px 1px grey;
 }
 .signinoptions:hover {
-  background-color: rgb(31, 155, 221);
-  opacity: 50%;
+  background-color: rgb(31, 155, 221)
 }
 .entirepopup{
   background-color: gray;
