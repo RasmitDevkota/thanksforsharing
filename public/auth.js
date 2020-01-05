@@ -17,7 +17,6 @@ function signIn() {
         console.log(user);
     } else {
         firebase.auth().signOut();
-        console.log(user);
     }
 };
 
