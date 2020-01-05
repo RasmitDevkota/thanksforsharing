@@ -43,7 +43,7 @@ function results(keystring) {
                         console.log(doc.data());
                     });
                 } else {
-                    console.log("failure")
+                    console.log("failure");
                 }
             });
         }, console.log("Sign-in Failed"));
