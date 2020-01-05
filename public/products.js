@@ -91,7 +91,7 @@ function showProducts(doc) {
             console.log(action);
             elem.addEventListener('click', function () {
                 ShoppingCart.doc(firebase.auth().currentUser.displayName).get().then(function (doc){
-
+                    
                 });
                 ShoppingCart.doc(firebase.auth().currentUser.displayName).set({
                     items: firebase.firestore.FieldValue.arrayUnion(name),
