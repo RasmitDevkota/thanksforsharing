@@ -90,7 +90,6 @@ function showProducts(doc) {
         var elem = document.createElement("v-" + action);
         elem.innerHTML = actionNames[i];
         if (action == "addtocart"){
-            console.log(action);
             elem.addEventListener('click', function () {
                 ShoppingCart.doc(firebase.auth().currentUser.displayName).set({
                     items: firebase.firestore.FieldValue.arrayUnion(name),
