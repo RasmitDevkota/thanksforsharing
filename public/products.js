@@ -122,8 +122,7 @@ function addToCart(productid) {
 
 function removeFromCart(productid) {
     ShoppingCart.doc(firebase.auth().currentUser.displayName).update({
-        items: firebase.firestore.FieldValue.arrayRemove(productid),
-        itemCnt: firebase.firestore.FieldValue.increment(-1)
+        items: firebase.firestore.FieldValue.arrayRemove(productid)
     });
 };
 
