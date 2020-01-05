@@ -22,7 +22,7 @@ function signIn() {
 function eToggleSignIn() {
     var password = document.getElementById('password').value;
     var email = document.getElementById('username').value;
-    if (username.length < 3) {
+    if (email.length < 3) {
         alert('Please enter a longer username.');
         return;
     }
@@ -30,7 +30,7 @@ function eToggleSignIn() {
         alert('Please enter a longer password.');
         return;
     }
-    
+
     firebase.auth().signInWithEmailAndPassword(email, password)
         .then(function () {
             firebase.auth().onAuthStateChanged(function (user) {
