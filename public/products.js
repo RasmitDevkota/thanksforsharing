@@ -11,7 +11,7 @@ window.onload =  function () {
         if (firebase.auth().currentUser != null) {
             console.log(firebase.auth().currentUser);
             console.log(ShoppingCart.doc(user.displayName));
-            document.getElementById("signin").textContent = "Sign Out";
+            document.getElementById("signin").innerHTML = "Sign Out";
         }
     };
 };
