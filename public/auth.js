@@ -9,7 +9,7 @@ window.onload = function () {
         console.log(user);
     } else {
         document.getElementById('popupsignin').style.display = "block";
-        console.log(user);
+        console.log(firebase.auth().currentUser);
     }
 };
 
