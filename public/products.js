@@ -37,15 +37,15 @@ function results(keystring) {
         document.getElementById("signin").innerHTML = "Sign Out";
     } else {
         signIn();
-            firebase.auth().onAuthStateChanged(function (user) {
-                if (user) {
-                    ShoppingCart.doc(firebase.auth().currentUser.displayName).get().then(function (doc) {
-                        console.log(doc.data());
-                    });
-                } else {
-                    console.log("failure");
-                }
-            }
+    firebase.auth().onAuthStateChanged(function (user) {
+        if (user) {
+            ShoppingCart.doc(firebase.auth().currentUser.displayName).get().then(function (doc) {
+                console.log(doc.data());
+            });
+        } else {
+            console.log("failure");
+        }
+    }
     }
 };
 
