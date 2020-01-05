@@ -22,7 +22,7 @@ window.onload = function () {
         } else {
             signIn();
         }
-    });
+    },);
 };
 
 function search() {
