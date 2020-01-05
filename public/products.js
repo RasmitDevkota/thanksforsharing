@@ -147,7 +147,7 @@ function showCart() {
 
             var name = document.createElement("c-name");
             name.className = "cname";
-            name.id = "cartP" + name;
+            name.id = "cart" + name;
             document.getElementById(outerDiv.id).appendChild(text);
         });
     });
