@@ -183,7 +183,7 @@ function handleSignUp() {
     var permemail = document.getElementById('suemail').value.toString();
     var permpassword = document.getElementById('supassword').value.toString();
     
-    if (username.length < 3) {
+    if (permusername.length < 3) {
         alert('Please enter a longer username.');
         return;
     }
