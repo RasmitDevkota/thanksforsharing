@@ -18,7 +18,6 @@ window.onload = function () {
         // RASMIT - INSERT THIS INTO THE SIGN IN REDIRECT STUFF, AND FIX REDIRECTS TO ONLY CLOSE THE POPUP AND NOT ACTUALLY REDIRECT
         document.getElementById("signin").textContent = "Sign Out";
         console.log(user);
-        var ShoppingCart = db.collection("cart");
     } else {
         
     }
