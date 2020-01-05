@@ -5,7 +5,7 @@ function signIn() {
     console.log(user);
     if(user == null){
         document.getElementById('popupsignin').style.display = "block";
-        alert();
+        alert("");
         console.log(user);
     } else {
         firebase.auth().signOut();
