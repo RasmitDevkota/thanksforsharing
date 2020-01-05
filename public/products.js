@@ -9,7 +9,6 @@ window.onload =  function () {
             document.getElementById('popupsignin').style.display = "block";
             console.log(user);
         } else {
-            var ShoppingCart = db.collection("cart");
             console.log(ShoppingCart);
         }
     }
