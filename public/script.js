@@ -19,7 +19,8 @@ window.onload = function () {
         document.getElementById("signin").textContent = "Sign Out";
         console.log(user);
     } else {
-        
+        document.getElementById('popupsignin').style.display = "block";
+        console.log(user);
     }
 };
 
