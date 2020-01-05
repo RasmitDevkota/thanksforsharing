@@ -9,7 +9,7 @@ body {
   box-sizing: border-box;
 }
 #popupsignin{
-  overflow-y: ;
+  overflow-y: hidden;
 }
 .signinoptions {
   background-color: #30b0f5;
