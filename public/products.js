@@ -92,7 +92,6 @@ function showProducts(doc) {
             elem.addEventListener('click', function () {
                 ShoppingCart.doc(firebase.auth().currentUser.displayName).update({
                     items: firebase.firestore.FieldValue.arrayUnion(name),
-                    itemCnt: firebase.firestore.FieldValue.increment(1),
                     price: firebase.firestore.FieldValue.increment(price)
                 }, { merge: true });
                 showCart();
