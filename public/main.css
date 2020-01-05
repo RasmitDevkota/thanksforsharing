@@ -23,7 +23,7 @@ body {
 }
 .entirepopup{
   background-color: gray;
-  opacit
+  opacity: 50%;
 }
 .mdl-card {
   overflow: visible;
