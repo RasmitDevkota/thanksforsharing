@@ -15,7 +15,7 @@
     background-color: #039aeb;
 }
 .checkoutwrap{
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: right;
 }
