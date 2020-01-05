@@ -44,9 +44,7 @@ function results(keystring) {
                     // No user is signed in.
                 }
             });
-            ShoppingCart.doc(firebase.auth().currentUser.displayName).get().then(function (doc) {
-                console.log(doc.data());
-            });
+            
         }, console.log("Sign-in Failed"));
     }
 };
