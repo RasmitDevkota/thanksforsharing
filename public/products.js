@@ -7,7 +7,7 @@ window.onload =  function () {
         var query = urlParams.get('query');
         results(query.toString());
         if (firebase.auth().currentUser != null) {
-            var user = firebase.auth().currentUser;
+            console.log(firebase.auth().currentUser)
             console.log(ShoppingCart.doc(user.displayName));
         }
     }
