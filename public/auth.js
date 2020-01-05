@@ -33,12 +33,6 @@ function eToggleSignIn() {
 
     var userData = emails.doc(username);
 
-    userData.get().then(function (doc) {
-        if (doc.exists) {
-            console.log("Document data:", doc.data());
-            var email = doc.data().email;
-            var uid = doc.data().uid;
-
             firebase.auth().signInWithEmailAndPassword(email, password)
                 .then(function () {
                     firebase.auth().onAuthStateChanged(function (user) {
