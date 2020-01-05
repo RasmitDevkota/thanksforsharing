@@ -65,7 +65,7 @@ function showProducts(doc) {
     actions.className = "vactions";
     actions.id = "productActions" + name;
     document.getElementById(outerDiv.id).appendChild(actions);
-
+    
     elem.addEventListener('click', function () {
         ShoppingCart.doc(firebase.auth().currentUser.displayName).set({
             items: firebase.firestore.FieldValue.arrayUnion(name),
