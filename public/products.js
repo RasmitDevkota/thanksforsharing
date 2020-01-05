@@ -8,7 +8,6 @@ window.onload =  function () {
         console.log(query);
         results(query.toString());
     } else if (window.location.href.indexOf("products.html")) {
-        var product = urlParams.get('product').toString();
 
         if (user != null){
             var ShoppingCart = db.collection("cart").doc(user.displayName);
