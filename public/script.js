@@ -24,8 +24,7 @@ window.onload = function () {
         <!--End of Search-->&nbsp;&nbsp;&nbsp;
     
         <!--Beginning of Sign in button-->
-        <a id="signin" class="navelement" onclick="signIn()">Sign In</a>
-        <!--End of Sign in button--></nav>";
+        <a id="signin" class="navelement" onclick="signIn()">Sign In</a><!--End of Sign in button--></nav>";
     if (user != null) {
         // RASMIT - INSERT THIS INTO THE SIGN IN REDIRECT STUFF, AND FIX REIRECTS TO ONLY CLOSE THE POPUP AND NOT ACTUALLY REDIRECT
         document.getElementById("signin").textContent = "Sign Out";
