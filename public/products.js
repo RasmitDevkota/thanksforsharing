@@ -35,7 +35,7 @@ function results(keystring) {
         console.log(firebase.auth().currentUser);
         console.log(ShoppingCart.doc(firebase.auth().currentUser.displayName));
         document.getElementById("signin").innerHTML = "Sign Out";
-    } else {signIn()).then(function () {
+    } else {signIn()
             firebase.auth().onAuthStateChanged(function (user) {
                 if (user) {
                     ShoppingCart.doc(firebase.auth().currentUser.displayName).get().then(function (doc) {
