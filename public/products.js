@@ -7,7 +7,7 @@ window.onload =  function () {
         var query = urlParams.get('query');
         console.log(query);
         results(query.toString());
-        if (user != null){
+        if (user != null) {
             var ShoppingCart = db.collection("cart").doc(user.displayName);
             console.log(ShoppingCart);
         } else {
