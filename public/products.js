@@ -1,5 +1,4 @@
 var Products = db.collection("products");
-var ShoppingCart = db.collection("cart").doc(displayName());
 
 window.onload =  function () {
     if (window.location.href.indexOf("products.html")) {
@@ -7,6 +6,7 @@ window.onload =  function () {
         var query = urlParams.get('query');
         results(query.toString());
         if (user != null) {
+            var ShoppingCart = db.collection("cart").doc(displayName());
             console.log(ShoppingCart);
         } else {
             document.getElementById('popupsignin').style.display = "block";
