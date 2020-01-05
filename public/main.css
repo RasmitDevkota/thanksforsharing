@@ -79,7 +79,7 @@ nav {
 }
 @keyframes Slide_Up{
   0%{
-    tran
+    transform: translate
   }
 }
 ::placeholder {
