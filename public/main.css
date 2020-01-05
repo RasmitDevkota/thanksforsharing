@@ -47,7 +47,6 @@ nav {
   background-color: #343434;
   border-top: 5px solid #343434;
   border-bottom: 5px solid #343434;
-  border-radius: 5px;
 }
 .navelement:hover{
   color:red;
