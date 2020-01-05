@@ -4,7 +4,6 @@
     justify-content: center;
 }
 .checkout {
-    float: right;
     text-transform: capitalize;
     font-size: 25px;
     border: none;
