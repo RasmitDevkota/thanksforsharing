@@ -74,12 +74,7 @@ function showProducts(doc) {
                 showCart();
                 console.log(price);
             });
-        } else {
-            elem.addEventListener('click', function () {
-                console.log(action);
-                prompt("Enter Credit Card Number: ");
-            });
-        }
+
         elem.classList.add("v-" + action, "mdl-button", "mdl-js-button", "mdl-button--raised", "mdl-js-ripple-effect");
         document.getElementById(actions.id).appendChild(elem);
     };
