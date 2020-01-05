@@ -46,6 +46,15 @@
         
         <!--Beginning of Sign in button-->
           <a id="signin" class="navelement" onclick="signIn()">Sign In</a>
+          <script>
+            if (firebase.auth().currentUser != null) {
+              console.log(firebase.auth().currentUser);
+              console.log(ShoppingCart.doc(firebase.auth().currentUser.displayName));
+              document.getElementById("signin").innerHTML = "Sign Out";
+            } else {
+              signIn();
+            }
+          </script>
         <!--End of Sign in button-->
         <!--search bar-->
         <input style="display: none;" id="search" class="navelement search" type="text" placeholder="Search">
