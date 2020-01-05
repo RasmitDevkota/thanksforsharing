@@ -17,7 +17,6 @@ function displayName() {
     var uid = firebase.auth().currentUser.uid;
     users.doc(uid).get().then(function (doc) {
         var displayName = doc.data().displayName;
-        return displayName;
     });
 };
 
@@ -223,7 +222,7 @@ function handleSignUp() {
     }
 
     firebase.auth().createUserWithEmailAndPassword(permemail, permpassword).then(function () {
-        
+
         firebase.auth().signInWithEmailAndPassword(permemail, permpassword).catch(function (error) {
             var errorMessage = error.message;
             console.log(error);
