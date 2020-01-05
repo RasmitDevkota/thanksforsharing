@@ -136,7 +136,7 @@ function showCart() {
 
             var txtContent = [name, desc, price, rating];
 
-            var outerDiv = document.createElement("v-product");
+            var outerDiv = document.createElement("c-product");
             document.getElementById("products").appendChild(outerDiv);
             outerDiv.id = "couter" + name;
 
