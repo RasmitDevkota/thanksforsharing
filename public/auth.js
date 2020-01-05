@@ -271,5 +271,4 @@ function sendPasswordReset() {
 };
 // Password Reset End
 
-
 console.log(firebase.auth().currentUser);
