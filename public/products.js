@@ -139,7 +139,7 @@ function showCart() {
         var signinPromise = new Promise(function (resolve, reject) {
             resolve({
                 signin();
-            })
+            });
             reject('Login Failed');
         });
         signinPromise.then(function () {
