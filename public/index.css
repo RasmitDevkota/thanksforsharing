@@ -11,7 +11,7 @@
 .titlelogosection{
     display:flex;
     flex-direction:row;
-    justi
+    justify-content:centerl
 }
 .ads{
     flex-grow: 1;
