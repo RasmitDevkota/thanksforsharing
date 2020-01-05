@@ -77,7 +77,7 @@ nav {
   border: none;
 }
 .search:focus{
-  outlin
+  outline: none;
 }
 @media only screen and (max-width: 300px) {
   .text {
