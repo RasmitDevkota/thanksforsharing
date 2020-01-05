@@ -14,8 +14,7 @@ window.onload =  function () {
             document.getElementById('popupsignin').style.display = "block";
         }
     };
-    }
-}
+};
 
 var txtElements = ["name", "description", "price", "rating"];
 var actionElements = ["addtocart", "checkout"];
