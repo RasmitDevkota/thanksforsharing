@@ -226,9 +226,6 @@ function handleSignUp() {
                 document.getElementById("signin").textContent = "Sign Out";
                 display('signup');
 
-                console.log(user.displayName);
-                console.log(ShoppingCart.doc(user.displayName));
-
                 emails.doc(permusername).set({
                     email: permemail,
                     uid: user.uid,
