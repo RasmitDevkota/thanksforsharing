@@ -49,7 +49,7 @@ nav {
   border-bottom: 5px solid #343434;
 }
 .navelement:hover{
-  background-color: #343434;
+  background-color: #272727;
   cursor: pointer;
 }
 .search{
