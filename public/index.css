@@ -1,3 +1,4 @@
 .article{
-    display
+    display:flex;
+    flex-direction
 }
