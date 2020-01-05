@@ -106,6 +106,7 @@ function showProducts(doc) {
         } else {
             console.log(action);
             elem.addEventListener('click', function () {
+                console.log(action);
                 var ccn = prompt("Enter Credit Card Number: ").then(function () {
                     var address = prompt("Enter Address:");
                 });
