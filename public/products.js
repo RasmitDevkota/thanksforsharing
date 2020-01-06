@@ -111,9 +111,11 @@ function removeFromCart(productid) {
 };
 
 function showCart() {
-    ShoppingCart.doc(firebase.auth().currentUser.displayName).collection(firebase.auth().currentUser.displayName).get().then(function (doc) {
+    ShoppingCart.doc(firebase.auth().currentUser.displayName).get().then(function (querySnapshot) {
+        querySnapshot.forEach((doc) => {
             var name = doc.data().name.toString();
             var imageRef = doc.data().imageRef.toString();
+            var
 
             var outerDiv = document.createElement("c-product");
             document.getElementById("cartItems").appendChild(outerDiv);
