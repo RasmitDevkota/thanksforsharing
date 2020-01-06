@@ -36,7 +36,7 @@ window.onload = function () {
         else if (e.code === "ArrowDown") playerSpriteX -= 10
       
         document.getElementById('test').innerHTML = 'playerSpriteX = ' + playerSpriteX;
-      })
+      });
     // here
 };
 
