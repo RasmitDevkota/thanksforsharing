@@ -34,7 +34,7 @@ function search() {
 
         /*var elem = document.getElementById("search");   
         var pos = 0;
-        var id = setInterval(frame, 1000);
+        var id = setInterval(frame, 100);
         function frame() {
             if (pos == 100) {
                 clearInterval(id);
