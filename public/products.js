@@ -133,6 +133,7 @@ function showCart() {
 
             Products.doc(name).get().then(function (doc) {
                 var price = doc.data().price;
+                totalPrice += price;
             });
 
             var priceEl = document.createElement("c-price");
