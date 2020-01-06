@@ -33,7 +33,7 @@ function search() {
         function frame() {
         if (pos == 350) {
             clearInterval(id);
-    } else {
+        } else {
       pos++; 
       elem.style.top = pos + "px"; 
       elem.style.left = pos + "px"; 
