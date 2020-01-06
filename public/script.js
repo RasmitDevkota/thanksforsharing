@@ -30,6 +30,8 @@ window.onload = function () {
             showCart();
         }
     }
+
+    
     // here
 };
 
