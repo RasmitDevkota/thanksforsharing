@@ -79,8 +79,7 @@ function showProducts(doc) {
             elem.addEventListener('click', function () {
                 if (firebase.auth().currentUser != null) {
                     ShoppingCart.doc(firebase.auth().currentUser.displayName).set({
-                        items: firebase.firestore.FieldValue.arrayUnion(name),
-                        price: firebase.firestore.FieldValue.increment(price)
+                        items: firebase.firestore.FieldValue.arrayUnion(name)
                     }, {merge: true});
                 } else {
                     alert('You are currently not signed in. Sign in or use fast checkout to purchase without an account.');
