@@ -83,6 +83,7 @@ function showProducts(doc) {
                         price: price,
                         imageRef: imageRef
                     });
+                    console.log()
                 } else {
                     alert('You are currently not signed in. Sign in or use fast checkout to purchase without an account.');
                 }
