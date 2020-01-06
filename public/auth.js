@@ -10,7 +10,7 @@ function signIn() {
         firebase.auth().signOut();
         document.getElementById("signin").innerHTML = "Sign In";
     }
-    if (window.location.href.includes("products.html")) {
+    if (window.location.href.includes("cart.html")) {
         var urlParams = new URLSearchParams(window.location.search);
         var query = urlParams.get('query');
         results(query.toString());
