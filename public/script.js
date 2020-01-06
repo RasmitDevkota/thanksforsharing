@@ -30,7 +30,7 @@ window.onload = function () {
             showCart();
         }
     }
-    document.addEventListener('keyup', (e) => {
+    document.addEventListener('keydown', (e) => {
         if (e.code === "ArrowUp")        playerSpriteX += 10
         else if (e.code === "ArrowDown") playerSpriteX -= 10
       
