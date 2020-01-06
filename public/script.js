@@ -22,13 +22,13 @@ window.onload = function () {
             console.log(firebase.auth().currentUser);
             signIn();
         }
-    }, 5000);
+    }, 700);
 };
 
 function search() {
     var text = document.getElementById("search").value.toString().toLowerCase();
     if (text == "") {
-        document.getElementById("search").style.zIndex = "";
+        document.getElementById("search").style.zIndex = "2";
         /*var elem = document.getElementById("search");   
         var pos = 0;
         var id = setInterval(frame, 1000);
