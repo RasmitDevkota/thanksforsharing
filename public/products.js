@@ -83,7 +83,7 @@ function showProducts(doc) {
                         price: price,
                         imageRef: imageRef
                     });
-                    console.log(ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name))
+                    console.log(ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name));
                 } else {
                     alert('You are currently not signed in. Sign in or use fast checkout to purchase without an account.');
                 }
