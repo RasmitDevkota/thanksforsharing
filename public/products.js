@@ -134,8 +134,6 @@ function showCart() {
             };
             var rating = (sum / ratings.length).toFixed(1);
 
-            var txtContent = [name, desc, price, rating];
-
             var outerDiv = document.createElement("c-product");
             document.getElementById("cartItems").appendChild(outerDiv);
             outerDiv.id = "couter" + name;
