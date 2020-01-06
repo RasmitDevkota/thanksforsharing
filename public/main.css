@@ -85,7 +85,7 @@ nav {
 
 @keyframes{
   0%{
-    translateY: 
+    translateY: -10px;
   }
 }
 
