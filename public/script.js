@@ -16,7 +16,6 @@ window.onload = function () {
     setTimeout(function () {
         console.log('timeout works!');
         if (firebase.auth().currentUser != null) {
-            console.log(firebase.auth().currentUser);
             document.getElementById("signin").innerHTML = "Sign Out";
         } else {
             signIn();
