@@ -135,7 +135,7 @@ function showCart() {
             var priceEl = document.createElement("c-price");
             priceEl.className = "cprice";
             priceEl.id = "cartPrice" + price;
-            name.innerHTML = price;
+            priceEl.innerHTML = price;
             document.getElementById(outerDiv.id).appendChild(price);
 
             var remove = document.createElement("c-remove");
