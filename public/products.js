@@ -152,7 +152,7 @@ function showCart() {
             remove.addEventListener('click', removeFromCart(name));
         });
     });
-    document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.;
+    document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.to;
 };
 
 function rate(productid, val) {
