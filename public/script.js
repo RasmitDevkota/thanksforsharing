@@ -25,7 +25,7 @@ window.onload = function () {
         var urlParams = new URLSearchParams(window.location.search);
         var query = urlParams.get('query');
         results(query.toString());
-    } elseif(firebase.auth().currentUser != null) {
+    } else if(firebase.auth().currentUser != null) {
         showCart();
     } {
         if (firebase.auth().currentUser != null) {
