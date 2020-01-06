@@ -20,6 +20,7 @@ window.onload = function () {
             // THE LINE BELOW CREATES AUTOMATIC POPUP IF USER IS NOT SIGNED IN
             // signIn();
         }
+        
     }, 950);
     if (window.location.href.includes("products.html")) {
         var urlParams = new URLSearchParams(window.location.search);
