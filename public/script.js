@@ -27,7 +27,7 @@ window.onload = function () {
 function search() {
     var text = document.getElementById("search").value.toString().toLowerCase();
     if (text == "") {
-        var elem = document.getElementById("animate");   
+        var elem = document.getElementById("");   
   var pos = 0;
   var id = setInterval(frame, 5);
   function frame() {
