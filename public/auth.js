@@ -17,7 +17,6 @@ function signIn() {
     } else {
         if (firebase.auth().currentUser != null) {
             showCart();
-        }
     }
 };
 
