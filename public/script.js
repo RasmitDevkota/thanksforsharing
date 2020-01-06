@@ -14,7 +14,6 @@ db.enablePersistence();
 
 window.onload = function () {
     setTimeout(function () {
-        console.log('timeout works!');
         if (firebase.auth().currentUser != null) {
             document.getElementById("signin").innerHTML = "Sign Out";
         } else {
