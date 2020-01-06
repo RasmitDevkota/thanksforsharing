@@ -127,12 +127,6 @@ function showCart() {
             nameEl.innerHTML = name;
             document.getElementById(outerDiv.id).appendChild(nameEl);
 
-            Products.doc(name).get().then(function (doc) {
-                var price = doc.data().price;
-                totalPrice += price;
-                console.log(totalPrice);
-            });
-
             var priceEl = document.createElement("c-price");
             priceEl.className = "cprice";
             priceEl.id = "cartPrice" + price;
