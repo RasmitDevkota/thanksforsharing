@@ -13,7 +13,6 @@ var db = firebase.firestore();
 db.enablePersistence();
 
 window.onload = function () {
-    alert("hello");
     console.log(firebase.auth().currentUser);
     setTimeout(function () {
         console.log('timeout works!');
