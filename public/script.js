@@ -28,7 +28,7 @@ window.onload = function () {
     } else if (window.location.href.includes("cart.html") && firebase.auth().currentUser != null) {
         showCart();
     } else {
-        
+        console.log("Index.html?")
     }
 
     document.addEventListener('keydown', function (event) {
