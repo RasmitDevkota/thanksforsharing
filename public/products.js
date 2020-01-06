@@ -83,7 +83,7 @@ function showProducts(doc) {
                     }, {merge: true});
                     showCart();
                 } else {
-                    
+                    alert("")
                 }
             });
         } else {
