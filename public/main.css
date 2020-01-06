@@ -78,7 +78,7 @@ nav {
   border: none;
   position: absolute;
 }
-@-moz-document:placeholder {
+@-moz-document::placeholder {
   opacity: 1; /* Firefox */
 }
 
