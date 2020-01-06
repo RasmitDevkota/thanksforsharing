@@ -158,7 +158,7 @@ function showCart() {
             price.classList.add("remove", "mdl - button", "mdl - js - button", "mdl - button--icon", "mdl - button--colored");
             price.id = "cartPrice" + price;
             document.getElementById(outerDiv.id).appendChild(price);
-            removeBtn.addEventListener('click')
+            removeBtn.addEventListener('click', )
         });
     });
 };
