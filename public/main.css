@@ -79,7 +79,7 @@ nav {
   border: none;
   position: absolute;
   top: 0;
-  z-index: 4;
+  z-index: 7;
 }
 @-moz-document {
   ::placeholder {
