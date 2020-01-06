@@ -30,6 +30,7 @@ function search() {
     if (text == "") {
 
         document.getElementById('search').style.top = "100px";
+        index.
         alert("hello");
         /*var elem = document.getElementById("search");   
         var pos = 0;
