@@ -23,7 +23,7 @@ window.onload = function () {
             signIn();
         }
     }, 950);
-    
+    console.log()
 };
 
 function search() {
