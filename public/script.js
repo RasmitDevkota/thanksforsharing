@@ -46,5 +46,3 @@ function redirect(pagePath) {
         firebase.auth().signOut();
     }
 };
-
-search.
