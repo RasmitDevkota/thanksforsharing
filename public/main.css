@@ -80,7 +80,7 @@ nav {
 }
 @keyframes Slide_Up{
   0%{
-    transform: scale();
+    transform: scale(1,);
   }
   100%{
     transform: scale(1,1);
