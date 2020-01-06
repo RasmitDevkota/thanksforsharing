@@ -29,7 +29,7 @@ function search() {
     if (text == "") {
         var elem = document.getElementById("search");   
         var pos = 0;
-        var id = setInterval(frame, 500);
+        var id = setInterval(frame, 1000);
         function frame() {
         if (pos == 10) {
             clearInterval(id);
