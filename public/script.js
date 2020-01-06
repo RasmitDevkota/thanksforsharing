@@ -26,6 +26,7 @@ window.onload = function () {
 };
 
 function search() {
+    alert("hello");
     var text = document.getElementById("search").value.toString().toLowerCase();
     if (text == "") {
 
