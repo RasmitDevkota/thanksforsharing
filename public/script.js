@@ -37,7 +37,7 @@ function search() {
             pos++; 
             elem.style.top = pos + "px"; 
             elem.style.left = pos + "px"; 
-    }
+        }
   }
     } else {
         window.location = "products.html?query=" + text.toString();
