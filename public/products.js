@@ -111,6 +111,7 @@ function removeFromCart(productid) {
 };
 
 function showCart() {
+    var totalPrice = 
     ShoppingCart.doc(firebase.auth().currentUser.displayName).collection(firebase.auth().currentUser.displayName).get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
             var name = doc.data().name.toString();
