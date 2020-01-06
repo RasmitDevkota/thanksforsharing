@@ -85,6 +85,7 @@ nav {
   z-index: -1;
 }
 
+@keyFrames
 @-moz-document {
   ::placeholder {
     color: white;
