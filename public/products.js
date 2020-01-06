@@ -111,7 +111,7 @@ function removeFromCart(productid) {
 };
 
 function showCart() {
-    ShoppingCart.doc(firebase.auth().currentUser.displayName).get().then(function (doc) {
+    ShoppingCart.doc(firebase.auth().currentUser.displayName).c.get().then(function (doc) {
             var name = doc.data().name.toString();
             var imageRef = doc.data().imageRef.toString();
             var
