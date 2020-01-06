@@ -96,7 +96,6 @@ function showProducts(doc) {
 };
 
 function showCart() {
-
     console.log('hello');
     document.getElementById("cartItems").innerHTML = "";
     var totalPrice = 0;
