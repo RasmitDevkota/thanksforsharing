@@ -28,7 +28,7 @@ window.onload = function () {
 function search() {
     var text = document.getElementById("search").value.toString().toLowerCase();
     if (text == "") {
-        alert("hello");
+
         document.getElementById('search').style.top: "10px";
 
         /*var elem = document.getElementById("search");   
