@@ -78,6 +78,7 @@ nav {
   border: none;
   position: absolute;
   top: 0;
+  
 }
 @-moz-document {
   ::placeholder {
