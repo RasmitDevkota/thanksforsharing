@@ -80,7 +80,8 @@ function showProducts(doc) {
                 if (firebase.auth().currentUser != null) {
                     ShoppingCart.doc(firebase.auth().currentUser.displayName).collection(firebase.auth().currentUser.displayName).doc(name).set({
                         name: name,
-                        price: price
+                        price: price,
+                        im
                     }, {merge: true});
                 } else {
                     alert('You are currently not signed in. Sign in or use fast checkout to purchase without an account.');
