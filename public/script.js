@@ -33,7 +33,6 @@ window.onload = function () {
     document.addEventListener('keydown', (e) => {
         if (e.code === "Enter");
       
-        document.getElementById('test').innerHTML = 'playerSpriteX = ' + playerSpriteX;
       });
     // here
 };
