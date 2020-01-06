@@ -131,7 +131,7 @@ function showCart() {
             document.getElementById(outerDiv.id).appendChild(nameEl);
 
             Products.doc(name).get().then(function (doc) {
-                var price = doc.data()
+                var price = doc.data().
             });
 
             var priceEl = document.createElement("c-price");
