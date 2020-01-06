@@ -82,15 +82,6 @@ nav {
   border: none;
 }
 
-@keyframes Slide_In{
-  0% {
-    translateY: top(-10px);
-  }
-  100% {
-    translateY: top(0px);
-  }
-}
-
 @-moz-document {
   ::placeholder {
     color: white;
