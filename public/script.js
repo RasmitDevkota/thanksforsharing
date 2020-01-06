@@ -30,16 +30,6 @@ window.onload = function () {
             console.log("Index.html?");
         }
     }, 950);
-    if (window.location.href.includes("products.html")) {
-        var urlParams = new URLSearchParams(window.location.search);
-        var query = urlParams.get('query');
-        results(query.toString());
-    } else if (window.location.href.includes("cart.html") && firebase.auth().currentUser != null) {
-        showCart();
-    } else {
-        console.log("Index.html?");
-    }
-
     document.addEventListener('keydown', function (event) {
         const key = event.key;
         if (key == "Enter" && document.getElementById('search').value.toString().toLowerCase() != "") {
