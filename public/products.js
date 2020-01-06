@@ -89,13 +89,7 @@ function showProducts(doc) {
                 }
             });
         } else {
-            elem.addEventListener('click', function () {
-                console.log(action);
-                var ccn = prompt("Enter Credit Card Number: ");
-                var addr = prompt("Enter Shipping Address");
-                alert("Product ordered! Should arrive in around " + deliveryTime + ".");
-                console.log(deliveryTime);
-            });
+            elem.addEventListener('click', checkOut();
         }
         elem.classList.add("v-" + action, "mdl-button", "mdl-js-button", "mdl-button--raised", "mdl-js-ripple-effect");
         document.getElementById(actions.id).appendChild(elem);
