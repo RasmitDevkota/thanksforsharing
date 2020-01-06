@@ -150,7 +150,7 @@ function showCart() {
             remove.addEventListener('click', removeFromCart(name));
         });
     });
-    
+    doc
 };
 
 function rate(productid, val) {
