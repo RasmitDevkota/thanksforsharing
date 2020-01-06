@@ -28,7 +28,7 @@ window.onload = function () {
 function search() {
     var text = document.getElementById("search").value.toString().toLowerCase();
     if (text == "") {
-        document.getElementById('search').style.top: 10px;
+        document.getElementById('search').style.top: "10px";
         /*var elem = document.getElementById("search");   
         var pos = 0;
         var id = setInterval(frame, 1000);
