@@ -80,7 +80,7 @@ nav {
 }
 @-moz-document {
   ::placeholder {
-  opacity: 1; /* Firefox */
+    opacity: 1; /* Firefox */
 }
 }
 
