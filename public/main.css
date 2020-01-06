@@ -69,7 +69,7 @@ nav {
   border-bottom: 5px solid #272727;
   cursor: pointer;
 }
-#search{
+.search{
   color: white;
   font-size: 15px;
   background-color:#30b0f5;
