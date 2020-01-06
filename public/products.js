@@ -162,4 +162,6 @@ function checkOut() {
     });
 };
 
-function re
+function removeFromCart() {
+    
+}
