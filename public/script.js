@@ -25,6 +25,15 @@ window.onload = function () {
             signIn();
         }
     }, 950);
+    if (window.location.href.includes("products.html")) {
+        var urlParams = new URLSearchParams(window.location.search);
+        var query = urlParams.get('query');
+        results(query.toString());
+    } else {
+        if (firebase.auth().currentUser != null) {
+            showCart();
+        }
+    }
 };
 
 function search() {
