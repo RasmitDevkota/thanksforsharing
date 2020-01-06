@@ -99,9 +99,6 @@ function showProducts(doc) {
 };
 
 function addToCart(productid) {
-    Products.doc(productid).onSnapshot(function (doc) {
-        var price = doc.data().price;
-    });
     ShoppingCart.doc(firebase.auth().currentUser.displayName).update({
         items: firebase.firestore.FieldValue.arrayUnion(productid),
         price: firebase.firestore.FieldValue.increment(price)
