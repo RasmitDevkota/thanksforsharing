@@ -38,6 +38,7 @@ function search() {
                 
                 pos++; 
                 elem.style.top = pos + "px"; 
+                
             }
         }
     } else {
