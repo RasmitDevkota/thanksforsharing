@@ -163,7 +163,3 @@ function checkOut() {
         items: []
     });
 };
-
-function removeFromCart() {
-
-};
