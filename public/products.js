@@ -114,7 +114,7 @@ function removeFromCart(productid) {
 };
 
 function showCart() {
-    document.getElementById("products").innerHTML = "";
+    document.getElementById("cartItems").innerHTML = "";
     var totalPrice = 0;
     ShoppingCart.doc(firebase.auth().currentUser.displayName).collection(firebase.auth().currentUser.displayName).get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
