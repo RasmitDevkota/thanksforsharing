@@ -16,7 +16,7 @@ header{
   top: -0.2px;
   background-color: rgba(0,0,0,0.5);
 }
-.popupwrap{
+.popupwrap {
   display: flex;
   flex-direction: row;
   justify-content: center;
