@@ -21,7 +21,7 @@ window.onload = function () {
         } else {
             signIn();
         }
-    }, 750);
+    }, 1000);
 };
 
 function search() {
