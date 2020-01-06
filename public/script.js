@@ -30,14 +30,6 @@ window.onload = function () {
             showCart();
         }
     }
-    document.addEventListener('keydown', (e) => {
-        if (e.code === "Enter"){
-            if(document.getElementById("search").value.toString().toLowerCase() != ""){
-
-            }
-        }
-      
-      });
     // here
 
     document.addEventListener('keydown', function (event) {
