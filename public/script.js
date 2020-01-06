@@ -29,8 +29,8 @@ function search() {
     var text = document.getElementById("search").value.toString().toLowerCase();
     if (text == "") {
 
-        //document.getElementById('search').style.top = "24px";
-        /*document.getElementById('search').style.zIndex = "2";
+        document.getElementById('search').style.top = "24px";
+        document.getElementById('search').style.zIndex = "2";
 
         var elem = document.getElementById("search");   
         var pos = 0;
