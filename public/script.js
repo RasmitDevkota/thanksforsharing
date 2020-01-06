@@ -28,7 +28,7 @@ function search() {
     var text = document.getElementById("search").value.toString().toLowerCase();
     if (text == "") {
         display('search');
-    } else {    
+    } else { 
         window.location = "products.html?query=" + text.toString();
     }
 };
