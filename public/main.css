@@ -83,7 +83,7 @@ nav {
     transform: translateY(-50px);
   }
   100%{
-    transform: translateY(0);
+    transform: scale(0);
   }
 }
 ::placeholder {
