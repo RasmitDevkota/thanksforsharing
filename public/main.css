@@ -49,6 +49,7 @@ nav {
   box-shadow: 0px 5px 8px #888888;
   align-items: center;
   height: 46px;
+  z-in
 }
 .logo{
   width: 100px;
