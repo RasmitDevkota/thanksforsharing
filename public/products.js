@@ -82,7 +82,7 @@ function showProducts(doc) {
                         name: name,
                         price: price,
                         imageRef: imageRef
-                    }).then(console.log("Item added to Cart.")
+                    }).then(console.log("Item added to Cart."));
                 } else {
                     alert('You are currently not signed in. Sign in or use fast checkout to purchase without an account.');
                 }
