@@ -8,6 +8,7 @@ function signIn() {
         display('popupsignin');
     } else {
         firebase.auth().signOut();
+        
     }
 };
 
