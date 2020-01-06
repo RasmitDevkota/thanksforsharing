@@ -101,12 +101,6 @@ function showProducts(doc) {
     };
 };
 
-function removeFromCart(productid) {
-    ShoppingCart.doc(firebase.auth().currentUser.displayName).update({
-        items: firebase.firestore.FieldValue.arrayRemove(productid)
-    });
-};
-
 function showCart() {
     document.getElementById("cartItems").innerHTML = "";
     var totalPrice = 0;
