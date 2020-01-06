@@ -8,7 +8,7 @@ window.onload =  function () {
         results(query.toString());
     } else {
         if (firebase.auth().currentUser == null) {
-            dis
+            
         } 
     }
 };
