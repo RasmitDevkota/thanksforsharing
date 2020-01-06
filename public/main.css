@@ -83,7 +83,7 @@ nav {
   position: absolute;
   top: 0;
   
-  animation: Slide_In ;
+  animation: Slide_In 1s ease;
 }
 
 @keyframes Slide_In{
