@@ -155,8 +155,8 @@ function showCart() {
             document.getElementById(outerDiv.id).appendChild(price);
 
             var remove = document.createElement("c-remove");
-            price.classList.add("remove", "mdl - button", "mdl - js - button", "mdl - button--icon", "mdl - button--colored");
-            price.id = "cartPrice" + price;
+            remove.classList.add("remove", "mdl - button", "mdl - js - button", "mdl - button--icon", "mdl - button--colored");
+            remove.id = "cartPrice" + price;
             document.getElementById(outerDiv.id).appendChild(price);
             remove.addEventListener('click', removeFromCart(name));
         });
