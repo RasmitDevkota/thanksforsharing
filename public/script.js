@@ -32,7 +32,7 @@ function search() {
         var pos = 0;
         var id = setInterval(frame, 1000);
         function frame() {
-            if (pos == 10) {
+            if (pos == 100) {
                 clearInterval(id);
             } else {
                 pos++; 
