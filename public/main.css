@@ -78,7 +78,7 @@ nav {
   border: none;
   position: absolute;
   top: 0;
-  z-index
+  z-index: 4;
 }
 @-moz-document {
   ::placeholder {
