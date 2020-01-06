@@ -141,7 +141,7 @@ function showCart() {
             remove.id = "remove" + name;
             remove.innerHTML = " <i class='remove material-icons'>cancel</i>";
             document.getElementById(outerDiv.id).appendChild(remove);
-            remove.addEventListener('click', removeFromCart(name));
+            remove.addEventListener('click', function ());
         });
     });
     document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
