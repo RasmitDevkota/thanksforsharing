@@ -81,7 +81,6 @@ function showProducts(doc) {
                     price: firebase.firestore.FieldValue.increment(price)
                 }, {merge: true});
                 showCart();
-                console.log(price);
             });
         } else {
             elem.addEventListener('click', function () {
