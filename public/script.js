@@ -35,7 +35,7 @@ function search() {
             if (pos == 100) {
                 clearInterval(id);
             } else {
-                alert("");
+                alert("hello");
                 pos++; 
                 elem.style.top = pos + "px"; 
             }
