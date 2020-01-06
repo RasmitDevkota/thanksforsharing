@@ -10,6 +10,7 @@ function signIn() {
         firebase.auth().signOut();
         document.getElementById("signin").innerHTML = "Sign In";
     }
+    
 };
 
 function eToggleSignIn() {
