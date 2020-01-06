@@ -27,7 +27,7 @@ window.onload = function () {
 function search() {
     var text = document.getElementById("search").value.toString().toLowerCase();
     if (text == "") {
-        document.getElementById("search").style.zIndex = 
+        document.getElementById("search").style.zIndex = 7;
     } else {
         window.location = "products.html?query=" + text.toString();
     }
