@@ -132,7 +132,7 @@ function showCart() {
 
             var 
 
-            var price = document.createElement("c-price");
+            var priceEl = document.createElement("c-price");
             price.className = "cprice";
             price.id = "cartPrice" + price;
             name.innerHTML = price;
