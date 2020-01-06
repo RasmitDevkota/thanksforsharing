@@ -124,7 +124,7 @@ function showCart() {
             image.src = imageRef;
             document.getElementById(outerDiv.id).appendChild(image);
 
-            var namezzzzze = document.createElement("c-name");
+            var name = document.createElement("c-name");
             name.className = "cname";
             name.id = "cartName" + name;
             name.innerHTML = name;
