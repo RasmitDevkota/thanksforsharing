@@ -82,7 +82,6 @@ function showProducts(doc) {
                         items: firebase.firestore.FieldValue.arrayUnion(name),
                         price: firebase.firestore.FieldValue.increment(price)
                     }, {merge: true});
-                    showCart();
                 } else {
                     alert('You are currently not signed in. Sign in or use fast checkout to purchase without an account.');
                 }
