@@ -163,5 +163,5 @@ function checkOut() {
 };
 
 function removeFromCart() {
-    
-}
+
+};
