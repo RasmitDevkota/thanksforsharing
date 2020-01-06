@@ -32,13 +32,22 @@ window.onload = function () {
     }
     document.addEventListener('keydown', (e) => {
         if (e.code === "Enter"){
-            if(document.getElementById("search").value.toString().toLowerCase() = ""){
+            if(document.getElementById("search").value.toString().toLowerCase() !@= ""){
 
             }
         }
       
       });
     // here
+
+    document.addEventListener('keydown', function (event) {
+        var password = document.getElementById('password').value;
+        var username = document.getElementById('username').value;
+        const key = event.key;
+        if (key == "Enter") {
+            toggleSignIn();
+        }
+    });
 };
 
 function search() {
