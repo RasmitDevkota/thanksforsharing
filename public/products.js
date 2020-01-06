@@ -83,7 +83,7 @@ function showProducts(doc) {
                     }, {merge: true});
                     showCart();
                 } else {
-                    alert('You are currently not signed in. Sign in or use fast checkout to quickly ');
+                    alert('You are currently not signed in. Sign in or use fast checkout to ');
                 }
             });
         } else {
