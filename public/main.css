@@ -82,7 +82,7 @@ nav {
   border: none;
   position: absolute;
   
-  animation: Slide_In 1s ease;
+  animation: Slide_In 5s ease;
 }
 
 @keyframes Slide_In{
