@@ -132,8 +132,7 @@ function showCart() {
 
             Products.doc(name).get().then(function (doc {
 
-            })
-            )
+            }))
 
             var priceEl = document.createElement("c-price");
             priceEl.className = "cprice";
