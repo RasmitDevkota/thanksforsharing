@@ -32,13 +32,13 @@ function search() {
         var pos = 0;
         var id = setInterval(frame, 1000);
         function frame() {
-        if (pos == 10) {
-            clearInterval(id);
-        } else {
-            pos++; 
-            elem.style.top = pos + "px"; 
+            if (pos == 10) {
+                clearInterval(id);
+            } else {
+                pos++; 
+                elem.style.top = pos + "px"; 
+            }
         }
-     }
     } else {
         window.location = "products.html?query=" + text.toString();
     }
