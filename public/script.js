@@ -32,7 +32,7 @@ function search() {
         //document.getElementById('search').style.top = "24px";
         document.getElementById('search').style.zIndex = "2";
 
-        /*var elem = document.getElementById("search");   
+        var elem = document.getElementById("search");   
         var pos = 0;
         var id = setInterval(frame, 100);
         function frame() {
