@@ -87,6 +87,9 @@ nav {
   0%{
     translateY: -10px;
   }
+  100%{
+    
+  }
 }
 
 @-moz-document {
