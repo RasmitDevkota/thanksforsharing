@@ -78,7 +78,7 @@ function showProducts(doc) {
         if (action == "addtocart"){
             elem.addEventListener('click', function () {
                 if (firebase.auth().currentUser != null) {
-                    ShoppingCart.doc(firebase.auth().currentUser.displayName).collection(firebase.auth().currentUser.displayName).doc().set({
+                    ShoppingCart.doc(firebase.auth().currentUser.displayName).collection(firebase.auth().currentUser.displayName).doc(name).set({
                         items: firebase.firestore.FieldValue.arrayUnion(name)
                     }, {merge: true});
                 } else {
