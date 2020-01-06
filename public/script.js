@@ -20,7 +20,15 @@ window.onload = function () {
             // THE LINE BELOW CREATES AUTOMATIC POPUP IF USER IS NOT SIGNED IN
             // signIn();
         }
-        
+        if (window.location.href.includes("products.html")) {
+            var urlParams = new URLSearchParams(window.location.search);
+            var query = urlParams.get('query');
+            results(query.toString());
+        } else if (window.location.href.includes("cart.html") && firebase.auth().currentUser != null) {
+            showCart();
+        } else {
+            console.log("Index.html?");
+        }
     }, 950);
     if (window.location.href.includes("products.html")) {
         var urlParams = new URLSearchParams(window.location.search);
