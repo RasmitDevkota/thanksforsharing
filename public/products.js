@@ -144,7 +144,7 @@ function showCart() {
             var price = document.createElement("c-price");
             price.className = "cprice";
             price.id = "cartPrice" + price;
-            name.innerHTML = name;
+            name.innerHTML = price;
             document.getElementById(outerDiv.id).appendChild(price);
 
             var remove = document.createElement("c-remove");
