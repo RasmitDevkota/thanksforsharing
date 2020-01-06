@@ -33,7 +33,7 @@ window.onload = function () {
 
     document.addEventListener('keydown', function (event) {
         const key = event.key;
-        if (key == "Enter" && document.getElementById('search').value.toString().toLowerCase()) {
+        if (key == "Enter" && document.getElementById('search').value.toString().toLowerCase() ) {
             search();
         }
     });
