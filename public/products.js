@@ -104,7 +104,7 @@ function showCart() {
             var imageRef = doc.data().imageRef.toString();
             var price = doc.data().price;
             totalPrice += price;
-            console.log(totalPrice, " ");
+            console.log(totalPrice, " ", );
 
             var outerDiv = document.createElement("c-product");
             document.getElementById("cartItems").appendChild(outerDiv);
