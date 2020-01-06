@@ -23,7 +23,6 @@ window.onload = function () {
             signIn();
         }
     }, 950);
-    console.log(firebase.auth().currentUser);
 };
 
 function search() {
