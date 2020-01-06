@@ -32,7 +32,7 @@ window.onload = function () {
     }
     document.addEventListener('keydown', (e) => {
         if (e.code === "Enter"){
-            if(document.getElementById("search").value )
+            if(document.getElementById("search").value.toString )
         }
       
       });
