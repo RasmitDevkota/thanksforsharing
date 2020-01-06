@@ -11,7 +11,6 @@ function signIn() {
         document.getElementById("signin").innerHTML = "Sign In";
     }
     if (window.location.href.includes("cart.html" && firebase.auth().currentUser != null)) { 
-        if (firebase.auth().currentUser != null) {
             showCart();
     }
 };
