@@ -31,8 +31,7 @@ window.onload = function () {
         }
     }
     document.addEventListener('keydown', (e) => {
-        if (e.code === "Enter")        playerSpriteX += 10
-        else if (e.code === "ArrowDown") playerSpriteX -= 10
+        if (e.code === "Enter");
       
         document.getElementById('test').innerHTML = 'playerSpriteX = ' + playerSpriteX;
       });
