@@ -100,8 +100,7 @@ function showProducts(doc) {
 
 function addToCart(productid) {
     ShoppingCart.doc(firebase.auth().currentUser.displayName).update({
-        items: firebase.firestore.FieldValue.arrayUnion(productid),
-        price: firebase.firestore.FieldValue.increment(price)
+        items: firebase.firestore.FieldValue.arrayUnion(productid)
     });
 };
 
