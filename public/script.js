@@ -34,6 +34,7 @@ window.onload = function () {
             showCart();
         }
     }
+    //hrtr
 };
 
 function search() {
