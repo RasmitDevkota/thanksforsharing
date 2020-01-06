@@ -31,7 +31,7 @@ function search() {
 
         document.getElementById('search').style.top = "10px";
         document.getElementById('search').style.zIndex = "2";
-        alert("hello");
+
         /*var elem = document.getElementById("search");   
         var pos = 0;
         var id = setInterval(frame, 1000);
