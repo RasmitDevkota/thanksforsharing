@@ -90,7 +90,7 @@ function showProducts(doc) {
             elem.addEventListener('click', function () {
                 console.log(action);
                 var ccn = prompt("Enter Credit Card Number: ");
-                var 
+                var
             });
         }
         elem.classList.add("v-" + action, "mdl-button", "mdl-js-button", "mdl-button--raised", "mdl-js-ripple-effect");
