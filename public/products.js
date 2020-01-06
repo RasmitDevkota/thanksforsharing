@@ -7,7 +7,7 @@ window.onload =  function () {
         var query = urlParams.get('query');
         results(query.toString());
     } else {
-        if (this.firebase.auth().currentUser)
+        if (firebase.auth().currentUser)
         showCart();
     }
 };
