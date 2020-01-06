@@ -28,7 +28,7 @@ function showProducts(doc) {
     var imageRef = doc.data().imageRef.toString();
     var desc = doc.data().description.toString();
     var price = doc.data().price;
-    var delivery = doc.data().deliveryTime.toString;
+    var delivery = doc.data().deliveryTime.toString();
 
     var ratings = doc.data().ratings;
     var sum = 0;
