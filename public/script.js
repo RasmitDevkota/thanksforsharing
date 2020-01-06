@@ -22,7 +22,7 @@ window.onload = function () {
             console.log(firebase.auth().currentUser);
             signIn();
         }
-    }, 850);
+    }, 950);
 };
 
 function search() {
