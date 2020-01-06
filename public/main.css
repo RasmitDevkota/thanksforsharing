@@ -83,6 +83,8 @@ nav {
   animation: Slide_In 1s ease-in;
 }
 
+
+
 @-moz-document {
   ::placeholder {
     color: white;
