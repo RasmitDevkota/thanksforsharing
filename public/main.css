@@ -49,11 +49,11 @@ nav {
   box-shadow: 0px 5px 8px #888888;
   align-items: center;
   height: 46px;
-  z-index: 5;
+  z-index: -5;
 }
 .logo{
   width: 100px;
-  z-index: 6;
+
 }
 .navelement{
   padding: 7px;
