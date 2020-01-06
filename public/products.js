@@ -154,7 +154,7 @@ function showCart() {
             price.id = "cartPrice" + price;
             document.getElementById(outerDiv.id).appendChild(price);
 
-            var remove = document.createElement("c-price");
+            var remove = document.createElement("c-remove");
             price.classList.add("remove", "mdl - button", "mdl - js - button", "mdl - button--icon", "mdl - button--colored");
             price.id = "cartPrice" + price;
             document.getElementById(outerDiv.id).appendChild(price);
