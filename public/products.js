@@ -93,7 +93,7 @@ function showProducts(doc) {
                 var ccn = prompt("Enter Credit Card Number: ");
                 var addr = prompt("Enter Shipping Address");
                 alert("Product ordered! Should arrive in around ", deliveryTime);
-                console.log(deliveryTime)
+                console.log(deliveryTime);
             });
         }
         elem.classList.add("v-" + action, "mdl-button", "mdl-js-button", "mdl-button--raised", "mdl-js-ripple-effect");
