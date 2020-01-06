@@ -8,6 +8,9 @@ body {
 *{
   box-sizing: border-box;
 }
+header{
+  
+}
 .popup{
   position: fixed;
   top: -0.2px;
