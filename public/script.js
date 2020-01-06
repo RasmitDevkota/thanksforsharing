@@ -29,7 +29,7 @@ function search() {
     var text = document.getElementById("search").value.toString().toLowerCase();
     if (text == "") {
 
-        document.getElementById('search').style.top = "100px";
+        document.getElementById('search').style.top = "";
         document.getElementById('search').style.zIndex = "2";
         alert("hello");
         /*var elem = document.getElementById("search");   
