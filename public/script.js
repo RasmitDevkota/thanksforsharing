@@ -27,7 +27,7 @@ window.onload = function () {
 function search() {
     var text = document.getElementById("search").value.toString().toLowerCase();
     if (text == "") {
-        display('search');
+        document.getElementById()
     } else {
         window.location = "products.html?query=" + text.toString();
     }
