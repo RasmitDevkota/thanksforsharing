@@ -127,13 +127,6 @@ function showCart() {
             var imageRef = doc.data().imageRef.toString();
             var price = doc.data().price;
 
-            var ratings = doc.data().ratings;
-            var sum = 0;
-            for (var i = 0; i < ratings.length; i++) {
-                sum += ratings[i];
-            };
-            var rating = (sum / ratings.length).toFixed(1);
-
             var outerDiv = document.createElement("c-product");
             document.getElementById("cartItems").appendChild(outerDiv);
             outerDiv.id = "couter" + name;
