@@ -38,7 +38,7 @@ function search() {
                 
                 pos++; 
                 elem.style.top = pos + "px"; 
-                
+                alert("hello");
             }
         }
     } else {
