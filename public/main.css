@@ -83,7 +83,7 @@ nav {
   animation: Slide_In 1s ease-in;
 }
 
-@keyframes{
+@keyframes Slide{
   0%{
     translateY: -10px;
   }
