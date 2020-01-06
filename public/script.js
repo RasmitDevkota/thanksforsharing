@@ -53,7 +53,6 @@ function redirect(pagePath) {
     if (firebase.auth().currentUser != null) {
         document.getElementById("signin").innerHTML = "Sign Out";
     } else {
-        console.log(firebase.auth().currentUser);
         firebase.auth().signOut();
     }
 };
