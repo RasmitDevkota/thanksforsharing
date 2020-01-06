@@ -172,7 +172,6 @@ function rate(productid, val) {
 
 function checkOut() {
     ShoppingCart.doc(firebase.auth().currentUser.displayName).set({
-        price: 0,
         items: []
     });
 };
