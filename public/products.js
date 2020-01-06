@@ -9,7 +9,7 @@ window.onload =  function () {
     } else {
         if (firebase.auth().currentUser == null) {
             showCart();
-        }
+        } 
     }
 };
 
