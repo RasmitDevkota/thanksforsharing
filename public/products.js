@@ -146,7 +146,7 @@ function showCart() {
                     name: name,
                     price: price,
                     imageRef: imageRef
-                }).then(console.log("Item added to Cart."));
+                }).then(console.log("Item removed from Cart."));
             });
         });
     });
