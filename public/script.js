@@ -28,7 +28,7 @@ window.onload = function () {
 function search() {
     var text = document.getElementById("search").value.toString().toLowerCase();
     if (text == "") {
-        display("search")
+        display("search");
         /*document.getElementById('search').style.top = "24px";
         document.getElementById('search').style.zIndex = "2";
 
