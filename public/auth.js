@@ -13,6 +13,7 @@ function signIn() {
     if (window.location.href.includes("cart.html")) { 
         if (firebase.auth().currentUser != null) {
             showCart();
+        }
     }
 };
 
