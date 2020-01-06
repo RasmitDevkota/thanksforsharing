@@ -30,6 +30,7 @@ window.onload = function () {
             console.log("Index.html?");
         }
     }, 950);
+    
     document.addEventListener('keydown', function (event) {
         const key = event.key;
         if (key == "Enter" && document.getElementById('search').value.toString().toLowerCase() != "") {
