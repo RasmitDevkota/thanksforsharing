@@ -137,7 +137,7 @@ function showCart() {
             document.getElementById(outerDiv.id).appendChild(priceEl);
 
             var remove = document.createElement("c-remove");
-            remove.classList.add("remove", "mdl - button", "mdl - js - button", "mdl - button--icon", "mdl - button--colored");
+            remove.classList.add("remove", "mdl-button", "mdl - js - button", "mdl - button--icon", "mdl - button--colored");
             remove.id = "remove" + name;
             remove.innerHTML = " <i class='remove material - icons'>cancel</i>";
             document.getElementById(outerDiv.id).appendChild(remove);
