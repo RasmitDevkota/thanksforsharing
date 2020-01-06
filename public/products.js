@@ -79,6 +79,7 @@ function showProducts(doc) {
             elem.addEventListener('click', function () {
                 if (firebase.auth().currentUser != null) {
                     ShoppingCart.doc(firebase.auth().currentUser.displayName).collection(firebase.auth().currentUser.displayName).doc(name).set({
+                        name: name,
                         price: price,
                     }, {merge: true});
                 } else {
