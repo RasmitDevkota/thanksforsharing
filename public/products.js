@@ -161,6 +161,3 @@ function rate(productid, val) {
         console.log(rating);
     });
 };
-
-function checkOut() {
-};
