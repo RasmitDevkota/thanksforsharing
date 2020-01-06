@@ -87,7 +87,7 @@ nav {
 
 @keyframes Slide_In{
   0%{
-    translateY{:-10px;
+    translateY:-10px;
   }
   100%{
 
