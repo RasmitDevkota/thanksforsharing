@@ -154,7 +154,6 @@ function rate(productid, val) {
 };
 
 function checkOut() {
-    console.log(action);
     var ccn = prompt("Enter Credit Card Number: ");
     var addr = prompt("Enter Shipping Address");
     alert("Product ordered! Should arrive in around " + deliveryTime + ".");
