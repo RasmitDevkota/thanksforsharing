@@ -30,21 +30,6 @@ function search() {
     var text = document.getElementById("search").value.toString().toLowerCase();
     if (text == "") {
         display("search");
-        /*document.getElementById('search').style.top = "24px";
-        document.getElementById('search').style.zIndex = "2";
-
-        var elem = document.getElementById("search");   
-        var pos = 0;
-        var id = setInterval(frame, 100);
-        function frame() {
-            if (pos == 100) {
-                clearInterval(id);
-            } else {
-                
-                pos++; 
-                elem.style.top = pos + "px";
-            }
-        }*/
     } else {
         window.location = "products.html?query=" + text.toString();
     }
