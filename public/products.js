@@ -92,7 +92,7 @@ function showProducts(doc) {
                 console.log(action);
                 var ccn = prompt("Enter Credit Card Number: ");
                 var addr = prompt("Enter Shipping Address");
-                alert("Products ordered!");
+                alert("Product ordered! ");
             });
         }
         elem.classList.add("v-" + action, "mdl-button", "mdl-js-button", "mdl-button--raised", "mdl-js-ripple-effect");
