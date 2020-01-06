@@ -17,7 +17,7 @@ window.onload = function () {
         if (firebase.auth().currentUser != null) {
             document.getElementById("signin").innerHTML = "Sign Out";
         } else {
-            // THE LINE BELOW CREATES AUTOMATIC POPUP IF USER IS NOT SIGNED
+            // THE LINE BELOW CREATES AUTOMATIC POPUP IF USER IS NOT SIGNED IN
             // signIn();
         }
     }, 950);
