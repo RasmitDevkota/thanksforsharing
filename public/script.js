@@ -27,10 +27,6 @@ window.onload = function () {
         results(query.toString());
     } else if(firebase.auth().currentUser != null) {
         showCart();
-    } {
-        if (firebase.auth().currentUser != null) {
-            showCart();
-        }
     }
 
     document.addEventListener('keydown', function (event) {
