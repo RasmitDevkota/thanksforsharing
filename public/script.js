@@ -51,7 +51,6 @@ function search() {
 function redirect(pagePath) {
     window.location.replace(pagePath);
     if (firebase.auth().currentUser != null) {
-        console.log(firebase.auth().currentUser);
         document.getElementById("signin").innerHTML = "Sign Out";
     } else {
         console.log(firebase.auth().currentUser);
