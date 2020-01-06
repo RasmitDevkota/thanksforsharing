@@ -10,7 +10,7 @@ function signIn() {
         firebase.auth().signOut();
         document.getElementById("signin").innerHTML = "Sign In";
     }
-    if (window.location.href.includes("cart.html" && firebase.auth().currentUser != null)) { 
+    if (window.location.href.includes("cart.html") && firebase.auth().currentUser != null)) { 
         showCart();
     }
 };
