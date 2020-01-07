@@ -85,14 +85,13 @@ nav {
 @keyframes Slide_Up{
   0%{
     transform: translateY(-100px);
-   /* transform: scale(1, 0.5);*/
   }
   90%{
     transform: translateY(10px);
    /* transform: scale(1, 1);*/
   }
   100%{
-    
+
   }
 }
 @-moz-document {
