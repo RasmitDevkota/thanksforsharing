@@ -107,7 +107,7 @@ function showCart() {
     console.log('hello');
     document.getElementById("cartItems").innerHTML = "";
     var totalPrice = 0;
-    ShoppingCart.doc(firebase.auth().currentUser.displayName).collection(firebase.auth().currentUser.displayName).doc(name).get().then(function (querySnapshot) {
+    ShoppingCart.doc(firebase.auth().currentUser.displayName).collection(firebase.auth().currentUser.displayName).doc().get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
             console.log('hello');
             var name = doc.data().name.toString();
