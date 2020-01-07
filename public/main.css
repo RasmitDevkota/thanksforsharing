@@ -84,7 +84,7 @@ nav {
 }
 @keyframes Slide_Up{
   0%{
-    transform: translateY(200px);
+    transform: translateY(-200px);
    /* transform: scale(1, 0.5);*/
   }
   100%{
