@@ -61,7 +61,7 @@ nav {
 }
 @keyframes Slide_Up{
   0%{
-    transform
+    transform: trans
 
   }
 }
