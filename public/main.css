@@ -58,7 +58,7 @@ nav {
   font-size: 15px;
   background-color: #343434;
   border: none;
-  animation: Slide_Up;
+  animation: Slide_Up 1s ;
 }
 @keyframes Slide_Up{
   0%{
