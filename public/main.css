@@ -63,7 +63,7 @@ nav {
 @keyframes Slide_Up{
   0%{
     transform: translateY(-10px);
-    transform: 
+    transform: scale();
   }
   100%{
     transform: translateY(0px);
