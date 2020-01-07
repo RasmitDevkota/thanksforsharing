@@ -62,11 +62,9 @@ nav {
 @keyframes Slide_Up{
   0%{
     transform: translateY(-10px);
-
-
   }
   100%{
-    
+
   }
 }
 @media only screen and (max-width: 300px) {
