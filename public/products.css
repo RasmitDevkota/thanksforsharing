@@ -1,5 +1,5 @@
 img{
-    width: 50%;
+    width: 20%;
 }
 v-product{
     display: flex;
@@ -12,7 +12,7 @@ v-product{
 v-text{
     flex-grow: 2;
     flex-basis: 40;
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 v-name{
@@ -26,20 +26,18 @@ v-description{
     color: gray;
 }
 v-price{
-    border: 1 px solid red;
-    border-radius: 2%;
     padding: 1%;
-    color: red;
-    font-size: 150%;
-}
-v-rating{
-    padding:1%;
-    flex-grow: 1;
     color: black;
     font-size: 150%;
 }
+v-rating{
+    padding: 1%;
+    flex-grow: 1;
+    color: rgb(241, 219, 21);
+    font-size: 150%;
+}
 v-actions{
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 v-checkout{
@@ -48,7 +46,7 @@ v-checkout{
     text-decoration: underline;
 }
 v-addtocart{
-    margin:5px;;
+    margin: 5px;;
     color: blue;
     text-decoration: underline;
 }

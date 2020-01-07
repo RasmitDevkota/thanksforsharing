@@ -1,0 +1,21 @@
+.article{
+    display:flex;
+    flex-direction:row;
+}
+.announcements{
+    flex-grow: 1;
+    width: 20%;
+}
+.general{
+    flex-grow: 2;
+    width: 60%;
+}
+.titlelogosection{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+.ads{
+    flex-grow: 1;
+    width: 20%;
+}

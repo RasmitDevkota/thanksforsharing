@@ -1,22 +1,5 @@
 var Products = db.collection("products");
-
-window.onload =  function () {
-    var urlParams = new URLSearchParams(window.location.search);
-
-    if (window.location.href.indexOf("products.html")) {
-        var query = urlParams.get('query');
-        console.log(query);
-        results(query.toString());
-    } else if (window.location.href.indexOf("product.html")) {
-        var product = urlParams.get('product').toString();
-
-        if (user != null){
-            var cart = db.collection("cart").doc(user.displayName);
-        } else {
-            document.getElementById('popupsignin').style.display = "block";
-        }
-    }
-};
+var ShoppingCart = db.collection("cart");
 
 var txtElements = ["name", "description", "price", "rating"];
 var actionElements = ["addtocart", "checkout"];
@@ -44,7 +27,8 @@ function showProducts(doc) {
     var name = doc.data().name.toString();
     var imageRef = doc.data().imageRef.toString();
     var desc = doc.data().description.toString();
-    var price = doc.data().price.toString();
+    var price = doc.data().price;
+    var deliveryTime = doc.data().deliveryTime.toString();
 
     var ratings = doc.data().ratings;
     var sum = 0;
@@ -93,19 +77,24 @@ function showProducts(doc) {
         elem.innerHTML = actionNames[i];
         if (action == "addtocart"){
             elem.addEventListener('click', function () {
-                Products.doc(productid).onSnapshot(function (doc) {
-                    price = doc.data().price.toString();
-                });
-                cart.update({
-                    items: firebase.firestore.FieldValue.arrayUnion(productid),
-                    itemCnt: firebase.firestore.FieldValue.increment(1),
-                    price: firebase.firestore.FieldValue.increment(price)
-                });
+                if (firebase.auth().currentUser != null) {
+                    ShoppingCart.doc(firebase.auth().currentUser.displayName + '/'+firebase.auth().currentUser.displayName + '/'+name).set({
+                        name: name,
+                        price: price,
+                        imageRef: imageRef
+                    }).then(console.log("Item added to Cart."));
+                } else {
+                    alert('You are currently not signed in. Sign in or use fast checkout to purchase without an account.');
+                }
             });
         } else {
             elem.addEventListener('click', function () {
-                var ccn = prompt("Enter Credit Card Number: ").then(function () {
-                    var address = prompt("Enter Address:");
+                var ccn = prompt("Enter Credit Card Number: ");
+                var addr = prompt("Enter Shipping Address");
+                alert("Product ordered! Should arrive in around " + deliveryTime + ".");
+                console.log(deliveryTime);
+                ShoppingCart.doc(firebase.auth().currentUser.displayName).set({
+                    items: []
                 });
             });
         }
@@ -114,28 +103,51 @@ function showProducts(doc) {
     };
 };
 
-function addToCart(productid) {
-    Products.doc(productid).onSnapshot(function (doc) {
-        price = doc.data().price.toString();
-    });
-    cart.update({
-        items: firebase.firestore.FieldValue.arrayUnion(productid),
-        itemCnt: firebase.firestore.FieldValue.increment(1),
-        price: firebase.firestore.FieldValue.increment(price)
-    });
-};
-
-function removeFromCart(productid) {
-    cart.update({
-        items: firebase.firestore.FieldValue.arrayRemove(productid),
-        itemCnt: firebase.firestore.FieldValue.increment(-1)
-    });
-};
-
 function showCart() {
-    cart.get().then(function (doc) {
-        console.log(doc.data());
+    console.log('hello');
+    document.getElementById("cartItems").innerHTML = "";
+    var totalPrice = 0;
+    ShoppingCart.doc(firebase.auth().currentUser.displayName).collection(firebase.auth().currentUser.displayName).get().then(function (querySnapshot) {
+        querySnapshot.forEach((doc) => {
+            console.log('hello');
+            var name = doc.data().name.toString();
+            var imageRef = doc.data().imageRef.toString();
+            var price = doc.data().price;
+            totalPrice += price;
+            console.log(totalPrice);
+
+            var outerDiv = document.createElement("c-product");
+            document.getElementById("cartItems").appendChild(outerDiv);
+            outerDiv.id = "couter" + name;
+
+            var image = document.createElement("img");
+            image.src = imageRef;
+            document.getElementById(outerDiv.id).appendChild(image);
+
+            var nameEl = document.createElement("c-name");
+            nameEl.className = "cname";
+            nameEl.id = "cartName" + name;
+            nameEl.innerHTML = name;
+            document.getElementById(outerDiv.id).appendChild(nameEl);
+
+            var priceEl = document.createElement("c-price");
+            priceEl.className = "cprice";
+            priceEl.id = "cartPrice" + price;
+            priceEl.innerHTML = price;
+            document.getElementById(outerDiv.id).appendChild(priceEl);
+
+            var remove = document.createElement("c-remove");
+            remove.classList.add("remove", "mdl-button", "mdl-js-button", "mdl-button--icon", "mdl-button--colored");
+            remove.id = "remove" + name;
+            remove.innerHTML = " <i class='remove material-icons'>cancel</i>";
+            document.getElementById(outerDiv.id).appendChild(remove);
+            remove.addEventListener('click', function () {
+                ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).delete().then(console.log("Item removed from Cart."));
+            });
+            document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
+        });
     });
+    document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
 };
 
 function rate(productid, val) {
@@ -148,21 +160,7 @@ function rate(productid, val) {
         for (var i = 0; i < ratings.length; i++) {
             sum += ratings[i];
         };
-        var rating = sum / ratings.length;
+        var rating = sum / ratings.length;  
         console.log(rating);
-    });
-};
-
-function checkOut() {
-    cart.set({
-        itemCnt: 0,
-        price: 0,
-        items: []
-    });
-};
-
-function fastCheckOut() {
-    var ccn = prompt("Enter Credit Card Number: ").then(function () {
-        var address = prompt("Enter Address:" );
     });
 };

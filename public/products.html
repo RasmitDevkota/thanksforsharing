@@ -15,61 +15,53 @@
     <script src="auth.js"></script>
     <script src="products.js"></script>
   </head>
+
   <body>
 
     <header>
       <!--nav begin-->
-      <nav>
-
-        <!--Beginning of Logo-->
-          <a onclick="redirect('index.html')">Logo Here</a>
-        <!--End of Logo-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    
-        <!--Beginning of Home-->
+        <nav>
+          <!--Beginning of Logo-->
+          <a onclick="redirect('index.html')"><img class="logo" src="ThanksForSharingLogo.png"></a>
+          <!--End of Logo-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+          <!--Beginning of Home-->
           <a id="home" class="navelement" onclick="redirect('index.html')">Home</a>
-        <!--End of Home-->&nbsp;&nbsp;&nbsp;
+          <!--End of Home-->&nbsp;&nbsp;&nbsp;
 
-        <!--Beginning of Products-->
-         <a id="navproducts" class="navelement" onclick="redirect('products.html?query=product')">Products</a>
-        <!--End of Products-->&nbsp;&nbsp;&nbsp;
-        
-        <!--Beginning of Locations-->
-          <a id="locations" class="navelement" onclick="redirect('index.html')">Locations</a>
-        <!--End of Locations-->&nbsp;&nbsp;&nbsp;
-        
-        <!--Beginning of Contact Info-->
-          <a id="contact" class="navelement" onclick="redirect('index.html')">Contact Info</a>
-        <!--End of Contact Info-->&nbsp;&nbsp;&nbsp;
+          <!--Beginning of Products-->
+          <a id="navproducts" class="navelement" onclick="redirect('products.html?query=product')">Products</a>
+          <!--End of Products-->&nbsp;&nbsp;&nbsp;
 
-        <!--Beginning of Shopping Cart-->
-         <a id="cart" class="navelement" onclick="redirect('cart.html')">Shopping Cart</a>
-        <!--End of Shopping Cart-->&nbsp;&nbsp;&nbsp;
-        
-        <!--Beginning of Search-->
+          <!--Beginning of Shopping Cart-->
+          <a id="cart" class="navelement" onclick="redirect('cart.html')">Shopping Cart</a>
+          <!--End of Shopping Cart-->&nbsp;&nbsp;&nbsp;
+          
+          <!--Beginning of Search-->
           <a class="navelement">
             <i class="fas fa-search" onclick="search()"></i>
           </a>&nbsp;
-          <input style="display: none;" id="search" class="navelement search" type="text" placeholder="Search">
-        <!--End of Search-->&nbsp;&nbsp;&nbsp;
+          <!--End of Search-->&nbsp;&nbsp;&nbsp;
         
-        <!--Beginning of Sign in button-->
+          <!--Beginning of Sign in button-->
           <a id="signin" class="navelement" onclick="signIn()">Sign In</a>
-        <!--End of Sign in button-->
-
-      </nav>
+          <!--End of Sign in button-->
+        </nav>
       <!--nav end-->
+      <!--search bar-->
+      <input style="display: none;" id="search" class="search" type="text" placeholder="Search">
     </header>
     
-    <!--Popup-->
-    <div id="popupsignin" style="display:none; z-index: 5;" class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <main class="mdl-layout__content mdl-color--grey-100">
+  <!--Popup-->
+    <div id="popupsignin" style="display:none; z-index: 5; background-color: rgba(0,0,0,0.5);" class="popup demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <main class="popupwrap mdl-layout__content mdl-color--grey-100">
         <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
           <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
-
+    
             <div class="mdl-card__title mdl-color--light-blue-600 mdl-color-text--white">
               <h2 class="mdl-card__title-text">Sign In or Sign Up</h2>
             </div>
-
+    
             <div class="mdl-card__supporting-text mdl-color-text--grey-600">
               <button class="signinoptions" onclick="display('popupsignin'); display('email')">Email</button>
               <br><br>
@@ -79,29 +71,31 @@
               <br><br>
               <button class="signinoptions" onclick="display('popupsignin')">Close</button>
             </div>
-
+    
           </div>
         </div>
       </main>
     </div>
     <!--Popup  End-->
-
+    
     <!--Email Popup-->
-    <div id="email" style="display: none; z-index: 5;" class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <main class="mdl-layout__content mdl-color--grey-100">
+    <div id="email" style="display: none; z-index: 5; background-color: rgba(0,0,0,0.5);" class="popup demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <main class="popupwrap mdl-layout__content mdl-color--grey-100">
         <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
           <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
             <div class="mdl-card__supporting-text mdl-color-text--grey-600">
     
               <p>Enter an email and password below to sign in.</p>
     
-              <input class="mdl-textfield__input" style="display:inline;" type="text" id="username" name="username" placeholder="Username"/>
+              <input class="mdl-textfield__input" style="display:inline;" type="text" id="emailemail" name="email" placeholder="Email" />
               &nbsp;&nbsp;&nbsp;
-              <input class="mdl-textfield__input" style="display:inline;" type="password" id="password" name="password" placeholder="Password"/>
-              <br/><br/>
+              <input class="mdl-textfield__input" style="display:inline;" type="password" id="password" name="password" placeholder="Password" />
+              <br /><br />
               <button class="mdl-button mdl-js-button mdl-button--raised" onclick="eToggleSignIn()" name="signin">Sign In</button>
               &nbsp;&nbsp;&nbsp;
               <button class="mdl-button mdl-js-button mdl-button--raised" onclick="display('email'); display('pwreset')">Reset Password</button>
+              &nbsp;&nbsp;&nbsp;
+              <button class="mdl-button mdl-js-button mdl-button--raised" name="signIn" onclick="display('email'); signIn()">Return to Sign In</button>
     
               <p>
                 <li>
@@ -115,10 +109,10 @@
       </main>
     </div>
     <!--Email Popup End-->
-
+    
     <!--Signup Popup-->
-    <div id="signup" style="display: none; z-index: 5;" class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <main class="mdl-layout__content mdl-color--grey-100">
+    <div id="signup" style="display: none; z-index: 5; background-color: rgba(0,0,0,0.5);" class="popup demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <main class="popupwrap mdl-layout__content mdl-color--grey-100">
         <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
           <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
             <div class="mdl-card__supporting-text mdl-color-text--grey-600">
@@ -147,18 +141,18 @@
       </main>
     </div>
     <!--Signup Popup End-->
-
+    
     <!--Password Reset-->
-    <div id="pwreset" style="display: none; z-index: 5;" class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <main class="mdl-layout__content mdl-color--grey-100">
+    <div id="pwreset" style="display: none; z-index: 5; background-color: rgba(0,0,0,0.5);" class="popup demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <main class="popupwrap mdl-layout__content mdl-color--grey-100">
         <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
           <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
             <div class="mdl-card__supporting-text mdl-color-text--grey-600">
     
               <p>Enter your email below and, if an account associated with that email exists, you will be sent an email with instructions on how to reset your password.</p>
     
-              <input class="mdl-textfield__input" style="display:inline;" type="text" id="premail" name="email" placeholder="Email"/>
-              <br/> <br/>
+              <input class="mdl-textfield__input" style="display:inline;" type="text" id="premail" name="email" placeholder="Email" />
+              <br /> <br />
               &nbsp;&nbsp;&nbsp;
               <button class="mdl-button mdl-js-button mdl-button--raised" name="passwordreset" onclick="sendPasswordReset()">Send Password Reset Email</button>
               &nbsp;&nbsp;&nbsp;

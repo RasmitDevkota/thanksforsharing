@@ -1,31 +1,25 @@
 var users = db.collection("users");
 var emails = db.collection("emails");
+var ShoppingCart = db.collection("cart");
 
 function signIn() {
-    console.log(user);
-    if(user == null){
-        document.getElementById('popupsignin').style.display = "block";
-        console.log(user);
+    console.log(firebase.auth().currentUser);
+    if (firebase.auth().currentUser == null){
+        display('popupsignin');
     } else {
         firebase.auth().signOut();
-        console.log(user);
+        document.getElementById("signin").innerHTML = "Sign In";
     }
-};
-
-// Email Login
-function displayName() {
-    var uid = user.uid;
-    users.doc(uid).get().then(function (doc) {
-        var displayName = doc.data().displayName;
-        return displayName;
-    });
+    if (window.location.href.includes("cart.html") && firebase.auth().currentUser != null) { 
+        showCart();
+    }
 };
 
 function eToggleSignIn() {
     var password = document.getElementById('password').value;
-    var username = document.getElementById('username').value;
-    if (username.length < 3) {
-        alert('Please enter a longer username.');
+    var email = document.getElementById('emailemail').value;
+    if (email.length < 8) {
+        alert('Please enter a longer email.');
         return;
     }
     if (password.length < 4) {
@@ -33,48 +27,23 @@ function eToggleSignIn() {
         return;
     }
 
-    var userData = emails.doc(username);
-
-    userData.get().then(function (doc) {
-        if (doc.exists) {
-            console.log("Document data:", doc.data());
-            var email = doc.data().email;
-            var uid = doc.data().uid;
-
-            firebase.auth().signInWithEmailAndPassword(email, password)
-                .then(function () {
-                    firebase.auth().onAuthStateChanged(function (user) {
-                        display("email");
-                        document.getElementById("signin").textContent = "Sign Out";
-                    });
-                }).catch(function (error) {
-                    var errorCode = error.code;
-                    var errorMessage = error.message;
-                    if (errorCode === 'auth/wrong-password') {
-                        alert('Wrong password.');
-                    } else {
-                        alert(errorMessage);
-                    }
-                    console.log(error);
-                });
-        } else {
-            console.log("Document does not exist!");
-            alert("User not found!");
-        }
-    }).catch(function (error) {
-        console.log("Error getting document:", error);
-    });
+    firebase.auth().signInWithEmailAndPassword(email, password)
+        .then(function () {
+            firebase.auth().onAuthStateChanged(function (user) {
+                display("email");
+                document.getElementById("signin").innerHTML = "Sign Out";
+            });
+        }).catch(function (error) {
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            if (errorCode === 'auth/wrong-password') {
+                alert('Wrong password.');
+            } else {
+                alert(errorMessage);
+            }
+            console.log(error);
+        });
 };
-// Email Login End
-
-// document.addEventListener('keydown', function (event) {
-//     var password = document.getElementById('password').value;
-//     var username = document.getElementById('username').value;
-//     const key = event.key;
-//     if (key == "Enter" && password != null && username != null) {
-//         eToggleSignIn();
-//     }
-// });
 
 // Google Login
 function gToggleSignIn() {
@@ -88,9 +57,11 @@ function gToggleSignIn() {
             firebase.auth().onAuthStateChanged(function (user) {
                 if (user != null) {
                     display('popupsignin');
-                    document.getElementById("signin").textContent = "Sign Out";
+                    document.getElementById("signin").innerHTML = "Sign Out";
 
                     var user = firebase.auth().currentUser;
+
+                    console.log(user);
 
                     user.providerData.forEach(function (profile) {
                         var username = profile.displayName.toString();
@@ -148,7 +119,7 @@ function gToggleSignIn() {
 
             firebase.auth().onAuthStateChanged(function (user) {
                 if (user != null) {
-                    document.getElementById("signin").textContent = "Sign In";
+                    document.getElementById("signin").innerHTML = "Sign In";
 
                     var user = firebase.auth().currentUser;
 
@@ -208,20 +179,21 @@ function handleSignUp() {
     var permemail = document.getElementById('suemail').value.toString();
     var permpassword = document.getElementById('supassword').value.toString();
     
-    if (username.length < 3) {
+    if (permusername.length < 3) {
         alert('Please enter a longer username.');
         return;
     }
-    if (email.length < 4) {
+    if (permemail.length < 4) {
         alert('Please enter an email address.');
         return;
     }
-    if (password.length < 4) {
+    if (permpassword.length < 4) {
         alert('Please enter a password.');
         return;
     }
 
     firebase.auth().createUserWithEmailAndPassword(permemail, permpassword).then(function () {
+        
         firebase.auth().signInWithEmailAndPassword(permemail, permpassword).catch(function (error) {
             var errorMessage = error.message;
             console.log(error);
@@ -229,7 +201,7 @@ function handleSignUp() {
 
         firebase.auth().onAuthStateChanged(function (user) {
             if (user) {
-                document.getElementById("signin").textContent = "Sign Out";
+                document.getElementById("signin").innerHTML = "Sign Out";
                 display('signup');
 
                 emails.doc(permusername).set({

@@ -9,24 +9,40 @@ firebase.initializeApp({
     measurementId: "G-66W8QQ9W35"
 });
 
-var user = firebase.auth().currentUser;
 var db = firebase.firestore();
 db.enablePersistence();
 
 window.onload = function () {
-    if (user != null) {
-        // RASMIT - INSERT THIS INTO THE SIGN IN REDIRECT STUFF, AND FIX REIRECTS TO ONLY CLOSE THE POPUP AND NOT ACTUALLY REDIRECT
-        document.getElementById("signin").textContent = "Sign Out";
-        console.log(user);
-    } else {
-        
-    }
+    setTimeout(function () {
+        if (firebase.auth().currentUser != null) {
+            document.getElementById("signin").innerHTML = "Sign Out";
+        } else {
+            // THE LINE BELOW CREATES AUTOMATIC POPUP IF USER IS NOT SIGNED IN
+            // signIn();
+        }
+        if (window.location.href.includes("products.html")) {
+            var urlParams = new URLSearchParams(window.location.search);
+            var query = urlParams.get('query');
+            results(query.toString());
+        } else if (window.location.href.includes("cart.html") && firebase.auth().currentUser != null) {
+            showCart();
+        } else {
+            console.log("Index.html?");
+        }
+    }, 950);
+    
+    document.addEventListener('keydown', function (event) {
+        const key = event.key;
+        if (key == "Enter" && document.getElementById('search').value.toString().toLowerCase() != "") {
+            search();
+        }
+    });
 };
 
 function search() {
-    var text = document.getElementById("search").value;
+    var text = document.getElementById("search").value.toString().toLowerCase();
     if (text == "") {
-        display('search');
+        display("search");
     } else {
         window.location = "products.html?query=" + text.toString();
     }
@@ -34,4 +50,9 @@ function search() {
 
 function redirect(pagePath) {
     window.location.replace(pagePath);
+    if (firebase.auth().currentUser != null) {
+        document.getElementById("signin").innerHTML = "Sign Out";
+    } else {
+        firebase.auth().signOut();
+    }
 };

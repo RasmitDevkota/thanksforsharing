@@ -1,0 +1,42 @@
+.checkout {
+    float: right;
+    text-transform: capitalize;
+    font-size: 25px;
+    border: none;
+    margin: 5px;
+    margin-right: 15px;
+    color: white;
+    background-color: #30b0f5;
+}
+.checkout:hover {
+    background-color: #039aeb;
+}
+c-product {
+    display: flex;
+    width: 85%
+}
+img .cimg {
+    max-width: 35%;
+}
+c-name {
+    margin-right: 65%;
+}
+c-price {
+    margin-right: 25%;
+}
+c-remove {
+    margin-right: 5%;
+    display: flex;
+}
+.remove {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.totalPrice {
+    font-size: larger;;
+    margin-left: 75%;
+}
