@@ -91,7 +91,9 @@ nav {
     transform: translate(0px);
   }
 }
-@keyframes 
+@keyframes nav{
+  
+}
 @-moz-document {
   ::placeholder {
     color: white;
