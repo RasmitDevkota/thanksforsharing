@@ -89,7 +89,7 @@ nav {
   }
   100%{
     transform: translateY(0px);
-   /* transform: scale(1, 1);
+   /* transform: scale(1, 1);*/
   }
 }
 @-moz-document {
