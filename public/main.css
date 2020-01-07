@@ -91,6 +91,7 @@ nav {
     transform: translate(0px);
   }
 }
+
 @-moz-document {
   ::placeholder {
     color: white;
