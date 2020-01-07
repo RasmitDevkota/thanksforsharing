@@ -92,7 +92,9 @@ nav {
   }
 }
 @keyframes nav{
-  0%
+  0%{
+    transform:
+  }
 }
 @-moz-document {
   ::placeholder {
