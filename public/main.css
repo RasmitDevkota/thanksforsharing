@@ -90,7 +90,7 @@ nav {
     transform: translateY(10px);
   }
   100%{
-    transform: translate(0px;);
+    transform: translate(0px;;
   }
 }
 @-moz-document {
