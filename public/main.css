@@ -60,7 +60,9 @@ nav {
   border: none;
 }
 @keyframes Slide_Up{
-  
+  0%{
+    
+  }
 }
 @media only screen and (max-width: 300px) {
   .text {
