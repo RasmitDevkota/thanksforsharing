@@ -91,6 +91,7 @@ nav {
     transform: translateY(10px);
    /* transform: scale(1, 1);*/
   }
+  100%
 }
 @-moz-document {
   ::placeholder {
