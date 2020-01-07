@@ -64,7 +64,7 @@ nav {
     transform: translateY(-10px);
   }
   100%{
-    transform: translateY();
+    transform: translateY(0px;);
   }
 }
 @media only screen and (max-width: 300px) {
