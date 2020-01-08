@@ -42,7 +42,7 @@ c-product{
         transform: translateX(-100%);
     }
     100%{
-        transform: translateX();
+        transform: translateX(0px;);
     }
 }
 c-name{    
