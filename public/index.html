@@ -212,6 +212,7 @@
       function closePopup() {
         var i = 0;
         var interval = setInterval(function () {
+          i++;
           document.getElementById('popuptoclose').style.top = i;
 
           if (i > 1000) {
