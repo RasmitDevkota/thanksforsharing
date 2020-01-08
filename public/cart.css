@@ -38,6 +38,7 @@ c-name{
     padding: 1%;
 }
 c-price{
+    flex-grow
     padding: 1%;
     color: black;
     font-size: 150%;
