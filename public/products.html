@@ -177,14 +177,22 @@
     <div class="column" id="products"></div>
 
     <script>
-      function display(elem) {
-        var elem = document.getElementById(elem);
-        if (elem.style.display === "none") {
-          elem.style.display = "block";
-        } else {
-          elem.style.display = "none";
-        }
-      };
+            $("#closeButton").click(function () {
+                console.log("hi");
+                $("#popupsignin").animate({
+                  top: '-100%',
+                });
+              });
+
+              $("#signin").click(function () {
+                console.log("hi");
+                $("#popupsignin").animate({
+                  top: '0.01%',
+                });
+                $('#popupsignin').css({
+                  'background': 'rgba(0,0,0,0.5)'
+                })
+              });
     </script>
 
   </body>
