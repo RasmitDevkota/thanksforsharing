@@ -137,7 +137,7 @@ function showCart() {
             document.getElementById(outerDiv.id).appendChild(priceEl);
 
             var removeWrapper = document.createElement("div");
-            removeWrapper.id = "removeWrapper";
+            removeWrapper.id = "removeWrapper" + name;
             document.getElementById(outerDiv.id).appendChild(removeWrapper);
 
             var remove = document.createElement("c-remove");
@@ -145,7 +145,7 @@ function showCart() {
             remove.id = "remove" + name;
             remove.innerHTML = " <i class='remove material-icons'>cancel</i>";
             document.getElementById(removeWrapper.id).appendChild(remove);
-            
+
             remove.addEventListener('click', function () {
                 ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).delete().then(console.log("Item removed from Cart."));
             });
