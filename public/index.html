@@ -211,7 +211,7 @@
       
       function closePopup() {
         for (var amount = 0; amount < 1000; amount++){
-          setInterval(closePopup, time);
+          setInterval(closePopup(), time);
         }
       };
     </script>
