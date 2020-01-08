@@ -138,7 +138,7 @@ function showCart() {
 
             var removeWrapper = document.createElement("div");
             removeWrapper.id = "removeWrapper";
-            document.getElementById(outerDiv.id).appendChild(priceEl);
+            document.getElementById(outerDiv.id).appendChild(removeWrapper);
 
             var remove = document.createElement("c-remove");
             remove.classList.add("remove", "mdl-button", "mdl-js-button", "mdl-button--icon", "mdl-button--colored");
