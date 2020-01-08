@@ -147,7 +147,7 @@ function showCart() {
             document.getElementById(removeWrapper.id).appendChild(remove);
 
             remove.addEventListener('click', function () {
-                ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).delete().then(functionconsole.log("Item removed from Cart."));
+                ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).delete().then(function () {console.log("Item removed from Cart."));
             });
             document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
         });
