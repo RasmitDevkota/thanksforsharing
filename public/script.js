@@ -40,7 +40,7 @@ window.onload = function () {
 };
 
 function search() {
-    var search = document.getElementById("search")
+    var search = document.getElementById("search");
     var text = document.getElementById("search").value.toString().toLowerCase();
     if (text == "") {
         if ("search".style.display === "none") {
