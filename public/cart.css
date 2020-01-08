@@ -15,16 +15,57 @@ c-product {
     display: flex;
     width: 85%
 }
-img .cimg {
-    max-width: 35%;
+img{
+    width: 20%;
 }
-c-name {
+v-product{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid gray;
+    padding: 1%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+v-text{
+    flex-grow: 2;
+    flex-basis: 40;
+    display: flex;
+    flex-direction: column;
+}
+v-name{
     font-size: 200%;
     color: black;
     padding: 1%;
 }
-c-price {
-    margin-right: 25%;
+v-description{
+    padding: 1%;
+    font-size: 100%;
+    color: gray;
+}
+v-price{
+    padding: 1%;
+    color: black;
+    font-size: 150%;
+}
+v-rating{
+    padding: 1%;
+    flex-grow: 1;
+    color: rgb(241, 219, 21);
+    font-size: 150%;
+}
+v-actions{
+    display: flex;
+    flex-direction: column;
+}
+v-checkout{
+    margin: 5px;
+    color: blue;
+    text-decoration: underline;
+}
+v-addtocart{
+    margin: 5px;;
+    color: blue;
+    text-decoration: underline;
 }
 c-remove {
     margin-right: 5%;
