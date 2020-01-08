@@ -81,7 +81,7 @@ nav {
   border: none;
   animation: Slide_Up 1s ease;
 }
-@keyframes Slide_RIght{
+@keyframes Slide_Right{
   0%{
     transform: translateX(-100px);
   }
