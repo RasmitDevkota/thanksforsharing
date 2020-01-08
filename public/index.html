@@ -205,8 +205,11 @@
       function togglepsi() {
         if (document.getElementById('popupsignin').style.display == "none") {
           $('#popupsignin').show();
-          $("#popupsignin").animate({
-            top: '0.01%',
+          // $("#popupsignin").animate({
+          //   top: '0.01%',
+          // });
+          $('#popupsignin').css({
+            'background': 'rgba(0,0,0,0.5)'
           });
         } else {
           $("#popupsignin").animate({
