@@ -14,7 +14,7 @@
 .itemswrapper{
     display:flex;
     flex-direction: row;
-    justify
+    justify-content: center;
 }
 .items{
     display:flex;
