@@ -1,7 +1,7 @@
 .productsheading {
     margin-left: 1%;
 }
-img:not {
+img:not() {
     width: 20%;
 }
 v-product{
