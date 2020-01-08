@@ -11,7 +11,7 @@
 .checkout:hover {
     background-color: #039aeb;
 }
-.itemswrapper{
+/*.itemswrapper{
     display:flex;
     flex-direction: row;
     justify-content: center;
