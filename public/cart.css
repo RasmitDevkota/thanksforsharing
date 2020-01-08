@@ -42,10 +42,7 @@ c-price{
     color: black;
     font-size: 150%;
 }
-c-actions{
-    display: flex;
-    flex-direction: column;
-}
+
 c-checkout{
     margin: 5px;
     color: blue;
