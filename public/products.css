@@ -7,11 +7,7 @@ v-product{
     border-bottom: 1px solid gray;
     padding: 1%;
     margin-left: 10px;
-    margin-right: 10px;
-}
-v-text{
-    flex-grow: 2;
-    flex-basis: 40;
+    margin-right: 10px;%;
     display: flex;
     flex-direction: column;
 }
