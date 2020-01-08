@@ -29,7 +29,7 @@ c-product{
 }
 c-name{    
     flex-grow: 1;
-    flex-basis: %;
+    flex-basis: 50%;
     display: flex;
     flex-direction: column;
     width: 100%;
