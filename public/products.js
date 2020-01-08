@@ -78,7 +78,7 @@ function showProducts(doc) {
         if (action == "addtocart"){
             elem.addEventListener('click', function () {
                 if (firebase.auth().currentUser != null) {
-                    ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' +firebase.auth().currentUser.displayName + '/' + name).set({
+                    ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).set({
                         name: name,
                         price: price,
                         imageRef: imageRef
