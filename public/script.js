@@ -42,7 +42,7 @@ window.onload = function () {
 function search() {
     var text = document.getElementById("search").value.toString().toLowerCase();
     if (text == "") {
-        if (elem.style.display === "none") {
+        if ("search".style.display === "none") {
             elem.style.display = "block";
         } else {
             elem.style.display = "none";
