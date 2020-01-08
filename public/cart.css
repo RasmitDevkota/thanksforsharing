@@ -26,6 +26,13 @@ c-product{
     margin-left: 10px;
     margin-right: 10px;
 }
+c-text{
+    flex-grow: 2;
+    flex-basis: 40;
+    display: flex;
+    flex-direction: column;
+    width: 
+}
 c-name{
     font-size: 200%;
     color: black;
