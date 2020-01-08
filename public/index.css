@@ -18,7 +18,7 @@
         transition: translateY(100%);
     }
     100%{
-        transition: translateY(0);
+        transition: translateY(0px);
     }
 }
 .titlelogosection{
