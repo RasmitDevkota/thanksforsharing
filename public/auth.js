@@ -56,7 +56,7 @@ function gToggleSignIn() {
 
             firebase.auth().onAuthStateChanged(function (user) {
                 if (user != null) {
-                    togglepsi()
+                    togglepsi();
                     console.log("signin");
                     document.getElementById("signin").innerHTML = "Sign Out";
 
