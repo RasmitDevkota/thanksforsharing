@@ -131,7 +131,7 @@ function showCart() {
             if (c2c == true) {
                 nameEl.innerHTML = name + "<img src='c2c.png'>";
             } else {
-                
+                else 
             }
             document.getElementById(outerDiv.id).appendChild(nameEl);
 
