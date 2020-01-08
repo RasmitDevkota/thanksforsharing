@@ -13,7 +13,8 @@
 }
 .itemswrapper{
     display:flex;
-    flex-direction
+    flex-direction: row;
+    justify
 }
 .items{
     display:flex;
