@@ -210,18 +210,11 @@
         }
       };
       
-      $.when(document).ready(function(){
-        $("#closeButton").click(function () {
-          $("#popuptoclose").animate({
-            top: '1000px',
-          });
-  
-          });
-        })).then(
-          $('#popupsignin').css({
-            "display": "none",
-          })
-        );
+      $(document).ready(function(){
+  $("button").click(function(){
+    $("#jah").animate({left: '250px'});
+  });
+});
     </script>
 
   </body>
