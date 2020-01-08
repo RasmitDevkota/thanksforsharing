@@ -92,6 +92,9 @@ nav {
   90%{
     transform: translateX(-10px);
   }
+  80%{
+    transform: translateX(0px);
+  }
 }
 @-moz-document {
   ::placeholder {
