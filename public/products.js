@@ -138,7 +138,7 @@ function showCart() {
 
             var removeWrapper = document.createElement("div");
             removeWrapper.id = "removeWrapper" + name;
-            removeWrapper.
+            removeWrapper.className
             document.getElementById(outerDiv.id).appendChild(removeWrapper);
 
             var remove = document.createElement("c-remove");
