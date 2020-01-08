@@ -130,6 +130,8 @@ function showCart() {
             nameEl.id = "cartName" + name;
             if (c2c == true) {
                 nameEl.innerHTML = name + "<img src='c2c.png'>";
+            } else {
+                
             }
             document.getElementById(outerDiv.id).appendChild(nameEl);
 
