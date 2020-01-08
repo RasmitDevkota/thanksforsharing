@@ -143,7 +143,7 @@ function showCart() {
             remove.classList.add("remove", "mdl-button", "mdl-js-button", "mdl-button--icon", "mdl-button--colored");
             remove.id = "remove" + name;
             remove.innerHTML = " <i class='remove material-icons'>cancel</i>";
-            document.getElementById(remove).appendChild(remove);
+            document.getElementById(removeWrapper.id).appendChild(remove);
             remove.addEventListener('click', function () {
                 ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).delete().then(console.log("Item removed from Cart."));
             });
