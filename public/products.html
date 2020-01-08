@@ -181,9 +181,7 @@
       function display(elem) {
         if (document.getElementById(elem).style.display == "block") {
           console.log("none");
-          $(elem).css({
-            "display": "none",
-          });
+          $(elem).toggle();
         } else {
           console.log("block");
           $(elem).css({
