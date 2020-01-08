@@ -42,12 +42,6 @@ c-price{
     color: black;
     font-size: 150%;
 }
-c-rating{
-    padding: 1%;
-    flex-grow: 1;
-    color: rgb(241, 219, 21);
-    font-size: 150%;
-}
 c-actions{
     display: flex;
     flex-direction: column;
