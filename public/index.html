@@ -69,7 +69,7 @@
               <br><br>
               <button class="signinoptions" onclick="gToggleSignIn()">Google</button>
               <br><br>
-              <button class="signinoptions" onclick="display('popupsignin'); display('signup')">Sign Up</button>
+              <button id="signin" class="signinoptions" onclick="display('popupsignin'); display('signup')">Sign Up</button>
               <br><br>
               <button id="closeButton" class="signinoptions">Close</button>
             </div>
@@ -203,8 +203,8 @@
       
       function display(elem) {
         var elem = document.getElementById(elem);
-        $(elem).click(function () {
-          $("p").toggle();
+        $("closeButton").click(function () {
+          $(elem).toggle();
         });
       };
 
