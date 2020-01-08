@@ -18,7 +18,7 @@ c-product {
 img{
     width: 20%;
 }
-v-product{
+c-product{
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid gray;
