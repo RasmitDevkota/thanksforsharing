@@ -39,6 +39,10 @@ window.onload = function () {
     });
 
     var interval = setInterval();
+
+    function stop () {
+        closeInteral(interval);
+    }
 };
 
 function search() {
