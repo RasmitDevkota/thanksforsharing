@@ -130,6 +130,7 @@ function showCart() {
             nameEl.id = "cartName" + name;
             if (c2c == true) {
             nameEl.innerHTML = name + ;
+            }
             document.getElementById(outerDiv.id).appendChild(nameEl);
 
             var priceEl = document.createElement("c-price");
