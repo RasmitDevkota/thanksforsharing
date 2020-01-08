@@ -5,7 +5,7 @@ var ShoppingCart = db.collection("cart");
 function signIn() {
     console.log(firebase.auth().currentUser);
     if (firebase.auth().currentUser == null){
-        display('popupsignin');
+        togglepsi()
     } else {
         firebase.auth().signOut();
         document.getElementById("signin").innerHTML = "Sign In";
@@ -56,7 +56,7 @@ function gToggleSignIn() {
 
             firebase.auth().onAuthStateChanged(function (user) {
                 if (user != null) {
-                    display('popupsignin');
+                    togglepsi()
                     console.log("signin");
                     document.getElementById("signin").innerHTML = "Sign Out";
 
