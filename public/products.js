@@ -45,7 +45,7 @@ function showProducts(doc) {
 
     var image = document.createElement("img");
     image.src = imageRef;
-    image.className = "products"
+    image.className = "productsImage"
     document.getElementById(outerDiv.id).appendChild(image);
 
     var text = document.createElement("v-text");
