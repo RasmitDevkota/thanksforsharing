@@ -17,6 +17,9 @@
     0%{
         transition: translateY(100%);
     }
+    100%{
+        transition: translateY();
+    }
 }
 .titlelogosection{
     display:flex;
