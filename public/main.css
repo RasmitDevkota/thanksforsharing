@@ -90,7 +90,7 @@ nav {
   100%{
     transform: translate(0px);
   }
-}
+
 }
 @-moz-document {
   ::placeholder {
