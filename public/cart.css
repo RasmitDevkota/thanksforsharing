@@ -15,10 +15,6 @@
     display:flex;
     flex-direction: column;
 }
-c-product {
-    display: flex;
-    width: 85%
-}
 img{
     width: 20%;
 }
