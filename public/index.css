@@ -13,7 +13,9 @@
     flex-grow: 2;
     width: 60%;
 }
-@
+@keyframes title{
+    
+}
 .titlelogosection{
     display:flex;
     flex-direction:row;
