@@ -136,7 +136,7 @@ function showCart() {
             priceEl.innerHTML = price;
             document.getElementById(outerDiv.id).appendChild(priceEl);
 
-            var removeWrapper = document.createElement("div");
+            var removeWrapper = document.createElement("c-remove");
             removeWrapper.id = "removeWrapper" + name;
             document.getElementById(outerDiv.id).appendChild(removeWrapper);
 
