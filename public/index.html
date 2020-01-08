@@ -210,21 +210,11 @@
         }
       };
       
-      function closePopup() {
-        var i = 0;
-        var interval = setInterval(function () {
-          i++;
-          document.getElementById('popuptoclose').style.top = i;
-
-          if (i > 1000) {
-            clearInterval(interval);
-          }
-        }, 0.5);
-        console.log("outside");
-        document.getElementById('popuptoclose').style.top = "-1000";
-        display('popupsignin');
-        console.log("jah");
-      };
+      $(document).ready(function(){
+  $("button").click(function(){
+    $("#jah").animate({left: '250px'});
+  });
+});
     </script>
 
   </body>
