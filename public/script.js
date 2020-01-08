@@ -40,7 +40,7 @@ window.onload = function () {
 
     var interval = setInterval();
 
-    function stop () {
+    function stop() {
         closeInteral(interval);
     }
 };
