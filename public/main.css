@@ -93,7 +93,7 @@ nav {
 }
 @keyframes nav{
   0%{
-    transform: translate(0px);
+    transform: translate(10px);
   }
   100%{
     transform: translate(0px);
