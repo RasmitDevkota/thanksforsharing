@@ -12,7 +12,7 @@
     background-color: #039aeb;
 }
 .itemswrapper{
-    display: flex;
+    width
     flex-direction: row;
     justify-content: center;
 }
