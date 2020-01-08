@@ -89,9 +89,9 @@ nav {
   80%{
     transform: translateY(0px);
   }
-  100%{
-    transform: translateX(0px);
-  }
+  ansform: translateX(0px);
+  }100%{
+    tr
 }
 @keyframes Slide_Right{
   0%{
