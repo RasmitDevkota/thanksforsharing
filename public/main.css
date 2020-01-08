@@ -51,7 +51,7 @@ nav {
   background-color: #343434;
   box-shadow: 0px 5px 8px #888888;
   align-items: center;
-  animation: nav 2s 
+  animation: nav 2s ease;
   height: 46px;
 }
 .logo{
