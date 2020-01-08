@@ -13,7 +13,6 @@ header {
 }
 .popup {
   position: fixed;
-  border: 50px solid red;
   background-color: rgba(0,0,0,0.5);
 }
 .popup #popupsignin {
