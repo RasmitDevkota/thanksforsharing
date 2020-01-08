@@ -26,7 +26,7 @@ c-product{
     margin-left: 10px;
     margin-right: 10px;
 }
-v-text{
+c-text{
     flex-grow: 2;
     flex-basis: 40;
     display: flex;
