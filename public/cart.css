@@ -12,7 +12,8 @@
     background-color: #039aeb;
 }
 .items{
-
+    display:flex;
+    flex-direction: column
 }
 c-product {
     display: flex;
