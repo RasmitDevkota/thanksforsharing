@@ -14,7 +14,9 @@
     width: 60%;
 }
 @keyframes title{
-    
+    0%{
+        
+    }
 }
 .titlelogosection{
     display:flex;
