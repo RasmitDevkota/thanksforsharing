@@ -34,7 +34,11 @@ c-text{
     width: 
 }
 c-name{    
-
+    flex-grow: 2;
+    flex-basis: 40;
+    display: flex;
+    flex-direction: column;
+    width: 
     font-size: 200%;
     color: black;
     padding: 1%;
