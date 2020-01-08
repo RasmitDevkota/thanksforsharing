@@ -35,7 +35,7 @@ c-product{
     padding: 1%;
     margin-left: 10px;
     margin-right: 10px;
-    animate
+    animation: Slide_Right 1s ease;
     width: 100%;
 }
 @keyframes Slide_Right{
