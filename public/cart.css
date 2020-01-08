@@ -13,7 +13,7 @@
 }
 .items{
     display:flex;
-    flex-direction: column
+    flex-direction: column;
 }
 c-product {
     display: flex;
