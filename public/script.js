@@ -38,7 +38,7 @@ window.onload = function () {
         }
     });
 
-    var closeInterval = setInterval();
+    var interval = setInterval();
 };
 
 function search() {
