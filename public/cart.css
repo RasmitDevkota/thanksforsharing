@@ -15,7 +15,8 @@
     display:flex;
     flex-direction: column;
     width: 90%;
-    margin
+    margin-left: 50%;
+    margin-right: 5o
 }
 img{
     width: 20%;
