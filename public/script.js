@@ -44,7 +44,7 @@ function search() {
     var text = search.value.toString().toLowerCase();
     if (text == "") {
         if ("search".style.display === "none") {
-            elem.style.display = "block";
+            search.style.display = "block";
         } else {
             elem.style.display = "none";
         }
