@@ -88,7 +88,6 @@ nav {
 
   80%{
     transform: translateX(0px);
-  
 }
 @-moz-document {
   ::placeholder {
