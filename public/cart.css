@@ -46,7 +46,7 @@ c-price{
 }
 c-remove {
     flex-grow: 1;
-    padding: 0%;
+    padding: 1%;
     flex-basis: 5%;
     width: 100%;
 }
