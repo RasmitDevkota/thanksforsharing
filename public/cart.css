@@ -12,6 +12,7 @@
     background-color: #039aeb;
 }
 .itemswrapper{
+    width: 100%;
     display: flex;
     flex-direction: row;
 
