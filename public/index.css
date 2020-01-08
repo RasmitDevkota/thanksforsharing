@@ -7,7 +7,7 @@
     width: 20%;
 }
 .titlelogo{
-    
+    animation: title
 }
 .general{
     flex-grow: 2;
