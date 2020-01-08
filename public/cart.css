@@ -44,11 +44,6 @@ c-price{
 }
 
 
-c-addtocart{
-    margin: 5px;;
-    color: blue;
-    text-decoration: underline;
-}
 c-remove {
     margin-right: 5%;
     display: flex;
