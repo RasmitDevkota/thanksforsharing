@@ -83,7 +83,7 @@ nav {
 }
 @keyframes Slide_Right{
   0%{
-    transform: translateX(-100px);
+    transform: translateX(-100%);
   }
 
   100%{
