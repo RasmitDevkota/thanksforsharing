@@ -209,7 +209,13 @@
 
         if (document.getElementById('popupsignin').style.display == "none") {
           document.getElementById('popupsignin').style.display == "block";
-          
+          $('#popupsignin').show();
+          $("#popupsignin").animate({
+            top: '0.01%',
+          });
+          $('#popupsignin').css({
+            'background': 'rgba(0,0,0,0.5)'
+          });
         }
         
         $('#popupsignin').show();
