@@ -210,16 +210,19 @@
         }
       };
       
-      $(document).ready(function(){
+      $.when.elem(document).ready(function(){
         $("#closeButton").click(function () {
           $("#popuptoclose").animate({
             top: '1000px',
           });
-          $('#popupsignin').css({
-            "display": "none",
+  
           });
         });
       });
+      
+
+      $('#popupsignin').css({
+            "display": "none",
     </script>
 
   </body>
