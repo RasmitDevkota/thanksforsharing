@@ -112,6 +112,7 @@ function showCart() {
             console.log('hello');
             var name = doc.data().name.toString();
             var imageRef = doc.data().imageRef.toString();
+            var 
             var price = doc.data().price;
             totalPrice += price;
             console.log(totalPrice);
