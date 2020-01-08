@@ -17,7 +17,7 @@ header {
 }
 .popup #popupsignin {
   top: -100%;
-)
+}|
 .popupwrap {
   display: flex;
   flex-direction: row;
