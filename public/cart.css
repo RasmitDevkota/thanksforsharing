@@ -53,7 +53,7 @@ c-rating{
     color: rgb(241, 219, 21);
     font-size: 150%;
 }
-v-actions{
+c-actions{
     display: flex;
     flex-direction: column;
 }
