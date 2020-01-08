@@ -14,7 +14,7 @@
 .items{
     display:flex;
     flex-direction: column;
-    width: 
+    width: 90%;
 }
 img{
     width: 20%;
