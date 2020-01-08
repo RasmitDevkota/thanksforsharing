@@ -210,11 +210,13 @@
         }
       };
       
-      function()
+      function closePopup(){
+        
+      }
 
       $(document).ready(function(){
-        $("button").click(function(){
-          $("#jah").animate({
+        $("closePopup").click(function(){
+          $("#popuptoclose").animate({
             top: '1000px'
           });
         });
