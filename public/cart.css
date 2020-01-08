@@ -39,7 +39,7 @@ c-product{
 }
 @keyframes Slide_Right{
     0%{
-        transform: translateX(-);
+        transform: translateX(-100%);
     }
     100%{
 
