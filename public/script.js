@@ -46,7 +46,7 @@ function search() {
         if (search.style.display === "none") {
             search.style.display = "block";
         } else {
-            elem.style.display = "none";
+            search.style.display = "none";
         }
     } else {
         window.location = "products.html?query=" + text.toString();
