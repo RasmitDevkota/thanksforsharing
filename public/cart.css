@@ -19,8 +19,9 @@ img .cimg {
     max-width: 35%;
 }
 c-name {
-    margin-right: 65%;
-    
+    font-size: 200%;
+    color: black;
+    padding: 1%;
 }
 c-price {
     margin-right: 25%;
