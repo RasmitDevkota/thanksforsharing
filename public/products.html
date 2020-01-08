@@ -66,7 +66,7 @@
             </div>
     
             <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-              <button class="signinoptions" onclick="$('popupsignin').toggle(); $('#email').toggle();">Email</button>
+              <button class="signinoptions" onclick="display('popupsignin'); display('email')">Email</button>
               <br><br>
               <button class="signinoptions" onclick="gToggleSignIn()">Google</button>
               <br><br>
@@ -180,7 +180,7 @@
     <script>
       function display(elem) {
         console.log("none");
-        $(elem).toggle();
+        $('#' +elem).toggle();
       };
 
       $("#closeButton").click(function () {
