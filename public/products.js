@@ -127,7 +127,7 @@ function showCart() {
 
             var nameEl = document.createElement("c-name");
             nameEl.className = "cname";
-            nameEl.id = "cartName" + name;
+            nameEl.id = "cartName" + name +;
             nameEl.innerHTML = name;
             document.getElementById(outerDiv.id).appendChild(nameEl);
 
