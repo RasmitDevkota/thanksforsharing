@@ -129,7 +129,7 @@ function showCart() {
             nameEl.className = "cname";
             nameEl.id = "cartName" + name;
             if (c2c == true) {
-            nameEl.innerHTML = name + ;
+                nameEl.innerHTML = name + ;
             }
             document.getElementById(outerDiv.id).appendChild(nameEl);
 
