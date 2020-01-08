@@ -57,7 +57,7 @@ c-actions{
     display: flex;
     flex-direction: column;
 }
-v-checkout{
+c-checkout{
     margin: 5px;
     color: blue;
     text-decoration: underline;
