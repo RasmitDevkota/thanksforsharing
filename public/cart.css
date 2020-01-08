@@ -48,7 +48,8 @@ c-price{
 
 c-remove {
     flex-grow: 1;
-    flex-basis: 25
+    flex-basis: 25%;
+    
 }
 .remove {
     -webkit-touch-callout: none;
