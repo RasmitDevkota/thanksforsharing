@@ -32,7 +32,7 @@ c-text{
     display: flex;
     flex-direction: column;
 }
-v-name{
+c-name{
     font-size: 200%;
     color: black;
     padding: 1%;
