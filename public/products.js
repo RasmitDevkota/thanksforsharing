@@ -82,7 +82,7 @@ function showProducts(doc) {
                         name: name,
                         price: price,
                         imageRef: imageRef
-                    }).then(console.log("Item added to Cart."));
+                    }).then(alert("Item added to Cart."));
                 } else {
                     alert('You are currently not signed in. Sign in or use fast checkout to purchase without an account.');
                 }
@@ -136,7 +136,7 @@ function showCart() {
             priceEl.innerHTML = price;
             document.getElementById(outerDiv.id).appendChild(priceEl);
 
-            
+
             var remove = document.createElement("c-remove");
             remove.classList.add("remove", "mdl-button", "mdl-js-button", "mdl-button--icon", "mdl-button--colored");
             remove.id = "remove" + name;
