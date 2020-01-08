@@ -37,6 +37,9 @@ c-product{
     margin-right: 10px;
     width: 100%;
 }
+@keyframes{
+    
+}
 c-name{    
     flex-grow: 1;
     flex-basis: 60%;
