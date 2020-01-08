@@ -12,7 +12,8 @@
     background-color: #039aeb;
 }
 .itemswrapper{
-    display:flex
+    display:flex;
+    
 }
 .items{
     display:flex;
