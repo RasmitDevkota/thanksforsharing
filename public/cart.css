@@ -11,11 +11,11 @@
 .checkout:hover {
     background-color: #039aeb;
 }
-/*.itemswrapper{
+.itemswrapper{
     display:flex;
     flex-direction: row;
     justify-content: center;
-}*/
+}
 .items{
     display: flex;
     flex-direction: column;
