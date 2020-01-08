@@ -140,7 +140,7 @@ function showCart() {
             removeWrapper.id = "removeWrapper" + name;
             document.getElementById(outerDiv.id).appendChild(removeWrapper);
 
-            var remove = document.createElement();
+            var remove = document.createElement("div");
             remove.classList.add("remove", "mdl-button", "mdl-js-button", "mdl-button--icon", "mdl-button--colored");
             remove.id = "remove" + name;
             remove.innerHTML = " <i class='remove material-icons'>cancel</i>";
