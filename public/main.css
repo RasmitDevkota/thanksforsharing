@@ -36,7 +36,7 @@ header {
 }
 .mdl-card {
   overflow: visible;
-  animation: Slide_Down 1s ease;
+
 }
 .mdl-grid {
   max-width: 35%;
