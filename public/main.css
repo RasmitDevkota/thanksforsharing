@@ -29,7 +29,7 @@ header {
   text-align: center;
   font-size: 28px;
   cursor: pointer;
-  animation: Slide_D 1s ease;
+  animation: Slide_Down 1s ease;
   box-shadow: 1px 1px 1px grey;
 }
 .signinoptions:hover {
