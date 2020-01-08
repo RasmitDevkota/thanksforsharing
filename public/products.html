@@ -178,35 +178,35 @@
 
     <script>
       function display(elem) {
-          if (document.getElementById(elem).style.display == "block") {
-            console.log("hello");
-            $(elem).css({
-              "display": "none",
-            });
-          } else {
-            console.log("hello");
-            $(elem).css({
-              "display": "block",
-            });
-          }
-        };
-
-        $("#closeButton").click(function () {
-          console.log("hi");
-          $("#popupsignin").animate({
-            top: '-100%',
+        if (document.getElementById(elem).style.display == "block") {
+          console.log("hello");
+          $(elem).css({
+            "display": "none",
           });
-        });
-
-        $("#signin").click(function () {
-          console.log("hi");
-          $("#popupsignin").animate({
-            top: '0.01%',
+        } else {
+          console.log("hello");
+          $(elem).css({
+            "display": "block",
           });
-          $('#popupsignin').css({
-            'background': 'rgba(0,0,0,0.5)'
-          })
+        }
+      };
+
+      $("#closeButton").click(function () {
+        console.log("hi");
+        $("#popupsignin").animate({
+          top: '-100%',
         });
+      });
+
+      $("#signin").click(function () {
+        console.log("hi");
+        $("#popupsignin").animate({
+          top: '0.01%',
+        });
+        $('#popupsignin').css({
+          'background': 'rgba(0,0,0,0.5)'
+        })
+      });
     </script>
 
   </body>
