@@ -136,7 +136,8 @@ function showCart() {
             priceEl.innerHTML = price;
             document.getElementById(outerDiv.id).appendChild(priceEl);
 
-            var removeWrapper = document.createElement("removeWrapper")
+            var removeWrapper = document.createElement("removeWrapper");
+            
             var remove = document.createElement("c-remove");
             remove.classList.add("remove", "mdl-button", "mdl-js-button", "mdl-button--icon", "mdl-button--colored");
             remove.id = "remove" + name;
