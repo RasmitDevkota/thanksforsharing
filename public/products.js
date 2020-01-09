@@ -154,7 +154,6 @@ function showCart() {
                     document.getElementById(outerDiv.id).remove();
                     totalPrice -= price
                     document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
-                    
                     <button id="demo-show-snackbar" class="mdl-button mdl-js-button mdl-button--raised" type="button">Show Snackbar</button>
                     <div id="demo-snackbar-example" class="mdl-js-snackbar mdl-snackbar">
                     <div class="mdl-snackbar__text"></div>
