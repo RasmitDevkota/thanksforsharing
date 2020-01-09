@@ -198,19 +198,8 @@
 
     <script>
       function display(elem) {
-        if (document.getElementById('popupsignin').style.display == "none") {
-          $('#' + elem).show();
-          $('#' + elem).animate({
-            top: '0.01%',
-          });
-        } else {
-          $('#' + elem).animate({
-            top: '-100%',
-          });
-          setTimeout(function () {
-            $('#' + elem).hide();
-          }, 360);
-        }
+        console.log("not psi");
+        $('#' + elem).toggle();
       };
 
       function togglepsi() {
@@ -218,6 +207,9 @@
           $('#popupsignin').show();
           $("#popupsignin").animate({
             top: '0.01%',
+          });
+          $('#popupsignin').css({
+            'background': 'rgba(0,0,0,0.5)'
           });
         } else {
           $("#popupsignin").animate({
