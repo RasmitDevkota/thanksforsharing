@@ -156,7 +156,7 @@ function showCart() {
                     document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
 
                     var snackbarContainer = document.querySelector('#rfcsnackbar');
-                    var showSnackbarButton = document.querySelector('#' + );
+                    var showSnackbarButton = document.querySelector('#' + remove);
                     var undo = function (event) {
                         ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).set({
                             name: name,
