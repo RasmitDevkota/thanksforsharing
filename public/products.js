@@ -156,6 +156,12 @@ function showCart() {
                     document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
 
                     var rfcMsg = document.querySelector('#rfcsnackbar');
+                    rfcMsg.MaterialSnackbar.showSnackbar({
+                        message: 'Item removed from cart.',
+                        timeout: 1800,
+                        actionHandler: undo,
+                        actionText: 'Undo'
+                    });
                     var undo = function () {
                         ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).set({
                             name: name,
@@ -163,12 +169,6 @@ function showCart() {
                             imageRef: imageRef
                         }).then(alert("Item added to Cart."));
                     };
-                    rfcMsg.MaterialSnackbar.showSnackbar({
-                        message: 'Item removed from cart.',
-                        timeout: 1800,
-                        actionHandler: undo,
-                        actionText: 'Undo'
-                    });
                 });
             });
             document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
