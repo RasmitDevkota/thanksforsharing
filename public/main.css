@@ -19,7 +19,7 @@ header {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .popup #popupsignin {
-  
+  top: -100%;
 }
 .popupwrap {
   display: flex;
