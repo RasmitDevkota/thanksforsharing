@@ -169,7 +169,12 @@ function showCart() {
                         actionHandler: undo,
                         actionText: 'Undo'
                     };
-                    rfcMsg.MaterialSnackbar.showSnackbar({data});
+                    rfcMsg.MaterialSnackbar.showSnackbar({
+                        message: 'Item removed from cart.',
+                        timeout: 1800,
+                        actionHandler: undo,
+                        actionText: 'Undo'
+                    });
                 });
             });
             document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
