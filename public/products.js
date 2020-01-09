@@ -154,7 +154,7 @@ function showCart() {
                     document.getElementById(outerDiv.id).remove();
                     totalPrice -= price
                     document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
-                    
+
                     'use strict';
                     var snackbarContainer = document.querySelector('#');
                     var showSnackbarButton = document.querySelector('#demo-show-snackbar');
@@ -166,7 +166,6 @@ function showCart() {
                         }).then(alert("Item added to Cart."));
                     };
                     showSnackbarButton.addEventListener('click', function () {
-                        'use strict';
                         var data = {
                             message: 'Item removed from cart.',
                             timeout: 1800,
