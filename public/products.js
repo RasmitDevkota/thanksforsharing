@@ -154,8 +154,6 @@ function showCart() {
                     document.getElementById(outerDiv.id).remove();
                     totalPrice -= price
                     document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
-
-                    'use strict';
                     var snackbarContainer = document.querySelector('#');
                     var showSnackbarButton = document.querySelector('#demo-show-snackbar');
                     var undo = function (event) {
