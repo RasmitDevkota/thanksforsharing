@@ -110,7 +110,6 @@ function gToggleSignIn() {
             }
         });
     }
-    }
 };
 // Google Login End
 
