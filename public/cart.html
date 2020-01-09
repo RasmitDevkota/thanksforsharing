@@ -201,26 +201,6 @@
       <div class="mdl-snackbar__text"></div>
       <button class="mdl-snackbar__action" type="button"></button>
     </div>
-    <script>
-      (function () {
-        'use strict';
-        var snackbarContainer = document.querySelector('#');
-        var showSnackbarButton = document.querySelector('#demo-show-snackbar');
-        var handler = function (event) {
-          showSnackbarButton.style.backgroundColor = '';
-        };
-        showSnackbarButton.addEventListener('click', function () {
-          'use strict';
-          var data = {
-            message: 'Item removed from cart.',
-            timeout: 1800,
-            actionHandler: handler,
-            actionText: 'Undo'
-          };
-          snackbarContainer.MaterialSnackbar.showSnackbar(data);
-        });
-      }());
-    </script>
 
     <script>
       function display(elem) {
