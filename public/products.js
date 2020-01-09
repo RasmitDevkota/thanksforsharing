@@ -154,6 +154,7 @@ function showCart() {
             remove.addEventListener('click', function () {
                 ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).delete().then(function () {
                     document.getElementById(outerDiv.id).remove();
+                    
                     alert("Item removed from Cart.");
                 });
             });
