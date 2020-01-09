@@ -164,13 +164,13 @@ function showCart() {
                             imageRef: imageRef
                         }).then(alert("Item added to Cart."));
                     };
-                        var data = {
-                            message: 'Item removed from cart.',
-                            timeout: 1800,
-                            actionHandler: undo,
-                            actionText: 'Undo'
-                        };
-                        rfcMsg.MaterialSnackbar.showSnackbar(data);
+                    var data = {
+                        message: 'Item removed from cart.',
+                        timeout: 1800,
+                        actionHandler: undo,
+                        actionText: 'Undo'
+                    };
+                    rfcMsg.MaterialSnackbar.showSnackbar(data);
                 });
             });
             document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
