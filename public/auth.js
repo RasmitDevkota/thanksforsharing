@@ -109,66 +109,7 @@ function gToggleSignIn() {
                 console.log(error);
             }
         });
-    } else {
-        firebase.auth().signOut();
-        var provider = new firebase.auth.GoogleAuthProvider();
-        firebase.auth().signInWithPopup(provider).then(function (result) {
-            var user = result.user;
-            var uid = user.uid.toString();
-            var db = firebase.firestore();
-
-            firebase.auth().onAuthStateChanged(function (user) {
-                if (user != null) {
-                    document.getElementById("signin").innerHTML = "Sign Out";
-
-                    var user = firebase.auth().currentUser;
-
-                    user.providerData.forEach(function (profile) {
-                        var username = profile.displayName.toString();
-                        var email = profile.email.toString();
-                        var userDataEmails = emails.doc(username);
-                        var userDataUsers = users.doc(uid);
-
-                        userDataEmails.get().then(function (doc) {
-                            if (!doc.exists) {
-                                userDataEmails.set({
-                                    email: email,
-                                    uid: uid,
-                                }).then(function () {
-                                    console.log("Document successfully written!");
-                                }).catch(function (error) {
-                                    console.error("Error writing document: ", error);
-                                });
-                            } else {
-                                console.log("Emails doc already exists, skipped writing.");
-                            }
-                        });
-
-                        userDataUsers.get().then(function (doc) {
-                            if (!doc.exists) {
-                                userDataUsers.set({
-                                    displayName: username,
-                                    email: email,
-                                }).then(function () {
-                                    console.log("Document successfully written!");
-                                }).catch(function (error) {
-                                    console.error("Error writing document: ", error);
-                                });
-                            } else {
-                                console.log("Users doc already exists, skipped writing.");
-                            }
-                        });
-                    });
-                }
-            })
-        }).catch(function (error) {
-            var errorCode = error.code;
-            if (errorCode === 'auth/account-exists-with-different-credential') {
-                alert('You have already signed up with a different method for that email. If you want to merge your Google account with an Email/Password account, go to the Account page.');
-            } else {
-                console.error(error);
-            }
-        });
+    }
     }
 };
 // Google Login End
