@@ -4,7 +4,8 @@ var ShoppingCart = db.collection("cart");
 
 function signIn() {
     if (firebase.auth().currentUser == null){
-        console.log("togglepsi");
+
+        console.log(firebase.auth().currentUser);
         togglepsi();
     } else {
         firebase.auth().signOut();
