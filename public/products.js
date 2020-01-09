@@ -157,7 +157,7 @@ function showCart() {
                     'use strict';
                     var snackbarContainer = document.querySelector('#');
                     var showSnackbarButton = document.querySelector('#demo-show-snackbar');
-                    var handler = function (event) {
+                    var undo = function (event) {
                         ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).set({
                             name: name,
                             price: price,
