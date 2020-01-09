@@ -164,7 +164,6 @@ function showCart() {
                             imageRef: imageRef
                         }).then(alert("Item added to Cart."));
                     };
-                    remove.addEventListener('click', function () {
                         var data = {
                             message: 'Item removed from cart.',
                             timeout: 1800,
