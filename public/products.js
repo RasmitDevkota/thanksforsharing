@@ -169,7 +169,7 @@ function showCart() {
                         var data = {
                             message: 'Item removed from cart.',
                             timeout: 1800,
-                            actionHandler: handler,
+                            actionHandler: undo,
                             actionText: 'Undo'
                         };
                         snackbarContainer.MaterialSnackbar.showSnackbar(data);
