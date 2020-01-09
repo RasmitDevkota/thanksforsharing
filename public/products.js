@@ -156,7 +156,7 @@ function showCart() {
                     document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
 
                     var snackbarContainer = document.querySelector('#rfcsnackbar');
-                    var showSnackbarButton = document.querySelector('#' + remove.id);
+                    var rfcMessage = document.querySelector('#' + remove.id);
                     var undo = function (event) {
                         ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).set({
                             name: name,
@@ -164,7 +164,7 @@ function showCart() {
                             imageRef: imageRef
                         }).then(alert("Item added to Cart."));
                     };
-                    showSnackbarButton.addEventListener('click', function () {
+                    rfcMessage.addEventListener('click', function () {
                         var data = {
                             message: 'Item removed from cart.',
                             timeout: 1800,
