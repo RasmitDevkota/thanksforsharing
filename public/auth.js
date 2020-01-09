@@ -8,7 +8,7 @@ function signIn() {
         togglepsi();
     } else {
         firebase.auth().signOut();
-        $('this').text(htmlString);
+        $('#').text(htmlString);
         console.log(document.getElementById("signin").innerHTML);
         console.log(firebase.auth().currentUser);
     }
