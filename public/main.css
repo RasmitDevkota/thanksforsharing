@@ -17,7 +17,7 @@ header {
   border: 500px solid rgba(0,0,0,0.5);
   background-color: rgba(0, 0, 0, 0.5);
 }
-.popup #popupsignin {
+#popupsignin {
   top: -100%;
 }
 .popupwrap {
