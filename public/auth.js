@@ -9,7 +9,6 @@ function signIn() {
     } else {
         firebase.auth().signOut();
         document.getElementById("signin").innerHTML = "Sign In";
-
         console.log(firebase.auth().currentUser);
     }
     if (window.location.href.includes("cart.html") && firebase.auth().currentUser != null) { 
