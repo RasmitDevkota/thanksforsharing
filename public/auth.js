@@ -3,7 +3,6 @@ var emails = db.collection("emails");
 var ShoppingCart = db.collection("cart");
 
 function signIn() {
-    console.log(firebase.auth().currentUser);
     if (firebase.auth().currentUser == null){
         console.log("togglepsi");
         togglepsi();
