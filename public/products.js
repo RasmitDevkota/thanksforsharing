@@ -158,7 +158,7 @@ function showCart() {
                     var snackbarContainer = document.querySelector('#');
                     var showSnackbarButton = document.querySelector('#demo-show-snackbar');
                     var handler = function (event) {
-                        showSnackbarButton.style.backgroundColor = '';
+                        
                     };
                     showSnackbarButton.addEventListener('click', function () {
                         'use strict';
