@@ -169,7 +169,7 @@ function showCart() {
                         actionHandler: undo,
                         actionText: 'Undo'
                     };
-                    rfcMsg.MaterialSnackbar.showSnackbar(data);
+                    rfcMsg.MaterialSnackbar.showSnackbar({data});
                 });
             });
             document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
