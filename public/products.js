@@ -157,6 +157,7 @@ function showCart() {
 
                     var rfcMsg = document.querySelector('#rfcsnackbar');
                     var rfcBtn = document.querySelector('#' + remove.id);
+                    
                     var undo = function () {
                         ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).set({
                             name: name,
