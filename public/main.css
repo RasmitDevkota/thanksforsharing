@@ -14,7 +14,7 @@ header {
 .popup {
   position: fixed;
 
-  top: -150%;
+  top: -1%;
   border: 500px solid rgba(0,0,0,0.5);
   background-color: rgba(0, 0, 0, 0.5);
 }
