@@ -41,7 +41,7 @@ header {
 .mdl-card {
   overflow: visible;
   position: relative;
-  top: 50px;
+  top: -50px;
 }
 .mdl-grid {
   max-width: 35%;
