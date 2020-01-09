@@ -171,7 +171,7 @@ function showCart() {
                             actionHandler: undo,
                             actionText: 'Undo'
                         };
-                        rfc.MaterialSnackbar.showSnackbar(data);
+                        rfcMsg.MaterialSnackbar.showSnackbar(data);
                     });
                 });
             });
