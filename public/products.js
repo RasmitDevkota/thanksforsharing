@@ -154,7 +154,6 @@ function showCart() {
                     document.getElementById(outerDiv.id).remove();
                     totalPrice -= price
                     document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
-                    alert("Item removed from Cart.");
                 });
             });
             document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
