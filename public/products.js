@@ -167,7 +167,7 @@ function showCart() {
                             name: name,
                             price: price,
                             imageRef: imageRef
-                        }).then(alert("Item added to Cart."));
+                        }).then(alert("Item added back to Cart."));
                     };
                 });
             });
