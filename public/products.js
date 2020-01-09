@@ -164,7 +164,7 @@ function showCart() {
                             imageRef: imageRef
                         }).then(alert("Item added to Cart."));
                     };
-                    rfcBtn.addEventListener('click', function () {
+                    remove.addEventListener('click', function () {
                         var data = {
                             message: 'Item removed from cart.',
                             timeout: 1800,
