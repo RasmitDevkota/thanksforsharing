@@ -155,7 +155,7 @@ function showCart() {
                 ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).delete().then(function () {
                     document.getElementById(outerDiv.id).remove();
                     totalPrice -= price
-                    document.getElementById("totalPrice").innerHTML = "Total Price: $" + (totalPrice ).toFixed(2);
+                    document.getElementById("totalPrice").innerHTML = "Total Price: $" + (totalPrice.toFixed(2);
                     alert("Item removed from Cart.");
                 });
             });
