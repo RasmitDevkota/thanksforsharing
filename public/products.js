@@ -158,7 +158,11 @@ function showCart() {
                     var snackbarContainer = document.querySelector('#');
                     var showSnackbarButton = document.querySelector('#demo-show-snackbar');
                     var handler = function (event) {
-                        
+                        ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).set({
+                            name: name,
+                            price: price,
+                            imageRef: imageRef
+                        }).then(alert("Item added to Cart."));
                     };
                     showSnackbarButton.addEventListener('click', function () {
                         'use strict';
