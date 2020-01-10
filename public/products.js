@@ -199,7 +199,7 @@ function checkout() {
     user.reauthenticateWithCredential(credential).then(function () {
         // User re-authenticated.
     }).catch(function (error) {
-        alert("Error with reauth. Please try again later or report this error.")
+        alert("Error with reauth. Please try again later or report this error.");
     });
     alert("Product ordered! Should arrive in around " + deliveryTime + ".");
     console.log(deliveryTime);
