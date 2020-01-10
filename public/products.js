@@ -160,7 +160,7 @@ function showCart() {
                         message: 'Item removed from cart.',
                         timeout: 1700
                     });
-                    document.getElementById("undoButtonCart").ad function () {
+                    document.getElementById("undoButtonCart").onclick function () {
                         ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).set({
                             name: name,
                             price: price,
