@@ -11,4 +11,4 @@ including authentication, products, and user data.
 
 ## Images and other Borrowed Material
 
-The sources for all images found in this website can be found in [this file](image-sources.txt). We do not claim ownership of any of the images or the brands that may be found within them. All rights stay with the respective owners. In addition, they can be found within the console by browsing the local source code.
+The sources for all images found in this website can be found in [this file](image-sources.txt). We do not claim ownership of any of the images or the brands that may be found within them. All rights stay with the respective owners. In addition, the sources can be found within the console by browsing the local source code.
