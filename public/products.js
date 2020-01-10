@@ -199,7 +199,7 @@ function checkout() {
     user.reauthenticateWithCredential(credential).then(function () {
         // User re-authenticated.
     }).catch(function (error) {
-        // An error happened.
+        alert("Error ")
     });
     alert("Product ordered! Should arrive in around " + deliveryTime + ".");
     console.log(deliveryTime);
