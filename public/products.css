@@ -50,7 +50,7 @@ v-rating {
 }
 v-c2c {
     padding: 1%;
-    flex-grow: 1;
+    flex-grow: 1;;
 }
 v-actions {
     display: flex;
