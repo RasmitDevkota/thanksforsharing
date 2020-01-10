@@ -4,7 +4,7 @@
 img:not(.logo) {
     width: 20%;
 }
-@keyframes Slide_Right{
+@keyframes Slide_Right {
     0%{
         transform: translateX(-100%);
     }
