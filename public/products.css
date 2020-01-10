@@ -49,18 +49,18 @@ v-rating{
     font-size: 150%;
 }
 v-c2c {
-    
+
 }
-v-actions{
+v-actions {
     display: flex;
     flex-direction: column;
 }
-v-checkout{
+v-checkout {
     margin: 5px;
     color: blue;
     text-decoration: underline;
 }
-v-addtocart{
+v-addtocart {
     margin: 5px;;
     color: blue;
     text-decoration: underline;
