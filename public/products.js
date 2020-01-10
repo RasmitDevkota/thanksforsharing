@@ -158,7 +158,6 @@ function showCart() {
                     var permDelete = setTimeout(function () {
                         if (affirm == true) {
                             document.getElementById(outerDiv.id).remove();
-                        }
                     }, 1800);
 
                     var rfcMsg = document.querySelector('#demo-snackbar-example');
