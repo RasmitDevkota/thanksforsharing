@@ -39,7 +39,6 @@ v-description {
 }
 v-price {
     padding: 1%;
-    color: black;
     font-size: 150%;
 }
 v-rating {
