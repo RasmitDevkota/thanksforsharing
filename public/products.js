@@ -152,7 +152,7 @@ function showCart() {
             remove.addEventListener('click', function () {
                 ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).delete().then(function () {
                     document.getElementById(outerDiv.id).style.display = "none";
-                    totalPrice -= price
+                    totalPrice -= price;
                     document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
 
                     var permDelete = setTimeout(function () {
