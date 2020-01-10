@@ -51,7 +51,7 @@ v-rating {
 v-c2c {
     max-width: 25%;
 }
-v-c2c:hover .caption {
+a:hover .caption {
     display: block;
 }
 v-actions {
