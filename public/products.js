@@ -156,7 +156,7 @@ function showCart() {
                     document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
 
                     var permDelete = setTimeout(function () {
-                    document.getElementById(outerDiv.id).remove();
+                        document.getElementById(outerDiv.id).remove();
                     }, 1800);
 
                     var rfcMsg = document.querySelector('#demo-snackbar-example');
