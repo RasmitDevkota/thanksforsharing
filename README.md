@@ -3,7 +3,7 @@ This is a website for a local rental business. Thanks for Sharing is special bec
 but it also has a C2C system for verified customers to rent out their own products.
 
 # Libraries Used
-This project was made with assistance from MDL (Material Design Lite) and Font-Awesome where a use of the library would be more efficient, such as with advanced styling and
+This project was made with assistance from MDL (Material Design Lite) and Font Awesome where a use of the library would be more efficient, such as with advanced styling and
 advanced HTML elements such as popups. Font Awesome was used for high-quality 
 
 # Images
