@@ -114,7 +114,7 @@ nav {
 .search:focus{
   outline: none;
 }
-@media (max-width: 300px) {
+@media (orien) {
   .text {
     font-size: 11px;
   }
