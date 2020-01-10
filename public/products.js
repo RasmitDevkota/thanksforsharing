@@ -1,7 +1,7 @@
 var Products = db.collection("products");
 var ShoppingCart = db.collection("cart");
 
-var txtElements = ["name", "c2c", "description", "price", "rating"];
+var txtElements = ["name", "description", "price", "rating", "c2c"];
 var actionElements = ["addtocart", "checkout"];
 var actionNames = ["Add to Cart", "Fast Checkout"];
 
