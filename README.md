@@ -15,3 +15,5 @@ https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwi3x_m7gvjmAhVO-6wKH
 https://justcreative.com/wp-content/uploads/2018/08/dell-ultrasharp-monitor.jpg
 
 https://static.musiciansfriend.com/thehub/binaries/content/gallery/mf/buying-guides/beginner-keyboard-header.jpg
+
+https://ozrobotics.com/wp-content/uploads/2019/08/Niryo-One-20180918_095020-e1566392325302.png  
