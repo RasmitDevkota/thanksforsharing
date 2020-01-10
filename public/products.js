@@ -60,7 +60,7 @@ function showProducts(doc) {
         } else if (txt == "rating") {
             elem.innerHTML = "<i class='fas fa-star'></i> " + txtContent[i];
         } else if (txt == "c2c") {
-            elem.i
+            elem.innerHTML
         } else {
             elem.innerHTML = txtContent[i];
         }
