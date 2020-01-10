@@ -157,6 +157,7 @@ function showCart() {
 
                     var showSnackbarButton = document.querySelector('#demo-show-snackbar');
                     var rfcMsg = document.querySelector('#demo-snackbar-example');
+                    showSnackbarButton.addEventListener('click', function () {
                     rfcMsg.MaterialSnackbar.showSnackbar({
                         message: 'Item removed from cart.',
                         timeout: 1700,
