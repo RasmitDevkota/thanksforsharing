@@ -37,12 +37,12 @@ v-description{
     font-size: 100%;
     color: gray;
 }
-v-price{
+v-price {
     padding: 1%;
     color: black;
     font-size: 150%;
 }
-v-rating{
+v-rating {
     padding: 1%;
     flex-grow: 1;
     color: rgb(241, 219, 21);
