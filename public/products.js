@@ -168,13 +168,13 @@ function showCart() {
                         },
                         actionText: 'Undo'
                     });
-                    document.getElementById("undoButtonCart").onclick(function () {
-                        ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).set({
-                            name: name,
-                            price: price,
-                            imageRef: imageRef
-                        }).then(alert("Item added back to Cart."));
-                    });
+                    // document.getElementById("undoButtonCart").onclick(function () {
+                    //     ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).set({
+                    //         name: name,
+                    //         price: price,
+                    //         imageRef: imageRef
+                    //     }).then(alert("Item added back to Cart."));
+                    // });
                 });
             });
             document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
