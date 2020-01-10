@@ -118,6 +118,7 @@ nav {
 .footer{
   background-color: #343434;
 }
+
 @media (orientation) {
   .text {
     font-size: 11px;
