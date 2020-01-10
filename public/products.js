@@ -177,7 +177,7 @@ function showCart() {
                         },
                         actionText: 'Undo'
                     });
-                    permDsetTimeout(function () {
+                    permDelete = setTimeout(function () {
                         if (affirm == true) {
                             document.getElementById(outerDiv.id).remove();
                         }
