@@ -165,7 +165,7 @@ function showCart() {
                                 name: name,
                                 price: price,
                                 imageRef: imageRef
-                            }));
+                            });
                         },
                         actionText: 'Undo'
                     });
