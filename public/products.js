@@ -155,6 +155,12 @@ function showCart() {
                     totalPrice -= price
                     document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
 
+                    setTimeout(function () {
+                        if (affirm == true) {
+                            document.getElementById(outerDiv.id).remove();
+                        }
+                    }, 1800);
+
                     var rfcMsg = document.querySelector('#demo-snackbar-example');
                     'use strict';
                     rfcMsg.MaterialSnackbar.showSnackbar({
