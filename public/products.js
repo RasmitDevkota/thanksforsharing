@@ -159,7 +159,7 @@ function showCart() {
                     rfcMsg.MaterialSnackbar.showSnackbar({
                         message: 'Item removed from cart.',
                         timeout: 1700,
-                        actionHandler: undo,
+                        actionHandler: undo(),
                         actionText: 'Undo',
                     });
                     document.getElementById("undoButtonCart").onclick(function () {
