@@ -166,6 +166,7 @@ function showCart() {
                                 price: price,
                                 imageRef: imageRef
                             });
+                            
                         },
                         actionText: 'Undo'
                     });
