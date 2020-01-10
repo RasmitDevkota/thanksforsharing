@@ -40,6 +40,7 @@ v-description {
 v-price {
     padding: 1%;
     font-size: 150%;
+    color: black;
 }
 v-rating {
     padding: 1%;
