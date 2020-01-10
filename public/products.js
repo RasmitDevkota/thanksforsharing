@@ -197,7 +197,11 @@ function checkout() {
     // Prompt the user to re-provide their sign-in credentials
 
     user.reauthenticateWithCredential(credential).then(function () {
-        
+        alert("Product ordered! Should arrive in around " + deliveryTime + ".");
+        console.log(deliveryTime);
+        ShoppingCart.doc(firebase.auth().currentUser.displayName).set({
+            items: []
+        });
     }).catch(function (error) {
         alert("Error with reauth. Please try again later or report this error.");
     });
