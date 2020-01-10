@@ -171,7 +171,7 @@ function showCart() {
                         actionText: 'Undo'
                     });
                     setTimeout(function () {
-
+                        
                     }, 1800);
                 });
             });
