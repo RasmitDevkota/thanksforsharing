@@ -62,7 +62,7 @@ function showProducts(doc) {
         } else if (txt == "rating") {
             elem.innerHTML = "<i class='fas fa-star'></i> " + txtContent[i];
         } else if (txt == "c2c") {
-            if ()
+            if (https://prod.liveshare.vsengsaas.visualstudio.com/join?31C4EBC60379FE005EF778DF4B38647CD900)
             elem.innerHTML = "<img src='c2c.png'>";
         } else {
             elem.innerHTML = txtContent[i];
