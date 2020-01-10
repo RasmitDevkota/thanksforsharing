@@ -9,6 +9,7 @@
 .titlelogo{
     animation: title 1s ease;
 }
+
 .general{
     flex-grow: 2;
     width: 60%;
