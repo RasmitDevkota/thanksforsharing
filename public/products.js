@@ -60,8 +60,6 @@ function showProducts(doc) {
             elem.innerHTML = "$" + txtContent[i] + "/month for " + time;
         } else if (txt == "rating") {
             elem.innerHTML = "<i class='fas fa-star'></i> " + txtContent[i];
-        } else if (txt == "c2c" && c2c == true) {
-            elem.innerHTML = "<img src='c2c.png'>";
         } else {
             elem.innerHTML = txtContent[i];
         }
