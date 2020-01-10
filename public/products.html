@@ -198,26 +198,31 @@
 
     <script>
       function display(elem) {
-        console.log("none");
-        $(elem).toggle();
-      };
+          console.log("not psi");
+          $('#' + elem).toggle();
+        };
 
-      $("#closeButton").click(function () {
-        console.log("hi");
-        $("#popupsignin").animate({
-          top: '-100%',
-        });
-      });
-
-      $("#signin").click(function () {
-        console.log("hi");
-        $("#popupsignin").animate({
-          top: '0.01%',
-        });
-        $('#popupsignin').css({
-          'background': 'rgba(0,0,0,0.5)'
-        })
-      });
+        function togglepsi() {
+          if (document.getElementById('popupsignin').style.display == "none") {
+            $('#popupsignin').show();
+            $("#popupsignin").animate({
+              top: '0.015%',
+            });
+            $('#popupsignin').css({
+              'background-color': 'rgba(0,0,0,0.5)'
+            });
+          } else {
+            $("#popupsignin").animate({
+              top: '-150%',
+            });
+            $('#popupsignin').css({
+              'background-color': 'rgba(0,0,0,0)'
+            });
+            setTimeout(function () {
+              $('#popupsignin').hide();
+            }, 360);
+          }
+        };
     </script>
 
   </body>
