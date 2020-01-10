@@ -172,7 +172,7 @@ function showCart() {
                         actionText: 'Undo'
                     });
                     setTimeout(function () {
-                        if (affirm == true) P
+                        if (affirm == true) {
                         document.getElementById(outerDiv.id).remove();
                     }, 1800);
                 });
