@@ -151,7 +151,7 @@ function showCart() {
 
             remove.addEventListener('click', function () {
                 ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).delete().then(function () {
-                    document.getElementById(outerDiv.id).style.;
+                    document.getElementById(outerDiv.id).style.d;
                     totalPrice -= price
                     document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
 
