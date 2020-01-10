@@ -45,8 +45,8 @@ v-price {
 v-rating {
     flex-grow: 1;
     font-size: 150%;
-    color: rgb(241, 219, 21);
     padding: 1%;
+    color: rgb(241, 219, 21);
 }
 v-c2c {
     margin-top: 0;
