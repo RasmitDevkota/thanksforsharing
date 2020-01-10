@@ -156,19 +156,19 @@ function showCart() {
                     document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
 
                     var rfcMsg = document.querySelector('#demo-snackbar-example');
-                        'use strict';
-                        rfcMsg.MaterialSnackbar.showSnackbar({
-                            message: 'Item removed from cart.',
-                            timeout: 1700,
-                            actionHandler: function (event) {
-                                ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).set({
-                                    name: name,
-                                    price: price,
-                                    imageRef: imageRef
-                                }).then(alert("Item added back to Cart."));
-                            },
-                            actionText: 'Undo'
-                        });
+                    'use strict';
+                    rfcMsg.MaterialSnackbar.showSnackbar({
+                        message: 'Item removed from cart.',
+                        timeout: 1700,
+                        actionHandler: function (event) {
+                            ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).set({
+                                name: name,
+                                price: price,
+                                imageRef: imageRef
+                            }).then(alert("Item added back to Cart."));
+                        },
+                        actionText: 'Undo'
+                    });
                 });
             });
             document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
