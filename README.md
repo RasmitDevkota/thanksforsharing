@@ -8,4 +8,4 @@ advanced HTML elements such as popups. Font Awesome was used for high-quality ic
 including authentication, products, and user data.
 
 # Images
-The sources for all images found in this website can be found in the video . We do not claim ownership of any of the images or the brands that may be found within them. All rights go to the respective owners.
+The sources for all images found in this website can be found in the file . We do not claim ownership of any of the images or the brands that may be found within them. All rights go to the respective owners.
