@@ -167,6 +167,7 @@ function showCart() {
                                 imageRef: imageRef
                             });
                             document.getElementById(outerDiv.id).style.display = "block";
+                            
                         },
                         actionText: 'Undo'
                     });
