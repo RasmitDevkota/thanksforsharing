@@ -178,11 +178,6 @@ function showCart() {
                         },
                         actionText: 'Undo'
                     });
-                    setTimeout(function () {
-                        if (affirm == true) {
-                            document.getElementById(outerDiv.id).remove();
-                        }
-                    }, 1800);
                 });
             });
             document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
