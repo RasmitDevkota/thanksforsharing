@@ -2,7 +2,7 @@
 This is a website for a local rental business. Thanks for Sharing is special because not only does it have a wide range of products, 
 but it also has a C2C system for verified customers to rent out their own products.
 
-# Libraries Used
+# External Resources
 This project was made with assistance from MDL (https://material.io) (Material Design Lite) where a use of the imports would be more efficient, such as with advanced styling and
 advanced HTML elements such as popups. Font Awesome was used for high-quality icons such as the search and social media logos. Firebase was used to support the entire backend,
 including authentication, products, and user data.
