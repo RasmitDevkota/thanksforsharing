@@ -155,7 +155,7 @@ function showCart() {
                     totalPrice -= price
                     document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
 
-                    setTimeout(function () {
+                    var permDelete = setTimeout(function () {
                         if (affirm == true) {
                             document.getElementById(outerDiv.id).remove();
                         }
