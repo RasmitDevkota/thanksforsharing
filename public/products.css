@@ -29,8 +29,8 @@ v-text {
 }
 v-name {
     font-size: 200%;
-    color: black;
     padding: 1%;
+    color: black;
 }
 v-description {
     padding: 1%;
