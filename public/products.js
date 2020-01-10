@@ -159,7 +159,13 @@ function showCart() {
                     rfcMsg.MaterialSnackbar.showSnackbar({
                         message: 'Item removed from cart.',
                         timeout: 1700,
-                        actionHandler: undo(),
+                        actionHandler: function () {
+                            ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).set({
+                                name: name,
+                                price: price,
+                                imageRef: imageRef
+                            }).then(alert("Item added back to Cart."));
+                        },
                         actionText: 'Undo',
                     });
                     document.getElementById("undoButtonCart").onclick(function () {
