@@ -51,9 +51,6 @@ v-rating {
 v-c2c {
     max-width: 25%;
 }
-a:hover .caption {
-    display: block;
-}
 v-actions {
     display: flex;
     flex-direction: column;
