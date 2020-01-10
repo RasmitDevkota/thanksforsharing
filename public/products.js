@@ -174,6 +174,7 @@ function showCart() {
                             });
                             document.getElementById(outerDiv.id).style.display = "block";
                             var affirm = false;
+                            
                         },
                         actionText: 'Undo'
                     });
