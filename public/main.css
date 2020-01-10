@@ -181,6 +181,7 @@ nav {
   nav {
     display: flex;
     flex-direction: column;
+    just
     background-color: #343434;
     box-shadow: 0px 5px 8px #888888;
     align-items: center;
