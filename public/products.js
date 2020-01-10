@@ -63,7 +63,7 @@ function showProducts(doc) {
             elem.innerHTML = "<i class='fas fa-star'></i> " + txtContent[i];
         } else if (txt == "c2c") {
             if (c2c == true) {
-                elem.innerHTML = "<a><img src='c2c.png'> <p style='display: none' class='caption'>C2C</p>";
+                elem.innerHTML = "<a><img src='c2c.png'></a> <p style='display: none' class='caption'>C2C</p>";
                 elem.onmouseover = function () {
                     document.getElementsByClassName('caption').style.display = "block";
                 };
