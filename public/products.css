@@ -21,18 +21,18 @@ v-product{
     margin-left: 10px;
     margin-right: 10px;
 }
-v-text{
+v-text {
     flex-grow: 2;
     flex-basis: 40%;
     display: flex;
     flex-direction: column;
 }
-v-name{
+v-name {
     font-size: 200%;
     color: black;
     padding: 1%;
 }
-v-description{
+v-description {
     padding: 1%;
     font-size: 100%;
     color: gray;
