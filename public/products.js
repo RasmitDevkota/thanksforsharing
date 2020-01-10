@@ -172,6 +172,7 @@ function showCart() {
                         actionText: 'Undo'
                     });
                     setTimeout(function () {
+                        if
                         document.getElementById(outerDiv.id).remove();
                     }, 1800);
                 });
