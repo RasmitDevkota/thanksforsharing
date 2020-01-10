@@ -221,6 +221,44 @@
     </article>
     <!--Cart End-->
 
+    <!--Email Popup-->
+    <div id="email" style="display: none; z-index: 5; background-color: rgba(0,0,0,0.5);"
+      class="popup demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <main class="popupwrap mdl-layout__content mdl-color--grey-100">
+        <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
+          <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
+            <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+    
+              <p>Enter an email and password below to sign in.</p>
+    
+              <input class="mdl-textfield__input" style="display:inline;" type="text" id="emailemail" name="email"
+                placeholder="Email" />
+              &nbsp;&nbsp;&nbsp;
+              <input class="mdl-textfield__input" style="display:inline;" type="password" id="password" name="password"
+                placeholder="Password" />
+              <br /><br />
+              <button class="mdl-button mdl-js-button mdl-button--raised" onclick="eToggleSignIn()" name="signin">Sign
+                In</button>
+              &nbsp;&nbsp;&nbsp;
+              <button class="mdl-button mdl-js-button mdl-button--raised"
+                onclick="display('email'); display('pwreset')">Reset Password</button>
+              &nbsp;&nbsp;&nbsp;
+              <button class="mdl-button mdl-js-button mdl-button--raised" name="signIn"
+                onclick="display('email'); signIn()">Return to Sign In</button>
+    
+              <p>
+                <li>
+                  <a onclick="display('email')">Close</a>
+                </li>
+              </p>
+    
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!--Email Popup End-->
+
     <!--Removed From Cart Snackbar-->
     <div id="rfcMsg" class="mdl-js-snackbar mdl-snackbar">
       <div class="mdl-snackbar__text"></div>
