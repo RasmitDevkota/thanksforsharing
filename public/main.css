@@ -121,7 +121,7 @@ nav {
 }
 
 
-@media (orientation) {
+@media (orientation) { 
   .text {
     font-size: 11px;
   }
