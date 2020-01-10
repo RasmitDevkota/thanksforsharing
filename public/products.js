@@ -192,7 +192,15 @@ function showCart() {
 };
 
 function checkout() {
-    
+    var credential;
+
+    // Prompt the user to re-provide their sign-in credentials
+
+    user.reauthenticateWithCredential(credential).then(function () {
+        // User re-authenticated.
+    }).catch(function (error) {
+        // An error happened.
+    });
     alert("Product ordered! Should arrive in around " + deliveryTime + ".");
     console.log(deliveryTime);
     ShoppingCart.doc(firebase.auth().currentUser.displayName).set({
