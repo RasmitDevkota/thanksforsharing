@@ -169,7 +169,7 @@ function showCart() {
                                 price: price,
                                 imageRef: imageRef
                             });
-                            totalPrice -= price;
+                            totalPrice += price;
                             document.getElementById(outerDiv.id).style.display = "flex";
                             clearTimeout(permDelete);
                         },
