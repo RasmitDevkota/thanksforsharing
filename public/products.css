@@ -44,7 +44,6 @@ v-price {
     color: black;
 }
 v-rating {
-    flex-grow: 1;
     font-size: 150%;
     padding: 1%;
     color: rgb(241, 219, 21);
