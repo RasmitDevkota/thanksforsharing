@@ -26,6 +26,7 @@ v-text {
     flex-basis: 40%;
     display: flex;
     flex-direction: column;
+    justify-content: left;
 }
 v-name {
     font-size: 200%;
@@ -51,7 +52,7 @@ v-rating {
 v-c2c {
     max-width: 25%;
 }
-v-c2c:hover .c2ccaption {
+v-c2c:hover .caption {
     
 }
 v-actions {
