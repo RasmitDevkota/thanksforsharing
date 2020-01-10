@@ -170,8 +170,8 @@ function showCart() {
                         },
                         actionText: 'Undo'
                     });
-                    setTimeout(function() {
-                        
+                    setTimeout(function () {
+
                     }, 1800);
                 });
             });
