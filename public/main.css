@@ -114,7 +114,7 @@ nav {
 .search:focus{
   outline: none;
 }
-@media only screen and (max-width: 300px) {
+@media (max-width: 300px) {
   .text {
     font-size: 11px;
   }
