@@ -50,6 +50,7 @@ v-rating {
     color: rgb(241, 219, 21);
 }
 v-c2c {
+    flex-grow: 15
     max-width: 25%;
 }
 v-actions {
