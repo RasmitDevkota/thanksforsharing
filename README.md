@@ -1,2 +1,2 @@
 # thanksforsharing
-This is a website for a local rental business. That will be conducting business
+This is a website for a local rental business. Thanks for Sharing is special because it 
