@@ -61,8 +61,7 @@ function showProducts(doc) {
             elem.innerHTML = "<i class='fas fa-star'></i> " + txtContent[i];
         } else if () {
             
-        }
-        else {
+        } else {
             elem.innerHTML = txtContent[i];
         }
         elem.className = "v" + txt;
