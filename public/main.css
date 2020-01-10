@@ -191,7 +191,7 @@ nav {
     z-index: 4;
   }
   .navelement {
-    dis
+    display:none;
     padding: 7px;
     margin: 0;
     color: white;
