@@ -18,7 +18,9 @@
     display: flex;
     flex-direction: row;
 }
-.
+.billing {
+    
+}
 .itemswrapper {
     width: 100%;
     display: flex;
