@@ -48,6 +48,9 @@ v-rating{
     color: rgb(241, 219, 21);
     font-size: 150%;
 }
+v-c2c {
+    
+}
 v-actions{
     display: flex;
     flex-direction: column;
