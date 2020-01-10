@@ -52,7 +52,7 @@ v-c2c {
     max-width: 25%;
 }
 v-c2c:hover .caption {
-    display: ;
+    display: block;
 }
 v-actions {
     display: flex;
