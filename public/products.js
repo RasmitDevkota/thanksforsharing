@@ -154,9 +154,8 @@ function showCart() {
                     document.getElementById(outerDiv.id).remove();
                     totalPrice -= price
                     document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
-                    
+
                     var rfcMsg = document.querySelector('#demo-snackbar-example');
-                    remove.addEventListener('click', function () {
                         'use strict';
                         rfcMsg.MaterialSnackbar.showSnackbar({
                             message: 'Item removed from cart.',
