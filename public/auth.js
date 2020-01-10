@@ -33,7 +33,8 @@ function eToggleSignIn() {
         firebase.auth().onAuthStateChanged(function (user) {
             display("email");
             document.getElementById("signin").innerHTML = "Sign Out";
-        })}).catch(function (error) {
+        });
+    }).catch(function (error) {
         var errorCode = error.code;
         var errorMessage = error.message;
         if (errorCode === 'auth/wrong-password') {
