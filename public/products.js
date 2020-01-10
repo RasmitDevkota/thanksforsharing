@@ -159,7 +159,7 @@ function showCart() {
                         document.getElementById(outerDiv.id).remove();
                     }, 1800);
 
-                    var rfcMsg = document.querySelector('#demo-snackbar-example');
+                    var rfcMsg = document.querySelector('#rfcMsg');
                     rfcMsg.MaterialSnackbar.showSnackbar({
                         message: 'Item removed from cart.',
                         timeout: 1700,
