@@ -13,14 +13,6 @@ v-product{
     margin-left: 10px;
     margin-right: 10px;
 }
-@keyframes Slide_Right{
-    0%{
-        transform: translateX(-100%);
-    }
-    100%{
-        transform: translateX(0px);
-    }
-}
 v-text{
     flex-grow: 2;
     flex-basis: 40%;
