@@ -4,7 +4,7 @@ but it also has a C2C system for verified customers to rent out their own produc
 
 # Libraries Used
 This project was made with assistance from MDL (Material Design Lite) where a use of the imports would be more efficient, such as with advanced styling and
-advanced HTML elements such as popups. Font Awesome was used for high-quality icons such as the search and social media logos. 
+advanced HTML elements such as popups. Font Awesome was used for high-quality icons such as the search and social media logos. Firebase was used to support the entire backend with 
 
 # Images
 All images found in this website are located below. We do not claim ownership of any of the images or the brands that may be found within them. All rights go to the respective owners.
