@@ -193,7 +193,7 @@ function showCart() {
 
 function checkout() {
     var ccn = prompt("Enter Credit Card Number: ");
-    var addr = prompt("Enter Shipping Address: ");
+    var addr = prompt("Enter Shipping Address");
     alert("Product ordered! Should arrive in around " + deliveryTime + ".");
     console.log(deliveryTime);
     ShoppingCart.doc(firebase.auth().currentUser.displayName).set({
