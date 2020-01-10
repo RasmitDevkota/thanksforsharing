@@ -19,8 +19,9 @@
     flex-direction: row;
 }
 .billing {
-    padding: 5%;
+    padding: 1%;
 }
+
 .itemswrapper {
     width: 100%;
     display: flex;
