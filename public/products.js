@@ -170,7 +170,7 @@ function showCart() {
                         },
                         actionText: 'Undo'
                     });
-                    setTimeout(function() {1800)
+                    setTimeout(function() {)1800)
                 });
             });
             document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
