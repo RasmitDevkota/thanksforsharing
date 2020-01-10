@@ -166,7 +166,7 @@ function showCart() {
                                 imageRef: imageRef
                             }).then(alert("Item added back to Cart."));
                         },
-                        actionText: 'Undo',
+                        actionText: 'Undo'
                     });
                     document.getElementById("undoButtonCart").onclick(function () {
                         ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).set({
