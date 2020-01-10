@@ -162,7 +162,6 @@ function showCart() {
                     }, 1800);
 
                     var rfcMsg = document.querySelector('#demo-snackbar-example');
-                    'use strict';
                     rfcMsg.MaterialSnackbar.showSnackbar({
                         message: 'Item removed from cart.',
                         timeout: 1700,
