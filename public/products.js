@@ -174,6 +174,7 @@ function showCart() {
                     setTimeout(function () {
                         if (affirm == true) {
                         document.getElementById(outerDiv.id).remove();
+                        }
                     }, 1800);
                 });
             });
