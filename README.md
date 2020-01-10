@@ -13,3 +13,5 @@ All images found in this website are located below. We do not claim ownership of
 https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwi3x_m7gvjmAhVO-6wKHYu9CYgQjRx6BAgBEAQ&url=http%3A%2F%2Fopafamady20.malkolm.ru.net%2Fuforuwaju%2Fqyrawo-u_accounting-principles-volume-1-6th-canadian-edition-84409.aspx&psig=AOvVaw18P8h-GWB417L9K6Kw6e5c&ust=1578710881605604
 
 https://justcreative.com/wp-content/uploads/2018/08/dell-ultrasharp-monitor.jpg
+
+https://static.musiciansfriend.com/thehub/binaries/content/gallery/mf/buying-guides/beginner-keyboard-header.jpg
