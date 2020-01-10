@@ -3,4 +3,4 @@ This is a website for a local rental business. Thanks for Sharing is special bec
 but it also has a C2C system for verified customers to rent out their own products.
 
 # Images
-All images found in this website 
+All images found in this website are 
