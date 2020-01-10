@@ -16,7 +16,7 @@
 }
 .checkoutForm {
     display: flex;
-    flex-direction: ;
+    flex-direction: row;
 }
 .itemswrapper {
     width: 100%;
