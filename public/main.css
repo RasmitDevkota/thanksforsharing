@@ -121,7 +121,7 @@ nav {
 }
 
 
-@media (orientation: port) {
+@media (orientation: portrait) {
   html, body {
     font-family: 'Roboto', 'Helvetica', sans-serif;
     background-color: #f5f5f5ee;
