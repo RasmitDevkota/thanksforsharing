@@ -65,7 +65,7 @@ function showProducts(doc) {
             if (c2c == true) {
                 elem.innerHTML = "<img src='c2c.png'>";
             } else {
-                return;
+                break;
             }
         } else {
             elem.innerHTML = txtContent[i];
