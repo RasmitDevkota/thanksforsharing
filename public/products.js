@@ -169,7 +169,6 @@ function showCart() {
                             imageRef: imageRef
                         }).then(alert("Item added back to Cart."));
                     });
-                    
                 });
             });
             document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
