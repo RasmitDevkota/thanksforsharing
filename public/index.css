@@ -18,7 +18,7 @@
 }
 @keyframes title{
     0%{
-        transform: translateY(25px);
+        transform: translateY(px);
     }
     100%{
         transform: translateY(0px);
