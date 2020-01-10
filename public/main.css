@@ -119,7 +119,7 @@ nav {
   background-color: #343434;
 }
 #menu{
-  display:none;
+  display:none !important;
 }
 }
 
