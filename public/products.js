@@ -154,13 +154,11 @@ function showCart() {
                     document.getElementById(outerDiv.id).remove();
                     totalPrice -= price
                     document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
-                    
+
                     var rfcMsg = document.querySelector('#demo-snackbar-example');
                     rfcMsg.MaterialSnackbar.showSnackbar({
                         message: 'Item removed from cart.',
-                        timeout: 1700,
-                        actionHandler: undo,
-                        actionText: 'Undo'
+                        timeout: 1700
                     });
                     var undo = function () {
                         ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).set({
