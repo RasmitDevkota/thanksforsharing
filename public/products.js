@@ -57,7 +57,7 @@ function showProducts(doc) {
         var txt = txtElements[i];
         var elem = document.createElement("v-" + txt);
         if (txt == "price") {
-            elem.innerHTML = "$" + txtContent[i] + "/month for " + ;
+            elem.innerHTML = "$" + txtContent[i] + "/month for " + time;
         } else if (txt == "rating") {
             elem.innerHTML = "<i class='fas fa-star'></i> " + txtContent[i];
         } else if (txt == "c2c") {
