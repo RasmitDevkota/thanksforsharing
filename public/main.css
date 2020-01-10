@@ -120,7 +120,7 @@ nav {
   }
 }
 .footer{
-  background-color: #343434;
+  background-color: #343434 !;
 }
 ::-webkit-scrollbar {
   width: 10px;
