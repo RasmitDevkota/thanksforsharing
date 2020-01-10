@@ -166,7 +166,7 @@ function showCart() {
                                 price: price,
                                 imageRef: imageRef
                             });
-                            document.
+                            document.document.getElementById(outerDiv.id).style.display = "none";
                         },
                         actionText: 'Undo'
                     });
