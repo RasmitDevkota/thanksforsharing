@@ -191,17 +191,17 @@ function showCart() {
     });
 };
 
-function rate(productid, val) {
-    Products.doc(productid).update({
-        ratings: firebase.firestore.FieldValue.arrayUnion(val)
-    }).then(function (doc){
-        var ratings = doc.data().ratings;
-        var sum = 0;
+// function rate(productid, val) {
+//     Products.doc(productid).update({
+//         ratings: firebase.firestore.FieldValue.arrayUnion(val)
+//     }).then(function (doc){
+//         var ratings = doc.data().ratings;
+//         var sum = 0;
 
-        for (var i = 0; i < ratings.length; i++) {
-            sum += ratings[i];
-        };
-        var rating = sum / ratings.length;  
-        console.log(rating);
-    });
-};
+//         for (var i = 0; i < ratings.length; i++) {
+//             sum += ratings[i];
+//         };
+//         var rating = sum / ratings.length;  
+//         console.log(rating);
+//     });
+// };
