@@ -3,7 +3,7 @@ This is a website for a local rental business. Thanks for Sharing is special bec
 but it also has a C2C system for verified customers to rent out their own products.
 
 # Libraries Used
-This project was made with assistance from MDL (Material Design Lite)
+This project was made with assistance from MDL (Material Design Lite) and Font-Awesome
 
 # Images
 All images found in this website are located below. We do not claim ownership of any of the images or the brands that may be found within them. All rights go to the respective owners.
