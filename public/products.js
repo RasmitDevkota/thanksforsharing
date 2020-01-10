@@ -158,18 +158,18 @@ function showCart() {
                     var showSnackbarButton = document.querySelector('#demo-show-snackbar');
                     var rfcMsg = document.querySelector('#demo-snackbar-example');
                     showSnackbarButton.addEventListener('click', function () {
-                    rfcMsg.MaterialSnackbar.showSnackbar({
-                        message: 'Item removed from cart.',
-                        timeout: 1700,
-                        actionHandler: function (event) {
-                            ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).set({
-                                name: name,
-                                price: price,
-                                imageRef: imageRef
-                            }).then(alert("Item added back to Cart."));
-                        },
-                        actionText: 'Undo'
-                    });
+                        rfcMsg.MaterialSnackbar.showSnackbar({
+                            message: 'Item removed from cart.',
+                            timeout: 1700,
+                            actionHandler: function (event) {
+                                ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).set({
+                                    name: name,
+                                    price: price,
+                                    imageRef: imageRef
+                                }).then(alert("Item added back to Cart."));
+                            },
+                            actionText: 'Undo'
+                        });
                     }
                     // document.getElementById("undoButtonCart").onclick(function () {
                     //     ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).set({
