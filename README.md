@@ -4,7 +4,7 @@ but it also has a C2C system for verified customers to rent out their own produc
 
 # Libraries Used
 This project was made with assistance from MDL (Material Design Lite) and Font-Awesome where a use of the library would be more efficient, such as with advanced styling and
-advanced HTML elements such as popups, and 
+advanced HTML elements such as popups. 
 
 # Images
 All images found in this website are located below. We do not claim ownership of any of the images or the brands that may be found within them. All rights go to the respective owners.
