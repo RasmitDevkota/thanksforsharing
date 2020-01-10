@@ -1,2 +1,2 @@
 # thanksforsharing
-This is a rental website for the loc
+This is a website for a local rental business.
