@@ -171,7 +171,7 @@ function showCart() {
                         actionText: 'Undo'
                     });
                     setTimeout(function () {
-                        document.getElementById(outerDiv.id).remove
+                        document.getElementById(outerDiv.id).remove()
                     }, 1800);
                 });
             });
