@@ -64,7 +64,9 @@ function showProducts(doc) {
         } else if (txt == "c2c") {
             if (c2c == true) {
                 elem.innerHTML = "<img src='c2c.png'> <p style='display: none' class='caption'>C2C</p>";
-                elem.onmouseover = function ;
+                elem.onmouseover = function () {
+                    
+                };
             } else {
                 break;
             }
