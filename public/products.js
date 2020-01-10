@@ -174,7 +174,7 @@ function showCart() {
                             });
                             document.getElementById(outerDiv.id).style.display = "block";
                             var affirm = false;
-                            clearTimeout(permDelete)
+                            clearTimeout(permDelete);
                         },
                         actionText: 'Undo'
                     });
