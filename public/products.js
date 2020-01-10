@@ -201,11 +201,7 @@ function checkout() {
     }).catch(function (error) {
         alert("Error with reauth. Please try again later or report this error.");
     });
-    alert("Product ordered! Should arrive in around " + deliveryTime + ".");
-    console.log(deliveryTime);
-    ShoppingCart.doc(firebase.auth().currentUser.displayName).set({
-        items: []
-    });
+    
 }
 
 // function rate(productid, val) {
