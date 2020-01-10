@@ -170,7 +170,6 @@ function showCart() {
                                 imageRef: imageRef
                             });
                             document.getElementById(outerDiv.id).style.display = "flex";
-                            var affirm = false;
                             clearTimeout(permDelete);
                         },
                         actionText: 'Undo'
