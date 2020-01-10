@@ -59,8 +59,8 @@ function showProducts(doc) {
             elem.innerHTML = "$" + txtContent[i] + "/month";
         } else if (txt == "rating") {
             elem.innerHTML = "<i class='fas fa-star'></i> " + txtContent[i];
-        } else if () {
-            
+        } else if (txt == "c2c") {
+
         } else {
             elem.innerHTML = txtContent[i];
         }
