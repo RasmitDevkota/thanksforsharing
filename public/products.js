@@ -93,7 +93,7 @@ function showProducts(doc) {
                     }).then(function () {
                         var rfcMsg = document.querySelector('');
                         rfcMsg.MaterialSnackbar.showSnackbar({
-                            message: 'Item added to cart.',
+                            message: 'Item added to cart',
                             timeout: 1800,
                             actionHandler: function () {
                                 ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).set({
