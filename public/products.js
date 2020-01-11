@@ -195,7 +195,6 @@ function checkout() {
     ShoppingCart.doc(firebase.auth().currentUser.displayName).set({
         items: []
     });
-    display('copopup');
 };
 
 // function rate(productid, val) {
