@@ -239,7 +239,7 @@
                 </div>
               </div>
 
-              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="function () {
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="function checkout() {
     display('copopup');
     alert("Product/s ordered! Each will come at their respective times, please check individual product entries for further information");
     ShoppingCart.doc(firebase.auth().currentUser.displayName).set({
