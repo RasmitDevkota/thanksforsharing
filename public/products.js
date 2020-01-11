@@ -191,7 +191,7 @@ function showCart() {
 };
 
 function checkout() {
-    alert("Product ordered! Should arrive in around " + deliveryTime + ".");
+    alert("Product ordered! Should arrive in around " +  + ".");
     console.log(deliveryTime);
     ShoppingCart.doc(firebase.auth().currentUser.displayName).set({
         items: []
