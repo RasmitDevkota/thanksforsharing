@@ -186,7 +186,6 @@ function showCart() {
                         },
                         actionText: 'Undo'
                     });
-                    document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
                 });
             });
         });
