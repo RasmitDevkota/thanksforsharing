@@ -196,7 +196,7 @@ function checkOut() {
     ShoppingCart.doc(firebase.auth().currentUser.displayName).collection(firebase.auth().currentUser.displayName).get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => { 
 
-        });
+        })
     });
     document.getElementById("cartItems").innerHTML = "";
 };
