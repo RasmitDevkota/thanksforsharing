@@ -195,6 +195,7 @@ function checkout() {
     ShoppingCart.doc(firebase.auth().currentUser.displayName).set({
         items: []
     });
+    display()
 };
 
 // function rate(productid, val) {
