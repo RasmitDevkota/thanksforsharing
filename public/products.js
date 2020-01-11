@@ -83,7 +83,7 @@ function showProducts(doc) {
         var action = actionElements[i];
         var elem = document.createElement("v-" + action);
         elem.innerHTML = actionNames[i];
-        if (action == "addtocart"){
+        if (action == "addtocart") {
             elem.addEventListener('click', function () {
                 if (firebase.auth().currentUser != null) {
                     ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).set({
