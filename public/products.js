@@ -192,7 +192,6 @@ function showCart() {
 
 function checkout() {
     alert("Product ordered! Should arrive in around " +  + ".");
-    console.log();
     ShoppingCart.doc(firebase.auth().currentUser.displayName).set({
         items: []
     });
