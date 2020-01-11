@@ -91,7 +91,6 @@ function showProducts(doc) {
                         price: price,
                         imageRef: imageRef
                     }).then(function () {
-                        window['counter'] = 0;
                         var snackbarContainer = document.querySelector('#demo-toast-example');
                         var showToastButton = document.querySelector('#demo-show-toast');
                         showToastButton.addEventListener('click', function () {
