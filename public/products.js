@@ -192,11 +192,11 @@ function showCart() {
 };
 
 function checkout() {
-        alert("Product ordered! Should arrive in around " + deliveryTime + ".");
-        console.log(deliveryTime);
-        ShoppingCart.doc(firebase.auth().currentUser.displayName).set({
-            items: []
-        });
+    alert("Product ordered! Should arrive in around " + deliveryTime + ".");
+    console.log(deliveryTime);
+    ShoppingCart.doc(firebase.auth().currentUser.displayName).set({
+        items: []
+    });
 };
 
 // function rate(productid, val) {
