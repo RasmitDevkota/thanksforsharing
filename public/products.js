@@ -197,10 +197,10 @@ function checkOut() {
         querySnapshot.forEach((doc) => {
             doc.remove();
         });
-    }).then(function() {
-        
+    }).then(function () {
+        document.getElementById("cartItems").innerHTML = "";
+
     });
-    document.getElementById("cartItems").innerHTML = "";
 };
 
 // function rate(productid, val) {
