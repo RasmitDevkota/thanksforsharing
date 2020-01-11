@@ -190,6 +190,15 @@ function showCart() {
     });
 };
 
+
+function checkOut() {
+    display('copopup');
+    alert("Product/s ordered! Each will come at their respective times, please check individual product entries for further information");
+    ShoppingCart.doc(firebase.auth().currentUser.displayName).set({
+        items: []
+    });
+};
+
 // function rate(productid, val) {
 //     Products.doc(productid).update({
 //         ratings: firebase.firestore.FieldValue.arrayUnion(val)
