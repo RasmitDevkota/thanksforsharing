@@ -193,7 +193,7 @@ function showCart() {
 function checkOut() {
     display('copopup');
     alert("Product/s ordered! Each will come at their respective times, please check individual product entries for further information");
-    ShoppingCart.doc(firebase.auth().currentUser.displayName).collection(firebase.auth().currentUser.displayName).delete().then(function () {
+    ShoppingCart.doc(firebase.auth().currentUser.displayName).delete().then(function () {
         document.getElementById("cartItems").innerHTML = "";
     });
 };
