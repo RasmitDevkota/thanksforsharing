@@ -120,7 +120,7 @@ function showCart() {
             var name = doc.data().name.toString();
             var imageRef = doc.data().imageRef.toString();
             var c2c = doc.data().c2c;
-            var price = doc.data().price;
+            var price = doc.data().price.to;
             console.log(typeof price);
             totalPrice += price;
             console.log(totalPrice);
