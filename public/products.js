@@ -104,7 +104,7 @@ function showProducts(doc) {
             });
         } else {
             elem.addEventListener('click', function () {
-                var name = prompt("Enter Name")
+                var name = prompt("Enter Name");
                 var ccn = prompt("Enter Credit Card Number");
                 var addr = prompt("Enter Shipping Address");
                 alert("Product ordered! Should arrive in around " + deliveryTime + ".");
