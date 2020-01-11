@@ -205,7 +205,7 @@ function checkout() {
     }).catch(function (error) {
         alert("Error with reauth. Please try again later or report this error.");
     });
-}
+};
 
 // function rate(productid, val) {
 //     Products.doc(productid).update({
