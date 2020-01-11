@@ -194,7 +194,6 @@ function checkOut() {
     display('copopup');
     alert("Product/s ordered! Each will come at their respective times, please check individual product entries for further information");
     ShoppingCart.doc(firebase.auth().currentUser.displayName).set({
-        items: []
     });
     document.getElementById("cartItems").innerHTML = "";
 };
