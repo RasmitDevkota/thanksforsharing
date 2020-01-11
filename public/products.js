@@ -187,8 +187,8 @@ function showCart() {
                 });
             });
         });
-        document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
     });
+    document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
 };
 
 function checkout() {
