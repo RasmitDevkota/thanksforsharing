@@ -192,11 +192,6 @@ function showCart() {
 };
 
 function checkout() {
-    var credential;
-    
-
-
-    firebase.auth().currentUser.reauthenticateWithCredential(credential).then(function () {
         alert("Product ordered! Should arrive in around " + deliveryTime + ".");
         console.log(deliveryTime);
         ShoppingCart.doc(firebase.auth().currentUser.displayName).set({
