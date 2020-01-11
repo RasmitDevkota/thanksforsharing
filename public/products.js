@@ -100,7 +100,7 @@ function showProducts(doc) {
                             var data = { message: 'Example Message # ' + ++counter };
                             snackbarContainer.MaterialSnackbar.showSnackbar(data);
                         });
-                    };
+                    });
                 } else {
                     alert('You are currently not signed in. Sign in or use fast checkout to purchase without an account.');
                 }
