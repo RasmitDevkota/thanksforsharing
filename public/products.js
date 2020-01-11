@@ -122,7 +122,6 @@ function showCart() {
             var c2c = doc.data().c2c;
             var price = doc.data().price;
             totalPrice += price;
-            console.log(totalPrice);
 
             var outerDiv = document.createElement("c-product");
             document.getElementById("cartItems").appendChild(outerDiv);
