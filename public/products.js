@@ -197,7 +197,7 @@ function checkOut() {
         querySnapshot.forEach((doc) => {
             doc.remove();
         });
-    });
+    }).then();
     document.getElementById("cartItems").innerHTML = "";
 };
 
