@@ -94,7 +94,7 @@ function showProducts(doc) {
                         var snackbarContainer = document.querySelector('#demo-toast-example');
                         var showToastButton = document.querySelector('#demo-show-toast');
                         showToastButton.addEventListener('click', function () {
-                            var data = { message: 'Item' + name };
+                            var data = { message: 'Item' + name + ' added to cart' };
                             snackbarContainer.MaterialSnackbar.showSnackbar(data);
                         });
                     });
