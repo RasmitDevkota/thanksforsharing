@@ -91,11 +91,26 @@ function showProducts(doc) {
                         price: price,
                         imageRef: imageRef
                     }).then(function () {
-                        var snackbarContainer = document.querySelector('#demo-toast-example');
-                        var showToastButton = document.querySelector('#demo-show-toast');
-                        showToastButton.addEventListener('click', function () {
-                            var data = { message: 'Item' + name + ' added to cart.' };
-                            snackbarContainer.MaterialSnackbar.showSnackbar(data);
+                        var permDelete = setTimeout(function () {
+                            document.getElementById(outerDiv.id).remove();
+                        }, 1800);
+
+                        var rfcMsg = document.querySelector('#rfcMsg');
+                        rfcMsg.MaterialSnackbar.showSnackbar({
+                            message: 'Item removed from cart.',
+                            timeout: 1700,
+                            actionHandler: function (event) {
+                                ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).set({
+                                    name: name,
+                                    price: price,
+                                    imageRef: imageRef
+                                });
+                                totalPrice += price;
+                                document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
+                                document.getElementById(outerDiv.id).style.display = "flex";
+                                clearTimeout(permDelete);
+                            },
+                            actionText: 'Undo'
                         });
                     });
                 } else {
