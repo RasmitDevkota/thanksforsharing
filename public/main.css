@@ -92,7 +92,6 @@ nav {
   0%{
     transform: translateX(-100%);
   }
-
   80%{
     transform: translateX(10px);
   }
