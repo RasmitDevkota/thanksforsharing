@@ -199,7 +199,6 @@ function checkOut() {
         });
     }).then(function () {
         document.getElementById("cartItems").innerHTML = "";
-
     });
 };
 
