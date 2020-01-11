@@ -23,7 +23,7 @@ function results(keystring) {
     });
 };
 
-function showProducts(doc) {http://127.0.0.1:5500/
+function showProducts(doc) {
     var name = doc.data().name.toString();
     var imageRef = doc.data().imageRef.toString();
     var desc = doc.data().description.toString();
