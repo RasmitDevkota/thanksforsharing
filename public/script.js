@@ -25,6 +25,7 @@ window.onload = function () {
             var query = urlParams.get('query');
             results(query.toString());
         } else if (window.location.href.includes("cart.html") && firebase.auth().currentUser != null) {
+            document.getElementById("cartItems").innerHTML = "";
             document.getElementById("totalPrice").innerHTML = "Total Price: $0.00";
             showCart();
         } else {
