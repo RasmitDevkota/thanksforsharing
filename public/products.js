@@ -91,10 +91,6 @@ function showProducts(doc) {
                         price: price,
                         imageRef: imageRef
                     }).then(function () {
-                        var permDelete = setTimeout(function () {
-                            document.getElementById(outerDiv.id).remove();
-                        }, 1800);
-
                         var rfcMsg = document.querySelector('#rfcMsg');
                         rfcMsg.MaterialSnackbar.showSnackbar({
                             message: 'Item removed from cart.',
