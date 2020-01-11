@@ -116,7 +116,6 @@ function showCart() {
     var totalPrice = 0;
     ShoppingCart.doc(firebase.auth().currentUser.displayName).collection(firebase.auth().currentUser.displayName).get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
-            console.log(doc.id);
             var name = doc.data().name.toString();
             var imageRef = doc.data().imageRef.toString();
             var c2c = doc.data().c2c;
