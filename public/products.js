@@ -90,7 +90,7 @@ function showProducts(doc) {
                         name: name,
                         price: price,
                         imageRef: imageRef
-                    }).then((function () {
+                    }).then(function () {
                         'use strict';
                         window['counter'] = 0;
                         var snackbarContainer = document.querySelector('#demo-toast-example');
