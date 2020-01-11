@@ -96,11 +96,7 @@ function showProducts(doc) {
                             message: 'Item added to cart',
                             timeout: 1800,
                             actionHandler: function () {
-                                ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).set({
-                                    name: name,
-                                    price: price,
-                                    imageRef: imageRef
-                                });
+                                redirect('')
                             },
                             actionText: 'Undo'
                         });
