@@ -94,7 +94,7 @@ function showProducts(doc) {
                         var rfcMsg = document.querySelector('#rfcMsg');
                         rfcMsg.MaterialSnackbar.showSnackbar({
                             message: 'Item removed from cart.',
-                            timeout: 1700,
+                            timeout: 1800,
                             actionHandler: function () {
                                 ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).set({
                                     name: name,
