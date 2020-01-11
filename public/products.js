@@ -197,9 +197,6 @@ function checkout() {
         ShoppingCart.doc(firebase.auth().currentUser.displayName).set({
             items: []
         });
-    }).catch(function (error) {
-        alert("Error with reauth. Please try again later or report this error.");
-    });
 };
 
 // function rate(productid, val) {
