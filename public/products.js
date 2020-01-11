@@ -193,8 +193,7 @@ function showCart() {
 
 function checkout() {
     var credential;
-
-    // Prompt the user to re-provide their sign-in credentials
+    
 
     user.reauthenticateWithCredential(credential).then(function () {
         alert("Product ordered! Should arrive in around " + deliveryTime + ".");
