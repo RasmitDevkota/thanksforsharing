@@ -13,7 +13,6 @@ var db = firebase.firestore();
 db.enablePersistence();
 
 window.onload = function () {
-    document.getElementById("cartItems").innerHTML = "";
     setTimeout(function () {
         if (firebase.auth().currentUser != null) {
             document.getElementById("signin").innerHTML = "Sign Out";
