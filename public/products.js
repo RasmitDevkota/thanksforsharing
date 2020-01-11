@@ -96,7 +96,7 @@ function showProducts(doc) {
                             message: 'Item added to cart',
                             timeout: 1800,
                             actionHandler: function () {
-                                redirect('cart.html')
+                                redirect('cart.html');
                             },
                             actionText: 'Undo'
                         });
