@@ -60,7 +60,7 @@ function showProducts(doc) {
         if (txt == "price") {
             elem.innerHTML = "$" + txtContent[i] + "/month for " + time;
         } else if (txt == "rating") {
-            elem.innerHTML = "<i class='fas fa-star'></i> " + txtContent[i];
+            elem.innerHTML = "<i class='fas fa-star'></i>" + txtContent[i];
         } else if (txt == "c2c") {
             if (c2c == true) {
                 elem.innerHTML = "<img onclick='redirect('c2c.html')' src='c2c.png'>";
