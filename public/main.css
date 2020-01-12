@@ -120,7 +120,6 @@ nav {
 #menu{
   display:none;
 }
-
 @media (orientation: portrait) {
   html, body {
     font-family: 'Roboto', 'Helvetica', sans-serif;
