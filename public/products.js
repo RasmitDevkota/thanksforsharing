@@ -63,7 +63,10 @@ function showProducts(doc) {
             elem.innerHTML = "<i class='fas fa-star'></i>" + txtContent[i];
         } else if (txt == "c2c") {
             if (c2c == true) {
-                elem.innerHTML = "<i id='c2cimage" + name + "' class='icon material-icons' onclick='redirect('c2c.html')' src='c2c.png'>compare_arrows</i> <div class='mdl-tooltip mdl-tooltip--large' for='c2cimage" + name + "'>C2C</div>";
+                elem.innerHTML = "<div id="tt2" class="icon material - icons">print</div>
+                    < div class="mdl-tooltip mdl-tooltip--large" for= "tt2" >
+                        Print
+</div >";
             } else {
                 break;
             }
