@@ -64,8 +64,7 @@ function showProducts(doc) {
         } else if (txt == "c2c") {
             if (c2c == true) {
                 elem.innerHTML = "<div id='tt2' class="icon material - icons">print</div> <div class='mdl-tooltip mdl-tooltip--large' for= 'tt2' >
-                                    Print
-                                </div >";
+                                    Print </div >";
             } else {
                 break;
             }
