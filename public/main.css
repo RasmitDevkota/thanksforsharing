@@ -50,7 +50,7 @@
     position: fixed;
   }
   .mdl-layout__container {
-    display: inherit;
+    display: contents;
   }
   .mdl-layout__header-row {
     padding: 0;
