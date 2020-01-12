@@ -18,7 +18,6 @@
     display: flex;
     flex-direction: row;
 }
-.mdl-layout__container:has
 .billing {
     padding: 1%;
 }
