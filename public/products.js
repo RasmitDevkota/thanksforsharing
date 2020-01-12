@@ -63,7 +63,7 @@ function showProducts(doc) {
             elem.innerHTML = "<i class='fas fa-star'></i>" + txtContent[i];
         } else if (txt == "c2c") {
             if (c2c == true) {
-                elem.innerHTML = `<div><img id='c2cimage${name}' src='c2c.png'><<div class='mdl-tooltip' for='c2cimage${name}'>C2C</div>`;
+                elem.innerHTML = `<div><img id='c2cimage${name}' src='c2c.png'></div> <div class='mdl-tooltip' for='c2cimage${name}'>C2C</div>`;
             } else {
                 break;
             }
