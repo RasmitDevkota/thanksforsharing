@@ -49,7 +49,7 @@
     margin: auto;
     position: fixed;
   }
-  .mdl-layout__container {
+  .mdl-layout__container c {
     display: inherit;
   }
   .mdl-layout__header-row {
