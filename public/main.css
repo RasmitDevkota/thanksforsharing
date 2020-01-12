@@ -49,7 +49,7 @@
     margin: auto;
     position: fixed;
   }
-  .mdl-container {
+  .mdl-layout__container {
     padding: 0;
   }
   .mdl-layout__header-row {
