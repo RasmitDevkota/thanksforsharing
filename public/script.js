@@ -21,7 +21,6 @@ window.onload = function () {
             // signIn();
         }
         if (window.location.href.includes("products.html")) {
-            document.getElementById("products").innerHTML = "<div class='mdl-spinner mdl-js-spinner is-active'></div>"
             var urlParams = new URLSearchParams(window.location.search);
             var query = urlParams.get('query');
             results(query.toString());
