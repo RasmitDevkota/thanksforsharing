@@ -98,7 +98,7 @@ function showProducts(doc) {
                             actionHandler: function () {
                                 redirect('cart.html#couter' + name);
                             },
-                            actionText: 'Undo'
+                            actionText: 'Go to Cart'
                         });
                     });
                 } else {
