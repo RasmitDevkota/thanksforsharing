@@ -91,7 +91,7 @@ function showProducts(doc) {
                         price: price,
                         imageRef: imageRef
                     }).then(function () {
-                        var rfcMsg = document.querySelector('');
+                        var rfcMsg = document.querySelector('#atcMsg');
                         rfcMsg.MaterialSnackbar.showSnackbar({
                             message: 'Item added to cart',
                             timeout: 1800,
