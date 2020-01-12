@@ -247,16 +247,3 @@
     display:block;
   }
 }
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-track {
-  background-color: #343434;
-  box-shadow: inset 0 0 2px #343434;
-}
-::-webkit-scrollbar-thumb {
-  background: #30b0f5;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #0094e4;
-}
