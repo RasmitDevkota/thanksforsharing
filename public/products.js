@@ -92,7 +92,7 @@ function showProducts(doc) {
                         imageRef: imageRef
                     }).then(function () {
                         var atcMsg = document.querySelector('#atcMsg');
-                        rfcMsg.MaterialSnackbar.showSnackbar({
+                        atcMsg.MaterialSnackbar.showSnackbar({
                             message: 'Item added to cart',
                             timeout: 1800,
                             actionHandler: function () {
