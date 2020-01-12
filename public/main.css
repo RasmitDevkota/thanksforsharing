@@ -1,5 +1,7 @@
 @media (orientation: landscape){
   html, body {
+    position: relative;
+  min-height: 100vh;
     font-family: 'Roboto', 'Helvetica', sans-serif;
     background-color: #f5f5f5ee;
   }
