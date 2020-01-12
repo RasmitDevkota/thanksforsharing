@@ -24,7 +24,7 @@ window.onload = function () {
             var urlParams = new URLSearchParams(window.location.search);
             var query = urlParams.get('query');
             results(query.toString());
-            document.getElementById("products").innerHTML = "<!-- MDL Spinner Component -->
+            document.getElementById("products").innerHTML = "
                 < div class="mdl-spinner mdl-js-spinner is-active" ></div >
 "
         } else if (window.location.href.includes("cart.html") && firebase.auth().currentUser != null) {
