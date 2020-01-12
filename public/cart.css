@@ -38,7 +38,7 @@
 img:not(.logo) {
     width: 20%;
 }
-c-product{
+c-product {
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid gray;
