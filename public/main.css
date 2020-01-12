@@ -188,6 +188,9 @@
     margin: auto;
     position: fixed;
   }
+  .mdl-layout__container {
+    display: contents;
+  }
   .mdl-layout__header-row {
     padding: 0;
   }
