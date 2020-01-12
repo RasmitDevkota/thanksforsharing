@@ -52,6 +52,9 @@
   .mdl-layout__header-row {
     padding: 0;
   }
+  .mdl-layout__header-row {
+    padding: 0;
+  }
   nav {
     display: flex;
     flex-direction: row;
