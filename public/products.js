@@ -63,8 +63,8 @@ function showProducts(doc) {
             elem.innerHTML = "<i class='fas fa-star'></i>" + txtContent[i];
         } else if (txt == "c2c") {
             if (c2c == true) {
-                elem.innerHTML = "<div id="tt2" class="icon material - icons">print</div>
-                                <div class="mdl-tooltip mdl-tooltip--large' for= "tt2" >
+                elem.innerHTML = "<div id="tt2' class="icon material - icons">print</div>
+                                <div class='mdl-tooltip mdl-tooltip--large' for= "tt2" >
                                     Print
                                 </div >";
             } else {
