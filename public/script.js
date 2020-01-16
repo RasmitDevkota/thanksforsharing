@@ -40,7 +40,7 @@ window.onload = function () {
         } else if (window.location.href.includes("c2c.html")) {
             if (firebase.auth().currentUser != null) {
                 usersUser.get().then(function (doc) {
-                    if (doc.data().toal) {
+                    if (doc.data().totalPrice) {
                     } else {
 
                     }
