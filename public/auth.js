@@ -135,7 +135,6 @@ function handleSignUp() {
         });
 
         firebase.auth().onAuthStateChanged(function (user) {
-            document.getElementById("signin").innerHTML = "Sign Out";
             display('signup');
 
             emails.doc(permusername).set({
