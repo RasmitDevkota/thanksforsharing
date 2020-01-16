@@ -29,6 +29,7 @@ window.onload = function () {
             document.getElementById("totalPrice").innerHTML = "Total Price: $0.00";
             showCart();
         } else if (window.location.href.includes("c2c.html")) {
+            
             document.getElementById("cartItems").innerHTML = "";
             document.getElementById("totalPrice").innerHTML = "Total Price: $0.00";
         } else {
