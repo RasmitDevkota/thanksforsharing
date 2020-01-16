@@ -63,7 +63,7 @@ function authChange() {
     } else {
         console.log("Index.html?");
     }
-}
+};
 
 function search() {
     var search = document.getElementById("search");
