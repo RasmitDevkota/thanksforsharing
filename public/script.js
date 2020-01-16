@@ -18,7 +18,7 @@ window.onload = function () {
             document.getElementById("signin").innerHTML = "Sign Out";
         } else {
             // CAUTION: THE LINE BELOW CREATES AUTOMATIC POPUP IF USER IS NOT SIGNED IN, CAN DISTURB UX, ONLY USE IF ABSOLUTELY NECESSARY
-            // signIn(); // double comment
+            signIn(); // double comment
         }
         if (window.location.href.includes("products.html")) {
             var urlParams = new URLSearchParams(window.location.search);
