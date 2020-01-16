@@ -48,6 +48,8 @@ window.onload = function () {
                         document.getElementById("c2c-unverified").style.display = "block";
                     }
                 });
+            } else {
+                
             }
         } else {
             console.log("Index.html?");
