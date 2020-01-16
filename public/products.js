@@ -1,5 +1,4 @@
-var Products = db.collection("products");
-var ShoppingCart = db.collection("cart");
+
 
 var txtElements = ["name", "description", "price", "rating", "c2c"];
 var actionElements = ["addtocart", "checkout"];
