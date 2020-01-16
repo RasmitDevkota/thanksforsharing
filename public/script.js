@@ -39,7 +39,7 @@ window.onload = function () {
         } else if (window.location.href.includes("c2c.html")) {
             if (firebase.auth().currentUser != null) {
                 usersUser.get().then(function (doc) {
-                    if (doc.data())
+                    if (doc.data().)
                 });
                 document.getElementById("cartItems").style.display = "block";
             }
