@@ -1,7 +1,7 @@
 .c2c-container {
     display: flex;
     flex-direction: column;
-    ju
+    justify-content: center;
 }
 .c2c-content {
 
