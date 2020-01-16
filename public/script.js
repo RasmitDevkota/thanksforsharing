@@ -17,7 +17,7 @@ var emails = db.collection("emails");
 var Products = db.collection("products");
 var ShoppingCart = db.collection("cart");
 
-firebase.auth().onAuthStateChanged
+firebase.auth().onAuthStateChanged()
 
 window.onload = function () {
     setTimeout(function () {
