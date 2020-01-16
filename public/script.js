@@ -23,7 +23,7 @@ window.onload = function () {
             document.getElementById("signin").innerHTML = "Sign Out";
 
             var usersUser = users.doc(firebase.auth().currentUser.uid); 
-            var emailsUser = emails.doc();
+            var emailsUser = emails.doc(firebase.auth().currentUser.displayName);
         } else {
             // CAUTION: THE LINE BELOW CREATES AUTOMATIC POPUP IF USER IS NOT SIGNED IN, CAN DISTURB UX, ONLY USE IF ABSOLUTELY NECESSARY
             // signIn(); // double comment
