@@ -23,7 +23,7 @@ window.onload = function () {
             document.getElementById("signin").innerHTML = "Sign Out";
 
             var usersUser =
-            var emailsUser = 
+            var emailsUser =; 
         } else {
             // CAUTION: THE LINE BELOW CREATES AUTOMATIC POPUP IF USER IS NOT SIGNED IN, CAN DISTURB UX, ONLY USE IF ABSOLUTELY NECESSARY
             // signIn(); // double comment
