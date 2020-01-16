@@ -29,6 +29,7 @@ window.onload = function () {
 };
 
 function authChange() {
+    // Auth Change
     if (firebase.auth().currentUser != null) {
         document.getElementById("signin").innerHTML = "Sign Out";
 
@@ -36,7 +37,7 @@ function authChange() {
         var emailsUser = emails.doc(firebase.auth().currentUser.displayName);
         var userCart = ShoppingCart.doc(firebase.auth().currentUser.displayName);
     }
-    
+
     if (window.location.href.includes("products.html")) {
         var urlParams = new URLSearchParams(window.location.search);
         var query = urlParams.get('query');
