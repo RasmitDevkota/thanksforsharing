@@ -207,7 +207,7 @@ function checkOut() {
         });
         usersUser.update({
             totalPrice: firebase.firestore.FieldValue.increment(totalPrice)
-        }).then;
+        }).then();
     }).then(userCart.delete().then(function () {
         document.getElementById("cartItems").innerHTML = "";
         document.getElementById("totalPrice").innerHTML = "Total Price: $0.00";
