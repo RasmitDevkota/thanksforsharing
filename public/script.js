@@ -24,7 +24,7 @@ window.onload = function () {
 
             var usersUser = users.doc(firebase.auth().currentUser.uid);
             var emailsUser = emails.doc(firebase.auth().currentUser.displayName);
-            var userCart = ShoppingCart.doc()
+            var userCart = ShoppingCart.doc("")
         } else {
             // CAUTION: THE LINE BELOW CREATES AUTOMATIC POPUP IF USER IS NOT SIGNED IN, CAN DISTURB UX, ONLY USE IF ABSOLUTELY NECESSARY
             // signIn(); // double comment
