@@ -41,6 +41,7 @@ window.onload = function () {
             if (firebase.auth().currentUser != null) {
                 usersUser.get().then(function (doc) {
                     if (doc.data().totalPrice >= 500) {
+                        console.log("c2c-verified");
                         document.getElementById("c2c-verified").style.display = "block";
                     } else {
                         document.getElementById("c2c-unverified").style.display = "block";
