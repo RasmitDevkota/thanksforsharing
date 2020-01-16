@@ -18,7 +18,7 @@ var Products = db.collection("products");
 var ShoppingCart = db.collection("cart");
 
 window.onload = function () {
-    setTimeout(authChanged(), 950);
+    setTimeout(authChange(), 950);
     
     document.addEventListener('keydown', function (event) {
         const key = event.key;
