@@ -1,5 +1,3 @@
-
-
 function signIn() {
     if (firebase.auth().currentUser == null){
         console.log(firebase.auth().currentUser);
