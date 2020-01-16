@@ -67,7 +67,7 @@ window.onload = function () {
     });
 };
 
-function 
+function authChange
 
 function search() {
     var search = document.getElementById("search");
