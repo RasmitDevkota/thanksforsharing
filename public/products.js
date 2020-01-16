@@ -204,7 +204,6 @@ function checkOut() {
             var price = doc.data().price;
             totalPrice += price;
 
-            
         });
     }).then(userCart.delete().then(function () {
         document.getElementById("cartItems").innerHTML = "";
