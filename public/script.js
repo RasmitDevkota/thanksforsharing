@@ -17,7 +17,6 @@ var emails = db.collection("emails");
 var Products = db.collection("products");
 var ShoppingCart = db.collection("cart");
 
-
 window.onload = function () {
     setTimeout(authChanged(), 950);
     
