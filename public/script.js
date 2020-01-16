@@ -43,7 +43,7 @@ window.onload = function () {
                     if (doc.data().totalPrice >= 500) {
                         document.getElementById("c2c-verified").style.display = "block";
                     } else {
-                        document.getElementById("c2c-").style.display = "block";
+                        document.getElementById("c2c-unverified").style.display = "block";
                     }
                 });
             }
