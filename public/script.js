@@ -41,7 +41,7 @@ window.onload = function () {
             if (firebase.auth().currentUser != null) {
                 usersUser.get().then(function (doc) {
                     if (doc.data().totalPrice >= 500) {
-                        document.getElementById("cartItems").style.display = "block";
+                        document.getElementById("").style.display = "block";
                     } else {
                         document.getElementById("cartItems").style.display = "block";
                     }
