@@ -210,10 +210,6 @@ function checkOut() {
         document.getElementById("cartItems").innerHTML = "";
         document.getElementById("totalPrice").innerHTML = "Total Price: $0.00";
     }));
-    ShoppingCart.doc(firebase.auth().currentUser.displayName).delete().then(function () {
-        document.getElementById("cartItems").innerHTML = "";
-        document.getElementById("totalPrice").innerHTML = "Total Price: $0.00";
-    });
 };
 
 // function rate(productid, val) {
