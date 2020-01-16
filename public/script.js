@@ -28,6 +28,9 @@ window.onload = function () {
     });
 };
 
+
+firebase.auth().onAuthStateChanged()
+
 function authChange() {
     if (firebase.auth().currentUser != null) {
         document.getElementById("signin").innerHTML = "Sign Out";
