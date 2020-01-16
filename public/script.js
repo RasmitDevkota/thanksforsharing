@@ -49,7 +49,8 @@ window.onload = function () {
                     }
                 });
             } else {
-                
+                console.log("c2c-verified");
+                document.getElementById("c2c-unverified").style.display = "block";
             }
         } else {
             console.log("Index.html?");
