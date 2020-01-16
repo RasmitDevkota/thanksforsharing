@@ -205,7 +205,8 @@ function checkOut() {
             var price = doc.data().price;
             totalPrice += price;
         });
-        usersUser.update(totalPrice
+        usersUser.update({
+            totalPrice
     }).then(userCart.delete().then(function () {
         document.getElementById("cartItems").innerHTML = "";
         document.getElementById("totalPrice").innerHTML = "Total Price: $0.00";
