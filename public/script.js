@@ -29,7 +29,6 @@ window.onload = function () {
 };
 
 function authChange() {
-    // Auth Change
     if (firebase.auth().currentUser != null) {
         document.getElementById("signin").innerHTML = "Sign Out";
 
