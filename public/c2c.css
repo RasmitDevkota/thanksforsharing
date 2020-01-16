@@ -9,5 +9,5 @@
 #c2c-verified {
     display: flex;
     flex-direction: row;
-    ju
+    justify-content: center;
 }
