@@ -49,7 +49,7 @@ window.onload = function () {
                     }
                 });
             } else {
-                console.log("c2c-verified");
+                console.log("no user");
                 document.getElementById("c2c-unverified").style.display = "block";
             }
         } else {
