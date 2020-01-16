@@ -1,5 +1,3 @@
-
-
 var txtElements = ["name", "description", "price", "rating", "c2c"];
 var actionElements = ["addtocart", "checkout"];
 var actionNames = ["Add to Cart", "Fast Checkout"];
