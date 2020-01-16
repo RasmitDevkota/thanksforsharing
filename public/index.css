@@ -16,7 +16,7 @@
     flex-grow: 2;
     width: 60%;
 }
-@keyframes title{
+@keyframes title {
     0%{
         transform: translateY(100px);
     }
