@@ -200,7 +200,7 @@ function checkOut() {
     alert("Product/s ordered! Each will come at their respective times, please check individual product entries for further information");
 
     userCart.collection(firebase.auth().currentUser.displayName).get().then(function (querySnapshot) {
-        var totalPrice = 0
+        var totalPrice = 0;
         querySnapshot.forEach((doc) => {
             var price = doc.data().price;
             totalPrice += price;
