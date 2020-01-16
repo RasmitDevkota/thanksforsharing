@@ -14,6 +14,8 @@ var users = db.collection("users");
 var emails = db.collection("emails");
 var ShoppingCart = db.collection("cart");
 
+db.enablePersistence();
+
 window.onload = function () {
     setTimeout(function () {
         if (firebase.auth().currentUser != null) {
