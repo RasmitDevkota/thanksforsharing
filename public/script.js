@@ -41,9 +41,7 @@ window.onload = function () {
                 usersUser.get().then(function (doc) {
                     if (doc.data().c2c == true) {
 
-                    } else (
-                        
-                    )
+                    } else 
                 });
                 document.getElementById("cartItems").style.display = "block";
             }
