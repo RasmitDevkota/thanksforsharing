@@ -38,7 +38,7 @@ window.onload = function () {
             showCart();
         } else if (window.location.href.includes("c2c.html")) {
             if (firebase.auth().currentUser != null) {
-                usersUser.get().
+                usersUser.get().then()
                 document.getElementById("cartItems").style.display = "block";
             }
         } else {
