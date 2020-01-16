@@ -203,7 +203,6 @@ function checkOut() {
         querySnapshot.forEach((doc) => {
             var price = doc.data().price;
             totalPrice += price;
-
         });
     }).then(userCart.delete().then(function () {
         document.getElementById("cartItems").innerHTML = "";
