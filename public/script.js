@@ -35,9 +35,6 @@ function authChange() {
         var usersUser = users.doc(firebase.auth().currentUser.uid);
         var emailsUser = emails.doc(firebase.auth().currentUser.displayName);
         var userCart = ShoppingCart.doc(firebase.auth().currentUser.displayName);
-    } else {
-        // CAUTION: THE LINE BELOW CREATES AUTOMATIC POPUP IF USER IS NOT SIGNED IN, CAN DISTURB UX, ONLY USE IF ABSOLUTELY NECESSARY
-        // signIn(); // double comment
     }
     if (window.location.href.includes("products.html")) {
         var urlParams = new URLSearchParams(window.location.search);
