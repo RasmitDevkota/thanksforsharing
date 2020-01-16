@@ -203,9 +203,6 @@ function checkOut() {
     alert("Product/s ordered! Each will come at their respective times, please check individual product entries for further information");
     ShoppingCart.doc(firebase.auth().currentUser.displayName).collection(firebase.auth().currentUser.displayName).get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
-            var name = doc.data().name.toString();
-            var imageRef = doc.data().imageRef.toString();
-            var c2c = doc.data().c2c;
             var price = doc.data().price;
             totalPrice += price;
         });
