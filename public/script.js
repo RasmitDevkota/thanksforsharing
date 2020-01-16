@@ -45,7 +45,7 @@ window.onload = function () {
                     } else {
 
                     }
-                });x
+                });
             }
         } else {
             console.log("Index.html?");
