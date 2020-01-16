@@ -119,7 +119,7 @@ function showProducts(doc) {
 function showCart() {
     document.getElementById("cartItems").innerHTML = "";
     var totalPrice = 0;
-    ShoppingCart.doc(firebase.auth().currentUser.displayName).collection(firebase.auth().currentUser.displayName).get().then(function (querySnapshot) {
+    userCart.collection(firebase.auth().currentUser.displayName).get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
             var name = doc.data().name.toString();
             var imageRef = doc.data().imageRef.toString();
@@ -198,12 +198,12 @@ function showCart() {
 function checkOut() {
     display('copopup');
     alert("Product/s ordered! Each will come at their respective times, please check individual product entries for further information");
-    ShoppingCart.doc(firebase.auth().currentUser.displayName).collection(firebase.auth().currentUser.displayName).get().then(function (querySnapshot) {
+    userCart.collection(firebase.auth().currentUser.displayName).get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
             var price = doc.data().price;
             totalPrice += price;
         });
-    }).then(ShoppingCart.doc(firebase.auth().currentUser.displayName).delete().then(function () {
+    }).then(userCart.delete().then(function () {
         document.getElementById("cartItems").innerHTML = "";
         document.getElementById("totalPrice").innerHTML = "Total Price: $0.00";
     }));
