@@ -46,7 +46,6 @@ window.onload = function () {
 
                     }
                 });
-                document.getElementById("cartItems").style.display = "block";
             }
         } else {
             console.log("Index.html?");
