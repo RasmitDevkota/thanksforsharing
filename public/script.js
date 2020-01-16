@@ -42,7 +42,7 @@ window.onload = function () {
                     if (doc.data().c2c == true) {
 
                     } else {
-                        
+
                     }
                 });
                 document.getElementById("cartItems").style.display = "block";
