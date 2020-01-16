@@ -41,11 +41,12 @@ window.onload = function () {
             if (firebase.auth().currentUser != null) {
                 usersUser.get().then(function (doc) {
                     if (doc.data().totalPrice >= 500) {
-
+                        
                     } else {
 
                     }
                 });
+                document.getElementById("cartItems").style.display = "block";
             }
         } else {
             console.log("Index.html?");
