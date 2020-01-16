@@ -206,7 +206,7 @@ function checkOut() {
             totalPrice += price;
         });
         usersUser.update({
-            
+            amnt = 
         });
     }).then(userCart.delete().then(function () {
         document.getElementById("cartItems").innerHTML = "";
