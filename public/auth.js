@@ -27,7 +27,7 @@ function eToggleSignIn() {
 
     firebase.auth().signInWithEmailAndPassword(email, password).then(function () {
         firebase.auth().onAuthStateChanged(function (user) {
-            
+
             display("email");
             document.getElementById("signin").innerHTML = "Sign Out";
         });
@@ -135,7 +135,6 @@ function handleSignUp() {
         });
 
         firebase.auth().onAuthStateChanged(function (user) {
-            if (user) {
                 document.getElementById("signin").innerHTML = "Sign Out";
                 display('signup');
 
@@ -165,7 +164,6 @@ function handleSignUp() {
                     console.log(error);
                     console.log(user.displayName);
                 });
-            }
         });
     }).catch(function (error) {
         var errorCode = error.code;
