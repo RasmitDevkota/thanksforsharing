@@ -31,7 +31,6 @@ window.onload = function () {
         } else if (window.location.href.includes("c2c.html")) {
             if (firebase.auth().currentUser != null) {
                 document.getElementById("cartItems").innerHTML = "";
-                document.getElementById("totalPrice").innerHTML = "Total Price: $0.00";
             }
         } else {
             console.log("Index.html?");
