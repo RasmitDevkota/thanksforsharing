@@ -67,7 +67,44 @@ window.onload = function () {
     });
 };
 
-function authChange
+function authChange() {
+    if (firebase.auth().currentUser != null) {
+        document.getElementById("signin").innerHTML = "Sign Out";
+
+        var usersUser = users.doc(firebase.auth().currentUser.uid);
+        var emailsUser = emails.doc(firebase.auth().currentUser.displayName);
+        var userCart = ShoppingCart.doc(firebase.auth().currentUser.displayName);
+    } else {
+        // CAUTION: THE LINE BELOW CREATES AUTOMATIC POPUP IF USER IS NOT SIGNED IN, CAN DISTURB UX, ONLY USE IF ABSOLUTELY NECESSARY
+        // signIn(); // double comment
+    }
+    if (window.location.href.includes("products.html")) {
+        var urlParams = new URLSearchParams(window.location.search);
+        var query = urlParams.get('query');
+        results(query.toString());
+    } else if (window.location.href.includes("cart.html") && firebase.auth().currentUser != null) {
+        document.getElementById("cartItems").innerHTML = "";
+        document.getElementById("totalPrice").innerHTML = "Total Price: $0.00";
+        showCart();
+    } else if (window.location.href.includes("c2c.html")) {
+        if (firebase.auth().currentUser != null) {
+            usersUser.get().then(function (doc) {
+                if (doc.data().totalPrice >= 500) {
+                    console.log("c2c-verified");
+                    document.getElementById("c2c-verified").style.display = "block";
+                } else {
+                    console.log("c2c-verified");
+                    document.getElementById("c2c-unverified").style.display = "block";
+                }
+            });
+        } else {
+            console.log("no user");
+            document.getElementById("c2c-nouser").style.display = "block";
+        }
+    } else {
+        console.log("Index.html?");
+    }
+}
 
 function search() {
     var search = document.getElementById("search");
