@@ -13,7 +13,7 @@ var db = firebase.firestore();
 db.enablePersistence();
 
 var users = db.collection("users");
-var usersUser
+var usersUser = users.doc()
 var emails = db.collection("emails");
 var Products = db.collection("products");
 var ShoppingCart = db.collection("cart");
