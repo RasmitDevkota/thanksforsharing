@@ -50,7 +50,7 @@ window.onload = function () {
                 });
             } else {
                 console.log("no user");
-                document.getElementById("").style.display = "block";
+                document.getElementById("sign").style.display = "block";
             }
         } else {
             console.log("Index.html?");
