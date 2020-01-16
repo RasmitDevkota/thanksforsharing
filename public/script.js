@@ -10,7 +10,6 @@ firebase.initializeApp({
 });
 
 var db = firebase.firestore();
-db.enablePersistence();
 var users = db.collection("users");
 var emails = db.collection("emails");
 var ShoppingCart = db.collection("cart");
