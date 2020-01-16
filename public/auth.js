@@ -135,35 +135,35 @@ function handleSignUp() {
         });
 
         firebase.auth().onAuthStateChanged(function (user) {
-                document.getElementById("signin").innerHTML = "Sign Out";
-                display('signup');
+            document.getElementById("signin").innerHTML = "Sign Out";
+            display('signup');
 
-                emails.doc(permusername).set({
-                    email: permemail,
-                    uid: user.uid,
-                }).then(function () {
-                    console.log("Document successfully written!");
-                }).catch(function (error) {
-                    console.error("Error writing document: ", error);
-                });
+            emails.doc(permusername).set({
+                email: permemail,
+                uid: user.uid,
+            }).then(function () {
+                console.log("Document successfully written!");
+            }).catch(function (error) {
+                console.error("Error writing document: ", error);
+            });
 
-                users.doc(user.uid).set({
-                    displayName: permusername,
-                    email: permemail,
-                }).then(function () {
-                    console.log("Document successfully written!");
-                }).catch(function (error) {
-                    console.error("Error writing document: ", error);
-                });
+            users.doc(user.uid).set({
+                displayName: permusername,
+                email: permemail,
+            }).then(function () {
+                console.log("Document successfully written!");
+            }).catch(function (error) {
+                console.error("Error writing document: ", error);
+            });
 
-                user.updateProfile({
-                    displayName: permusername,
-                }).then(function () {
-                    console.log(user.displayName);
-                }).catch(function (error) {
-                    console.log(error);
-                    console.log(user.displayName);
-                });
+            user.updateProfile({
+                displayName: permusername,
+            }).then(function () {
+                console.log(user.displayName);
+            }).catch(function (error) {
+                console.log(error);
+                console.log(user.displayName);
+            });
         });
     }).catch(function (error) {
         var errorCode = error.code;
