@@ -40,8 +40,8 @@ window.onload = function () {
             if (firebase.auth().currentUser != null) {
                 usersUser.get().then(function (doc) {
                     if (doc.data().c2c == true) {
-                        
-                    }
+
+                    } else
                 });
                 document.getElementById("cartItems").style.display = "block";
             }
