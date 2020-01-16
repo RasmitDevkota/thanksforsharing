@@ -28,7 +28,6 @@ window.onload = function () {
     });
 };
 
-
 firebase.auth().onAuthStateChanged()
 
 function authChange() {
