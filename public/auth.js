@@ -136,7 +136,7 @@ function handleSignUp() {
 
         firebase.auth().onAuthStateChanged(function (user) {
             display('signup');
-            authChange()''
+            authChange();
 
             emails.doc(permusername).set({
                 email: permemail,
