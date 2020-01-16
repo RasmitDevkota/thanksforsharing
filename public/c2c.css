@@ -1,6 +1,7 @@
 .c2c-container {
     display: flex;
     flex-direction: column;
+    
 }
 .c2c-content {
 
