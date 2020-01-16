@@ -65,8 +65,6 @@ window.onload = function () {
     });
 };
 
-
-
 function search() {
     var search = document.getElementById("search");
     var text = search.value.toString().toLowerCase();
