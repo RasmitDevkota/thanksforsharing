@@ -30,7 +30,7 @@ window.onload = function () {
             showCart();
         } else if (window.location.href.includes("c2c.html")) {
             if (firebase.auth().currentUser != null) {
-                if (firebase)
+                if ()
                 document.getElementById("cartItems").style.display = "block";
             }
         } else {
