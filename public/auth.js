@@ -1,6 +1,4 @@
-var users = db.collection("users");
-var emails = db.collection("emails");
-var ShoppingCart = db.collection("cart");
+
 
 function signIn() {
     if (firebase.auth().currentUser == null){
