@@ -4,8 +4,8 @@ function veiwVerified() {
 };
 
 function viewVerifiedProducts() {
-    
-}
+
+};
 
 // C2C Unverified
 function verifyForm() {
