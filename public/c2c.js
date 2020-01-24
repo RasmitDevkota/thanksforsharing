@@ -1,5 +1,4 @@
 
-
 // C2C Verified
 function viewProducts() {
 
