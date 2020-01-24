@@ -10,4 +10,7 @@ function viewProducts() {
 
 };
 
-function 
+function viewOrder() {
+
+};
+
