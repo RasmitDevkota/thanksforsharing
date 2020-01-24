@@ -3,6 +3,10 @@ function verifyForm() {
 
 };
 
+function verifyInfo() {
+
+};
+
 
 
 // C2C Verified
