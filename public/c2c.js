@@ -6,4 +6,8 @@ function removeProduct() {
 
 };
 
-function viewProduc
+function viewProducts() {
+
+};
+
+function 
