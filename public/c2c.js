@@ -3,7 +3,7 @@ function veiwVerified() {
 
 };
 
-
+function 
 
 // C2C Unverified
 function verifyForm() {
