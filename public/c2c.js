@@ -6,10 +6,6 @@ function removeProduct() {
 
 };
 
-function viewProducts() {
-
-};
-
 function viewOrder() {
 
 };
