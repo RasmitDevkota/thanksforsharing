@@ -11,7 +11,6 @@ function checkVerificationStatus() {
 
 };
 
-
 // C2C Verified
 function viewProducts() {
 
