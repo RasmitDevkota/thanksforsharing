@@ -1,5 +1,7 @@
 // General C2C
-function 
+function veiwVerified() {
+    
+}
 
 // C2C Unverified
 function verifyForm() {
