@@ -14,7 +14,9 @@ function viewOrder() {
 
 };
 
-function 
+function confirmSale() {
+    
+}
 
 function confirmShipment() {
 
