@@ -1,3 +1,7 @@
+function viewProducts() {
+
+};
+
 function addProduct() {
 
 };
