@@ -1,5 +1,5 @@
 // General C2C
-function viewVerified() {
+function viewC2CProducts() {
 
 };
 
