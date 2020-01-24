@@ -7,7 +7,7 @@ function verifyInfo() {
 
 };
 
-function ()
+function v
 
 // C2C Verified
 function viewProducts() {
