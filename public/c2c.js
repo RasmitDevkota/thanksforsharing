@@ -1,5 +1,5 @@
 // General C2C
-function veiwVerified() {
+function viwwVerified() {
 
 };
 
