@@ -1,4 +1,5 @@
-
+// General C2C
+function 
 
 // C2C Unverified
 function verifyForm() {
