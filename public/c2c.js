@@ -3,7 +3,7 @@ function viewC2CProducts() {
 
 };
 
-function viewVerifiedProducts() {
+function viewC2CProducts() {
 
 };
 
