@@ -1,5 +1,7 @@
 // C2C Unverified
-function 
+function verifyForm() {
+    
+}
 
 // C2C Verified
 function viewProducts() {
