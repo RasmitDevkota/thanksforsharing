@@ -1,5 +1,5 @@
 // General C2C
-function viewC2CPeoples() {
+function viewC2CPeople() {
 
 };
 
