@@ -1,0 +1,7 @@
+.faq-contents {
+    display: flex;
+    flex-direction: column;
+}
+.c2c {
+    width: 80px;
+}
