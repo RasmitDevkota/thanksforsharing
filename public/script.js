@@ -62,7 +62,7 @@ function search() {
     var search = document.getElementById("search");
     var text = search.value.toString().toLowerCase();
     if (text == "") {
-        display('search')
+        display('search');
     } else {
         window.location = "products.html?query=" + text.toString();
     }
