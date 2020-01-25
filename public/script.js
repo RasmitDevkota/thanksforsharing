@@ -48,7 +48,7 @@ function authChange() {
     } else if (window.location.href.includes("c2c.html")) {
         c2cStart();
     } else {
-        console.log("Index.html?");
+        console.log("index.html?");
     }
 };
 
