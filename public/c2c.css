@@ -14,7 +14,7 @@
     padding: 1%;
 }
 .c2c-content-cards {
-    display: inline-block;
+    display: block;
     justify-content: center;
 }
 .c2c-verified-actions {
