@@ -151,7 +151,7 @@ header {
     align-items: center;
   }
   .logo {
-    display:none;
+    display: none;
     width: 100px;
     z-index: 4;
   }
