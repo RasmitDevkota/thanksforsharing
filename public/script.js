@@ -35,7 +35,7 @@ firebase.auth().onAuthStateChanged(function (user) {
     }
 });
 
-function pageLoad() {
+function pageLoad(u) {
     var usersUser = users.doc(firebase.auth().currentUser.uid);
     var emailsUser = emails.doc(firebase.auth().currentUser.displayName);
     var userCart = ShoppingCart.doc(firebase.auth().currentUser.displayName);
