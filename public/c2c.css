@@ -4,11 +4,11 @@
     justify-content: center;
 }
 .c2c-content {
-    flex-grow: 1;
-    padding: 1%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-grow: 1;
+    padding: 1%;
     overflow-x: scroll;
     height: 100%;
 }
