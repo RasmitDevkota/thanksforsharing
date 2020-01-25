@@ -142,60 +142,7 @@
   }
 }
 @media (orientation: portrait) {
-  html, body {
-    font-family: 'Roboto', 'Helvetica', sans-serif;
-    background-color: #f5f5f5ee;
-  }
-  body {
-    font-family: Verdana, sans-serif;
-  }
-  header {
-    position: relative;
-  }
-  .popup {
-    position: fixed;
-    top: -1%;
-    border: 500px solid rgba(0,0,0,0.5);
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  #popupsignin {
-    top: -100%;
-  }
-  .popupwrap {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .signinoptions {
-    background-color: #30b0f5;
-    border: none;
-    color: white;
-    padding: 24px 28px;
-    text-align: center;
-    font-size: 28px;
-    cursor: pointer;
-    box-shadow: 1px 1px 1px grey;
-  }
-  .signinoptions:hover {
-    background-color: rgb(31, 155, 221);
-  }
-  .mdl-card .sis {
-    overflow: visible;
-    position: relative;
-    top: -500px;
-  }
-  .mdl-grid {
-    max-width: 35%;
-    margin: auto;
-    position: fixed;
-  }
-  .mdl-layout__container {
-    display: contents;
-  }
-  .mdl-layout__header-row {
-    padding: 0;
-  }
-  /* this */
+  
   nav {
     display: flex;
     flex-direction: column;
