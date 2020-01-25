@@ -39,7 +39,7 @@
   .signinoptions:hover {
     background-color: rgb(31, 155, 221);
   }
-  .mdl-card:not {
+  .mdl-card:not("#") {
     overflow: visible;
     position: relative;
     top: -500px;
