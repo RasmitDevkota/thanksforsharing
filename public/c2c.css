@@ -18,6 +18,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 2%;
 }
 .c2c-content-card {
     padding: 2%;
