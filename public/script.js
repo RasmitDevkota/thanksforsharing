@@ -54,7 +54,9 @@ function pageLoad(u) {
         } else {
             console.log("index.html?");
         }
-    } else 
+    } else {
+        
+    }
 };
 
 function search() {
