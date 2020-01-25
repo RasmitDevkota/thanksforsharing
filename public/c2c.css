@@ -18,6 +18,9 @@
     justify-content: center;
     padding: 2%;
 }
+.c2c-content-card {
+    margin: 1%;
+}
 .c2c-verified-actions {
     display: flex;
     flex-direction: row;
