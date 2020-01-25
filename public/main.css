@@ -103,6 +103,8 @@ color: white;
 .search:focus {
   outline: none;
 }
+
+/* 
 @media (orientation: landscape) {
   nav {
     display: flex;
