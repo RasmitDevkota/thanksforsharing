@@ -10,6 +10,7 @@
     flex-direction: column;
     justify-content: center;
     overflow-x: scroll;
+    height: ;
 }
 .c2c-content-cards {
     display: flex;
