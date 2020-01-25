@@ -18,7 +18,6 @@ function c2cStart(usersUser) {
 };
 
 function viewC2CProducts() {
-
 };
 
 // C2C Unverified
