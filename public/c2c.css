@@ -41,7 +41,7 @@
     height: 176px;
     background: url('favicon.ico') center / cover;
 }
-.demo-card-wide > .mdl-card__menu, .mdl-card__title-text {
+.demo-card-wide > .mdl-card__menu, .mdl-card__title-text.c2c {
     color: #3b3b3b;
 }
 .mdl-card__supporting-text {
