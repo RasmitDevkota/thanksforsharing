@@ -142,7 +142,6 @@
   }
 }
 @media (orientation: portrait) {
-  
   nav {
     display: flex;
     flex-direction: column;
