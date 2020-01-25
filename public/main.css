@@ -12,12 +12,6 @@ body {
   margin-top: 18%;
   background-color: #343434;
 }
-header {
-  position: relative;
-}
-.page-heading {
-  margin-left: 1%;
-}
 .popup {
   position: fixed;
   top: -1%;
