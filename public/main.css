@@ -8,6 +8,12 @@ html, body {
 body {
   font-family: Verdana, sans-serif;
 }
+header {
+  position: relative;
+}
+.page-heading {
+  margin-left: 1%;
+}
 .footer {
   margin-top: 18%;
   background-color: #343434;
