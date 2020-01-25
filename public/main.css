@@ -1,9 +1,6 @@
 * {
   box-sizing: border-box;
 }
-.page-heading {
-  margin-left: 1%;
-}
 html, body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
   background-color: #f5f5f5ee;
