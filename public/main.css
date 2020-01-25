@@ -143,7 +143,7 @@ color: white;
     background: #0094e4;
   }
 }
-/* Mobile/ */
+/* Mobile/Small-device usage only */
 @media (orientation: portrait) {
   nav {
     display: flex;
