@@ -8,9 +8,6 @@
     flex-direction: column;
     justify-content: center;
 }
-.mdl-tabs__panel {
-    padding: 1%;
-}
 .c2c-content-cards {
     display: flex;
     flex-direction: row;
