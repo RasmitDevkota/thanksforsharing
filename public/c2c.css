@@ -19,7 +19,6 @@
 }
 .demo-card-wide.mdl-card {
     width: 30%;
-    padding: 2%;
 }
 .demo-card-wide > .mdl-card__title {
     color: #ffffff;
