@@ -9,6 +9,7 @@ function c2cStart() {
                 console.log("c2c-verified");
                 document.getElementById("c2c-unverified").style.display = "block";
             }
+            console.log()
         });
     } else {
         console.log("no user");
