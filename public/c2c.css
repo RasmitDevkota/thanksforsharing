@@ -1,3 +1,8 @@
+.c2c-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .c2c-content {
     padding: 1%;
     height: 100%;
