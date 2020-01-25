@@ -27,9 +27,7 @@
     justify-content: center;
 }
 .c2c-verified-action {
-    margin-left: 18px;
-    margin-right: 18px;
-    
+    width: 30%;
     font-size: 30px;
 }
 .demo-card-wide.mdl-card {
