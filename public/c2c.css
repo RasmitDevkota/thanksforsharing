@@ -30,7 +30,7 @@
     font-size: 30px;
     text-align: center;
     width: 30%;
-    
+    cursor: pointer;
 }
 .demo-card-wide.mdl-card {
     margin-left: 1%;
