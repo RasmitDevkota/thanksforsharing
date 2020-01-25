@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 .page-heading {
-  mar
+  margin-left: 1;
 }
 @media (orientation: landscape) {
   html, body {
