@@ -16,6 +16,7 @@
 .c2c-content-cards {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .c2c-verified-actions {
