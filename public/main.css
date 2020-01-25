@@ -7,7 +7,7 @@
     background-color: #f5f5f5ee;
   }
   body {
-    over
+    overflow: auto;
     font-family: Verdana, sans-serif;
     padding-bottom: 200px;
   }
