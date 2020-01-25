@@ -48,7 +48,7 @@ function pageLoad() {
         document.getElementById("totalPrice").innerHTML = "Total Price: $0.00";
         showCart();
     } else if (window.location.href.includes("c2c.html")) {
-        c2cStart();
+        c2cStart(usersUser);
     } else {
         console.log("index.html?");
     }
