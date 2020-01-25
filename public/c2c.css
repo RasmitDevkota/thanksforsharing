@@ -36,15 +36,15 @@
     width: 500px;
     height: 300px;
 }
-/* .demo-card-wide > .mdl-card__title-c2c {
+.demo-card-wide > .mdl-card__title-c2c {
     color: #ffffff;
     height: 176px;
     background: url('favicon.ico') center / cover;
-} */
-/* .demo-card-wide > .mdl-card__menu, .mdl-card__title-text-c2c {
+}
+.demo-card-wide > .mdl-card__menu, .mdl-card__title-text-c2c {
     color: #3b3b3b;
 }
 .mdl-card__supporting-text {
     line-height: 11%;
     height: 22%
-} */
+}
