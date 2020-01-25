@@ -133,7 +133,7 @@
   }
   ::-webkit-scrollbar-thumb {
     background: #30b0f5;
-    opacity: ;
+    opacity: 50%;
   }
   ::-webkit-scrollbar-thumb:hover {
     background: #0094e4;
