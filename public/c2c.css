@@ -5,6 +5,10 @@
 }
 .c2c-content {
     flex-grow: 1;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 #c2c-verified {
     padding: 1%;
