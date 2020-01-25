@@ -55,6 +55,7 @@ function pageLoad(u) {
             console.log("index.html?");
         }
     }
+    
 };
 
 function search() {
