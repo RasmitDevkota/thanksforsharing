@@ -61,12 +61,12 @@ header {
 .mdl-layout__header-row {
   padding: 0;
 }
-  .navelement:hover {
-    background-color: #272727;
-    border-top: 5px solid #272727;
-    border-bottom: 5px solid #272727;
-    cursor: pointer;
-  }
+.navelement:hover {
+  background-color: #272727;
+  border-top: 5px solid #272727;
+  border-bottom: 5px solid #272727;
+  cursor: pointer;
+}
 @media (orientation: landscape) {
   nav {
     display: flex;
