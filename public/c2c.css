@@ -44,6 +44,6 @@
 .demo-card-wide > .mdl-card__menu, .mdl-card__title-text.c2c-card-title-text {
     color: #3b3b3b;
 }
-.mdl-card__supporting-text.c2c {
+.mdl-card__supporting-text.c2c-card-supporting-text {
     height: 22%
 }
