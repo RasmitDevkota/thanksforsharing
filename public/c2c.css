@@ -19,7 +19,9 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-
+.c2c-content-card {
+    
+}
 .c2c-verified-actions {
     display: flex;
     flex-direction: row;
