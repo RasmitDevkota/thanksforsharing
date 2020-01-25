@@ -17,9 +17,6 @@ function c2cStart(usersUser) {
     }
 };
 
-function viewC2CPeople() {
-
-};
 
 function viewC2CProducts() {
 
