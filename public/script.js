@@ -68,7 +68,6 @@ function redirect(pagePath) {
     window.location.replace(pagePath);
 };
 
-
 function display(elem) {
     $('#' + elem).toggle();
 };
