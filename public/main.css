@@ -137,6 +137,7 @@
   }
   ::-webkit-scrollbar-thumb:hover {
     background: #0094e4;
+    opacity: 50%;
   }
 }
 @media (orientation: portrait) {
