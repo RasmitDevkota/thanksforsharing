@@ -37,22 +37,23 @@ firebase.auth().onAuthStateChanged(function (user) {
 
 function pageLoad(u) {
     if (u == true) {
-    var usersUser = users.doc(firebase.auth().currentUser.uid);
-    var emailsUser = emails.doc(firebase.auth().currentUser.displayName);
-    var userCart = ShoppingCart.doc(firebase.auth().currentUser.displayName);
+        var usersUser = users.doc(firebase.auth().currentUser.uid);
+        var emailsUser = emails.doc(firebase.auth().currentUser.displayName);
+        var userCart = ShoppingCart.doc(firebase.auth().currentUser.displayName);
 
-    if (window.location.href.includes("products.html")) {
-        var urlParams = new URLSearchParams(window.location.search);
-        var query = urlParams.get('query');
-        results(query.toString());
-    } else if (window.location.href.includes("cart.html") && firebase.auth().currentUser != null) {
-        document.getElementById("cartItems").innerHTML = "";
-        document.getElementById("totalPrice").innerHTML = "Total Price: $0.00";
-        showCart();
-    } else if (window.location.href.includes("c2c.html")) {
-        c2cStart(usersUser);
-    } else {
-        console.log("index.html?");
+        if (window.location.href.includes("products.html")) {
+            var urlParams = new URLSearchParams(window.location.search);
+            var query = urlParams.get('query');
+            results(query.toString());
+        } else if (window.location.href.includes("cart.html") && firebase.auth().currentUser != null) {
+            document.getElementById("cartItems").innerHTML = "";
+            document.getElementById("totalPrice").innerHTML = "Total Price: $0.00";
+            showCart();
+        } else if (window.location.href.includes("c2c.html")) {
+            c2cStart(usersUser);
+        } else {
+            console.log("index.html?");
+        }
     }
 };
 
