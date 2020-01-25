@@ -9,8 +9,10 @@
   body {
     overflow: auto;
     font-family: Verdana, sans-serif;
+
   }
   .footer {
+    margin-top: 18%;
     background-color: #343434;
   }
   header {
