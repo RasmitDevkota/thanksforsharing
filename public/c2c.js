@@ -1,5 +1,7 @@
 // General C2C
-function c2cStart()
+function c2cStart() {
+    
+}
 
 function viewC2CPeople() {
 
