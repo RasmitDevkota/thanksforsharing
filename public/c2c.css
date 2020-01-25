@@ -9,7 +9,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    overflow: auto;
 }
 .mdl-tabs__panel {
     padding: 1%;
