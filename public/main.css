@@ -7,6 +7,9 @@
     font-family: Verdana, sans-serif;
     padding-bottom: 200px;
   }
+  .footer {
+    background-color: #343434;
+  }
   * {
     box-sizing: border-box;
   }
