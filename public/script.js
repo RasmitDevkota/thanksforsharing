@@ -66,11 +66,6 @@ function search() {
 
 function redirect(pagePath) {
     window.location.replace(pagePath);
-    if (firebase.auth().currentUser != null) {
-        document.getElementById("signin").innerHTML = "Sign Out";
-    } else {
-        firebase.auth().signOut();
-    }
 };
 
 
