@@ -18,7 +18,7 @@
     flex-direction: row;
     justify-content: center;
     min-width: min-content;
-    overflow-x: auto;
+    overflow-wrap: break-word;
 }
 .c2c-verified-actions {
     display: flex;
