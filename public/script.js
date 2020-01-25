@@ -31,7 +31,7 @@ firebase.auth().onAuthStateChanged(function (user) {
         pageLoad();
     } else {
         console.log("Signed out");
-        pageLoad()
+        pageLoad();
     }
 });
 
