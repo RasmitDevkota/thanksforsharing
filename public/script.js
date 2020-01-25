@@ -30,7 +30,6 @@ window.onload = function () {
 
 firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
-        console.log('.');
         authChange();
     } else {
         console.log("Signed out");
