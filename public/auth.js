@@ -54,7 +54,7 @@ function gToggleSignIn() {
             firebase.auth().onAuthStateChanged(function (user) {
                 if (user != null) {
                     togglepsi();
-                    authChange();
+                    pageLoad();
 
                     var user = firebase.auth().currentUser;
 
