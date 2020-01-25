@@ -11,7 +11,7 @@
     justify-content: center;
 }
 .c2c-content-cards {
-    flex-direction: ;
+    flex-direction: row;
 }
 .demo-card-wide.mdl-card {
     width: 30%;
