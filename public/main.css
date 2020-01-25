@@ -78,6 +78,32 @@ header {
     border: none;
     animation: Slide_Right 0.5s ease;
   }
+  @keyframes Slide_Right{
+    0%{
+      transform: translateX(-100%);
+    }
+    80%{
+      transform: translateX(10px);
+    }
+    100%{
+      transform: translateX(0px);
+    }
+  }
+  @-moz-document {
+    ::placeholder {
+      color: white;
+      opacity: 1; /* Firefox */
+    }
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+  }
+  ::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+  }
+  .search:focus {
+    outline: none;
+  }
 @media (orientation: landscape) {
   nav {
     display: flex;
