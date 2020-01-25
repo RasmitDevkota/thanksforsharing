@@ -14,7 +14,7 @@ function c2cStart() {
         console.log("no user");
         document.getElementById("c2c-nouser").style.display = "block";
     }
-}
+};
 
 function viewC2CPeople() {
 
