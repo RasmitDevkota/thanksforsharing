@@ -11,7 +11,7 @@
     justify-content: center;
 }
 .demo-card-wide.mdl-card {
-  width: 512px;
+  width: 25%;
 }
 .demo-card-wide > .mdl-card__title {
   color: #fff;
