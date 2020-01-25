@@ -45,7 +45,7 @@ function pageLoad(u) {
             var urlParams = new URLSearchParams(window.location.search);
             var query = urlParams.get('query');
             results(query.toString());
-        } else if (window.location.href.includes("cart.html") ) {
+        } else if (window.location.href.includes("cart.html")) {
             document.getElementById("cartItems").innerHTML = "";
             document.getElementById("totalPrice").innerHTML = "Total Price: $0.00";
             showCart();
