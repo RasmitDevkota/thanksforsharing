@@ -14,7 +14,7 @@
     overflow: auto;
 }
 .mdl-tabs__panel {
-    
+    padding: 1%;
 }
 .c2c-content-cards {
     display: flex;
