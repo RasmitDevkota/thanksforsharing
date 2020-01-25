@@ -9,7 +9,7 @@ function c2cStart(usersUser) {
                 console.log("c2c-verified");
                 document.getElementById("c2c-unverified").style.display = "block";
             }
-            console.log(doc.data().totalPrice);
+            console.log(doc.data().totalPrice != null);
         });
     } else {
         console.log("no user");
