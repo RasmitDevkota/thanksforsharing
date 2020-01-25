@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    over
+    overflow-wrap: ;
 }
 .mdl-tabs__panel {
     padding: 1%;
