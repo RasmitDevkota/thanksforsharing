@@ -32,7 +32,7 @@ firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
         authChange()''
     } else {
-        console.log("Signed out")
+        console.log("Signed out");
     }
 });
 
