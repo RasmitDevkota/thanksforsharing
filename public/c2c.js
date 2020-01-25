@@ -1,7 +1,5 @@
 // General C2C
 function c2cStart(usersUser) {
-
-    function connect(hostname, port, method) {
         hostname = hostname || "localhost";
         port = port || 80;
         method = method || "GET";
