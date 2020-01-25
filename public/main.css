@@ -140,6 +140,7 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #0094e4;
   }
+}
 @media (orientation: portrait) {
   nav {
     display: flex;
