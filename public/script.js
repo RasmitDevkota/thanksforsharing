@@ -77,7 +77,6 @@ function redirect(pagePath) {
 
 
 function display(elem) {
-    console.log("not psi");
     $('#' + elem).toggle();
 };
 
