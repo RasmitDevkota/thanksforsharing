@@ -39,8 +39,6 @@ firebase.auth().onAuthStateChanged(function (user) {
         var providerData = user.providerData;
         // ...
     } else {
-        // User is signed out.
-        // ...
     }
 });
 
