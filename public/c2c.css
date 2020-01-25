@@ -4,7 +4,7 @@
     justify-content: center;
 }
 .c2c-content {
-    flex-grow: 1;
+    flex: 1;
     padding: 1%;
     overflow-x: scroll;
     height: 100%;
