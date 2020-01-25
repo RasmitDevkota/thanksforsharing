@@ -125,7 +125,7 @@ color: white;
     border-bottom: 5px solid #343434;
   }
   #menu {
-    display:none;
+    display: none;
   }
   ::-webkit-scrollbar {
     width: 10px;
