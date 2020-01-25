@@ -18,7 +18,7 @@
     justify-content: center;
 }
 .demo-card-wide.mdl-card {
-    mar
+    margin-left: ;
     width: 500px;
 }
 .demo-card-wide > .mdl-card__title {
