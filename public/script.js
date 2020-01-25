@@ -38,7 +38,7 @@ firebase.auth().onAuthStateChanged(function (user) {
 
 function authChange() {
     if (firebase.auth().currentUser != null) {
-        
+        console.log()
         document.getElementById("signin").innerHTML = "Sign Out";
 
         var usersUser = users.doc(firebase.auth().currentUser.uid);
