@@ -15,6 +15,9 @@ body {
 header {
   position: relative;
 }
+.page-heading {
+  margin-left: 1%;
+}
 .popup {
   position: fixed;
   top: -1%;
