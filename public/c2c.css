@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
 }
-.c2c-content {
+.c2c-content-cards {
     flex-grow: 1;
     padding: 1%;
     display: flex;
