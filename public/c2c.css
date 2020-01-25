@@ -18,7 +18,8 @@
     justify-content: center;
 }
 .demo-card-wide.mdl-card {
-    margin-left: ;
+    margin-left: 5%;
+    mar
     width: 500px;
 }
 .demo-card-wide > .mdl-card__title {
