@@ -46,20 +46,7 @@ function authChange() {
         document.getElementById("totalPrice").innerHTML = "Total Price: $0.00";
         showCart();
     } else if (window.location.href.includes("c2c.html")) {
-        if (firebase.auth().currentUser != null) {
-            usersUser.get().then(function (doc) {
-                if (doc.data().totalPrice >= 500) {
-                    console.log("c2c-verified");
-                    document.getElementById("c2c-verified").style.display = "block";
-                } else {
-                    console.log("c2c-verified");
-                    document.getElementById("c2c-unverified").style.display = "block";
-                }
-            });
-        } else {
-            console.log("no user");
-            document.getElementById("c2c-nouser").style.display = "block";
-        }
+        c2cStart();
     } else {
         console.log("Index.html?");
     }
