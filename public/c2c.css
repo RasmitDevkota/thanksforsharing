@@ -27,7 +27,10 @@
     width: 30%;
     cursor: pointer;
 }
-.c
+.c2c-verified-action > i {
+    
+    font-size: 70px;
+}
 .demo-card-wide.mdl-card {
     margin-left: 1%;
     margin-right: 1%;
