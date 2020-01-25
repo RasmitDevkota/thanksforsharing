@@ -2,11 +2,6 @@
 function c2cStart(usersUser) {
     if (firebase.auth().currentUser != null) {
         usersUser.get().then(function (doc) {
-            if (!snapshot.hasChild(username)) {
-                users.child(username).set({
-                    name: username
-                });
-            }
             if (doc.data().totalPrice >= 500) {
                 console.log("c2c-verified");
                 document.getElementById("c2c-verified").style.display = "block";
