@@ -32,9 +32,9 @@
     height: 176px;
     background: url('favicon.ico') center / cover;
 }
-.mdl-card__title-text {
-    
-}
 .demo-card-wide > .mdl-card__menu {
     color: #3b3b3b;
+}
+.mdl-card__title-text {
+
 }
