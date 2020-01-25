@@ -16,7 +16,7 @@
 .demo-card-wide > .mdl-card__title {
   color: #fff;
   height: 176px;
-  background: url('fa') center / cover;
+  background: url('favicon.ico') center / cover;
 }
 .demo-card-wide > .mdl-card__menu {
   color: #fff;
