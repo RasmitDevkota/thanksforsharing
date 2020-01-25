@@ -62,11 +62,7 @@ function search() {
     var search = document.getElementById("search");
     var text = search.value.toString().toLowerCase();
     if (text == "") {
-        if (search.style.display == "none") {
-            search.style.display = "block";
-        } else {
-            search.style.display = "none";
-        }
+        display('search')
     } else {
         window.location = "products.html?query=" + text.toString();
     }
