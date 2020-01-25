@@ -10,7 +10,7 @@
     overflow: auto;
     font-family: Verdana, sans-serif;
     padding-bottom: 200px;
-    max-
+    max-height: 100%;
   }
   .footer {
     background-color: #343434;
