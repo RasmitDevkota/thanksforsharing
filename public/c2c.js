@@ -70,7 +70,7 @@ function viewProducts() {
             $('#c2c-verified-cards').append(outerDiv);
 
             var title = "<div class='mdl-card__title c2c-title'></div>";
-            $('')
+            $('');
         });
     });
 };
