@@ -17,6 +17,7 @@ var emails = db.collection("emails");
 var Products = db.collection("products");
 var ShoppingCart = db.collection("cart");
 
+$(document).ready(function () {
 window.onload = function () {
     document.addEventListener('keydown', function (event) {
         const key = event.key;
