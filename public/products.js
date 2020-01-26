@@ -15,7 +15,7 @@ function results(keystring) {
     document.getElementById("products").innerHTML = "";
     console.log(keystring.split(" "));
 
-    Products.where("name", "in", keystring.split(" ")).orderBy("keywords").get().then(function (querySnapshot) {
+    Products.where("name", "in", keystring.split(" ")).get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
             showProducts(doc);
         });
