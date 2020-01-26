@@ -69,26 +69,26 @@ function viewProducts() {
             </div>
 
             var outerDiv = `
-            <div class="mdl-card__title c2c-title">
-                <h2 class="mdl-card__title-text c2c-title-text">Product</h2>
-            </div>
-            <div class="mdl-card__supporting-text-c2c">Description</div>
-            <div class="mdl-card__actions mdl-card--border c2c-verified-actions">
-                <a class="c2c-verified-action">
-                    <i class="material-icons">edit</i>
-                </a>
-                <a class="c2c-verified-action">
-                    <i class="material-icons">open_in_new</i>
-                </a>
-                <a class="c2c-verified-action">
-                    <i class="material-icons">delete</i>
-                </a>
-            </div>
-            < div class="mdl-card__menu" >
-                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                    <i class="material-icons">open_in_new</i>
-                </button>
-            </div>
+                <div class="mdl-card__title c2c-title">
+                    <h2 class="mdl-card__title-text c2c-title-text">Product</h2>
+                </div>
+                <div class="mdl-card__supporting-text-c2c">Description</div>
+                <div class="mdl-card__actions mdl-card--border c2c-verified-actions">
+                    <a class="c2c-verified-action">
+                        <i class="material-icons">edit</i>
+                    </a>
+                    <a class="c2c-verified-action">
+                        <i class="material-icons">open_in_new</i>
+                    </a>
+                    <a class="c2c-verified-action">
+                        <i class="material-icons">delete</i>
+                    </a>
+                </div>
+                < div class="mdl-card__menu" >
+                    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                        <i class="material-icons">open_in_new</i>
+                    </button>
+                </div>
             `;
             $('#c2c-verified-cards').append(outerDiv);
         });
