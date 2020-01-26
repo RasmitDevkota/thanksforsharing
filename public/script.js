@@ -20,7 +20,7 @@ var ShoppingCart = db.collection("cart");
 window.onload = function () {
     if (firebase.auth().currentUser) {
         pageLoad(true);
-    }
+    } else
 
     document.addEventListener('keydown', function (event) {
         const key = event.key;
