@@ -39,8 +39,6 @@ function checkVerificationStatus() {
     });
 };
 
-import React from 'react';
-import ReactDOM from 'react-dom';
 
 // C2C Verified
 function viewProducts() {
