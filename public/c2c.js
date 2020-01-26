@@ -41,7 +41,9 @@ function viewProducts() {
 
 };
 
-function view
+function viewProductInPage() {
+    
+}
 
 function addProduct() {
 
