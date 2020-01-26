@@ -52,11 +52,6 @@ function pageLoad(u) {
         } else {
             console.log("index.html?");
         }
-
-        window.user = firebase.auth().currentUser;
-        window.usersUser = users.doc(user.uid);
-        window.emailsUser = emails.doc(user.displayName);
-        window.userCart = ShoppingCart.doc(user.displayName);
     } else {
         if (window.location.href.includes("products.html")) {
             var urlParams = new URLSearchParams(window.location.search);
