@@ -72,7 +72,7 @@ function pageLoad(u) {
                 console.log("index.html?");
             }
         }
-    }_;
+    });
 };
 
 function search() {
