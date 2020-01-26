@@ -91,7 +91,7 @@ function showProducts(doc) {
         elem.innerHTML = actionNames[i];
         if (action == "addtocart") {
             elem.addEventListener('click', function () {
-                if (firebase.auth().currentUser != null) {
+                if (user != null) {
                     ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).set({
                         name: name,
                         price: price,
