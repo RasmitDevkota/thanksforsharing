@@ -26,7 +26,7 @@ function results(keystring) {
                 showProducts(doc);
             });
         });
-        Products.where("name", "==", keystring.split(" ")).get().then(function (querySnapshot) {
+        Products.where("name", array - contains - any keystring.split(" ")).get().then(function (querySnapshot) {
             querySnapshot.forEach((doc) => {
                 showProducts(doc);
             });
