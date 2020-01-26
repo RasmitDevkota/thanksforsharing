@@ -68,7 +68,6 @@ function viewProducts() {
                         <i class="material-icons">open_in_new</i>
                     </button>
                 </div>
-            );
             $('#c2c-verified-cards').append(outerDiv);
         });
     });
