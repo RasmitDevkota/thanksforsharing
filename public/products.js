@@ -235,7 +235,9 @@ function checkOut() {
                 var seller = doc.data().c2c-author;
                 
                 Orders.doc(seller).update({
-                    orders: {user.displayName: }
+                    orders: {
+                        user.displayName:
+                    }
                 });
             }
         });
