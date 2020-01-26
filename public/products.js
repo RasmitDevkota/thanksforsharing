@@ -235,6 +235,8 @@ function checkOut() {
     ShoppingCart.doc(user.displayName).collection(user.displayName).get().then(function (querySnapshot) {
         querySnapshot.forEach(function (doc) {
 
+            var name = doc.data().name;
+
             Products.doc(name).get().then(function (doc) {
                 var price = doc.data().price;
                 usersUser.update({
