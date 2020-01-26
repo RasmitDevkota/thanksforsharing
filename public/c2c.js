@@ -86,10 +86,10 @@ function confirmSale(id) {
 
 };
 
-
 function confirmShipment(id) {
 
 };
+
 function viewProductInPage(id) {
 
 }
