@@ -259,7 +259,7 @@ function checkOut() {
                 });
             }
         }).then(function (querySnapshot) {
-            querySnapshot
+            querySnapshot.forEach(function (doc))
         });
     }).then(function () {
         document.getElementById("cartItems").innerHTML = "<h1 style='text-align: center'>No items in cart! Head to the products page to buy something!</h1>";
