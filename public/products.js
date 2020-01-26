@@ -235,14 +235,13 @@ function checkOut() {
                 var seller = doc.data().c2c - author;
                 var name = doc.data().name;
                 
-                
                 Orders.doc(seller + '/' + user.displayName + '/' + name).set({
                     name: name
                 });
             }
         }).then(function () {
             Orders.doc(seller + '/' + user.displayName + '/orderInfo').set({
-                
+
             });
         }).then(function () {
             usersUser.update({
