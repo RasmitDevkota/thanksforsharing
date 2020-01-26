@@ -88,7 +88,7 @@ function viewOrders() {
         querySnapshot.forEach((doc) => {
             console.log(doc.data());
         });
-    })
+    });
 };
 
 function addProduct() {
