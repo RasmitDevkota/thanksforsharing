@@ -254,7 +254,7 @@ function checkOut() {
                         var seller = doc.data().c2cauthor;
                         var name = doc.data().name;
 
-                        Orders.doc(user.displayName + '/' +  + '/' + name).set({
+                        Orders.doc(user.displayName + '/' + seller + '/' + name).set({
                             name: name
                         }).then(function () {
                             Orders.doc(seller + '/' + user.displayName + '/orderInfo').get().then(function (doc) {
