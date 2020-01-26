@@ -72,7 +72,7 @@ function viewProducts() {
                 </div>
             );
 
-            ReactDOM.render(myelement, document.getElementById('c2c-verified-cards'));
+            ReactDOM.render(product, document.getElementById('c2c-verified-cards'));
         });
     });
 };
