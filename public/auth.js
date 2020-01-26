@@ -72,7 +72,20 @@ function gToggleSignIn() {
                                 console.log("Emails doc already exists, skipped writing.");
                             }
                         }).then(function () {
-                            
+                            userDataUsers.get().then(function (doc) {
+                                if (!doc.exists) {
+                                    userDataUsers.set({
+                                        displayName: username,
+                                        email: email,
+                                    }).then(function () {
+                                        console.log("Document successfully written!");
+                                    }).catch(function (error) {
+                                        console.log("Error writing document: ", error);
+                                    });
+                                } else {
+                                    console.log("Users doc already exists, skipped writing.");
+                                }
+                            });
                         });
 
                         userDataUsers.get().then(function (doc) {
