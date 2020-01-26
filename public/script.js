@@ -18,7 +18,7 @@ var Products = db.collection("products");
 var ShoppingCart = db.collection("cart");
 
 window.onload = function () {
-    
+
     document.addEventListener('keydown', function (event) {
         const key = event.key;
         if (key == "Enter" && document.getElementById('search').value.toString().toLowerCase() != "") {
@@ -29,10 +29,10 @@ window.onload = function () {
 
 firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
-        pageLoad(true);
+        pageLoad();
     } else {
         console.log("Signed out");
-        pageLoad(false);
+        pageLoad();
     }
 });
 
