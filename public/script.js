@@ -12,7 +12,7 @@ firebase.initializeApp({
 var db = firebase.firestore();
 db.enablePersistence();
 
-var mess
+var messaging = firebase.
 
 var users = db.collection("users");
 var emails = db.collection("emails");
