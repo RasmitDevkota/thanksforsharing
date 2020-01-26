@@ -55,7 +55,7 @@ function viewProducts() {
                     <div class="mdl-card__supporting-text-c2c">Description</div>
                     <div class="mdl-card__actions mdl-card--border c2c-verified-actions">
                         <a class="c2c-verified-action">
-                            <i class="material-icons">edit</i>
+                            <i class="material-icons ">edit</i>
                         </a>
                         <a class="c2c-verified-action">
                             <i class="material-icons">open_in_new</i>
