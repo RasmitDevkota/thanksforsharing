@@ -39,11 +39,7 @@ function checkVerificationStatus() {
 
 // C2C Verified
 function viewProducts() {
-    Products.where().orderBy("keywords").get().then(function (querySnapshot) {
-        querySnapshot.forEach((doc) => {
-            showProducts(doc);
-        });
-    });
+    
 };
 
 function viewProductInPage(id) {
