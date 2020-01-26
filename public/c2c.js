@@ -83,7 +83,8 @@ function removeProduct(id) {
 };
 
 function viewOrders() {
-    document.getElementById("c2c-verified-orders").innerHTML = ""
+    document.getElementById("c2c-verified-orders").innerHTML = "";
+    
     db.collectionGroup(user.displayName).get().then(function (querySnapshot) {
         querySnapshot.forEach(function (doc) {
             var name = doc.data().productName;
