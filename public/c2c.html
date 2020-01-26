@@ -247,31 +247,69 @@
 
                     <div class="mdl-tabs__panel" id="add-product">
                         <div id="c2c-add-product" class="c2c-content-cards">
-                            <product-template id="outerDiv">
-                                <input id="productImg" type="file" name="photo" accept="image/*">
-                                <label for="produtImg">Image</label>
-                                <text-template class="vtext" id="productText">
-                                    <form action="#">
-                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                            <input class="mdl-textfield__input" type="text" id="sample3">
-                                            <label class="mdl-textfield__label" for="sample3">Text...</label>
+                                <!--Checkout Popup-->
+                                <div id="copopup" style="display: none; z-index: 5; background-color: rgba(0,0,0,0.5);"
+                                    class="popup demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+                                    <main class="popupwrap mdl-layout__content mdl-color--grey-100">
+                                        <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
+                                            <div
+                                                class="mdl-card sis mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
+                                                <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+                                
+                                                    <p>Enter the requested information below to complete your order.</p>
+                                
+                                                    <div class="checkoutForm">
+                                                        <div class="billing">
+                                                            <h4>Billing Information</h4>
+                                                            <input class="mdl-textfield__input" style="display:inline;" type="text" id="coname"
+                                                                name="fullname" placeholder="Full Name" autofocus required>
+                                                            <br /><br />
+                                                            <input class="mdl-textfield__input" style="display:inline;" type="text" id="coaddr"
+                                                                name="addr" placeholder="Address" required>
+                                                            &nbsp;&nbsp;&nbsp;
+                                                            <input class="mdl-textfield__input" style="display:inline;" type="text" id="costate"
+                                                                name="state" placeholder="State" required>
+                                                            &nbsp;&nbsp;&nbsp;
+                                                            <input class="mdl-textfield__input" style="display:inline;" type="text" id="cocity"
+                                                                name="city" placeholder="City" required>
+                                                            &nbsp;&nbsp;&nbsp;
+                                                            <input class="mdl-textfield__input" style="display:inline;" type="text" id="cozipcode"
+                                                                name="zipcode" placeholder="Zipcode" required>
+                                                            <br /><br />
+                                                        </div>
+                                                        <div class="payment">
+                                                            <h4>Payment Information</h4>
+                                                            <input class="mdl-textfield__input" style="display:inline;" type="text" id="coccn"
+                                                                name="ccn" placeholder="Credit Card Number" maxlength="16" required>
+                                                            &nbsp;&nbsp;&nbsp;
+                                                            <input class="mdl-textfield__input" style="display:inline;" type="text" id="cochn"
+                                                                name="ccnname" placeholder="Cardholder Name" required>
+                                                            &nbsp;&nbsp;&nbsp;
+                                                            <input class="mdl-textfield__input" style="display:inline;" type="text" id="coexp"
+                                                                name="exp" placeholder="Expiration Date" maxlength="4" required>
+                                                            &nbsp;&nbsp;&nbsp;
+                                                            <input class="mdl-textfield__input" style="display:inline;" type="text" id="coccv"
+                                                                name="cvv" placeholder="CVV" maxlength="4" required>
+                                                            <br /><br />
+                                                        </div>
+                                                    </div>
+                                
+                                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                                                        onclick="checkOut();">Confirm Checkout</button>
+                                                    <br /><br />
+                                
+                                                    <p>
+                                                        <li>
+                                                            <a onclick="display('copopup')">Close</a>
+                                                        </li>
+                                                    </p>
+                                
+                                                </div>
+                                            </div>
                                         </div>
-                                    </form>
-                                    <form action="#">
-                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                            <input class="mdl-textfield__input" type="text" id="sample3">
-                                            <label class="mdl-textfield__label" for="sample3">Text...</label>
-                                        </div>
-                                    </form>
-                                    <form action="#">
-                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
-                                            <label class="mdl-textfield__label" for="sample4">Number...</label>
-                                            <span class="mdl-textfield__error">Input is not a number!</span>
-                                        </div>
-                                    </form>
-                                </text-template>
-                            </product-template>
+                                    </main>
+                                </div>
+                                <!--Checkout Popup End--
                         </div class="c2c-content-cards">
                     </div>
                 </div>
