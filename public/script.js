@@ -55,8 +55,8 @@ function pageLoad(u) {
 
         var window.user = firebase.auth().currentUser;
         var windowusersUser = users.doc(user.uid);
-        var windowemailsUser = emails.doc(user.displayName);
-        var windowuserCart = ShoppingCart.doc(user.displayName);
+        var window.emailsUser = emails.doc(user.displayName);
+        var window.userCart = ShoppingCart.doc(user.displayName);
     } else {
         if (window.location.href.includes("products.html")) {
             var urlParams = new URLSearchParams(window.location.search);
