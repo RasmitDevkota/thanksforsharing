@@ -42,6 +42,7 @@ function viewProducts() {
     Products.where("c2c", "==", true).where("c2c-author", "==", user.displayName).orderBy("keywords").get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
             console.log(doc.data());
+            
 
             // <div class="mdl-card__title c2c-title">
             //     <h2 class="mdl-card__title-text c2c-title-text">Product</h2>
