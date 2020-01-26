@@ -122,5 +122,5 @@ function addProduct() {
 };
 
 function verifyOrder(id) {
-    var c = confirm("Confirm that this product has been ")
+    var c = confirm("Confirm that this product has been shipped by the seller (")
 };
