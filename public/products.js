@@ -254,13 +254,13 @@ function checkOut() {
                         var seller = doc.data().c2cauthor;
                         var name = doc.data().name;
 
-                        Orders.doc(seller + '/' + user.displayName + '/' + name).set({
+                        Orders.doc(seller + '/' +  + '/' + name).set({
                             name: name
                         }).then(function () {
                             Orders.doc(seller + '/' + user.displayName + '/orderInfo').get().then(function (doc) {
                                 if (!doc.exists) {
                                     Orders.doc(seller + '/' + user.displayName + '/orderInfo').set({
-                                        
+
                                         name: coname,
                                         address: coaddr,
                                         state: costate,
