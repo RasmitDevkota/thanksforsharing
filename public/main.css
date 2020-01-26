@@ -72,7 +72,7 @@
   .signinoptions:hover {
     background-color: rgb(31, 155, 221);
   }
-  .mdl-card.sis {
+  .mdl-card.sis:not(.ap) {
     overflow: visible;
     position: relative;
     top: -500px;
