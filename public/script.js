@@ -28,15 +28,15 @@ window.onload = function () {
 };
 
 $(document).ready(function () {
-    
-});
-firebase.auth().onAuthStateChanged(function (user) {
-    if (user) {
-        pageLoad();
-    } else {
-        console.log("Signed out");
-        pageLoad();
-    }
+
+    firebase.auth().onAuthStateChanged(function (user) {
+        if (user) {
+            pageLoad();
+        } else {
+            console.log("Signed out");
+            pageLoad();
+        }
+    });
 });
 
 function pageLoad(u) {
