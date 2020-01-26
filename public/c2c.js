@@ -75,7 +75,7 @@ function viewProducts() {
 };
 
 function removeProduct(id) {
-    confirm("Press a button!");
+    confirm("Are you sure you want to remove this? Once done, !");
 };
 
 function viewOrders() {
