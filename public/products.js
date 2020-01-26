@@ -17,11 +17,12 @@ function results(keystring) {
     if (keystring == "c2c") {
         
     } else {
-    Products.where("keywords", "array-contains-any", keystring.split(" ")).orderBy("keywords").get().then(function (querySnapshot) {
-        querySnapshot.forEach((doc) => {
-            showProducts(doc);
+        Products.where("keywords", "array-contains-any", keystring.split(" ")).orderBy("keywords").get().then(function (querySnapshot) {
+            querySnapshot.forEach((doc) => {
+                showProducts(doc);
+            });
         });
-    });
+    }
 };
 
 function showProducts(doc) {
