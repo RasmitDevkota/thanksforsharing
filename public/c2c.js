@@ -84,7 +84,7 @@ function removeProduct(id) {
 
 function viewOrders() {
     document.getElementById("c2c-verified-orders").innerHTML = "";
-
+    
     db.collectionGroup(user.displayName).get().then(function (querySnapshot) {
         querySnapshot.forEach(function (doc) {
             var name = doc.data().productName;
@@ -100,7 +100,7 @@ function viewOrders() {
                         <h4>
                             Product: ${name}<br>
                             Buyer: ${buyer}<br>
-                            <a id="show-details-${buyer}-${name}" onclick="display('details-${buyer}-${name}'); display('show-details-${buyer}-${name}'); display('hide-details-${buyer}-${name}')">Details</a>
+                            <a id="show-details-${buyer}-${name}" onclick="display('details-${buyer}-${name}'); display('show-details-${buyer}-${name}'); display('hide-details-${buyer}-${name}')">Click to view more details</a>
                             <a id="hide-details-${buyer}-${name}" style="display: none;" onclick="display('details-${buyer}-${name}'); display('show-details-${buyer}-${name}'); display('hide-details-${buyer}-${name}')">Hide</a>
                         </h4>
                         <h3 id="details-${buyer}-${name}" style="display: none;">
