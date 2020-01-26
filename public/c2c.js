@@ -7,7 +7,7 @@ function c2cStart(u, usersUser) {
                 console.log("c2c-verified");
                 document.getElementById("c2c-verified").style.display = "block";
 
-                viewProu
+                viewProducts();
 
             } else if (doc.data().totalPrice != null) {
                 console.log("c2c-unverified");
