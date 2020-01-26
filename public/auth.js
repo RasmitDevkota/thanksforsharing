@@ -51,7 +51,6 @@ function gToggleSignIn() {
             firebase.auth().onAuthStateChanged(function (user) {
                 if (user != null) {
                     togglepsi();
-                    pageLoad(true);
 
                     user.providerData.forEach(function (profile) {
                         var username = profile.displayName.toString();
