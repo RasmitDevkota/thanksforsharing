@@ -84,7 +84,8 @@ function removeProduct(id) {
 };
 
 function viewOrders() {
-    Orders.doc(user.displayName).get().then(function (doc) {
+    Orders.doc(user.displayName).get().then(function (Products.where("c2c", "==", true).where("c2cauthor", "==", user.displayName).orderBy("keywords").get().then(function (querySnapshot) {
+) {
         console.log(doc.data());
     })
 };
