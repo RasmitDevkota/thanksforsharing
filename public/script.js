@@ -53,9 +53,9 @@ function pageLoad(u) {
             console.log("index.html?");
         }
 
-        varwindow.user = firebase.auth().currentUser;
-        var window.usersUser = users.doc(user.uid);
-        var window.emailsUser = emails.doc(user.displayName);
+        window.user = firebase.auth().currentUser;
+        window.usersUser = users.doc(user.uid);
+    window.emailsUser = emails.doc(user.displayName);
         var window.userCart = ShoppingCart.doc(user.displayName);
     } else {
         if (window.location.href.includes("products.html")) {
