@@ -144,7 +144,7 @@ function showProducts(doc) {
 function showCart() {
     document.getElementById("cartItems").innerHTML = "";
     var totalPrice = 0;
-    userCart.get().then(function)
+    userCart.get().then(function(doc))
     if (userCart.docExists) {
         userCart.collection(user.displayName).get().then(function (querySnapshot) {
             querySnapshot.forEach((doc) => {
