@@ -263,7 +263,6 @@ function checkOut() {
                                         city: cocity,
                                         zipcode: cozipcode
                                     });
-                                    console.log(doc.data());
                                 }
                             });
                         });
