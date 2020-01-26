@@ -47,7 +47,6 @@ function viewProducts() {
 
             var name = doc.data().name;
 
-            ReactDOM;
             var product = (
                 <div class="demo-card-wide mdl-card mdl-shadow--2dp c2c-content-card">
                     <div class="mdl-card__title c2c-title">
