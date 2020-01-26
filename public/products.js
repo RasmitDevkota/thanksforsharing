@@ -241,7 +241,7 @@ function checkOut() {
                 var seller = doc.data().c2c - author;
                 var name = doc.data().name;
                 
-                if (Orders.doc(seller + '/' + user.displayName + '')
+                if (Orders.doc(seller + '/' + user.displayName + '/orderInfo')
                 Orders.doc(seller + '/' + user.displayName + '/' + name).set({
                     name: name
                 }).then(function () {
