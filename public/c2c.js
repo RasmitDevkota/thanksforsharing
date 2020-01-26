@@ -76,7 +76,9 @@ function viewProducts() {
 
 function removeProduct(id) {
     var c = confirm("Are you sure you want to remove this product? Once done, this action can not be reverted.");
-    if (c == )
+    if (c == true) {
+        
+    }
 };
 
 function viewOrders() {
