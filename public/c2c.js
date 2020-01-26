@@ -99,7 +99,7 @@ function viewOrders() {
                             <a id="hide-details-${buyer}-${name}" style="display: none;" onclick="display('details'); display('show-details'); display('hide-details')">Hide</a>
                         </h4>
                         <h3 id="details-${buyer}-${name}" style="display: none;">
-                            3325 Medinah Circle<br>
+                            <<br>
                             Cumming, Georgia 30041<br>
                         </h3>
                     </div>
