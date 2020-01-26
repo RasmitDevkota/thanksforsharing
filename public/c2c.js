@@ -28,16 +28,7 @@ function verifyForm() {
 };
 
 function verifyInfo() {
-    usersUser.get().then(function (doc) {
-        if (doc.data().totalPrice >= 500) {
-            console.log("c2c-verified");
-            document.getElementById("c2c-verified").style.display = "block";
-            viewProducts();
-        } else {
-            console.log("c2c-unverified");
-            document.getElementById("c2c-unverified").style.display = "block";
-        }
-    });
+    
 };
 
 function checkVerificationStatus() {
