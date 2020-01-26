@@ -26,7 +26,7 @@ function results(keystring) {
                 showProducts(doc);
             });
         });
-        Products.where("name", "", keystring.split(" ")).orderBy("keywords").get().then(function (querySnapshot) {
+        Products.where("name", "in", keystring.split(" ")).orderBy("keywords").get().then(function (querySnapshot) {
             querySnapshot.forEach((doc) => {
                 showProducts(doc);
             });
