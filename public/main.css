@@ -77,7 +77,7 @@
     position: relative;
     top: -500px;
   }
-  .mdl-grid: {
+  .mdl-grid:not() {
     max-width: 35%;
     margin: auto;
     position: fixed;
