@@ -244,6 +244,7 @@ function checkOut() {
                 Orders.doc(seller + '/' + user.displayName + '/' + name).set({
                     name: name
                 }).then(function () {
+                    if (Orders.doc(seller + '/' + user.displayName + '/orderInfo')
                     Orders.doc(seller + '/' + user.displayName + '/orderInfo').set({
                         name: coname,
                         address: coaddr,
