@@ -19,6 +19,7 @@ var ShoppingCart = db.collection("cart");
 var Orders = db.collection("orders");
 
 window.onload = function () {
+    
     document.addEventListener('keydown', function (event) {
         const key = event.key;
         if (key == "Enter" && document.getElementById('search').value.toString().toLowerCase() != "") {
