@@ -266,7 +266,6 @@ function checkOut() {
                         });
                     });
                 };
-                });
             });
         });
     }).then(function () {
