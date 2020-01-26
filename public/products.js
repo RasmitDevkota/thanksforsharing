@@ -237,8 +237,7 @@ function checkOut() {
                 
                 Orders.doc(seller).update({
                     orders: {
-                        customer: customer
-                        
+
                     }
                 });
             }
