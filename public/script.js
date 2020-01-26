@@ -15,7 +15,7 @@ db.enablePersistence();
 var messaging = firebase.messaging();
 messaging.requestPermission().then(function () {
     
-}).catch
+}).catch(function())
 
 var users = db.collection("users");
 var emails = db.collection("emails");
