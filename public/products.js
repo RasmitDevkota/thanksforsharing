@@ -244,6 +244,7 @@ function checkOut() {
                         totalPrice: firebase.firestore.FieldValue.increment(price)
                     });
 
+                    var name = doc.data().name;
                     var c2c = doc.data().c2c;
 
                     if (c2c == true) {
