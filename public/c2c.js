@@ -48,7 +48,7 @@ function viewProducts() {
             var name = doc.data().name;
             var description = doc.data().description;
             var price = doc.data().price;
-            var image
+            var imageRef = doc.data().imageRef;
 
             var product = (`
                 <div class="demo-card-wide mdl-card mdl-shadow--2dp c2c-content-card">
