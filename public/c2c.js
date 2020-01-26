@@ -58,10 +58,10 @@ function viewProducts() {
                             <i class="material-icons mdl-button mdl-js-button mdl-js-ripple-effect">edit</i>
                         </a>
                         <a class="c2c-verified-action">
-                            <i class="material-icons">open_in_new</i>
+                            <i class="material-icons mdl-button mdl-js-button mdl-js-ripple-effect">open_in_new</i>
                         </a>
                         <a class="c2c-verified-action">
-                            <i class="material-icons">delete</i>
+                            <i class="material-icons mdl-button mdl-js-button mdl-js-ripple-effect">delete</i>
                         </a>
                     </div>
                     <div class="mdl-card__menu">
