@@ -57,7 +57,7 @@ function viewOrder() {
 
 };
 
-function confirmSale() {
+function confirmSale(id) {
 
 };
 
