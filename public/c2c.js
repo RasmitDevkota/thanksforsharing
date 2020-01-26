@@ -44,7 +44,6 @@ function viewProducts() {
             console.log(doc.data());
 
             var 
-
             $('#c2c-verified-cards').append()
         });
     });
