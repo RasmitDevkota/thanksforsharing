@@ -106,7 +106,7 @@ function redirect(pagePath) {
 
 function display(elem) {
     $('#' + elem).toggle();
-    console.log(elem)
+    console.log(elem);
 };
 
 function togglepsi() {
