@@ -27,6 +27,7 @@ window.onload = function () {
     });
 };
 
+$(document).ready()
 firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
         pageLoad();
