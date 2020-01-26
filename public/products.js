@@ -232,7 +232,7 @@ function checkOut() {
     display('copopup');
     alert("Product/s ordered! Each will come at their respective times, please check individual product entries for further information.");
 
-    ShoppingCart.doc(user.displayName).collection(user.displayName).get().then(function (querySnapshot) {
+    ShoppingCart.doc(user.displayName + '/' + user.displayName).get().then(function (querySnapshot) {
         querySnapshot.forEach(function (doc) {
             var price = doc.data().price;
             usersUser.update({
