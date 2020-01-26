@@ -237,7 +237,7 @@ function checkOut() {
 
             Products.where("c2c", "==", true).orderBy("keywords").get().then(function (querySnapshot) {
                 querySnapshot.forEach((doc) => {
-                    showProducts(doc);
+                    
                 });
             });
 
