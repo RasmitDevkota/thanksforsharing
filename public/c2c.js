@@ -6,9 +6,9 @@ function c2cStart(u, usersUser) {
             if (doc.data().totalPrice >= 500) {
                 console.log("c2c-verified");
                 document.getElementById("c2c-verified").style.display = "block";
-                
+
             } else if (doc.data().totalPrice != null) {
-                console.log("c2c-verified");
+                console.log("c2c-unverified");
                 document.getElementById("c2c-unverified").style.display = "block";
             }
             console.log(doc.data().totalPrice);
