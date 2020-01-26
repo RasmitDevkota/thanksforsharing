@@ -46,7 +46,8 @@ function viewProducts() {
             console.log(doc.data());
 
             var name = doc.data().name;
-            var desc
+            var description = doc.data().description;
+            
 
             var product = (`
                 <div class="demo-card-wide mdl-card mdl-shadow--2dp c2c-content-card">
