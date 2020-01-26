@@ -105,7 +105,7 @@ function showProducts(doc) {
                         } else {
                             var atcMsg = document.querySelector('#atcMsg');
                             atcMsg.MaterialSnackbar.showSnackbar({
-                                message: 'Item already to cart',
+                                message: 'Item already in cart',
                                 timeout: 1800,
                                 actionHandler: function () {
                                     redirect('cart.html#couter' + name);
