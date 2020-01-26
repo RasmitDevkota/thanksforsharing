@@ -49,7 +49,7 @@ function pageLoad(u) {
             var urlParams = new URLSearchParams(window.location.search);
             var query = urlParams.get('query');
             if (query.includes('%20')) {
-                query.replace("%20", " ")
+                query.replace("%20", " ");
             }
             results(query.toString());
         } else if (window.location.href.includes("cart.html")) {
