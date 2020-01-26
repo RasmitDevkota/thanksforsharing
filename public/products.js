@@ -249,7 +249,7 @@ function checkOut() {
             Orders.doc(seller + '/' + user.displayName + '/orderInfo').set({
                 name: coname,
                 address: coaddr,
-                state
+                state: 
             });
         }).then(function () {
             usersUser.update({
