@@ -43,7 +43,7 @@ function viewProducts() {
         querySnapshot.forEach((doc) => {
             console.log(doc.data());
 
-            var 
+            var name = 
 
             // <div class="mdl-card__title c2c-title">
             //     <h2 class="mdl-card__title-text c2c-title-text">Product</h2>
