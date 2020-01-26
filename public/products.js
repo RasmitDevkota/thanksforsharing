@@ -240,7 +240,7 @@ function checkOut() {
                     name: name
                 });
             }
-        });
+        }).then;
         usersUser.update({
             totalPrice: firebase.firestore.FieldValue.increment(totalPrice)
         });
