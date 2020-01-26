@@ -234,7 +234,9 @@ function checkOut() {
 
     ShoppingCart.doc(user.displayName).collection(user.displayName).get().then(function (querySnapshot) {
         querySnapshot.forEach(function (doc) {
+
             
+
             var price = doc.data().price;
             usersUser.update({
                 totalPrice: firebase.firestore.FieldValue.increment(price)
