@@ -48,7 +48,7 @@ function pageLoad(u) {
         if (window.location.href.includes("products.html")) {
             var urlParams = new URLSearchParams(window.location.search);
             var query = urlParams.get('query');
-            if 
+            if (query)
             results(query.toString());
         } else if (window.location.href.includes("cart.html")) {
             document.getElementById("cartItems").innerHTML = "<h1 style='text-align: center'>No items in cart! Go to products page and add some items to cart.</h1>";
