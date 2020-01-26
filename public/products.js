@@ -25,7 +25,7 @@ function results(keystring) {
             querySnapshot.forEach((doc) => {
                 showProducts(doc);
             });
-        });
+        });\
         Products.where("name", "array-contains-any", keystring.split(" ")).orderBy("keywords").get().then(function (querySnapshot) {
             querySnapshot.forEach((doc) => {
                 showProducts(doc);
