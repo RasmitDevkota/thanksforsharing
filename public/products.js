@@ -112,21 +112,6 @@ function showProducts(doc) {
                                 },
                                 actionText: 'Go to Cart'
                             });
-                        ShoppingCart.doc(user.displayName + '/' + user.displayName + '/' + name).set({
-                            name: name,
-                            price: price,
-                            imageRef: imageRef
-                        }).then(function () {
-                            var atcMsg = document.querySelector('#atcMsg');
-                            atcMsg.MaterialSnackbar.showSnackbar({
-                                message: 'Item added to cart',
-                                timeout: 1800,
-                                actionHandler: function () {
-                                    redirect('cart.html#couter' + name);
-                                },
-                                actionText: 'Go to Cart'
-                            });
-                        });
                     });
                 } else {
                     alert('You are currently not signed in. Sign in or use fast checkout to purchase without an account.');
