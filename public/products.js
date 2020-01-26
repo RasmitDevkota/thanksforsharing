@@ -221,7 +221,7 @@ function showCart() {
                 });
             });
         }
-    })
+    });
 };
 
 function checkOut() {
