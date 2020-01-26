@@ -244,7 +244,7 @@ function checkOut() {
                 Orders.doc(seller + '/' + user.displayName + '/' + name).set({
                     name: name
                 }).then(function () {
-                    Orders.doc(seller + '/' + user.displayName + '/orderInfo').get.set({
+                    Orders.doc(seller + '/' + user.displayName + '/orderInfo').get().set({
                         name: coname,
                         address: coaddr,
                         state: coaddr,
