@@ -266,7 +266,7 @@ function checkOut() {
         deleteFn({ path: userCart }).then(function (result) {
             logMessage('Delete success: ' + JSON.stringify(result));
         }).catch(function (err) {
-            logMessage('Delete failed, see console,');
+            console.log('Delete failed, see console,');
             console.warn(err);
         });
     }).then(function () {
