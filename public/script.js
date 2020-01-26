@@ -47,8 +47,7 @@ function pageLoad(u) {
         document.getElementById("signin").innerHTML = "Sign Out";
 
         var user = firebase.auth().currentUser;
-        var usersUser = {users.doc(user.uid)
-    };
+        var usersUser = {users.doc(user.uid) };
         var emailsUser = emails.doc(user.displayName);
         var userCart = ShoppingCart.doc(user.displayName);
 
