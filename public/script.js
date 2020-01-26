@@ -50,7 +50,7 @@ function pageLoad(u) {
             var query = urlParams.get('query');
             results(query.toString());
         } else if (window.location.href.includes("cart.html")) {
-            document.getElementById("cartItems").innerHTML = "No items in cart! Go to products page and ";
+            document.getElementById("cartItems").innerHTML = "No items in cart! Go to products page and add some items to cart.";
             document.getElementById("totalPrice").innerHTML = "Total Price: $0.00";
             showCart();
         } else if (window.location.href.includes("c2c.html")) {
