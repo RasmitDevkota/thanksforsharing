@@ -32,7 +32,7 @@ function verifyInfo() {
 };
 
 function checkVerificationStatus() {
-
+    
 };
 
 // C2C Verified
