@@ -100,7 +100,9 @@ function gToggleSignIn() {
                 console.log(error);
             }
         });
-    } else
+    } else {
+        alert("There is already a user, ")
+    }
 };
 // Google Login End
 
