@@ -238,7 +238,6 @@ function checkOut() {
 
             var c2c = doc.data().c2c;
             if (c2c == true) {
-                
                 var seller = doc.data().c2c - author;
                 var name = doc.data().name;
                 
