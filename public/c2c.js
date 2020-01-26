@@ -122,5 +122,5 @@ function addProduct() {
 };
 
 function verifyOrder(id) {
-    var c = confirm("Confirm that this product has ")
+    var c = confirm("Confirm that this product has been ")
 };
