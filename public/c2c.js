@@ -40,7 +40,7 @@ function viewProducts() {
 
 };
 
-function
+function view
 
 function addProduct() {
 
