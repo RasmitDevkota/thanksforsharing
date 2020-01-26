@@ -117,5 +117,3 @@ function togglepsi() {
         }, 360);
     }
 };
-
-// Messaging, move to a different file later
