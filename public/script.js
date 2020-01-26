@@ -18,12 +18,7 @@ var Products = db.collection("products");
 var ShoppingCart = db.collection("cart");
 
 window.onload = function () {
-    if (firebase.auth().currentUser) {
-        pageLoad(true);
-    } else {
-        console.log("Signed out");
-        pageLoad(false);
-    }
+    
 
     document.addEventListener('keydown', function (event) {
         const key = event.key;
