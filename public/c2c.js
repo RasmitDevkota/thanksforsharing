@@ -95,7 +95,7 @@ function viewOrders() {
                     <div class="demo-card-event mdl-card mdl-shadow--2dp">
                         <div class="mdl-card__title mdl-card--expand" style="display: flex; flex-direction: column;">
                             <h4>
-                                Product: ${}
+                                Product: ${name}
                                 Buyer: Rasmit Devkota
                                 <a id="show-details" onclick="display('details'); display('show-details'); display('hide-details')">Click to view more details</a>
                                 <a id="hide-details" style="display: none;" onclick="display('details'); display('show-details'); display('hide-details')">Hide</a>
