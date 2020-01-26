@@ -83,9 +83,10 @@ function removeProduct(id) {
 };
 
 function viewOrders() {
-    Orders.get().then(function (querySnapshot) {
-        querySnapshot.forEach((doc) => {
-            console.log(doc.data());
+    var museums = db.collectionGroup('landmarks').where('type', '==', 'museum');
+    museums.get().then(function (querySnapshot) {
+        querySnapshot.forEach(function (doc) {
+            console.log(doc.id, ' => ', doc.data());
         });
     });
 };
