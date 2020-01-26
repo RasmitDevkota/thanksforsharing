@@ -121,7 +121,7 @@ function addProduct() {
 
 };
 
-function ver(id) {
+function verifyOrder(id) {
 
 };
 
