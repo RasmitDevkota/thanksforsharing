@@ -92,7 +92,7 @@ function showProducts(doc) {
         if (action == "addtocart") {
             elem.addEventListener('click', function () {
                 if (user != null) {
-                    ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).set({
+                    ShoppingCart.doc(user.displayName + '/' + user.displayName + '/' + name).set({
                         name: name,
                         price: price,
                         imageRef: imageRef
@@ -128,7 +128,7 @@ function showProducts(doc) {
 function showCart() {
     document.getElementById("cartItems").innerHTML = "";
     var totalPrice = 0;
-    userCart.collection(firebase.auth().currentUser.displayName).get().then(function (querySnapshot) {
+    userCart.collection(user.displayName).get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
             var name = doc.data().name.toString();
             var imageRef = doc.data().imageRef.toString();
@@ -171,7 +171,7 @@ function showCart() {
             document.getElementById(removeWrapper.id).appendChild(remove);
 
             remove.addEventListener('click', function () {
-                ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).delete().then(function () {
+                ShoppingCart.doc(user.displayName + '/' + user.displayName + '/' + name).delete().then(function () {
                     document.getElementById(outerDiv.id).style.display = "none";
                     totalPrice -= price;
                     document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
@@ -185,7 +185,7 @@ function showCart() {
                         message: 'Item removed from cart',
                         timeout: 1700,
                         actionHandler: function () {
-                            ShoppingCart.doc(firebase.auth().currentUser.displayName + '/' + firebase.auth().currentUser.displayName + '/' + name).set({
+                            ShoppingCart.doc(user.displayName + '/' + user.displayName + '/' + name).set({
                                 name: name,
                                 price: price,
                                 imageRef: imageRef
@@ -208,7 +208,7 @@ function checkOut() {
     display('copopup');
     alert("Product/s ordered! Each will come at their respective times, please check individual product entries for further information");
 
-    userCart.collection(firebase.auth().currentUser.displayName).get().then(function (querySnapshot) {
+    userCart.collection(user.displayName).get().then(function (querySnapshot) {
         var totalPrice = 0;
         querySnapshot.forEach((doc) => {
             var price = doc.data().price;
