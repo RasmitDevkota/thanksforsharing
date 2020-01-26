@@ -221,7 +221,7 @@ function showCart() {
 };
 
 function checkOut() {
-    var coname = 
+    var coname = document.get
     display('copopup');
     alert("Product/s ordered! Each will come at their respective times, please check individual product entries for further information");
 
