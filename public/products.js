@@ -235,7 +235,11 @@ function checkOut() {
     ShoppingCart.doc(user.displayName).collection(user.displayName).get().then(function (querySnapshot) {
         querySnapshot.forEach(function (doc) {
 
-            
+            Products.where("c2c", "==", true).orderBy("keywords").get().then(function (querySnapshot) {
+                querySnapshot.forEach((doc) => {
+                    showProducts(doc);
+                });
+            });
 
             var price = doc.data().price;
             usersUser.update({
