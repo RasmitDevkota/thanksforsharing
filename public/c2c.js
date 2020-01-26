@@ -94,7 +94,6 @@ function addProduct() {
 
 };
 
-
 function confirmShipment(id) {
 
 };
