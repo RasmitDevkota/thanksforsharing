@@ -221,7 +221,6 @@ function showCart() {
                 });
             });
         } else {
-            userCart.
             userCart.collection(user.displayName).get().then(function (querySnapshot) {
                 querySnapshot.forEach((doc) => {
                     var name = doc.data().name.toString();
