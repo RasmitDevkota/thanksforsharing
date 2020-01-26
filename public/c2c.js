@@ -74,14 +74,6 @@ function viewProducts() {
     });
 };
 
-function viewProductInPage(id) {
-
-}
-
-function addProduct() {
-
-};
-
 function removeProduct(id) {
 
 };
@@ -93,6 +85,14 @@ function viewOrders() {
 function confirmSale(id) {
 
 };
+function viewProductInPage(id) {
+
+}
+
+function addProduct() {
+
+};
+
 
 function confirmShipment(id) {
 
