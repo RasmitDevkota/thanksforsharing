@@ -265,7 +265,7 @@ function checkOut() {
                                 }
                             });
                         });
-                    };);
+                    };;
             });
         });
     }).then(function () {
