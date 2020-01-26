@@ -86,7 +86,9 @@ function gToggleSignIn() {
                                     console.log("Users doc already exists, skipped writing.");
                                 }
                             });
-                        }).then(function () { pageLoad(true) });
+                        }).then(function () {
+                            pageLoad(true)
+                        });
                     });
                 };
             });
