@@ -85,6 +85,7 @@ function viewOrders() {
 function confirmSale(id) {
 
 };
+
 function viewProductInPage(id) {
 
 }
