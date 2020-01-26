@@ -94,13 +94,20 @@ function showProducts(doc) {
                 if (user != null) {
                     ShoppingCart.doc(user.displayName + '/' + user.displayName + '/' + name).get().then(function (doc) {
                         if (!doc.exists) {
-                            userDataUsers.set({
-                                displayName: username,
-                                email: email,
+                            ShoppingCart.doc(user.displayName + '/' + user.displayName + '/' + name).set({
+                                name: name,
+                                price: price,
+                                imageRef: imageRef
                             }).then(function () {
-                                console.log("Document successfully written!");
-                            }).catch(function (error) {
-                                console.log("Error writing document: ", error);
+                                var atcMsg = document.querySelector('#atcMsg');
+                                atcMsg.MaterialSnackbar.showSnackbar({
+                                    message: 'Item added to cart',
+                                    timeout: 1800,
+                                    actionHandler: function () {
+                                        redirect('cart.html#couter' + name);
+                                    },
+                                    actionText: 'Go to Cart'
+                                });
                             });
                         } else {
                             var atcMsg = document.querySelector('#atcMsg');
