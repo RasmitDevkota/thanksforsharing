@@ -259,7 +259,7 @@ function checkOut() {
                 });
             }
         })
-    })then(function (querySnapshot) {
+    }).then(function (querySnapshot) {
         querySnapshot.forEach(function (doc) {
             doc.delete();
         })
