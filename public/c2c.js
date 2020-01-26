@@ -68,7 +68,7 @@ function viewProducts() {
             //     </button>
             // </div>
 
-            var outerDiv = "<div id='c2c' class='demo-card-wide mdl-card mdl-shadow--2dp c2c-content- card'></div>";
+            var outerDiv = "<div id='c2c-verified' class='demo-card-wide mdl-card mdl-shadow--2dp c2c-content- card'></div>";
             $('#c2c-verified-cards').append(outerDiv);
 
             var title = "<div class='mdl-card__title c2c-title'></div>";
