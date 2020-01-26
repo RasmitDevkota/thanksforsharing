@@ -39,7 +39,7 @@ function checkVerificationStatus() {
 
 // C2C Verified
 function viewProducts() {
-    Products.where("c2c", "is", true).where()
+    Products.where("c2c", "==", true).where()
 };
 
 function viewProductInPage(id) {
