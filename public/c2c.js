@@ -37,7 +37,6 @@ function checkVerificationStatus() {
             document.getElementById("c2c-verified").style.display = "block";
             viewProducts();
         } else {
-            console.log("c2c-unverified");
             document.getElementById("c2c-unverified").style.display = "block";
         }
     });
