@@ -15,6 +15,11 @@ function results(keystring) {
     document.getElementById("products").innerHTML = "";
     console.log(keystring.split(" "));
 
+    Products.where("name", "in", keystring.split(" ")).orderBy("keywords").get().then(function (querySnapshot) {
+        querySnapshot.forEach((doc) => {
+            showProducts(doc);
+        });
+    });
     if (keystring == "c2c") {
         Products.where("c2c", "==", true).orderBy("keywords").get().then(function (querySnapshot) {
             querySnapshot.forEach((doc) => {
