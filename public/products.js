@@ -26,6 +26,11 @@ function results(keystring) {
                 showProducts(doc);
             });
         });
+        Products.where("keywords", "array-contains-any", keystring.split(" ")).orderBy("keywords").get().then(function (querySnapshot) {
+            querySnapshot.forEach((doc) => {
+                showProducts(doc);
+            });
+        });
     }
 };
 
