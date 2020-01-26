@@ -43,10 +43,10 @@ function checkVerificationStatus() {
 function viewProducts() {
     Products.where("c2c", "==", true).where("c2cauthor", "==", user.displayName).orderBy("keywords").get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
-            ar name = doc.data().name;
+            var name = doc.data().name;
             var description = doc.data().description;
             var price = doc.data().price;
-            var imageRef = doc.data().imageRef;v
+            var imageRef = doc.data().imageRef;
 
             document.getElementById("c2c-verified-cards").innerHTML += `
                 <div id="${name}" class="demo-card-wide mdl-card mdl-shadow--2dp c2c-content-card">
@@ -88,7 +88,7 @@ function viewOrders() {
             if (doc.id == 'orderInfo') {
                 console.log("Order Info: ", doc.data());
             } else {
-
+                
                 document.getElementById("c2c-verified-orders").innerHTML += `
                     <div class="demo-card-event mdl-card mdl-shadow--2dp">
                         <div class="mdl-card__title mdl-card--expand" style="display: flex; flex-direction: column;">
