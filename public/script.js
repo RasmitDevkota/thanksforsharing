@@ -53,7 +53,7 @@ function pageLoad(u) {
             console.log("index.html?");
         }
 
-    window.user = firebase.auth().currentUser;
+        varwindow.user = firebase.auth().currentUser;
         var window.usersUser = users.doc(user.uid);
         var window.emailsUser = emails.doc(user.displayName);
         var window.userCart = ShoppingCart.doc(user.displayName);
