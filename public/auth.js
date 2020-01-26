@@ -159,7 +159,7 @@ function handleSignUp() {
                 console.log(user.displayName);
             });
         }).then(function () {
-            togglepsi();
+            display('signup');
             pageLoad(true);
         });
     }).catch(function (error) {
