@@ -265,7 +265,6 @@ function checkOut() {
         userCart.collection(user.displayName).get().then(function (querySnapshot) {
             querySnapshot.forEach(function (doc) {
                 var name = doc.data().name;
-                console.log(name);
                 ShoppingCart.doc(user.displayName + '/' + user.displayName + '/' + name).delete();
             });
         });
