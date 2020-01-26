@@ -41,7 +41,7 @@ function pageLoad(u) {
         console.log(user);
         var usersUser = users.doc(user.uid);
         var emailsUser = emails.doc(user.displayName);
-        var userCart = ShoppingCart.doc(firebase.auth().currentUser.displayName);
+        var userCart = ShoppingCart.doc(user.displayName);
 
         if (window.location.href.includes("products.html")) {
             var urlParams = new URLSearchParams(window.location.search);
