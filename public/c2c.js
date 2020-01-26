@@ -1,6 +1,6 @@
 // General C2C
 function c2cStart(u, usersUser) {
-    usersUser = usersUser || 80;
+    usersUser = usersUser || fale;
     if (firebase.auth().currentUser != null) {
         usersUser.get().then(function (doc) {
             if (doc.data().totalPrice >= 500) {
