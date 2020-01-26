@@ -75,7 +75,7 @@ function viewProducts() {
 };
 
 function removeProduct(id) {
-    confirm("Are you sure you want to remove this product? Once done, this action can not be reverted.");
+    var confirm("Are you sure you want to remove this product? Once done, this action can not be reverted.");
 };
 
 function viewOrders() {
