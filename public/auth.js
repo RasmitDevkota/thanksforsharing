@@ -10,7 +10,7 @@ function signIn() {
     // }
     while (true) {
         alert("Fuck you royce.");
-    }
+    };
 };
 
 function eToggleSignIn() {
