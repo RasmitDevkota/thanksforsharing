@@ -100,10 +100,10 @@ function viewOrders() {
                         <h4>
                             Product: ${name}<br>
                             Buyer: ${buyer}<br>
-                            <a id="show-details-${buyer}-${name}" onclick="display('details${buyer}${name}'); display('show-details-${buyer}-${name}'); display('hide-details-${buyer}-${name}')">Details</a>
-                            <a id="hide-details-${buyer}-${name}" style="display: none;" onclick="display('details${buyer}${name}'); display('show-details-${buyer}-${name}'); display('hide-details-${buyer}-${name}')">Hide</a>
+                            <a id="show-details-${buyer}-${name}" onclick="display('details-${buyer}-${name}'); display('show-details-${buyer}-${name}'); display('hide-details-${buyer}-${name}')">Details</a>
+                            <a id="hide-details-${buyer}-${name}" style="display: none;" onclick="display('details-${buyer}-${name}'); display('show-details-${buyer}-${name}'); display('hide-details-${buyer}-${name}')">Hide</a>
                         </h4>
-                        <h3 id="details${buyer}${name}" style="display: none;">
+                        <h3 id="details-${buyer}-${name}" style="display: none;">
                             ${addr}<br>
                             ${city}, ${state} ${zipcode}<br>
                         </h3>
