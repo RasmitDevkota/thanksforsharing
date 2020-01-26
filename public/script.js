@@ -48,6 +48,7 @@ function pageLoad(u) {
         if (window.location.href.includes("products.html")) {
             var urlParams = new URLSearchParams(window.location.search);
             var query = urlParams.get('query');
+            console.log(query);
             if (query.includes('%20')) {
                 query.replace("%20", " ");
                 console.log(query);
