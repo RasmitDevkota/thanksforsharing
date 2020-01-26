@@ -67,7 +67,7 @@ function viewProducts() {
                             <i class="material-icons mdl-button mdl-js-button mdl-js-ripple-effect">delete</i>
                         </a>
                     </div>
-                    <div class="mdl-card__menu" style="color: #f5f5f5; background-color: rgba(0, 0, 0, 0.5);">
+                    <div class="mdl-card__menu" style="color: ##ededed; background-color: rgba(0, 0, 0, 0.5);">
                         $${price}
                     </div>
                 </div>
