@@ -344,7 +344,7 @@ function checkOut() {
         document.getElementById("totalPrice").innerHTML = "Total Price: $0.00";
     }).then(function () {
         userCart.collection(user.displayName).get().then(function (querySnapshot) {
-            querySnapshot.forEach(function (doc) => {
+            querySnapshot.forEach(function (doc) {
                 doc.delete();
             })
         });
