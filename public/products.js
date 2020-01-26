@@ -274,7 +274,7 @@ function checkOut() {
     });
 };
 
-// FIX THE IBT WEBSITE RASMIT ALTER PLEASE
+// FIX THE IBT WEBSITE RASMIT LATER PLEASE
 
 // function rate(val) {
 //     Products.doc(productid).update({
