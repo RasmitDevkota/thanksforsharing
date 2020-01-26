@@ -84,7 +84,7 @@ function removeProduct(id) {
 };
 
 function viewOrders() {
-    Orders.doc(user.displayName)
+    Orders.doc(user.displayName).get().
 };
 
 function addProduct() {
