@@ -20,11 +20,8 @@ var ShoppingCart = db.collection("cart");
 window.onload = function () {
     if (user) {
         pageLoad(true);
-    } else {
-        console.log("Signed out");
-        pageLoad(false);
     }
-    
+
     document.addEventListener('keydown', function (event) {
         const key = event.key;
         if (key == "Enter" && document.getElementById('search').value.toString().toLowerCase() != "") {
