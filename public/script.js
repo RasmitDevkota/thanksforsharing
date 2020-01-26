@@ -70,7 +70,7 @@ function pageLoad(u) {
             } else {
                 console.log("index.html?");
             }
-        }}
+        }
 };
 
 function search() {
