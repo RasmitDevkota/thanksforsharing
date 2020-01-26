@@ -35,7 +35,7 @@ firebase.auth().onAuthStateChanged(function (user) {
     }
 });
 
-function pageLoad(u) {
+function pageLoad() {
     if (u == true) {
         document.getElementById("signin").innerHTML = "Sign Out";
 
