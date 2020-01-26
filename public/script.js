@@ -50,6 +50,7 @@ function pageLoad(u) {
             var query = urlParams.get('query');
             if (query.includes('%20')) {
                 query.replace("%20", " ");
+                console.
             }
             results(query.toString());
         } else if (window.location.href.includes("cart.html")) {
