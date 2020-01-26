@@ -122,9 +122,9 @@ function addProduct() {
 };
 
 function verifyOrder(id) {
-    
+
 };
 
 function confirmShipment(id) {
-
+    
 };
