@@ -87,7 +87,6 @@ function gToggleSignIn() {
                                 }
                             });
                         }).then(pageLoad(true));
-                        ;
                     });
                 };
             });
