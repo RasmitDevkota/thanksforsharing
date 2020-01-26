@@ -39,7 +39,7 @@ function checkVerificationStatus() {
 
 // C2C Verified
 function viewProducts() {
-    Products.where("keywords", "array-contains-any", keystring.split(" ")).orderBy("keywords").get().then(function (querySnapshot) {
+    Products.where("c2c", "==", true).orderBy("keywords").get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
             showProducts(doc);
         });
