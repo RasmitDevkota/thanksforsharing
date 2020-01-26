@@ -14,6 +14,7 @@ db.enablePersistence();
 
 var messaging = firebase.messaging();
 
+messaging.usePublicVapidKey('BONZTuA0A2YLkuZGw_CejH2IaRLl6DSfr3ziXT1ARqT3jnmZcBfHfnBFllN5NshehA8wSYk2MRJWTTpyASfhtz8');
 
 var users = db.collection("users");
 var emails = db.collection("emails");
