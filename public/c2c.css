@@ -36,7 +36,9 @@
 .details {
     height: 40%;
 }
-
+.verifyButton {
+    height: 20%
+}
 .demo-card-wide.mdl-card {
     margin-left: 1%;
     margin-right: 1%;
