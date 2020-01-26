@@ -73,7 +73,7 @@ function viewProducts() {
                 </div>
             `;
 
-            document.get.inner
+            document.getElementById.inner
         });
     });
 };
