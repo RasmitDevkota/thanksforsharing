@@ -39,7 +39,6 @@ function checkVerificationStatus() {
 
 // C2C Verified
 function viewProducts() {
-
 };
 
 function viewProductInPage(id) {
