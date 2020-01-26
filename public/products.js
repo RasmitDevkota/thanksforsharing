@@ -143,7 +143,7 @@ function showProducts(doc) {
 
 function showCart() {
     document.getElementById("cartItems").innerHTML = "";
-    var totalPrice = 0;
+    var totalPrice = 0; userCart.collection(user.displayName)
     userCart.collection(user.displayName).get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
             var name = doc.data().name.toString();
