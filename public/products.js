@@ -263,12 +263,7 @@ function checkOut() {
         });
     }).then(function () {
         var deleteFn = firebase.functions().httpsCallable('recursiveDelete');
-        deleteFn({ path: userCart }).then(function (result) {
-            console.log('Delete success: ' + JSON.stringify(result));
-        }).catch(function (err) {
-            console.log('Delete failed, see console,');
-            console.warn(err);
-        });
+        deleteFn({ path: userCart });
     }).then(function () {
         document.getElementById("cartItems").innerHTML = "<h1 style='text-align: center'>No items in cart! Head to the products page to buy something!</h1>";
         document.getElementById("totalPrice").innerHTML = "Total Price: $0.00";
