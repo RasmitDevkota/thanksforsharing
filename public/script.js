@@ -69,7 +69,6 @@ function pageLoad(u) {
                 document.getElementById("c2c-nouser").style.display = "block";
             }
         } else {
-            
             console.log("index.html?");
         }
     } else {
