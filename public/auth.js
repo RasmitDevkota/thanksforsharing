@@ -8,9 +8,6 @@ function signIn() {
         console.log(document.getElementById("signin").innerHTML);
         console.log(firebase.auth().currentUser);
     }
-    while (true) {
-        alert("Fuck you royce.");
-    };
 };
 
 function eToggleSignIn() {
