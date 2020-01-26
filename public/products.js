@@ -261,7 +261,7 @@ function checkOut() {
                 });
             };
         });
-    }).then(function deleteAtPath(path) {
+    }).then(function (path) {
         var deleteFn = firebase.functions().httpsCallable('recursiveDelete');
         deleteFn({ path: path })
             .then(function (result) {
