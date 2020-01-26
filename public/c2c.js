@@ -88,7 +88,7 @@ function viewOrders() {
             if (doc.id == 'orderInfo') {
                 console.log("Order Info: ", doc.data());
             } else {
-                document.getElementById("")
+                document.getElementById("c2c-")
             }
         });
     });
