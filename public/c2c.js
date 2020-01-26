@@ -70,3 +70,20 @@ function confirmShipment(id) {
 
 // Messaging
 messaging.usePublicVapidKey('BONZTuA0A2YLkuZGw_CejH2IaRLl6DSfr3ziXT1ARqT3jnmZcBfHfnBFllN5NshehA8wSYk2MRJWTTpyASfhtz8');
+
+messaging.getToken().then((currentToken) => {
+    if (currentToken) {
+        sendTokenToServer(currentToken);
+        updateUIForPushEnabled(currentToken);
+    } else {
+        // Show permission request.
+        console.log('No Instance ID token available. Request permission to generate one.');
+        // Show permission UI.
+        updateUIForPushPermissionRequired();
+        setTokenSentToServer(false);
+    }
+}).catch((err) => {
+    console.log('An error occurred while retrieving token. ', err);
+    showToken('Error retrieving Instance ID token. ', err);
+    setTokenSentToServer(false);
+});
