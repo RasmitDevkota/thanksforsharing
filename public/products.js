@@ -221,7 +221,7 @@ function showCart() {
 };
 
 function checkOut() {
-    var coname = document.getElementById
+    var coname = document.getElementById("coname")
     display('copopup');
     alert("Product/s ordered! Each will come at their respective times, please check individual product entries for further information");
 
