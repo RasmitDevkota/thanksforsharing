@@ -83,7 +83,7 @@ function removeProduct(id) {
 };
 
 function viewOrders() {
-    var userOrders = db.collectionGroup('landmarks').where('type', '==', 'museum');
+    var userOrders = db.collectionGroup().where('type', '==', 'museum');
     userOrders.get().then(function (querySnapshot) {
         querySnapshot.forEach(function (doc) {
 
