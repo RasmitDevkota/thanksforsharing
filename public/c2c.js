@@ -35,8 +35,6 @@ function checkVerificationStatus() {
         if (doc.data().totalPrice >= 500) {
             document.getElementById("c2c-verified").style.display = "block";
             viewProducts();
-        } else {
-            document.getElementById("c2c-unverified").style.display = "block";
         }
     });
 };
