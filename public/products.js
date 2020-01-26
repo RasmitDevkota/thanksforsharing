@@ -236,7 +236,7 @@ function checkOut() {
                 var name = doc.data().name;
                 
                 Orders.doc(seller + '/' + user.displayName + '/' + name).set({
-                    
+                    name: 
                 });
             }
         });
