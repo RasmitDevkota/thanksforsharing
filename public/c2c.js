@@ -71,7 +71,7 @@ function viewProducts() {
                         $${price}
                     </div>
                 </div>
-            `);
+            `;
 
             $("c2c-verified-cards").append(product);
         });
