@@ -237,7 +237,36 @@ function checkOut() {
 
             Products.where("c2c", "==", true).orderBy("keywords").get().then(function (querySnapshot) {
                 querySnapshot.forEach((doc) => {
-                    
+                    var price = doc.data().price;
+                    usersUser.update({
+                        totalPrice: firebase.firestore.FieldValue.increment(price)
+                    });
+
+                    var c2c = doc.data().c2c;
+
+                    if (c2c == true) {
+                        var seller = doc.data().c2cauthor;
+                        var name = doc.data().name;
+
+                        console.log(c2c, " ", seller, " ", name);
+
+                        Orders.doc(seller + '/' + user.displayName + '/' + name).set({
+                            name: name
+                        }).then(function () {
+                            Orders.doc(seller + '/' + user.displayName + '/orderInfo').get().then(function (doc) {
+                                if (!doc.exists) {
+                                    Orders.doc(seller + '/' + user.displayName + '/orderInfo').set({
+                                        name: coname,
+                                        address: coaddr,
+                                        state: costate,
+                                        city: cocity,
+                                        zipcode: cozipcode
+                                    });
+                                    console.log(doc.data());
+                                }
+                            });
+                        });
+                    };
                 });
             });
 
