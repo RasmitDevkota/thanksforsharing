@@ -224,7 +224,7 @@ function showCart() {
 
 function checkOut() {
     var coname = document.getElementById("coname").value;
-    var coaddr = document.getElementById("coname").value;
+    var coaddr = document.getElementById("coaddr").value;
     var costate = document.getElementById("coname").value;
     var cocity = document.getElementById("coname").value;
     var cozipcode = document.getElementById("coname").value;
