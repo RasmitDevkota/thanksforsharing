@@ -83,7 +83,6 @@ function removeProduct(id) {
 };
 
 function viewOrders() {
-    var userOrders = db.collectionGroup(user.displayName);
     db.collectionGroup(user.displayName).get().then(function (querySnapshot) {
         querySnapshot.forEach(function (doc) {
 
