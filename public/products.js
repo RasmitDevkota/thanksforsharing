@@ -264,7 +264,7 @@ function checkOut() {
     }).then(function () {
         var deleteFn = firebase.functions().httpsCallable('recursiveDelete');
         deleteFn({ path: userCart }).then(function (result) {
-            logMessage('Delete success: ' + JSON.stringify(result));
+            console.log('Delete success: ' + JSON.stringify(result));
         }).catch(function (err) {
             console.log('Delete failed, see console,');
             console.warn(err);
