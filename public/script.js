@@ -53,7 +53,6 @@ function pageLoad(u) {
             console.log("index.html?");
         }
 
-
         var user = firebase.auth().currentUser;
         var usersUser = users.doc(user.uid);
         var emailsUser = emails.doc(user.displayName);
