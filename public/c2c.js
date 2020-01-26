@@ -124,6 +124,6 @@ function addProduct() {
 function verifyOrder(id) {
     var c = confirm("Confirm that this product has been shipped by the seller (not necessarily received by the buyer)?");
     if (c == true) {
-        $('#order-' + id).remove();
+        // $('#order-' + id).remove();
     }
 };
