@@ -105,7 +105,7 @@ function viewOrders() {
                             Details<br>
                             ${addr}<br>
                             ${city}, ${state} ${zipcode}<br>
-                        </h3>
+                        </h5>
                     </div>
                     <div class="mdl-card__actions mdl-card--border">
                         <div class="mdl-layout-spacer"></div>
