@@ -20,6 +20,7 @@ function results(keystring) {
             showProducts(doc);
         });
     });
+    
     if (keystring == "c2c") {
         Products.where("c2c", "==", true).orderBy("keywords").get().then(function (querySnapshot) {
             querySnapshot.forEach((doc) => {
