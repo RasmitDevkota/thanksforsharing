@@ -106,6 +106,7 @@ function search() {
 };
 
 function redirect(pagePath) {
+    if
     window.location.replace(pagePath);
 };
 
