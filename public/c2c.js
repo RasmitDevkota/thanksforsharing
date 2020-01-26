@@ -100,7 +100,7 @@ function viewOrders() {
                                 <a id="show-details-${buyer}-${name}" onclick="display('details'); display('show-details'); display('hide-details')">Click to view more details</a>
                                 <a id="hide-details-${buyer}-${name}" style="display: none;" onclick="display('details'); display('show-details'); display('hide-details')">Hide</a>
                             </h4>
-                            <h3 id="details-${name}" style="display: none;">
+                            <h3 id="details-${name}${name}" style="display: none;">
                                 3325 Medinah Circle<br>
                                 Cumming, Georgia 30041<br>
                             </h3>
