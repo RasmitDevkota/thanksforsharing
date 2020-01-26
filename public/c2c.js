@@ -88,7 +88,8 @@ function viewOrders() {
             if (doc.id == 'orderInfo') {
                 console.log("Order Info: ", doc.data());
             } else {
-            console.log(doc.id);
+                console.log(doc.id);
+            }
         });
     });
 };
