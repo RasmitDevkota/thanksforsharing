@@ -247,7 +247,7 @@ function checkOut() {
             }
         }).then(function () {
             Orders.doc(seller + '/' + user.displayName + '/orderInfo').set({
-
+                
             });
         }).then(function () {
             usersUser.update({
