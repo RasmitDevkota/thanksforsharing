@@ -245,7 +245,7 @@ function checkOut() {
                     name: name
                 }).then(function () {
                     Orders.doc(seller + '/' + user.displayName + '/orderInfo').get().then(function (doc) {
-                        
+                      if (!doc.exists)  
                     })
                 });
             }
