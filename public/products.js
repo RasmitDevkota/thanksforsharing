@@ -257,7 +257,8 @@ function checkOut() {
                               state: costate,
                               city: cocity,
                               zipcode: cozipcode
-                          });
+                            });
+                            console.log(doc.data());
                         }
                     });
                 });
