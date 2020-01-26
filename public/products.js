@@ -13,7 +13,7 @@ function filter(field) {
 
 function results(keystring) {
     document.getElementById("products").innerHTML = "";
-    console.log(typepof keystring);
+    console.log(typeof keystring);
 
     if (keystring == "c2c") {
         Products.where("c2c", "==", true).orderBy("keywords").get().then(function (querySnapshot) {
