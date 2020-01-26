@@ -257,7 +257,7 @@ function checkOut() {
                         Orders.doc(user.displayName + '/' + seller + '/' + name).set({
                             name: name
                         }).then(function () {
-                            Orders.doc(seller + '/' + user.displayName + '/orderInfo').get().then(function (doc) {
+                            Orders.doc(user.displayName + '/' + seller + '/orderInfo').get().then(function (doc) {
                                 if (!doc.exists) {
                                     Orders.doc(seller + '/' + user.displayName + '/orderInfo').set({
                                         name: coname,
