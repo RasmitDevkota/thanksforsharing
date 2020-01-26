@@ -267,6 +267,7 @@ function checkOut() {
     }).then(function () {
         userCart.collection(user.displayName).get().then(function (querySnapshot) {
             querySnapshot.forEach(function (doc) {
+                if (doc.)
                 doc.delete();
             })
         });
