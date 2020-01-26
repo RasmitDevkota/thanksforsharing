@@ -86,7 +86,7 @@ function viewOrders() {
     db.collectionGroup(user.displayName).get().then(function (querySnapshot) {
         querySnapshot.forEach(function (doc) {
             var name = doc.data().productName;
-            var buyer = doc.buyer
+            var buyer = doc.data().
 
             document.getElementById("c2c-verified-orders").innerHTML += `
                 <div id="${name}" class="demo-card-event mdl-card mdl-shadow--2dp">
