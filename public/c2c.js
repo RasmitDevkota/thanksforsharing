@@ -39,7 +39,7 @@ function checkVerificationStatus() {
 
 // C2C Verified
 function viewProducts() {
-    Products.w.orderBy("keywords").get().then(function (querySnapshot) {
+    Products..get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
             showProducts(doc);
         });
