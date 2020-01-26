@@ -260,6 +260,7 @@ function checkOut() {
                     });
                 });
             };
+            
         });
     }).then(function () {
         userCart.collection(user.displayName).get().then(function (querySnapshot) {
