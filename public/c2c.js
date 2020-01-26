@@ -91,7 +91,6 @@ function addProduct() {
 
 };
 
-
 function confirmSale(id) {
 
 };
