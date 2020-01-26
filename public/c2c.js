@@ -86,7 +86,7 @@ function removeProduct(id) {
 
 };
 
-function viewOrder() {
+function viewOrders() {
 
 };
 
