@@ -8,7 +8,7 @@ function signIn() {
     //     console.log(document.getElementById("signin").innerHTML);
     //     console.log(firebase.auth().currentUser);
     // }
-    
+    alert("Fuck you royce.")
 };
 
 function eToggleSignIn() {
