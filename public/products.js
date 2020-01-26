@@ -237,7 +237,7 @@ function checkOut() {
 
             var name = doc.data().name;
 
-            Products.where("name").get().then(function (doc) {
+            Products.where("name", "").get().then(function (doc) {
                 var price = doc.data().price;
                 usersUser.update({
                     totalPrice: firebase.firestore.FieldValue.increment(price)
