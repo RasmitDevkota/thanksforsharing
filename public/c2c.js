@@ -94,7 +94,7 @@ function viewProducts() {
                         $${price}
                     </div>
                 </div>
-            );, document.getElementById('c2c-verified-cards'));
+            ), document.getElementById('c2c-verified-cards'));
         });
     });
 };
