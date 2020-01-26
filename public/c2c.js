@@ -93,7 +93,7 @@ function viewOrders() {
             var zipcode = doc.data().zipcode;
 
             document.getElementById("c2c-verified-orders").innerHTML += `
-                <div id="${name}" class="demo-card-event mdl-card mdl-shadow--2dp c2c-content-card">
+                <div id="order-${name}" class="demo-card-event mdl-card mdl-shadow--2dp c2c-content-card">
                     <div class="mdl-card__title mdl-card--expand" style="display: flex; flex-direction: column;">
                         <h4>
                             Product: ${name}
