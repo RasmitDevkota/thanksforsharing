@@ -263,7 +263,7 @@ function checkOut() {
         });
     }).then(function () {
         var deleteFn = firebase.functions().httpsCallable('recursiveDelete');
-        deleteFn({ path: sho }).then(function (result) {
+        deleteFn({ path: Sh }).then(function (result) {
             logMessage('Delete success: ' + JSON.stringify(result));
         }).catch(function (err) {
             logMessage('Delete failed, see console,');
