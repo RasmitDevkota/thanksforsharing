@@ -108,7 +108,7 @@ function viewOrders() {
                     </div>
                     <div class="mdl-card__actions mdl-card--border">
                         <div class="mdl-layout-spacer"></div>
-                        <i class="material-icons" onclick="verifyOrder(${buyer}-${name})" style="cursor: pointer;">check</i>
+                        <i class="material-icons mdl-button mdl-js-button mdl-js-ripple-effect" onclick="verifyOrder(${buyer}-${name})" style="cursor: pointer;">check</i>
                         <div class="mdl-layout-spacer"></div>
                     </div>
                 </div>
