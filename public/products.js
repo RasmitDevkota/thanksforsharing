@@ -232,7 +232,7 @@ function checkOut() {
 
     userCart.collection(user.displayName).get().then(function (querySnapshot) {
         var totalPrice = 0;
-        querySnapshot.forEach((doc) => {
+        querySnapshot.forEach(function(doc) {
             var price = doc.data().price;
             totalPrice += price;
 
