@@ -106,7 +106,7 @@ function viewOrders() {
                             </h3>
                         </div>
                         <div class="mdl-card__actions mdl-card--border">
-                            <div class="mdl-layout-spacer"></div>
+                            <div id=""class="mdl-layout-spacer"></div>
                             <i class="material-icons" onclick="verifyOrder()" style="cursor: pointer;">check</i>
                             <div class="mdl-layout-spacer"></div>
                         </div>
