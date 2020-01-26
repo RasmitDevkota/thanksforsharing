@@ -1,13 +1,13 @@
 function signIn() {
-    if (firebase.auth().currentUser == null){
-        console.log(firebase.auth().currentUser);
-        togglepsi();
-    } else {
-        firebase.auth().signOut();
-        $('#signin').text("Sign In");
-        console.log(document.getElementById("signin").innerHTML);
-        console.log(firebase.auth().currentUser);
-    }
+    // if (firebase.auth().currentUser == null){
+    //     console.log(firebase.auth().currentUser);
+    //     togglepsi();
+    // } else {
+    //     firebase.auth().signOut();
+    //     $('#signin').text("Sign In");
+    //     console.log(document.getElementById("signin").innerHTML);
+    //     console.log(firebase.auth().currentUser);
+    // }
 };
 
 function eToggleSignIn() {
