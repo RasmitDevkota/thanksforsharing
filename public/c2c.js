@@ -97,7 +97,7 @@ function viewOrders() {
                     <div class="mdl-card__title mdl-card--expand" style="display: flex; flex-direction: column;">
                         <h4>
                             Product: ${name}<br>
-                            Buyer: ${buyer}
+                            Buyer: ${buyer}<br>
                             <a id="show-details-${buyer}-${name}" onclick="display('details-${buyer}-${name}'); display('show-details-${buyer}-${name}'); display('hide-details-${buyer}-${name}')">Click to view more details</a>
                             <a id="hide-details-${buyer}-${name}" style="display: none;" onclick="display('details-${buyer}-${name}'); display('show-details-${buyer}-${name}'); display('hide-details-${buyer}-${name}')">Hide</a>
                         </h4>
