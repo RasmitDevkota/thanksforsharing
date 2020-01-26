@@ -84,7 +84,7 @@ function removeProduct(id) {
 };
 
 function viewOrders() {
-    console.log("hi!")
+    console.log("hi!");
 };
 
 function addProduct() {
