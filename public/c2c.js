@@ -68,7 +68,7 @@ function viewProducts() {
                         </a>
                     </div>
                     <div class="mdl-card__menu">
-                        $${}
+                        $${price}
                     </div>
                 </div>
             `);
