@@ -251,8 +251,6 @@ function checkOut() {
                         var seller = doc.data().c2cauthor;
                         var name = doc.data().name;
 
-                        console.log(c2c, " ", seller, " ", name);
-
                         Orders.doc(seller + '/' + user.displayName + '/' + name).set({
                             name: name
                         }).then(function () {
