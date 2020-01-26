@@ -269,7 +269,6 @@ function checkOut() {
                         });
                     };
                 });
-                
             });
         });
     }).then(function () {
