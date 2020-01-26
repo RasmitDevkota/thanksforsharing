@@ -18,6 +18,7 @@ var Products = db.collection("products");
 var ShoppingCart = db.collection("cart");
 
 window.onload = function () {
+    pageLoad();
     document.addEventListener('keydown', function (event) {
         const key = event.key;
         if (key == "Enter" && document.getElementById('search').value.toString().toLowerCase() != "") {
@@ -26,15 +27,14 @@ window.onload = function () {
     });
 };
 
-$(document).ready(function () {
-    firebase.auth().onAuthStateChanged(function (user) {
-        if (user) {
-            pageLoad();
-        } else {
-            console.log("Signed out");
-            pageLoad();
-        }
-    });
+$(document).ready(function());
+firebase.auth().onAuthStateChanged(function (user) {
+    if (user) {
+        pageLoad();
+    } else {
+        console.log("Signed out");
+        pageLoad();
+    }
 });
 
 function pageLoad(u) {
