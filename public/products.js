@@ -257,7 +257,12 @@ function checkOut() {
                         var name = doc.data().name;
 
                         Orders.doc(user.displayName + '/' + seller + '/' + name).set({
-                            name: name
+                            name: name,
+                            name: coname,
+                            address: coaddr,
+                            state: costate,
+                            city: cocity,
+                            zipcode: cozipcode
                         }).then(function () {
                             Orders.doc(user.displayName + '/' + seller + '/orderInfo').get().then(function (doc) {
                                 if (!doc.exists) {
