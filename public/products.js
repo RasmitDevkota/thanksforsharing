@@ -93,7 +93,18 @@ function showProducts(doc) {
             elem.addEventListener('click', function () {
                 if (user != null) {
                     ShoppingCart.doc(user.displayName + '/' + user.displayName + '/' + name).get().then(function (doc) {
-                        
+                        if (!doc.exists) {
+                            userDataUsers.set({
+                                displayName: username,
+                                email: email,
+                            }).then(function () {
+                                console.log("Document successfully written!");
+                            }).catch(function (error) {
+                                console.log("Error writing document: ", error);
+                            });
+                        } else {
+                            console.log("Users doc already exists, skipped writing.");
+                        }
                         ShoppingCart.doc(user.displayName + '/' + user.displayName + '/' + name).set({
                             name: name,
                             price: price,
