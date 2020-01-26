@@ -103,8 +103,15 @@ function showProducts(doc) {
                                 console.log("Error writing document: ", error);
                             });
                         } else {
-                            console.log("Users doc already exists, skipped writing.");
-                        }
+                            var atcMsg = document.querySelector('#atcMsg');
+                            atcMsg.MaterialSnackbar.showSnackbar({
+                                message: 'Item added to cart',
+                                timeout: 1800,
+                                actionHandler: function () {
+                                    redirect('cart.html#couter' + name);
+                                },
+                                actionText: 'Go to Cart'
+                            });
                         ShoppingCart.doc(user.displayName + '/' + user.displayName + '/' + name).set({
                             name: name,
                             price: price,
