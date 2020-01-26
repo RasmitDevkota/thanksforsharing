@@ -346,7 +346,7 @@ function checkOut() {
     userCart.collection(user.displayName).get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
         })
-        
+    })
     ]);
 };
 
