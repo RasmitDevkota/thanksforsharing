@@ -21,7 +21,7 @@ function c2cStart(u, usersUser) {
 };
 
 function viewC2CProducts() {
-    redirect('')
+    redirect('products.html')
 };
 
 // C2C Unverified
