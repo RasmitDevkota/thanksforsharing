@@ -100,7 +100,7 @@ function gToggleSignIn() {
                 console.log(error);
             }
         });
-    }
+    } else
 };
 // Google Login End
 
