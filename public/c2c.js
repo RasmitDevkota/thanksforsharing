@@ -93,7 +93,3 @@ function viewProductInPage(id) {
 function addProduct() {
 
 };
-
-function confirmShipment(id) {
-
-};
