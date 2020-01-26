@@ -67,7 +67,7 @@ function viewProducts() {
             var outerDiv = "<div class='demo-card-wide mdl-card mdl-shadow--2dp c2c-content- card'></div>";
             $('#c2c-verified-cards').append(outerDiv);
 
-            var title = 
+            var title = "<div class="mdl-card__title c2c - title">"
         });
     });
 };
