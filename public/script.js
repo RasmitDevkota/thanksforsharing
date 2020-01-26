@@ -20,7 +20,7 @@ var ShoppingCart = db.collection("cart");
 window.onload = function () {
     if (firebase.auth().currentUser) {
         pageLoad(true);
-    } elseelse {
+    } else {
         console.log("Signed out");
         pageLoad(false);
     }
