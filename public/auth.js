@@ -25,7 +25,7 @@ function eToggleSignIn() {
     firebase.auth().signInWithEmailAndPassword(email, password).then(function () {
         firebase.auth().onAuthStateChanged(function (user) {
             display("email");
-            pageLoad();
+            pageLoad(true);
         });
     }).catch(function (error) {
         var errorCode = error.code;
