@@ -245,7 +245,15 @@ function checkOut() {
                     name: name
                 }).then(function () {
                     Orders.doc(seller + '/' + user.displayName + '/orderInfo').get().then(function (doc) {
-                      if (!doc.exists)  
+                        if (!doc.exists) {
+                          .set({
+                              name: coname,
+                              address: coaddr,
+                              state: coaddr,
+                              city: cocity,
+                              zipcode: cozipcode
+                          });
+                      }  
                     })
                 });
             }
