@@ -1,5 +1,5 @@
 // General C2C
-function c2cStart(u, usersUser) {
+function c2cStart(u) {
     usersUser = arguments[1] || false;
     if (u) {
         usersUser.get().then(function (doc) {
