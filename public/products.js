@@ -228,7 +228,7 @@ function checkOut() {
     var cozipcode = document.getElementById("coname").value;
 
     display('copopup');
-    alert("Product/s ordered! Each will come at their respective times, please check individual product entries for further information");
+    alert("Product/s ordered! Each will come at their respective times, please check individual product entries for further information.");
 
     userCart.collection(user.displayName).get().then(function (querySnapshot) {
         var totalPrice = 0;
