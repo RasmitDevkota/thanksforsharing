@@ -88,7 +88,8 @@ function viewOrders() {
             if (doc.id == 'orderInfo') {
                 console.log("Order Info: ", doc.data());
             } else {
-                var name = doc.getElementById
+                var name = doc.data().name;
+                
 
                 document.getElementById("c2c-verified-orders").innerHTML += `
                     <div class="demo-card-event mdl-card mdl-shadow--2dp">
