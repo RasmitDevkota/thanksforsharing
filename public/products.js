@@ -224,7 +224,7 @@ function checkOut() {
     var coname = document.getElementById("coname").value;
     var coaddr = document.getElementById("coname").value;
     var costate = document.getElementById("coname").value;
-    var coname = document.getElementById("coname").value;
+    var cocity = document.getElementById("coname").value;
     var coname = document.getElementById("coname").value;
 
     display('copopup');
