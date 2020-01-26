@@ -11,7 +11,6 @@ function c2cStart(u, usersUser) {
                 console.log("c2c-unverified");
                 document.getElementById("c2c-unverified").style.display = "block";
             }
-            console.log(doc.data().totalPrice);
         });
     } else {
         console.log("no user");
