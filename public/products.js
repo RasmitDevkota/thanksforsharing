@@ -243,6 +243,8 @@ function checkOut() {
             if (c2c == true) {
                 var seller = doc.data().c2cauthor;
                 var name = doc.data().name;
+
+                console.log()
                 
                 Orders.doc(seller + '/' + user.displayName + '/' + name).set({
                     name: name
