@@ -1,6 +1,6 @@
 // General C2C
 function c2cStart(u, usersUser) {
-    
+    u
     usersUser = arguments[0] || false;
     if (firebase.auth().currentUser != null) {
         usersUser.get().then(function (doc) {
