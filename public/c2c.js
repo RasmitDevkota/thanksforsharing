@@ -119,7 +119,7 @@ function viewOrders() {
 };
 
 function addProduct() {
-
+    
 };
 
 function verifyOrder(id) {
