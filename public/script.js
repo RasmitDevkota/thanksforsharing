@@ -106,9 +106,6 @@ function search() {
 };
 
 function redirect(pagePath) {
-    if (pagePath.includes('productid=')) {
-        
-    }
     window.location.replace(pagePath);
 };
 
