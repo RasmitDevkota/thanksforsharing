@@ -68,7 +68,8 @@ function viewProducts() {
                     <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
                         <i class="material-icons">open_in_new</i>
                     </button>
-                </div>
+                    </div>
+                    </div>
             );
             $('#c2c-verified-cards').append(outerDiv);
         });
