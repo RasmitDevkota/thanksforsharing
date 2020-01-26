@@ -224,8 +224,6 @@ function checkOut() {
     display('copopup');
     alert("Product/s ordered! Each will come at their respective times, please check individual product entries for further information");
 
-    
-
     userCart.collection(user.displayName).get().then(function (querySnapshot) {
         var totalPrice = 0;
         querySnapshot.forEach((doc) => {
