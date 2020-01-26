@@ -84,7 +84,7 @@ function removeProduct(id) {
 };
 
 function viewOrders() {
-    Orders.where("c2c", "==", true)..get().then(function (querySnapshot) {
+    Orders.where("", "==", true)..get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
             console.log(doc.data());
         });
