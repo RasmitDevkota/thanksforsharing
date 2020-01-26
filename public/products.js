@@ -15,7 +15,7 @@ function results(keystring) {
     document.getElementById("products").innerHTML = "";
 
     if (keystring == "c2c") {
-        Products.where("c2c", "").orderBy("keywords").get().then(function (querySnapshot) {
+        Products.where("c2c", "--").orderBy("keywords").get().then(function (querySnapshot) {
             querySnapshot.forEach((doc) => {
                 showProducts(doc);
             });
