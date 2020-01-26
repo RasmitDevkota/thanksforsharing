@@ -14,7 +14,7 @@ db.enablePersistence();
 
 var messaging = firebase.messaging();
 messaging.requestPermission().then(function () {
-    console.log("Permission granted.")
+    console.log("Permission granted.");
 }).catch(function (err) {
     alert("Error occured.");
 })
