@@ -66,7 +66,7 @@ function pageLoad(u) {
             document.getElementById("cartItems").innerHTML = "<h1 style='text-align: center'>Not signed in! Sign in to use cart.<h1>";
             document.getElementById("totalPrice").innerHTML = "Total Price: $0.00";
         } else if (window.location.href.includes("c2c.html")) {
-            c2cStart(false);
+            c2cStart();
         } else {
             console.log("index.html?");
         }
