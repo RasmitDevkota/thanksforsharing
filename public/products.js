@@ -263,7 +263,9 @@ function checkOut() {
         });
     }).then(function () {
         userCart.collection(user.displayName).get().then(function (querySnapshot) {
-            querySnapshot.forEach(function (doc) { })
+            querySnapshot.forEach(function (doc) { 
+                
+            })
         })
         userCart.doc(user.displayName + '/' + name).delete()
     }).then(function () {
