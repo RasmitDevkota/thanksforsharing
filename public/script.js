@@ -44,8 +44,8 @@ firebase.auth().onAuthStateChanged(function (user) {
 
 function pageLoad(u) {
     if (u == true) {
-        document.getElementById("totalPrice").innerHTML = "Total Price: $0.00";
-        
+        document.getElementById("signin").innerHTML = "Total Price: $0.00";
+
         var user = firebase.auth().currentUser;
         var usersUser = users.doc(user.uid);
         var emailsUser = emails.doc(user.displayName);
