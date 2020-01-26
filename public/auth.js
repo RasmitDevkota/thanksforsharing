@@ -71,7 +71,7 @@ function gToggleSignIn() {
                             } else {
                                 console.log("Emails doc already exists, skipped writing.");
                             }
-                        });
+                        }).then;
 
                         userDataUsers.get().then(function (doc) {
                             if (!doc.exists) {
