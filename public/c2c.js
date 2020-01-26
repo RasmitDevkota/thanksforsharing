@@ -47,10 +47,10 @@ function viewProducts() {
 
             var name = doc.data().name;
 
-            var outerDiv = ({
-                < div class="mdl-card__title c2c-title" >
+            var outerDiv = (
+                <div class="mdl-card__title c2c-title">
                 <h2 class="mdl-card__title-text c2c-title-text">Product</h2>
-                </div >
+                </div>
                 <div class="mdl-card__supporting-text-c2c">Description</div>
                 <div class="mdl-card__actions mdl-card--border c2c-verified-actions">
                     <a class="c2c-verified-action">
@@ -68,7 +68,7 @@ function viewProducts() {
                         <i class="material-icons">open_in_new</i>
                     </button>
                 </div>
-            });
+            );
             $('#c2c-verified-cards').append(outerDiv);
         });
     });
