@@ -52,7 +52,7 @@ function viewProducts() {
 
             document.getElementById("c2c-verified-cards").innerHTML += `
                 <div class="demo-card-wide mdl-card mdl-shadow--2dp c2c-content-card">
-                    <div class="mdl-card__title c2c-title" style="background-image: url('${imageRef}') center;">
+                    <div class="mdl-card__title c2c-title" style="background-image: url('${imageRef}');">
                         <h2 class="mdl-card__title-text c2c-title-text">${name}</h2>
                     </div>
                     <div class="mdl-card__supporting-text-c2c">${description}</div>
