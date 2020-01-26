@@ -83,7 +83,7 @@ function removeProduct(id) {
 };
 
 function viewOrders() {
-    userCart.collectionGroup(user.displayName).get().then(function (querySnapshot) {
+    Orders.collectionGroup(user.displayName).get().then(function (querySnapshot) {
         querySnapshot.forEach(function (doc) {
 
         });
