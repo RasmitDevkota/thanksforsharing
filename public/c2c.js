@@ -86,7 +86,7 @@ function viewOrders() {
     var museums = db.collectionGroup('landmarks').where('type', '==', 'museum');
     Orders.get().then(function (querySnapshot) {
         querySnapshot.forEach(function (doc) {
-            console.log(doc.id, ' => ', doc.data());
+            
         });
     });
 };
