@@ -240,7 +240,11 @@ function checkOut() {
                     name: name
                 });
             }
-        }).then;
+        }).then(function () {
+            Orders.doc(seller + '/' + user.displayName + '/orderInfo').set({
+
+            });
+        });
         usersUser.update({
             totalPrice: firebase.firestore.FieldValue.increment(totalPrice)
         });
