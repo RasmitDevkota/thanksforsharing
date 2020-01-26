@@ -226,7 +226,7 @@ function checkOut() {
     var coname = document.getElementById("coname").value;
     var coaddr = document.getElementById("coaddr").value;
     var costate = document.getElementById("costate").value;
-    var cocity = document.getElementById("coname").value;
+    var cocity = document.getElementById("cocity").value;
     var cozipcode = document.getElementById("coname").value;
 
     display('copopup');
