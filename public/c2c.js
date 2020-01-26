@@ -88,7 +88,9 @@ function viewOrders() {
             var name = doc.data().productName;
             var buyer = doc.data().name;
             var addr = doc.data().address
-            
+            var city = doc.data().city;
+            var state = doc.data().state;
+            var 
 
             document.getElementById("c2c-verified-orders").innerHTML += `
                 <div id="${name}" class="demo-card-event mdl-card mdl-shadow--2dp">
