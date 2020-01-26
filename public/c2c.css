@@ -77,3 +77,12 @@
 .demo-card-event > .mdl-card__actions > .mdl-button {
   color: #fff;
 }
+.info {
+    height: 40%;
+}
+.details {
+    height: 40%;
+}
+.verifyButton {
+    height: 20%;
+}
