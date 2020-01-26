@@ -227,7 +227,7 @@ function checkOut() {
     var coaddr = document.getElementById("coaddr").value;
     var costate = document.getElementById("costate").value;
     var cocity = document.getElementById("cocity").value;
-    var cozipcode = document.getElementById("coname").value;
+    var cozipcode = document.getElementById("cozipcode").value;
 
     display('copopup');
     alert("Product/s ordered! Each will come at their respective times, please check individual product entries for further information.");
