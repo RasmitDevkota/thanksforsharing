@@ -260,7 +260,7 @@ function checkOut() {
             }
         }).then(function (querySnapshot) {
             querySnapshot.forEach(function (doc) {
-                doc.delete ()
+                doc.delete();
             })
         });
     }).then(function () {
