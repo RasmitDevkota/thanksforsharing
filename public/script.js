@@ -40,7 +40,7 @@ function pageLoad(u) {
         var user = firebase.auth().currentUser;
         console.log(user);
         var usersUser = users.doc(firebase.auth().currentUser.uid);
-        var emailsUser = emails.doc(firebase.auth().currentUser.displayName);
+        var emailsUser = emails.doc(user.displayName);
         var userCart = ShoppingCart.doc(firebase.auth().currentUser.displayName);
 
         if (window.location.href.includes("products.html")) {
