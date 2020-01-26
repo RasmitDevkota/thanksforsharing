@@ -50,7 +50,7 @@ function viewProducts() {
             var price = doc.data().price;
             var imageRef = doc.data().imageRef;
 
-            var product = (`
+            const  product = (`
                 <div class="demo-card-wide mdl-card mdl-shadow--2dp c2c-content-card">
                     <div class="mdl-card__title c2c-title" style="background-image: url('${imageRef}') center / cover;">
                         <h2 class="mdl-card__title-text c2c-title-text">${name}</h2>
@@ -68,7 +68,7 @@ function viewProducts() {
                         </a>
                     </div>
                     <div class="mdl-card__menu">
-                        $${}
+                        $${price}
                     </div>
                 </div>
             `);
