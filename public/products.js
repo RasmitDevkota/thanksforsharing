@@ -232,7 +232,7 @@ function checkOut() {
 
             var c2c = doc.data().c2c;
             if (c2c == true) {
-                var seller = 
+                var seller = doc.data().c2c-author;
                 Orders.doc()
             }
         });
