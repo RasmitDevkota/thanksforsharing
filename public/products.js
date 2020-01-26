@@ -234,7 +234,7 @@ function checkOut() {
             if (c2c == true) {
                 var seller = doc.data().c2c-author;
                 
-                Orders.doc(seller+ '/' + user.displayName + '/' + ).set({
+                Orders.doc(seller+ '/' + user.displayName + '/' + name).set({
                     
                 });
             }
