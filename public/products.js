@@ -188,7 +188,7 @@ function showCart() {
                     document.getElementById(removeWrapper.id).appendChild(remove);
 
                     remove.addEventListener('click', function () {
-                        userCart.collection(user.displayName)name).delete().then(function () {
+                        userCart.collection(user.displayName).collection(name).delete().then(function () {
                             document.getElementById(outerDiv.id).style.display = "none";
                             totalPrice -= price;
                             document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
