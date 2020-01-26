@@ -114,7 +114,7 @@ function showProducts(doc) {
                             atcMsg.MaterialSnackbar.showSnackbar({
                                 message: 'Item already in cart',
                                 timeout: 1800,
-                                actionHandler: function () {                                },
+                                actionHandler: function () { }                                },
                                 actionText: 'Go to Cart'
                             });
                         }
