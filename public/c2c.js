@@ -85,7 +85,9 @@ function removeProduct(id) {
 
 function viewOrders() {
     Orders.doc(user.displayName).get().then(function (querySnapshot) {
-        console.log(doc.data());
+        querySnapshot.forEach((doc) => {
+            console.log(doc.data());
+            
     })
 };
 
