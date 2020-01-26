@@ -1,5 +1,5 @@
 // General C2C
-function c2cStart(u) {
+function c2cStart(user) {
     if (u) {
         usersUser.get().then(function (doc) {
             if (doc.data().totalPrice >= 500) {
