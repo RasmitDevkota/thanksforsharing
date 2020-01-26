@@ -243,6 +243,14 @@ function checkOut() {
                 
                 Orders.doc(seller + '/' + user.displayName + '/' + name).set({
                     name: name
+                }).then(function () {
+                    Orders.doc(seller + '/' + user.displayName + '/orderInfo').set({
+                        name: coname,
+                        address: coaddr,
+                        state: coaddr,
+                        city: cocity,
+                        zipcode: cozipcode
+                    });
                 });
             }
         }).then(function () {
