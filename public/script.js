@@ -113,7 +113,7 @@ function togglepsi() {
     }
 };
 
-// Messaging
+// Messaging, move to a different file later
 messaging.usePublicVapidKey('BONZTuA0A2YLkuZGw_CejH2IaRLl6DSfr3ziXT1ARqT3jnmZcBfHfnBFllN5NshehA8wSYk2MRJWTTpyASfhtz8');
 
 messaging.getToken().then((currentToken) => {
