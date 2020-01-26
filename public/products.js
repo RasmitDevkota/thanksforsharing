@@ -261,7 +261,6 @@ function checkOut() {
                         }
                     });
                 });
-                console.log(Orders.doc(seller + '/' + user.displayName + '/' + name));
             };
         });
     }).then(function () {
