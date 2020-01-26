@@ -106,7 +106,7 @@ function search() {
 };
 
 function redirect(pagePath) {
-    if (pagePath.includes('p'))
+    if (pagePath.includes('?product='))
     window.location.replace(pagePath);
 };
 
