@@ -84,7 +84,7 @@ function removeProduct(id) {
 };
 
 function viewOrders() {
-    Orders.
+    Orders.doc(user.di)
 };
 
 function addProduct() {
