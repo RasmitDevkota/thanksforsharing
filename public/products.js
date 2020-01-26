@@ -259,7 +259,7 @@ function checkOut() {
                         }).then(function () {
                             Orders.doc(user.displayName + '/' + seller + '/orderInfo').get().then(function (doc) {
                                 if (!doc.exists) {
-                                    Orders.doc(seller + '/' + user.displayName + '/orderInfo').set({
+                                    Orders.doc(user.displayName + '/' + seller + '/orderInfo').set({
                                         name: coname,
                                         address: coaddr,
                                         state: costate,
