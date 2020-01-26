@@ -69,4 +69,4 @@ function confirmShipment(id) {
 };
 
 // Messaging
-messaging.usePublic
+messaging.usePublicVapid
