@@ -69,4 +69,4 @@ function confirmShipment(id) {
 };
 
 // Messaging
-messaging.usePublicVapidKey("")
+messaging.usePublicVapidKey('BONZTuA0A2YLkuZGw_CejH2IaRLl6DSfr3ziXT1ARqT3jnmZcBfHfnBFllN5NshehA8wSYk2MRJWTTpyASfhtz8')
