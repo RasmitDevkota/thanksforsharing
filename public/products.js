@@ -236,6 +236,7 @@ function checkOut() {
         querySnapshot.forEach(function (doc) {
 
             var name = doc.data().name;
+            console.log(c2c, " ", name);
 
             Products.where("name", "==", name).orderBy("keywords").get().then(function (doc) {
                 querySnapshot.forEach(function (doc) {
