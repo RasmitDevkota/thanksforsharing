@@ -45,14 +45,6 @@ c-product {
     animation: Slide_Right 1s ease;
     width: 100%;
 }
-@keyframes Slide_Right{
-    0%{
-        transform: translateX(-100%);
-    }
-    100%{
-        transform: translateX(0px);
-    }
-}
 c-name{    
     flex-grow: 1;
     flex-basis: 60%;
