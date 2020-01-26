@@ -69,3 +69,4 @@ function confirmShipment(id) {
 };
 
 // Messaging
+messaging.usePublic
