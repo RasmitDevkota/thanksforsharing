@@ -245,7 +245,6 @@ function checkOut() {
                     });
 
                     var c2c = doc.data().c2c;
-
                     console.log(c2c);
                     if (c2c == true) {
                         var seller = doc.data().c2cauthor;
