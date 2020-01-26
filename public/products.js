@@ -260,7 +260,6 @@ function checkOut() {
                             Orders.doc(seller + '/' + user.displayName + '/orderInfo').get().then(function (doc) {
                                 if (!doc.exists) {
                                     Orders.doc(seller + '/' + user.displayName + '/orderInfo').set({
-
                                         name: coname,
                                         address: coaddr,
                                         state: costate,
