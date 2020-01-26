@@ -18,7 +18,7 @@ var Products = db.collection("products");
 var ShoppingCart = db.collection("cart");
 
 window.onload = function () {
-    if (user) {
+    if (this.firebase.auth().currentUser) {
         pageLoad(true);
     }
 
