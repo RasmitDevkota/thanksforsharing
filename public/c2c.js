@@ -49,7 +49,7 @@ function addProduct() {
 
 };
 
-function removeProduct() {
+function removeProduct(id) {
 
 };
 
