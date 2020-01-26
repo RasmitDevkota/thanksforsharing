@@ -33,7 +33,6 @@ function results(keystring) {
             querySnapshot.forEach((doc) => {
                 showProducts(doc);
             });
-            console.log(keystring);
         });
     }
 };
