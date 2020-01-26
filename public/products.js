@@ -257,7 +257,7 @@ function checkOut() {
                         var name = doc.data().name;
 
                         Orders.doc(user.displayName + '/' + seller + '/' + name).set({
-                            productname: name,
+                            productName: name,
                             name: coname,
                             address: coaddr,
                             state: costate,
