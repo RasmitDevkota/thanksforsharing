@@ -94,7 +94,7 @@ function viewProducts() {
                         $${price}
                     </div>
                 </div>
-            `
+            `;
         });
     });
 };
