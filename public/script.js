@@ -16,7 +16,7 @@ var messaging = firebase.messaging();
 messaging.requestPermission().then(function () {
     
 }).catch(function (err) {
-    alert("Error occured.")
+    alert("Error occured.");
 })
 
 var users = db.collection("users");
