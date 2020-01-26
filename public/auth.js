@@ -160,6 +160,9 @@ function handleSignUp() {
                 console.log(error);
                 console.log(user.displayName);
             });
+        }).then(function () {
+            togglepsi();
+            pageLoad(true);
         });
     }).catch(function (error) {
         var errorCode = error.code;
