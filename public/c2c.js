@@ -43,7 +43,7 @@ function viewProducts() {
         querySnapshot.forEach((doc) => {
             console.log(doc.data());
 
-            var outerDiv = 
+            var outerDiv = ""
             $('#c2c-verified-cards').append()
         });
     });
