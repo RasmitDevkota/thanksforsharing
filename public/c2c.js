@@ -68,7 +68,9 @@ function viewProducts() {
                         </a>
                     </div>
                     <div class="mdl-card__menu">
-                        <i></i>
+                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                            <i class="material-icons">open_in_new</i>
+                        </button>
                     </div>
                 </div>
             `);
