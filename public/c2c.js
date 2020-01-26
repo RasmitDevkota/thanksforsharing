@@ -122,5 +122,5 @@ function addProduct() {
 };
 
 function verifyOrder(id) {
-    
+    var c = confirm("")
 };
