@@ -85,30 +85,30 @@ function removeProduct(id) {
 function viewOrders() {
     db.collectionGroup(user.displayName).get().then(function (querySnapshot) {
         querySnapshot.forEach(function (doc) {
-                var name = doc.data().name;
-                
+            var name = doc.data().name;
+            
 
-                document.getElementById("c2c-verified-orders").innerHTML += `
-                    <div id="${name}" class="demo-card-event mdl-card mdl-shadow--2dp">
-                        <div class="mdl-card__title mdl-card--expand" style="display: flex; flex-direction: column;">
-                            <h4>
-                                Product: ${name}
-                                Buyer: ${buyer}
-                                <a id="show-details-${buyer}-${name}" onclick="display('details'); display('show-details'); display('hide-details')">Click to view more details</a>
-                                <a id="hide-details-${buyer}-${name}" style="display: none;" onclick="display('details'); display('show-details'); display('hide-details')">Hide</a>
-                            </h4>
-                            <h3 id="details-${buyer}-${name}" style="display: none;">
-                                3325 Medinah Circle<br>
-                                Cumming, Georgia 30041<br>
-                            </h3>
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <div class="mdl-layout-spacer"></div>
-                            <i class="material-icons" onclick="verifyOrder(${buyer}-${name})" style="cursor: pointer;">check</i>
-                            <div class="mdl-layout-spacer"></div>
-                        </div>
+            document.getElementById("c2c-verified-orders").innerHTML += `
+                <div id="${name}" class="demo-card-event mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card--expand" style="display: flex; flex-direction: column;">
+                        <h4>
+                            Product: ${name}
+                            Buyer: ${buyer}
+                            <a id="show-details-${buyer}-${name}" onclick="display('details'); display('show-details'); display('hide-details')">Click to view more details</a>
+                            <a id="hide-details-${buyer}-${name}" style="display: none;" onclick="display('details'); display('show-details'); display('hide-details')">Hide</a>
+                        </h4>
+                        <h3 id="details-${buyer}-${name}" style="display: none;">
+                            3325 Medinah Circle<br>
+                            Cumming, Georgia 30041<br>
+                        </h3>
                     </div>
-                `;
+                    <div class="mdl-card__actions mdl-card--border">
+                        <div class="mdl-layout-spacer"></div>
+                        <i class="material-icons" onclick="verifyOrder(${buyer}-${name})" style="cursor: pointer;">check</i>
+                        <div class="mdl-layout-spacer"></div>
+                    </div>
+                </div>
+            `;
         });
     });
 };
