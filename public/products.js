@@ -236,7 +236,7 @@ function checkOut() {
                 
                 Orders.doc(seller).update({
                     orders: {
-                        userdisplayName: this,
+                        user.displayName: this,
                     }
                 });
             }
