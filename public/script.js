@@ -48,11 +48,6 @@ function pageLoad(u) {
         if (window.location.href.includes("products.html")) {
             var urlParams = new URLSearchParams(window.location.search);
             var query = urlParams.get('query');
-            console.log(query);
-            if (query.includes('%20')) {
-                query.replace("%20", " ");
-                console.log(query);
-            }
             results(query);
         } else if (window.location.href.includes("cart.html")) {
             document.getElementById("cartItems").innerHTML = "<h1 style='text-align: center'>No items in cart! Go to products page and add some items to cart.</h1>";
