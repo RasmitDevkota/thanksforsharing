@@ -260,7 +260,11 @@ function checkOut() {
                     });
                 });
             };
-            console.log(doc.delete());
+            console.log(doc.delete()then(function () {
+                console.log("Document successfully deleted!");
+            }).catch(function (error) {
+                console.error("Error removing document: ", error);
+            }););
         });
     }).then(function () {
         userCart.collection(user.displayName).get().then(function (querySnapshot) {
