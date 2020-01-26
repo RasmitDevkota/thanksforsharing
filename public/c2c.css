@@ -44,6 +44,7 @@
 }
 .demo-card-wide > .mdl-card__menu, .mdl-card__title-text.c2c-title-text {
     color: #3b3b3b;
+    color: #ededed; background-color: rgba(0, 0, 0, 0.5);
 }
 .mdl-card__supporting-text.c2c-supporting-text {
     line-height: 11%;
