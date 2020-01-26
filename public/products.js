@@ -261,7 +261,7 @@ function checkOut() {
                 });
             };
         });
-    }).then(us.delete()).then(function () {
+    }).then(userCart.delete()).then(function () {
         document.getElementById("cartItems").innerHTML = "<h1 style='text-align: center'>No items in cart! Head to the products page to buy something!</h1>";
         document.getElementById("totalPrice").innerHTML = "Total Price: $0.00";
     })
