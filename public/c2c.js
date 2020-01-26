@@ -87,7 +87,7 @@ function viewOrders() {
         querySnapshot.forEach(function (doc) {
             if (doc.id == 'orderInfo') {
                 console.log("Order Info: ", doc.data());
-            }
+            } else {
             console.log(doc.id);
         });
     });
