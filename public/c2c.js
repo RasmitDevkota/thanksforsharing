@@ -43,7 +43,7 @@ function viewProducts() {
         querySnapshot.forEach((doc) => {
             console.log(doc.data());
 
-            var outerDiv = "<div class='demo-card-wide mdl-card mdl-shadow--2dp c2c-content- card'>";
+            var outerDiv = "<div class='demo-card-wide mdl-card mdl-shadow--2dp c2c-content- card'></div>";
             $('#c2c-verified-cards').append()
         });
     });
