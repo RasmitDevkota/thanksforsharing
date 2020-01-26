@@ -55,7 +55,7 @@ function viewProducts() {
                     <div class="mdl-card__title c2c-title">
                         <h2 class="mdl-card__title-text c2c-title-text">${name}</h2>
                     </div>
-                    <div class="mdl-card__supporting-text-c2c">${name}</div>
+                    <div class="mdl-card__supporting-text-c2c">${d}</div>
                     <div class="mdl-card__actions mdl-card--border c2c-verified-actions">
                         <a class="c2c-verified-action">
                             <i class="material-icons mdl-button mdl-js-button mdl-js-ripple-effect">edit</i>
