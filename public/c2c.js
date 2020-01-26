@@ -73,7 +73,28 @@ function viewProducts() {
                 </div>
             `;
 
-            $("c2c-verified-cards").append(product);
+            $("c2c-verified-cards").append(`
+                <div class="demo-card-wide mdl-card mdl-shadow--2dp c2c-content-card">
+                    <div class="mdl-card__title c2c-title" style="background-image: url('${imageRef}') center / cover;">
+                        <h2 class="mdl-card__title-text c2c-title-text">${name}</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text-c2c">${description}</div>
+                    <div class="mdl-card__actions mdl-card--border c2c-verified-actions">
+                        <a class="c2c-verified-action">
+                            <i class="material-icons mdl-button mdl-js-button mdl-js-ripple-effect">edit</i>
+                        </a>
+                        <a class="c2c-verified-action">
+                            <i class="material-icons mdl-button mdl-js-button mdl-js-ripple-effect">open_in_new</i>
+                        </a>
+                        <a class="c2c-verified-action">
+                            <i class="material-icons mdl-button mdl-js-button mdl-js-ripple-effect">delete</i>
+                        </a>
+                    </div>
+                    <div class="mdl-card__menu">
+                        $${price}
+                    </div>
+                </div>
+            `);
         });
     });
 };
