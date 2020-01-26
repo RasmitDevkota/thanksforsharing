@@ -171,7 +171,7 @@ function showCart() {
             nameEl.id = "cartName" + name;
             if (c2c == true) {
                 var seller = doc.data().c2cauthor;
-                nameEl.innerHTML = name + `<img src='c2c.png' tooltip='Sold by ${seller}'>`;
+                nameEl.innerHTML = name + `<img src='c2c.png' title='Sold by ${seller}'>`;
             } else {
                 nameEl.innerHTML = name;
             }
