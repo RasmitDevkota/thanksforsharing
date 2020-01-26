@@ -73,7 +73,7 @@ function viewProducts() {
                 </div>
             `;
 
-            document.getElementById("c2c-verified-cards").inner
+            document.getElementById("c2c-verified-cards").innerHTML +=
         });
     });
 };
