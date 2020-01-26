@@ -19,8 +19,9 @@ function results(keystring) {
         querySnapshot.forEach((doc) => {
             showProducts(doc);
         });
+        console
     });
-    
+
     if (keystring == "c2c") {
         Products.where("c2c", "==", true).orderBy("keywords").get().then(function (querySnapshot) {
             querySnapshot.forEach((doc) => {
