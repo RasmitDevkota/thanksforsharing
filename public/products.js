@@ -170,7 +170,7 @@ function showCart() {
             nameEl.className = "cname";
             nameEl.id = "cartName" + name;
             if (c2c == true) {
-                nameEl.innerHTML = name + "<img src='c2c.png' tooltip="">";
+                nameEl.innerHTML = name + "<img src='c2c.png' tooltip=''>";
             } else {
                 nameEl.innerHTML = name;
             }
