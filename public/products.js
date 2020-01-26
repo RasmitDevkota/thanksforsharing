@@ -113,7 +113,9 @@ function showProducts(doc) {
                             var atcMsg = document.querySelector('#atcMsg');
                             atcMsg.MaterialSnackbar.showSnackbar({
                                 message: 'Item already in cart',
-                                timeout: 1800
+                                timeout: 1800,
+                                actionHandler: function () { },
+                                actionText: 'Go to Cart'
                             });
                         }
                     });
