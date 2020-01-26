@@ -87,7 +87,8 @@ function viewOrders() {
         querySnapshot.forEach(function (doc) {
             var name = doc.data().productName;
             var buyer = doc.data().name;
-            var addr = 
+            var addr = doc.data().address
+            
 
             document.getElementById("c2c-verified-orders").innerHTML += `
                 <div id="${name}" class="demo-card-event mdl-card mdl-shadow--2dp">
