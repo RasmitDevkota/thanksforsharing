@@ -115,7 +115,6 @@ function showProducts(doc) {
                                 message: 'Item already in cart',
                                 timeout: 1800,
                                 actionHandler: function () {
-                                    redirect('cart.html#couter' + name);
                                 },
                                 actionText: 'Go to Cart'
                             });
