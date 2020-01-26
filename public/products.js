@@ -202,7 +202,7 @@ function showCart() {
                                 message: 'Item removed from cart',
                                 timeout: 1700,
                                 actionHandler: function () {
-                                    ShoppingCart.doc(user.displayName + '/' + user.displayName + '/' + name).set({
+                                    ShoppingCart.doc(user.displayName + '/' + name).set({
                                         name: name,
                                         price: price,
                                         imageRef: imageRef
