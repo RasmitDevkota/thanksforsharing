@@ -2,7 +2,6 @@
 function c2cStart(u, usersUser) {
     hostname = hostname || "localhost";
     port = port || 80;
-    method = method || "GET"
     if (firebase.auth().currentUser != null) {
         usersUser.get().then(function (doc) {
             if (doc.data().totalPrice >= 500) {
