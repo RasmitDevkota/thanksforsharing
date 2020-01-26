@@ -9,7 +9,8 @@ function signIn() {
     //     console.log(firebase.auth().currentUser);
     // }
     while (true) {
-    alert("Fuck you royce.");
+        alert("Fuck you royce.");
+    }
 };
 
 function eToggleSignIn() {
