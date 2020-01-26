@@ -100,7 +100,7 @@ function viewOrders() {
                         </h4>
                         <h3 id="details-${buyer}-${name}" style="display: none;">
                             ${addr}<br>
-                            ${city}, ${state} ${buyer}<br>
+                            ${city}, ${state} ${zipcode}<br>
                         </h3>
                     </div>
                     <div class="mdl-card__actions mdl-card--border">
