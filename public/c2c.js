@@ -75,7 +75,8 @@ function viewProducts() {
 };
 
 function removeProduct(id) {
-    
+
+
 };
 
 function viewOrders() {
