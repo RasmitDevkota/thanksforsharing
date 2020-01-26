@@ -14,7 +14,9 @@ function filter(field) {
 function results(keystring) {
     document.getElementById("products").innerHTML = "";
 
-    if(keystring == "c2c")
+    if (keystring == "c2c") {
+        
+    }
     Products.where("keywords", "array-contains-any", keystring.split(" ")).orderBy("keywords").get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
             showProducts(doc);
