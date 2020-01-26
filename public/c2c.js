@@ -119,7 +119,6 @@ function viewOrders() {
 };
 
 function addProduct() {
-
     var coname = document.getElementById("coname").value;
     var coaddr = document.getElementById("coaddr").value;
     var costate = document.getElementById("costate").value;
