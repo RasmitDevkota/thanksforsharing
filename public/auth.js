@@ -101,7 +101,7 @@ function gToggleSignIn() {
             }
         });
     } else {
-        alert("There is already a user signed in, please sign out before proceeding.")
+        alert("There is already a user signed in, please sign out before proceeding.");
     }
 };
 // Google Login End
