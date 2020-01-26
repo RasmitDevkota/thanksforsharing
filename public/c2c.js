@@ -1,6 +1,8 @@
 
 import React from 'react';
-import ReactDOM from 'react-dom';// General C2C
+import ReactDOM from 'react-dom';
+
+// General C2C
 function c2cStart() {
     if (user) {
         usersUser.get().then(function (doc) {
