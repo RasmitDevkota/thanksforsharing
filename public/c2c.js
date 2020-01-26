@@ -90,3 +90,12 @@ function viewOrders() {
 function addProduct() {
 
 };
+
+
+function confirmSale(id) {
+
+};
+
+function confirmShipment(id) {
+
+};
