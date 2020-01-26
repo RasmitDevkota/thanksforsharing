@@ -1,4 +1,3 @@
-import { messaging } from "firebase";
 
 // General C2C
 function c2cStart(u, usersUser) {
