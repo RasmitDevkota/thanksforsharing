@@ -19,7 +19,7 @@ function results(keystring) {
         querySnapshot.forEach((doc) => {
             showProducts(doc);
         });
-        console(keystring);
+        console.log(keystring);
     });
 
     if (keystring == "c2c") {
