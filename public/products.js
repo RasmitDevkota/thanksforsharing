@@ -224,8 +224,6 @@ function showCart() {
     });
 };
 
-function 
-
 function checkOut() {
     var coname = document.getElementById("coname").value;
     var coaddr = document.getElementById("coname").value;
