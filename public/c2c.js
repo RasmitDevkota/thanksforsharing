@@ -101,7 +101,7 @@ function viewOrders() {
                             Product: ${name}<br>
                             Buyer: ${buyer}<br>
                         </h4>
-                        <h3 id="details-${buyer}-${name}">
+                        <h5 id="details-${buyer}-${name}">
                             Details<br>
                             ${addr}<br>
                             ${city}, ${state} ${zipcode}<br>
