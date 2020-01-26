@@ -83,11 +83,11 @@ function removeProduct(id) {
 };
 
 function viewOrders() {
-    // Orders.collectionGroup(user.displayName).get().then(function (querySnapshot) {
-    //     querySnapshot.forEach(function (doc) {
+    Orders.collectionGroup(user.displayName).get().then(function (querySnapshot) {
+        querySnapshot.forEach(function (doc) {
 
-    //     });
-    // });
+        });
+    });
 };
 
 function addProduct() {
