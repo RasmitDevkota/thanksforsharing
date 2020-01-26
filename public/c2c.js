@@ -78,7 +78,7 @@ function removeProduct(id) {
     var c = confirm("Are you sure you want to remove this product? Once done, this action can not be reverted.");
     if (c == true) {
         $('#' + id).remove();
-        
+        Products.where("c2c", "==", true).where("c2cauthor", "==", user.displayName)
     }
 };
 
