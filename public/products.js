@@ -246,14 +246,6 @@ function checkOut() {
                 });
             }
         }).then(function () {
-            Orders.doc(seller + '/' + user.displayName + '/orderInfo').set({
-                name: coname,
-                address: coaddr,
-                state: coaddr,
-                city: cocity,
-                zipcode: cozipcode
-            });
-        }).then(function () {
             usersUser.update({
                 totalPrice: firebase.firestore.FieldValue.increment(totalPrice)
             });
