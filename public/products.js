@@ -144,7 +144,7 @@ function showProducts(doc) {
 function showCart() {
     document.getElementById("cartItems").innerHTML = "";
     var totalPrice = 0;
-    userCart.collection(user.displayName).get().then(function (querySnapshot) {
+    userCart.get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
             var name = doc.data().name.toString();
             var imageRef = doc.data().imageRef.toString();
@@ -187,7 +187,7 @@ function showCart() {
             document.getElementById(removeWrapper.id).appendChild(remove);
 
             remove.addEventListener('click', function () {
-                userCart.collection(user.displayName).doc(name).delete().then(function () {
+                userCart.doc(name).delete().then(function () {
                     document.getElementById(outerDiv.id).style.display = "none";
                     totalPrice -= price;
                     document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
@@ -201,7 +201,7 @@ function showCart() {
                         message: 'Item removed from cart',
                         timeout: 1700,
                         actionHandler: function () {
-                            userCart.collection(user.displayName).doc(name).set({
+                            userCart.doc(name).set({
                                 name: name,
                                 price: price,
                                 imageRef: imageRef
@@ -230,7 +230,7 @@ function checkOut() {
     display('copopup');
     alert("Product/s ordered! Each will come at their respective times, please check individual product entries for further information.");
 
-    userCart.collection(user.displayName).get().then(function (querySnapshot) {
+    userCart.get().then(function (querySnapshot) {
         querySnapshot.forEach(function (doc) {
 
             var name = doc.data().name;
@@ -268,7 +268,7 @@ function checkOut() {
             });
         });
     }).then(function () {
-        userCart.collection(user.displayName).get().then(function (querySnapshot) {
+        userCart.get().then(function (querySnapshot) {
             querySnapshot.forEach(function (doc) {
                 var name = doc.data().name;
                 ShoppingCart.doc(user.displayName + '/' + user.displayName + '/' + name).delete();
