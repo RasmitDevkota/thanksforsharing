@@ -52,7 +52,12 @@ function pageLoad(u) {
         } else {
             console.log("index.html?");
         }
-        
+
+
+        var user = firebase.auth().currentUser;
+        var usersUser = users.doc(user.uid);
+        var emailsUser = emails.doc(user.displayName);
+        var userCart = ShoppingCart.doc(user.displayName);
     } else {
         if (window.location.href.includes("products.html")) {
             var urlParams = new URLSearchParams(window.location.search);
