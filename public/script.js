@@ -24,7 +24,7 @@ $(window).bind("load", function () {
             search();
         }
     });
-};
+});
 
 firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
