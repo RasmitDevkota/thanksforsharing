@@ -68,7 +68,7 @@ function viewProducts() {
                 </button>
             </div>
 
-            var outerDiv = {}
+            var outerDiv = {
                 <div class="mdl-card__title c2c-title">
                     <h2 class="mdl-card__title-text c2c-title-text">Product</h2>
                 </div>
