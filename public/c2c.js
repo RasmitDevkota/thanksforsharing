@@ -71,7 +71,7 @@ function viewProducts() {
                         $${price}
                     </div>
                 </div>
-            );
+            `);
 
             ReactDOM.render(product, document.getElementById('c2c-verified-cards'));
         });
