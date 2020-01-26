@@ -147,7 +147,6 @@ function showCart() {
     userCart.get().then(function (doc) {
         
     })
-    
 };
 
 function checkOut() {
