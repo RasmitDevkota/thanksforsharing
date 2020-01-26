@@ -254,7 +254,7 @@ function checkOut() {
                               zipcode: cozipcode
                           });
                       }  
-                    })
+                    });
                 });
             }
         }).then(function () {
