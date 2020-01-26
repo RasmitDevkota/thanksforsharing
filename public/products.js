@@ -230,7 +230,7 @@ function checkOut() {
             var price = doc.data().price;
             totalPrice += price;
 
-            var 
+            var c2c 
         });
         usersUser.update({
             totalPrice: firebase.firestore.FieldValue.increment(totalPrice)
