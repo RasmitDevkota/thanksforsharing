@@ -54,7 +54,7 @@ function pageLoad(u) {
         }
 
         var window.user = firebase.auth().currentUser;
-        var windowusersUser = users.doc(user.uid);
+        var window.usersUser = users.doc(user.uid);
         var window.emailsUser = emails.doc(user.displayName);
         var window.userCart = ShoppingCart.doc(user.displayName);
     } else {
