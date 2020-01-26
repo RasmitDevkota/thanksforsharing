@@ -61,6 +61,6 @@ function confirmSale(id) {
 
 };
 
-function confirmShipment() {
+function confirmShipment(id) {
 
 };
