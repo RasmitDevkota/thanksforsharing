@@ -89,7 +89,7 @@ function viewOrders() {
                 console.log("Order Info: ", doc.data());
             } else {
                 document.getElementById("c2c-verified-orders").innerHTML += `
-                <div class="demo-card-event mdl-card mdl-shadow--2dp">
+                    <div class="demo-card-event mdl-card mdl-shadow--2dp">
                             <div class="mdl-card__title mdl-card--expand" style="display: flex; flex-direction: column;">
                                 <h4>
                                     Product: Air Conditioner
