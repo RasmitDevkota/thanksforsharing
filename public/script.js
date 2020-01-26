@@ -72,6 +72,7 @@ function pageLoad(u) {
             }
         }
 };
+};
 
 function search() {
     var search = document.getElementById("search");
