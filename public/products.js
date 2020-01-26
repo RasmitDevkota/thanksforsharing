@@ -117,7 +117,7 @@ function showProducts(doc) {
                                 actionHandler: function () {
                                     redirect('cart.html#couter' + name);
                                 },
-                                actionText: 'Go to Cart'
+                                actionText: 'See in Cart'
                             });
                         }
                     });
