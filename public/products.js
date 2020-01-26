@@ -245,7 +245,6 @@ function checkOut() {
 
             });
         }).then(function () {
-
             usersUser.update({
                 totalPrice: firebase.firestore.FieldValue.increment(totalPrice)
             });
