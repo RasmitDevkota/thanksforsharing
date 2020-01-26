@@ -246,7 +246,7 @@ function checkOut() {
                 }).then(function () {
                     Orders.doc(seller + '/' + user.displayName + '/orderInfo').get().then(function (doc) {
                         if (!doc.exists) {
-                          doc.set({
+                          d.set({
                               name: coname,
                               address: coaddr,
                               state: coaddr,
