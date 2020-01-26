@@ -109,7 +109,6 @@ function viewOrders() {
                         </div>
                     </div>
                 `;
-            }
         });
     });
 };
