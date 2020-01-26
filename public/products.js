@@ -271,7 +271,7 @@ function checkOut() {
             querySnapshot.forEach(function (doc) {
                 var name = doc.data().name;
                 console.log(name);
-                ShoppingCart.doc(user.displayName).doc(user.displayName + '/' + name).delete();
+                ShoppingCart.doc(user.displayName + user.displayName + '/' + name).delete();
             });
         });
     }).then(function () {
