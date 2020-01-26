@@ -250,7 +250,8 @@ function checkOut() {
                 name: coname,
                 address: coaddr,
                 state: coaddr,
-                
+                city: cocity,
+                zipcode
             });
         }).then(function () {
             usersUser.update({
