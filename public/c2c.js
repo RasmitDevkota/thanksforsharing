@@ -85,7 +85,7 @@ function removeProduct(id) {
 
 function viewOrders() {
     Orders.doc(user.displayName).get().then(function (doc) {
-        
+        console.log(doc.de)
     })
 };
 
