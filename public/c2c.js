@@ -83,10 +83,10 @@ function removeProduct(id) {
 };
 
 function viewOrders() {
-    var museums = db.collectionGroup('landmarks').where('type', '==', 'museum');
+    var userOrders = db.collectionGroup('landmarks').where('type', '==', 'museum');
     Orders.get().then(function (querySnapshot) {
         querySnapshot.forEach(function (doc) {
-            
+
         });
     });
 };
