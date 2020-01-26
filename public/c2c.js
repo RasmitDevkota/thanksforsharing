@@ -6,6 +6,7 @@ function c2cStart() {
                 console.log("c2c-verified");
                 document.getElementById("c2c-verified").style.display = "block";
                 viewProducts();
+                viewOrders
             } else {
                 console.log("c2c-unverified");
                 document.getElementById("c2c-unverified").style.display = "block";
