@@ -253,7 +253,7 @@ function checkOut() {
                               city: cocity,
                               zipcode: cozipcode
                           });
-                        } 
+                        }
                     });
                 });
             }
