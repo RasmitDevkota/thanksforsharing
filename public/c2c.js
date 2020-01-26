@@ -88,7 +88,7 @@ function viewOrders() {
             if (doc.id == 'orderInfo') {
                 console.log("Order Info: ", doc.data());
             } else {
-                
+                var name = 
                 var coname = document.getElementById("coname").value;
                 var coaddr = document.getElementById("coaddr").value;
                 var costate = document.getElementById("costate").value;
