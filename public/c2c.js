@@ -85,7 +85,7 @@ function removeProduct(id) {
 function viewOrders() {
     db.collectionGroup(user.displayName).get().then(function (querySnapshot) {
         querySnapshot.forEach(function (doc) {
-            var name = doc.data().name;
+            var name = doc.data().productName;
             var buyer = doc.
 
             document.getElementById("c2c-verified-orders").innerHTML += `
