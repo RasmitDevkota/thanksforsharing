@@ -84,7 +84,7 @@ function removeProduct(id) {
 
 function viewOrders() {
     var museums = db.collectionGroup('landmarks').where('type', '==', 'museum');
-    museums.get().then(function (querySnapshot) {
+    Orders.get().then(function (querySnapshot) {
         querySnapshot.forEach(function (doc) {
             console.log(doc.id, ' => ', doc.data());
         });
