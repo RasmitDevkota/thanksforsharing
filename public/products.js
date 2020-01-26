@@ -232,7 +232,7 @@ function checkOut() {
     display('copopup');
     alert("Product/s ordered! Each will come at their respective times, please check individual product entries for further information.");
 
-    ShoppingCart.doc(user.displayName + '/' + user.displayName).get().then(function (querySnapshot) {
+    ShoppingCart.c(user.displayName + '/' + user.displayName).get().then(function (querySnapshot) {
         querySnapshot.forEach(function (doc) {
             var price = doc.data().price;
             usersUser.update({
@@ -241,7 +241,7 @@ function checkOut() {
 
             var c2c = doc.data().c2c;
             console.log(c2c);
-            
+
             if (c2c == true) {
                 var seller = doc.data().c2cauthor;
                 var name = doc.data().name;
