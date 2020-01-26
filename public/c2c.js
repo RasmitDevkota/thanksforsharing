@@ -1,6 +1,6 @@
 // General C2C
 function c2cStart(u, usersUser) {
-    port = port || 80;
+    usersUser = port || 80;
     if (firebase.auth().currentUser != null) {
         usersUser.get().then(function (doc) {
             if (doc.data().totalPrice >= 500) {
