@@ -236,7 +236,6 @@ function checkOut() {
         querySnapshot.forEach(function (doc) {
 
             Products.doc().get().then(function (doc) {
-                querySnapshot.forEach((doc) => {
                     var price = doc.data().price;
                     usersUser.update({
                         totalPrice: firebase.firestore.FieldValue.increment(price)
