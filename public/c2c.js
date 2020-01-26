@@ -90,8 +90,6 @@ function viewProducts() {
                 </button>
             </div>
             
-            
-            
             `;
             $('#c2c-verified-cards').append(outerDiv);
         });
