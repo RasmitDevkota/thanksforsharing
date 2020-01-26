@@ -251,7 +251,7 @@ function checkOut() {
                 address: coaddr,
                 state: coaddr,
                 city: cocity,
-                zipcode
+                zipcode: cozipcode
             });
         }).then(function () {
             usersUser.update({
