@@ -61,7 +61,7 @@ function viewProducts() {
                             <i class="material-icons mdl-button mdl-js-button mdl-js-ripple-effect">edit</i>
                         </a>
                         <a class="c2c-verified-action">
-                            <i class="material-icons mdl-button mdl-js-button mdl-js-ripple-effect" onclick="redirect(products.html?">open_in_new</i>
+                            <i class="material-icons mdl-button mdl-js-button mdl-js-ripple-effect" onclick="redirect(products.html?name)">open_in_new</i>
                         </a>
                         <a class="c2c-verified-action">
                             <i class="material-icons mdl-button mdl-js-button mdl-js-ripple-effect">delete</i>
