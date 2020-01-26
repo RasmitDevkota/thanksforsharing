@@ -246,7 +246,6 @@ function checkOut() {
 
                     var name = doc.data().name;
                     var c2c = doc.data().c2c;
-                    console.log(c2c, " ", name);
 
                     if (c2c == true) {
                         var seller = doc.data().c2cauthor;
