@@ -144,8 +144,7 @@ function showProducts(doc) {
 function showCart() {
     document.getElementById("cartItems").innerHTML = "";
     var totalPrice = 0;
-    userCart.get().then(function (doc) {
-        
+    userCart.get().then(function (doc) {  
     })
 };
 
