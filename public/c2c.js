@@ -65,3 +65,5 @@ function confirmSale(id) {
 function confirmShipment(id) {
 
 };
+
+// Messaging
