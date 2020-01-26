@@ -24,6 +24,7 @@ window.onload = function () {
         console.log("Signed out");
         pageLoad(false);
     }
+    
     document.addEventListener('keydown', function (event) {
         const key = event.key;
         if (key == "Enter" && document.getElementById('search').value.toString().toLowerCase() != "") {
