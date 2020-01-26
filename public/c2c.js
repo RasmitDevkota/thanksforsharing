@@ -8,7 +8,7 @@ function c2cStart(u, usersUser) {
                 document.getElementById("c2c-verified").style.display = "block";
 
                 viewProducts();
-            } else if (doc.data().totalPrice != null) {
+            } else {
                 console.log("c2c-unverified");
                 document.getElementById("c2c-unverified").style.display = "block";
             }
