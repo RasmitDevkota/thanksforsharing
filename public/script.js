@@ -14,6 +14,7 @@ db.enablePersistence();
 
 var messaging = firebase.messaging();
 
+
 var users = db.collection("users");
 var emails = db.collection("emails");
 var Products = db.collection("products");
