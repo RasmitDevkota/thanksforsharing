@@ -89,7 +89,7 @@ function showProducts(doc) {
         var action = actionElements[i];
         var elem = document.createElement("v-" + action);
         elem.innerHTML = actionNames[i];
-        
+
         if (action == "addtocart") {
             elem.addEventListener('click', function () {
                 if (user != null) {
@@ -135,6 +135,7 @@ function showProducts(doc) {
                 console.log(deliveryTime);
             });
         }
+        
         elem.classList.add("v-" + action, "mdl-button", "mdl-js-button", "mdl-button--raised", "mdl-js-ripple-effect");
         document.getElementById(actions.id).appendChild(elem);
     };
