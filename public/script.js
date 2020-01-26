@@ -37,7 +37,7 @@ firebase.auth().onAuthStateChanged(function (user) {
 
 function pageLoad(u) {
     if (u == true) {
-        var user = firebase.auth().user
+        var user = firebase.auth().user;
         var usersUser = users.doc(firebase.auth().currentUser.uid);
         var emailsUser = emails.doc(firebase.auth().currentUser.displayName);
         var userCart = ShoppingCart.doc(firebase.auth().currentUser.displayName);
