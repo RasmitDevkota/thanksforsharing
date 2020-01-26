@@ -39,7 +39,9 @@ function checkVerificationStatus() {
 
 // C2C Verified
 function viewProducts() {
-    Products.where("c2c", "==", true).where("c2c-author", "==", user.displayName).orderBy("keywords").get().then(function (querySnapshot){});
+    Products.where("c2c", "==", true).where("c2c-author", "==", user.displayName).orderBy("keywords").get().then(function (querySnapshot) {
+        qu
+    });
 };
 
 function viewProductInPage(id) {
