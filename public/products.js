@@ -268,6 +268,7 @@ function checkOut() {
         userCart.collection(user.displayName).get().then(function (querySnapshot) {
             querySnapshot.forEach(function (doc) {
                 if (doc.exists) {
+                    console.log(doc.delete)
                     doc.delete();
                 }
             })
