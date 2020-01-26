@@ -70,7 +70,7 @@ function viewProducts() {
                         </button>
                     </div>
                 </div>
-            );
+            ``);
 
             ReactDOM.render(product, document.getElementById('c2c-verified-cards'));
         });
