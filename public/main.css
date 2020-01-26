@@ -82,10 +82,10 @@
     margin: auto;
     position: fixed;
   }
-  .mdl-layout__container {
+  .mdl-layout__container:not(.ap) {
     display: contents;
   }
-  .mdl-layout__header-row {
+  .mdl-layout__header-row:not(.ap) {
     padding: 0;
   }
   .search {
