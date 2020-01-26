@@ -265,7 +265,7 @@ function checkOut() {
         userCart.collection(user.displayName).get().then(function (querySnapshot) {
             querySnapshot.forEach(function (doc) {
                 var name = doc.data().name;
-                console.log(name)
+                console.log(name);
                 userCart.doc(user.displayName + '/' + name).delete();
             });
         })
