@@ -13,7 +13,7 @@ var db = firebase.firestore();
 db.enablePersistence();
 
 var messaging = firebase.messaging();
-messaging.requestPermission
+messaging.requestPermission().then()
 
 var users = db.collection("users");
 var emails = db.collection("emails");
