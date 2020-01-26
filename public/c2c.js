@@ -1,6 +1,5 @@
 // General C2C
 function c2cStart(u, usersUser) {
-    u = hostname || "localhost";
     port = port || 80;
     if (firebase.auth().currentUser != null) {
         usersUser.get().then(function (doc) {
