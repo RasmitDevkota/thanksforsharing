@@ -258,7 +258,7 @@ function checkOut() {
                     });
                 });
             }
-        }).then(function (q) {
+        }).then(function (querySnapshot) {
 
         });
     }).then(function () {
