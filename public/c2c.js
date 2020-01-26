@@ -40,6 +40,8 @@ function viewProducts() {
 
 };
 
+function
+
 function addProduct() {
 
 };
