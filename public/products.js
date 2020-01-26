@@ -144,80 +144,80 @@ function showProducts(doc) {
 function showCart() {
     document.getElementById("cartItems").innerHTML = "";
     var totalPrice = 0;
-            userCart.collection(user.displayName).get().then(function (querySnapshot) {
-                querySnapshot.forEach((doc) => {
-                    var name = doc.data().name.toString();
-                    var imageRef = doc.data().imageRef.toString();
-                    var c2c = doc.data().c2c;
-                    var price = doc.data().price;
-                    totalPrice += price;
+    userCart.collection(user.displayName).get().then(function (querySnapshot) {
+        querySnapshot.forEach((doc) => {
+            var name = doc.data().name.toString();
+            var imageRef = doc.data().imageRef.toString();
+            var c2c = doc.data().c2c;
+            var price = doc.data().price;
+            totalPrice += price;
 
-                    var outerDiv = document.createElement("c-product");
-                    document.getElementById("cartItems").appendChild(outerDiv);
-                    outerDiv.id = "couter" + name;
+            var outerDiv = document.createElement("c-product");
+            document.getElementById("cartItems").appendChild(outerDiv);
+            outerDiv.id = "couter" + name;
 
-                    var image = document.createElement("img");
-                    image.src = imageRef;
-                    document.getElementById(outerDiv.id).appendChild(image);
+            var image = document.createElement("img");
+            image.src = imageRef;
+            document.getElementById(outerDiv.id).appendChild(image);
 
-                    var nameEl = document.createElement("c-name");
-                    nameEl.className = "cname";
-                    nameEl.id = "cartName" + name;
-                    if (c2c == true) {
-                        nameEl.innerHTML = name + "<img src='c2c.png'>";
-                    } else {
-                        nameEl.innerHTML = name;
-                    }
-                    document.getElementById(outerDiv.id).appendChild(nameEl);
+            var nameEl = document.createElement("c-name");
+            nameEl.className = "cname";
+            nameEl.id = "cartName" + name;
+            if (c2c == true) {
+                nameEl.innerHTML = name + "<img src='c2c.png'>";
+            } else {
+                nameEl.innerHTML = name;
+            }
+            document.getElementById(outerDiv.id).appendChild(nameEl);
 
-                    var priceEl = document.createElement("c-price");
-                    priceEl.className = "cprice";
-                    priceEl.id = "cartPrice" + price;
-                    priceEl.innerHTML = "$" + price;
-                    document.getElementById(outerDiv.id).appendChild(priceEl);
+            var priceEl = document.createElement("c-price");
+            priceEl.className = "cprice";
+            priceEl.id = "cartPrice" + price;
+            priceEl.innerHTML = "$" + price;
+            document.getElementById(outerDiv.id).appendChild(priceEl);
 
-                    var removeWrapper = document.createElement("c-remove");
-                    removeWrapper.id = "removeWrapper" + name;
-                    document.getElementById(outerDiv.id).appendChild(removeWrapper);
+            var removeWrapper = document.createElement("c-remove");
+            removeWrapper.id = "removeWrapper" + name;
+            document.getElementById(outerDiv.id).appendChild(removeWrapper);
 
-                    var remove = document.createElement("div");
-                    remove.classList.add("remove", "mdl-button", "mdl-js-button", "mdl-button--icon", "mdl-button--colored");
-                    remove.id = "remove" + name;
-                    remove.innerHTML = " <i class='remove material-icons'>cancel</i>";
-                    document.getElementById(removeWrapper.id).appendChild(remove);
+            var remove = document.createElement("div");
+            remove.classList.add("remove", "mdl-button", "mdl-js-button", "mdl-button--icon", "mdl-button--colored");
+            remove.id = "remove" + name;
+            remove.innerHTML = " <i class='remove material-icons'>cancel</i>";
+            document.getElementById(removeWrapper.id).appendChild(remove);
 
-                    remove.addEventListener('click', function () {
-                        userCart.collection(user.displayName).doc(name).delete().then(function () {
-                            document.getElementById(outerDiv.id).style.display = "none";
-                            totalPrice -= price;
-                            document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
-
-                            var permDelete = setTimeout(function () {
-                                document.getElementById(outerDiv.id).remove();
-                            }, 1800);
-
-                            var rfcMsg = document.querySelector('#rfcMsg');
-                            rfcMsg.MaterialSnackbar.showSnackbar({
-                                message: 'Item removed from cart',
-                                timeout: 1700,
-                                actionHandler: function () {
-                                    userCart.collection(user.displayName).doc(name).set({
-                                        name: name,
-                                        price: price,
-                                        imageRef: imageRef
-                                    });
-                                    totalPrice += price;
-                                    document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
-                                    document.getElementById(outerDiv.id).style.display = "flex";
-                                    clearTimeout(permDelete);
-                                },
-                                actionText: 'Undo'
-                            });
-                        });
-                    });
+            remove.addEventListener('click', function () {
+                userCart.collection(user.displayName).doc(name).delete().then(function () {
+                    document.getElementById(outerDiv.id).style.display = "none";
+                    totalPrice -= price;
                     document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
+
+                    var permDelete = setTimeout(function () {
+                        document.getElementById(outerDiv.id).remove();
+                    }, 1800);
+
+                    var rfcMsg = document.querySelector('#rfcMsg');
+                    rfcMsg.MaterialSnackbar.showSnackbar({
+                        message: 'Item removed from cart',
+                        timeout: 1700,
+                        actionHandler: function () {
+                            userCart.collection(user.displayName).doc(name).set({
+                                name: name,
+                                price: price,
+                                imageRef: imageRef
+                            });
+                            totalPrice += price;
+                            document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
+                            document.getElementById(outerDiv.id).style.display = "flex";
+                            clearTimeout(permDelete);
+                        },
+                        actionText: 'Undo'
+                    });
                 });
             });
+            document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
+        });
+    });
     });
 };
 
