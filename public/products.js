@@ -238,7 +238,7 @@ function checkOut() {
             var name = doc.data().name;
             console.log(name);
 
-            Products.where("name", "==", name).orderBy("keywords").get().then(function (doc) {
+            Products.where("name", "==", name).orderBy("keywords").get().then(function (querySnapshot) {
                 querySnapshot.forEach(function (doc) {
                     var price = doc.data().price;
                     usersUser.update({
