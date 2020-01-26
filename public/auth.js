@@ -8,9 +8,6 @@ function signIn() {
         console.log(document.getElementById("signin").innerHTML);
         console.log(firebase.auth().currentUser);
     }
-    if (window.location.href.includes("cart.html") && firebase.auth().currentUser != null) { 
-        showCart();
-    }
 };
 
 function eToggleSignIn() {
