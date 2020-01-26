@@ -263,18 +263,6 @@ function checkOut() {
                             state: costate,
                             city: cocity,
                             zipcode: cozipcode
-                        }).then(function () {
-                            Orders.doc(user.displayName + '/' + seller + '/orderInfo').get().then(function (doc) {
-                                if (!doc.exists) {
-                                    Orders.doc(user.displayName + '/' + seller + '/orderInfo').set({
-                                        name: coname,
-                                        address: coaddr,
-                                        state: costate,
-                                        city: cocity,
-                                        zipcode: cozipcode
-                                    });
-                                }
-                            });
                         });
                     };
                 });
