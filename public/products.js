@@ -269,7 +269,7 @@ function checkOut() {
             querySnapshot.forEach(function (doc) {
                 if (doc.exists) {
                     console.log(doc.delete);
-                    doc.delete
+                    doc.
                 }
             })
         });
