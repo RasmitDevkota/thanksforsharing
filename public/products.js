@@ -126,7 +126,7 @@ function showProducts(doc) {
 };
 
 function showCart() {
-    document.getElementById("cartItems").innerHTML = "";
+    document.getElementById("cartItems").innerHTML = "<h1 style='text-align: center'>No items in cart! Head to the products page to buy something!</h1";
     var totalPrice = 0;
     userCart.collection(user.displayName).get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
