@@ -87,14 +87,6 @@ function viewOrders() {
 
 };
 
-function confirmSale(id) {
-
-};
-
-function confirmShipment(id) {
-
-};
-
 function addProduct() {
 
 };
