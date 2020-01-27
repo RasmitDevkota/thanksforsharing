@@ -131,6 +131,16 @@ function addProduct() {
         if (!doc.exists) {
             doc.set({
                 name: name,
+                name: name,
+                name: name,
+                name: name,
+                name: name,
+                name: name,
+                name: name,
+                name: name,
+                name: name,
+                name: name,
+                
             }).then(function () {
                 console.log("Document successfully written!");
             }).catch(function (error) {
