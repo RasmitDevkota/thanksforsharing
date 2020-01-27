@@ -124,6 +124,21 @@ function addProduct() {
     var costate = document.getElementById("costate").value;
     var cocity = document.getElementById("cocity").value;
     var cozipcode = document.getElementById("cozipcode").value;
+
+    userDataEmails.get().then(function (doc) {
+        if (!doc.exists) {
+            userDataEmails.set({
+                email: email,
+                uid: uid,
+            }).then(function () {
+                console.log("Document successfully written!");
+            }).catch(function (error) {
+                console.error("Error writing document: ", error);
+            });
+        } else {
+            console.log("Emails doc already exists, skipped writing.");
+        }
+    })
 };
 
 function verifyOrder(id) {
