@@ -86,6 +86,7 @@
 .verifyButton {
   height: 20%;
 }
+
 #c2c-add-product {
   display: flex;
   flex-direction: row;
@@ -99,5 +100,5 @@
   width: 25%;
 }
 .mdl-grid.ap {
-  max-width: 50px;
+  max-width: 50%;
 }
