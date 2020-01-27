@@ -124,7 +124,7 @@ function addProduct() {
     var rent = document.getElementById("addrent").value;
     var addprice = document.getElementById("addprice").value;
     var period = document.getElementById("addperiod").value;
-    var e = document.getElementById("timestamp");
+    var t = document.getElementById("timestamp");
     var strUser = e.options[e.selectedIndex].value;
 
     userDataEmails.get().then(function (doc) {
