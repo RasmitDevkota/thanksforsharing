@@ -129,7 +129,7 @@ function addProduct() {
 
     Products.doc(name).get().then(function (doc) {
         if (!doc.exists) {
-            userDataEmails.set({
+            Products().set({
                 email: email,
                 uid: uid,
             }).then(function () {
