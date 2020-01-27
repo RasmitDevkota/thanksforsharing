@@ -124,6 +124,8 @@ function addProduct() {
     var name = document.getElementById("addrent").value;
     var name = document.getElementById("addprice").value;
     var name = document.getElementById("addperiod").value;
+    var e = document.getElementById("ddlViewBy");
+    var strUser = e.options[e.selectedIndex].value;
 
     userDataEmails.get().then(function (doc) {
         if (!doc.exists) {
