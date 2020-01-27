@@ -8,7 +8,7 @@ function c2cStart() {
                 viewProducts();
             } else {
                 console.log("c2c-unverified");
-                document.getElementById("c2c-unverified").style.display = "block";
+                document.getElementById("c2c-unverified").style.display = "flex";
             }
         });
     } else {
