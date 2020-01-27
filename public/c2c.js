@@ -119,7 +119,7 @@ function viewOrders() {
 };
 
 function addProduct() {
-    var coname = document.getElementById("coname").value;
+    var coname = document.getElementById("addname").value;
 
     userDataEmails.get().then(function (doc) {
         if (!doc.exists) {
