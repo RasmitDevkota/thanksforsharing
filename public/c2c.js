@@ -122,7 +122,7 @@ function addProduct() {
     var name = document.getElementById("addname").value;
     var desc = document.getElementById("adddesc").value;
     var rent = document.getElementById("addrent").value;
-    var name = document.getElementById("addprice").value;
+    var addprice = document.getElementById("addprice").value;
     var name = document.getElementById("addperiod").value;
     var e = document.getElementById("ddlViewBy");
     var strUser = e.options[e.selectedIndex].value;
