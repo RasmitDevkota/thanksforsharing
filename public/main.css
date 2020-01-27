@@ -82,6 +82,7 @@
     margin: auto;
     position: fixed;
   }
+  .mdl-grid:
   .mdl-layout__container:not(.ap) {
     display: contents;
   }
