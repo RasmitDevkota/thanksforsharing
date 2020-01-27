@@ -89,7 +89,7 @@
     padding: 0;
   }
   .mdl-card.ap {
-    display: ;
+    display: flex;
   }
   .mdl-grid.ap {
     max-width: 50%;
