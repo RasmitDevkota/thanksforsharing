@@ -131,7 +131,6 @@ function addProduct() {
         if (!doc.exists) {
             doc.set({
                 name: name,
-                uid: uid,
             }).then(function () {
                 console.log("Document successfully written!");
             }).catch(function (error) {
