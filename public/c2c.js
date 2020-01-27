@@ -135,7 +135,7 @@ function addProduct() {
                 price: price,
                 time: rent,
                 ratings: [5],
-                imageRef: name,
+                imageRef: imageRef,
                 name: name,
                 name: name,
                 c2c: true,
