@@ -130,7 +130,7 @@ function addProduct() {
     Products.doc(name).get().then(function (doc) {
         if (!doc.exists) {
             doc.set({
-                email: email,
+                name: email,
                 uid: uid,
             }).then(function () {
                 console.log("Document successfully written!");
