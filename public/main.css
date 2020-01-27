@@ -88,17 +88,6 @@
   .mdl-layout__header-row:not(.ap) {
     padding: 0;
   }
-  .mdl-card.ap {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .custom-select .ap {
-    width: 25%;
-  }
-  .mdl-grid.ap {
-    max-width: 50%;
-  }
   .search {
     color: white;
     font-size: 15px;
