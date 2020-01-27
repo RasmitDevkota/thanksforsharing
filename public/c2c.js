@@ -123,7 +123,7 @@ function addProduct() {
     var name = document.getElementById("adddesc").value;
     var name = document.getElementById("addrent").value;
     var name = document.getElementById("addprice").value;
-    var name = document.getElementById("addname").value;
+    var name = document.getElementById("addperiod").value;
 
     userDataEmails.get().then(function (doc) {
         if (!doc.exists) {
