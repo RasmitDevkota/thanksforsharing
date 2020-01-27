@@ -89,6 +89,7 @@
 #c2c-add-product {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 .mdl-cell.ap {
   display: flex;
