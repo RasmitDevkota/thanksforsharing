@@ -121,7 +121,7 @@ function viewOrders() {
 function addProduct() {
     var name = document.getElementById("addname").value;
     var desc = document.getElementById("adddesc").value;
-    var name = document.getElementById("addrent").value;
+    var rent = document.getElementById("addrent").value;
     var name = document.getElementById("addprice").value;
     var name = document.getElementById("addperiod").value;
     var e = document.getElementById("ddlViewBy");
