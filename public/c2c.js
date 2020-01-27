@@ -132,7 +132,7 @@ function addProduct() {
             doc.set({
                 name: name,
                 description: desc,
-                time: re,
+                time: rent,
                 name: name,
                 name: name,
                 name: name,
