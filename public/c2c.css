@@ -99,6 +99,7 @@
 .mdl-grid.ap {
   max-width: 70%;
   margin-left: 15%;
+  justify-content: center;
 }
 .custom-select .ap {
   width: 5px;
