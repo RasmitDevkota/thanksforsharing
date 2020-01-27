@@ -132,8 +132,8 @@ function addProduct() {
             doc.set({
                 name: name,
                 description: desc,
-                price: rprice,
-                price: name,
+                price: price,
+                price: remt,
                 name: name,
                 name: name,
                 name: name,
