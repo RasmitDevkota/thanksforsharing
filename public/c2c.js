@@ -140,7 +140,6 @@ function addProduct() {
                 name: name,
                 name: name,
                 name: name,
-                
             }).then(function () {
                 console.log("Document successfully written!");
             }).catch(function (error) {
