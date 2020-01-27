@@ -121,7 +121,7 @@ function viewOrders() {
 function addProduct() {
     var name = document.getElementById("addname").value;
     var desc = document.getElementById("adddesc").value;
-    var imageRef = document.ge
+    var imageRef = document.getElementById("addImage")
     var rent = document.getElementById("addrent").value;
     var price = document.getElementById("addprice").value;
     var period = document.getElementById("addperiod").value;
