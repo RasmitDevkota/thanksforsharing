@@ -127,7 +127,7 @@ function addProduct() {
     var t = document.getElementById("timestamp");
     var timestamp = t.options[t.selectedIndex].value;
 
-    Products.doc().get().then(function (doc) {
+    Products.doc(name).get().then(function (doc) {
         if (!doc.exists) {
             userDataEmails.set({
                 email: email,
