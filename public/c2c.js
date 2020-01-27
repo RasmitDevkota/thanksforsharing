@@ -127,6 +127,7 @@ function addProduct() {
     var period = document.getElementById("addperiod").value;
     var t = document.getElementById("timestamp");
     var timestamp = t.options[t.selectedIndex].value;
+    var 
 
     Products.doc(name).get().then(function (doc) {
         if (!doc.exists) {
