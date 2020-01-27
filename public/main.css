@@ -83,7 +83,7 @@
     position: fixed;
   }
   .mdl-grid.ap{
-    max-width: 50;
+    max-width: 50%;
   }
   .mdl-layout__container:not(.ap) {
     display: contents;
