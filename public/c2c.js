@@ -133,7 +133,7 @@ function addProduct() {
                 name: name,
                 description: desc,
                 time: rent,
-                name: name,
+                price: name,
                 name: name,
                 name: name,
                 name: name,
