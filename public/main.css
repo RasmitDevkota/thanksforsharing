@@ -91,7 +91,7 @@
   .mdl-card.ap {
     display: flex;
     flex-direction: row;
-    justify-content: ;
+    justify-content: center;
   }
   .mdl-grid.ap {
     max-width: 50%;
