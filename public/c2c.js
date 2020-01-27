@@ -131,7 +131,7 @@ function addProduct() {
         if (!doc.exists) {
             doc.set({
                 name: name,
-                desc: name,
+                desc: rent,
                 name: name,
                 name: name,
                 name: name,
