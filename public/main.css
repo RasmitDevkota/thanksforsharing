@@ -88,6 +88,7 @@
   .mdl-layout__header-row:not(.ap) {
     padding: 0;
   }
+  .mdl-card.ap{}
   .mdl-grid.ap{
     max-width: 50%;
   }
