@@ -147,7 +147,7 @@ function addProduct() {
                 console.error("Error writing document: ", error);
             });
         } else {
-            console.log("Emails doc already exists, skipped writing.");
+            console.log("Product doc already exists, skipped writing.");
         }
     })
 };
