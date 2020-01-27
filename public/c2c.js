@@ -120,7 +120,6 @@ function viewOrders() {
 
 function addProduct() {
     var name = document.getElementById("addname").value;
-
     var name = document.getElementById("addname").value;
 
     userDataEmails.get().then(function (doc) {
