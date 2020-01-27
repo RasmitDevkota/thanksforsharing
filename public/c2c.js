@@ -139,7 +139,7 @@ function addProduct() {
                 name: name,
                 name: name,
                 name: name,
-                c2c: name,
+                c2cauthor: name,
             }).then(function () {
                 console.log("Document successfully written!");
             }).catch(function (error) {
