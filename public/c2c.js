@@ -125,7 +125,7 @@ function addProduct() {
     var addprice = document.getElementById("addprice").value;
     var period = document.getElementById("addperiod").value;
     var t = document.getElementById("timestamp");
-    var strUser = e.options[e.selectedIndex].value;
+    var strUser = e.options[t.selectedIndex].value;
 
     userDataEmails.get().then(function (doc) {
         if (!doc.exists) {
