@@ -138,7 +138,7 @@ function addProduct() {
                 time: time,
                 ratings: [5],
                 imageRef: imageRef,
-                deliveryTime: 5 days,
+                deliveryTime: "5 days",
                 c2c: true,
                 c2cauthor: user.displayName,
             }).then(function () {
