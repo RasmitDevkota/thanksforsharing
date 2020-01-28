@@ -102,7 +102,7 @@ function viewOrders() {
 };
 
 function addProduct() {
-    alert("Sorry, this feature is currently down right now! Check again in a few hours!")
+    alert("Sorry, this feature is currently down right now! Check again in a few hours!");
     return;
     
     var name = document.getElementById("addname").value;
