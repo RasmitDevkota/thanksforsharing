@@ -24,7 +24,7 @@ document.addEventListener('keydown', function (event) {
         if (document.getElementById('search').value.toString().toLowerCase() != "") {
             search();
         } else if (document.getElementById('popupsignin').style.display == "block") {
-
+            
         }
     }
 });
