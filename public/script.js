@@ -20,7 +20,7 @@ var Orders = db.collection("orders");
 
 document.addEventListener('keydown', function (event) {
     const key = event.key;
-    if (key == "Enter" && document.getElementById('search').value.toString().toLowerCase() != "") {
+    if (key == "Enter" && ) {
         search();
     } else if (document.getElementById('popupsignin').style.display == "block")
 });
