@@ -23,7 +23,7 @@ document.addEventListener('keydown', function (event) {
     if (key == "Enter") {
         if (document.getElementById('search').value.toString().toLowerCase() != "") {
             search();
-        } else if (document.getElementById('popupsignin').style.display == "block") {
+        } else if (document.getElementById('popupsignin').style.display != "block") {
             signIn();
         } else if (document.getElementById('popupsignin').style.display != "block") {
             signIn();
