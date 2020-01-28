@@ -158,7 +158,7 @@ function handleSignUp() {
                     display('signup');
                     pageLoad(true);
                 });
-            ]);
+        });
 
             user.updateProfile({
                 displayName: permusername,
