@@ -16,7 +16,7 @@ function c2cStart() {
         });
     } else {
         console.log("no user");
-        document.getElementById("c2c-nouser").style.display = "flex";
+        document.getElementById("nouser").style.display = "flex";
     }
 };
 
