@@ -5,7 +5,6 @@ function c2cStart() {
     if (user) {
         usersUser.get().then(function (doc) {
             if (doc.data().totalPrice >= 500) {
-
                 console.log("c2c-verified");
                 document.getElementById("c2c-verified").style.display = "flex";
                 viewProducts();
