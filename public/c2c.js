@@ -114,6 +114,7 @@ function viewOrders() {
 };
 
 function addProduct() {
+    return;
     var name = document.getElementById("addname").value;
     var desc = document.getElementById("adddesc").value;
     var imageRef = document.getElementById("addImage").value;
