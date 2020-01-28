@@ -6,6 +6,18 @@ function c2cStart() {
         usersUser.get().then(function (doc) {
             if (doc.data().totalPrice >= 500) {
                 console.log("c2c-verified");
+
+                if (doc.data().paymentInformation == null) {
+                    cc = prompt('Please enter the credit card number you would like to use with C2C.');
+                    if (cc.length != 16) {
+                        alert('Please enter a valid credit card number withour spaces!');
+                        location.reload();
+                    } else {
+                        usersUser.set({
+                            paymentInformation: cc
+                        });
+                    }
+                }
                 document.getElementById("c2c-verified").style.display = "flex";
                 viewProducts();
             } else {
