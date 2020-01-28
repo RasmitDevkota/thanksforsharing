@@ -148,7 +148,7 @@ function addProduct() {
 };
 
 function verifyOrder(id) {
-    var c = confirm("Confirm that this product has been shipped by the seller (not necessarily received by the buyer) and that payment has been received?\n (Note: Thx4Sharing is not lia");
+    var c = confirm("Confirm that this product has been shipped by the seller (not necessarily received by the buyer) and that payment has been received?\n (Note: Thx4Sharing is not liable in case ");
     if (c == true) {
         // $('#order-' + id).remove();
     }
