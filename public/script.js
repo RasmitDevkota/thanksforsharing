@@ -31,7 +31,6 @@ firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
         pageLoad(true);
     } else {
-        window.user = false;
         console.log("Signed out");
         pageLoad(false);
     }
@@ -69,6 +68,7 @@ function pageLoad(u) {
             console.log("index.html?");
         }
     } else {
+
         if (window.location.href.includes("products.html")) {
             var urlParams = new URLSearchParams(window.location.search);
             var query = urlParams.get('query');
