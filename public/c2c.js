@@ -7,14 +7,14 @@ function c2cStart() {
             if (doc.data().totalPrice >= 500) {
 
                 askCNN();
-                    if (cc.length != 16) {
-                        alert('Please enter a valid credit card number without spaces!');
-                        location.reload();
-                    } else {
-                        usersUser.set({
-                            paymentInformation: cc
-                        });
-                    }
+                if (cc.length != 16) {
+                    alert('Please enter a valid credit card number without spaces!');
+                    location.reload();
+                } else {
+                    usersUser.set({
+                        paymentInformation: cc
+                    });
+                }
 
                 console.log("c2c-verified");
                 document.getElementById("c2c-verified").style.display = "flex";
