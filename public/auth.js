@@ -87,7 +87,6 @@ function gToggleSignIn() {
                         });
                     });
                 };
-            }).then(function () {
             });
         }).catch(function (error) {
             var errorCode = error.code;
