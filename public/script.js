@@ -55,10 +55,6 @@ function pageLoad(u) {
         } else if (window.location.href.includes("c2c.html")) {
             usersUser.get().then(function (doc) {
                     c2cStart();
-                } else {
-                    console.log("c2c-unverified");
-                    c2cStart();
-                }
             });
         } else {
             console.log("index.html?");
