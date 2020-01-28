@@ -21,8 +21,8 @@ var Orders = db.collection("orders");
 document.addEventListener('keydown', function (event) {
     const key = event.key;
     if (key == "Enter") {
-        if (document.getElementById('search').value.toString().toLowerCase() != "") 
-        {
+        if (document.getElementById('search').value.toString().toLowerCase() != "") {
+            a
             search();
         } else if (document.getElementById('popupsignin').style.display != "none") {
             signIn();
