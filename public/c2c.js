@@ -16,7 +16,6 @@ function c2cStart() {
                             paymentInformation: cc
                         });
                     }
-                }
 
                 console.log("c2c-verified");
                 document.getElementById("c2c-verified").style.display = "flex";
