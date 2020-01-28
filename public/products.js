@@ -226,6 +226,11 @@ function showCart() {
             document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
         });
     });
+    
+      
+          < !--Beginning of About-- >
+        <a id="about" class="navelement" onclick="redirect('about.html')">About</a>
+        <!--End of About-- >& nbsp;& nbsp;& nbsp;
 };
 
 function checkOut() {
