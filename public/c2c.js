@@ -22,13 +22,6 @@ function viewC2CProducts() {
 };
 
 // C2C Unverified
-function verifyForm() {
-
-};
-
-function verifyInfo() {
-    
-};
 
 function checkVerificationStatus() {
     usersUser.get().then(function (doc) {
