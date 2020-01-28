@@ -241,7 +241,7 @@ function checkOut() {
     var cozipcode = document.getElementById("cozipcode").value;
 
     if (coname || coaddr || costate || cocity || cozipcode == "") {
-        a == null || a == "", b == null || b == "", c == null || c == "", d == null || d == ""
+        
     }
 
     display('copopup');
