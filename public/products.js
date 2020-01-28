@@ -227,7 +227,7 @@ function showCart() {
         });
     });
     if ($('#leftmenu').is(':empty')) {
-
+    }
 };
 
 function checkOut() {
