@@ -27,6 +27,8 @@ document.addEventListener('keydown', function (event) {
             signIn();
         } else if (document.getElementById('popupsignin').style.display != "none") {
             signIn();
+        } else if (document.getElementById('popupsignin').style.display != "none") {
+            signIn();
         }
     }
 });
