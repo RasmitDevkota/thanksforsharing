@@ -8,13 +8,13 @@ function c2cStart() {
                 console.log("c2c-verified");
                 document.getElementById("c2c-verified").style.display = "flex";
                 viewProducts();
-                
+
                 if (doc.data().paymentInformation == null) {
                     cc = prompt('Please enter the credit card number you would like to use with C2C.');
                     if (cc.length() != 16) {
                         alert('Please enter a valid credit card number withour spaces!');
                         cc = prompt('Please enter the credit card number you would like to use with C2C.');
-                    }
+                    } else
                     usersUser.set({
                         paymentInformation: cc
                     });
