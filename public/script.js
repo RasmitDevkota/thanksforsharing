@@ -54,7 +54,7 @@ function pageLoad(u) {
             showCart();
         } else if (window.location.href.includes("c2c.html")) {
             usersUser.get().then(function (doc) {
-                    c2cStart();
+                c2cStart();
             });
         } else {
             console.log("index.html?");
