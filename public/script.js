@@ -67,7 +67,7 @@ function pageLoad(u) {
             console.log("index.html?");
         }
     } else {
-        window.user = false;
+        window.user = null;
 
         if (window.location.href.includes("products.html")) {
             var urlParams = new URLSearchParams(window.location.search);
