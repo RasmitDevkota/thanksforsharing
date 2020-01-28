@@ -25,14 +25,6 @@ function viewC2CProducts() {
 };
 
 // C2C Unverified
-function checkVerificationStatus() {
-    usersUser.get().then(function (doc) {
-        if (doc.data().totalPrice >= 500) {
-            document.getElementById("c2c-verified").style.display = "block";
-            viewProducts();
-        }
-    });
-};
 
 // C2C Verified
 function viewProducts() {
