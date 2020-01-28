@@ -226,9 +226,9 @@ function showCart() {
             document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
         });
     });
-    
-    if ($('#cartItems').is(':empty')) {
 
+    if ($('#cartItems').is(':empty')) {
+        
     }
 };
 
