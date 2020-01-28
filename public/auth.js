@@ -156,9 +156,6 @@ function handleSignUp() {
                 console.log(error);
                 console.log(user.displayName);
             });
-        }).then(function () {
-            display('signup');
-            pageLoad(true);
         });
     }).catch(function (error) {
         var errorCode = error.code;
