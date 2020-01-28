@@ -149,6 +149,7 @@ function showProducts(doc) {
 };
 
 function showCart() {
+    document.getElementById("cartItems").innerHTML = "<h1 style='text-align: center'>No items in cart! Go to products page and add some items to cart.</h1>";
     document.getElementById("cartItems").innerHTML = "";
     document.getElementById("totalPrice").innerHTML = "Total Price: $0.00";
     var totalPrice = 0;
