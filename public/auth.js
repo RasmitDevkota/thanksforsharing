@@ -147,7 +147,7 @@ function handleSignUp() {
             }).catch(function (error) {
                 console.error("Error writing document: ", error);
             })
-                .then(function () {
+            .then(function () {
                 user.updateProfile({
                     displayName: permusername,
                 }).then(function () {
