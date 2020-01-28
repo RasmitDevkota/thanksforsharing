@@ -18,6 +18,7 @@ function c2cStart() {
                     }
                 }
 
+                console.log("c2c-verified");
                 document.getElementById("c2c-verified").style.display = "flex";
                 viewProducts();
             } else {
