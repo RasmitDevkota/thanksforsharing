@@ -121,6 +121,7 @@ function addProduct() {
     var imageRef = document.getElementById("addImage").value;
     var rent = document.getElementById("addrent").value;
     var price = document.getElementById("addprice").value;
+    var keywords = document.getElementById("keywords").value;
     var period = document.getElementById("addperiod").value;
     var t = document.getElementById("timestamp");
     var timestamp = t.options[t.selectedIndex].value;
