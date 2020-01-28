@@ -17,6 +17,7 @@ var emails = db.collection("emails");
 var Products = db.collection("products");
 var ShoppingCart = db.collection("cart");
 var Orders = db.collection("orders");
+
 document.addEventListener('keydown', function (event) {
     const key = event.key;
     if (key == "Enter" && document.getElementById('search').value.toString().toLowerCase() != "") {
