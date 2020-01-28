@@ -263,7 +263,8 @@
   .search:focus{
     outline: none;
   }
-  .footer{
+  .footer {
+    margin-top: 22%;
     background-color: #343434;
   }
   #menu{
