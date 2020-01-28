@@ -1,7 +1,5 @@
 // General C2C
 function c2cStart() {
-    document.getElementById("nouser").innerHTML = "";
-    document.getElementById("c2c-unverified").innerHTML = "";
     if (user) {
         usersUser.get().then(function (doc) {
             if (doc.data().totalPrice >= 500) {
