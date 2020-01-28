@@ -143,7 +143,7 @@ function addProduct() {
 
 function verifyOrder(id) {
     var c = confirm("Confirm that this product has been shipped by the seller (not necessarily received by the buyer) and that payment has been received?");
-    console.log($('#order-' + id));
+    console.log(c);
     if (c == true) {
         db.collectionGroup(user.displayName).where("productName", "==", id).get().then(function (querySnapshot) {
             querySnapshot.forEach(function (doc) {
