@@ -125,6 +125,7 @@ function addProduct() {
     var t = document.getElementById("timestamp");
     var timestamp = t.options[t.selectedIndex].value;
     var time = rent + " " + timestamp;
+    var keywords = document.get
 
     Products.doc(name).get().then(function (doc) {
         if (!doc.exists) {
