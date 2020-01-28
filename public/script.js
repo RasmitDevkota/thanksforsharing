@@ -23,7 +23,6 @@ var Orders = db.collection("orders");
             search();
         }
     });
-};
 
 firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
