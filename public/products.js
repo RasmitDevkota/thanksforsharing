@@ -226,7 +226,8 @@ function showCart() {
             document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
         });
     });
-    
+    if ($('#leftmenu').is(':empty')) {
+
 };
 
 function checkOut() {
