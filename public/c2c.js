@@ -2,7 +2,7 @@
 function c2cStart() {
     document.getElementById("c2c-verified").style.display = "none";
     document.getElementById("c2c-unverified").style.display = "none";
-    document.getElementById("c2c-nouser").style.display = "flex";
+    document.getElementById("c2c-nouser").style.display = "none";
     if (user) {
         usersUser.get().then(function (doc) {
             if (doc.data().totalPrice >= 500) {
