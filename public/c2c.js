@@ -136,7 +136,7 @@ function addProduct() {
                 description: desc,
                 price: price,
                 time: time,
-                keywords: [key]
+                keywords: [keywords]
                 ratings: [5],
                 imageRef: imageRef,
                 deliveryTime: "5 days",
