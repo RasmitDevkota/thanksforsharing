@@ -22,7 +22,6 @@ function viewC2CProducts() {
 };
 
 // C2C Unverified
-
 function checkVerificationStatus() {
     usersUser.get().then(function (doc) {
         if (doc.data().totalPrice >= 500) {
