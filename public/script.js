@@ -55,7 +55,6 @@ function pageLoad(u) {
             var query = urlParams.get('query');
             results(query.toLowerCase());
         } else if (window.location.href.includes("cart.html")) {
-            document.getElementById("totalPrice").innerHTML = "Total Price: $0.00";
             showCart();
         } else if (window.location.href.includes("c2c.html")) {
             c2cStart();
