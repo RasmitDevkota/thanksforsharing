@@ -227,7 +227,7 @@ function showCart() {
             document.getElementById("totalPrice").innerHTML = "Total Price: $" + totalPrice.toFixed(2);
         });
     });
-    
+
     if ($('#cartItems').is(':empty')) {
         document.getElementById("cartItems").innerHTML = "<h1 style='text-align: center'>No items in cart! Go to products page and add some items to cart.</h1>";
     }
@@ -239,6 +239,8 @@ function checkOut() {
     var costate = document.getElementById("costate").value;
     var cocity = document.getElementById("cocity").value;
     var cozipcode = document.getElementById("cozipcode").value;
+
+    if ()
 
     display('copopup');
     alert("Product/s ordered! Each will come at their respective times, please check individual product entries for further information.");
