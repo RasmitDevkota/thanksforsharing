@@ -13,7 +13,7 @@ function c2cStart() {
                 document.getElementById("c2c-unverified").style.display = "flex";
             }
             if (doc.data().paymentInformation == null) {
-                prompt('Please enter the ')
+                prompt('Please enter the credit card you would like to use with )
             }
         });
     } else {
