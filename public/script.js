@@ -68,6 +68,7 @@ function pageLoad(u) {
         }
     } else {
         console.log("Signed out");
+        
         window.user = false;
 
         if (window.location.href.includes("products.html")) {
