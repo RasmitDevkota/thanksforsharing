@@ -9,7 +9,7 @@ function c2cStart() {
                 var cc = askCNN();
                 if (cc.length != 16) {
                     alert('Please enter a valid credit card number without spaces!');
-                    askCNN()
+                    askCNN();
                 } else {
                     usersUser.set({
                         paymentInformation: cc
