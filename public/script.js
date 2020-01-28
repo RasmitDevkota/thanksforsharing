@@ -22,7 +22,7 @@ document.addEventListener('keydown', function (event) {
     const key = event.key;
     if (key == "Enter" && document.getElementById('search').value.toString().toLowerCase() != "") {
         search();
-    }
+    } 
 });
 
 firebase.auth().onAuthStateChanged(function (user) {
