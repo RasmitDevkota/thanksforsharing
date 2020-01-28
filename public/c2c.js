@@ -34,7 +34,7 @@ function c2cStart() {
 
 function askCCN() {
     cc = prompt('Please enter the credit card number you would like to use with C2C.');
-    return 
+    return cc;
 };
 
 function viewC2CProducts() {
