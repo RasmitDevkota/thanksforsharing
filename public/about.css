@@ -21,9 +21,4 @@
         transform: translateY(0px);
     }
 }
-.titlelogosection {
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-}
 
