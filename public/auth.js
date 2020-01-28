@@ -137,7 +137,7 @@ function handleSignUp() {
                 console.log("Document successfully written!");
             }).catch(function (error) {
                 console.error("Error writing document: ", error);
-            }).then(function () {;
+            }).then(function () { });
 
             users.doc(user.uid).set({
                 displayName: permusername,
