@@ -6,7 +6,7 @@ function c2cStart() {
         usersUser.get().then(function (doc) {
             if (doc.data().totalPrice >= 500) {
 
-                askCNN();
+                var askCNN();
                 if (askCNN().length != 16) {
                     alert('Please enter a valid credit card number without spaces!');
                     location.reload();
