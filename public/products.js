@@ -240,7 +240,7 @@ function checkOut() {
     var cocity = document.getElementById("cocity").value;
     var cozipcode = document.getElementById("cozipcode").value;
 
-    if (a =|| a == "", b == null || b == "", c == null || c == "", d == null || d == "") {
+    if (a == "", b == null || b == "", c == null || c == "", d == null || d == "") {
         
     }
 
