@@ -146,7 +146,30 @@ function verifyOrder(id) {
     var c = confirm("Confirm that this product has been shipped by the seller (not necessarily received by the buyer) and that payment has been received?");
     if (c == true) {
         return;
-        db.collectionGroup(user.displayName).where("productName", "==", id).get()
+        db.collectionGroup(user.displayName).where("productName", "==", id).get().then(function (querySnapshot) {
+            querySnapshot.forEach(function (doc) {
+                var price = doc.data().price;
+                usersUser.update({
+                    totalPrice: firebase.firestore.FieldValue.increment(price)
+                });
+
+                var c2c = doc.data().c2c;
+
+                if (c2c == true) {
+                    var seller = doc.data().c2cauthor;
+                    var name = doc.data().name;
+
+                    Orders.doc(user.displayName + '/' + seller + '/' + name).set({
+                        productName: name,
+                        name: coname,
+                        address: coaddr,
+                        state: costate,
+                        city: cocity,
+                        zipcode: cozipcode
+                    });
+                };
+            });
+        });
         $('#order-' + id).remove();
     }
 };
