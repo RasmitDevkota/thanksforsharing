@@ -32,6 +32,10 @@ function c2cStart() {
     }
 };
 
+function askCCN() {
+    
+}
+
 function viewC2CProducts() {
     redirect('products.html?query=c2c');
 };
