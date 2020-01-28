@@ -145,18 +145,6 @@ function handleSignUp() {
                     console.log("Document successfully written!");
                 }).catch(function (error) {
                     console.error("Error writing document: ", error);
-                }).then(function () {
-                    user.updateProfile({
-                        displayName: permusername,
-                    }).then(function () {
-                        console.log(user.displayName);
-                    }).catch(function (error) {
-                        console.log(error);
-                        console.log(user.displayName);
-                    }).then(function () {
-                        display('signup');
-                        pageLoad(true);
-                    });
                 });
             });
 
