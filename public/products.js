@@ -99,7 +99,7 @@ function showProducts(doc) {
 
         if (action == "addtocart") {
             elem.addEventListener('click', function () {
-                if (user != false) {
+                if (user) {
                     ShoppingCart.doc(user.displayName + '/' + user.displayName + '/' + name).get().then(function (doc) {
                         if (!doc.exists) {
                             ShoppingCart.doc(user.displayName + '/' + user.displayName + '/' + name).set({
