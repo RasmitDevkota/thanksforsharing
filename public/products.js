@@ -150,6 +150,7 @@ function showProducts(doc) {
 
 function showCart() {
     document.getElementById("cartItems").innerHTML = "";
+    document.getElementById("totalPrice").innerHTML = "Total Price: $0.00";
     var totalPrice = 0;
     userCart.get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
