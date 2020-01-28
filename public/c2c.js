@@ -2,7 +2,6 @@
 function c2cStart() {
     document.getElementById("nouser").innerHTML = "";
     document.getElementById("c2c-unverified").innerHTML = "";
-    document.getElementById("products").innerHTML = "";
     if (user) {
         usersUser.get().then(function (doc) {
             if (doc.data().totalPrice >= 500) {
