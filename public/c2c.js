@@ -115,7 +115,7 @@ function viewOrders() {
 
 function addProduct() {
     return;
-    
+
     var name = document.getElementById("addname").value;
     var desc = document.getElementById("adddesc").value;
     var imageRef = document.getElementById("addImage").value;
@@ -135,7 +135,7 @@ function addProduct() {
                 time: time,
                 ratings: [5],
                 imageRef: imageRef,
-                deliveryTime: "5 days",
+                deliveryTime: "5 days
                 c2c: true,
                 c2cauthor: user.displayName,
             }).then(function () {
