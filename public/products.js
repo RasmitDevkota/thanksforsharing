@@ -240,10 +240,6 @@ function checkOut() {
     var cocity = document.getElementById("cocity").value;
     var cozipcode = document.getElementById("cozipcode").value;
 
-    if (a == "", b == null || b == "", c == null || c == "", d == null || d == "") {
-        
-    }
-
     display('copopup');
     alert("Product/s ordered! Each will come at their respective times, please check individual product entries for further information.");
 
