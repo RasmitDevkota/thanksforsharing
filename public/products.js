@@ -227,10 +227,6 @@ function showCart() {
         });
     });
     
-      
-          < !--Beginning of About-- >
-        <a id="about" class="navelement" onclick="redirect('about.html')">About</a>
-        <!--End of About-- >& nbsp;& nbsp;& nbsp;
 };
 
 function checkOut() {
