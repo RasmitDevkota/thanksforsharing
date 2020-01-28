@@ -30,11 +30,6 @@ function c2cStart() {
     }
 };
 
-function askCCN() {
-    cc = prompt('Please enter the credit card number you would like to use with C2C.');
-    return cc;
-};
-
 function viewC2CProducts() {
     redirect('products.html?query=c2c');
 };
