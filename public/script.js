@@ -65,10 +65,6 @@ function pageLoad(u) {
                         document.getElementById("c2c-unverified").style.display = "block";
                     }
                 });
-            } else {
-                console.log("no user");
-                document.getElementById("c2c-nouser").style.display = "block";
-            }
         } else {
             console.log("index.html?");
         }
