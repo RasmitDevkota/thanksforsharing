@@ -16,7 +16,7 @@ function c2cStart() {
                 cc = prompt('Please enter the credit card number you would like to use with C2C.');
                 usersUser.set({
                     
-                })
+                });
             }
         });
     } else {
