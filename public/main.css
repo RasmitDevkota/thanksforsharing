@@ -11,10 +11,11 @@
   }
   body {
     font-family: Verdana, sans-serif;
-    didspla
+    display:flex;
+    flex
   }
   .footer {
-    margin-top: 5px;
+    margin-top: 500px;
     background-color: #343434;
   }
   header {
