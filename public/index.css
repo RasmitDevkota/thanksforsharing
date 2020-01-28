@@ -27,7 +27,7 @@
     justify-content: center;
 }
 .bigsearch{
-    border: 1px dodgerblue red;
+    border: 1px dotted red;
 }
 .ads {
     flex-grow: 1;
