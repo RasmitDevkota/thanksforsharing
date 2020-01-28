@@ -154,6 +154,7 @@ function showCart() {
     var totalPrice = 0;
     userCart.get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
+            document.getElementById("cartItems").innerHTML = "";
             var name = doc.data().name.toString();
             var imageRef = doc.data().imageRef.toString();
             var c2c = doc.data().c2c;
