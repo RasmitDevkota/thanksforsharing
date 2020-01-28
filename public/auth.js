@@ -88,8 +88,6 @@ function gToggleSignIn() {
                     });
                 };
             }).then(function () {
-                togglepsi();
-                pageLoad(true);
             });
         }).catch(function (error) {
             var errorCode = error.code;
