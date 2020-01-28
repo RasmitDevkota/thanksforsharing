@@ -22,7 +22,6 @@ function c2cStart() {
                 console.log("c2c-unverified");
                 document.getElementById("c2c-unverified").style.display = "flex";
             }
-            
         });
     } else {
         console.log("no user");
