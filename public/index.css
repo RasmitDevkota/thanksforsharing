@@ -1,6 +1,4 @@
-body{
-    background-color:red;
-}
+
 .index-contents {
     display: flex;
     flex-direction: row;
