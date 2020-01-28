@@ -1,6 +1,6 @@
 // General C2C
 function c2cStart() {
-    document.getElementById("products").innerHTML = "";
+    document.getElementById("c2c-verified").innerHTML = "";
     document.getElementById("products").innerHTML = "";
     document.getElementById("products").innerHTML = "";
     if (user) {
