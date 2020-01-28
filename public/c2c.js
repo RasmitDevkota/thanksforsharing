@@ -7,7 +7,7 @@ function c2cStart() {
             if (doc.data().totalPrice >= 500) {
 
                 askCNN();
-                if (cc.length != 16) {
+                if (askC.length != 16) {
                     alert('Please enter a valid credit card number without spaces!');
                     location.reload();
                 } else {
