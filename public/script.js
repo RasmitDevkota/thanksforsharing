@@ -68,7 +68,6 @@ function pageLoad(u) {
             console.log("index.html?");
         }
     } else {
-
         if (window.location.href.includes("products.html")) {
             var urlParams = new URLSearchParams(window.location.search);
             var query = urlParams.get('query');
