@@ -229,7 +229,7 @@ function showCart() {
     });
 
     if (totalPrice == 0) {
-        // document.getElementById("cartItems").innerHTML = "<h1 style='text-align: center'>No items in cart! Go to products page and add some items to cart.</h1>";
+        document.getElementById("cartItems").innerHTML = "<h1 style='text-align: center'>No items in cart! Go to products page and add some items to cart.</h1>";
     }
 };
 
