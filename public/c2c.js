@@ -148,26 +148,7 @@ function verifyOrder(id) {
         return;
         db.collectionGroup(user.displayName).where("productName", "==", id).get().then(function (querySnapshot) {
             querySnapshot.forEach(function (doc) {
-                var price = doc.data().price;
-                usersUser.update({
-                    totalPrice: firebase.firestore.FieldValue.increment(price)
-                });
-
-                var c2c = doc.data().c2c;
-
-                if (c2c == true) {
-                    var seller = doc.data().c2cauthor;
-                    var name = doc.data().name;
-
-                    Orders.doc(user.displayName + '/' + seller + '/' + name).set({
-                        productName: name,
-                        name: coname,
-                        address: coaddr,
-                        state: costate,
-                        city: cocity,
-                        zipcode: cozipcode
-                    });
-                };
+                
             });
         });
         $('#order-' + id).remove();
