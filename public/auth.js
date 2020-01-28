@@ -158,7 +158,6 @@ function handleSignUp() {
             });
                 display('signup');
                 pageLoad(true);
-            })
         });
     }).catch(function (error) {
         var errorCode = error.code;
