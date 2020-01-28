@@ -25,7 +25,7 @@ document.addEventListener('keydown', function (event) {
             search();
         } else if (document.getElementById('popupsignin').style.display != "none") {
             signIn();
-        } else if (document.getElementById('popupsignin').style.display != "none") {
+        } else if (document.getElementById('singup').style.display != "none") {
             signIn();
         } else if (document.getElementById('popupsignin').style.display != "none") {
             signIn();
