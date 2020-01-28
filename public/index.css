@@ -28,7 +28,8 @@
 }
 .gigantic-search{
     color:rgb(59, 59, 59);
-    background-colo
+    background-color: white;
+    padding:1%;
 }
 .ads {
     flex-grow: 1;
