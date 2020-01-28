@@ -1,4 +1,6 @@
-
+body{
+    bac
+}
 .index-contents {
     display: flex;
     flex-direction: row;
@@ -28,8 +30,7 @@
     justify-content:center;
 }
 .bigsearch{
-border: 1px solid red;
-
+    border: 1px solid red;
 }
 .ads {
     flex-grow: 1;
