@@ -2,6 +2,8 @@
 function c2cStart() {
 
     document.getElementById("products").innerHTML = "";
+    document.getElementById("products").innerHTML = "";
+    document.getElementById("products").innerHTML = "";
     if (user) {
         usersUser.get().then(function (doc) {
             if (doc.data().totalPrice >= 500) {
