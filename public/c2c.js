@@ -5,7 +5,6 @@ function c2cStart() {
     if (user) {
         usersUser.get().then(function (doc) {
             if (doc.data().totalPrice >= 500) {
-                console.log("c2c-verified");
 
                 if (doc.data().paymentInformation == null) {
                     cc = prompt('Please enter the credit card number you would like to use with C2C.');
@@ -18,7 +17,7 @@ function c2cStart() {
                         });
                     }
                 }
-                
+
                 document.getElementById("c2c-verified").style.display = "flex";
                 viewProducts();
             } else {
