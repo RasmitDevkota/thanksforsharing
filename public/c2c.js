@@ -1,5 +1,6 @@
 // General C2C
 function c2cStart() {
+    document.getElementById("c2c-verified").style.display = "flex";
     document.getElementById("c2c-unverified").style.display = "flex";
     document.getElementById("c2c-nouser").style.display = "flex";
     if (user) {
