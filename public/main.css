@@ -12,7 +12,8 @@
   body {
     font-family: Verdana, sans-serif;
     display:flex;
-    flex-direction:row
+    flex-direction:column;
+    jus
   }
   .footer {
     margin-top: 500px;
