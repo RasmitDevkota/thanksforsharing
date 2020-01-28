@@ -26,7 +26,7 @@ document.addEventListener('keydown', function (event) {
     } else if (document.getElementById('popupsignin').style.display == "block") {
 
     }
-}
+    }
 });
 
 firebase.auth().onAuthStateChanged(function (user) {
