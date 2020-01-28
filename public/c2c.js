@@ -122,7 +122,7 @@ function addProduct() {
     var rent = document.getElementById("addrent").value;
     var price = document.getElementById("addprice").value;
     var keywordsStr = document.getElementById("keywords").value;
-    var keywords = keywordsStr.split(",");
+    var keywords = keywordsStr.split(" ");
     var period = document.getElementById("addperiod").value;
     var t = document.getElementById("timestamp");
     var timestamp = t.options[t.selectedIndex].value;
