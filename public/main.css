@@ -124,7 +124,7 @@
   ::-ms-input-placeholder { /* Microsoft Edge */
   color: white;
   }
-  .search:focus {
+  input:focus {
     outline: none;
   }
   #menu {
