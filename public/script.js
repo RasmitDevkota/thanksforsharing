@@ -56,7 +56,7 @@ function pageLoad(u) {
             usersUser.get().then(function (doc) {
                 if (doc.data().totalPrice >= 500) {
                     console.log("c2c-verified");
-                    c2cStart
+                    c2cStart();
                 } else {
                     console.log("c2c-unverified");
                     c2cStart();
