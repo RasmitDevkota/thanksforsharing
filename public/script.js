@@ -59,7 +59,7 @@ function pageLoad(u) {
                     c2cStart
                 } else {
                     console.log("c2c-unverified");
-                    document.getElementById("c2c-unverified").style.display = "block";
+                    c2cStart
                 }
             });
         } else {
