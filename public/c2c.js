@@ -147,7 +147,7 @@ function verifyOrder(id) {
     if (c == true) {
         db.collectionGroup(user.displayName).where("productName", "==", id).get().then(function (querySnapshot) {
             querySnapshot.forEach(function (doc) {
-                console.log(doc.data().name)
+                console.log(doc.data().name);
                 doc.delete();
             });
         });
