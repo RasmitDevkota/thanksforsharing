@@ -21,9 +21,11 @@ var Orders = db.collection("orders");
 document.addEventListener('keydown', function (event) {
     const key = event.key;
     if (key == "Enter") {
-        
+
         search();
-    } else if (document.getElementById('popupsignin').style.display == "block")
+    } else if (document.getElementById('popupsignin').style.display == "block") {
+        
+    }
 });
 
 firebase.auth().onAuthStateChanged(function (user) {
