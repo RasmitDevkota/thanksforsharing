@@ -33,8 +33,16 @@ function c2cStart() {
 };
 
 function askCCN() {
-    
-}
+    cc = prompt('Please enter the credit card number you would like to use with C2C.');
+    if (cc.length != 16) {
+        alert('Please enter a valid credit card number without spaces!');
+        location.reload();
+    } else {
+        usersUser.set({
+            paymentInformation: cc
+        });
+    }
+};
 
 function viewC2CProducts() {
     redirect('products.html?query=c2c');
