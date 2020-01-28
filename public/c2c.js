@@ -14,7 +14,9 @@ function c2cStart() {
                     if (cc.length() != 16) {
                         alert('Please enter a valid credit card number withour spaces!');
                         cc = prompt('Please enter the credit card number you would like to use with C2C.');
-                    } else
+                    } else {
+                        
+                    }
                     usersUser.set({
                         paymentInformation: cc
                     });
