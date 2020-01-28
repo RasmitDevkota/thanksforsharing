@@ -54,8 +54,6 @@ function pageLoad(u) {
             showCart();
         } else if (window.location.href.includes("c2c.html")) {
             usersUser.get().then(function (doc) {
-                if (doc.data().totalPrice >= 500) {
-                    console.log("c2c-verified");
                     c2cStart();
                 } else {
                     console.log("c2c-unverified");
