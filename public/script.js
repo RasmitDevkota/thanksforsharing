@@ -28,7 +28,7 @@ document.addEventListener('keydown', function (event) {
         } else if (document.getElementById('signup').style.display != "none") {
             handleSignUp();
         } else if (document.getElementById('pwreset').style.display != "none") {
-            signIn();
+            sendPasswordReset();
         }
     }
 });
