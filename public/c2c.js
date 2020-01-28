@@ -1,4 +1,3 @@
-// General C2C
 function c2cStart() {
     document.getElementById("c2c-verified").style.display = "none";
     document.getElementById("c2c-unverified").style.display = "none";
