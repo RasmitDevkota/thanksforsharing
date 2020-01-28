@@ -1,5 +1,6 @@
 // General C2C
 function c2cStart() {
+    document.getElementById("c2c-nouser").style.display = "flex";
     if (user) {
         usersUser.get().then(function (doc) {
             if (doc.data().totalPrice >= 500) {
