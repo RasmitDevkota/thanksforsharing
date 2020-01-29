@@ -236,9 +236,6 @@ function checkOut() {
     var cocity = document.getElementById("cocity").value;
     var cozipcode = document.getElementById("cozipcode").value;
 
-    display('copopup');
-    alert("Product/s ordered! Each will come at their respective times, please check individual product entries for further information.");
-
     userCart.get().then(function (querySnapshot) {
         querySnapshot.forEach(function (doc) {
 
