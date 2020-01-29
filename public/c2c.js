@@ -88,7 +88,7 @@ function viewOrders() {
                         <h5 id="details-${buyer}-${name}" class="details">
                             ${addr}<br>
                             ${city}, ${state} ${zipcode}<br>
-                        </h6>
+                        </h5>
                     </div>
                     <div class="mdl-card__actions mdl-card--border verifyButton">
                         <div class="mdl-layout-spacer"></div>
