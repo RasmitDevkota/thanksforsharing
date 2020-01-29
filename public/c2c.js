@@ -144,7 +144,7 @@ function verifyOrder(id, productName, buyer) {
     if (c) {
         Orders.doc(buyer).collection(user.displayName).doc(productName).get().then(function (doc) {
             console.log(doc.data().productName);
-            doc.delete();
+            Orders.doc(buyer).collection(user.displayName).doc(productName).delete();
         });
         // document.getElementById('order-' + id).remove();
     }
