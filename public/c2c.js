@@ -83,7 +83,7 @@ function viewOrders() {
                     <div class="mdl-card__title mdl-card--expand info" style="display: flex; flex-direction: column;">
                         <h5>
                             Product: ${name}<br>
-                            Buyer: ${buyer}
+                            Buyer: ${buyer}<br>
                             ${addr}<br>
                             ${city}, ${state} ${zipcode}<br>
                     </div>
