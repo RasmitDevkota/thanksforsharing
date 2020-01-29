@@ -139,7 +139,7 @@ function addProduct() {
     })
 };
 
-function verifyOrder(id, productName,  buyer) {
+function verifyOrder(id, productName, buyer) {
     var c = confirm("Confirm that this product has been shipped by the seller (not necessarily received by the buyer) and that payment has been received?");
     if (c) {
         db.collectionGroup(user.displayName).where("productName", "==", id).where("name", "==", buyer).get().then(function (querySnapshot) {
