@@ -141,7 +141,7 @@ function addProduct() {
     })
 };
 
-function verifyOrder(id, buyer) {
+function verifyOrder(id, name) {
     var c = confirm("Confirm that this product has been shipped by the seller (not necessarily received by the buyer) and that payment has been received?");
     console.log(c);
     if (c) {
