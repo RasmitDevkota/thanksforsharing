@@ -152,6 +152,6 @@ function verifyOrder(id) {
                 doc.delete();
             });
         });
-        document.getElementById('order-').remove();
+        document.getElementById('order-' + ).remove();
     }
 };
