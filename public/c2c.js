@@ -153,6 +153,6 @@ function verifyOrder(id, buyer) {
                 doc.delete();
             });
         });
-        document.getElementById('order-' + id).remove();
+        // document.getElementById('order-' + id).remove();
     }
 };
