@@ -91,7 +91,7 @@ function viewOrders() {
                     </div>
                     <div class="mdl-card__actions mdl-card--border verifyButton">
                         <div class="mdl-layout-spacer"></div>
-                        <i class="material-icons mdl-button mdl-js-button mdl-js-ripple-effect" onclick="verifyOrder('${buyer}-${name}, ${name}')" style="cursor: pointer;">check</i>
+                        <i class="material-icons mdl-button mdl-js-button mdl-js-ripple-effect" onclick="verifyOrder('${buyer}-${name}, ${nam}')" style="cursor: pointer;">check</i>
                         <div class="mdl-layout-spacer"></div>
                     </div>
                 </div>
@@ -146,7 +146,7 @@ function verifyOrder(id, name) {
     console.log(c);
     if (c) {
         console.log(document.getElementById('order-' + id));
-        db.collectionGroup(user.displayName).doc(name).get().then(function (querySnapshot) {
+        Orders.doc(buyer).collectionGroup(user.displayName).doc(name).get().then(function (querySnapshot) {
             querySnapshot.forEach(function (doc) {
                 console.log(doc.data().productName);
                 doc.delete();
