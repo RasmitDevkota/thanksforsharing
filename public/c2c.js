@@ -72,7 +72,6 @@ function viewOrders() {
         querySnapshot.forEach(function (doc) {
             var name = doc.data().productName;
             var buyer = doc.data().name;
-            console.log(buyer);
             var addr = doc.data().address
             var city = doc.data().city;
             var state = doc.data().state;
