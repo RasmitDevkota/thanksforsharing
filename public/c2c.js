@@ -146,7 +146,7 @@ function verifyOrder(id) {
     console.log(c);
     if (c) {
         console.log(document.getElementById('order-' + id));
-        db.collection().collectionGroup(user.displayName).where("productName", "==", id).get().then(function (querySnapshot) {
+        db.collection().collectionGroup(user.displayName).where.("productName", "==", id).get().then(function (querySnapshot) {
             querySnapshot.forEach(function (doc) {
                 console.log(doc.data().productName);
                 doc.delete();
