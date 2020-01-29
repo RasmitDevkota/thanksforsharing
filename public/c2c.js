@@ -142,7 +142,7 @@ function addProduct() {
 function verifyOrder(id, productName, buyer) {
     var c = confirm("Confirm that this product has been shipped by the seller (not necessarily received by the buyer) and that payment has been received?");
     if (c) {
-        Orders.doc(buyer).collection(user.displayName).doc(productName).get().then(function (querySnapshot) {
+        Orders.doc(buyer).collection(user.displayName).doc(productName).get().then(function (doc) {
             querySnapshot.forEach(function (doc) {
                 console.log(doc.data().productName);
                 Orders.doc(buyer).collection(user.displayName).doc(productName).delete();
