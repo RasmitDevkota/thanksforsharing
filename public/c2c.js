@@ -83,9 +83,10 @@ function viewOrders() {
                     <div class="mdl-card__title mdl-card--expand info" style="display: flex; flex-direction: column;">
                         <h5>
                             Product: ${name}<br>
-                            Buyer: ${buyer}<br>
+                            Buyer: ${buyer}
                             ${addr}<br>
-                            ${city}, ${state} ${zipcode}
+                            ${city}, ${state} ${zipcode}<br>
+                        </h5>
                     </div>
                     <div class="mdl-card__actions mdl-card--border verifyButton">
                         <div class="mdl-layout-spacer"></div>
