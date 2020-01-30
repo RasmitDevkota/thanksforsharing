@@ -44,6 +44,8 @@ header {
 }
 .shopping-cartbutton{
   color:white;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 nav {
   display: flex;
