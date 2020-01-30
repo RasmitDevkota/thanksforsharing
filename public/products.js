@@ -231,6 +231,7 @@ function showCart() {
 
 function showProducts(doc) {
     Products.where("name", "in", keystring.split(" ")).get().then(function (querySnapshot) {
+        querySnapshot.forEach((doc) => {
             var name = doc.data().name.toString();
             var imageRef = doc.data().imageRef.toString();
             var desc = doc.data().description.toString();
