@@ -23,8 +23,6 @@
     position: relative;
   }
   .utilities{
-    display:flex;
-    flex-direction: row;
     background-color: #343434;
   }
   nav {
