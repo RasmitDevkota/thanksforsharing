@@ -230,7 +230,7 @@ function showCart() {
 };
 
 function showProducts(name) {
-    Products.where("name", "in", ).get().then(function (doc) {
+    Products.where("name", "==", name).get().then(function (doc) {
         var name = doc.data().name.toString();
         var imageRef = doc.data().imageRef.toString();
         var desc = doc.data().description.toString();
