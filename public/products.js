@@ -285,8 +285,6 @@ function showProducts(doc) {
     actions.className = "vactions";
     actions.id = "productActions" + name;
     document.getElementById(outerDiv.id).appendChild(actions);
-
-    for (i = 0; i < actionElements.length; i++) {
         var elem = document.createElement("pp-" + cart);
         elem.innerHTML = actionNames[i];
 
