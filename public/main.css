@@ -22,6 +22,7 @@ header {
   position: relative;
 }
 .utilities {
+  justify-content: center;
   background-color: #343434;
 }
 .searchbutton{
