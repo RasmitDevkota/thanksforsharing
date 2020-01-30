@@ -92,6 +92,10 @@ function redirect(pagePath) {
     window.location.replace(pagePath);
 };
 
+function productPage() {
+    
+}
+
 function display(elem) {
     $('#' + elem).toggle();
     console.log(elem);
