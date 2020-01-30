@@ -106,7 +106,7 @@ nav {
 .search {
   width: 50%;
   padding: 1%;
-  margin
+  margin: 0;
   border:none;
 }
 @keyframes Slide_Right{
