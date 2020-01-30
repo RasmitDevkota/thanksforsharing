@@ -229,7 +229,7 @@ function showCart() {
     });
 };
 
-function showProducts(doc) {
+function showProducts(name) {
     Products.where("name", "in", keystring.split(" ")).get().then(function (doc) {
         var name = doc.data().name.toString();
         var imageRef = doc.data().imageRef.toString();
