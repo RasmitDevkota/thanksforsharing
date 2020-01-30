@@ -47,8 +47,8 @@
   }
   .navelement:hover {
     background-color: #30b0f5;
-    border-top: 5px solid ##30b0f5;
-    border-bottom: 5px solid #30b0f5;
+    border-top: 5px solid #343434;
+    border-bottom: 5px solid #343434;
     cursor: pointer;
   }
   .popup {
