@@ -22,7 +22,8 @@ header {
   position: relative;
 }
 .utilities {
-  display: ;
+  display: flex;
+  fl
   justify-content: center;
   background-color: #343434;
 }
