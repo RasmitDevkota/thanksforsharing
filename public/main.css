@@ -25,6 +25,7 @@ header {
   background-color: #343434;
 }
 .searchbutton{
+  top:1px;
   padding: 4px;
   position:relative;
   color: white;
