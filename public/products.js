@@ -287,7 +287,6 @@ function showProducts(doc) {
     document.getElementById(outerDiv.id).appendChild(actions);
 
     for (i = 0; i < actionElements.length; i++) {
-        var action = actionElements[i];
         var elem = document.createElement("v-" + action);
         elem.innerHTML = actionNames[i];
 
