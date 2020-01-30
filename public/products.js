@@ -229,105 +229,105 @@ function showCart() {
     });
 };
 
-function showProducts(doc) {
+function showProducts(name) {
     Products.where("name", "in", keystring.split(" ")).get().then(function (doc) {
-            var name = doc.data().name.toString();
-            var imageRef = doc.data().imageRef.toString();
-            var desc = doc.data().description.toString();
-            var price = doc.data().price;
-            var time = doc.data().time.toString();
-            var deliveryTime = doc.data().deliveryTime.toString();
-            var c2c = doc.data().c2c;
+        var name = doc.data().name.toString();
+        var imageRef = doc.data().imageRef.toString();
+        var desc = doc.data().description.toString();
+        var price = doc.data().price;
+        var time = doc.data().time.toString();
+        var deliveryTime = doc.data().deliveryTime.toString();
+        var c2c = doc.data().c2c;
 
-            var ratings = doc.data().ratings;
-            var sum = 0;
-            for (var i = 0; i < ratings.length; i++) {
-                sum += ratings[i];
-            };
-            var rating = (sum / ratings.length).toFixed(1);
+        var ratings = doc.data().ratings;
+        var sum = 0;
+        for (var i = 0; i < ratings.length; i++) {
+            sum += ratings[i];
+        };
+        var rating = (sum / ratings.length).toFixed(1);
 
-            var txtContent = [name, desc, price, rating];
+        var txtContent = [name, desc, price, rating];
 
-            var outerDiv = document.createElement("v-product");
-            document.getElementById("products").appendChild(outerDiv);
-            outerDiv.id = "outer" + name;
+        var outerDiv = document.createElement("v-product");
+        document.getElementById("products").appendChild(outerDiv);
+        outerDiv.id = "outer" + name;
 
-            var image = document.createElement("img");
-            image.src = imageRef;
-            document.getElementById(outerDiv.id).appendChild(image);
+        var image = document.createElement("img");
+        image.src = imageRef;
+        document.getElementById(outerDiv.id).appendChild(image);
 
-            var text = document.createElement("v-text");
-            text.className = "vtext";
-            text.id = "productText" + name;
-            document.getElementById(outerDiv.id).appendChild(text);
+        var text = document.createElement("v-text");
+        text.className = "vtext";
+        text.id = "productText" + name;
+        document.getElementById(outerDiv.id).appendChild(text);
 
-            for (i = 0; i < txtElements.length; i++) {
-                var txt = txtElements[i];
-                var elem = document.createElement("v-" + txt);
-                if (txt == "price") {
-                    elem.innerHTML = "$" + txtContent[i] + "/month for " + time;
-                } else if (txt == "rating") {
-                    elem.innerHTML = "<i class='fas fa-star'></i>" + txtContent[i];
-                } else if (txt == "c2c") {
-                    if (c2c == true) {
-                        var seller = doc.data().c2cauthor;
-                        elem.innerHTML = `<img src='c2c.png' title='C2C - Sold by ${seller}'>`;
-                    } else {
-                        break;
-                    }
+        for (i = 0; i < txtElements.length; i++) {
+            var txt = txtElements[i];
+            var elem = document.createElement("v-" + txt);
+            if (txt == "price") {
+                elem.innerHTML = "$" + txtContent[i] + "/month for " + time;
+            } else if (txt == "rating") {
+                elem.innerHTML = "<i class='fas fa-star'></i>" + txtContent[i];
+            } else if (txt == "c2c") {
+                if (c2c == true) {
+                    var seller = doc.data().c2cauthor;
+                    elem.innerHTML = `<img src='c2c.png' title='C2C - Sold by ${seller}'>`;
                 } else {
-                    elem.innerHTML = txtContent[i];
+                    break;
                 }
-                elem.className = "v" + txt;
-                document.getElementById(text.id).appendChild(elem);
-            };
+            } else {
+                elem.innerHTML = txtContent[i];
+            }
+            elem.className = "v" + txt;
+            document.getElementById(text.id).appendChild(elem);
+        };
 
-            var actions = document.createElement("v-actions");
-            actions.className = "vactions";
-            actions.id = "productActions" + name;
-            document.getElementById(outerDiv.id).appendChild(actions);
+        var actions = document.createElement("v-actions");
+        actions.className = "vactions";
+        actions.id = "productActions" + name;
+        document.getElementById(outerDiv.id).appendChild(actions);
 
-            var elem = document.createElement("pp-" + cart);
-            elem.innerHTML = actionNames[i];
+        var elem = document.createElement("pp-" + cart);
+        elem.innerHTML = actionNames[i];
 
-            elem.addEventListener('click', function () {
-                if (user) {
-                    ShoppingCart.doc(user.displayName + '/' + user.displayName + '/' + name).get().then(function (doc) {
-                        if (!doc.exists) {
-                            ShoppingCart.doc(user.displayName + '/' + user.displayName + '/' + name).set({
-                                name: name,
-                                price: price,
-                                imageRef: imageRef
-                            }).then(function () {
-                                var atcMsg = document.querySelector('#atcMsg');
-                                atcMsg.MaterialSnackbar.showSnackbar({
-                                    message: 'Item added to cart',
-                                    timeout: 1800,
-                                    actionHandler: function () {
-                                        redirect('cart.html#couter' + name);
-                                    },
-                                    actionText: 'Go to Cart'
-                                });
-                            });
-                        } else {
+        elem.addEventListener('click', function () {
+            if (user) {
+                ShoppingCart.doc(user.displayName + '/' + user.displayName + '/' + name).get().then(function (doc) {
+                    if (!doc.exists) {
+                        ShoppingCart.doc(user.displayName + '/' + user.displayName + '/' + name).set({
+                            name: name,
+                            price: price,
+                            imageRef: imageRef
+                        }).then(function () {
                             var atcMsg = document.querySelector('#atcMsg');
                             atcMsg.MaterialSnackbar.showSnackbar({
-                                message: 'Item already in cart',
+                                message: 'Item added to cart',
                                 timeout: 1800,
                                 actionHandler: function () {
                                     redirect('cart.html#couter' + name);
                                 },
-                                actionText: 'See in Cart'
+                                actionText: 'Go to Cart'
                             });
-                        }
-                    });
-                } else {
-                    alert('You are currently not signed in. Sign in or use fast checkout to purchase without an account.');
-                }
-            });
+                        });
+                    } else {
+                        var atcMsg = document.querySelector('#atcMsg');
+                        atcMsg.MaterialSnackbar.showSnackbar({
+                            message: 'Item already in cart',
+                            timeout: 1800,
+                            actionHandler: function () {
+                                redirect('cart.html#couter' + name);
+                            },
+                            actionText: 'See in Cart'
+                        });
+                    }
+                });
+            } else {
+                alert('You are currently not signed in. Sign in or use fast checkout to purchase without an account.');
+            }
+        });
 
-            elem.classList.add("pp-" + action, "mdl-button", "mdl-js-button", "mdl-button--raised", "mdl-js-ripple-effect");
-            document.getElementById(actions.id).appendChild(elem);
+        elem.classList.add("pp-" + action, "mdl-button", "mdl-js-button", "mdl-button--raised", "mdl-js-ripple-effect");
+        document.getElementById(actions.id).appendChild(elem);
         });
     });
 };
