@@ -24,6 +24,7 @@ header {
 .utilities{
   background-color: #343434;
 }
+.bars{}
 nav {
   display: flex;
   flex-direction: row;
