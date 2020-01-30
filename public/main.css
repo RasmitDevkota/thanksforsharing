@@ -23,7 +23,7 @@ header {
 }
 .utilities {
   display: flex;
-  flex-direction: ;
+  flex-direction: row;
   justify-content: center;
   background-color: #343434;
 }
