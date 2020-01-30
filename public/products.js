@@ -327,14 +327,6 @@ function showProducts(doc) {
                     alert('You are currently not signed in. Sign in or use fast checkout to purchase without an account.');
                 }
             });
-        } else {
-            elem.addEventListener('click', function () {
-                var name = prompt("Enter Name");
-                var ccn = prompt("Enter Credit Card Number");
-                var addr = prompt("Enter Shipping Address");
-                alert("Product ordered! Should arrive in around " + deliveryTime + ".");
-                console.log(deliveryTime);
-            });
         }
 
         elem.classList.add("v-" + action, "mdl-button", "mdl-js-button", "mdl-button--raised", "mdl-js-ripple-effect");
