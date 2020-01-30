@@ -93,7 +93,7 @@ function redirect(pagePath) {
 };
 
 function productPage(name) {
-    
+    redirect()
 };
 
 function display(elem) {
