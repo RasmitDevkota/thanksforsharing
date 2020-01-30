@@ -92,8 +92,8 @@ function redirect(pagePath) {
     window.location.replace(pagePath);
 };
 
-function productPage() {
-    
+function productPage(name) {
+
 }
 
 function display(elem) {
