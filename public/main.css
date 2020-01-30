@@ -26,7 +26,7 @@ header {
 }
 .searchbutton{
   padding: 2px;
-  position:absolute;
+  position:relative;
   color: white;
   border: 2px solid white;
 
