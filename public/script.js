@@ -54,7 +54,7 @@ function pageLoad(u) {
             var urlParams = new URLSearchParams(window.location.search);
             var query = urlParams.get('query');
             results(query.toLowerCase());
-        } else if (window.location.href.includes("productsPage.html")) {
+        } else if (window.location.href.includes("productspage.html")) {
             var urlParams = new URLSearchParams(window.location.search);
             var query = urlParams.get('query');
             results(query.toLowerCase());
