@@ -54,6 +54,10 @@ function pageLoad(u) {
             var urlParams = new URLSearchParams(window.location.search);
             var query = urlParams.get('query');
             results(query.toLowerCase());
+        } else if (window.location.href.includes("products.html")) {
+            var urlParams = new URLSearchParams(window.location.search);
+            var query = urlParams.get('query');
+            results(query.toLowerCase());
         }  else if (window.location.href.includes("cart.html")) {
             showCart();
         } else if (window.location.href.includes("c2c.html")) {
