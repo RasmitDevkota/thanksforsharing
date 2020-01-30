@@ -309,10 +309,10 @@ function showProducts(doc) {
     var ratings = doc.data().ratings;
     var sum = 0;
     for (var i = 0; i < ratings.length; i++) {
-        sum += ratings[i];
+        sum += ratings[i];  
     };
     var rating = (sum / ratings.length).toFixed(1);
-
+    
     var txtContent = [name, desc, price, rating];
 
     var outerDiv = document.createElement("v-product");
