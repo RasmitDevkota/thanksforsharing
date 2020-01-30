@@ -85,8 +85,9 @@ function search() {
     var search = document.getElementById("search");
 
     if (search != "") {
-    var text = search.value.toString().toLowerCase();
-    window.location = "products.html?query=" + text.toString();
+        var text = search.value.toString().toLowerCase();
+        window.location = "products.html?query=" + text.toString();
+    }
 };
 
 function redirect(pagePath) {
