@@ -83,6 +83,7 @@ function pageLoad(u) {
 
 function search() {
     var search = document.getElementById("search");
+
     var text = search.value.toString().toLowerCase();
     window.location = "products.html?query=" + text.toString();
 };
