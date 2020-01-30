@@ -22,9 +22,6 @@
   header {
     position: relative;
   }
-  .utilites{
-    background-color: #5f5e5e;
-  }
   nav {
     display: flex;
     flex-direction: row;
