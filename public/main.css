@@ -23,7 +23,9 @@
     position: relative;
   }
   .utilites
-  {}
+  {
+    background-color: red
+  }
   nav {
     display: flex;
     flex-direction: row;
