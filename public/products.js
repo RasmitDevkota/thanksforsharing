@@ -290,8 +290,7 @@ function showProducts(doc) {
         var action = actionElements[i];
         var elem = document.createElement("v-" + action);
         elem.innerHTML = actionNames[i];
-
-        if (action == "addtocart") {
+        
             elem.addEventListener('click', function () {
                 if (user) {
                     ShoppingCart.doc(user.displayName + '/' + user.displayName + '/' + name).get().then(function (doc) {
