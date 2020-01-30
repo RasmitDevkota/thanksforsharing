@@ -290,42 +290,42 @@ function showProducts(doc) {
         var action = actionElements[i];
         var elem = document.createElement("v-" + action);
         elem.innerHTML = actionNames[i];
-        
-            elem.addEventListener('click', function () {
-                if (user) {
-                    ShoppingCart.doc(user.displayName + '/' + user.displayName + '/' + name).get().then(function (doc) {
-                        if (!doc.exists) {
-                            ShoppingCart.doc(user.displayName + '/' + user.displayName + '/' + name).set({
-                                name: name,
-                                price: price,
-                                imageRef: imageRef
-                            }).then(function () {
-                                var atcMsg = document.querySelector('#atcMsg');
-                                atcMsg.MaterialSnackbar.showSnackbar({
-                                    message: 'Item added to cart',
-                                    timeout: 1800,
-                                    actionHandler: function () {
-                                        redirect('cart.html#couter' + name);
-                                    },
-                                    actionText: 'Go to Cart'
-                                });
-                            });
-                        } else {
+
+        elem.addEventListener('click', function () {
+            if (user) {
+                ShoppingCart.doc(user.displayName + '/' + user.displayName + '/' + name).get().then(function (doc) {
+                    if (!doc.exists) {
+                        ShoppingCart.doc(user.displayName + '/' + user.displayName + '/' + name).set({
+                            name: name,
+                            price: price,
+                            imageRef: imageRef
+                        }).then(function () {
                             var atcMsg = document.querySelector('#atcMsg');
                             atcMsg.MaterialSnackbar.showSnackbar({
-                                message: 'Item already in cart',
+                                message: 'Item added to cart',
                                 timeout: 1800,
                                 actionHandler: function () {
                                     redirect('cart.html#couter' + name);
                                 },
-                                actionText: 'See in Cart'
+                                actionText: 'Go to Cart'
                             });
-                        }
-                    });
-                } else {
-                    alert('You are currently not signed in. Sign in or use fast checkout to purchase without an account.');
-                }
-            });
+                        });
+                    } else {
+                        var atcMsg = document.querySelector('#atcMsg');
+                        atcMsg.MaterialSnackbar.showSnackbar({
+                            message: 'Item already in cart',
+                            timeout: 1800,
+                            actionHandler: function () {
+                                redirect('cart.html#couter' + name);
+                            },
+                            actionText: 'See in Cart'
+                        });
+                    }
+                });
+            } else {
+                alert('You are currently not signed in. Sign in or use fast checkout to purchase without an account.');
+            }
+        });
 
         elem.classList.add("v-" + action, "mdl-button", "mdl-js-button", "mdl-button--raised", "mdl-js-ripple-effect");
         document.getElementById(actions.id).appendChild(elem);
