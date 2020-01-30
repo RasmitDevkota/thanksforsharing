@@ -229,7 +229,7 @@ function showCart() {
     });
 };
 
-function showProducts(name) {
+function product(name) {
     Products.where("name", "==", name).get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
             var name = doc.data().name.toString();
