@@ -230,7 +230,7 @@ function showCart() {
 };
 
 function showProducts(doc) {
-    Products.where("name", "in", keystring.split(" ")).get().then(function (querySnapshot) {
+    Products.where("name", "==", name).get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
             var name = doc.data().name.toString();
             var imageRef = doc.data().imageRef.toString();
