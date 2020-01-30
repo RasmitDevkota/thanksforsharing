@@ -32,7 +32,7 @@ header {
   position:relative;
   color: white;
   background-color: #30b0f5;
-  border: 2px solid white;
+  border: 2px solid #30b0f5;
   border-radius: 0px 10px 10px 0px;
 }
 .bars {
