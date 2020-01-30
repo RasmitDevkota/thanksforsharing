@@ -4,7 +4,6 @@
 .page-heading {
   margin-left: 1%;
 }
-@media (orientation: landscape) {
   html, body {
     font-family: Verdana, sans-serif;
     background-color: #f5f5f5ee;
@@ -121,13 +120,13 @@
   color: white;
   }
   ::-ms-input-placeholder { /* Microsoft Edge */
-  color: white;
+    color: white;
   }
   input:focus {
     outline: none;
   }
   #menu {
-    display:none;
+    display: none;
   }
   ::-webkit-scrollbar {
     width: 10px;
