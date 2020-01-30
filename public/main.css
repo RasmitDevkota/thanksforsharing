@@ -37,7 +37,7 @@ header {
   border-radius: 0px 10px 10px 0px;
 }
 .bars {
-  cursor;
+  cursor: pointer;
   color:white;
   font-size: 100%;
   margin-left: 1%;
