@@ -94,7 +94,7 @@ function redirect(pagePath) {
 
 function productPage(name) {
 
-}
+};
 
 function display(elem) {
     $('#' + elem).toggle();
