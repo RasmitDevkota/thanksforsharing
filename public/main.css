@@ -30,7 +30,7 @@ header {
   position:relative;
   color: white;
   border: 2px solid white;
-  border-radius: 0px 0px 10px; 10px
+  border-radius: 0px 0px 10px 10px;
 }
 .bars {
   color:white;
