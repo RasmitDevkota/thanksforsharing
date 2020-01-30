@@ -235,7 +235,7 @@ function showProducts(doc) {
             showProducts(doc);
         });
     });
-}
+};
 
 function checkOut() {
     var coname = document.getElementById("coname").value;
