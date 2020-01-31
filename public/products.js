@@ -247,7 +247,7 @@ function product(name) {
             };
             var rating = (sum / ratings.length).toFixed(1);
 
-            var txtContent = [name, desc, price, rating, ];
+            var txtContent = [name, desc, price, rating, deliveryTime];
 
             var outerDiv = document.createElement("v-product");
             document.getElementById("products").appendChild(outerDiv);
