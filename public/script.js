@@ -128,7 +128,7 @@ function toggleSlideMenu() {
         });
     } else {
         $("#slideinmenu").animate({
-            
+            right: '0.015%',
         });
 
         setTimeout(function () {
