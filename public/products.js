@@ -284,7 +284,6 @@ function product(name) {
             };
 
 
-
             var text = document.createElement("v-text");
             text.className = "vtext";
             text.id = "productText" + name;
