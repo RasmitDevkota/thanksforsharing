@@ -127,7 +127,7 @@ function toggleSlideMenu() {
         });
     } else {
         $("#slideinmenu").animate({
-            top: '-150%',
+            left: '-150%',
         });
 
         setTimeout(function () {
