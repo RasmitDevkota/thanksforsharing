@@ -200,7 +200,7 @@ function product(name) {
                 } else if (txt == "deliveryTime") {
                     elem.innerHTML = txtContent[i];
                 } else {
-                    elem.innerHTML = txtContent
+                    elem.innerHTML = txtContent[i];
                 }
                 elem.className = "v" + txt;
                 document.getElementById(text.id).appendChild(elem);
