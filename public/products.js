@@ -202,7 +202,7 @@ function product(name) {
                 } else {
                     elem.innerHTML = txtContent[i];
                 }
-                elem.className = "v" + txt;
+                elem.className = "pp" + txt;
                 document.getElementById(text.id).appendChild(elem);
             };
 
