@@ -198,7 +198,7 @@ function product(name) {
                         break;
                     }
                 } else if (txt == "deliveryTime") {
-                    elem.innerHTML = "txtContent[i];
+                    elem.innerHTML = "Shipping Time:txtContent[i];
                 } else {
                     elem.innerHTML = txtContent[i];
                 }
