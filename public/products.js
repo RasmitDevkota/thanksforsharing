@@ -171,7 +171,7 @@ function product(name) {
             var txtContent = [name, desc, price, rating, deliveryTime];
 
             var outerDiv = document.createElement("pp-product");
-            document.getElementById("products").appendChild(outerDiv);
+            document.getElementById("product").appendChild(outerDiv);
             outerDiv.id = "outer" + name;
 
             var image = document.createElement("img");
