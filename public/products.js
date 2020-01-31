@@ -207,7 +207,7 @@ function product(name) {
             };
 
             var actions = document.createElement("pp-actions");
-            actions.className = "vactions";
+            actions.className = "ppactions";
             actions.id = "productActions" + name;
             document.getElementById(outerDiv.id).appendChild(actions);
 
