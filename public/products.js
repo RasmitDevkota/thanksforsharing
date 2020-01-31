@@ -50,6 +50,8 @@ function showProducts(doc) {
     var deliveryTime = doc.data().deliveryTime.toString();
     var c2c = doc.data().c2c;
 
+    console.log(doc)
+
     updateTimestamp(doc);
 
     var ratings = doc.data().ratings;
