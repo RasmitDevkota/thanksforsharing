@@ -123,7 +123,7 @@ function toggleSlideMenu() {
     if (document.getElementById('slideinmenu').style.display == "none") {
         $('#slideinmenu').show();
         $("#slideinmenu").animate({
-            right: '0.015%',
+            
             right: '-150%',
         });
     } else {
