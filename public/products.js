@@ -69,7 +69,7 @@ function showProducts(doc) {
     for (i = 0; i < txtElements.length; i++) {
         var txt = txtElements[i];
         var elem = document.createElement("v-" + txt);
-        if (txt == "deliveryTime") { }if (txt == "price") {
+        if (txt == "deliveryTime") { } else if (txt == "price") {
             elem.innerHTML = "$" + txtContent[i] + "/month for " + time;
         } else if (txt == "rating") {
             elem.innerHTML = "<i class='fas fa-star'></i>" + txtContent[i];
