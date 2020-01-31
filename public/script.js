@@ -129,9 +129,7 @@ function toggleSlideMenu() {
         $("#slideinmenu").animate({
             top: '-150%',
         });
-        $('#slideinmenu').css({
-            'background-color': 'rgba(0,0,0,0)'
-        });
+
         setTimeout(function () {
             $('#slideinmenu').hide();
         }, 360);
