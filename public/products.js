@@ -1,4 +1,4 @@
-var txtElements = ["name", "description", "price", "rating", "c2c"];
+var txtElements = ["name", "description", "price", "rating", "c2c", "deliveryTime"];
 var actionElements = ["addtocart", "checkout"];
 var actionNames = ["Add to Cart", "Fast Checkout"];
 
