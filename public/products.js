@@ -179,7 +179,7 @@ function product(name) {
             document.getElementById(outerDiv.id).appendChild(image);
 
             var text = document.createElement("pp-text");
-            text.className = "vtext";
+            text.className = "pptext";
             text.id = "pageText" + name;
             document.getElementById(outerDiv.id).appendChild(text);
 
