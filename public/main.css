@@ -101,10 +101,11 @@ nav {
   box-shadow: 1px 1px 1px grey;
 }
 .c2cutilities{
+  cursor: pointer;
   width: 5%;
 }
 .signinbutton{
-  
+
   color:white;
 }
 .signinoptions:hover {
