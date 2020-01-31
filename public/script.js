@@ -129,7 +129,7 @@ function toggleSlideMenu() {
     } else {
         alert("right");
         $("#slideinmenu").animate({
-            left: '-150%',
+            left: '150%',
         });
 
         setTimeout(function () {
