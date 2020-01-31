@@ -119,7 +119,7 @@ function togglepsi() {
         }, 360);
     }
 };
-function togglepsi() {
+function toggle() {
     if (document.getElementById('popupsignin').style.display == "none") {
         $('#popupsignin').show();
         $("#popupsignin").animate({
