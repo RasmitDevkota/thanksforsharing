@@ -50,6 +50,8 @@ function showProducts(doc) {
     var deliveryTime = doc.data().deliveryTime.toString();
     var c2c = doc.data().c2c;
 
+    
+
     var ratings = doc.data().ratings;
     var sum = 0;
     for (var i = 0; i < ratings.length; i++) {
