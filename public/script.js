@@ -129,7 +129,7 @@ function toggleSlideMenu() {
     } else {
         alert("right");
         $("#slideinmenu").animate({
-            : '100%',
+            right: '100%',
         });
 
         setTimeout(function () {
