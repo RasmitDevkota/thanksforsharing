@@ -122,6 +122,7 @@ function togglepsi() {
 function toggleSlideMenu() {
     if (document.getElementById('slideinmenu').style.display == "none") {
         $('#slideinmenu').show();
+        alert()
         $("#slideinmenu").animate({
             left: '0.015%',
         });
