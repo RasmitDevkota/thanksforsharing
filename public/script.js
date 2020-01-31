@@ -122,7 +122,7 @@ function togglepsi() {
 function toggleslidemenu() {
     if (document.getElementById('popupsignin').style.display == "none") {
         $('#slideinmenu').show();
-        $("#slideinmeny").animate({
+        $("#slideinmenu").animate({
             top: '0.015%',
         });
         $('#popupsignin').css({
