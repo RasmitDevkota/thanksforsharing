@@ -125,7 +125,7 @@ function toggleslidemenu() {
         $("#slideinmenu").animate({
             top: '0.015%',
         });
-        $('#').css({
+        $('#slideinmenu').css({
             'background-color': 'rgba(0,0,0,0.5)'
         });
     } else {
