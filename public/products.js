@@ -198,7 +198,7 @@ function product(name) {
                         break;
                     }
                 } else if (txt == "deliveryTime") {
-                    elem.innerHTML = "Estimated De Time: " + txtContent[i];
+                    elem.innerHTML = "Estimated Delivery Time: " + txtContent[i];
                 } else {
                     elem.innerHTML = txtContent[i];
                 }
