@@ -70,6 +70,7 @@ function showProducts(doc) {
         var txt = txtElements[i];
         var elem = document.createElement("v-" + txt);
         if (txt == "deliveryTime") {
+            
         } else if (txt == "price") {
             elem.innerHTML = "$" + txtContent[i] + "/month for " + time;
         } else if (txt == "rating") {
