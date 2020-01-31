@@ -132,7 +132,7 @@ function toggleslidemenu() {
         $("#slideinmenu").animate({
             top: '-150%',
         });
-        $('#popupsignin').css({
+        $('#slideinmenu').css({
             'background-color': 'rgba(0,0,0,0)'
         });
         setTimeout(function () {
