@@ -124,12 +124,12 @@ function toggleSlideMenu() {
         $('#slideinmenu').show();
         alert("left");
         $("#slideinmenu").animate({
-            right: '-95%',
+            left: '95%',
         });
     } else {
         alert("right");
         $("#slideinmenu").animate({
-            right: '100%',
+            left: '100%',
         });
 
         setTimeout(function () {
