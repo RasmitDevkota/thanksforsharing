@@ -127,6 +127,7 @@ function toggleSlideMenu() {
             left: '0.015%',
         });
     } else {
+        alert("")
         $("#slideinmenu").animate({
             left: '-150%',
         });
