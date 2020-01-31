@@ -120,6 +120,7 @@ function togglepsi() {
     }
 };
 function toggleSlideMenu() {
+    alert()
     if (document.getElementById('popupsignin').style.display == "none") {
         $('#slideinmenu').show();
         $("#slideinmenu").animate({
