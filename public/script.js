@@ -136,7 +136,7 @@ function toggleslidemenu() {
             'background-color': 'rgba(0,0,0,0)'
         });
         setTimeout(function () {
-            $('#popupsignin').hide();
+            $('#slideinmenu').hide();
         }, 360);
     }
 };
