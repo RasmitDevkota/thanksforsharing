@@ -119,3 +119,24 @@ function togglepsi() {
         }, 360);
     }
 };
+function togglepsi() {
+    if (document.getElementById('popupsignin').style.display == "none") {
+        $('#popupsignin').show();
+        $("#popupsignin").animate({
+            top: '0.015%',
+        });
+        $('#popupsignin').css({
+            'background-color': 'rgba(0,0,0,0.5)'
+        });
+    } else {
+        $("#popupsignin").animate({
+            top: '-150%',
+        });
+        $('#popupsignin').css({
+            'background-color': 'rgba(0,0,0,0)'
+        });
+        setTimeout(function () {
+            $('#popupsignin').hide();
+        }, 360);
+    }
+};
