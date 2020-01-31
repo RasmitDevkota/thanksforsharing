@@ -120,7 +120,7 @@ function togglepsi() {
     }
 };
 function toggleSlideMenu() {
-    if (document.getElementById('popupsignin').style.display == "none") {
+    if (document.getElementById('slideinmenu').style.display == "none") {
         $('#slideinmenu').show();
         $("#slideinmenu").animate({
             top: '0.015%',
