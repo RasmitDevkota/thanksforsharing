@@ -80,7 +80,7 @@ function showProducts(doc) {
             } else {
                 break;
             }
-        } else {
+        } else  {
             elem.innerHTML = txtContent[i];
         }
         elem.className = "v" + txt;
