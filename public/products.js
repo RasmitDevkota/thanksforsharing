@@ -283,7 +283,6 @@ function product(name) {
                 document.getElementById(text.id).appendChild(elem);
             };
 
-
             var text = document.createElement("v-text");
             text.className = "vtext";
             text.id = "productText" + name;
