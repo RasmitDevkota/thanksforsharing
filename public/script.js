@@ -63,7 +63,7 @@ function pageLoad(u) {
         } else if (window.location.href.includes("c2c.html")) {
             c2cStart();
         } else {
-            console.log("index.html?");
+            console.log("info page?");
         }
     } else {
         window.user = null;
