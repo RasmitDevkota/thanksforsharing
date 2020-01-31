@@ -121,8 +121,8 @@ function togglepsi() {
 };
 function toggleslidemenu() {
     if (document.getElementById('popupsignin').style.display == "none") {
-        $('#popupsignin').show();
-        $("#popupsignin").animate({
+        $('#slideinmenu').show();
+        $("#slideinmenu").animate({
             top: '0.015%',
         });
         $('#popupsignin').css({
