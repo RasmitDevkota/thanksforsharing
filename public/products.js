@@ -170,7 +170,7 @@ function product(name) {
 
             var txtContent = [name, desc, price, rating, deliveryTime];
 
-            var outerDiv = document.createElement("v-product");
+            var outerDiv = document.createElement("-product");
             document.getElementById("products").appendChild(outerDiv);
             outerDiv.id = "outer" + name;
 
