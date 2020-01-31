@@ -208,7 +208,7 @@ function product(name) {
 
             var actions = document.createElement("pp-actions");
             actions.className = "ppactions";
-            actions.id = "productActions" + name;
+            actions.id = "pageActions" + name;
             document.getElementById(outerDiv.id).appendChild(actions);
 
             var elem = document.createElement("pp-" + cart);
