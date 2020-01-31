@@ -276,7 +276,7 @@ function product(name) {
                     } else {
                         break;
                     }
-                } else  {
+                } else if (txt == "deliveryTime") {
                     elem.innerHTML = txtContent[i];
                 }
                 elem.className = "v" + txt;
