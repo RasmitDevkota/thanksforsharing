@@ -276,7 +276,7 @@ function product(name) {
                     } else {
                         break;
                     }
-                } else {
+                } else  {
                     elem.innerHTML = txtContent[i];
                 }
                 elem.className = "v" + txt;
