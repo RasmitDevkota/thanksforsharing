@@ -198,7 +198,7 @@ function product(name) {
                         break;
                     }
                 } else if (txt == "deliveryTime") {
-                    elem.innerHTML = "DtxtContent[i];
+                    elem.innerHTML = "txtContent[i];
                 } else {
                     elem.innerHTML = txtContent[i];
                 }
