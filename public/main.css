@@ -100,6 +100,9 @@ nav {
   cursor: pointer;
   box-shadow: 1px 1px 1px grey;
 }
+.c2c-utilities{
+  
+}
 .signinoptions:hover {
   background-color: rgb(31, 155, 221);
 }
