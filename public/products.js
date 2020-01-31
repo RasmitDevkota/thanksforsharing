@@ -253,6 +253,7 @@ function product(name) {
         });
     });
 };
+
 function showCart() {
     document.getElementById("cartItems").innerHTML = "";
     document.getElementById("totalPrice").innerHTML = "Total Price: $0.00";
