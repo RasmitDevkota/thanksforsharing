@@ -35,6 +35,10 @@ function results(keystring) {
     }
 };
 
+function var updateTimestamp = docRef.update({
+    timestamp: firebase.firestore.FieldValue.serverTimestamp()
+});
+
 function showProducts(doc) {
     var name = doc.data().name.toString();
     var imageRef = doc.data().imageRef.toString();
