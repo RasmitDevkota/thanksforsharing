@@ -129,7 +129,7 @@ function toggleslidemenu() {
             'background-color': 'rgba(0,0,0,0.5)'
         });
     } else {
-        $("#popupsignin").animate({
+        $("#slideinmenu").animate({
             top: '-150%',
         });
         $('#popupsignin').css({
