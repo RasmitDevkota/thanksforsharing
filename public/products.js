@@ -35,7 +35,7 @@ function results(keystring) {
     }
 };
 
-function updateTimestamp() {
+function updateTimestamp(docRef) {
     docRef.update({
         timestamp: firebase.firestore.FieldValue.serverTimestamp()
     });
