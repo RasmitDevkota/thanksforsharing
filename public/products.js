@@ -172,7 +172,7 @@ function product(name) {
 
             var outerDiv = document.createElement("pp-product");
             document.getElementById("product").appendChild(outerDiv);
-            outerDiv.id = "outer" + name;
+            outerDiv.id = "outerPage" + name;
 
             var image = document.createElement("img");
             image.src = imageRef;
