@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/c54efb68d5.js" SameSite="none" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.orange-indigo.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="index.css">
@@ -19,7 +19,7 @@
   </head>
 
   <body>
-    
+
     <header>
 
       <section class="utilities">
@@ -36,24 +36,24 @@
           <i class="fas fa-bars"></i>
         </a>
       </section>
-      
+
       <section id="slideinmenu"  style="display:none; position:absolute; background-color: black;top:0%;; left: 100%;" class="slideinmenu">
         <p>filler bs</p>
       </section>
-      
+
       <nav>
         <!--Beginning of Home-->
         <a id="home" class="navelement" onclick="redirect('index.html')">Home</a>
         <!--End of Home-->&nbsp;&nbsp;&nbsp;
-        
+
         <!--Beginning of About-->
         <a id="about" class="navelement" onclick="redirect('about.html')">About</a>
         <!--End of About-->&nbsp;&nbsp;&nbsp;
-      
+
         <!--Beginning of Products-->
         <a id="navproducts" class="navelement" onclick="redirect('products.html?query=product')">Products</a>
         <!--End of Products-->&nbsp;&nbsp;&nbsp;
-      
+
         <!--Beginning of Shopping Cart-->
         <a id="cart" class="navelement" onclick="redirect('cart.html')">Shopping Cart</a>
         <!--End of Shopping Cart-->&nbsp;&nbsp;&nbsp;
@@ -71,7 +71,7 @@
           <i class="fas fa-search" onclick="search()"></i>
         </a>&nbsp;
         <!--End of Search-->&nbsp;&nbsp;&nbsp;
-      
+
         <!--Beginning of Sign in button-->
         <a id="signin" class="navelement" onclick="signIn()">Sign In</a>
         <!--End of Sign in button-->
@@ -118,9 +118,9 @@
         <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
           <div class="mdl-card sis mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
             <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-    
+
               <p>Enter an email and password below to sign in.</p>
-    
+
               <input class="mdl-textfield__input" style="display:inline;" type="text" id="emailemail" name="email" placeholder="Email" />
               &nbsp;&nbsp;&nbsp;
               <input class="mdl-textfield__input" style="display:inline;" type="password" id="password" name="password" placeholder="Password" />
@@ -130,13 +130,13 @@
               <button class="mdl-button mdl-js-button mdl-button--raised" onclick="display('email'); display('pwreset')">Reset Password</button>
               &nbsp;&nbsp;&nbsp;
               <button class="mdl-button mdl-js-button mdl-button--raised" name="signIn" onclick="display('email'); signIn()">Return to Sign In</button>
-    
+
               <p>
                 <li>
                   <a onclick="display('email')">Close</a>
                 </li>
               </p>
-    
+
             </div>
           </div>
         </div>
@@ -150,9 +150,9 @@
         <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
           <div class="mdl-card sis mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
             <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-    
+
               <p>Enter the information below to create an account and gain full access to this very cool site!</p>
-    
+
               <input class="mdl-textfield__input" style="display:inline;" type="text" id="suusername" name="username" placeholder="Username" />
               &nbsp;&nbsp;&nbsp;
               <input class="mdl-textfield__input" style="display:inline;" type="text" id="suemail" name="email" placeholder="Email" />
@@ -162,13 +162,13 @@
               <button class="mdl-button mdl-js-button mdl-button--raised" name="signup" onclick="handleSignUp()">Sign Up</button>
               &nbsp;&nbsp;&nbsp;
               <button class="mdl-button mdl-js-button mdl-button--raised" name="signIn" onclick="display('signup'); signIn()">Return to Sign In</button>
-    
+
               <p>
                 <li>
                   <a onclick="display('signup')">Close</a>
                 </li>
               </p>
-    
+
             </div>
           </div>
         </div>
@@ -182,46 +182,46 @@
         <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
           <div class="mdl-card sis mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
             <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-    
+
               <p>Enter your email below and, if an account associated with that email exists, you will be sent an email with instructions on how to reset your password.</p>
-    
+
               <input class="mdl-textfield__input" style="display:inline;" type="text" id="premail" name="email" placeholder="Email" />
               <br /> <br />
               &nbsp;&nbsp;&nbsp;
               <button class="mdl-button mdl-js-button mdl-button--raised" name="passwordreset" onclick="sendPasswordReset()">Send Password Reset Email</button>
               &nbsp;&nbsp;&nbsp;
               <button class="mdl-button mdl-js-button mdl-button--raised" name="signIn" onclick="display('pwreset'); signIn()">Return to Sign In</button>
-    
+
               <p>
                 <li>
                   <a onclick="display('pwreset')">Close</a>
                 </li>
               </p>
-    
+
             </div>
           </div>
         </div>
       </main>
     </div>
     <!--Password Reset End-->
-
+    
     <main class="index-contents">
       <section class="general">
-        
+
         <section class="titlelogosection">
           <img class="titlelogo" src="favicon.ico">
         </section>
 
         <section>
-          
+
         </section>
 
       </section>
     </main>
-    
+
   <footer class="mdl-mega-footer footer">
     <div class="mdl-mega-footer__middle-section">
-  
+
       <div class="mdl-mega-footer__drop-down-section">
         <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
         <h1 class="mdl-mega-footer__heading">Features</h1>
@@ -232,7 +232,7 @@
           <li><a href="#">Updates</a></li>
         </ul>
       </div>
-  
+
       <div class="mdl-mega-footer__drop-down-section">
         <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
         <h1 class="mdl-mega-footer__heading">Details</h1>
@@ -242,7 +242,7 @@
           <li><a href="#">Resources</a></li>
         </ul>
       </div>
-  
+
       <div class="mdl-mega-footer__drop-down-section">
         <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
         <h1 class="mdl-mega-footer__heading">Technology</h1>
@@ -254,7 +254,7 @@
           <li><a href="#">Contracts</a></li>
         </ul>
       </div>
-  
+
       <div class="mdl-mega-footer__drop-down-section">
         <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
         <h1 class="mdl-mega-footer__heading">FAQ</h1>
@@ -263,9 +263,9 @@
           <li><a href="mailto:thx4sharing@my-scrap-project.firebaseapp.com">Contact us</a></li>
         </ul>
       </div>
-  
+
     </div>
-  
+
     <div class="mdl-mega-footer__bottom-section">
       <div class="mdl-logo">ThxForSharing</div>
       <ul class="mdl-mega-footer__link-list">
@@ -295,5 +295,5 @@
     window.location = "products.html?query=" + text.toString();
 //};*/
   </script>
-  
+
 </html>
