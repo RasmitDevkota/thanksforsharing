@@ -70,6 +70,7 @@ function pageLoad(u) {
             $.ajax("templates.html", {
                 success: function (response) {
                     $("#replacethiselement").html(response);
+                    console.log("helloworld");
                 }
             });
         };
