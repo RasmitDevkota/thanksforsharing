@@ -80,7 +80,6 @@ function pageLoad(u) {
         }
     }
 
-
     var loadNewContent = function () {
         $.get("templates.html", {
             success: function (response) {
