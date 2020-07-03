@@ -87,7 +87,6 @@ function pageLoad(u) {
                 console.log("helloworld");
             }
         });
-    loadNewContent();
     };
     loadNewContent();
 };
