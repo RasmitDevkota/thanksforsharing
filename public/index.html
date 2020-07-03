@@ -274,21 +274,21 @@
     </div>
   </footer>
   </body>
-<script>
- document.addEventListener('keydown', function (event) {
-    const key = event.key;
-    if (key == "Enter") {
-        if (document.getElementById('bigsearch').value.toString().toLowerCase() != "") {
-            bigSearch();
-        } else if (document.getElementById('popupsignin').style.display != "none") {
-            signIn();
-        } else if (document.getElementById('signup').style.display != "none") {
-            handleSignUp();
-        } else if (document.getElementById('pwreset').style.display != "none") {
-            sendPasswordReset();
-        }
-    }
-});
+  <script>
+  document.addEventListener('keydown', function (event) {
+      const key = event.key;
+      if (key == "Enter") {
+          if (document.getElementById('bigsearch').value.toString().toLowerCase() != "") {
+              bigSearch();
+          } else if (document.getElementById('popupsignin').style.display != "none") {
+              signIn();
+          } else if (document.getElementById('signup').style.display != "none") {
+              handleSignUp();
+          } else if (document.getElementById('pwreset').style.display != "none") {
+              sendPasswordReset();
+          }
+      }
+  });
 /*function bigSearch() {
     var search = document.getElementById("bigsearch");
     var text = search.value.toString().toLowerCase();
