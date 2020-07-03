@@ -66,6 +66,8 @@ function pageLoad(u) {
             console.log("info-page?");
         }
 
+        loadNewContent()
+
         var loadNewContent = function () {
             $.ajax("templates.html", {
                 success: function (response) {
