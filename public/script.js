@@ -79,6 +79,17 @@ function pageLoad(u) {
             c2cStart();
         }
     }
+
+    loadNewContent();
+
+    var loadNewContent = function () {
+        $.get("templates.html", {
+            success: function (response) {
+                $("#replacethiselement").html(response);
+                console.log("helloworld");
+            }
+        });
+    };
 };
 
 function search() {
