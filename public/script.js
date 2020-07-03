@@ -66,7 +66,7 @@ function pageLoad(u) {
             console.log("info-page?");
         }
 
-        var loadNewContent = function {
+        var loadNewContent = function () {
             $.ajax("templates.html", {
                 success: function (response) {
                     $("#replacethiselement").html(response);
