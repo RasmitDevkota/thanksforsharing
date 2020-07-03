@@ -87,7 +87,7 @@ function pageLoad(u) {
                 document.getElementById("demo").innerHTML = this.responseText;
             }
         };
-        xhttp.open("GET", "ajax_info.txt", true);
+        xhttp.open("GET", "templates.html", true);
         xhttp.send();
     }
     loadNewContent();
