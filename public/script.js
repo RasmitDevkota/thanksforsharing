@@ -84,7 +84,7 @@ function pageLoad(u) {
         $.get("templates.html", {
             success: function (response) {
                 $("#replacethiselement").html(response);
-                console.log("helloworld");
+                console.log(re);
             }
         });
     };
