@@ -69,7 +69,7 @@ function pageLoad(u) {
         var loadNewContent = function {
             $.ajax("templates.html", {
                 success: function (response) {
-                    $("#content2").html(response);
+                    $("#test").html(response);
                 }
             });
         };
