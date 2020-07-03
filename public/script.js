@@ -65,17 +65,6 @@ function pageLoad(u) {
         } else {
             console.log("info-page?");
         }
-
-        loadNewContent();
-
-        var loadNewContent = function () {
-            $.get("templates.html", {
-                success: function (response) {
-                    $("#replacethiselement").html(response);
-                    console.log("helloworld");
-                }
-            });
-        };
     } else {
         window.user = null;
 
