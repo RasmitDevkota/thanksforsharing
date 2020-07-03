@@ -65,6 +65,14 @@ function pageLoad(u) {
         } else {
             console.log("info-page?");
         }
+
+        var loadNewContent = function {
+            $.ajax("Page2.html", {
+                success: function (response) {
+                    $("#content2").html(response);
+                }
+            });
+        };
     } else {
         window.user = null;
 
