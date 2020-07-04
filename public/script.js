@@ -56,6 +56,8 @@ function pageLoad(u) {
         xhttp.open("GET", "navbar.html", true);
         xhttp.send();
     }
+    xhttp.open("GET", "indexNavbar.html", true);
+    xhttp.send();
 
     if (u == true) {
         document.getElementById("signin").innerHTML = "Sign Out";
