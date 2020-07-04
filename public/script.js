@@ -87,6 +87,9 @@ function pageLoad(u) {
                 document.getElementById("navbarHeader").innerHTML += this.responseText;
             }
         };
+
+
+        
         xhttp.open("GET", "navbar.html", true);
         xhttp.send();
     }
