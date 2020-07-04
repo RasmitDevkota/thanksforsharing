@@ -57,9 +57,6 @@ function pageLoad(u) {
         xhttp.send();
     }
 
-    xhttp.open("GET", "auth.html", true);
-    xhttp.send();
-
     if (u == true) {
         document.getElementById("signin").innerHTML = "Sign Out";
 
