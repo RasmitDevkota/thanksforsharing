@@ -88,7 +88,7 @@ function pageLoad(u) {
             }
         };
 
-        if (window.location.href.includes(""))
+        if (window.location.href.includes("html"))
 
         xhttp.open("GET", "navbar.html", true);
         xhttp.send();
