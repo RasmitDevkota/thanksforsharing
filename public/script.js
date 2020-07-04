@@ -89,7 +89,7 @@ function pageLoad(u) {
         };
 
         if (!window.location.href.includes("index.html")) {
-            
+            xhttp
         }
 
         xhttp.open("GET", "navbar.html", true);
