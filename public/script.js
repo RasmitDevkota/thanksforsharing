@@ -42,7 +42,7 @@ firebase.auth().onAuthStateChanged(function (user) {
 });
 
 function pageLoad(u) {
-    var naVxhttp = new XMLHttpRequest();
+    var navXhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             document.getElementById("navbarHeader").innerHTML += this.responseText;
