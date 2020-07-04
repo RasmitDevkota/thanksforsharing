@@ -97,7 +97,7 @@ function pageLoad(u) {
 };
 
 function search() {
-    var search = document.getElementById("search");
+    var search = document.getElementById("search").textContent;
 
     if (search != "") {
         var text = search.value.toString().toLowerCase();
