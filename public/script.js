@@ -79,6 +79,7 @@ function pageLoad(u) {
             c2cStart();
         }
     }
+    
     loadNewContent();
 };
 
