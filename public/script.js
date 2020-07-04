@@ -83,6 +83,25 @@ function pageLoad(u) {
     loadNewContent();
 };
 
+
+
+var loadNewContent = function () {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("navbarHeader").innerHTML += this.responseText;
+        }
+    };
+
+    if (window.location.href.includes("index.html")) {
+        xhttp.open("GET", "indexNavbar.html");
+        xhttp.send();
+    } else {
+        xhttp.open("GET", "navbar.html", true);
+        xhttp.send();
+    }
+}
+
 function search() {
     var search = document.getElementById("search");
 
