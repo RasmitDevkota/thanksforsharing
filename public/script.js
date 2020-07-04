@@ -58,15 +58,15 @@ function pageLoad(u) {
     }
 
     var authXhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
+    authXhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             document.getElementById("authDiv").innerHTML += this.responseText;
         }
     };
 
     if (window.location.href.includes("index.html")) {
-        xhttp.open("GET", "auth.html", true);
-        xhttp.send();
+        authXhttp.open("GET", "auth.html", true);
+        authXhttp.send();
     }
 
     if (u == true) {
