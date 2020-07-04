@@ -97,7 +97,7 @@ function pageLoad(u) {
 };
 
 function search() {
-    var search = document.getElementById("search").textContent;
+    var search = document.getElementById("search").value;
 
     if (search != "") {
         var text = search;
