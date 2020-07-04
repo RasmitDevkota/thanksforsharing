@@ -104,7 +104,7 @@ function search() {
         window.location = "products.html?query=" + text.toString();
         console.log(search);
     } else {
-        console.log('oop');
+        
     }
 };
 
