@@ -79,7 +79,7 @@ function pageLoad(u) {
             c2cStart();
         }
     }
-    
+
     loadNewContent();
 };
 
@@ -121,6 +121,7 @@ function togglepsi() {
         }, 360);
     }
 };
+
 function toggleSlideMenu() {
     if (document.getElementById('slideinmenu').style.display == "none") {
         $('#slideinmenu').show();
