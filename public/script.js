@@ -57,6 +57,21 @@ function pageLoad(u) {
         xhttp.send();
     }
 
+    var navXhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("navbarHeader").innerHTML += this.responseText;
+        }
+    };
+
+    if (window.location.href.includes("index.html")) {
+        xhttp.open("GET", "indexNavbar.html", true);
+        xhttp.send();
+    } else {
+        xhttp.open("GET", "navbar.html", true);
+        xhttp.send();
+    }
+
     if (u == true) {
         document.getElementById("signin").innerHTML = "Sign Out";
 
