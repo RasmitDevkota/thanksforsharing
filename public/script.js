@@ -100,7 +100,7 @@ function search() {
     var search = document.getElementById("search").textContent;
 
     if (search != "") {
-        var text = search.value.toString().toLowerCase();
+        var text = search;
         window.location = "products.html?query=" + text.toString();
     } else {
         console.log(search);
