@@ -102,7 +102,6 @@ function search() {
     if (search != "") {
         var text = search.value.toString().toLowerCase();
         window.location = "products.html?query=" + text.toString();
-        console.log(search);
     } else {
         
     }
