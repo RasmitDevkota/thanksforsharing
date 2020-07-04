@@ -43,7 +43,7 @@ firebase.auth().onAuthStateChanged(function (user) {
 
 function pageLoad(u) {
     var navXhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
+    navXhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             document.getElementById("navbarHeader").innerHTML += this.responseText;
         }
