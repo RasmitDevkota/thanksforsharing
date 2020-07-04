@@ -66,7 +66,6 @@ function pageLoad(u) {
 
         authXhttp.open("GET", "auth.html", true);
         authXhttp.send();
-    }
 
     if (u == true) {
         document.getElementById("signin").innerHTML = "Sign Out";
