@@ -64,7 +64,6 @@ function pageLoad(u) {
         }
     };
 
-    if (window.location.href.includes("index.html")) {
         authXhttp.open("GET", "auth.html", true);
         authXhttp.send();
     }
