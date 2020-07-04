@@ -103,7 +103,7 @@ function search() {
         var text = search.value.toString().toLowerCase();
         window.location = "products.html?query=" + text.toString();
     } else {
-        
+        display('search');
     }
 };
 
