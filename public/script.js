@@ -87,7 +87,7 @@ function pageLoad(u) {
                 document.getElementById("replacethiselement").innerHTML = this.responseText;
             }
         };
-        xhttp.open("GET", "templates.html", true);
+        xhttp.open("GET", "navbar.html", true);
         xhttp.send();
     }
     loadNewContent();
