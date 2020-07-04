@@ -63,7 +63,6 @@ function pageLoad(u) {
             document.getElementById("authDiv").innerHTML += this.responseText;
         }
     };
-
     authXhttp.open("GET", "auth.html", true);
     authXhttp.send();
 
