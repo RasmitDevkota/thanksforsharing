@@ -97,11 +97,6 @@ function pageLoad(u) {
     }
 };
 
-
-
-function loadNewContent () {
-}
-
 function search() {
     var search = document.getElementById("search");
 
