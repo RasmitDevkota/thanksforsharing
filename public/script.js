@@ -93,8 +93,9 @@ function pageLoad(u) {
             xhttp.send();
         } else {
 
-        xhttp.open("GET", "navbar.html", true);
-        xhttp.send();
+            xhttp.open("GET", "navbar.html", true);
+            xhttp.send();
+        }
     }
     loadNewContent();
 };
