@@ -103,7 +103,6 @@ function search() {
         var text = search;
         window.location = "products.html?query=" + text.toString();
     } else {
-        console.log(search);
         display('search');
     }
 };
