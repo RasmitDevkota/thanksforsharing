@@ -88,8 +88,8 @@ function pageLoad(u) {
             }
         };
 
-
         
+
         xhttp.open("GET", "navbar.html", true);
         xhttp.send();
     }
