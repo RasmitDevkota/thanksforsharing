@@ -155,7 +155,7 @@
                 var rentTime = document.getElementById("rentTime").value;
                 var price = document.getElementById("price").value;
                 var thumbnail = document.getElementById("image").value;
-                var keywords = document.getElementById("keywords").value..replace(/ /g, ",").replace(/,,/g, ",").split(",");
+                var keywords = document.getElementById("keywords").value.replace(/ /g, ",").replace(/,,/g, ",").split(",");
 
                 if (!name || !type || !description || !thumbnail || !price || !deliveryTime || !rentTime) {
                     alert("You forgot to enter an input for something! Every field except author is required (unless the product is C2C)!");
