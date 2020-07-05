@@ -6,6 +6,7 @@ function filter(field) {
     document.getElementById("products").innerHTML = "";
     Products.orderBy(field).get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
+                console.log(doc);
             showProducts(doc);
         });
     });
@@ -17,12 +18,14 @@ function results(keystring) {
     if (keystring == "c2c") {
         Products.where("c2c", "==", true).orderBy("keywords").get().then(function (querySnapshot) {
             querySnapshot.forEach((doc) => {
+                console.log(doc);
                 showProducts(doc);
             });
         });
     } else {
         Products.where("keywords", "array-contains-any", keystring.split(" ")).orderBy("keywords").get().then(function (querySnapshot) {
             querySnapshot.forEach((doc) => {
+                console.log(doc);
                 showProducts(doc);
             });
         });
