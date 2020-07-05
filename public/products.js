@@ -55,7 +55,7 @@ function showProducts(doc) {
     var deliveryTime = doc.data().deliveryTime.toString();
     var c2c = doc.data().c2c;
 
-    docRef.update({
+    doc.update({
         timestamp: firebase.firestore.FieldValue.serverTimestamp()
     });
 
