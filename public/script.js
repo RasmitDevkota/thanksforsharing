@@ -57,15 +57,7 @@ function pageLoad(u) {
         navXhttp.send();
     }
 
-    var authXhttp = new XMLHttpRequest();
-    authXhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("authDiv").innerHTML += this.responseText;
-        }
-    };
     
-    authXhttp.open("GET", "auth.html", true);
-    authXhttp.send();
 
     if (u == true) {
         document.getElementById("signin").innerHTML = "Sign Out";
