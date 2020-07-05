@@ -47,8 +47,8 @@ function results(keystring) {
 
 function showProducts(docc) {
     var name = docc.data().name.toString();
-    var imageRef = doc.data().imageRef.toString();
-    var desc = doc.data().description.toString();
+    var imageRef = docc.data().imageRef.toString();
+    var desc = docc.data().description.toString();
     var price = doc.data().price;
     var time = doc.data().time.toString();
     var deliveryTime = doc.data().deliveryTime.toString();
