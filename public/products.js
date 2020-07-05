@@ -37,7 +37,7 @@ function results(keystring) {
             querySnapshot.forEach((doc) => {
                 console.log(doc);
                 showProducts(doc);
-                docf.update({
+                doc.update({
                     timestamp: firebase.firestore.FieldValue.serverTimestamp()
                 });
             });
