@@ -37,6 +37,8 @@ function results(keystring) {
                 showProducts(doc);
                 doc.update({
 
+                }).then(function () {
+                    console.log("done");
                 })
             });
         });
