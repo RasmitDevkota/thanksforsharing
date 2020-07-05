@@ -53,7 +53,7 @@ function pageLoad(u) {
         xhttp("indexNavbar", "navbarHeader");
 
     } else {
-        xhttp("", "navbarHeader");
+        xhttp("navbar", "navbarHeader");
     }
 
     xhttp("auth", "authDiv");
