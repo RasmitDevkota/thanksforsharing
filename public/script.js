@@ -54,7 +54,6 @@ function pageLoad(u) {
 
     } else {
         xhttp("", "navbarHeader");
-
     }
 
     xhttp("auth", "authDiv");
