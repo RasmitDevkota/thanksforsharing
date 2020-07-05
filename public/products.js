@@ -54,7 +54,7 @@ function showProducts(docc) {
     var deliveryTime = doc.data().deliveryTime.toString();
     var c2c = doc.data().c2c;
 
-    var docRef = Products.doc(doc.id);
+    var docRef = Products.doc(docc.id);
     console.log(docRef);
 
     doc.update({
