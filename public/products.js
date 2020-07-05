@@ -6,7 +6,6 @@ function filter(field) {
     document.getElementById("products").innerHTML = "";
     Products.orderBy(field).get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
-            console.log(doc);
             showProducts(doc);
         });
     });
@@ -18,14 +17,12 @@ function results(keystring) {
     if (keystring == "c2c") {
         Products.where("c2c", "==", true).orderBy("keywords").get().then(function (querySnapshot) {
             querySnapshot.forEach((doc) => {
-                console.log(doc);
                 showProducts(doc);
             });
         });
     } else {
         Products.where("keywords", "array-contains-any", keystring.split(" ")).orderBy("keywords").get().then(function (querySnapshot) {
             querySnapshot.forEach((doc) => {
-                console.log(doc);
                 showProducts(doc);
             });
         });
@@ -40,6 +37,7 @@ function results(keystring) {
 };
 
 function updateTimestamp(docRef) {
+    console.log(docRef);
     docRef.update({
         timestamp: firebase.firestore.FieldValue.serverTimestamp()
     });
@@ -54,12 +52,7 @@ function showProducts(doc) {
     var deliveryTime = doc.data().deliveryTime.toString();
     var c2c = doc.data().c2c;
 
-    var docRef = Products.doc(doc.id);
-    console.log(docRef);
-
-    doc.update({
-        timestamp: firebase.firestore.FieldValue.serverTimestamp()
-    });
+    updateTimestamp(doc);
 
     var ratings = doc.data().ratings;
     var sum = 0;
