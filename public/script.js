@@ -98,6 +98,10 @@ function pageLoad(u) {
     }
 };
 
+function xhttp() {
+    
+}
+
 function search() {
     var search = document.getElementById("search").value;
 
