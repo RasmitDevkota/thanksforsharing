@@ -55,7 +55,7 @@ function showProducts(docc) {
     var c2c = doc.data().c2c;
 
     var docRef = Products.doc(docc.id);
-    console.log(doccRef);
+    console.log(docRef);
 
     doc.update({
         timestamp: firebase.firestore.FieldValue.serverTimestamp()
