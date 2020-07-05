@@ -87,7 +87,7 @@ function showProducts(doc) {
             elem.innerHTML = "<i class='fas fa-star'></i>" + txtContent[i];
         } else if (txt == "c2c") {
             if (c2c == true) {
-                var seller = doc.data().c2cauthor;
+                var seller = docdata.c2cauthor;
                 elem.innerHTML = `<img src='c2c.png' title='C2C - Sold by ${seller}'>`;
             } else {
                 break;
