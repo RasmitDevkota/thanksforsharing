@@ -166,7 +166,9 @@
                     return console.log("Not enough parameters given");
                 }
 
-                var docRef = db.collection("products").doc(name).set()
+                var docRef = db.collection("products").doc(name).set({
+                    
+                })
             }
         </script>
 
