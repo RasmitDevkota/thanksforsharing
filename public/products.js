@@ -23,8 +23,8 @@ function results(keystring) {
     } else {
         Products.where("keywords", "array-contains-any", keystring.split(" ")).orderBy("keywords").get().then(function (querySnapshot) {
             querySnapshot.forEach((docc) => {
-                console.log(docc == Products.doc(docc.id));
-                showProducts(docc);
+                console.log(doc == Products.doc(doc.id));
+                showProducts(doc);
             });
         });
 
