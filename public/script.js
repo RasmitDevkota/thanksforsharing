@@ -53,8 +53,8 @@ function pageLoad(u) {
         navXhttp.open("GET", "indexNavbar.html", true);
         navXhttp.send();
     } else {
-        navXhttp.open("GET", "navbar.html", true);
-        navXhttp.send();
+        xhttp("", "navbarHeader");
+
     }
 
     xhttp("auth", "authDiv");
