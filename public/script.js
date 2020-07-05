@@ -57,7 +57,7 @@ function pageLoad(u) {
         navXhttp.send();
     }
 
-    
+    xhttp("")
 
     if (u == true) {
         document.getElementById("signin").innerHTML = "Sign Out";
