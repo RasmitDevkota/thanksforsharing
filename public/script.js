@@ -100,7 +100,7 @@ function pageLoad(u) {
 
 function xhttp() {
     var xhttp = new XMLHttpRequest();
-    authXhttp.onreadystatechange = function () {
+    xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             document.getElementById("authDiv").innerHTML += this.responseText;
         }
