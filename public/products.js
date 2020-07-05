@@ -43,7 +43,7 @@ function updateTimestamp(docRef) {
     });
 };
 
-function showProducts(doc) {
+function showProducts(docdata) {
     var name = docdata.name.toString();
     var imageRef = docdata.imageRef.toString();
     var desc = docdata.description.toString();
