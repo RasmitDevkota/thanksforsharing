@@ -34,12 +34,12 @@ function results(keystring) {
 
         Products.where("name", "in", keystring.split(" ")).get().then(function (querySnapshot) {
             querySnapshot.forEach((doc) => {
-                showProducts(doc);
                 doc.update({
 
                 }).then(function () {
                     console.log("done");
                 })
+                showProducts(doc);
             });
         });
     }
