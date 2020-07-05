@@ -48,9 +48,9 @@ function pageLoad(u) {
     } else {
         xhttp("navbar", "navbarHeader");
     }
-    
+
     xhttp("auth", "authDiv");
-    xhttp("footerFooter", "footerFooter");
+    xhttp("footer", "footerFooter");
 
     if (u == true) {
         document.getElementById("signin").innerHTML = "Sign Out";
