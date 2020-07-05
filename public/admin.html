@@ -178,7 +178,7 @@
                     return self.indexOf(value) === index;
                 }
 
-                var unique = a.filter(uniqueFilter); // returns ['a', 1, 2, '1']
+                var unique = keywords.filter(uniqueFilter); // returns ['a', 1, 2, '1']
 
                 if (c2c) {
                     db.collection("products").doc(name).set({
