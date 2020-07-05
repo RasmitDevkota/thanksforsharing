@@ -99,7 +99,7 @@ function pageLoad(u) {
 };
 
 function xhttp() {
-    var authXhttp = new XMLHttpRequest();
+    var xh = new XMLHttpRequest();
     authXhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             document.getElementById("authDiv").innerHTML += this.responseText;
