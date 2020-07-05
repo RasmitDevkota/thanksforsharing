@@ -54,7 +54,7 @@ function showProducts(doc) {
 
     updateTimestamp(doc);
 
-    var ratings = doc.data().ratings;
+    var ratings = docdata.ratings;
     var sum = 0;
     for (var i = 0; i < ratings.length; i++) {
         sum += ratings[i];  
