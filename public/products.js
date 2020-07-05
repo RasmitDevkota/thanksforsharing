@@ -36,7 +36,7 @@ function results(keystring) {
 };
 
 function updateTimestamp(docRef) {
-    docRef.update({
+    Products..update({
         timestamp: firebase.firestore.FieldValue.serverTimestamp()
     });
 };
