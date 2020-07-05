@@ -106,7 +106,7 @@ function xhttp(source, tag) {
         }
     };
 
-    xhttp.open("GET", ".html", true);
+    xhttp.open("GET", "${source}.html", true);
     xhttp.send();
 }
 
