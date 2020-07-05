@@ -6,7 +6,7 @@ function filter(field) {
     document.getElementById("products").innerHTML = "";
     Products.orderBy(field).get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
-            console.log(doc);
+                console.log(doc);
             showProducts(doc);
         });
     });
@@ -27,9 +27,6 @@ function results(keystring) {
             querySnapshot.forEach((doc) => {
                 console.log(doc);
                 showProducts(doc);
-                doc.update({
-                    timestamp: firebase.firestore.FieldValue.serverTimestamp()
-                });
             });
         });
 
@@ -37,9 +34,6 @@ function results(keystring) {
             querySnapshot.forEach((doc) => {
                 console.log(doc);
                 showProducts(doc);
-                doc.update({
-                    timestamp: firebase.firestore.FieldValue.serverTimestamp()
-                });
             });
         });
     }
@@ -61,6 +55,7 @@ function showProducts(doc) {
     var deliveryTime = doc.data().deliveryTime.toString();
     var c2c = doc.data().c2c;
 
+    updateTimestamp(doc);
 
     var ratings = doc.data().ratings;
     var sum = 0;
