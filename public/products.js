@@ -23,12 +23,12 @@ function results(keystring) {
     } else {
         Products.where("keywords", "array-contains-any", keystring.split(" ")).orderBy("keywords").get().then(function (querySnapshot) {
             querySnapshot.forEach((doc) => {
-                showProducts(doc);
                 Products.doc(doc.id).update({
 
                 }).then(function () {
                     console.log("done")
                 })
+                showProducts(doc);
             });
         });
 
