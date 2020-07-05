@@ -102,7 +102,7 @@ function xhttp(source, tag) {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("authDiv").innerHTML += this.responseText;
+            document.getElementById(tag).innerHTML += this.responseText;
         }
     };
 
