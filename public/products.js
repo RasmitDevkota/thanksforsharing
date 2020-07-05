@@ -31,7 +31,7 @@ function results(keystring) {
         Products.where("name", "in", keystring.split(" ")).get().then(function (querySnapshot) {
             querySnapshot.forEach((doc) => {
                 console.log(doc == Products.doc(doc.id));
-                showProducts(doc.data());
+                showProducts(doc.data(), doc.id);
             });
         });
     }
