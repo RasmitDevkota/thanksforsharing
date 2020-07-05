@@ -106,8 +106,8 @@ function xhttp() {
         }
     };
 
-    authXhttp.open("GET", "auth.html", true);
-    authXhttp.send();
+    xhttp.open("GET", "auth.html", true);
+    xhttp.send();
 }
 
 function search() {
