@@ -69,7 +69,7 @@ function pageLoad(u) {
 
     authXhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("authDiv").innerHTML += this.responseText;
+            document.getElementById("footerFooter").innerHTML += this.responseText;
         }
     };
 
