@@ -166,7 +166,7 @@
                     return console.log("Not enough parameters given");
                 }
 
-                var c2c = if (type == "C2C") true :false
+                var c2c = if (type == "C2C") true : false;
 
                 var docRef = db.collection("products").doc(name).set({
                     name: name,
