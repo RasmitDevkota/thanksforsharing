@@ -177,7 +177,8 @@
                         deliveryTime: deliveryTime,
                         imageRef: thumbnail,
                         c2c: true,
-                        c2cauthor: author
+                        c2cauthor: author,
+                        keywords
                     })
                 } else {
                     db.collection("products").doc(name).set({
