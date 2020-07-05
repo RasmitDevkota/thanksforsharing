@@ -50,7 +50,7 @@ function pageLoad(u) {
     };
 
     if (window.location.href.includes("index.html")) {
-        xhttp("", "navbarHeader");
+        xhttp("indexNavg", "navbarHeader");
 
     } else {
         xhttp("", "navbarHeader");
