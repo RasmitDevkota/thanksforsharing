@@ -45,7 +45,7 @@ function updateTimestamp(docRef) {
 
 function showProducts(doc) {
     var name = docdata.name.toString();
-    var imageRef = doc.data().imageRef.toString();
+    var imageRef = docdata.imageRef.toString();
     var desc = doc.data().description.toString();
     var price = doc.data().price;
     var time = doc.data().time.toString();
