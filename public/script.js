@@ -58,7 +58,7 @@ function pageLoad(u) {
     }
 
     xhttp("auth", "authDiv");
-    xhttp("auth", "footerFooter");
+    xhttp("footerFooter", "footerFooter");
 
     if (u == true) {
         document.getElementById("signin").innerHTML = "Sign Out";
