@@ -190,7 +190,7 @@
                         imageRef: thumbnail,
                         c2c: true,
                         c2cauthor: author,
-                        keywords: keywords
+                        keywords: uniqueKeywords
                     })
                 } else {
                     db.collection("products").doc(name).set({
@@ -201,7 +201,7 @@
                         deliveryTime: deliveryTime,
                         imageRef: thumbnail,
                         c2c: false,
-                        keywords: keywords
+                        keywords: uniqueKeywords
                     })
                 }
             }
