@@ -39,11 +39,11 @@ function results(keystring) {
     }
 };
 
-// function updateTimestamp(docRef) {
-//     docRef.update({
-//         timestamp: firebase.firestore.FieldValue.serverTimestamp()
-//     });
-// };
+function updateTimestamp(docRef) {
+    docRef.update({
+        timestamp: firebase.firestore.FieldValue.serverTimestamp()
+    });
+};
 
 function showProducts(doc) {
     var name = doc.data().name.toString();
