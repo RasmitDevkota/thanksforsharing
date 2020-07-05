@@ -6,7 +6,7 @@ function filter(field) {
     document.getElementById("products").innerHTML = "";
     Products.orderBy(field).get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
-                console.log(doc);
+            console.log(doc);
             showProducts(doc);
         });
     });
@@ -55,7 +55,9 @@ function showProducts(doc) {
     var deliveryTime = doc.data().deliveryTime.toString();
     var c2c = doc.data().c2c;
 
-    updateTimestamp(doc);
+    docRef.update({
+        timestamp: firebase.firestore.FieldValue.serverTimestamp()
+    });
 
     var ratings = doc.data().ratings;
     var sum = 0;
