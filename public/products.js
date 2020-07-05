@@ -52,7 +52,7 @@ function showProducts(docc) {
     var price = docc.data().price;
     var time = docc.data().time.toString();
     var deliveryTime = doc.data().deliveryTime.toString();
-    var c2c = doc.data().c2c;
+    var c2c = docc.data().c2c;
 
     var docRef = Products.doc(docc.id);
     console.log(docRef);
