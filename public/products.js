@@ -45,16 +45,16 @@ function results(keystring) {
 //     });
 // };
 
-function showProducts(docc) {
-    var name = docc.data().name.toString();
-    var imageRef = docc.data().imageRef.toString();
-    var desc = docc.data().description.toString();
-    var price = docc.data().price;
-    var time = docc.data().time.toString();
-    var deliveryTime = docc.data().deliveryTime.toString();
-    var c2c = docc.data().c2c;
+function showProducts(doc) {
+    var name = doc.data().name.toString();
+    var imageRef = doc.data().imageRef.toString();
+    var desc = doc.data().description.toString();
+    var price = doc.data().price;
+    var time = doc.data().time.toString();
+    var deliveryTime = doc.data().deliveryTime.toString();
+    var c2c = doc.data().c2c;
 
-    var docRef = Products.doc(docc.id);
+    var docRef = Products.doc(doc.id);
     console.log(docRef);
 
     doc.update({
