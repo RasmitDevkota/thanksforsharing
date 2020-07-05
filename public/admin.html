@@ -157,7 +157,7 @@
                 var thumbnail = document.getElementById("image").value;
                 var keywords = document.getElementById("keywords").value.replace(/ /g, ",").replace(/,,/g, ",").split(",");
 
-                if (!name || !type || !description || !thumbnail || !price || !deliveryTime || !rentTime) {
+                if (!name || !type || !description || !thumbnail || !price || !deliveryTime || !rentTime || !keywords || keywords.length < 5) {
                     alert("You forgot to enter an input for something! Every field except author is required (unless the product is C2C)!");
                     return console.log("Not enough parameters given");
                 }
