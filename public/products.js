@@ -52,7 +52,7 @@ function showProducts(docdata) {
     var deliveryTime = docdata.deliveryTime.toString();
     var c2c = docdata.c2c;
 
-    updateTimestamp(doc);
+    updateTimestamp(docdata);
 
     var ratings = docdata.ratings;
     var sum = 0;
