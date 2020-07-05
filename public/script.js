@@ -48,7 +48,6 @@ function pageLoad(u) {
     } else {
         xhttp("navbar", "navbarHeader");
     }
-
     xhttp("auth", "authDiv");
     xhttp("footerFooter", "footerFooter");
 
