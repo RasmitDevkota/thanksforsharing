@@ -179,15 +179,15 @@
                         c2c: true
                     })
                 } else {
-                        db.collection("products").doc(name).set({
-                            name: name,
-                            price: price,
-                            description: description,
-                            time: rentTime,
-                            deliveryTime: deliveryTime,
-                            imageRef: thumbnail,
-                            c2c: true
-                        })
+                    db.collection("products").doc(name).set({
+                        name: name,
+                        price: price,
+                        description: description,
+                        time: rentTime,
+                        deliveryTime: deliveryTime,
+                        imageRef: thumbnail,
+                        c2c: true
+                    })
                 }
             }
         </script>
