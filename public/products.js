@@ -48,7 +48,7 @@ function showProducts(doc) {
     var imageRef = docdata.imageRef.toString();
     var desc = docdata.description.toString();
     var price = docdata.price;
-    var time = doc.data().time.toString();
+    var time = docdata.time.toString();
     var deliveryTime = doc.data().deliveryTime.toString();
     var c2c = doc.data().c2c;
 
