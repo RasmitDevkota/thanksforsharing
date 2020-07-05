@@ -67,15 +67,6 @@ function pageLoad(u) {
     authXhttp.open("GET", "auth.html", true);
     authXhttp.send();
 
-    authXhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("footerFooter").innerHTML += this.responseText;
-        }
-    };
-
-    authXhttp.open("GET", "footer.html", true);
-    authXhttp.send();
-
     if (u == true) {
         document.getElementById("signin").innerHTML = "Sign Out";
 
