@@ -33,6 +33,7 @@ function results(keystring) {
         Products.where("name", "in", keystring.split(" ")).get().then(function (querySnapshot) {
             querySnapshot.forEach((doc) => {
                 console.log(doc);
+    updateTimestamp(doc);
                 showProducts(doc);
             });
         });
@@ -55,7 +56,6 @@ function showProducts(doc) {
     var deliveryTime = doc.data().deliveryTime.toString();
     var c2c = doc.data().c2c;
 
-    updateTimestamp(doc);
 
     var ratings = doc.data().ratings;
     var sum = 0;
