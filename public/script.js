@@ -67,7 +67,7 @@ function pageLoad(u) {
     authXhttp.open("GET", "auth.html", true);
     authXhttp.send();
 
-    authXhttp.open("GET", "auth.html", true);
+    authXhttp.open("GET", "footer.html", true);
     authXhttp.send();
 
     if (u == true) {
