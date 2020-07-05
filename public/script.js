@@ -57,7 +57,7 @@ function pageLoad(u) {
         navXhttp.send();
     }
 
-    xhttp()
+    xhttp("navbarHeader")
     xhttp("auth", "authDiv");
     xhttp("footerFooter", "footerFooter");
 
