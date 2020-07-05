@@ -19,7 +19,6 @@ function results(keystring) {
         Products.where("c2c", "==", true).orderBy("keywords").get().then(function (querySnapshot) {
             querySnapshot.forEach((doc) => {
                 console.log(doc);
-    updateTimestamp(doc);
                 showProducts(doc);
             });
         });
@@ -27,7 +26,6 @@ function results(keystring) {
         Products.where("keywords", "array-contains-any", keystring.split(" ")).orderBy("keywords").get().then(function (querySnapshot) {
             querySnapshot.forEach((doc) => {
                 console.log(doc);
-    updateTimestamp(doc);
                 showProducts(doc);
             });
         });
@@ -35,7 +33,6 @@ function results(keystring) {
         Products.where("name", "in", keystring.split(" ")).get().then(function (querySnapshot) {
             querySnapshot.forEach((doc) => {
                 console.log(doc);
-                updateTimestamp(doc);
                 showProducts(doc);
             });
         });
