@@ -106,7 +106,7 @@ function xhttp(source, tag) {
         }
     };
 
-    xhttp.open("GET", "auth.html", true);
+    xhttp.open("GET", ".html", true);
     xhttp.send();
 }
 
