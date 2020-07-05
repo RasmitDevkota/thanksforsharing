@@ -6,6 +6,7 @@ function filter(field) {
     document.getElementById("products").innerHTML = "";
     Products.orderBy(field).get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
+            console.log(doc);
             showProducts(doc);
         });
     });
