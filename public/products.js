@@ -49,7 +49,7 @@ function showProducts(doc) {
     var desc = docdata.description.toString();
     var price = docdata.price;
     var time = docdata.time.toString();
-    var deliveryTime = doc.data().deliveryTime.toString();
+    var deliveryTime = docdata.deliveryTime.toString();
     var c2c = doc.data().c2c;
 
     updateTimestamp(doc);
