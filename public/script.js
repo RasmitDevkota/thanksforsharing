@@ -42,7 +42,7 @@ firebase.auth().onAuthStateChanged(function (user) {
 });
 
 function pageLoad(u) {
-    if (window.location.href.includes("index.html")) {
+    if (window.location.href.includes("index.html") || !window.location.href.includes(".html")) {
         xhttp("indexNavbar", "navbarHeader");
     } else {
         xhttp("navbar", "navbarHeader");
