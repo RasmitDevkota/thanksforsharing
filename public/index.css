@@ -2,10 +2,12 @@
     display: flex;
     flex-direction: row;
 }
+
 .announcements {
     flex-grow: 1;
     width: 20%;
 }
+
 .titlelogo {
     animation: title 1s ease;
 }
