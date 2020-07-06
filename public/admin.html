@@ -180,7 +180,18 @@
 
                 var uniqueKeywords = keywords.filter(uniqueFilter);
 
-                function 
+                function getRatings() {
+                    var ratings = [3, 4, 5];
+                    var total = 0;
+
+                    for (i = 0; i < 11; i++) {
+                        var rand = Math.floor(Math.random() * 10)
+                        ratings.push(rand);
+                        total += rand;
+                    }
+
+                    console.log(ratings + " " + total / 14);
+                }
 
                 if (c2c) {
                     db.collection("products").doc(name).set({
