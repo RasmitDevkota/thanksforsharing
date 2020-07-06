@@ -44,7 +44,6 @@ firebase.auth().onAuthStateChanged(function (user) {
 function pageLoad(u) {
     if (window.location.href.includes("index.html")) {
         xhttp("indexNavbar", "navbarHeader");
-
     } else {
         xhttp("navbar", "navbarHeader");
     }
