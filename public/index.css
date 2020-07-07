@@ -52,7 +52,7 @@
     margin-bottom: 5px;
 }
 
-blockquote p::before,
+blockquote p::before, 
 blockquote p:first-child::before { content: '\201C';  }
 
 p:last-child::after,
