@@ -26,6 +26,15 @@
     }
 }
 
+.bigsearch {
+    border: 1px solid red;
+}
+
+.ads {
+    flex-grow: 1;
+    width: 20%;
+}
+
 .titlelogosection {
     display: flex;
     flex-direction: row;
