@@ -42,7 +42,9 @@
     
 }
 
-.card-title
+.card-title {
+    margin-top: 0;
+}
 
 .blockquote {
     margin-top: 5%;
