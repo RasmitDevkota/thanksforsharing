@@ -52,7 +52,7 @@
     margin-bottom: 5px;
 }
 
-blockquote p { quotes: '\201C' '\201D'; }
+blockquote p { quotes: ''; }
 
 blockquote p::before,
 blockquote p:first-child::before { content: '\201C';  }
