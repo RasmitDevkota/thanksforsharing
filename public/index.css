@@ -41,7 +41,9 @@
     justify-content: center;    
 }
 
-.col-sm-6
+.col-sm-6 {
+    margin-top: 25%;
+}
 
 .card-body {
     padding-top: 0%;
