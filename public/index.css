@@ -55,7 +55,7 @@
 blockquote p::before,
 blockquote p:first-child::before { content: '\201C';  }
 
-.en-us blockquote p:last-child::after,
+p:last-child::after,
 .en-us blockquote p.is-last-child::after { content: '\201D'; }
 
 .en-us blockquote p.has-cite:last-child::after,
