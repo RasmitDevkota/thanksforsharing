@@ -59,11 +59,3 @@ blockquote:first-child::before { content: '';  }
 
 blockquote::after,
 blockquote:last-child::after { content: '';  }
-
-blockquote:last-child::after,
-blockquote.is-last-child::after { content: ''; }
-
-p.has-cite:last-child::after,
-p.has-cite:last-child::before,
-p.has-cite-only:last-child::after,
-p.has-cite-only:last-child::before { content: ''; }
