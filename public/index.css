@@ -52,7 +52,7 @@
     margin-bottom: 5px;
 }
 
-blockquote p::before,
+blockquote::before,
 blockquote p:first-child::before
 
 p:last-child::after,
