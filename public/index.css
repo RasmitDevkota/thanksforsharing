@@ -53,7 +53,7 @@
 }
 
 .blockquote p::before,
-.en-us blockquote p:first-child::before { content: '\201C';  }
+blockquote p:first-child::before { content: '\201C';  }
 
 .en-us blockquote p:last-child::after,
 .en-us blockquote p.is-last-child::after { content: '\201D'; }
