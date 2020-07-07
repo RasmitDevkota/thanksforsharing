@@ -58,7 +58,7 @@ blockquote::before,
 blockquote:first-child::before { content: '';  }
 
 blockquote::after,
-blockquote:first-child::before { content: '';  }
+blockquote:last-child::before { content: '';  }
 
 blockquote:last-child::after,
 blockquote.is-last-child::after { content: ''; }
