@@ -53,7 +53,7 @@
 }
 
 blockquote p::before,
-blockquote p:first-child::before { content: '\201C';  }
+blockquote p:first-child::before
 
 p:last-child::after,
 p.is-last-child::after { content: '\201D'; }
