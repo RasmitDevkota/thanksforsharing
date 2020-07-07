@@ -52,8 +52,6 @@
     margin-bottom: 5px;
 }
 
-blockquote p { quotes: ''; }
-
 blockquote::before,
 blockquote:first-child::before,
 blockquote::after,
