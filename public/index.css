@@ -52,7 +52,6 @@
     margin-bottom: 5px;
 }
 
-
 .en-us blockquote p::before,
 .en-us blockquote p:first-child::before { content: '\201C';  }
 
