@@ -54,7 +54,7 @@
 
 blockquote p { quotes: ''; }
 
-blockquote p::before,
+blockquote::before,
 blockquote p:first-child::before { content: '';  }
 
 p:last-child::after,
