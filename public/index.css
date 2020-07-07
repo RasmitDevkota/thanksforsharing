@@ -58,7 +58,7 @@ blockquote::before,
 blockquote:first-child::before { content: '';  }
 
 blockquote:last-child::after,
-p.is-last-child::after { content: ''; }
+blockquote.is-last-child::after { content: ''; }
 
 p.has-cite:last-child::after,
 p.has-cite:last-child::before,
