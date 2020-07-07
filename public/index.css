@@ -52,13 +52,13 @@
     margin-bottom: 5px;
 }
 
-blockquote::before,
-blockquote p:first-child::before
+blockquote p::before,
+blockquote p:first-child::before { content: '\201C';  }
 
 p:last-child::after,
-p.is-last-child::after
+p.is-last-child::after { content: '\201D'; }
 
-p.has-cite:last-child::after,
-p.has-cite:last-child::before,
-p.has-cite-only:last-child::after,
+.en-us blockquote p.has-cite:last-child::after,
+.en-us blockquote p.has-cite:last-child::before,
+.en-us blockquote p.has-cite-only:last-child::after,
 p.has-cite-only:last-child::before { content: ''; }
