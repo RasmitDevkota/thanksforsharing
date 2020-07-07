@@ -53,7 +53,9 @@ blockquote:first-child::before,
 blockquote::after,
 blockquote:last-child::after { content: '';  }
 
-
+.flex-row {
+    
+}
 
 .demo-card-square.mdl-card {
     width: 320px;
