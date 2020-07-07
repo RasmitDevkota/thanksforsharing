@@ -12,10 +12,6 @@
     animation: title 1s ease;
 }
 
-.general {
-    flex-grow: 2;
-}
-
 @keyframes title {
     0%{
         transform: translateY(100px);
