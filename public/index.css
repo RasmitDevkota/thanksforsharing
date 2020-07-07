@@ -54,7 +54,7 @@ blockquote::after,
 blockquote:last-child::after { content: '';  }
 
 .flex-row {
-    dis
+    display: ;
 }
 
 .demo-card-square.mdl-card {
