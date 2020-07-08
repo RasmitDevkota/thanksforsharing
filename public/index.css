@@ -32,11 +32,16 @@
     background-image: url('blackbackground.png');
 }
 
-.col-sm-6 {
-    margin-top: 3%;
-    color: blue;
+.headertextsectionwrapper {
+    color: white;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    margin: 2%;
 }
-
+.headertexttitle{
+    font-size: 300%;
+}
 .card-body {
     padding-top: 0%;
 }
