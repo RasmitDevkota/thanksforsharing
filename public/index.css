@@ -30,6 +30,8 @@
     flex-direction: row;
     justify-content: center;   
     background-image: url('blackbackground.png');
+    background-repeat: repeat-x;
+    background-size: contain;
 }
 
 .headertextsectionwrapper {
