@@ -20,291 +20,101 @@
 
     <body>
 
-        <header>
-            <!--nav begin-->
-            <nav>
-                <!--Beginning of Logo-->
-                <a onclick="redirect('index.html')"><img class="logo" src="favicon.ico"></a>
-                <!--End of Logo-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              
-                <!--Beginning of Home-->
-                <a id="home" class="navelement" onclick="redirect('index.html')">Home</a>
-                <!--End of Home-->&nbsp;&nbsp;&nbsp;
-                
-                <!--Beginning of About-->
-                <a id="about" class="navelement" onclick="redirect('about.html')">About</a>
-                <!--End of About-->&nbsp;&nbsp;&nbsp;
-              
-                <!--Beginning of Products-->
-                <a id="navproducts" class="navelement" onclick="redirect('products.html?query=product')">Products</a>
-                <!--End of Products-->&nbsp;&nbsp;&nbsp;
-              
-                <!--Beginning of Shopping Cart-->
-                <a id="cart" class="navelement" onclick="redirect('cart.html')">Shopping Cart</a>
-                <!--End of Shopping Cart-->&nbsp;&nbsp;&nbsp;
-      
-                <!--Beginning of C2C-->
-                <a id="c2c" class="navelement" onclick="redirect('c2c.html')">C2C</a>
-                <!--End of C2C-->&nbsp;&nbsp;&nbsp;
-      
-                <!--Beginning of FAQ-->
-                <a id="faq" class="navelement" onclick="redirect('faq.html')">FAQ</a>
-                <!--End of About-->&nbsp;&nbsp;&nbsp;
-      
-                <!--Beginning of Search-->
-                <a id="navsearch"class="navelement">
-                  <i class="fas fa-search" onclick="search()"></i>
-                </a>&nbsp;
-                <!--End of Search-->&nbsp;&nbsp;&nbsp;
-              
-                <!--Beginning of Sign in button-->
-                <a id="signin" class="navelement" onclick="signIn()">Sign In</a>
-                <!--End of Sign in button-->
-      
-                <!--Beginning of Menu -->
-                <a id="menu" class="navelement" onclick="display('home'); display('navproducts'); display('cart'); display('signin'); display('navsearch'); display('about'); display('faq');">
-                  <i class="fas fa-bars"></i>
-                </a>
-                <!--End of Sign in button-->
-              </nav><!--search bar-->
-            <input style="display: none;" id="search" class="search" type="text" placeholder="Search">
+        <header id="navbarHeader">
+        
         </header>
-
-        <!--Popup-->
-        <div id="popupsignin" style="display: none; z-index: 5; background-color: rgba(0,0,0,0.5);" class="popup demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
-            <main class="popupwrap mdl-layout__content mdl-color--grey-100">
-                <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
-                    <div class="mdl-card sis mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
-
-                        <div class="mdl-card__title mdl-color--light-blue-600 mdl-color-text--white">
-                            <h2 class="mdl-card__title-text">Sign In or Sign Up</h2>
-                        </div>
-
-                        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-                            <button class="signinoptions" onclick="togglepsi(); display('email')">Email</button>
-                            <br><br>
-                            <button class="signinoptions" onclick="gToggleSignIn()">Google</button>
-                            <br><br>
-                            <button class="signinoptions" onclick="display('popupsignin'); display('signup')">Sign Up</button>
-                            <br><br>
-                            <button class="signinoptions" onclick="togglepsi()">Close</button>
-                        </div>
-
-                    </div>
-                </div>
-            </main>
+        
+        <div id="authDiv">
+        
         </div>
-        <!--Popup  End-->
 
-        <!--Email Popup-->
-        <div id="email" style="display: none; z-index: 5; background-color: rgba(0,0,0,0.5);" class="popup demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
-            <main class="popupwrap mdl-layout__content mdl-color--grey-100">
-                <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
-                    <div class="mdl-card sis mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
-                        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-
-                            <p>Enter an email and password below to sign in.</p>
-
-                            <input class="mdl-textfield__input" style="display:inline;" type="text" id="emailemail" name="email" placeholder="Email" />
-                            &nbsp;&nbsp;&nbsp;
-                            <input class="mdl-textfield__input" style="display:inline;" type="password" id="password" name="password" placeholder="Password" />
-                            <br /><br />
-                            <button class="mdl-button mdl-js-button mdl-button--raised" onclick="eToggleSignIn()" name="signin">Sign In</button>
-                            &nbsp;&nbsp;&nbsp;
-                            <button class="mdl-button mdl-js-button mdl-button--raised" onclick="display('email'); display('pwreset')">Reset Password</button>
-                            &nbsp;&nbsp;&nbsp;
-                            <button class="mdl-button mdl-js-button mdl-button--raised" name="signIn" onclick="display('email'); signIn()">Return to Sign In</button>
-
-                            <p>
-                                <li>
-                                    <a onclick="display('email')">Close</a>
-                                </li>
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-            </main>
-        </div>
-        <!--Email Popup End-->
-
-        <!--Signup Popup-->
-        <div id="signup" style="display: none; z-index: 5; background-color: rgba(0,0,0,0.5);" class="popup demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
-            <main class="popupwrap mdl-layout__content mdl-color--grey-100">
-                <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
-                    <div class="mdl-card sis mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
-                        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-
-                            <p>Enter the information below to create an account and gain full access to this very cool site!</p>
-
-                            <input class="mdl-textfield__input" style="display:inline;" type="text" id="suusername" name="username" placeholder="Username" />
-                            &nbsp;&nbsp;&nbsp;
-                            <input class="mdl-textfield__input" style="display:inline;" type="text" id="suemail" name="email" placeholder="Email" />
-                            &nbsp;&nbsp;&nbsp;
-                            <input class="mdl-textfield__input" style="display:inline;" type="password" id="supassword" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Your password must contain at least: one number, one uppercase letter, one lowercase letter, and at least 8 characters">
-                            <br /><br />
-                            <button class="mdl-button mdl-js-button mdl-button--raised" name="signup" onclick="handleSignUp()">Sign Up</button>
-                            &nbsp;&nbsp;&nbsp;
-                            <button class="mdl-button mdl-js-button mdl-button--raised" name="signIn" onclick="display('signup'); signIn()">Return to Sign In</button>
-
-                            <p>
-                                <li>
-                                    <a onclick="display('signup')">Close</a>
-                                </li>
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-            </main>
-        </div>
-        <!--Signup Popup End-->
-
-        <!--Password Reset-->
-        <div id="pwreset" style="display: none; z-index: 5; background-color: rgba(0,0,0,0.5);"
-            class="popup demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
-            <main class="popupwrap mdl-layout__content mdl-color--grey-100">
-                <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
-                    <div
-                        class="mdl-card sis mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
-                        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-
-                            <p>Enter your email below and, if an account associated with that email exists, you will be sent
-                                an email with instructions on how to reset your password.</p>
-
-                            <input class="mdl-textfield__input" style="display:inline;" type="text" id="premail"
-                                name="email" placeholder="Email" />
-                            <br /> <br />
-                            &nbsp;&nbsp;&nbsp;
-                            <button class="mdl-button mdl-js-button mdl-button--raised" name="passwordreset"
-                                onclick="sendPasswordReset()">Send Password Reset Email</button>
-                            &nbsp;&nbsp;&nbsp;
-                            <button class="mdl-button mdl-js-button mdl-button--raised" name="signIn"
-                                onclick="display('pwreset'); signIn()">Return to Sign In</button>
-
-                            <p>
-                                <li>
-                                    <a onclick="display('pwreset')">Close</a>
-                                </li>
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-            </main>
-        </div>
-        <!--Password Reset End-->
         <article>
-        <main class="faq-contents">
-            <section class="section">
-                <h1>About Us</h1>
-                <p>We have everything. Yes, that's right. This rental company isn't limited to a specific type of product. We have a
-                    variety of selections for users to choose. Our mission statement is to create a great rental experience for
-                    everyone.</p>
-            </section>
-            <section class="section">
-                <h1>Why Choose Us</h1>
-                <p>The fear that many people have with renting is that the products will be unsatisfactory or be old and overused by previous renters.
-                    While we can not guarantee that your order is perfect, we can guarantee a full refund if you
-                     <a href="mailto:thx4sharing@my-scrap-project.firebaseapp.com" title="thx4sharing@my-scrap-project.firebaseapp.com">email us</a>
-                    about your order with details and proof.
-                    <br>
-                    Our C2C program is top-notch, with a simple interface that will allow you to share your items with others without stressing over the safety of the item. To ensure this,
-                    we have customers pay for the first period upfront, so you are guaranteed that the customer can pay. As with our customer relations, you can 
-                    <a href="mailto:thx4sharing@my-scrap-project.firebaseapp.com" title="thx4sharing@my-scrap-project.firebaseapp.com">email us</a> to discuss any problems or fears you may have.
-                    <br>
-                    The best part? We're all local! We support the Forsyth County community and strive to offer the best experience for our residents. We can not all afford certain things when
-                    we need them, and it may be difficult sometimes to find what we need. Through our C2C program, we are promoting entrepreneurship and small businesses that may not have an 
-                    open market. Through our guarantees, we want to let you sit back and relax without having to worry about the renting experience.
-                </p>
-                <br>
-                <h2>Thanks for sharing!</h2>
-            </section>
-            <section class="section">
-                <h1>Contact Info</h1>
-                <p>You can contact us through our <a href="mailto:thx4sharing@my-scrap-project.firebaseapp.com">email.</a> You can also contact
-                    us through Twitter, Facebook, and Instagram and follow us for the latest updates.</p>
-                <div style="display: flex; justify-content: center;">
-                    <i style="width: 10%;" class="fab fa-facebook-square fa-3x"></i>
-                    <i style="width: 10%;" class="fab fa-twitter-square fa-3x"></i>
-                    <i style="width: 10%;" class="fab fa-instagram fa-3x"></i>
-                </div>
-            </section>
-            <section class="section">
-                <h1>Locations</h1>
-                <p>We have a headquarters in 585 Peachtree Parkway, Cumming, GA 30041</p>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1330.7339742500085!2d-84.1658858860565!3d34.14674411448311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f59b9e046f366b%3A0x4b51eb7d8afc2b51!2sSouth%20Forsyth%20High%20School!5e0!3m2!1sen!2sus!4v1578627400197!5m2!1sen!2sus"
-                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-            </section>
-            <section class="section">
-                <h1>Customer to Customer (C2C)</h1>
-                <img class="c2c" src="c2c.png">
-                <p>The image shown above is a customer to customer icon. You will see it in some products when you are shopping.
-                    These are products that other customers are renting out. You can also create these products if you are verified.
-                </p>
-            </section>
-        </main>
+            <main class="faq-contents" style="width: 60%; margin-left: 20%;">
+                <section class="section">
+                    <h1>About Us</h1>
+                    <p>We have everything. Yes, that's right. This rental company isn't limited to a specific type of product. We have a
+                        variety of selections for users to choose. Our mission statement is to create a great rental experience for
+                        everyone.</p>
+                </section>
+                <section class="section">
+                    <h1>Why Choose Us?</h1>
+                    <p>The fear that many people have with renting is that the products will be unsatisfactory or be old and overused by previous renters.
+                        While we can not guarantee that your order is perfect, we can guarantee a full refund if you
+                        <a href="mailto:thx4sharing@my-scrap-project.firebaseapp.com" title="thx4sharing@my-scrap-project.firebaseapp.com">email us</a>
+                        about your order with details and proof.
+                    </p>
+                    <p>
+                        Our C2C program is top-notch, with a simple interface that will allow you to share your items with others without stressing over the safety of the item. To ensure this,
+                        we have customers pay for the first period upfront, so you are guaranteed that the customer can pay. As with our customer relations, you can 
+                        <a href="mailto:thx4sharing@my-scrap-project.firebaseapp.com" title="thx4sharing@my-scrap-project.firebaseapp.com">email us</a> to discuss any problems or fears you may have.
+                    </p>
+                    <p>
+                        The best part? We're all local! We support the Forsyth County community and strive to offer the best experience for our residents. We can not all afford certain things when
+                        we need them, and it may be difficult sometimes to find what we need. Through our C2C program, we are promoting entrepreneurship and small businesses that may not have an 
+                        open market. Through our guarantees, we want to let you sit back and relax without having to worry about the renting experience.
+                    </p>
+                </section>
+                <section class="section">
+                    <h1>Contact Info</h1>
+                    <p>You can contact us through our <a href="mailto:thx4sharing@my-scrap-project.firebaseapp.com" title="thx4sharing@my-scrap-project.firebaseapp.com">email</a>.
+                        You can also contact us through
+                        <a style="cursor: pointer; text-decoration: underline;">Twitter</a>,
+                        <a style="cursor: pointer; text-decoration: underline;">Facebook</a>, and
+                        <a style="cursor: pointer; text-decoration: underline;">Instagram</a> and follow us for the latest updates.
+                    </p>
+                    <div style="display: flex; justify-content: space-around; width: 50%; margin-left: 25%; margin-right: 25%;">
+                        <i style="cursor: pointer;" class="fab fa-twitter-square fa-3x" title="Twitter"></i>
+                        <i style="cursor: pointer;" class="fab fa-facebook-square fa-3x" title="Facebook"></i>
+                        <i style="cursor: pointer;" class="fab fa-instagram fa-3x" title="Instagram"></i>
+                    </div>
+                </section>
+                <section class="section">
+                    <h1>Locations</h1>
+                    <p>We have a headquarters in 585 Peachtree Parkway, Cumming, GA 30041</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1330.7339742500085!2d-84.1658858860565!3d34.14674411448311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f59b9e046f366b%3A0x4b51eb7d8afc2b51!2sSouth%20Forsyth%20High%20School!5e0!3m2!1sen!2sus!4v1578627400197!5m2!1sen!2sus"
+                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </section>
+                <section class="section" id="c2c">
+                    <h1>Customer to Customer (C2C)</h1>
+                    <div style="display: flex;">
+                        <img class="c2c" src="c2c.png" title="C2C">
+                        <p>
+                            The image shown is a customer-to-customer (C2C) icon. You will see it in many products when you are shopping through our vast collection.
+                            These are products that other customers are renting out through our 
+                            <a style="cursor: pointer; text-decoration: underline;" onclick="redirect('c2c.html')">C2C Portal</a>.
+                            You can also create these products if you are verified, just go to the 
+                            <a style="cursor: pointer; text-decoration: underline;" onclick="redirect('c2c.html')">C2C page</a>
+                            to check your C2C status.
+                        </p>
+                    </div>
 
-        <br>
-        <br>
-        <br>
-    </article>
-        <footer class="mdl-mega-footer footer">
-            <div class="mdl-mega-footer__middle-section">
+                    <h3>What is C2C verification?</h3>
+                    <p>
+                        "C2C Verified" means that you have purchased at least USD $500 on our site with your account.
+                        After this threshold has been crossed, you will be given access to the C2C feature.
+                        However, this feature is not permanent. If you fail to successfully complete an order, there is an increasing penalty system.
+                    </p>
+                    <div style="width: 90%; margin-left: 5%;">
+                        <p>
+                            First strike: Warning and a 14-day hold on certain C2C features, losses are insured by the company
+                        </p>
+                        <p>
+                            Second strike: Warning, 30-day hold on certain C2C features, requirement to reimburse current losses personally
+                        </p>
+                        <p>
+                            Third strike: One-year ban from C2C and the requirement to remimburse all current and future losses personally
+                        </p>
+                        <p>
+                            Fourth strike: Permanent account ban
+                        </p>
+                    </div>
+                </section>
+            </main>
+        </article>
 
-                <div class="mdl-mega-footer__drop-down-section">
-                    <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-                    <h1 class="mdl-mega-footer__heading">Features</h1>
-                    <ul class="mdl-mega-footer__link-list">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Terms</a></li>
-                        <li><a href="#">Partners</a></li>
-                        <li><a href="#">Updates</a></li>
-                    </ul>
-                </div>
-
-                <div class="mdl-mega-footer__drop-down-section">
-                    <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-                    <h1 class="mdl-mega-footer__heading">Details</h1>
-                    <ul class="mdl-mega-footer__link-list">
-                        <li><a href="#">Specs</a></li>
-                        <li><a href="#">Tools</a></li>
-                        <li><a href="#">Resources</a></li>
-                    </ul>
-                </div>
-
-                <div class="mdl-mega-footer__drop-down-section">
-                    <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-                    <h1 class="mdl-mega-footer__heading">Technology</h1>
-                    <ul class="mdl-mega-footer__link-list">
-                        <li><a href="#">How it works</a></li>
-                        <li><a href="#">Patterns</a></li>
-                        <li><a href="#">Usage</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="#">Contracts</a></li>
-                    </ul>
-                </div>
-
-                <div class="mdl-mega-footer__drop-down-section">
-                    <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-                    <h1 class="mdl-mega-footer__heading">FAQ</h1>
-                    <ul class="mdl-mega-footer__link-list">
-                        <li><a href="#">Questions</a></li>
-                        <li><a href="#">Answers</a></li>
-                        <li><a href="#">Contact us</a></li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <div class="mdl-mega-footer__bottom-section">
-                <div class="mdl-logo">ThxForSharing</div>
-                <ul class="mdl-mega-footer__link-list">
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">Privacy & Terms</a></li>
-                </ul>
-            </div>
+        <footer class="mdl-mega-footer footer" id="footerFooter">
+        
         </footer>
     </body>
 </html>

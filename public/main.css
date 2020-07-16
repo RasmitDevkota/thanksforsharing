@@ -14,10 +14,13 @@ body {
   flex-direction: column;
   justify-content: left;
 }
+
 .footer {
-  margin-top: 500px;
+  bottom: 0;
+  width: 100%;
   background-color: #343434;
 }
+
 header {
   position: relative;
 }
