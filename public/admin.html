@@ -84,36 +84,72 @@
         <h2>Add Product</h2>
 
         <div class="form-group">
-            <label for="cardName">Product Name</label>
-            <input type="text" class="form-control" id="cardName" placeholder="Enter Name Here">
+            <label for="name">Product Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter Name Here">
         </div>
 
         <div class="form-group">
-            <label for="cardType">Product Type</label>
-            <select class="form-control" id="cardType">
-                <option>Normal</option>
-                <option>C2C</option>
+            <label for="description">Description</label>
+            <input type="text" class="form-control" id="description" placeholder="Enter Description Here">
+        </div>
+
+        <div class="form-group">
+            <label for="productType">Product Type</label>
+            <select class="form-control" id="productType">
+                <option>General</option>
+                <option>Teacher</option>
+                <option>S2S</option>
             </select>
         </div>
 
         <div class="form-group">
-            <label for="author">Seller Name (C2C Only)</label>
+            <label for="sellType">Sell Type</label>
+            <select class="form-control" id="sellType">
+                <option>Sell</option>
+                <option>Rent</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="availability">Availability</label>
+            <select class="form-control" id="availability">
+                <option>All Students</option>
+                <option>Specific Class</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="requirement">Requirement (Select None for Non-Class Products)</label>
+            <select class="form-control" id="requirement">
+                <option>None</option>
+                <option>Optional</option>
+                <option>Teacher Recommended</option>
+                <option>Required</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="author">Seller ID (Student/Teacher ID) (Teacher and S2S Only)</label>
             <input type="text" class="form-control" id="author" placeholder="Enter Seller Name Here">
         </div>
 
         <div class="form-group">
-            <label for="cardDescription">Description</label>
-            <input type="text" class="form-control" id="cardDescription" placeholder="Enter Description Here">
-        </div>
-
-        <div class="form-group">
-            <label for="deliveryTime">Delivery Time</label>
+            <label for="deliveryTime">Delivery Date</label>
             <input type="text" class="form-control" id="deliveryTime" placeholder="Example: 'four days'">
         </div>
+        <div class="form-group">
+            <label for="deliveryType">Delivery Type</label>
+            <input type="text" class="form-control" id="deliveryType" placeholder="Examples: 'Mrs. Cooper's Room', 'Room 1428'">
+        </div>
 
         <div class="form-group">
-            <label for="rentTime">Rent Time</label>
+            <label for="rentTime">Rent Time (Rent Only)</label>
             <input type="text" class="form-control" id="rentTime" placeholder="Example: '6 Months'">
+        </div>
+
+        <div class="form-group">
+            <label for="class">Product Class (Specific Class Products Only)</label>
+            <input type="text" class="form-control" id="class" placeholder="Example: 'AP Environmental Science'">
         </div>
 
         <div class="form-group">
