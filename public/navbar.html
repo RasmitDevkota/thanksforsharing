@@ -1,9 +1,24 @@
-<!--nav begin-->
+<section class="utilities">
+    <a onclick="redirect('index.html')">
+        <img class="logo" src="favicon.ico">
+    </a>
+    <input id="search" class="search" type="text" placeholder="Search">
+    <i class="fas fa-search searchbutton fa-1x" onclick="search()"></i>
+    <a href="cart.html">
+        <i class="fas fa-shopping-cart shopping-cartbutton"></i>
+    </a>
+    <i id="signinbutton" class="fas fa-sign-in-alt fa-1x signinbutton" onclick="signIn()"></i>
+    <a class="bars" onclick="toggleSlideMenu()">
+        <i class="fas fa-bars" style="color: white;"></i>
+    </a>
+</section>
+
+<section id="slideinmenu" style="display:none; position:absolute; background-color: black;top:0%;; left: 100%;"
+    class="slideinmenu">
+    <p></p>
+</section>
+
 <nav>
-    <!--Beginning of Logo-->
-    <a onclick="redirect('index.html')"><img class="logo" src="favicon.ico"></a>
-    <!--End of Logo-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    
     <!--Beginning of Home-->
     <a id="home" class="navelement" onclick="redirect('index.html')">Home</a>
     <!--End of Home-->&nbsp;&nbsp;&nbsp;

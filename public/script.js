@@ -42,12 +42,7 @@ firebase.auth().onAuthStateChanged(function (user) {
 });
 
 function pageLoad(u) {
-    if (window.location.href.includes("index.html") || !window.location.href.includes(".html")) {
-        xhttp("indexNavbar", "navbarHeader");
-    } else {
-        xhttp("navbar", "navbarHeader");
-    }
-
+    xhttp("navbar", "navbarHeader");
     xhttp("auth", "authDiv");
     xhttp("footer", "footerFooter");
 
@@ -94,7 +89,7 @@ function xhttp(source, tag) {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            document.getElementById(tag).innerHTML += this.responseText;
+            document.getElementById(tag).innerHTML = this.responseText;
         }
     };
 
