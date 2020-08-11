@@ -1,7 +1,7 @@
 {
   "name": "thanksforsharing",
   "version": "1.0.0",
-  "description": "This is a website for a local rental business. Thanks for Sharing is special because not only does it have a wide range of products,  but it also has a C2C system for verified customers to rent out their own products.",
+  "description": "SFSH-Based Business",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,6 +20,7 @@
     "babel-cli": "^6.26.0",
     "babel-preset-react-app": "^3.1.2",
     "firebase": "^7.6.1",
+    "jquery": "^3.5.1",
     "material-design-lite": "^1.3.0",
     "nodejs": "0.0.0"
   },

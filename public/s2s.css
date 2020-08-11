@@ -1,33 +1,33 @@
-.c2c-container {
+.s2s-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.c2c-content {
+.s2s-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.c2c-content-cards {
+.s2s-content-cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
-.c2c-content-card {
+.s2s-content-card {
     margin: 1%;
 }
-.c2c-verified-actions {
+.s2s-verified-actions {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-.c2c-verified-action {
+.s2s-verified-action {
     text-align: center;
     width: 30%;
     cursor: pointer;
 }
-.c2c-verified-action > i {
+.s2s-verified-action > i {
     font-size: 35px;
 }
 .demo-card-wide.mdl-card {
@@ -36,17 +36,17 @@
     width: 500px;
     height: 300px;
 }
-.demo-card-wide > .mdl-card__title.c2c-title {
+.demo-card-wide > .mdl-card__title.s2s-title {
     color: #ffffff;
     height: 176px;
     background-size: cover;
     background-position: center;
 }
-.demo-card-wide > .mdl-card__menu, .mdl-card__title-text.c2c-title-text {
+.demo-card-wide > .mdl-card__menu, .mdl-card__title-text.s2s-title-text {
     color: #ededed;
     background-color: rgba(0, 0, 0, 0.349);
 }
-.mdl-card__supporting-text.c2c-supporting-text {
+.mdl-card__supporting-text.s2s-supporting-text {
     line-height: 11%;
     height: 22%
 }
@@ -81,7 +81,7 @@
   height: 70%;
   padding: 2%;
 }
-#c2c-add-product {
+#s2s-add-product {
   display: flex;
   flex-direction: row;
   justify-content: center;

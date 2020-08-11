@@ -15,11 +15,11 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
         <link rel="stylesheet" type="text/css" href="main.css">
-        <link rel="stylesheet" type="text/css" href="c2c.css">
+        <link rel="stylesheet" type="text/css" href="s2s.css">
 
         <script src="script.js"></script>
         <script src="auth.js"></script>
-        <script src="c2c.js"></script>
+        <script src="s2s.js"></script>
     </head>
 
     <body>
@@ -32,9 +32,9 @@
         
         </div>
 
-        <main class="c2c-container">
-            <h1 class="page-heading">C2C</h2>
-            <div id="c2c-verified" class="c2c-content" style="display: none;">
+        <main class="s2s-container">
+            <h1 class="page-heading">S2S</h2>
+            <div id="s2s-verified" class="s2s-content" style="display: none;">
 
                 <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
                     <div class="mdl-tabs__tab-bar">
@@ -44,15 +44,15 @@
                     </div>
                 
                     <div class="mdl-tabs__panel is-active" id="view-products">
-                        <div id="c2c-verified-cards" class="c2c-content-cards"></div>
+                        <div id="s2s-verified-cards" class="s2s-content-cards"></div>
                     </div>
 
                     <div class="mdl-tabs__panel" id="view-orders">
-                        <div id="c2c-verified-orders" class="c2c-content-cards"></div>
+                        <div id="s2s-verified-orders" class="s2s-content-cards"></div>
                     </div>
 
                     <div class="mdl-tabs__panel" id="add-product">
-                        <div id="c2c-add-product" class="c2c-content-cards">
+                        <div id="s2s-add-product" class="s2s-content-cards">
 
                             <div id="add-product" class="demo-layout mdl-layout ap mdl-js-layout mdl-layout--fixed-header">
                                 <main class="mdl-layout__content ap mdl-color--grey-100">
@@ -64,7 +64,7 @@
                                                     <h4>Enter Product Information</h4>
                                                     <form>
                                                         <div style="display: flex; flex-direction: row;">
-                                                            <!-- <img id="image" src="c2c.png"> -->
+                                                            <!-- <img id="image" src="s2s.png"> -->
                                                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                                                 <input class="mdl-textfield__input ap" type="text" id="addimage">
                                                                 <label class="mdl-textfield__label ap" for="addimage">Image URL</label>
@@ -118,22 +118,22 @@
                                 </main>
                             </div>
 
-                        </div class="c2c-content-cards">
+                        </div class="s2s-content-cards">
                     </div>
                 </div>
 
             </div>
 
-            <div id="c2c-unverified" class="c2c-content" style="display: none;">
+            <div id="s2s-unverified" class="s2s-content" style="display: none;">
                 <div class="alert alert-danger" role="alert" style="height: 100px; text-align: center;">
                     <strong>Oh no!</strong> Sorry, you can't become a seller until you have ordered at least $500 from the website. Head over to the products page to order something!
                 </div>
             </div>
             
-            <div id="c2c-nouser" class="c2c-content" style="display: none;">
+            <div id="s2s-nouser" class="s2s-content" style="display: none;">
                 <div class="alert alert-danger" role="alert" style="height: 100px; text-align: center;">
-                    <p><strong>Not signed in!</strong> Login and check this page again to see if you qualify to become a C2C seller!</p>
-                    <p><a style="cursor: pointer; text-decoration: underline;" onclick="redirect('about.html#c2c')">What is C2C?</a></p>
+                    <p><strong>Not signed in!</strong> Login and check this page again to see if you qualify to become a S2S seller!</p>
+                    <p><a style="cursor: pointer; text-decoration: underline;" onclick="redirect('about.html#s2s')">What is S2S?</a></p>
                 </div>
             </div>
         </main>

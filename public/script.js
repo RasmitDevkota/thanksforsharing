@@ -58,14 +58,10 @@ function pageLoad(u) {
             var urlParams = new URLSearchParams(window.location.search);
             var query = urlParams.get('query');
             results(query.toLowerCase());
-        } else if (window.location.href.includes("productsPage.html")) {
-            var urlParams = new URLSearchParams(window.location.search);
-            var query = urlParams.get('query');
-            product(query.toLowerCase());
         } else if (window.location.href.includes("cart.html")) {
             showCart();
-        } else if (window.location.href.includes("c2c.html")) {
-            c2cStart();
+        } else if (window.location.href.includes("s2s.html")) {
+            s2sStart();
         } else {
             console.log("info page?");
         }
@@ -79,8 +75,8 @@ function pageLoad(u) {
         } else if (window.location.href.includes("cart.html")) {
             document.getElementById("cartItems").innerHTML = "<h1 style='text-align: center'>Not signed in! Sign in to use cart.<h1>";
             document.getElementById("totalPrice").innerHTML = "Total Price: $0.00";
-        } else if (window.location.href.includes("c2c.html")) {
-            c2cStart();
+        } else if (window.location.href.includes("s2s.html")) {
+            s2sStart();
         }
     }
 };

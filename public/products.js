@@ -1,4 +1,4 @@
-var txtElements = ["name", "description", "price", "rating", "c2c", "deliveryTime"];
+var txtElements = ["name", "description", "price", "rating", "s2s", "deliveryTime"];
 var actionElements = ["addtocart", "checkout"];
 var actionNames = ["Add to Cart", "Fast Checkout"];
 
@@ -14,8 +14,8 @@ function filter(field) {
 function results(keystring) {
     document.getElementById("products").innerHTML = "";
 
-    if (keystring == "c2c") {
-        Products.where("c2c", "==", true).orderBy("keywords").get().then(function (querySnapshot) {
+    if (keystring == "s2s") {
+        Products.where("s2s", "==", true).orderBy("keywords").get().then(function (querySnapshot) {
             querySnapshot.forEach((doc) => {
                 showProducts(doc);
             });
@@ -48,7 +48,7 @@ function showProducts(docdata, doc) {
     var price = docdata.price;
     var time = docdata.time.toString();
     var deliveryTime = docdata.deliveryTime.toString();
-    var c2c = docdata.c2c;
+    var s2s = docdata.s2s;
 
     updateTimestamp(doc);
 
@@ -83,10 +83,10 @@ function showProducts(docdata, doc) {
             elem.innerHTML = "$" + txtContent[i] + "/month for " + time;
         } else if (txt == "rating") {
             elem.innerHTML = "<i class='fas fa-star'></i>" + txtContent[i];
-        } else if (txt == "c2c") {
-            if (c2c == true) {
-                var seller = docdata.c2cauthor;
-                elem.innerHTML = `<img src='c2c.png' title='C2C - Sold by ${seller}'>`;
+        } else if (txt == "s2s") {
+            if (s2s == true) {
+                var seller = docdata.s2sauthor;
+                elem.innerHTML = `<img src='s2s.png' title='S2S - Sold by ${seller}'>`;
             } else {
                 break;
             }
@@ -167,7 +167,7 @@ function product(name) {
             var price = doc.data().price;
             var time = doc.data().time.toString();
             var deliveryTime = doc.data().deliveryTime.toString();
-            var c2c = doc.data().c2c;
+            var s2s = doc.data().s2s;
 
             var ratings = doc.data().ratings;
             var sum = 0;
@@ -198,10 +198,10 @@ function product(name) {
                     elem.innerHTML = "$" + txtContent[i] + "/month for " + time;
                 } else if (txt == "rating") {
                     elem.innerHTML = "<i class='fas fa-star'></i>" + txtContent[i];
-                } else if (txt == "c2c") {
-                    if (c2c == true) {
-                        var seller = doc.data().c2cauthor;
-                        elem.innerHTML = `<img src='c2c.png' title='C2C - Sold by ${seller}'>`;
+                } else if (txt == "s2s") {
+                    if (s2s == true) {
+                        var seller = doc.data().s2sauthor;
+                        elem.innerHTML = `<img src='s2s.png' title='S2S - Sold by ${seller}'>`;
                     } else {
                         break;
                     }
@@ -272,7 +272,7 @@ function showCart() {
         querySnapshot.forEach((doc) => {
             var name = doc.data().name.toString();
             var imageRef = doc.data().imageRef.toString();
-            var c2c = doc.data().c2c;
+            var s2s = doc.data().s2s;
             var price = doc.data().price;
             totalPrice += price;
 
@@ -287,9 +287,9 @@ function showCart() {
             var nameEl = document.createElement("c-name");
             nameEl.className = "cname";
             nameEl.id = "cartName" + name;
-            if (c2c == true) {
-                var seller = doc.data().c2cauthor;
-                nameEl.innerHTML = name + `<img src='c2c.png' title='C2C - Sold by ${seller}'>`;
+            if (s2s == true) {
+                var seller = doc.data().s2sauthor;
+                nameEl.innerHTML = name + `<img src='s2s.png' title='S2S - Sold by ${seller}'>`;
             } else {
                 nameEl.innerHTML = name;
             }
@@ -364,10 +364,10 @@ function checkOut() {
                         totalPrice: firebase.firestore.FieldValue.increment(price)
                     });
 
-                    var c2c = doc.data().c2c;
+                    var s2s = doc.data().s2s;
 
-                    if (c2c == true) {
-                        var seller = doc.data().c2cauthor;
+                    if (s2s == true) {
+                        var seller = doc.data().s2sauthor;
                         var name = doc.data().name;
 
                         Orders.doc(user.displayName + '/' + seller + '/' + name).set({

@@ -1,50 +1,50 @@
-function c2cStart() {
-    document.getElementById("c2c-verified").style.display = "none";
-    document.getElementById("c2c-unverified").style.display = "none";
-    document.getElementById("c2c-nouser").style.display = "none";
+function s2sStart() {
+    document.getElementById("s2s-verified").style.display = "none";
+    document.getElementById("s2s-unverified").style.display = "none";
+    document.getElementById("s2s-nouser").style.display = "none";
     if (user) {
         usersUser.get().then(function (doc) {
             if (doc.data().totalPrice >= 500) {
-                console.log("c2c-verified");
-                document.getElementById("c2c-verified").style.display = "flex";
+                console.log("s2s-verified");
+                document.getElementById("s2s-verified").style.display = "flex";
                 viewProducts();
             } else {
-                console.log("c2c-unverified");
-                document.getElementById("c2c-unverified").style.display = "flex";
+                console.log("s2s-unverified");
+                document.getElementById("s2s-unverified").style.display = "flex";
             }
         });
     } else {
         console.log("no user");
-        document.getElementById("c2c-nouser").style.display = "flex";
+        document.getElementById("s2s-nouser").style.display = "flex";
     }
 };
 
-function viewC2CProducts() {
-    redirect('products.html?query=c2c');
+function viewS2SProducts() {
+    redirect('products.html?query=s2s');
 };
 
 function viewProducts() {
-    Products.where("c2c", "==", true).where("c2cauthor", "==", user.displayName).orderBy("keywords").get().then(function (querySnapshot) {
+    Products.where("s2s", "==", true).where("s2sauthor", "==", user.displayName).orderBy("keywords").get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
             var name = doc.data().name;
             var description = doc.data().description;
             var price = doc.data().price;
             var imageRef = doc.data().imageRef;
 
-            document.getElementById("c2c-verified-cards").innerHTML += `
-                <div id="${name}" class="demo-card-wide mdl-card mdl-shadow--2dp c2c-content-card">
-                    <div class="mdl-card__title c2c-title" style="background-image: url('${imageRef}');">
-                        <h2 class="mdl-card__title-text c2c-title-text">${name}</h2>
+            document.getElementById("s2s-verified-cards").innerHTML += `
+                <div id="${name}" class="demo-card-wide mdl-card mdl-shadow--2dp s2s-content-card">
+                    <div class="mdl-card__title s2s-title" style="background-image: url('${imageRef}');">
+                        <h2 class="mdl-card__title-text s2s-title-text">${name}</h2>
                     </div>
-                    <div class="mdl-card__supporting-text-c2c">${description}</div>
-                    <div class="mdl-card__actions mdl-card--border c2c-verified-actions">
-                        <a class="c2c-verified-action">
+                    <div class="mdl-card__supporting-text-s2s">${description}</div>
+                    <div class="mdl-card__actions mdl-card--border s2s-verified-actions">
+                        <a class="s2s-verified-action">
                             <i class="material-icons mdl-button mdl-js-button mdl-js-ripple-effect">edit</i>
                         </a>
-                        <a class="c2c-verified-action">
+                        <a class="s2s-verified-action">
                             <i class="material-icons mdl-button mdl-js-button mdl-js-ripple-effect" onclick="redirect('products.html?query=${name}')">open_in_new</i>
                         </a>
-                        <a class="c2c-verified-action">
+                        <a class="s2s-verified-action">
                             <i class="material-icons mdl-button mdl-js-button mdl-js-ripple-effect" onclick="removeProduct('${doc.id}')">delete</i>
                         </a>
                     </div>
@@ -66,25 +66,19 @@ function removeProduct(id) {
 };
 
 function viewOrders() {
-    document.getElementById("c2c-verified-orders").innerHTML = "";
+    document.getElementById("s2s-verified-orders").innerHTML = "";
 
     db.collectionGroup(user.displayName).get().then(function (querySnapshot) {
         querySnapshot.forEach(function (doc) {
             var name = doc.data().productName;
             var buyer = doc.data().name;
-            var addr = doc.data().address
-            var city = doc.data().city;
-            var state = doc.data().state;
-            var zipcode = doc.data().zipcode;
 
-            document.getElementById("c2c-verified-orders").innerHTML += `
-                <div id="order-${buyer}-${name}" class="demo-card-event mdl-card mdl-shadow--2dp c2c-content-card">
+            document.getElementById("s2s-verified-orders").innerHTML += `
+                <div id="order-${buyer}-${name}" class="demo-card-event mdl-card mdl-shadow--2dp s2s-content-card">
                     <div class="mdl-card__title mdl-card--expand info" style="display: flex; flex-direction: column;">
                         <h5 class="info">
                             Product: ${name}<br><br>
                             Buyer: ${buyer}<br><br>
-                            ${addr}<br>
-                            ${city}, ${state} ${zipcode}
                         </h5>
                     </div>
                     <div class="mdl-card__actions mdl-card--border verifyButton">
@@ -126,8 +120,8 @@ function addProduct() {
                 ratings: [5],
                 imageRef: imageRef,
                 deliveryTime: "5 days",
-                c2c: true,
-                c2cauthor: user.displayName,
+                s2s: true,
+                s2sauthor: user.displayName,
             }).then(function () {
                 console.log("Document successfully written!");
             }).catch(function (error) {
