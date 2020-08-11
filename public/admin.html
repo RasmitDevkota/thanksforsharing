@@ -88,12 +88,7 @@
             <input type="text" class="form-control" id="name" placeholder="Enter Name Here">
         </div>
 
-        <div class="form-group">
-            <label for="description">Description</label>
-            <input type="text" class="form-control" id="description" placeholder="Enter Description Here">
-        </div>
-
-        <div class="form-group">
+        <div class="form-group"> <!--A-->
             <label for="productType">Product Type</label>
             <select class="form-control" id="productType">
                 <option>General</option>
@@ -102,15 +97,15 @@
             </select>
         </div>
 
-        <div class="form-group">
-            <label for="sellType">Sell Type</label>
-            <select class="form-control" id="sellType">
+        <div class="form-group"> <!--B-->
+            <label for="saleType">Sale Type</label>
+            <select class="form-control" id="saleType">
                 <option>Sell</option>
                 <option>Rent</option>
             </select>
         </div>
 
-        <div class="form-group">
+        <div class="form-group"> <!--C-->
             <label for="availability">Availability</label>
             <select class="form-control" id="availability">
                 <option>All Students</option>
@@ -118,43 +113,50 @@
             </select>
         </div>
 
-        <div class="form-group">
-            <label for="requirement">Requirement (Select None for Non-Class Products)</label>
+        <div class="form-group"> <!--C-->
+            <label for="requirement">Requirement (Leave as "None" for Non-Class-Specific Products)</label>
             <select class="form-control" id="requirement">
-                <option>None</option>
-                <option>Optional</option>
-                <option>Teacher Recommended</option>
-                <option>Required</option>
+                <option value="none">None</option>
+                <option value="optional">Optional</option>
+                <option value="recommended">Teacher-Recommended</option>
+                <option value="required">Required</option>
             </select>
         </div>
 
-        <div class="form-group">
-            <label for="author">Seller ID (Student/Teacher ID) (Teacher and S2S Only)</label>
-            <input type="text" class="form-control" id="author" placeholder="Enter Seller Name Here">
+        <div class="form-group"> <!--A-->
+            <label for="seller">Seller ID (Student/Teacher ID) (Teacher and S2S Only)</label>
+            <input type="text" class="form-control" id="seller" placeholder="Enter Seller Name Here">
         </div>
 
-        <div class="form-group">
-            <label for="deliveryTime">Delivery Date</label>
-            <input type="text" class="form-control" id="deliveryTime" placeholder="Example: '8/31/2020'">
-        </div>
-        <div class="form-group">
-            <label for="deliveryType">Delivery Type</label>
-            <input type="text" class="form-control" id="deliveryType" placeholder="Examples: 'Mrs. Cooper's Room', 'Room 1428'">
-        </div>
-
-        <div class="form-group">
+        <div class="form-group"> <!--B-->
             <label for="rentTime">Rent Time (Rent Only)</label>
             <input type="text" class="form-control" id="rentTime" placeholder="Example: '6 Months'">
         </div>
 
-        <div class="form-group">
+        <div class="form-group"> <!--C-->
             <label for="class">Product Class (Specific Class Products Only)</label>
             <input type="text" class="form-control" id="class" placeholder="Example: 'AP Environmental Science'">
         </div>
 
         <div class="form-group">
+            <label for="description">Description</label>
+            <input type="text" class="form-control" id="description" placeholder="Enter Description Here">
+        </div>
+
+        <div class="form-group">
             <label for="price">Price</label>
             <input type="text" class="form-control" id="price" placeholder="Example: '35.99' (No $ Sign, Two Decimal Places)">
+        </div>
+        
+        <div class="form-group">
+            <label for="deliveryLocation">Delivery Location</label>
+            <input type="text" class="form-control" id="deliveryLocation"
+                placeholder="Examples: 'Mrs. Cooper's Room', 'Room 1428'">
+        </div>
+
+        <div class="form-group">
+            <label for="deliveryTime">Delivery Date</label>
+            <input type="text" class="form-control" id="deliveryTime" placeholder="Example: '8/31/2020'">
         </div>
 
         <div class="form-group">
@@ -188,27 +190,28 @@
             db.enablePersistence();
 
             function addProduct() {
-                var name = document.getElementById("cardName").value;
-                var description = document.getElementById("cardDescription").value;
-                var type = document.getElementById("cardType").value;
-                var author = document.getElementById("author").value;
-                var deliveryTime = document.getElementById("deliveryTime").value;
+                var name = document.getElementById("name").value;
+
+                var productType = document.getElementById("productType").value;
+                var saleType = document.getElementById("saleType").value;
+                var availability = document.getElementById("availability").value;
+
+                var requirement = document.getElementById("requirement").value;
+                var seller = document.getElementById("seller").value;
                 var rentTime = document.getElementById("rentTime").value;
+                var classs = document.getElementById("class").value;
+
+                var deliveryDate = document.getElementById("deliveryDate").value;
+                var deliveryLocation = document.getElementById("deliveryLocation").value;
+                var description = document.getElementById("description").value;
                 var price = Number(document.getElementById("price").value);
-                var thumbnail = document.getElementById("image").value;
                 var keywords = document.getElementById("keywords").value.replace(/ /g, ",").replace(/,,/g, ",").split(",");
+                var thumbnail = document.getElementById("image").value;
 
-                if (!name || !type || !description || !thumbnail || !price || !deliveryTime || !rentTime || !keywords || keywords.length < 5) {
-                    alert("You forgot to enter an input for something! Every field except author is required (unless the product is S2S)!");
+                if (!name || !deliveryDate || !deliveryLocation || !description || !thumbnail || !price || !keywords || keywords.length < 5) {
+                    alert("You forgot to enter an input for something!");
                     return console.log("Not enough parameters given");
                 }
-
-                if (type == "S2S" && !author) {
-                    alert("You forgot to enter an input for seller name! Seller name is required for S2S products!");
-                    return console.log("Not enough parameters given");
-                }
-
-                var s2s = (type == "S2S") ? true : false;
 
                 function uniqueFilter(value, index, self) {
                     return self.indexOf(value) === index;
@@ -221,7 +224,7 @@
                     var total = 0;
 
                     for (i = 0; i < 11; i++) {
-                        var rand = Math.floor(Math.random() * 10)
+                        var rand = Math.floor(Math.random() * 10);
 
                         switch (rand) {
                             case 0:
@@ -245,37 +248,72 @@
                         total += rating;
                     }
 
-                    if (total/14 < 3.3) { 
+                    if (total / 14 < 3.3) {
                         return getRatings();
                     } else {
                         return ratings;
                     }
                 }
 
-                if (s2s) {
-                    db.collection("products").doc(name).set({
-                        name: name,
-                        price: price,
-                        description: description,
-                        time: rentTime,
-                        deliveryTime: deliveryTime,
-                        imageRef: thumbnail,
-                        s2s: true,
-                        s2sauthor: author,
-                        keywords: uniqueKeywords,
-                    })
-                } else {
-                    db.collection("products").doc(name).set({
-                        name: name,
-                        price: price,
-                        description: description,
-                        time: rentTime,
-                        deliveryTime: deliveryTime,
-                        imageRef: thumbnail,
-                        s2s: false,
-                        keywords: uniqueKeywords
-                    })
+                var data = {
+                    name: name,
+                    deliveryDate: deliveryDate,
+                    deliveryLocation: deliveryLocation,
+                    description: description,
+                    price: price,
+                    keywords: uniqueKeywords,
+                    imageRef: thumbnail,
+                    ratings: getRatings()
+                };
+
+                switch (productType) {
+                    case "General":
+
+                        break;
+                    case "Teacher":
+                        if (!seller) {
+                            return;
+                        } else {
+                            data["seller"] = "teacher";
+                        }
+                        break;
+                    case "S2S":
+                        if (!seller) {
+                            return;
+                        } else {
+                            data["seller"] = "s2s";
+                        }
+                        break;
                 }
+
+                switch (saleType) {
+                    case "Sell":
+
+                        break;
+                    case "Rent":
+                        if (!rentTime) {
+                            return;
+                        } else {
+                            data["rentTime"] = rentTime;
+                        }
+                        break;
+                }
+
+                switch (availability) {
+                    case "All Students":
+
+                        break;
+                    case "Specific Class":
+                        if (!classs || requirement == "none") {
+                            return;
+                        } else {
+                            data["class"] = classs;
+                            data["requirement"] = requirement;
+                        }
+                        break;
+                }
+
+                db.collection("products").doc(name).set(data);
             }
         </script>
 

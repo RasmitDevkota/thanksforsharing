@@ -150,3 +150,7 @@ function toggleSlideMenu() {
         }, 360);
     }
 };
+
+function _(id) {
+    return document.getElementById(id).value;
+}
