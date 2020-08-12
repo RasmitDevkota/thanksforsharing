@@ -31,7 +31,15 @@
     <article>
       <h1 class="page-heading">Products</h1>
       
-      <div class="column" id="products"></div>
+      <div style="display: flex; flex-direction: column;">
+        <div id="categories">Categories</div>
+
+        <div style="display: flex; flex-direction: row;" id="results">
+          <div id="filters">Filters</div>
+
+          <div id="products"></div>
+        </div>
+      </div>
     </article>
     
     <!--Added to Cart Snackbar-->

@@ -1,4 +1,7 @@
-var txtElements = ["name", "description", "price", "rating", "s2s", "deliveryTime"];
+"use strict";
+
+var txtElements = ["name", "description", "price", "rating", "saleType", "deliveryDate", "deliveryLocation"];
+var txtNames = ["Name", "Description", "Price", "Rating", "Sale Type", "Delivery Date", "Delivery Location"];
 var actionElements = ["addtocart", "checkout"];
 var actionNames = ["Add to Cart", "Fast Checkout"];
 
@@ -14,8 +17,20 @@ function filter(field) {
 function results(keystring) {
     document.getElementById("products").innerHTML = "";
 
-    if (keystring == "s2s") {
-        Products.where("s2s", "==", true).orderBy("keywords").get().then(function (querySnapshot) {
+    if (keystring == "product") {
+        Products.orderBy("keywords").get().then(function (querySnapshot) {
+            querySnapshot.forEach((doc) => {
+                showProducts(doc.data(), doc.id);
+            });
+        });
+    } else if (keystring == ("s2s" || "teacher")) {
+        Products.where("saleType", "==", keystring).orderBy("keywords").get().then(function (querySnapshot) {
+            querySnapshot.forEach((doc) => {
+                showProducts(doc);
+            });
+        });
+    } else if (keystring == ("sell" || "rent")) {
+        Products.where("productType", "==", keystring).orderBy("keywords").get().then(function (querySnapshot) {
             querySnapshot.forEach((doc) => {
                 showProducts(doc);
             });
@@ -35,22 +50,19 @@ function results(keystring) {
     }
 };
 
-function updateTimestamp(docRef) {
-    Products.doc(docRef).update({
+function showProducts(docdata, doc) {
+    var name = docdata.name;
+    var imageRef = docdata.imageRef;
+    var desc = docdata.description;
+    var price = docdata.price;
+    var deliveryDate = docdata.deliveryDate;
+    var deliveryLocation = docdata.deliveryLocation;
+    var saleType = docdata.saleType;
+    var rentTime = docdata.rentTime;
+
+    Products.doc(doc).update({
         timestamp: firebase.firestore.FieldValue.serverTimestamp()
     });
-};
-
-function showProducts(docdata, doc) {
-    var name = docdata.name.toString();
-    var imageRef = docdata.imageRef.toString();
-    var desc = docdata.description.toString();
-    var price = docdata.price;
-    var time = docdata.time.toString();
-    var deliveryTime = docdata.deliveryTime.toString();
-    var s2s = docdata.s2s;
-
-    updateTimestamp(doc);
 
     var ratings = docdata.ratings;
     var sum = 0;
@@ -59,7 +71,7 @@ function showProducts(docdata, doc) {
     };
     var rating = (sum / ratings.length).toFixed(1);
     
-    var txtContent = [name, desc, price, rating];
+    var txtContent = [name, desc, price, rating, saleType, deliveryDate, deliveryLocation];
 
     var outerDiv = document.createElement("v-product");
     document.getElementById("products").appendChild(outerDiv);
@@ -77,21 +89,26 @@ function showProducts(docdata, doc) {
     for (i = 0; i < txtElements.length; i++) {
         var txt = txtElements[i];
         var elem = document.createElement("v-" + txt);
-        if (txt == "deliveryTime") {
-            break;
-        } else if (txt == "price") {
-            elem.innerHTML = "$" + txtContent[i] + "/month for " + time;
+        if (txt == "price") {
+            if (rentTime) {
+                elem.innerHTML = "$" + txtContent[i] + "/month for " + rentTime;
+            } else {
+                elem.innerHTML = "$" + txtContent[i];
+            }
         } else if (txt == "rating") {
             elem.innerHTML = "<i class='fas fa-star'></i>" + txtContent[i];
-        } else if (txt == "s2s") {
-            if (s2s == true) {
-                var seller = docdata.s2sauthor;
+        } else if (txt == "saleType") {
+            var seller = docdata.seller;
+
+            //// RASMIT! THIS CURRENTLY JUST TAKES THE ID!!!!! TURN THIS INTO THE USER!!!!!
+
+            if (saleType == "s2s") {
                 elem.innerHTML = `<img src='s2s.png' title='S2S - Sold by ${seller}'>`;
-            } else {
-                break;
+            } else if (saleType == "teacher") {
+                elem.innerHTML = `<img src='https://cdn0.iconfinder.com/data/icons/back-to-school/90/school-learn-study-teacher-teaching-512.png' title='Teacher Item - Sold by ${seller}'>`;
             }
         } else {
-            elem.innerHTML = txtContent[i];
+            elem.innerHTML = txtNames[i] + ": " + txtContent[i];
         }
         elem.className = "v" + txt;
         document.getElementById(text.id).appendChild(elem);
@@ -156,112 +173,6 @@ function showProducts(docdata, doc) {
         elem.classList.add("v-" + action, "mdl-button", "mdl-js-button", "mdl-button--raised", "mdl-js-ripple-effect");
         document.getElementById(actions.id).appendChild(elem);
     };
-};
-
-function product(name) {
-    Products.where("name", "==", name).get().then(function (querySnapshot) {
-        querySnapshot.forEach((doc) => {
-            var name = doc.data().name.toString();
-            var imageRef = doc.data().imageRef.toString();
-            var desc = doc.data().description.toString();
-            var price = doc.data().price;
-            var time = doc.data().time.toString();
-            var deliveryTime = doc.data().deliveryTime.toString();
-            var s2s = doc.data().s2s;
-
-            var ratings = doc.data().ratings;
-            var sum = 0;
-            for (var i = 0; i < ratings.length; i++) {
-                sum += ratings[i];
-            };
-            var rating = (sum / ratings.length).toFixed(1);
-
-            var txtContent = [name, desc, price, rating, deliveryTime];
-
-            var outerDiv = document.createElement("pp-product");
-            document.getElementById("product").appendChild(outerDiv);
-            outerDiv.id = "outerProduct" + name;
-
-            var image = document.createElement("img");
-            image.src = imageRef;
-            document.getElementById(outerDiv.id).appendChild(image);
-
-            var text = document.createElement("pp-text");
-            text.className = "pptext";
-            text.id = "pageText" + name;
-            document.getElementById(outerDiv.id).appendChild(text);
-
-            for (i = 0; i < txtElements.length; i++) {
-                var txt = txtElements[i];
-                var elem = document.createElement("v-" + txt);
-                if (txt == "price") {
-                    elem.innerHTML = "$" + txtContent[i] + "/month for " + time;
-                } else if (txt == "rating") {
-                    elem.innerHTML = "<i class='fas fa-star'></i>" + txtContent[i];
-                } else if (txt == "s2s") {
-                    if (s2s == true) {
-                        var seller = doc.data().s2sauthor;
-                        elem.innerHTML = `<img src='s2s.png' title='S2S - Sold by ${seller}'>`;
-                    } else {
-                        break;
-                    }
-                } else if (txt == "deliveryTime") {
-                    elem.innerHTML = "Estimated Delivery Time: " + txtContent[i];
-                } else {
-                    elem.innerHTML = txtContent[i];
-                }
-                elem.className = "pp" + txt;
-                document.getElementById(text.id).appendChild(elem);
-            };
-
-            var actions = document.createElement("pp-actions");
-            actions.className = "ppactions";
-            actions.id = "pageActions" + name;
-            document.getElementById(outerDiv.id).appendChild(actions);
-
-            var elem = document.createElement("pp-" + cart);
-            elem.innerHTML = actionNames[i];
-
-            elem.addEventListener('click', function () {
-                if (user) {
-                    ShoppingCart.doc(user.displayName + '/' + user.displayName + '/' + name).get().then(function (doc) {
-                        if (!doc.exists) {
-                            ShoppingCart.doc(user.displayName + '/' + user.displayName + '/' + name).set({
-                                name: name,
-                                price: price,
-                                imageRef: imageRef
-                            }).then(function () {
-                                var atcMsg = document.querySelector('#atcMsg');
-                                atcMsg.MaterialSnackbar.showSnackbar({
-                                    message: 'Item added to cart',
-                                    timeout: 1800,
-                                    actionHandler: function () {
-                                        redirect('cart.html#couter' + name);
-                                    },
-                                    actionText: 'Go to Cart'
-                                });
-                            });
-                        } else {
-                            var atcMsg = document.querySelector('#atcMsg');
-                            atcMsg.MaterialSnackbar.showSnackbar({
-                                message: 'Item already in cart',
-                                timeout: 1800,
-                                actionHandler: function () {
-                                    redirect('cart.html#couter' + name);
-                                },
-                                actionText: 'See in Cart'
-                            });
-                        }
-                    });
-                } else {
-                    alert('You are currently not signed in. Sign in or use fast checkout to purchase without an account.');
-                }
-            });
-
-            elem.classList.add("pp-" + action, "mdl-button", "mdl-js-button", "mdl-button--raised", "mdl-js-ripple-effect");
-            document.getElementById(actions.id).appendChild(elem);
-        });
-    });
 };
 
 function showCart() {
