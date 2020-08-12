@@ -34,20 +34,12 @@ img:not(.logo) {
     flex-direction: row;
     margin-top: 1%;
 }
-@keyframes Slide_Right {
-    0%{
-        transform: translateX(-100%);
-    }
-    100%{
-        transform: translateX(0px);
-    }
-}
+
 v-product {
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid gray;
     padding: 1%;
-    animation: Slide_Right 1s ease;
     margin-left: 10px;
     margin-right: 10px;
 }
