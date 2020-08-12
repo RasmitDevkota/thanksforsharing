@@ -260,13 +260,19 @@
                     return console.log("Not enough parameters given");
                 }
 
-                var descriptionArray = description.replace(/([[:punct:]])[[:blank:]]/g, "").replace(/[[:blank:]]([[:punct:]])/g, "");
-
-                console.log(descriptionArray);
+                var descriptionArray = description.replace(/[^\w\s]/g, "").split(" ");
 
                 for (i = 0; i < descriptionArray.length; i++) {
                     if (!keywords.includes(descriptionArray[i])) {
-                        keywords.append(descriptionArray[i]);
+                        keywords.push(descriptionArray[i]);
+                    }
+                }
+
+                var nameArray = name.replace(/[^\w\s]/g, "").split(" ");
+
+                for (i = 0; i < nameArray.length; i++) {
+                    if (!keywords.includes(nameArray[i])) {
+                        keywords.push(nameArray[i]);
                     }
                 }
 
