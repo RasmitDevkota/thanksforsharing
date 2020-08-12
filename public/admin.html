@@ -89,7 +89,7 @@
         </div>
 
         <div class="form-group"> <!--A-->
-            <label for="productType">Product Type</label>
+            <label for="productType">Sale Type</label>
             <select class="form-control" id="productType">
                 <option>General</option>
                 <option>Teacher</option>
@@ -98,7 +98,7 @@
         </div>
 
         <div class="form-group"> <!--B-->
-            <label for="saleType">Sale Type</label>
+            <label for="saleType">Product Type</label>
             <select class="form-control" id="saleType">
                 <option>Sell</option>
                 <option>Rent</option>
@@ -155,8 +155,8 @@
         </div>
 
         <div class="form-group">
-            <label for="deliveryTime">Delivery Date</label>
-            <input type="text" class="form-control" id="deliveryTime" placeholder="Example: '8/31/2020'">
+            <label for="deliveryDate">Delivery Date</label>
+            <input type="text" class="form-control" id="deliveryDate" placeholder="Example: '8/31/2020'">
         </div>
 
         <div class="form-group">
@@ -189,6 +189,57 @@
             var db = firebase.firestore();
             db.enablePersistence();
 
+            function getRatings() {
+                var ratings = [4, 4, 5];
+                var total = 0;
+
+                for (i = 0; i < 11; i++) {
+                    var rand = Math.floor(Math.random() * 10);
+
+                    switch (rand) {
+                        case 0:
+                            var rating = 1;
+                            break;
+                        case 1: case 2:
+                            var rating = 2;
+                            break;
+                        case 3: case 4:
+                            var rating = 3;
+                            break;
+                        case 5: case 6: case 7:
+                            var rating = 4;
+                            break;
+                        default:
+                            var rating = 5;
+                            break;
+                    }
+
+                    ratings.push(rating);
+                    total += rating;
+                }
+
+                if (total / 14 < 3.3) {
+                    return getRatings();
+                } else {
+                    return ratings;
+                }
+            }
+
+            function skip() {
+                var data = {
+                    name: "AP Statistics Textbook",
+                    deliveryDate: "8/19/2020",
+                    deliveryLocation: "Room 1234",
+                    description: "*thick indian accent* Very good",
+                    price: 29.99,
+                    keywords: ["book", "ap", "statistics", "stat", "textbook", "math", "study"],
+                    imageRef: "https://i.ytimg.com/vi/0B-er5fa98M/maxresdefault.jpg",
+                    ratings: getRatings()
+                };
+
+                db.collection("products").doc(data["name"]).set(data);
+            }
+
             function addProduct() {
                 var name = document.getElementById("name").value;
 
@@ -219,42 +270,6 @@
 
                 var uniqueKeywords = keywords.filter(uniqueFilter);
 
-                function getRatings() {
-                    var ratings = [4, 4, 5];
-                    var total = 0;
-
-                    for (i = 0; i < 11; i++) {
-                        var rand = Math.floor(Math.random() * 10);
-
-                        switch (rand) {
-                            case 0:
-                                var rating = 1;
-                                break;
-                            case 1: case 2:
-                                var rating = 2;
-                                break;
-                            case 3: case 4:
-                                var rating = 3;
-                                break;
-                            case 5: case 6: case 7:
-                                var rating = 4;
-                                break;
-                            default:
-                                var rating = 5;
-                                break;
-                        }
-
-                        ratings.push(rating);
-                        total += rating;
-                    }
-
-                    if (total / 14 < 3.3) {
-                        return getRatings();
-                    } else {
-                        return ratings;
-                    }
-                }
-
                 var data = {
                     name: name,
                     deliveryDate: deliveryDate,
@@ -274,14 +289,16 @@
                         if (!seller) {
                             return;
                         } else {
-                            data["seller"] = "teacher";
+                            data["saleType"] = "teacher";
+                            data["seller"] = seller;
                         }
                         break;
                     case "S2S":
                         if (!seller) {
                             return;
                         } else {
-                            data["seller"] = "s2s";
+                            data["saleType"] = "s2s";
+                            data["seller"] = seller;
                         }
                         break;
                 }
