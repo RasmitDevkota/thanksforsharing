@@ -37,26 +37,32 @@
     <article>
       <h1 class="page-heading">Products</h1>
       
-      <div style="display: flex; flex-direction: column; padding: 1%;">
-        <div id="categories" style="width: 100%; background-color: white; padding: 0.5%;">
+      <div id="productsContainer">
+        <div id="categories">
           <span class="mdl-chip mdl-chip--deletable">
-            <span class="mdl-chip__text">Deletable Chip</span>
+            <span class="mdl-chip__text">Filter 1</span>
             <button type="button" class="mdl-chip__action"><i class="material-icons">cancel</i></button>
           </span>
 
           <span class="mdl-chip mdl-chip--deletable">
-            <span class="mdl-chip__text">Deletable Chip</span>
+            <span class="mdl-chip__text">Filter 2</span>
             <button type="button" class="mdl-chip__action"><i class="material-icons">cancel</i></button>
           </span>
 
-          <div id="tt1" class="icon material-icons" style="background-color: rgb(190, 190, 190); border: 2px solid rgb(190, 190, 190); border-radius: 100px 100px 100px 100px; vertical-align: -webkit-baseline-middle; cursor: pointer;">add</div>
-          <div class="mdl-tooltip" data-mdl-for="tt1">
+          <div id="addFilter" class="icon material-icons">add</div>
+          <div class="mdl-tooltip" data-mdl-for="addFilter">
             Add Filter
           </div>
+          
+          <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="addFilter">
+            <li class="mdl-menu__item">Filter 3</li>
+            <li class="mdl-menu__item mdl-menu__item--full-bleed-divider">Filter 4</li>
+            <li class="mdl-menu__item">Filter 5</li>
+          </ul>
         </div>
 
-        <div style="display: flex; flex-direction: row; margin-top: 1%;" id="results">
-          <div id="filters" style="width: 20%; background-color: white;">
+        <div id="results">
+          <div id="filters" style="padding: 0.4%; padding-left: 0.5%;">
             
             <ul class="demo-list-control mdl-list">
               <h2>Option Group A (MDL)</h2>
@@ -113,10 +119,9 @@
                   </label>
                 </span>
               </li>
-
             </ul>
 
-            <div style="padding-left: 2%; font-size: large;">
+            <div style="font-size: large;">
               <h2>Option Group B (Bootstrap)</h2>
 
               <h4>Choice 1</h4>
@@ -157,6 +162,7 @@
                 <option value="3">Three</option>
               </select>
             </div>
+            
           </div>
 
           <div id="products" style="width: 80%;"></div>

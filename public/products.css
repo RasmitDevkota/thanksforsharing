@@ -1,8 +1,37 @@
 img:not(.logo) {
     width: 20%;
 }
+#productsContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+}
+#categories {
+    width: 100%;
+    padding: 0.5%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#filters {
+    width: 20%;
+    height: fit-content;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .mdl-chip__contact {
     width: 5px;
+}
+#addFilter {
+    background-color: rgb(190, 190, 190);
+    border: 2px solid rgb(190, 190, 190);
+    border-radius: 100px 100px 100px 100px;
+    vertical-align: -webkit-baseline-middle;
+    cursor: pointer;
+}
+#results {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
 }
 @keyframes Slide_Right {
     0%{
