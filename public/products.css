@@ -1,6 +1,9 @@
 img:not(.logo) {
     width: 20%;
 }
+.mdl-chip__contact {
+    width: 5px;
+}
 @keyframes Slide_Right {
     0%{
         transform: translateX(-100%);

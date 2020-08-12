@@ -32,10 +32,67 @@
       <h1 class="page-heading">Products</h1>
       
       <div style="display: flex; flex-direction: column;">
-        <div id="categories">Categories</div>
+        <div id="categories">
+          <span class="mdl-chip">
+            <span class="mdl-chip__text">Basic Chip</span>
+          </span>
+
+          <span class="mdl-chip">
+            <span class="mdl-chip__text">Basic Chip</span>
+          </span>
+        </div>
 
         <div style="display: flex; flex-direction: row;" id="results">
-          <div id="filters">Filters</div>
+          <div id="filters">
+            <style>
+              .demo-list-control {
+                width: 300px;
+              }
+            
+              .demo-list-radio {
+                display: inline;
+              }
+            </style>
+            
+            <ul class="demo-list-control mdl-list">
+              <li class="mdl-list__item">
+                <span class="mdl-list__item-primary-content">
+                  <i class="material-icons  mdl-list__item-avatar">person</i>
+                  Bryan Cranston
+                </span>
+                <span class="mdl-list__item-secondary-action">
+                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-1">
+                    <input type="checkbox" id="list-checkbox-1" class="mdl-checkbox__input" checked />
+                  </label>
+                </span>
+              </li>
+              <li class="mdl-list__item">
+                <span class="mdl-list__item-primary-content">
+                  <i class="material-icons  mdl-list__item-avatar">person</i>
+                  Aaron Paul
+                </span>
+                <span class="mdl-list__item-secondary-action">
+                  <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="list-option-1">
+                    <input type="radio" id="list-option-1" class="mdl-radio__button" name="options" value="1" checked />
+                  </label>
+                  <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="list-option-2">
+                    <input type="radio" id="list-option-2" class="mdl-radio__button" name="options" value="2" />
+                  </label>
+                </span>
+              </li>
+              <li class="mdl-list__item">
+                <span class="mdl-list__item-primary-content">
+                  <i class="material-icons  mdl-list__item-avatar">person</i>
+                  Bob Odenkirk
+                </span>
+                <span class="mdl-list__item-secondary-action">
+                  <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="list-switch-1">
+                    <input type="checkbox" id="list-switch-1" class="mdl-switch__input" checked />
+                  </label>
+                </span>
+              </li>
+            </ul>
+          </div>
 
           <div id="products"></div>
         </div>
