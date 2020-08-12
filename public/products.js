@@ -5,14 +5,67 @@ var txtNames = ["Name", "Description", "Price", "Rating", "Sale Type", "Delivery
 var actionElements = ["addtocart", "checkout"];
 var actionNames = ["Add to Cart", "Fast Checkout"];
 
-function filter(field) {
-    document.getElementById("products").innerHTML = "";
-    Products.orderBy(field).get().then(function (querySnapshot) {
-        querySnapshot.forEach((doc) => {
-            showProducts(doc);
+var allLoaded = false;
+var productCache = [];
+
+function filterWithMatch(field, comparisonValue, reset = true) {
+    if (reset) {
+        document.getElementById("products").innerHTML = "";
+    }
+
+    if (allLoaded) {
+
+    } else {
+        Products.where(field).get().then(function (querySnapshot) {
+            querySnapshot.forEach((doc) => {
+                showProducts(doc);
+            });
         });
-    });
+    }
+}
+
+function filterWithKeyword(field, keyword, reset = true) {
+    if (reset) {
+        document.getElementById("products").innerHTML = "";
+    }
+
+    if (allLoaded) {
+
+    } else {
+        Products.where(field).get().then(function (querySnapshot) {
+            querySnapshot.forEach((doc) => {
+                showProducts(doc);
+            });
+        });
+    }
 };
+
+function filterWithAmount(field, type, operation, comparisonValue, reset = true) {
+    if (reset) {
+        document.getElementById("products").innerHTML = "";
+    }
+
+    if (allLoaded) {
+
+    } else {
+        switch (type) {
+            case "order":
+                Products.orderBy(field).get().then(function (querySnapshot) {
+                    querySnapshot.forEach((doc) => {
+                        showProducts(doc);
+                    });
+                });
+                break;
+            case "where":
+                Products.where(field, operation, comparisonValue).get().then(function (querySnapshot) {
+                    querySnapshot.forEach((doc) => {
+                        showProducts(doc);
+                    });
+                });
+                break;
+        }
+    }
+}
 
 function results(keystring) {
     document.getElementById("products").innerHTML = "";
@@ -107,8 +160,10 @@ function showProducts(docdata, doc) {
             } else if (saleType == "teacher") {
                 elem.innerHTML = `<img src='https://cdn0.iconfinder.com/data/icons/back-to-school/90/school-learn-study-teacher-teaching-512.png' title='Teacher Item - Sold by ${seller}'>`;
             }
-        } else {
+        } else if (txt == "deliveryLocation" || txt == "deliveryDate") {
             elem.innerHTML = txtNames[i] + ": " + txtContent[i];
+        } else {
+            elem.innerHTML = txtContent[i];
         }
         elem.className = "v" + txt;
         document.getElementById(text.id).appendChild(elem);
@@ -323,4 +378,3 @@ function checkOut() {
 //         console.log(rating);
 //     });
 // };
-

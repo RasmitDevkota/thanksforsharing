@@ -1,12 +1,10 @@
 function signIn() {
-    if (firebase.auth().currentUser == null){
-        console.log(firebase.auth().currentUser);
+    if (firebase.auth().currentUser == null) {
         togglepsi();
     } else {
         firebase.auth().signOut();
         $('#signin').text("Sign In");
-        console.log(document.getElementById("signin").innerHTML);
-        console.log(firebase.auth().currentUser);
+        console.log("Signing out...");
     }
 };
 
@@ -24,7 +22,7 @@ function eToggleSignIn() {
 
     firebase.auth().signInWithEmailAndPassword(email, password).then(function () {
         firebase.auth().onAuthStateChanged(function (user) {
-            display("email");
+            // display("email");
             pageLoad(true);
         });
     }).catch(function (error) {
@@ -87,7 +85,7 @@ function gToggleSignIn() {
                         });
                     });
 
-                    togglepsi();
+                    // togglepsi();
                     pageLoad(true);
                 };
             });
@@ -156,7 +154,8 @@ function handleSignUp() {
                 console.log(error);
                 console.log(user.displayName);
             });
-            display('signup');
+
+            // display('signup');
             pageLoad(true);
         });
     }).catch(function (error) {
@@ -171,6 +170,10 @@ function handleSignUp() {
     });
 };
 // Signup End
+
+function forsythAuth() {
+
+}
 
 // Password Reset
 function sendPasswordReset() {

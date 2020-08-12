@@ -31,7 +31,7 @@ document.addEventListener('keydown', function (event) {
             sendPasswordReset();
         }
     }
-});
+})
 
 firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
@@ -39,7 +39,7 @@ firebase.auth().onAuthStateChanged(function (user) {
     } else {
         pageLoad(false);
     }
-});
+})
 
 function pageLoad(u) {
     xhttp("navbar", "navbarHeader");
@@ -47,9 +47,16 @@ function pageLoad(u) {
     xhttp("footer", "footerFooter");
 
     if (u == true) {
-        document.getElementById("signin").innerHTML = "Sign Out";
+        window.onload = function () {
+            document.getElementById("signin").innerHTML = "Sign Out";
+        };
 
         window.user = firebase.auth().currentUser;
+
+        if (!user) {
+            return console.error("Auth error occurred, pageLoad(true) called even though firebase.auth().currentUser is " + user);
+        }
+
         window.usersUser = users.doc(user.uid);
         window.emailsUser = emails.doc(user.displayName);
         window.userCart = ShoppingCart.doc(user.displayName).collection(user.displayName);
@@ -79,7 +86,7 @@ function pageLoad(u) {
             s2sStart();
         }
     }
-};
+}
 
 function xhttp(source, tag) {
     var xhttp = new XMLHttpRequest();
@@ -102,15 +109,15 @@ function search() {
     } else {
         display('search');
     }
-};
+}
 
 function redirect(pagePath) {
     window.location.replace(pagePath);
-};
+}
 
 function display(elem) {
     $('#' + elem).toggle();
-};
+}
 
 function togglepsi() {
     if (document.getElementById('popupsignin').style.display == "none") {
@@ -132,7 +139,7 @@ function togglepsi() {
             $('#popupsignin').hide();
         }, 360);
     }
-};
+}
 
 function toggleSlideMenu() {
     if (document.getElementById('slideinmenu').style.display == "none") {
@@ -149,7 +156,7 @@ function toggleSlideMenu() {
             $('#slideinmenu').hide();
         }, 360);
     }
-};
+}
 
 function _(id) {
     return document.getElementById(id).value;
