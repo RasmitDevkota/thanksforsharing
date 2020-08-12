@@ -7,6 +7,7 @@ img:not(.logo) {
     padding: 1%;
 }
 #categories {
+    display: flex;
     width: 100%;
     padding: 0.5%;
     background-color: white;
