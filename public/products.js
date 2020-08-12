@@ -1,13 +1,14 @@
 "use strict";
 
-var txtElements = ["name", "description", "price", "rating", "saleType", "deliveryDate", "deliveryLocation"];
-var txtNames = ["Name", "Description", "Price", "Rating", "Sale Type", "Delivery Date", "Delivery Location"];
-var actionElements = ["addtocart", "checkout"];
-var actionNames = ["Add to Cart", "Fast Checkout"];
+const txtElements = ["name", "description", "price", "rating", "saleType", "deliveryDate", "deliveryLocation"];
+const txtNames = ["Name", "Description", "Price", "Rating", "Sale Type", "Delivery Date", "Delivery Location"];
+const actionElements = ["addtocart", "checkout"];
+const actionNames = ["Add to Cart", "Fast Checkout"];
 
 var allLoaded = false;
 var productCache = [];
 
+// Check if field is exactly equal to comparisonValue
 function filterWithMatch(field, comparisonValue, reset = true) {
     if (reset) {
         document.getElementById("products").innerHTML = "";
@@ -16,15 +17,16 @@ function filterWithMatch(field, comparisonValue, reset = true) {
     if (allLoaded) {
 
     } else {
-        Products.where(field).get().then(function (querySnapshot) {
+        Products.where(field, "==", comparisonValue).get().then(function (querySnapshot) {
             querySnapshot.forEach((doc) => {
-                showProducts(doc);
+                showProducts(doc.data(), doc.id);
             });
         });
     }
 }
 
-function filterWithKeyword(field, keyword, reset = true) {
+// Check if field is in keywords
+function filterWithIn(field, keywords, reset = true) {
     if (reset) {
         document.getElementById("products").innerHTML = "";
     }
@@ -32,14 +34,36 @@ function filterWithKeyword(field, keyword, reset = true) {
     if (allLoaded) {
 
     } else {
-        Products.where(field).get().then(function (querySnapshot) {
+        Products.where(field, "in", keywords).get().then(function (querySnapshot) {
             querySnapshot.forEach((doc) => {
-                showProducts(doc);
+                showProducts(doc.data(), doc.id);
+            });
+        });
+    }
+}
+
+// Check if any keyword is in the keywords array for the product
+function filterWithKeywords(keywords, reset = true) {
+    if (reset) {
+        document.getElementById("products").innerHTML = "";
+    }
+
+    if (allLoaded) {
+
+    } else {
+        if (keywords.length > 10) {
+            keywords = keywords.slice(0, 10);
+        }
+
+        Products.where(keywords, "array-contains-any", keywords).get().then(function (querySnapshot) {
+            querySnapshot.forEach((doc) => {
+                showProducts(doc.data(), doc.id);
             });
         });
     }
 };
 
+// Check if operation on field fits comparisonValue
 function filterWithAmount(field, type, operation, comparisonValue, reset = true) {
     if (reset) {
         document.getElementById("products").innerHTML = "";
@@ -52,14 +76,14 @@ function filterWithAmount(field, type, operation, comparisonValue, reset = true)
             case "order":
                 Products.orderBy(field).get().then(function (querySnapshot) {
                     querySnapshot.forEach((doc) => {
-                        showProducts(doc);
+                        showProducts(doc.data(), doc.id);
                     });
                 });
                 break;
             case "where":
                 Products.where(field, operation, comparisonValue).get().then(function (querySnapshot) {
                     querySnapshot.forEach((doc) => {
-                        showProducts(doc);
+                        showProducts(doc.data(), doc.id);
                     });
                 });
                 break;
@@ -79,13 +103,13 @@ function results(keystring) {
     } else if (keystring == ("s2s" || "teacher")) {
         Products.where("saleType", "==", keystring).orderBy("keywords").get().then(function (querySnapshot) {
             querySnapshot.forEach((doc) => {
-                showProducts(doc);
+                showProducts(doc.data(), doc.id);
             });
         });
     } else if (keystring == ("sell" || "rent")) {
         Products.where("productType", "==", keystring).orderBy("keywords").get().then(function (querySnapshot) {
             querySnapshot.forEach((doc) => {
-                showProducts(doc);
+                showProducts(doc.data(), doc.id);
             });
         });
     } else {
@@ -112,6 +136,14 @@ function showProducts(docdata, doc) {
     var deliveryLocation = docdata.deliveryLocation;
     var saleType = docdata.saleType;
     var rentTime = docdata.rentTime;
+
+    if (!productCache.includes(docdata) && productCache.length < 9) {
+        productCache.push(docdata);
+
+        if (productCache.length == 9) {
+            allLoaded = true;
+        }
+    }
 
     Products.doc(doc).update({
         timestamp: firebase.firestore.FieldValue.serverTimestamp()
