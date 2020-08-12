@@ -48,8 +48,8 @@ v-rating {
     padding: 1%;
     color: rgb(241, 219, 21);
 }
-v-s2s {
-    max-width: 25%;
+v-saleType {
+    max-width: 500px;
 }
 v-actions {
     display: flex;
