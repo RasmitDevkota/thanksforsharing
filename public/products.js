@@ -8,6 +8,14 @@ const actionNames = ["Add to Cart", "Fast Checkout"];
 var allLoaded = false;
 var productCache = [];
 
+function addFilter(filter) {
+    
+
+    switch (filter) {
+        
+    }
+}
+
 // Check if field is exactly equal to comparisonValue
 function filterWithMatch(field, comparisonValue, reset = true) {
     if (reset) {

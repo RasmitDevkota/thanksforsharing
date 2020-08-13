@@ -171,9 +171,116 @@ function handleSignUp() {
 };
 // Signup End
 
+// Forsyth Auth Start
+function discordAuth() {
+    var name = document.getElementById('forsythName').value;
+    var id = document.getElementById('forsythID').value;
+    var pwd = document.getElementById('forsythPassword').value;
+
+    var email = id + "@forsythk12.org";
+
+    if (id && pwd) {
+        users.doc(id).get().then(function (doc) {
+            if (doc.exists && doc.data().email == email) {
+                firebase.auth().signInWithEmailAndPassword(email, pwd).then(function () {
+                    console.log("Success!");
+                }).catch(function (error) {
+                    console.log(error);
+                });
+            } else {
+                firebase.auth().createUserWithEmailAndPassword(email, id).then(function () {
+                    firebase.auth().signInWithEmailAndPassword(email, id).catch(function (error) {
+                        console.log("Error occurred signing in: ", error);
+                    });
+
+                    firebase.auth().onAuthStateChanged(function (user) {
+                        users.doc(id).set({
+                            email: email,
+                            id: id
+                        }, { merge: true }).then(function () {
+                            console.log("Document successfully written!");
+                        }).catch(function (error) {
+                            console.error("Error writing document: ", error);
+                        });
+
+                        user.updateProfile({
+                            displayName: name
+                        }).then(function () {
+                            console.log(user.displayName);
+                        }).catch(function (error) {
+                            console.log(error);
+                            console.log(user.displayName);
+                        });
+                    });
+                }).catch(function (err) {
+                    if (err.code == "auth/email-already-in-use") {
+                        alert("An interesting error occurred that will require developer action. Developers have been notified of this error, please try again later.");
+                    }
+                    console.error("Error occurred creating user: ", err);
+                });
+            }
+
+            // display('forsythAuth');
+            pageLoad(true);
+        }).catch(function (err) {
+            console.error("Error occurred getting user doc: ", err);
+        });
+    } else {
+        if (email) {
+            alert("Error occurred, please retry the authentication process.");
+            console.log("Error occurred, ID somehow did not combine well with the Forsyth Email Domain string?");
+        } else if (id) {
+            alert("Please enter an email!");
+            console.log("Error occurred, no email entered.");
+        } else {
+            alert("Impossible error. If you are seeing this, go email the NSA to apply for a job.");
+            console.log("Impossible error.");
+        }
+    }
+};
+function discordConnect() {
+    if (user) {
+        var dID = document.getElementById('CdiscordID').value;
+        var discordUserDoc = users.doc(dID);
+        var siteUserDoc = users.doc(displayName);
+
+        discordUserDoc.get().then(function (doc) {
+            if (!doc.exists) {
+                if (confirm("You don't have an account registered with us on Discord yet! Would you like to register now?")) {
+                    siteUserDoc.get().then(function (doc) {
+                        doc.set({
+                            id: dID
+                        }, { merge: true });
+                    });
+                } else {
+                    alert("Please create an account on Discord using !signup and then come back to retry the connect process!");
+                }
+            } else {
+                var discordUserData = doc.data();
+                if (discordUserData.email != user.email && discordUserData.email) {
+
+                }
+                siteUserDoc.get().then(function (doc) {
+                    doc.set(discordUserData, { merge: true });
+                    discordUserDoc.delete();
+                }).then(function () {
+                    alert('Successfully merged your accounts! You should receive a DM on Discord confirming this. If not, please contact a developer.');
+                    display('discordConnect');
+                    pageLoad(true);
+                }).catch(function (error) {
+                    console.error("Error writing document: ", error);
+                });
+            }
+        });
+    } else {
+        alert("Oh no! It looks like you're not signed in but somehow seeing this! That shouldn't be happening! Sign in and try again!");
+    }
+};
+
 function forsythAuth() {
 
 }
+// Forsyth Auth End
 
 // Password Reset
 function sendPasswordReset() {
