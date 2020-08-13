@@ -172,7 +172,7 @@ function handleSignUp() {
 // Signup End
 
 // Forsyth Auth Start
-function discordAuth() {
+function forsythAuth() {
     var name = document.getElementById('forsythName').value;
     var id = document.getElementById('forsythID').value;
     var pwd = document.getElementById('forsythPassword').value;
@@ -238,34 +238,36 @@ function discordAuth() {
         }
     }
 };
-function discordConnect() {
+function forsythConnect() {
     if (user) {
-        var dID = document.getElementById('CdiscordID').value;
-        var discordUserDoc = users.doc(dID);
-        var siteUserDoc = users.doc(displayName);
+        var id = document.getElementById('forsythID').value;
 
-        discordUserDoc.get().then(function (doc) {
+        var forsythUserDoc = users.doc(id);
+        var siteUserDoc = users.doc(users.displayName);
+
+        forsythUserDoc.get().then(function (doc) {
             if (!doc.exists) {
-                if (confirm("You don't have an account registered with us on Discord yet! Would you like to register now?")) {
+                if (confirm("You don't have an account registered with your Forsyth credentials yet! Would you like to register now?")) {
                     siteUserDoc.get().then(function (doc) {
                         doc.set({
-                            id: dID
+                            id: id
                         }, { merge: true });
                     });
                 } else {
                     alert("Please create an account on Discord using !signup and then come back to retry the connect process!");
                 }
             } else {
-                var discordUserData = doc.data();
-                if (discordUserData.email != user.email && discordUserData.email) {
+                var forsythUserData = doc.data();
+                if (forsythUserData.email != user.email && forsythUserData.email) {
 
                 }
                 siteUserDoc.get().then(function (doc) {
-                    doc.set(discordUserData, { merge: true });
-                    discordUserDoc.delete();
+                    doc.set(forsythUserData, { merge: true });
+                    forsythUserDoc.delete();
                 }).then(function () {
-                    alert('Successfully merged your accounts! You should receive a DM on Discord confirming this. If not, please contact a developer.');
-                    display('discordConnect');
+                    alert('Successfully merged your accounts!');
+
+                    display('forsythConnect');
                     pageLoad(true);
                 }).catch(function (error) {
                     console.error("Error writing document: ", error);
@@ -276,10 +278,6 @@ function discordConnect() {
         alert("Oh no! It looks like you're not signed in but somehow seeing this! That shouldn't be happening! Sign in and try again!");
     }
 };
-
-function forsythAuth() {
-
-}
 // Forsyth Auth End
 
 // Password Reset
