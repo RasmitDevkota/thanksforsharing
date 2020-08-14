@@ -238,6 +238,7 @@ function forsythAuth() {
         }
     }
 };
+
 function forsythConnect() {
     if (user) {
         var id = document.getElementById('forsythID').value;
