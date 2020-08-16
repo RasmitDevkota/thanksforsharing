@@ -9,8 +9,8 @@ function signIn() {
 };
 
 function eToggleSignIn() {
-    var password = document.getElementById('password').value;
-    var email = document.getElementById('emailemail').value;
+    var password = _('password');
+    var email = _('emailemail');
     if (email.length < 8) {
         alert('Please enter a longer email.');
         return;
@@ -105,9 +105,9 @@ function gToggleSignIn() {
 
 // Signup
 function handleSignUp() {
-    var permusername = document.getElementById('suusername').value.toString();
-    var permemail = document.getElementById('suemail').value.toString();
-    var permpassword = document.getElementById('supassword').value.toString();
+    var permusername = _('suusername');
+    var permemail = _('suemail');
+    var permpassword = _('supassword');
     
     if (permusername.length < 3) {
         alert('Please enter a longer username.');
@@ -173,9 +173,9 @@ function handleSignUp() {
 
 // Forsyth Auth Start
 function forsythAuth() {
-    var name = document.getElementById('forsythName').value;
-    var id = document.getElementById('forsythID').value;
-    var pwd = document.getElementById('forsythPassword').value;
+    var name = _('forsythName');
+    var id = _('forsythID');
+    var pwd = _('forsythPassword');
 
     var email = id + "@forsythk12.org";
 
@@ -241,7 +241,7 @@ function forsythAuth() {
 
 function forsythConnect() {
     if (user) {
-        var id = document.getElementById('forsythID').value;
+        var id = _('forsythID');
 
         var forsythUserDoc = users.doc(id);
         var siteUserDoc = users.doc(users.displayName);
@@ -255,7 +255,7 @@ function forsythConnect() {
                         }, { merge: true });
                     });
                 } else {
-                    alert("Please create an account on Discord using !signup and then come back to retry the connect process!");
+                    alert("Please create an account using your Forsyth credentials first to connect the two accounts! You can also add your Forsyth ID to your current account in account settings.");
                 }
             } else {
                 var forsythUserData = doc.data();
@@ -268,7 +268,7 @@ function forsythConnect() {
                 }).then(function () {
                     alert('Successfully merged your accounts!');
 
-                    display('forsythConnect');
+                    // display('forsythConnect');
                     pageLoad(true);
                 }).catch(function (error) {
                     console.error("Error writing document: ", error);
@@ -283,7 +283,7 @@ function forsythConnect() {
 
 // Password Reset
 function sendPasswordReset() {
-    var email = document.getElementById('premail').value;
+    var email = _('premail');
     
     if (email != null) {
         firebase.auth().sendPasswordResetEmail(email).then(function () {
@@ -296,10 +296,50 @@ function sendPasswordReset() {
             } else if (errorCode == 'auth/user-not-found') {
                 alert(errorMessage);
             }
-            console.log(error);
+            console.error(error);
         });
     } else {
         alert("Please enter an email.");
     }
 };
 // Password Reset End
+
+// Classes Start
+function addClass(input) {
+    if (user) {
+        var newClass = input.value;
+
+        usersUser.update({
+            classes: firebase.firestore.FieldValue.arrayUnion(newClass)
+        }).then(function () {
+            return alert("Successfully added " + newClass + " to your classes!");
+        }).catch(function (e) {
+            console.error(e);
+            return alert("Sorry, an error occurred while updating our database. Please try again later!");
+        });
+    } else {
+        console.error("Unauthenticated user attempted to run addClass.");
+        return alert("Please sign in to add a class!");
+    }
+}
+
+function removeClass(input) {
+    if (user) {
+        var removedClass = input.value;
+
+        usersUser.update({
+            classes: firebase.firestore.FieldValue.arrayRemove(removedClass)
+        }).then(function () {
+            input.value = "";
+
+            return alert("Successfully removed " + removedClass + " from your classes!");
+        }).catch(function (e) {
+            console.error(e);
+            return alert("Sorry, an error occurred while updating our database. Please try again later!");
+        });
+    } else {
+        console.error("Unauthenticated user attempted to run removeClass.");
+        return alert("Please sign in to remove a class!");
+    }
+}
+// Classes End

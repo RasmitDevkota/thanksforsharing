@@ -101,7 +101,7 @@ function xhttp(source, tag) {
 }
 
 function search() {
-    var search = document.getElementById("search").value;
+    var search = _("search");
 
     if (search != "") {
         var text = search;
@@ -159,5 +159,16 @@ function toggleSlideMenu() {
 }
 
 function _(id) {
-    return document.getElementById(id).value;
+    var el = document.getElementById(id);
+    var elType = el.type;
+
+    switch (elType) {
+        case "checkbox":
+            var value = el.checked;
+            break;
+        default:
+            var value = el.value;
+    }
+
+    return value;
 }
