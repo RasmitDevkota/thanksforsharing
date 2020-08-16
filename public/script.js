@@ -62,9 +62,18 @@ function pageLoad(u) {
         window.userCart = ShoppingCart.doc(user.displayName).collection(user.displayName);
 
         if (window.location.href.includes("products.html")) {
-            var urlParams = new URLSearchParams(window.location.search);
+            var urlParams = new URLSearchParams(decodeURIComponent(window.location.search));
             var query = urlParams.get('query');
-            results(query.toLowerCase());
+
+            var filters = [];
+
+            urlParams.forEach((value, key) => {
+                if (key != "query" && !filters.includes(value)) {
+                    filters.push(value);
+                }
+            });
+
+            results(query.toLowerCase(), filters);
         } else if (window.location.href.includes("cart.html")) {
             showCart();
         } else if (window.location.href.includes("s2s.html")) {
@@ -76,9 +85,18 @@ function pageLoad(u) {
         window.user = null;
 
         if (window.location.href.includes("products.html")) {
-            var urlParams = new URLSearchParams(window.location.search);
+            var urlParams = new URLSearchParams(decodeURIComponent(window.location.search));
             var query = urlParams.get('query');
-            results(query.toString());
+
+            var filters = [];
+
+            urlParams.forEach((value, key) => {
+                if (key != "query" && !filters.includes(value)) {
+                    filters.push(value);
+                }
+            });
+
+            results(query.toLowerCase(), filters);
         } else if (window.location.href.includes("cart.html")) {
             document.getElementById("cartItems").innerHTML = "<h1 style='text-align: center'>Not signed in! Sign in to use cart.<h1>";
             document.getElementById("totalPrice").innerHTML = "Total Price: $0.00";

@@ -4,6 +4,9 @@ const actionElements = ["addtocart", "checkout"];
 const actionNames = ["Add to Cart", "Fast Checkout"];
 
 var productCache = new Map();
+var activeFields = new Map();
+
+var allLoaded = false;
 
 function containsAny(container, elements) {
     for (let i = 0; i < elements.length; i++) {
@@ -62,9 +65,12 @@ Map.prototype.order = function (field, dir = "asc") {
 
     var fieldValues = [];
 
-    this.forEach(function (value) {
-        fieldValues.push(value);
-    });
+    for (var [k, v] of this) {
+        vm = new Map();
+        Object.keys(v).forEach(k => { vm.set(k, v[k]) });
+
+        fieldValues.push(vm);
+    }
 
     fieldValues.sort(function (a, b) {
         return a.get(field) - b.get(field);
@@ -75,8 +81,9 @@ Map.prototype.order = function (field, dir = "asc") {
     }
 
     for (i = 0; i < fieldValues.length; i++) {
-        var data = fieldValues[i];
-        var name = data.get("name")
+        var rawData = fieldValues[i];
+        var name = rawData.get("name");
+        var data = this.get(name);
 
         results.set(name, data);
     }
@@ -90,8 +97,9 @@ function addFilter(filter) {
     switch (filter) {
         case "classOnly":
             var filterValue = _("filterClassOnly");
-            if (filterValue) {
 
+            if (filterValue) {
+                results
             } else {
 
             }
@@ -101,29 +109,77 @@ function addFilter(filter) {
     }
 }
         
-function results(keystring) {
+function results(keystring, filters = []) {
     document.getElementById("products").innerHTML = "";
 
-    Products.orderBy("keywords").get().then(function (querySnapshot) {
-        querySnapshot.forEach((doc) => {
-            if (!productCache.has(doc.id) && productCache.size < querySnapshot.size) {
-                console.log(productCache.size);
-                productCache.set(doc.id, doc.data());
+    console.log(allLoaded);
+
+    if (!allLoaded) {
+        Products.orderBy("keywords").get().then(function (querySnapshot) {
+            querySnapshot.forEach((doc) => {
+                if (!productCache.has(doc.id) && productCache.size < querySnapshot.size) {
+                    console.log(productCache.size);
+                    productCache.set(doc.id, doc.data());
+                }
+            });
+        }).then(function () {
+            allLoaded = true;
+
+            if (keystring == "product") {
+                productCache.forEach((product, id) => {
+                    showProducts(product, id);
+                });
+            } else {
+                var filterText = "";
+
+                for (i = 0; i < filters.length; i++) {
+                    var filter = filters[i];
+
+                    filterText += `.where${filter}`;
+                }
+
+                console.log(filterText);
+
+                eval(`
+                    productCache.where("keywords", "array-contains-any", keystring.split(" "))` + filterText + `.forEach((product, id) => {
+                        showProducts(product, id);
+                    });
+                `);
             }
         });
-    }).then(function () {
+    } else {
         if (keystring == "product") {
             productCache.forEach((product, id) => {
                 showProducts(product, id);
             });
         } else {
-            productCache.where("keywords", "array-contains-any", keystring.split(" ")).forEach((product, id) => {
-                showProducts(product, id);
-            });
-        }
+            var filterText = "";
 
-        productCache.order("price");
-    });
+            for (i = 0; i < filters.length; i++) {
+                var filter = filters[i];
+
+                var newFilterText = `.where(`;
+
+                for (j = 0; j < filter.length - 1; j++) {
+                    newFilterText += filter[i] + `, `;
+                }
+
+                newFilterText += filter[filter.length - 1] + `)`;
+
+                filterText += newFilterText;
+            }
+
+            console.log(filterText);
+
+            filterText = "";
+
+            eval(`
+                productCache.where("keywords", "array-contains-any", keystring.split(" "))` + filterText + `.forEach((product, id) => {
+                    showProducts(product, id);
+                });
+            `);
+        }
+    }
 };
 
 function showProducts(docdata, doc) {
