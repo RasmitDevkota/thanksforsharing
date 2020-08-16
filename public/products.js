@@ -1,12 +1,9 @@
-"use strict";
-
 const txtElements = ["name", "description", "price", "rating", "saleType", "deliveryDate", "deliveryLocation"];
 const txtNames = ["Name", "Description", "Price", "Rating", "Sale Type", "Delivery Date", "Delivery Location"];
 const actionElements = ["addtocart", "checkout"];
 const actionNames = ["Add to Cart", "Fast Checkout"];
 
 var productCache = new Map();
-var displayedProducts = new Map();
 
 function containsAny(container, elements) {
     for (let i = 0; i < elements.length; i++) {
@@ -19,7 +16,7 @@ function containsAny(container, elements) {
 }
 
 Map.prototype.where = function (field, operator, comparisonValue) {
-    const results = new Map();
+    var results = new Map();
 
     switch (operator) {
         case "==":
@@ -48,9 +45,12 @@ Map.prototype.where = function (field, operator, comparisonValue) {
             break;
     }
 
-    for (let [k, v] of this) {
-        if (operation(k, v)) {
-            result.set(k, v);
+    for (var [k, v] of this) {
+        vm = new Map();
+        Object.keys(v).forEach(k => { vm.set(k, v[k]) });
+
+        if (operation(k, vm)) {
+            results.set(k, v);
         }
     }
 
@@ -74,33 +74,17 @@ Map.prototype.order = function (field, dir = "asc") {
         fieldValues.reverse();
     }
 
+    for (i = 0; i < fieldValues.length; i++) {
+        var data = fieldValues[i];
+        var name = data.get("name")
+
+        results.set(name, data);
+    }
+
+    console.log(results);
+
     return results;
 };
-
-// Check if field is exactly equal to comparisonValue
-// function filterWithMatch(field, comparisonValue, reset = true) {
-    // Products.where(field, "==", comparisonValue).get().then(function (querySnapshot) {
-
-
-// Check if field is in keywords
-// function filterWithIn(field, keywords, reset = true) {
-    // Products.where(field, "in", keywords).get().then(function (querySnapshot) {
-
-
-// Check if any keyword is in the keywords array for the product
-// function filterWithKeywords(keywords, reset = true) {
-    // Products.where(keywords, "array-contains-any", keywords).get().then(function (querySnapshot) { // Make sure to check length under 10
-
-
-// Check if operation on field fits comparisonValue
-// function filterWithAmount(field, type, operation, comparisonValue, reset = true) {
-    // switch (type) {
-        // case "order":
-        //     Products.orderBy(field).get().then(function (querySnapshot) {
-    
-        // case "where":
-        //     Products.where(field, operation, comparisonValue).get().then(function (querySnapshot) {
-
 
 function addFilter(filter) {
     switch (filter) {
@@ -123,23 +107,28 @@ function results(keystring) {
     Products.orderBy("keywords").get().then(function (querySnapshot) {
         querySnapshot.forEach((doc) => {
             if (!productCache.has(doc.id) && productCache.size < querySnapshot.size) {
+                console.log(productCache.size);
                 productCache.set(doc.id, doc.data());
             }
         });
+    }).then(function () {
+        if (keystring == "product") {
+            productCache.forEach((product, id) => {
+                showProducts(product, id);
+            });
+        } else {
+            productCache.where("keywords", "array-contains-any", keystring.split(" ")).forEach((product, id) => {
+                showProducts(product, id);
+            });
+        }
+
+        productCache.order("price");
     });
-
-    if (keystring == "product") {
-        productCache.where("keywords", "array-contains-any", keystring.split(" ")).then(function (data) {
-
-        });
-    } else {
-        productCache.where("keywords", "array-contains-any", keystring.split(" ")).then(function (data) {
-            // call showProducts for all data
-        });
-    }
 };
 
 function showProducts(docdata, doc) {
+    window.testData = docdata;
+
     var name = docdata.name;
     var imageRef = docdata.imageRef;
     var desc = docdata.description;
